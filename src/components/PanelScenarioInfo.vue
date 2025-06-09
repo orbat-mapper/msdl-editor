@@ -4,9 +4,15 @@ import { Button } from "@/components/ui/button";
 import { useDialogStore } from "@/stores/dialogStore.ts";
 import PanelDataGrid from "@/components/PanelDataGrid.vue";
 import { Badge } from "@/components/ui/badge";
+import ShowXMLDialog from "@/components/ShowXMLDialog.vue";
+import { computed } from "vue";
 
 const { msdl } = useScenarioStore();
 const dialogStore = useDialogStore();
+
+const myElement = computed(() => {
+  return { element: msdl.value?.scenarioId.element };
+});
 </script>
 <template>
   <div v-if="msdl">
@@ -30,8 +36,11 @@ const dialogStore = useDialogStore();
       <span>{{ msdl.scenarioId.version || "-" }}</span>
     </PanelDataGrid>
 
-    <Button variant="outline" class="mt-2" @click="dialogStore.toggleAssociationDialog()"
-      >Show associations</Button
-    >
+    <div class="flex items-center mt-2">
+      <Button variant="outline" class="" @click="dialogStore.toggleAssociationDialog()"
+        >Show associations</Button
+      >
+      <ShowXMLDialog :item="myElement" class="" />
+    </div>
   </div>
 </template>
