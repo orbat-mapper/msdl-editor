@@ -40,7 +40,13 @@ const myElement = computed(() => {
       <Button variant="outline" class="" @click="dialogStore.toggleAssociationDialog()"
         >Show associations</Button
       >
-      <ShowXMLDialog :item="myElement" class="" />
+    </div>
+    <div class="mt-4">
+      <h4 class="text-sm font-bold">Debugging</h4>
+      <div class="flex gap-2 mt-2">
+        <ShowXMLDialog :item="myElement" class="">ScenarioID</ShowXMLDialog>
+        <ShowXMLDialog :item="msdl" class="">MSDL (slow)</ShowXMLDialog>
+      </div>
     </div>
   </div>
 </template>

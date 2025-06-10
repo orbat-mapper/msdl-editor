@@ -14,6 +14,7 @@ import XmlBeautify from "xml-beautify";
 
 const props = defineProps<{
   item: { element?: Element };
+  title?: string;
 }>();
 
 const prettyXML = computed(() => {
@@ -25,22 +26,27 @@ const prettyXML = computed(() => {
     useSelfClosingElement: true,
   });
 });
+
+const dialogDescription = computed(() => {
+  if (!props.item.element || !(props.item.element instanceof Element)) {
+    return "No XML element available.";
+  }
+  return `XML for ${props.item.element.tagName} element.`;
+});
 </script>
 
 <template>
   <Dialog>
     <DialogTrigger as-child>
-      <Button variant="outline" size="icon"><CodeXmlIcon /></Button>
+      <Button variant="outline" :title><CodeXmlIcon /><slot /></Button>
     </DialogTrigger>
     <DialogContent class="w-auto sm:max-w-[calc(100%-8rem)]">
       <DialogHeader>
         <DialogTitle>XML preview</DialogTitle>
-        <DialogDescription> XML preview. </DialogDescription>
+        <DialogDescription>{{ dialogDescription }}</DialogDescription>
       </DialogHeader>
       <div class="max-h-[80vh] overflow-auto">
-        <code class="text-sm">
-          <pre>{{ prettyXML }}</pre>
-        </code>
+        <pre class="text-sm" tabindex="1">{{ prettyXML }}</pre>
       </div>
     </DialogContent>
   </Dialog>
