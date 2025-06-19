@@ -1,10 +1,11 @@
 import { computed, shallowRef, triggerRef } from "vue";
-import { MilitaryScenario, ScenarioId } from "@orbat-mapper/msdllib";
+import { Holding, MilitaryScenario, ScenarioId } from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
 import { parseFromString, xmlToString } from "@/utils.ts";
 import type { Position } from "geojson";
+import { createXMLElement } from "@orbat-mapper/msdllib/dist/lib/domutils";
 
 export interface MetaEntry<T = string> {
   label: T;
@@ -164,6 +165,23 @@ function updateItemLocation(objectHandle: string, newLocation: Position) {
   // console.warn("Not implemented yet: updateItemLocation", newLocation);
 }
 
+function updateHoldings(objectHandle: string, newHoldings: Partial<Holding>[]) {
+  if (!msdl.value) return;
+  const item = msdl.value.getUnitById(objectHandle) ?? msdl.value.getEquipmentById(objectHandle);
+  if (!item) {
+    console.warn(`Unit/EquipmentItem with object handle ${objectHandle} not found.`);
+    return;
+  }
+  const holdingObjects = newHoldings.map((h) => {
+    const e = createXMLElement("<Holding></Holding>");
+    const newHolding = new Holding(e);
+    newHolding.updateFromObject(h);
+    return newHolding;
+  });
+  item.holdings = holdingObjects;
+  triggerRef(msdl);
+}
+
 export function useScenarioStore() {
   const layerStore = useLayerStore();
   const selectStore = useSelectStore();
@@ -196,7 +214,7 @@ export function useScenarioStore() {
     redo,
     canUndo,
     canRedo,
-    modifyScenario: { updateScenarioId, updateForceSide, updateItemLocation },
+    modifyScenario: { updateScenarioId, updateForceSide, updateItemLocation, updateHoldings },
     isNETN,
   };
 }
