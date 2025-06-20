@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Holding, type EquipmentItem, type Unit } from "@orbat-mapper/msdllib";
+import { Holding, type EquipmentItem, type HoldingType, type Unit } from "@orbat-mapper/msdllib";
 import {
   Table,
   TableBody,
@@ -24,7 +24,7 @@ const props = defineProps<{
   item: Unit | EquipmentItem;
 }>();
 
-function onUpdate(data: Partial<Holding>[]) {
+function onUpdate(data: HoldingType[]) {
   toggleEditDialog();
   updateHoldings(props.item.objectHandle, data);
 }
@@ -51,6 +51,7 @@ function onUpdate(data: Partial<Holding>[]) {
       :parent-name="item.name"
       @cancel="toggleEditDialog"
       @update="onUpdate"
+      @update:open="toggleEditDialog"
     />
     <Table class="">
       <TableHeader>

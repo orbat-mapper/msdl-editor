@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Holding } from "@orbat-mapper/msdllib";
+import type { HoldingType } from "@orbat-mapper/msdllib";
 import {
   Dialog,
   DialogContent,
@@ -16,15 +16,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import { FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import FormFooter from "@/components/FormFooter.vue";
 import { Button } from "@/components/ui/button";
@@ -35,18 +27,18 @@ import * as z from "zod";
 
 const open = defineModel<boolean>("open", { required: true });
 
-const props = defineProps<{ holdings: Array<Partial<Holding>>; parentName: string }>();
+const props = defineProps<{ holdings: Array<HoldingType>; parentName: string }>();
 const emit = defineEmits<{
   (e: "cancel"): void;
-  (e: "update", value: Array<Partial<Holding>>): void;
+  (e: "update", value: Array<HoldingType>): void;
 }>();
 
 const formSchema = toTypedSchema(
   z.object({
     holdings: z.array(
       z.object({
-        nsnName: z.string().min(1, "Name is required"),
-        nsnCode: z.string(),
+        nsnName: z.string(),
+        nsnCode: z.string().min(1, "NSN Code is required"),
         onHandQuantity: z.number(),
       }),
     ),
@@ -63,7 +55,7 @@ const form = useForm({
 const { remove, push, fields } = useFieldArray("holdings");
 
 const onSubmit = form.handleSubmit((values) => {
-  console.log(JSON.stringify(values, null, 2));
+  console.log("Updating holdings");
   emit("update", values.holdings);
 });
 
@@ -98,9 +90,9 @@ console.log(`Dialog`);
           </TableHeader>
           <TableBody>
             <TableRow v-for="(field, i) in fields" :key="field.key">
-              <TableCell class="w-1/3">
+              <TableCell class="w-1/3 align-top">
                 <FormField
-                  v-slot="{ componentField }"
+                  v-slot="{ componentField, errorMessage }"
                   :name="`holdings[${i}].nsnName`"
                   :validate-on-blur="!form.isFieldDirty"
                 >
@@ -108,12 +100,13 @@ console.log(`Dialog`);
                     <FormControl>
                       <Input type="text" placeholder="" v-bind="componentField" />
                     </FormControl>
+                    <FormMessage v-if="errorMessage">{{ errorMessage }}</FormMessage>
                   </FormItem>
                 </FormField>
               </TableCell>
-              <TableCell class="w-1/3">
+              <TableCell class="w-1/3 align-top">
                 <FormField
-                  v-slot="{ componentField }"
+                  v-slot="{ componentField, errorMessage }"
                   :name="`holdings[${i}].nsnCode`"
                   :validate-on-blur="!form.isFieldDirty"
                 >
@@ -121,12 +114,13 @@ console.log(`Dialog`);
                     <FormControl>
                       <Input type="text" placeholder="" v-bind="componentField" />
                     </FormControl>
+                    <FormMessage v-if="errorMessage">{{ errorMessage }}</FormMessage>
                   </FormItem>
                 </FormField>
               </TableCell>
-              <TableCell class="w-1/3">
+              <TableCell class="w-1/3 align-top">
                 <FormField
-                  v-slot="{ componentField }"
+                  v-slot="{ componentField, errorMessage }"
                   :name="`holdings[${i}].onHandQuantity`"
                   :validate-on-blur="!form.isFieldDirty"
                 >
@@ -134,6 +128,7 @@ console.log(`Dialog`);
                     <FormControl>
                       <Input type="number" placeholder="" v-bind="componentField" />
                     </FormControl>
+                    <FormMessage v-if="errorMessage">{{ errorMessage }}</FormMessage>
                   </FormItem>
                 </FormField>
               </TableCell>
@@ -145,7 +140,10 @@ console.log(`Dialog`);
             </TableRow>
             <TableRow class="hover:!bg-transparent">
               <TableCell :colspan="4" class="text-center">
-                <Button variant="secondary" @click.stop="push({ nsnName: '', nsnCode: '', onHandQuantity: 0 })">
+                <Button
+                  variant="secondary"
+                  @click.stop="push({ nsnName: '', nsnCode: '', onHandQuantity: 0 })"
+                >
                   Add holding<CirclePlus />
                 </Button>
               </TableCell>
