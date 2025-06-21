@@ -12,6 +12,7 @@ import { useSelectStore } from "@/stores/selectStore.ts";
 import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
 import { parseFromString, xmlToString } from "@/utils.ts";
 import type { Position } from "geojson";
+import { useSideStore } from "@/stores/uiStore.ts";
 
 export interface MetaEntry<T = string> {
   label: T;
@@ -218,6 +219,8 @@ function setPrimarySide(objectHandleOrSide: string | ForceSide) {
     return;
   }
   msdl.value.primarySide = forceSide;
+  const scenarioKey = createScenarioKey(msdl.value);
+
   triggerRef(msdl);
 }
 
@@ -234,12 +237,28 @@ function setSideAffiliation(objectHandleOrSide: string | ForceSide, affiliation:
   triggerRef(msdl);
 }
 
+function createScenarioKey(scenario: MilitaryScenario): string {
+  return scenario.scenarioId.name + scenario.scenarioId.description;
+}
+
 export function useScenarioStore() {
   const layerStore = useLayerStore();
   const selectStore = useSelectStore();
+  const sideStore = useSideStore();
 
   function loadScenario(scenario: MilitaryScenario) {
     selectStore.clearActiveItem();
+    const scenarioKey = createScenarioKey(scenario);
+    if (scenarioKey in sideStore.primarySideMap) {
+      const primarySide = scenario.getForceSideById(sideStore.primarySideMap[scenarioKey]);
+      if (!primarySide) {
+        console.warn(
+          `Primary side with object handle ${sideStore.primarySideMap[scenarioKey]} not found.`,
+        );
+      } else {
+        scenario.primarySide = primarySide;
+      }
+    }
     msdl.value = scenario;
     layerStore.setSideLayers(scenario);
     undoStack.value = [];
@@ -271,7 +290,12 @@ export function useScenarioStore() {
       updateForceSide,
       updateItemLocation,
       updateHoldings,
-      setPrimarySide,
+      setPrimarySide: (side: ForceSide | string) => {
+        setPrimarySide(side);
+        const scenarioKey = createScenarioKey(msdl.value!);
+        const primarySideKey = typeof side === "string" ? side : side.objectHandle;
+        sideStore.primarySideMap[scenarioKey] = primarySideKey;
+      },
       setSideAffiliation,
     },
     isNETN,

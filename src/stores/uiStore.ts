@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { useToggle } from "@vueuse/core";
+import { useLocalStorage, useToggle } from "@vueuse/core";
 import { ref } from "vue";
 
 export const useUIStore = defineStore("uiStore", () => {
@@ -11,6 +11,7 @@ export const useUIStore = defineStore("uiStore", () => {
 
 export const useSideStore = defineStore("sideStore", () => {
   const hideEmptySides = ref(true);
+  const primarySideMap = useLocalStorage<Record<string, string>>("primarySideMap", {});
 
-  return { hideEmptySides };
+  return { hideEmptySides, primarySideMap };
 });
