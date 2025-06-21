@@ -13,7 +13,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { EllipsisVertical as DotsVerticalIcon } from "lucide-vue-next";
-import { computed, triggerRef } from "vue";
+import { computed } from "vue";
 import { type ForceSide, StandardIdentity } from "@orbat-mapper/msdllib";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
@@ -21,14 +21,11 @@ import { useSelectStore } from "@/stores/selectStore.ts";
 const props = defineProps<{
   side: ForceSide;
 }>();
-const { msdl } = useScenarioStore();
+const {
+  msdl,
+  modifyScenario: { setPrimarySide, setSideAffiliation },
+} = useScenarioStore();
 const selectStore = useSelectStore();
-
-function setPrimarySide() {
-  if (!msdl.value) return;
-  msdl.value.primarySide = props.side;
-  triggerRef(msdl);
-}
 
 function selectSide() {
   selectStore.activeItem = props.side;
@@ -37,8 +34,7 @@ function selectSide() {
 const affiliation = computed({
   get: (): string => (msdl.value && props.side.getAffiliation()) || StandardIdentity.Unknown,
   set: (v: string) => {
-    props.side.setAffiliation(v as StandardIdentity);
-    triggerRef(msdl);
+    setSideAffiliation(props.side, v as StandardIdentity);
   },
 });
 </script>
@@ -54,7 +50,9 @@ const affiliation = computed({
       <DropdownMenuLabel>ForceSide actions</DropdownMenuLabel>
       <DropdownMenuSeparator />
       <DropdownMenuItem @select.prevent="selectSide">View details</DropdownMenuItem>
-      <DropdownMenuItem @select.prevent="setPrimarySide">Set as primary side</DropdownMenuItem>
+      <DropdownMenuItem @select.prevent="setPrimarySide(side)"
+        >Set as primary side</DropdownMenuItem
+      >
       <DropdownMenuSub>
         <DropdownMenuSubTrigger>Set affiliation</DropdownMenuSubTrigger>
         <DropdownMenuContent>

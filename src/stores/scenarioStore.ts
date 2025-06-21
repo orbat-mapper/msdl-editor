@@ -1,5 +1,12 @@
 import { computed, shallowRef, triggerRef } from "vue";
-import { Holding, MilitaryScenario, ScenarioId, type HoldingType } from "@orbat-mapper/msdllib";
+import {
+  Holding,
+  MilitaryScenario,
+  ScenarioId,
+  type HoldingType,
+  type ForceSide,
+  type StandardIdentity,
+} from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
@@ -201,6 +208,32 @@ function updateHoldings(objectHandle: string, newHoldings: HoldingType[]) {
   triggerRef(msdl);
 }
 
+function setPrimarySide(objectHandleOrSide: string | ForceSide) {
+  if (!msdl.value) return;
+  const objectHandle =
+    typeof objectHandleOrSide === "string" ? objectHandleOrSide : objectHandleOrSide.objectHandle;
+  const forceSide = msdl.value.getForceSideById(objectHandle);
+  if (!forceSide) {
+    console.warn(`Force side with object handle ${objectHandle} not found.`);
+    return;
+  }
+  msdl.value.primarySide = forceSide;
+  triggerRef(msdl);
+}
+
+function setSideAffiliation(objectHandleOrSide: string | ForceSide, affiliation: StandardIdentity) {
+  if (!msdl.value) return;
+  const objectHandle =
+    typeof objectHandleOrSide === "string" ? objectHandleOrSide : objectHandleOrSide.objectHandle;
+  const forceSide = msdl.value.getForceSideById(objectHandle);
+  if (!forceSide) {
+    console.warn(`Force side with object handle ${objectHandle} not found.`);
+    return;
+  }
+  forceSide.setAffiliation(affiliation);
+  triggerRef(msdl);
+}
+
 export function useScenarioStore() {
   const layerStore = useLayerStore();
   const selectStore = useSelectStore();
@@ -233,7 +266,14 @@ export function useScenarioStore() {
     redo,
     canUndo,
     canRedo,
-    modifyScenario: { updateScenarioId, updateForceSide, updateItemLocation, updateHoldings },
+    modifyScenario: {
+      updateScenarioId,
+      updateForceSide,
+      updateItemLocation,
+      updateHoldings,
+      setPrimarySide,
+      setSideAffiliation,
+    },
     isNETN,
   };
 }
