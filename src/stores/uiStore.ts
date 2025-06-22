@@ -15,3 +15,19 @@ export const useSideStore = defineStore("sideStore", () => {
 
   return { hideEmptySides, primarySideMap };
 });
+
+export const useWidthStore = defineStore("panelWidth", {
+  state: () => ({
+    orbatPanelWidth: useLocalStorage("orbatPanelWidth", 400),
+    detailsWidth: useLocalStorage("detailsPanelWidth", 400),
+  }),
+  actions: {
+    resetOrbatPanelWidth() {
+      this.orbatPanelWidth = 400;
+    },
+
+    resetDetailsWidth() {
+      this.detailsWidth = 400;
+    },
+  },
+});

@@ -18,6 +18,8 @@ import EquipmentItemModelPanel from "@/components/EquipmentItemModelPanel.vue";
 import { isEquipmentItem, isForceSide, isUnit, isUnitOrEquipment } from "@/utils.ts";
 import DetailsPanelForceSide from "@/components/DetailsPanelForceSide.vue";
 import { useGetMapLocation } from "@/composables/geoMapLocation.ts";
+import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
+import { useWidthStore } from "@/stores/uiStore.ts";
 
 const props = defineProps<{
   item: Unit | EquipmentItem | ForceSide;
@@ -33,7 +35,7 @@ const {
 } = useScenarioStore();
 
 const selectStore = useSelectStore();
-
+const widthStore = useWidthStore();
 const {
   start: startGetLocation,
   isActive: isGetLocationActive,
@@ -78,7 +80,10 @@ function goUp() {
 </script>
 
 <template>
-  <Card class="text-sm bg-sidebar gap-0 backdrop-blur-lg relative min-w-[200px]">
+  <Card
+    class="text-sm bg-sidebar gap-0 backdrop-blur-lg relative overflow-auto"
+    :style="{ width: widthStore.detailsWidth + 'px' }"
+  >
     <header class="px-4 h-10 mt-4 flex justify-between">
       <div v-if="isUnitOrEquipment(item)" class="flex gap-2">
         <MilSymbol :sidc="item.sidc" :key="item.sidc" :size="16" />
@@ -176,5 +181,11 @@ function goUp() {
         <Button variant="link" type="button" @click="cancelGetLocation()">Cancel</Button>
       </div>
     </div>
+    <PanelResizeHandle
+      left
+      :width="widthStore.detailsWidth"
+      @update="widthStore.detailsWidth = $event"
+      @reset="widthStore.resetDetailsWidth()"
+    />
   </Card>
 </template>

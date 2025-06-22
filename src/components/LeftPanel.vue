@@ -3,21 +3,24 @@ import { ChevronsRight } from "lucide-vue-next";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabsmod";
 import SidePanel from "@/components/SidePanel.vue";
-import { useUIStore } from "@/stores/uiStore.ts";
+import { useUIStore, useWidthStore } from "@/stores/uiStore.ts";
 import CloseButton from "@/components/CloseButton.vue";
 import { Button } from "@/components/ui/button";
 import PanelMapDisplay from "@/components/PanelMapDisplay.vue";
 import PanelScenarioInfo from "@/components/PanelScenarioInfo.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import PanelScenarioDeployment from "@/components/PanelScenarioDeployment.vue";
+import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
 
 const uiStore = useUIStore();
+const widthStore = useWidthStore();
 const { msdl } = useScenarioStore();
 </script>
 <template>
   <aside
     v-if="uiStore.showLeftPanel"
-    class="h-full max-h-[90vh] w-96 bg-sidebar/95 backdrop-blur-sm pointer-events-auto border rounded-md relative"
+    class="h-full max-h-[90vh] bg-sidebar/95 backdrop-blur-sm pointer-events-auto border rounded-md relative overflow-auto"
+    :style="{ width: widthStore.orbatPanelWidth + 'px' }"
   >
     <Tabs default-value="orbat" class="flex flex-col h-full">
       <header class="flex-0 flex items-center justify-between w-full gap-2 p-2">
@@ -44,6 +47,11 @@ const { msdl } = useScenarioStore();
         </TabsContent>
       </ScrollArea>
     </Tabs>
+    <PanelResizeHandle
+      :width="widthStore.orbatPanelWidth"
+      @update="widthStore.orbatPanelWidth = $event"
+      @reset="widthStore.resetOrbatPanelWidth()"
+    />
   </aside>
   <Button
     v-else
