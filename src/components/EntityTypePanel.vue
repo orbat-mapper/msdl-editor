@@ -5,6 +5,7 @@ import { computed, watch, ref, type Ref } from "vue";
 import { SisoEnum } from "@siso-entity-type/lib";
 import { storeToRefs} from "pinia";
 import EntityTypeForm from "@/components/EntityTypeForm.vue";
+import EntityTypeSearch from "@/components/EntityTypeSearch.vue";
 
 import { Button } from '@/components/ui/button'
 import {
@@ -131,7 +132,7 @@ const populateBuilder = async (entType: string) => {
   await store.selectExtra(parts[6]!);
 };
 
-// Variable for the input field
+// Variable for the input field and search field
 const typeQuery = ref<string>("");
 
 // The 'set' button
@@ -199,7 +200,7 @@ const setLocalVariables = (entType: string) => {
             Edit
           </Button>
         </DialogTrigger>
-        <DialogContent class="sm:max-w-[425px]">
+        <DialogContent>
           <DialogHeader>
             <DialogTitle>Edit profile</DialogTitle>
             <DialogDescription>
@@ -235,7 +236,10 @@ const setLocalVariables = (entType: string) => {
           <PanelDataGrid class="mt-4" v-else>
             <span class="font-semibold">No entitytype provided</span>
           </PanelDataGrid>
-            <Separator />
+
+          <Label for="entityTypeNumber" class="text-nowrap">Search by description</Label>
+          <EntityTypeSearch :populate-builder="populateBuilder"></EntityTypeSearch>
+          <Separator/>
 
           <DialogFooter>
             <Input type="text" v-model="selectedEntityType" disabled/>

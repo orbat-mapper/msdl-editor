@@ -57,14 +57,14 @@ const selectedKindLabel = computed(() => {
   >
     <ComboboxAnchor as-child>
       <ComboboxTrigger as-child>
-        <Button variant="ghost" class="justify-between font-light size-full">
+        <Button variant="ghost" class="justify-between font-light size-full whitespace-normal text-left">
           {{ itemsMap[props.label as ItemMapKey].value.find((item : enumeration) => item.value === localVariable)?.title ?? `Unknown ${label.toLowerCase()} ${localVariable}` }}
           <ChevronsUpDown class="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </ComboboxTrigger>
     </ComboboxAnchor>
 
-    <ComboboxList class="font-light">
+    <ComboboxList class="font-light w-100">
       <div class="relative w-full max-w-sm items-center">
         <ComboboxInput 
           :display-value="() => selectedKindLabel"
