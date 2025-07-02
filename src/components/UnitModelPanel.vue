@@ -7,12 +7,20 @@ const props = defineProps<{
   unit: Unit;
 }>();
 
+const emit = defineEmits<{
+  (e: "update:unit", value: Unit): void;
+}>();
+
 const unitModel = computed(() => props.unit?.model ?? null);
 </script>
 <template>
   <div v-if="unitModel">
     <h4 class="text-sm font-bold mt-2">Unit Model</h4>
-    <EntityTypePanel v-if="unitModel?.entityType" :entity-type="unitModel.entityType">
+    <EntityTypePanel
+      v-if="unitModel?.entityType"
+      v-model="unitModel.entityType"
+      @update:model-value="emit('update:unit', unit)"
+    >
     </EntityTypePanel>
   </div>
   <div v-else>

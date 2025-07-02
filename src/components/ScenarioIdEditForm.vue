@@ -8,14 +8,21 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { toTypedSchema } from "@vee-validate/zod";
 import * as z from "zod";
 import { useForm } from "vee-validate";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import FormFooter from "@/components/FormFooter.vue";
 import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
+import { Calendar } from "lucide-vue-next";
 
-const props = defineProps<{ item: ScenarioId }>();
+type FormVariant = "new" | "edit";
+
+const props = withDefaults(defineProps<{ item: ScenarioId; variant?: FormVariant }>(), {
+  variant: "edit",
+});
 const emit = defineEmits<{
   (e: "cancel"): void;
   (e: "update", value: Partial<ScenarioIdType>): void;
@@ -23,7 +30,7 @@ const emit = defineEmits<{
 
 const formSchema = toTypedSchema(
   z.object({
-    name: z.string(),
+    name: z.string().min(1, "Name is required"),
     description: z.string(),
     modificationDate: z.string(),
     securityClassification: z.string(),
@@ -37,12 +44,16 @@ const form = useForm({
   initialValues: {
     name: props.item.name || "",
     description: props.item.description || "",
-    modificationDate: props.item.modificationDate ?? new Date().toISOString().split("T")[0],
+    modificationDate: props.item.modificationDate || "",
     securityClassification: props.item.securityClassification || "",
     type: props.item.type || "",
     version: props.item.version || "",
   },
 });
+
+function setCurrentDate() {
+  form.setFieldValue("modificationDate", new Date().toISOString().split("T")[0]);
+}
 
 const onSubmit = form.handleSubmit((values) => {
   emit("update", values);
@@ -95,7 +106,19 @@ const onSubmit = form.handleSubmit((values) => {
         <FormItem>
           <FormLabel>Modification date</FormLabel>
           <FormControl>
-            <Input type="text" placeholder="YYYY-MM-DD" v-bind="componentField" />
+            <div class="flex w-full max-w-sm items-center gap-1.5">
+              <Input type="text" placeholder="YYYY-MM-DD" v-bind="componentField" />
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger as-child>
+                    <Button variant="outline" size="icon" @click.prevent="setCurrentDate">
+                      <Calendar class="w-4 h-4" />
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent> Set to current date </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
           </FormControl>
           <FormDescription></FormDescription>
           <FormMessage />
@@ -120,7 +143,10 @@ const onSubmit = form.handleSubmit((values) => {
         </FormItem>
       </FormField>
 
-      <FormFooter @cancel="emit('cancel')" />
+      <FormFooter
+        @cancel="emit('cancel')"
+        :submit-text="variant == 'new' ? 'Create' : 'Save'"
+      />
     </form>
   </div>
 </template>

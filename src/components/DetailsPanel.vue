@@ -7,7 +7,7 @@ import { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
 import CloseButton from "@/components/CloseButton.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
@@ -77,6 +77,12 @@ function goUp() {
     selectStore.activeItem = parentItem;
   }
 }
+
+// Re-render XML preview component if the equipment entity type changes in the EquipmentItemModelPanel component
+const componentKeyXML = ref(0);
+const rerenderXMLpreview = () => {
+  componentKeyXML.value += 1;
+};
 </script>
 
 <template>
@@ -101,7 +107,7 @@ function goUp() {
       <Button variant="ghost" size="icon" @click="goUp" title="Go to parent"
         ><ArrowUpIcon
       /></Button>
-      <ShowXMLDialog :item="item">XML</ShowXMLDialog>
+      <ShowXMLDialog :item="item" :key="componentKeyXML">XML</ShowXMLDialog>
       <Button
         v-if="isUnitOrEquipment(item)"
         variant="ghost"
@@ -164,7 +170,7 @@ function goUp() {
           <TabsContent v-if="isEquipmentItem(item)" value="model">
             <div class="max-w-[40vw]">
               <div class="bg-muted p-2 overflow-auto">
-                <EquipmentItemModelPanel :equipment="item"> </EquipmentItemModelPanel>
+                <EquipmentItemModelPanel :equipment="item" @rerenderXMLpreview="rerenderXMLpreview"> </EquipmentItemModelPanel>
               </div>
             </div>
           </TabsContent>

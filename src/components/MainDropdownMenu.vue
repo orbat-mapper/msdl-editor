@@ -39,6 +39,9 @@ const dialogStore = useDialogStore();
       <DropdownMenuSub>
         <DropdownMenuSubTrigger>File</DropdownMenuSubTrigger>
         <DropdownMenuSubContent>
+          <DropdownMenuItem @select="dialogStore.toggleCreateMSDLDialog()"
+            >Create new MSDL...</DropdownMenuItem
+          >
           <DropdownMenuItem @click="dispatchAction('DownloadMSDL')">Download MSDL</DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem @click="dispatchAction('LoadMSDLFromFile')"

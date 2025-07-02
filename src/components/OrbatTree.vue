@@ -28,7 +28,7 @@ function onSelect(item: any) {
   >
     <TreeItem
       v-for="item in flattenItems"
-      v-slot="{ isExpanded }"
+      v-slot="{ isExpanded, handleToggle }"
       :key="item._id"
       :style="{ 'padding-left': `${item.level - 0.5}rem` }"
       v-bind="item.bind"
@@ -38,12 +38,14 @@ function onSelect(item: any) {
       @select="onSelect(item)"
     >
       <template v-if="item.hasChildren">
-        <ChevronRightIcon
-          class="size-6 text-gray-500 transition hover:font-medium hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-gray-100 mr-1"
-          :class="{
-            'rotate-90': isExpanded,
-          }"
-        />
+        <button type="button" tabindex="-1" @click.stop="handleToggle">
+          <ChevronRightIcon
+            class="size-6 text-gray-500 transition hover:font-medium hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-gray-100 mr-1"
+            :class="{
+              'rotate-90': isExpanded,
+            }"
+          />
+        </button>
       </template>
       <span v-else class="h-6 w-6 mr-1" />
       <div class="flex items-center gap-1">

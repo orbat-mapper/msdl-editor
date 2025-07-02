@@ -3,6 +3,7 @@ import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { toast } from "vue-sonner";
 import { useDialogStore } from "@/stores/dialogStore.ts";
 export type ScenarioAction =
+  | "CreateNewMSDL"
   | "LoadMSDLFromFile"
   | "DownloadMSDL"
   | "ExportKML"
@@ -15,6 +16,9 @@ export function useScenarioActions() {
 
   async function dispatchAction(action: ScenarioAction) {
     switch (action) {
+      case "CreateNewMSDL":
+        dialogStore.isCreateMSDLDialogOpen = true;
+        break;
       case "DownloadMSDL":
         if (!msdl.value) {
           return;

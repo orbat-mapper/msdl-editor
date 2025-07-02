@@ -13,6 +13,7 @@ import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
 import { parseFromString, xmlToString } from "@/utils.ts";
 import type { Position } from "geojson";
 import { useSideStore } from "@/stores/uiStore.ts";
+import type { MilitaryScenarioInputType } from "@orbat-mapper/msdllib/dist/lib/militaryscenario";
 
 export interface MetaEntry<T = string> {
   label: T;
@@ -273,11 +274,19 @@ export function useScenarioStore() {
     redoStack.value = [];
   }
 
+  function createScenario(scenarioInput?: MilitaryScenarioInputType) {
+    if (!scenarioInput) return;
+    clearScenario();
+    msdl.value = MilitaryScenario.createFromModel(scenarioInput);
+    triggerRef(msdl);
+  }
+
   const isNETN = computed(() => {
     return msdl.value?.isNETN ?? false;
   });
 
   return {
+    createScenario,
     loadScenario,
     clearScenario,
     msdl,

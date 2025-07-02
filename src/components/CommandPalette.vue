@@ -27,6 +27,10 @@ function dispatchAction(action: ScenarioAction) {
     <CommandList>
       <CommandEmpty>No results found.</CommandEmpty>
       <CommandGroup heading="Actions">
+        <CommandItem value="CREATE_NEW_MSDL" @select="dispatchAction('CreateNewMSDL')">
+          <Download />
+          <span>Create new MSDL...</span>
+        </CommandItem>
         <CommandItem value="LOAD_MSDL_FROM_FILE" @select="dispatchAction('LoadMSDLFromFile')">
           <Upload />
           <span>Load MSDL from file ...</span>
