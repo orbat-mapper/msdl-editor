@@ -20,6 +20,7 @@ import DetailsPanelForceSide from "@/components/DetailsPanelForceSide.vue";
 import { useGetMapLocation } from "@/composables/geoMapLocation.ts";
 import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
 import { useWidthStore } from "@/stores/uiStore.ts";
+import DetailsPanelEquipment from "@/components/DetailsPanelEquipment.vue";
 
 const props = defineProps<{
   item: Unit | EquipmentItem | ForceSide;
@@ -146,16 +147,7 @@ const rerenderXMLpreview = () => {
             >
           </TabsContent>
           <TabsContent v-if="isUnit(item)" value="equipment" class="p-4">
-            <ul class="list-disc pl-4">
-              <li
-                v-for="eq in item.equipment"
-                :key="eq.objectHandle"
-                class="flex items-center gap-2"
-              >
-                <MilSymbol :sidc="eq.sidc" :size="16" />
-                <Button variant="link" size="sm" @click="emit('flyTo', eq)">{{ eq.label }}</Button>
-              </li>
-            </ul>
+            <DetailsPanelEquipment :item="item" @flyTo="emit('flyTo', $event)" />
           </TabsContent>
           <TabsContent v-if="isNETN && isUnitOrEquipment(item)" value="holdings" class="p-4">
             <DetailsPanelHoldings :item="item" />
