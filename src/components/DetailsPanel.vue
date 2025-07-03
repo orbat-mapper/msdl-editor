@@ -114,7 +114,7 @@ const rerenderXMLpreview = () => {
         size="icon"
         @click="startGetLocation()"
         :disabled="isGetLocationActive"
-        title="Get location of item"
+        title="Set location of item"
         ><LocateFixedIcon
       /></Button>
     </div>
