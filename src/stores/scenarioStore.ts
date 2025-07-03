@@ -20,9 +20,7 @@ import { parseFromString, xmlToString } from "@/utils.ts";
 import type { Position } from "geojson";
 import { useSideStore } from "@/stores/uiStore.ts";
 import type { MilitaryScenarioInputType } from "@orbat-mapper/msdllib/dist/lib/militaryscenario";
-import type {
-  UnitEquipmentInterface,
-} from "@orbat-mapper/msdllib/dist/lib/common";
+import type { UnitEquipmentInterface } from "@orbat-mapper/msdllib/dist/lib/common";
 
 export interface MetaEntry<T = string> {
   label: T;
