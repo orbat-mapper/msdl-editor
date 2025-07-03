@@ -1,8 +1,6 @@
 name: autofix.ci
 on:
   pull_request:
-  push:
-    branches: [ "main" ]
 permissions:
   contents: read
 
@@ -14,6 +12,6 @@ jobs:
       - uses: actions/setup-node@v4
 
       - run: npm ci
-      - run: npx prettier --write .
+      - run: npm run format
    
       - uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27
