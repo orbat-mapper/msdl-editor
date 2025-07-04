@@ -10,6 +10,7 @@ import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import MapContextMenu from "@/components/MapContextMenu.vue";
 import type { MapContextMenuEvent } from "@/components/types.ts";
 import { useUIStore } from "@/stores/uiStore.ts";
+import { getStyleForBaseLayer, useMapLayerStore } from "@/stores/mapLayerStore.ts";
 
 const props = defineProps<{ mlMap: MlMap }>();
 const emit = defineEmits(["showContextMenu"]);
@@ -22,6 +23,7 @@ const store = useLayerStore();
 const mapSettings = useMapSettingsStore();
 const selectStore = useSelectStore();
 const uiStore = useUIStore();
+const mapLayerStore = useMapLayerStore();
 
 const sides = computed(() => {
   return sortBy(msdl.value?.sides ?? [], "name").filter(
@@ -52,6 +54,34 @@ watchEffect(() => {
   mlMap.showTileBoundaries = mapSettings.showTileBoundaries;
   mlMap.showOverdrawInspector = mapSettings.showOverdrawInspector;
 });
+
+watch(
+  () => mapLayerStore.baseLayer,
+  (baseLayer) => {
+    const { mlMap } = props;
+    const newStyle = getStyleForBaseLayer(baseLayer);
+    // filter keys that start with 'msdl-' from oldBaseLayer
+
+    mlMap.setStyle(newStyle, {
+      diff: false,
+      transformStyle: (previousStyle, nextStyle) => {
+        if (!previousStyle) return nextStyle;
+        const msdlSources = Object.fromEntries(
+          Object.entries(previousStyle.sources).filter(([key]) => key.startsWith("msdl-")),
+        );
+        const msdlLayers = previousStyle.layers.filter((layer) => layer.id.startsWith("msdl-"));
+
+        return {
+          glyphs: previousStyle.glyphs,
+          sprite: previousStyle.sprite ?? "",
+          ...nextStyle,
+          sources: { ...nextStyle.sources, ...msdlSources },
+          layers: [...nextStyle.layers, ...msdlLayers],
+        };
+      },
+    });
+  },
+);
 
 function setTextField() {
   const mlMap = props.mlMap;
@@ -97,7 +127,6 @@ watch([() => store.showSymbolOutline, () => store.symbolSize], () => {
     .listImages()
     .filter(checkIfSymbolCode)
     .forEach((i) => {
-      console.log("image", i);
       mlMap.removeImage(i);
     });
 });
