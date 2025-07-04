@@ -40,7 +40,7 @@ watchEffect(() => {
     includeUnits: store.showUnits,
     includeEquipment: store.showEquipment,
   });
-  const source = props.mlMap.getSource("sides") as GeoJSONSource;
+  const source = props.mlMap.getSource("msdl-sides") as GeoJSONSource;
   if (!source) return;
   source.setData(featureCollection as never);
 });
@@ -56,9 +56,9 @@ watchEffect(() => {
 function setTextField() {
   const mlMap = props.mlMap;
   if (store.showLabels) {
-    mlMap.setLayoutProperty("sides", "text-field", ["get", "label"]);
+    mlMap.setLayoutProperty("msdl-sides", "text-field", ["get", "label"]);
   } else {
-    mlMap.setLayoutProperty("sides", "text-field", null);
+    mlMap.setLayoutProperty("msdl-sides", "text-field", null);
   }
 }
 
@@ -73,15 +73,15 @@ watch(
   () => store.showIconAnchors,
   (v) => {
     const mlMap = props.mlMap;
-    const hasLayer = !!mlMap.getLayer("points");
+    const hasLayer = !!mlMap.getLayer("msdl-points");
     if (!v) {
-      if (hasLayer) mlMap.removeLayer("points");
+      if (hasLayer) mlMap.removeLayer("msdl-points");
     } else {
       if (hasLayer) return;
       mlMap.addLayer({
-        id: "points",
+        id: "msdl-points",
         type: "circle",
-        source: "sides",
+        source: "msdl-sides",
         paint: {
           "circle-radius": 5,
           "circle-color": "#3b4fe4",
@@ -112,7 +112,7 @@ function addSidesToMap(map: MlMap) {
     includeUnits: store.showUnits,
     includeEquipment: store.showEquipment,
   });
-  map.addSource("sides", {
+  map.addSource("msdl-sides", {
     type: "geojson",
     data: featureCollection as never,
   });
@@ -133,9 +133,9 @@ function addSidesToMap(map: MlMap) {
   });
 
   map.addLayer({
-    id: "sides",
+    id: "msdl-sides",
     type: "symbol",
-    source: "sides",
+    source: "msdl-sides",
     layout: {
       "icon-image": ["case", ["==", ["get", "sidc"], ""], "10011500002201000000", ["get", "sidc"]],
       "text-font": ["Noto Sans Italic"],
@@ -150,7 +150,7 @@ function addSidesToMap(map: MlMap) {
 
   // When a click event occurs on a feature in the places layer, open a popup at the
   // location of the feature, with description HTML from its properties.
-  clickSub = map.on("click", "sides", (e) => {
+  clickSub = map.on("click", "msdl-sides", (e) => {
     if (!e.features) return;
 
     if (e.features[0].geometry.type !== "Point") {
@@ -164,20 +164,20 @@ function addSidesToMap(map: MlMap) {
   });
 
   // Change the cursor to a pointer when the mouse is over the places layer.
-  map.on("mouseenter", "sides", () => {
+  map.on("mouseenter", "msdl-sides", () => {
     if (!uiStore.hoverEnabled) return;
     map.getCanvas().style.cursor = "pointer";
   });
 
   // Change it back to a pointer when it leaves.
-  map.on("mouseleave", "sides", () => {
+  map.on("mouseleave", "msdl-sides", () => {
     if (!uiStore.hoverEnabled) return;
     map.getCanvas().style.cursor = "";
   });
 
   contextmenuSub = map.on("contextmenu", (ev) => {
     const features = map.queryRenderedFeatures(ev.point, {
-      layers: ["sides"],
+      layers: ["msdl-sides"],
     });
     mapEvent.value = {
       x: ev.point.x,
