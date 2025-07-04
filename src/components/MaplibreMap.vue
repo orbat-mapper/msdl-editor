@@ -11,27 +11,7 @@ let mlMap: MlMap;
 onMounted(async () => {
   mlMap = new MlMap({
     container: mapContainerElement.value as HTMLElement,
-    // style: "https://demotiles.maplibre.org/style.json", // style URL
     style: "https://tiles.openfreemap.org/styles/positron", // style URL
-    // style: {
-    //   version: 8,
-    //   sources: {
-    //     osm: {
-    //       type: "raster",
-    //       tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-    //       tileSize: 256,
-    //       attribution: "&copy; OpenStreetMap Contributors",
-    //       maxzoom: 19,
-    //     },
-    //   },
-    //   layers: [
-    //     {
-    //       id: "osm",
-    //       type: "raster",
-    //       source: "osm",
-    //     },
-    //   ],
-    // },
     center: [0, 0], // starting position [lng, lat]
     zoom: 3, // starting zoom
   });

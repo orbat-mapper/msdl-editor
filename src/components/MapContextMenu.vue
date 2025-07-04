@@ -9,6 +9,8 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuSub,
   DropdownMenuSubContent,
@@ -27,6 +29,7 @@ import { Badge } from "@/components/ui/badge";
 import type { LngLatElevationTuple, LngLatTuple } from "@orbat-mapper/msdllib";
 import YesNoDialog from "@/components/YesNoDialog.vue";
 import type { TacticalJson } from "@orbat-mapper/msdllib/dist/lib/common";
+import { mapProviders, useMapLayerStore } from "@/stores/mapLayerStore.ts";
 
 const showConfirmDeleteDialog = ref(false);
 const eventItems = ref([] as TacticalJson[]);
@@ -39,6 +42,7 @@ const {
   msdl,
   modifyScenario: { addUnit, addEquipmentItem, removeUnit, removeEquipmentItem },
 } = useScenarioStore();
+const mapLayerStore = useMapLayerStore();
 
 const clickPosition = computed(() => {
   if (!props.event) return [0, 0];
@@ -192,6 +196,21 @@ function cancelDelete() {
         >Delete
       </DropdownMenuItem>
       <DropdownMenuSeparator v-if="event?.units?.length || event?.equipment?.length" />
+      <DropdownMenuSub>
+        <DropdownMenuSubTrigger>Map base layer</DropdownMenuSubTrigger>
+        <DropdownMenuSubContent>
+          <DropdownMenuRadioGroup v-model="mapLayerStore.baseLayer">
+            <DropdownMenuRadioItem
+              v-for="{ label, value } in mapProviders"
+              :key="value"
+              :value
+              @select.prevent
+            >
+              {{ label }}
+            </DropdownMenuRadioItem>
+          </DropdownMenuRadioGroup>
+        </DropdownMenuSubContent>
+      </DropdownMenuSub>
     </DropdownMenuContent>
   </DropdownMenu>
   <YesNoDialog
