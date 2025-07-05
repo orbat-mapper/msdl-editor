@@ -7,6 +7,15 @@ jobs:
   productionPromotion:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Ensure deploy branch exists and check it out
+        run: |
+          git fetch origin deploy:deploy || git checkout -b deploy
+          git checkout deploy
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
