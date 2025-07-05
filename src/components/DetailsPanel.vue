@@ -108,7 +108,6 @@ const rerenderXMLpreview = () => {
       <Button variant="ghost" size="icon" @click="goUp" title="Go to parent"
         ><ArrowUpIcon
       /></Button>
-      <ShowXMLDialog :item="item" :key="componentKeyXML">XML</ShowXMLDialog>
       <Button
         v-if="isUnitOrEquipment(item)"
         variant="ghost"
@@ -118,6 +117,7 @@ const rerenderXMLpreview = () => {
         title="Set location of item"
         ><LocateFixedIcon
       /></Button>
+      <ShowXMLDialog :item="item" :key="componentKeyXML">XML</ShowXMLDialog>
     </div>
     <Tabs default-value="info" class="mt-0">
       <TabsList class="w-full flex">
