@@ -26,4 +26,3 @@ jobs:
           title: 'Promote main to deploy'
           body: 'Automated PR to promote main changes to deploy branch'
           base: deploy
-          head: main
