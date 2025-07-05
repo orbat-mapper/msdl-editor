@@ -4,6 +4,8 @@ import {
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuSub,
@@ -17,6 +19,7 @@ import { useDialogStore } from "@/stores/dialogStore.ts";
 import { useLayerStore, useMapSettingsStore } from "@/stores/layerStore.ts";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { useScenarioActions } from "@/composables/scenarioActions.ts";
+import { mapProviders, useMapLayerStore } from "@/stores/mapLayerStore.ts";
 
 const store = useLayerStore();
 const mapSettings = useMapSettingsStore();
@@ -24,6 +27,7 @@ const { msdl, undo, redo, canUndo, canRedo } = useScenarioStore();
 const { dispatchAction } = useScenarioActions();
 
 const dialogStore = useDialogStore();
+const mapLayerStore = useMapLayerStore();
 </script>
 <template>
   <DropdownMenu>
@@ -76,6 +80,21 @@ const dialogStore = useDialogStore();
         </DropdownMenuSubContent>
       </DropdownMenuSub>
       <DropdownMenuSeparator />
+      <DropdownMenuSub>
+        <DropdownMenuSubTrigger>Map baselayer</DropdownMenuSubTrigger>
+        <DropdownMenuSubContent>
+          <DropdownMenuRadioGroup v-model="mapLayerStore.baseLayer">
+            <DropdownMenuRadioItem
+              v-for="{ label, value } in mapProviders"
+              :key="value"
+              :value
+              @select.prevent
+            >
+              {{ label }}
+            </DropdownMenuRadioItem>
+          </DropdownMenuRadioGroup>
+        </DropdownMenuSubContent>
+      </DropdownMenuSub>
       <DropdownMenuSub>
         <DropdownMenuSubTrigger :disabled="!msdl">Map debugging</DropdownMenuSubTrigger>
         <DropdownMenuSubContent>

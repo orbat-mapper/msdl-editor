@@ -197,7 +197,7 @@ function cancelDelete() {
       </DropdownMenuItem>
       <DropdownMenuSeparator v-if="event?.units?.length || event?.equipment?.length" />
       <DropdownMenuSub>
-        <DropdownMenuSubTrigger>Map base layer</DropdownMenuSubTrigger>
+        <DropdownMenuSubTrigger>Map baselayer</DropdownMenuSubTrigger>
         <DropdownMenuSubContent>
           <DropdownMenuRadioGroup v-model="mapLayerStore.baseLayer">
             <DropdownMenuRadioItem

@@ -6,7 +6,7 @@ import type { StyleSpecification } from "maplibre-gl";
 export type BaseLayer = "none" | "osm" | "satellite" | "default" | "demo";
 
 export const mapProviders: EnumItem<BaseLayer>[] = [
-  { value: "default", label: "Default" },
+  { value: "default", label: "OpenFreeMap" },
   { value: "osm", label: "OpenStreetMap" },
   { value: "satellite", label: "ESRI World imagery" },
   { value: "demo", label: "Demo tiles" },
