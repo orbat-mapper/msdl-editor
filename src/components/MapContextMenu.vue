@@ -83,8 +83,16 @@ function returnMapProviders(lonLat: Position, zoomLevel = 15) {
   ];
 }
 
-function onUnitSelect(activeItemId?: string) {
+function test(event: MouseEvent) {
+  console.log("test", event.shiftKey);
+  // This is a workaround to prevent the dropdown menu from closing when clicking on the map
+  // It is not ideal, but it works for now.
+  event.stopPropagation();
+}
+
+function onUnitSelect(activeItemId?: string, event?: MouseEvent) {
   if (!activeItemId) return;
+  console.log("onUnitSelect", activeItemId, event);
   selectStore.activeItem =
     (msdl.value?.getUnitById(activeItemId) || msdl.value?.getEquipmentById(activeItemId)) ?? null;
 }
@@ -184,7 +192,8 @@ function cancelDelete() {
           <DropdownMenuItem
             v-for="item in event.equipment"
             :key="item.id"
-            @select.prevent="onUnitSelect(item.id)"
+            @select.prevent="onUnitSelect(item.id, $event)"
+            @click.prevent="test"
           >
             <MilSymbol :sidc="item.sidc" /><span class="">{{ item.label }}</span>
           </DropdownMenuItem>
