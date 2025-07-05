@@ -9,16 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: deploy
-
-      - name: Update deploy branch to match main
-        run: |
-          git fetch origin main:main
-          git reset --hard origin/main
-
-      - name: Push changes to deploy branch
-        run: |
-          git push origin HEAD:deploy
+          ref: main
 
       - name: Create Pull Request from main to deploy
         uses: peter-evans/create-pull-request@v7
@@ -26,3 +17,4 @@ jobs:
           title: 'Promote main to deploy'
           body: 'Automated PR to promote main changes to deploy branch'
           base: deploy
+          branch: main
