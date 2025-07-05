@@ -1,8 +1,10 @@
 name: Create production promotion pull request
+
 on:
   push:
     branches:
       - main
+
 jobs:
   productionPromotion:
     runs-on: ubuntu-latest
@@ -17,4 +19,4 @@ jobs:
           title: 'Promote main to deploy'
           body: 'Automated PR to promote main changes to deploy branch'
           base: deploy
-          branch: main
+          branch: promote-main-to-deploy
