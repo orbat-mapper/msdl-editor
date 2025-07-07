@@ -170,7 +170,10 @@ function cancelDelete() {
             :key="item.id"
             @select.prevent="onUnitSelect(item.id)"
           >
-            <MilSymbol :sidc="item.sidc" /><span class="">{{ item.label }}</span>
+            <MilSymbol :sidc="item.sidc" /><span
+              :class="item.id === selectStore.activeItem?.objectHandle ? 'font-bold' : ''"
+              >{{ item.label }}</span
+            >
           </DropdownMenuItem>
         </DropdownMenuSubContent> </DropdownMenuSub
       ><DropdownMenuSub v-if="event?.equipment?.length">
@@ -186,7 +189,10 @@ function cancelDelete() {
             :key="item.id"
             @select.prevent="onUnitSelect(item.id)"
           >
-            <MilSymbol :sidc="item.sidc" /><span class="">{{ item.label }}</span>
+            <MilSymbol :sidc="item.sidc" /><span
+              :class="item.id === selectStore.activeItem?.objectHandle ? 'font-bold' : ''"
+              >{{ item.label }}</span
+            >
           </DropdownMenuItem>
         </DropdownMenuSubContent>
       </DropdownMenuSub>
