@@ -15,6 +15,7 @@ import HoldingsEditDialog from "@/components/HoldingsEditDialog.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 
 const {
+  msdl,
   modifyScenario: { updateHoldings },
 } = useScenarioStore();
 
@@ -23,6 +24,11 @@ const [showEditDialog, toggleEditDialog] = useToggle(false);
 const props = defineProps<{
   item: Unit | EquipmentItem;
 }>();
+
+function holdings(): Holding[] {
+  const item = msdl.value?.getUnitOrEquipmentById(props.item?.objectHandle) ?? null;
+  return item?.holdings ?? [];
+}
 
 function onUpdate(data: HoldingType[]) {
   toggleEditDialog();
@@ -46,14 +52,14 @@ function onUpdate(data: HoldingType[]) {
     </div>
     <HoldingsEditDialog
       v-if="showEditDialog"
-      :holdings="item.holdings"
+      :holdings="holdings()"
       :open="showEditDialog"
       :parent-name="item.name"
       @cancel="toggleEditDialog"
       @update="onUpdate"
       @update:open="toggleEditDialog"
     />
-    <Table class="">
+    <Table v-if="holdings().length > 0">
       <TableHeader>
         <TableRow>
           <TableHead>Name</TableHead>
@@ -62,12 +68,15 @@ function onUpdate(data: HoldingType[]) {
         </TableRow>
       </TableHeader>
       <TableBody>
-        <TableRow v-for="(holding, i) in item.holdings" :key="i">
+        <TableRow v-for="(holding, i) in holdings()" :key="i">
           <TableCell class="w-1/3">{{ holding.nsnName }}</TableCell>
           <TableCell class="w-1/3">{{ holding.nsnCode }}</TableCell>
           <TableCell class="w-1/3">{{ holding.onHandQuantity }}</TableCell>
         </TableRow>
       </TableBody>
     </Table>
+    <div class="flex items-center justify-center" v-else>
+      <h4 class="text-sm font-bold mt-2">No holdings present</h4>
+    </div>
   </div>
 </template>

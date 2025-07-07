@@ -85,8 +85,7 @@ function returnMapProviders(lonLat: Position, zoomLevel = 15) {
 
 function onUnitSelect(activeItemId?: string) {
   if (!activeItemId) return;
-  selectStore.activeItem =
-    (msdl.value?.getUnitById(activeItemId) || msdl.value?.getEquipmentById(activeItemId)) ?? null;
+  selectStore.activeItem = msdl.value?.getUnitOrEquipmentById(activeItemId) ?? null;
 }
 
 function createEquipment(pos: number[]) {

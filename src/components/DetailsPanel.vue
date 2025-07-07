@@ -7,7 +7,7 @@ import { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
 import CloseButton from "@/components/CloseButton.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
-import { computed, ref } from "vue";
+import { computed } from "vue";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
@@ -78,12 +78,6 @@ function goUp() {
     selectStore.activeItem = parentItem;
   }
 }
-
-// Re-render XML preview component if the equipment entity type changes in the EquipmentItemModelPanel component
-const componentKeyXML = ref(0);
-const rerenderXMLpreview = () => {
-  componentKeyXML.value += 1;
-};
 </script>
 
 <template>
@@ -117,7 +111,7 @@ const rerenderXMLpreview = () => {
         title="Set location of item"
         ><LocateFixedIcon
       /></Button>
-      <ShowXMLDialog :item="item" :key="componentKeyXML">XML</ShowXMLDialog>
+      <ShowXMLDialog :item="item">XML</ShowXMLDialog>
     </div>
     <Tabs default-value="info" class="mt-0">
       <TabsList class="w-full flex">
@@ -162,8 +156,7 @@ const rerenderXMLpreview = () => {
           <TabsContent v-if="isEquipmentItem(item)" value="model">
             <div class="max-w-[40vw]">
               <div class="bg-muted p-2 overflow-auto">
-                <EquipmentItemModelPanel :equipment="item" @rerenderXMLpreview="rerenderXMLpreview">
-                </EquipmentItemModelPanel>
+                <EquipmentItemModelPanel :equipment="item"> </EquipmentItemModelPanel>
               </div>
             </div>
           </TabsContent>

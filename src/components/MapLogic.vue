@@ -188,8 +188,7 @@ function addSidesToMap(map: MlMap) {
 
     const activeItemId = e.features[0].properties.id as string;
     if (!activeItemId) return;
-    selectStore.activeItem =
-      (msdl.value?.getUnitById(activeItemId) || msdl.value?.getEquipmentById(activeItemId)) ?? null;
+    selectStore.activeItem = msdl.value?.getUnitOrEquipmentById(activeItemId) ?? null;
   });
 
   // Change the cursor to a pointer when the mouse is over the places layer.

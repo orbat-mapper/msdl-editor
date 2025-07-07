@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { HoldingType } from "@orbat-mapper/msdllib";
+import type { Holding, HoldingType } from "@orbat-mapper/msdllib";
 import {
   Dialog,
   DialogContent,
@@ -27,7 +27,7 @@ import * as z from "zod";
 
 const open = defineModel<boolean>("open", { required: true });
 
-const props = defineProps<{ holdings: Array<HoldingType>; parentName: string }>();
+const props = defineProps<{ holdings: Array<Holding>; parentName: string }>();
 const emit = defineEmits<{
   (e: "cancel"): void;
   (e: "update", value: Array<HoldingType>): void;
@@ -55,7 +55,6 @@ const form = useForm({
 const { remove, push, fields } = useFieldArray("holdings");
 
 const onSubmit = form.handleSubmit((values) => {
-  console.log("Updating holdings");
   emit("update", values.holdings);
 });
 
@@ -68,7 +67,6 @@ form.resetForm({
     })),
   },
 });
-console.log(`Dialog`);
 </script>
 
 <template>
