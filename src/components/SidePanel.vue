@@ -111,7 +111,7 @@ const toggleSide = (id: string) => {
   </Accordion>
   <div v-if="msdl">
     <div class="m-4">
-      <Button variant="secondary" @click="toggleLayers()">Toggle layers visibility</Button>
+      <Button variant="secondary" @click="toggleLayers()">Toggle all side visibilities</Button>
     </div>
   </div>
 </template>

@@ -9,3 +9,9 @@ export type MapContextMenuEvent = {
   units?: TacticalJson[];
   equipment?: TacticalJson[];
 };
+
+export type EnumItem<G = string> = {
+  value: G;
+  label: string;
+  description?: string;
+};
