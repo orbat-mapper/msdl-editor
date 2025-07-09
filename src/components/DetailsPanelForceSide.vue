@@ -7,7 +7,6 @@ import { PencilIcon } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 import ForceSideEditForm from "@/components/ForceSideEditForm.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
-import { computed } from "vue";
 
 const {
   modifyScenario: { updateForceSide },

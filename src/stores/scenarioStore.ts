@@ -1,26 +1,29 @@
 import { computed, shallowRef, triggerRef } from "vue";
 import {
+  ForceSide,
   Holding,
   MilitaryScenario,
   ScenarioId,
-  type HoldingType,
-  type ForceSide,
-  type StandardIdentity,
   Unit,
   UnitDisposition,
-  type LngLatTuple,
-  type LngLatElevationTuple,
   EquipmentItem,
   EquipmentItemDisposition,
 } from "@orbat-mapper/msdllib";
+import type {
+  ForceSideType,
+  LngLatElevationTuple,
+  LngLatTuple,
+  StandardIdentity,
+  HoldingType,
+  MilitaryScenarioInputType,
+  ScenarioIdType,
+  UnitEquipmentInterface,
+} from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
-import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
 import { parseFromString, xmlToString } from "@/utils.ts";
 import type { Position } from "geojson";
 import { useSideStore } from "@/stores/uiStore.ts";
-import type { MilitaryScenarioInputType } from "@orbat-mapper/msdllib/dist/lib/militaryscenario";
-import type { UnitEquipmentInterface } from "@orbat-mapper/msdllib/dist/lib/common";
 import type {
   EquipmentModel,
   EquipmentModelType,
