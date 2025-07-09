@@ -1,17 +1,18 @@
 <script setup lang="ts">
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
 import { computed, ref } from "vue";
-import { ScenarioId, type ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
 import ScenarioIdEditForm from "@/components/ScenarioIdEditForm.vue";
-import type { MilitaryScenarioInputType } from "@orbat-mapper/msdllib/dist/lib/militaryscenario";
+import {
+  ScenarioId,
+  type MilitaryScenarioInputType,
+  type ScenarioIdType,
+} from "@orbat-mapper/msdllib";
 
 const emit = defineEmits<{ created: [scenario: MilitaryScenarioInputType | undefined] }>();
 

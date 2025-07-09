@@ -9,6 +9,7 @@ import { ChevronDown, TableOfContentsIcon as SelectIcon } from "lucide-vue-next"
 import { Switch } from "@/components/ui/switch";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import ForceSideMenu from "@/components/ForceSideMenu.vue";
+import CreateNewForceSideDialog from "@/components/CreateNewForceSideDialog.vue";
 import { Badge } from "@/components/ui/badge";
 import OrbatTree from "@/components/OrbatTree.vue";
 import { computed } from "vue";
@@ -18,12 +19,17 @@ import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import SidePanelDropdown from "@/components/SidePanelDropdown.vue";
 import { useSideStore } from "@/stores/uiStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
+import { useDialogStore } from "@/stores/dialogStore";
 
-const { msdl } = useScenarioStore();
+const {
+  msdl,
+  modifyScenario: { addForceSide },
+} = useScenarioStore();
 const selectStore = useSelectStore();
 
 const layerStore = useLayerStore();
 const sideStore = useSideStore();
+const dialogStore = useDialogStore();
 
 const sides = computed(() => {
   if (sideStore.hideEmptySides) {
@@ -52,17 +58,25 @@ const toggleSide = (id: string) => {
     layerStore.layers.add(id);
   }
 };
+
+function createForceSide() {
+  dialogStore.toggleCreateForceSideDialog();
+}
 </script>
 
 <template>
   <header class="flex items-center justify-between px-4 mt-1">
     <h3 class="text-xs/6 font-semibold uppercase">Sides</h3>
-    <SidePanelDropdown @toggleVisibility="toggleLayers" />
+    <SidePanelDropdown @toggleVisibility="toggleLayers" @createForceSide="createForceSide" />
   </header>
+  <CreateNewForceSideDialog
+    v-model:open="dialogStore.isCreateForceSideDialogOpen"
+    @created="addForceSide"
+  />
   <Accordion type="multiple" class="mt-2">
     <AccordionItem v-for="side in sides" :key="side.objectHandle" :value="side.objectHandle">
-      <AccordionTrigger class="bg-card-foreground/5 py-1 rounded-none px-4 group"
-        ><div class="flex items-center gap-2 h-9">
+      <AccordionTrigger class="bg-card-foreground/5 py-1 rounded-none px-4 group">
+        <div class="flex items-center gap-2 h-9">
           <span class="font-medium">{{ side.name }}</span
           ><Badge v-if="side === msdl?.primarySide">Primary</Badge>
         </div>
