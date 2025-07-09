@@ -8,7 +8,11 @@ import {
 } from "@/components/ui/dialog";
 import { computed, ref } from "vue";
 import ScenarioIdEditForm from "@/components/ScenarioIdEditForm.vue";
-import { ScenarioId, type MilitaryScenarioInputType, type ScenarioIdType } from "@orbat-mapper/msdllib";
+import {
+  ScenarioId,
+  type MilitaryScenarioInputType,
+  type ScenarioIdType,
+} from "@orbat-mapper/msdllib";
 
 const emit = defineEmits<{ created: [scenario: MilitaryScenarioInputType | undefined] }>();
 
