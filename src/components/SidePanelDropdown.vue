@@ -9,13 +9,15 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { EyeIcon } from "lucide-vue-next";
+import { EyeIcon, PlusIcon } from "lucide-vue-next";
 import { EllipsisVertical as DotsVerticalIcon } from "lucide-vue-next";
 import { useSideStore } from "@/stores/uiStore.ts";
+import { useScenarioStore } from "@/stores/scenarioStore";
 
-const emit = defineEmits(["toggleVisibility"]);
+const emit = defineEmits(["toggleVisibility", "createForceSide"]);
 
 const sideStore = useSideStore();
+const { msdl } = useScenarioStore();
 </script>
 
 <template>
@@ -27,6 +29,11 @@ const sideStore = useSideStore();
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end">
       <DropdownMenuLabel>Side actions</DropdownMenuLabel>
+      <DropdownMenuItem @select="emit('createForceSide')" :disabled="!msdl">
+        <PlusIcon />
+        Create Force Side
+      </DropdownMenuItem>
+      <DropdownMenuSeparator />
       <DropdownMenuItem @select.prevent="emit('toggleVisibility')">
         <EyeIcon />
         Toggle layer visibility
