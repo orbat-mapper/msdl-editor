@@ -148,15 +148,15 @@ function goUp() {
           </TabsContent>
           <TabsContent v-if="isUnit(item)" value="model">
             <div class="max-w-[40vw]">
-              <div class="bg-muted p-2 overflow-auto">
-                <UnitModelPanel :unit="item"> </UnitModelPanel>
+              <div class="p-4 overflow-auto">
+                <UnitModelPanel :unit="item"></UnitModelPanel>
               </div>
             </div>
           </TabsContent>
           <TabsContent v-if="isEquipmentItem(item)" value="model">
             <div class="max-w-[40vw]">
-              <div class="bg-muted p-2 overflow-auto">
-                <EquipmentItemModelPanel :equipment="item"> </EquipmentItemModelPanel>
+              <div class="p-4 overflow-auto">
+                <EquipmentItemModelPanel :equipment="item"></EquipmentItemModelPanel>
               </div>
             </div>
           </TabsContent>

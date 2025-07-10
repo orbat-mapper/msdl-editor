@@ -29,7 +29,6 @@ const updateUnitModel = (entityType?: string) => {
 </script>
 <template>
   <div v-if="unitModel()">
-    <h4 class="text-sm font-bold mt-2">Unit Model</h4>
     <EntityTypePanel
       v-if="unitModel()!.entityType"
       v-model="unitModel()!.entityType"

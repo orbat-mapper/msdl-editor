@@ -220,14 +220,16 @@ const setLocalVariables = (entType: string) => {
 
 <template>
   <div v-if="sisoEntityType">
-    <h4 class="text-sm font-bold mt-2 flex items-center">
-      <span>Entity type: {{ entityType || "Unknown" }}</span>
+    <h4 class="text-sm font-bold mt-2 flex items-center justify-between">
+      <span class="text-muted-foreground font-medium"
+        >Entity type: {{ entityType || "Unknown" }}</span
+      >
 
       <Dialog :modal="false">
         <DialogTrigger as-child>
-          <Button variant="outline" @click="openDialog">
-            <Pencil class="size-4" />
+          <Button variant="ghost" @click="openDialog" class="mr-2">
             Edit
+            <Pencil class="size-4" />
           </Button>
         </DialogTrigger>
         <DialogContent>
@@ -280,6 +282,8 @@ const setLocalVariables = (entType: string) => {
         </DialogContent>
       </Dialog>
     </h4>
+
+    <Separator />
 
     <PanelDataGrid class="mt-4" v-if="sisoEntityType">
       <template v-for="(field, index) in uniqueEntityTypeFields" :key="index">
