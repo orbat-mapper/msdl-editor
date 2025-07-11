@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import ShowXMLDialog from "@/components/ShowXMLDialog.vue";
 import { computed } from "vue";
 import SidePanelDropdown from "@/components/SidePanelDropdown.vue";
+import { EllipsisVertical as DotsVerticalIcon } from "lucide-vue-next";
 import {
   Accordion,
   AccordionContent,
@@ -16,8 +17,15 @@ import {
 import MilSymbol from "@/components/MilSymbol.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import type { EquipmentItem, Unit } from "@orbat-mapper/msdllib";
-const { msdl } = useScenarioStore();
+import DeploymentDropdown from "./DeploymentDropdown.vue";
+import CreateNewFederateDialog from "./CreateNewFederateDialog.vue";
+
+const {
+  msdl,
+  modifyScenario: { addFederate },
+} = useScenarioStore();
 const selectStore = useSelectStore();
+const dialogStore = useDialogStore();
 
 function getFederateUnits(units: string[]): Unit[] {
   if (!msdl.value) return [];
@@ -32,12 +40,21 @@ function getFederateEquipment(equipment: string[]): EquipmentItem[] {
     .map((eqId) => msdl.value?.getEquipmentById(eqId))
     .filter((eq) => eq !== undefined);
 }
+
+function createFederate() {
+  dialogStore.toggleCreateFederateDialog();
+}
 </script>
 <template>
   <div v-if="msdl?.deployment">
     <header class="flex items-center justify-between px-4 mt-1">
       <h3 class="text-xs/6 font-semibold uppercase">Federates</h3>
+      <DeploymentDropdown @create-federate="createFederate"></DeploymentDropdown>
     </header>
+    <CreateNewFederateDialog
+      v-model:open="dialogStore.isCreateFederateDialogOpen"
+      @created="addFederate"
+    />
     <Accordion type="multiple" class="mt-2">
       <AccordionItem
         v-for="federate in msdl.deployment.federates"
