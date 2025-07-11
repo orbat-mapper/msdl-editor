@@ -6,6 +6,7 @@ export const useDialogStore = defineStore("dialogStore", () => {
   const [isAssociationDialogOpen, toggleAssociationDialog] = useToggle(false);
   const [isCreateMSDLDialogOpen, toggleCreateMSDLDialog] = useToggle(false);
   const [isCreateForceSideDialogOpen, toggleCreateForceSideDialog] = useToggle(false);
+  const [isCreateFederateDialogOpen, toggleCreateFederateDialog] = useToggle(false);
   return {
     isUrlDialogOpen,
     toggleUrlDialog,
@@ -15,5 +16,7 @@ export const useDialogStore = defineStore("dialogStore", () => {
     toggleCreateMSDLDialog,
     isCreateForceSideDialogOpen,
     toggleCreateForceSideDialog,
+    isCreateFederateDialogOpen,
+    toggleCreateFederateDialog,
   };
 });
