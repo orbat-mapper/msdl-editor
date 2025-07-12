@@ -11,11 +11,9 @@ import PanelScenarioInfo from "@/components/PanelScenarioInfo.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import PanelScenarioDeployment from "@/components/PanelScenarioDeployment.vue";
 import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
-import type { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
-import { isForceSide, isUnitOrEquipment } from "@/utils.ts";
-import type { LngLatBoundsLike, LngLatLike } from "maplibre-gl";
-import bbox from "@turf/bbox";
-import type { BBox, GeoJSON } from "geojson";
+import type { LngLatBoundsLike } from "maplibre-gl";
+import type { BBox } from "geojson";
+
 const { mlMap } = defineProps<{
   mlMap?: maplibregl.Map;
 }>();

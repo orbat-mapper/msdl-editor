@@ -122,6 +122,7 @@ watch(
 watchEffect(() => {
   const hasLayer = !!mlMap.getLayer("msdl-area-of-interest");
   const hasSource = !!mlMap.getSource("msdl-bbox");
+  const hasSidesLayer = !!mlMap.getLayer("msdl-sides");
   const areaOfInterest = msdl.value?.environment?.areaOfInterest?.toGeoJson();
   if (!store.showAreaOfInterest || !areaOfInterest) {
     if (hasLayer) mlMap.removeLayer("msdl-area-of-interest");
@@ -144,7 +145,7 @@ watchEffect(() => {
           "line-width": 2,
         },
       },
-      "msdl-sides",
+      hasSidesLayer ? "msdl-sides" : undefined,
     );
   }
 });
