@@ -119,6 +119,36 @@ watch(
   },
 );
 
+watchEffect(() => {
+  const hasLayer = !!mlMap.getLayer("msdl-area-of-interest");
+  const hasSource = !!mlMap.getSource("msdl-bbox");
+  const areaOfInterest = msdl.value?.environment?.areaOfInterest?.toGeoJson();
+  if (!store.showAreaOfInterest || !areaOfInterest) {
+    if (hasLayer) mlMap.removeLayer("msdl-area-of-interest");
+    if (hasSource) mlMap.removeSource("msdl-bbox");
+  } else {
+    if (hasLayer) return;
+    if (!areaOfInterest) return;
+    mlMap.addSource("msdl-bbox", {
+      type: "geojson",
+      data: areaOfInterest,
+    });
+    mlMap.addLayer(
+      {
+        id: "msdl-area-of-interest",
+        type: "line",
+        source: "msdl-bbox",
+        paint: {
+          "line-color": "blue",
+          "line-dasharray": [10, 10],
+          "line-width": 2,
+        },
+      },
+      "msdl-sides",
+    );
+  }
+});
+
 watch([() => store.showSymbolOutline, () => store.symbolSize], () => {
   mlMap
     .listImages()
