@@ -12,7 +12,7 @@ import type { MapContextMenuEvent } from "@/components/types.ts";
 import { useUIStore } from "@/stores/uiStore.ts";
 import { getStyleForBaseLayer, useMapLayerStore } from "@/stores/mapLayerStore.ts";
 
-const props = defineProps<{ mlMap: MlMap }>();
+const { mlMap } = defineProps<{ mlMap: MlMap }>();
 const emit = defineEmits(["showContextMenu"]);
 const { msdl } = useScenarioStore();
 
@@ -42,23 +42,23 @@ watchEffect(() => {
     includeUnits: store.showUnits,
     includeEquipment: store.showEquipment,
   });
-  const source = props.mlMap.getSource("msdl-sides") as GeoJSONSource;
+  const source = mlMap.getSource("msdl-sides") as GeoJSONSource;
   if (!source) return;
   source.setData(featureCollection as never);
 });
 
 watchEffect(() => {
-  const { mlMap } = props;
+  /* eslint-disable vue/no-mutating-props */
   mlMap.showCollisionBoxes = mapSettings.showCollisionBoxes;
   mlMap.showPadding = mapSettings.showPadding;
   mlMap.showTileBoundaries = mapSettings.showTileBoundaries;
   mlMap.showOverdrawInspector = mapSettings.showOverdrawInspector;
+  /* eslint-enable vue/no-mutating-props */
 });
 
 watch(
   () => mapLayerStore.baseLayer,
   (baseLayer) => {
-    const { mlMap } = props;
     const newStyle = getStyleForBaseLayer(baseLayer);
     // filter keys that start with 'msdl-' from oldBaseLayer
 
@@ -84,7 +84,6 @@ watch(
 );
 
 function setTextField() {
-  const mlMap = props.mlMap;
   if (store.showLabels) {
     mlMap.setLayoutProperty("msdl-sides", "text-field", ["get", "label"]);
   } else {
@@ -102,7 +101,6 @@ watch(
 watch(
   () => store.showIconAnchors,
   (v) => {
-    const mlMap = props.mlMap;
     const hasLayer = !!mlMap.getLayer("msdl-points");
     if (!v) {
       if (hasLayer) mlMap.removeLayer("msdl-points");
@@ -122,7 +120,6 @@ watch(
 );
 
 watch([() => store.showSymbolOutline, () => store.symbolSize], () => {
-  const mlMap = props.mlMap;
   mlMap
     .listImages()
     .filter(checkIfSymbolCode)
@@ -242,7 +239,7 @@ function addSidesToMap(map: MlMap) {
   }, 600);
 }
 
-addSidesToMap(props.mlMap);
+addSidesToMap(mlMap);
 
 onUnmounted(() => {
   contextmenuSub?.unsubscribe();
