@@ -11,10 +11,27 @@ import PanelScenarioInfo from "@/components/PanelScenarioInfo.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import PanelScenarioDeployment from "@/components/PanelScenarioDeployment.vue";
 import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
+import type { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
+import { isForceSide, isUnitOrEquipment } from "@/utils.ts";
+import type { LngLatBoundsLike, LngLatLike } from "maplibre-gl";
+import bbox from "@turf/bbox";
+import type { BBox, GeoJSON } from "geojson";
+const { mlMap } = defineProps<{
+  mlMap?: maplibregl.Map;
+}>();
 
 const uiStore = useUIStore();
 const widthStore = useWidthStore();
 const { msdl } = useScenarioStore();
+
+function flyToBoundingBox(bbox: BBox) {
+  if (bbox.some((v) => v === Infinity || v === -Infinity)) {
+    return;
+  }
+  mlMap?.fitBounds(bbox as LngLatBoundsLike, {
+    padding: { top: 50, bottom: 50, left: widthStore.orbatPanelWidth + 50, right: 100 },
+  });
+}
 </script>
 <template>
   <aside
@@ -40,7 +57,7 @@ const { msdl } = useScenarioStore();
           <PanelMapDisplay class="mt-6 px-4" />
         </TabsContent>
         <TabsContent value="scenarioInfo">
-          <PanelScenarioInfo class="px-4" />
+          <PanelScenarioInfo class="px-4" @flyTo="flyToBoundingBox" />
         </TabsContent>
         <TabsContent v-if="msdl?.isNETN" value="deployment">
           <PanelScenarioDeployment />

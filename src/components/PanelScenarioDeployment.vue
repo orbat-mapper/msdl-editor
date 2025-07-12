@@ -16,7 +16,6 @@ import {
 import MilSymbol from "@/components/MilSymbol.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import type { EquipmentItem, Unit } from "@orbat-mapper/msdllib";
-
 const { msdl } = useScenarioStore();
 const selectStore = useSelectStore();
 

@@ -76,7 +76,7 @@ async function onDrop(files: File[] | null) {
       <MaplibreMap @ready="onMapReady" />
       <MapLogic v-if="mlMap && msdl" :mlMap="mlMap" />
       <div class="absolute inset-0 pointer-events-none p-2">
-        <LeftPanel />
+        <LeftPanel :mlMap />
         <RightPanel :mlMap />
       </div>
     </main>

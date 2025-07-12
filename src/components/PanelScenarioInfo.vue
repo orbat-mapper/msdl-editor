@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PencilIcon } from "lucide-vue-next";
+import { FocusIcon, PencilIcon } from "lucide-vue-next";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { Button } from "@/components/ui/button";
 import { useDialogStore } from "@/stores/dialogStore.ts";
@@ -11,6 +11,8 @@ import DescriptionList from "@/components/DescriptionList.vue";
 import ScenarioIdEditForm from "@/components/ScenarioIdEditForm.vue";
 import { useToggle } from "@vueuse/core";
 import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
+
+const emit = defineEmits(["flyTo"]);
 
 const {
   msdl,
@@ -24,6 +26,10 @@ const myElement = computed(() => {
   return { element: msdl.value?.scenarioId.element };
 });
 
+const areaOfInterest = computed(() => {
+  return msdl.value?.environment?.areaOfInterest;
+});
+
 function onUpdate(data: Partial<ScenarioIdType>) {
   toggleEditForm();
   updateScenarioId(data);
@@ -32,7 +38,7 @@ function onUpdate(data: Partial<ScenarioIdType>) {
 <template>
   <div v-if="msdl">
     <div class="flex items-center justify-between mt-1">
-      <h4 class="text-sm font-bold">Scenario info</h4>
+      <h4 class="text-base font-semibold">Scenario information</h4>
       <div class="flex items-center gap-1">
         <Badge v-if="msdl.isNETN" variant="secondary">NETN</Badge
         ><Button
@@ -73,7 +79,25 @@ function onUpdate(data: Partial<ScenarioIdType>) {
         >
       </div>
     </DescriptionList>
-
+    <h4 class="text-base font font-semibold">Environment</h4>
+    <DescriptionList class="divide-y divide-border">
+      <DescriptionItem label="Scenario time">{{
+        msdl.environment?.scenarioTime || "n/a"
+      }}</DescriptionItem>
+      <DescriptionItem label="Area of interest">
+        <div class="flex items-center justify-between">
+          <span>{{ areaOfInterest?.toBoundingBox() || "n/a" }}</span>
+          <Button
+            @click="emit('flyTo', areaOfInterest?.toBoundingBox())"
+            variant="ghost"
+            size="icon"
+            title="Zoom to area"
+            :disabled="!areaOfInterest"
+            ><FocusIcon
+          /></Button>
+        </div>
+      </DescriptionItem>
+    </DescriptionList>
     <div class="mt-4">
       <h4 class="text-sm font-bold">Debugging</h4>
       <div class="flex gap-2 mt-2">
