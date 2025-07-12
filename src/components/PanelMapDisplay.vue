@@ -22,6 +22,7 @@ const resetSymbolSize = (v = 20) => {
       <SwitchLabel v-model="layerStore.showEquipment">Show equipment</SwitchLabel>
       <SwitchLabel v-model="layerStore.showLabels">Show labels</SwitchLabel>
       <SwitchLabel v-model="layerStore.showSymbolOutline">Show symbol outline</SwitchLabel>
+      <SwitchLabel v-model="layerStore.showAreaOfInterest">Show area of interest</SwitchLabel>
       <div class="flex items-center sm:col-span-2 gap-2 text-sm">
         <span class="flex-none text-sm font-medium">Symbol size</span>
         <Slider
