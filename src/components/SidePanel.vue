@@ -11,7 +11,7 @@ import { useLayerStore } from "@/stores/layerStore.ts";
 import ForceSideMenu from "@/components/ForceSideMenu.vue";
 import CreateNewForceSideDialog from "@/components/CreateNewForceSideDialog.vue";
 import { Badge } from "@/components/ui/badge";
-import OrbatTree from "@/components/OrbatTree.vue";
+import OrbatTree from "@/components/orbat/OrbatTree.vue";
 import { computed } from "vue";
 import { sortBy } from "@/utils.ts";
 import { Button } from "@/components/ui/button";
