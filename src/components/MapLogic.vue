@@ -11,6 +11,7 @@ import MapContextMenu from "@/components/MapContextMenu.vue";
 import type { MapContextMenuEvent } from "@/components/types.ts";
 import { useUIStore } from "@/stores/uiStore.ts";
 import { getStyleForBaseLayer, useMapLayerStore } from "@/stores/mapLayerStore.ts";
+import { useMapDrop } from "@/composables/mapDrop.ts";
 
 const { mlMap } = defineProps<{ mlMap: MlMap }>();
 const emit = defineEmits(["showContextMenu"]);
@@ -34,6 +35,8 @@ const sides = computed(() => {
 // store event subscription
 let contextmenuSub: Subscription;
 let clickSub: Subscription;
+
+const { isDragging, formattedPosition } = useMapDrop(mlMap);
 
 watchEffect(() => {
   const visibleSides = sides.value.filter((side) => store.layers.has(side.objectHandle));
@@ -278,5 +281,15 @@ onUnmounted(() => {
 });
 </script>
 <template>
+  <div
+    v-if="isDragging"
+    class="pointer-events-none absolute inset-0 border-4 border-dashed border-blue-700"
+  >
+    <p
+      class="absolute bottom-1 left-2 rounded bg-white px-1 text-base tracking-tighter text-gray-800 tabular-nums"
+    >
+      {{ formattedPosition }}
+    </p>
+  </div>
   <MapContextMenu v-model="isOpen" :event="mapEvent" />
 </template>

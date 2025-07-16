@@ -41,5 +41,5 @@ onUnmounted(() => {
 });
 </script>
 <template>
-  <div ref="mapContainerElement" class="h-full w-full" />
+  <div ref="mapContainerElement" class="h-full w-full relative" />
 </template>
