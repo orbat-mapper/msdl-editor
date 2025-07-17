@@ -1,4 +1,6 @@
 import type { Instruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
+import { type EquipmentItem, Unit } from "@orbat-mapper/msdllib";
+import type { OrbatTreeItem } from "@/components/orbat/types.ts";
 
 export type TreeItem = {
   title: string;
@@ -228,4 +230,24 @@ function getChildItems(data: TreeItem[], targetId: string) {
   }
 
   return targetItem.children;
+}
+
+export function mapItem(item: Unit | EquipmentItem): OrbatTreeItem {
+  if (item instanceof Unit) {
+    return {
+      label: item.label,
+      sidc: item.sidc,
+      itemType: "unit",
+      objectHandle: item.objectHandle,
+      subordinates: item.subordinates,
+      equipment: item.equipment,
+    };
+  }
+
+  return {
+    label: item.label,
+    sidc: item.sidc || "10031500000000000000",
+    itemType: "equipment",
+    objectHandle: item.objectHandle,
+  };
 }

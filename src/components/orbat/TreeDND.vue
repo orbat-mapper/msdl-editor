@@ -4,13 +4,10 @@ import TreeItemDND from "./TreeItemDND.vue";
 import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { monitorForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { computed, ref, toRaw, watch, watchEffect } from "vue";
-import {
-  extractInstruction,
-  type Instruction,
-} from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 // import { updateTree } from "./utils";
-import { type EquipmentItem, type ForceSide, Unit } from "@orbat-mapper/msdllib";
+import { type ForceSide } from "@orbat-mapper/msdllib";
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
+import { mapItem } from "@/components/orbat/utils.ts";
 
 const { side } = defineProps<{ side: ForceSide }>();
 
@@ -22,26 +19,6 @@ function getChildren(item: OrbatTreeItem) {
 }
 
 const defaultValue = ref([]);
-
-function mapItem(item: Unit | EquipmentItem): OrbatTreeItem {
-  if (item instanceof Unit) {
-    return {
-      label: item.label,
-      sidc: item.sidc,
-      itemType: "unit",
-      objectHandle: item.objectHandle,
-      subordinates: item.subordinates,
-      equipment: item.equipment,
-    };
-  }
-
-  return {
-    label: item.label,
-    sidc: item.sidc || "10031500000000000000",
-    itemType: "equipment",
-    objectHandle: item.objectHandle,
-  };
-}
 
 const items = computed(() => {
   return [...side.rootUnits, ...side.equipment].map(mapItem);
