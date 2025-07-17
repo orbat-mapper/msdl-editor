@@ -117,10 +117,10 @@ function createForceSide() {
                 <Badge v-if="force.countryCode" variant="secondary">{{ force.countryCode }}</Badge>
               </div>
             </div>
-            <TreeDND :side="side" />
+            <TreeDND :sideObjectHandle="side.objectHandle" />
           </div>
         </template>
-        <TreeDND v-else :side="side" />
+        <TreeDND v-else :sideObjectHandle="side.objectHandle" />
       </AccordionContent>
     </AccordionItem>
   </Accordion>

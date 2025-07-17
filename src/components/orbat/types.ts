@@ -8,4 +8,5 @@ export type OrbatTreeItem = {
   children?: string[];
   subordinates?: Unit[];
   equipment?: EquipmentItem[];
+  childrenCount: number;
 };

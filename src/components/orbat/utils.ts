@@ -177,43 +177,6 @@ export function updateTree(data: TreeItem[], action: TreeAction) {
     return data;
   }
 
-  if (action.type === "modal-move") {
-    let result = tree.remove(data, item.title);
-
-    const siblingItems = getChildItems(result, action.targetId) ?? [];
-
-    if (siblingItems.length === 0) {
-      if (action.targetId === "") {
-        /**
-         * If the target is the root level, and there are no siblings, then
-         * the item is the only thing in the root level.
-         */
-        result = [item];
-      } else {
-        /**
-         * Otherwise for deeper levels that have no children, we need to
-         * use `insertChild` instead of inserting relative to a sibling.
-         */
-        result = tree.insertChild(result, action.targetId, item);
-      }
-    } else if (action.index === siblingItems.length) {
-      const relativeTo = siblingItems[siblingItems.length - 1];
-      /**
-       * If the position selected is the end, we insert after the last item.
-       */
-      result = tree.insertAfter(result, relativeTo.title, item);
-    } else {
-      const relativeTo = siblingItems[action.index];
-      /**
-       * Otherwise we insert before the existing item in the given position.
-       * This results in the new item being in that position.
-       */
-      result = tree.insertBefore(result, relativeTo.title, item);
-    }
-
-    return result;
-  }
-
   return data;
 }
 
@@ -241,6 +204,7 @@ export function mapItem(item: Unit | EquipmentItem): OrbatTreeItem {
       objectHandle: item.objectHandle,
       subordinates: item.subordinates,
       equipment: item.equipment,
+      childrenCount: item.subordinates.length + item.equipment.length,
     };
   }
 
@@ -249,5 +213,6 @@ export function mapItem(item: Unit | EquipmentItem): OrbatTreeItem {
     sidc: item.sidc || "10031500000000000000",
     itemType: "equipment",
     objectHandle: item.objectHandle,
+    childrenCount: 0,
   };
 }
