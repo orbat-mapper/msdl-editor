@@ -11,9 +11,13 @@ import {
 import { BoxIcon, EllipsisVertical as DotsVerticalIcon } from "lucide-vue-next";
 import { useScenarioStore } from "@/stores/scenarioStore";
 import { computed } from "vue";
-import type { EquipmentItem, Unit } from "@orbat-mapper/msdllib";
 
-const props = defineProps<{ objectHandle: string }>();
+interface Props {
+  objectHandle: string;
+  allUnits?: boolean;
+  allEquipment?: boolean;
+}
+const { objectHandle, allUnits = false, allEquipment = false } = defineProps<Props>();
 
 const emit = defineEmits<{
   assignToFederate: [objectHandle: string, federate: string];
@@ -25,18 +29,17 @@ const federates = computed(() => {
   return msdl.value?.deployment?.federates || [];
 });
 
-const unit = computed(() => {
-  return msdl.value?.getUnitOrEquipmentById(props.objectHandle);
-});
-
 function assignToFederate(fed: string) {
-  emit("assignToFederate", props.objectHandle, fed);
+  emit("assignToFederate", objectHandle, fed);
 }
 
-function otherFederates(item?: Unit | EquipmentItem) {
+function otherFederates(handle: string) {
   return federates.value.filter(
     (fed) =>
-      item && !fed.units.includes(item.objectHandle) && !fed.equipment.includes(item.objectHandle),
+      handle &&
+      !fed.units.includes(handle) &&
+      !fed.equipment.includes(handle) &&
+      fed.objectHandle !== handle,
   );
 }
 </script>
@@ -49,12 +52,14 @@ function otherFederates(item?: Unit | EquipmentItem) {
       </Button>
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end">
-      <DropdownMenuLabel>Assign to federate:</DropdownMenuLabel>
+      <DropdownMenuLabel>
+        Assign {{ allUnits || allEquipment ? "all" : "" }} to federate:
+      </DropdownMenuLabel>
       <DropdownMenuSeparator></DropdownMenuSeparator>
       <DropdownMenuItem
         @select="assignToFederate(federate.objectHandle)"
         :disabled="!msdl"
-        v-for="federate in otherFederates(unit)"
+        v-for="federate in otherFederates(objectHandle)"
         :key="federate.objectHandle"
         :value="federate.objectHandle"
       >

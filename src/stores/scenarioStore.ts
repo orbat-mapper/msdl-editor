@@ -351,6 +351,18 @@ function assignEquipmentToFederate(equipment: string, federate: string) {
   triggerRef(msdl);
 }
 
+function assignAllUnitsToFederate(fromFederate: string, toFederate: string) {
+  if (!msdl.value || !fromFederate || !toFederate) return;
+  msdl.value.assignAllUnitsToFederate(fromFederate, toFederate);
+  triggerRef(msdl);
+}
+
+function assignAllEquipmentToFederate(fromFederate: string, toFederate: string) {
+  if (!msdl.value || !fromFederate || !toFederate) return;
+  msdl.value.assignAllEquipmentToFederate(fromFederate, toFederate);
+  triggerRef(msdl);
+}
+
 function createScenarioKey(scenario: MilitaryScenario): string {
   return scenario.scenarioId.name + scenario.scenarioId.description;
 }
@@ -418,7 +430,9 @@ export function useScenarioStore() {
       addForceSide,
       addFederate,
       assignUnitToFederate,
+      assignAllUnitsToFederate,
       assignEquipmentToFederate,
+      assignAllEquipmentToFederate,
       removeUnit,
       removeEquipmentItem,
       setPrimarySide: (side: ForceSide | string) => {

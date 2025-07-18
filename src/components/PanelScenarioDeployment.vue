@@ -2,7 +2,6 @@
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { Button } from "@/components/ui/button";
 import { useDialogStore } from "@/stores/dialogStore.ts";
-import { EllipsisVertical as DotsVerticalIcon } from "lucide-vue-next";
 import {
   Accordion,
   AccordionContent,
@@ -18,7 +17,13 @@ import AssignToFederateDropdown from "./AssignToFederateDropdown.vue";
 
 const {
   msdl,
-  modifyScenario: { addFederate, assignUnitToFederate, assignEquipmentToFederate },
+  modifyScenario: {
+    addFederate,
+    assignUnitToFederate,
+    assignEquipmentToFederate,
+    assignAllUnitsToFederate,
+    assignAllEquipmentToFederate,
+  },
 } = useScenarioStore();
 const selectStore = useSelectStore();
 const dialogStore = useDialogStore();
@@ -62,7 +67,15 @@ function createFederate() {
         }}</AccordionTrigger>
         <AccordionContent class="px-4">
           <template v-if="federate.units.length > 0">
-            <h4 class="text-xs/6 font-semibold mt-2">Units</h4>
+            <h4 class="text-xs/6 font-semibold mt-2 flex items-center justify-between gap-1">
+              Units
+              <AssignToFederateDropdown
+                class="ml-auto"
+                :object-handle="federate.objectHandle"
+                @assign-to-federate="assignAllUnitsToFederate"
+                :all-units="true"
+              ></AssignToFederateDropdown>
+            </h4>
             <ul>
               <li
                 v-for="unit in getFederateUnits(federate.units)"
@@ -84,7 +97,15 @@ function createFederate() {
             </ul>
           </template>
           <template v-if="federate.equipment.length > 0">
-            <h4 class="text-xs/6 font-semibold mt-2">Equipment</h4>
+            <h4 class="text-xs/6 font-semibold mt-2 flex items-center justify-between gap-1">
+              Equipment
+              <AssignToFederateDropdown
+                class="ml-auto"
+                :object-handle="federate.objectHandle"
+                @assign-to-federate="assignAllEquipmentToFederate"
+                :all-equipment="true"
+              ></AssignToFederateDropdown>
+            </h4>
             <ul>
               <li
                 v-for="equipmentItem in getFederateEquipment(federate.equipment)"
