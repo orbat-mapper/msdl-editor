@@ -8,6 +8,7 @@ import {
   UnitDisposition,
   EquipmentItem,
   EquipmentItemDisposition,
+  Federate,
 } from "@orbat-mapper/msdllib";
 import type {
   ForceSideType,
@@ -18,6 +19,7 @@ import type {
   MilitaryScenarioInputType,
   ScenarioIdType,
   UnitEquipmentInterface,
+  FederateType,
 } from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
@@ -329,6 +331,26 @@ function removeForceSide(objectHandle: string) {
   triggerRef(msdl);
 }
 
+function addFederate(newFederate?: Partial<FederateType>) {
+  if (!msdl.value || !newFederate) return;
+  const fed = Federate.create();
+  fed.updateFromObject(newFederate);
+  msdl.value.addFederate(fed);
+  triggerRef(msdl);
+}
+
+function assignUnitToFederate(unit: string, federate: string) {
+  if (!msdl.value || !unit || !federate) return;
+  msdl.value.assignUnitToFederate(unit, federate);
+  triggerRef(msdl);
+}
+
+function assignEquipmentToFederate(equipment: string, federate: string) {
+  if (!msdl.value || !equipment || !federate) return;
+  msdl.value.assignEquipmentItemToFederate(equipment, federate);
+  triggerRef(msdl);
+}
+
 function createScenarioKey(scenario: MilitaryScenario): string {
   return scenario.scenarioId.name + scenario.scenarioId.description;
 }
@@ -394,6 +416,9 @@ export function useScenarioStore() {
       addUnit,
       addEquipmentItem,
       addForceSide,
+      addFederate,
+      assignUnitToFederate,
+      assignEquipmentToFederate,
       removeUnit,
       removeEquipmentItem,
       setPrimarySide: (side: ForceSide | string) => {
