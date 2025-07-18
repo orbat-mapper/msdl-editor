@@ -11,7 +11,6 @@ import { useLayerStore } from "@/stores/layerStore.ts";
 import ForceSideMenu from "@/components/ForceSideMenu.vue";
 import CreateNewForceSideDialog from "@/components/CreateNewForceSideDialog.vue";
 import { Badge } from "@/components/ui/badge";
-import OrbatTree from "@/components/OrbatTree.vue";
 import { computed } from "vue";
 import { sortBy } from "@/utils.ts";
 import { Button } from "@/components/ui/button";
@@ -20,6 +19,7 @@ import SidePanelDropdown from "@/components/SidePanelDropdown.vue";
 import { useSideStore } from "@/stores/uiStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import { useDialogStore } from "@/stores/dialogStore";
+import TreeDND from "@/components/orbat/TreeDND.vue";
 
 const {
   msdl,
@@ -73,6 +73,7 @@ function createForceSide() {
     v-model:open="dialogStore.isCreateForceSideDialogOpen"
     @created="addForceSide"
   />
+
   <Accordion type="multiple" class="mt-2">
     <AccordionItem v-for="side in sides" :key="side.objectHandle" :value="side.objectHandle">
       <AccordionTrigger class="bg-card-foreground/5 py-1 rounded-none px-4 group">
@@ -116,10 +117,10 @@ function createForceSide() {
                 <Badge v-if="force.countryCode" variant="secondary">{{ force.countryCode }}</Badge>
               </div>
             </div>
-            <OrbatTree :side="force" :key="msdl?.primarySide?.objectHandle" />
+            <TreeDND :side="side" />
           </div>
         </template>
-        <OrbatTree v-else :side="side" :key="msdl?.primarySide?.objectHandle" />
+        <TreeDND v-else :side="side" />
       </AccordionContent>
     </AccordionItem>
   </Accordion>

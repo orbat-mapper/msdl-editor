@@ -47,7 +47,7 @@ function flyToBoundingBox(bbox: BBox) {
         </TabsList>
         <CloseButton @click="uiStore.toggleLeftPanel()" />
       </header>
-      <ScrollArea class="flex-auto pb-8 overflow-auto">
+      <div class="flex-auto pb-8 overflow-auto">
         <TabsContent value="orbat">
           <SidePanel />
         </TabsContent>
@@ -60,7 +60,7 @@ function flyToBoundingBox(bbox: BBox) {
         <TabsContent v-if="msdl?.isNETN" value="deployment">
           <PanelScenarioDeployment />
         </TabsContent>
-      </ScrollArea>
+      </div>
     </Tabs>
     <PanelResizeHandle
       :width="widthStore.orbatPanelWidth"
@@ -79,3 +79,16 @@ function flyToBoundingBox(bbox: BBox) {
     <span class="sr-only">Open panel</span>
   </Button>
 </template>
+<style scoped>
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+</style>
