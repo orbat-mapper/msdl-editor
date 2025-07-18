@@ -12,7 +12,11 @@ import {
   type Instruction,
 } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
-import { isOrbatItemDragItem } from "@/types/draggables.ts";
+import {
+  isEquipmentItemDragItem,
+  isOrbatItemDragItem,
+  isUnitDragItem,
+} from "@/types/draggables.ts";
 
 const { sideObjectHandle } = defineProps<{ sideObjectHandle: string }>();
 
@@ -53,10 +57,15 @@ watchEffect((onCleanup) => {
           return;
         }
         if (instruction?.type === "make-child") {
-          msdl.value?.setUnitForceRelation(
-            source.data.item.objectHandle,
-            target.data.item.objectHandle,
-          );
+          if (isUnitDragItem(source.data) && isUnitDragItem(target.data)) {
+            const sourceUnit = msdl.value?.getUnitById(source.data.item.objectHandle);
+            const targetUnit = msdl.value?.getUnitById(target.data.item.objectHandle);
+            if (!sourceUnit || !targetUnit) return;
+            msdl.value?.setUnitForceRelation(sourceUnit, targetUnit);
+            sourceUnit.setAffiliation(targetUnit.getAffiliation(), { recursive: true });
+          } else if (isEquipmentItemDragItem(source.data) && isUnitDragItem(target.data)) {
+            console.log("not implemented yet");
+          }
           triggerRef(msdl);
         }
 
