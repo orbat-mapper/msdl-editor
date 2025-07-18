@@ -1,31 +1,31 @@
 <script setup lang="ts">
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { ChevronDown, TableOfContentsIcon as SelectIcon } from "lucide-vue-next";
-import { Switch } from "@/components/ui/switch";
+import { Accordion } from "@/components/ui/accordion";
 import { useLayerStore } from "@/stores/layerStore.ts";
-import ForceSideMenu from "@/components/ForceSideMenu.vue";
 import CreateNewForceSideDialog from "@/components/CreateNewForceSideDialog.vue";
-import { Badge } from "@/components/ui/badge";
-import { computed } from "vue";
+import { computed, triggerRef, watchEffect } from "vue";
 import { sortBy } from "@/utils.ts";
 import { Button } from "@/components/ui/button";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import SidePanelDropdown from "@/components/SidePanelDropdown.vue";
 import { useSideStore } from "@/stores/uiStore.ts";
-import { useSelectStore } from "@/stores/selectStore.ts";
 import { useDialogStore } from "@/stores/dialogStore";
-import TreeDND from "@/components/orbat/TreeDND.vue";
+import { monitorForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
+import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
+import {
+  isEquipmentItemDragItem,
+  isOrbatItemDragItem,
+  isUnitDragItem,
+} from "@/types/draggables.ts";
+import {
+  extractInstruction,
+  type Instruction,
+} from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
+import SideItem from "@/components/orbat/SideItem.vue";
 
 const {
   msdl,
   modifyScenario: { addForceSide },
 } = useScenarioStore();
-const selectStore = useSelectStore();
 
 const layerStore = useLayerStore();
 const sideStore = useSideStore();
@@ -41,6 +41,49 @@ const sides = computed(() => {
   return sortBy(msdl.value?.sides ?? [], "name");
 });
 
+watchEffect((onCleanup) => {
+  const dndFunction = combine(
+    monitorForElements({
+      onDrop(args) {
+        const { location, source } = args;
+        // didn't drop on anything
+        if (!location.current.dropTargets.length) return;
+        const target = location.current.dropTargets[0];
+        const instruction: Instruction | null = extractInstruction(target.data);
+        if (!(isOrbatItemDragItem(source.data) && isOrbatItemDragItem(target.data))) {
+          return;
+        }
+        if (instruction?.type === "make-child") {
+          if (isUnitDragItem(source.data) && isUnitDragItem(target.data)) {
+            const sourceUnit = msdl.value?.getUnitById(source.data.item.objectHandle);
+            const targetUnit = msdl.value?.getUnitById(target.data.item.objectHandle);
+            if (!sourceUnit || !targetUnit) return;
+            msdl.value?.setUnitForceRelation(sourceUnit, targetUnit);
+            sourceUnit.setAffiliation(targetUnit.getAffiliation(), { recursive: true });
+          } else if (isEquipmentItemDragItem(source.data) && isUnitDragItem(target.data)) {
+            console.log("not implemented yet");
+          }
+          triggerRef(msdl);
+        }
+
+        // if (instruction !== null) {
+        //   items.value =
+        //     updateTree(items.value, {
+        //       type: "instruction",
+        //       instruction,
+        //       itemId,
+        //       targetId,
+        //     }) ?? [];
+        // }
+      },
+    }),
+  );
+
+  onCleanup(() => {
+    dndFunction();
+  });
+});
+
 function toggleLayers() {
   if (layerStore.layers.size >= sides.value.length) {
     layerStore.layers.clear();
@@ -50,14 +93,6 @@ function toggleLayers() {
     layerStore.layers.add(side.objectHandle);
   });
 }
-
-const toggleSide = (id: string) => {
-  if (layerStore.layers.has(id)) {
-    layerStore.layers.delete(id);
-  } else {
-    layerStore.layers.add(id);
-  }
-};
 
 function createForceSide() {
   dialogStore.toggleCreateForceSideDialog();
@@ -75,54 +110,11 @@ function createForceSide() {
   />
 
   <Accordion type="multiple" class="mt-2">
-    <AccordionItem v-for="side in sides" :key="side.objectHandle" :value="side.objectHandle">
-      <AccordionTrigger class="bg-card-foreground/5 py-1 rounded-none px-4 group">
-        <div class="flex items-center gap-2 h-9">
-          <span class="font-medium">{{ side.name }}</span
-          ><Badge v-if="side === msdl?.primarySide">Primary</Badge>
-        </div>
-        <template #icon>
-          <div class="flex items-center gap-2">
-            <Button
-              class="opacity-0 group-hover:opacity-100"
-              type="button"
-              variant="ghost"
-              title="Show details"
-              size="icon"
-              @click.stop="selectStore.activeItem = side"
-              ><SelectIcon
-            /></Button>
-            <Switch
-              @click.stop
-              :modelValue="layerStore.layers.has(side.objectHandle)"
-              @update:modelValue="toggleSide(side.objectHandle)"
-              title="Toggle visibility"
-            />
-            <ForceSideMenu :side="side" />
-            <ChevronDown
-              class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 data-[state=open]:rotate-90"
-            />
-          </div>
-        </template>
-      </AccordionTrigger>
-      <AccordionContent>
-        <template v-if="side.forces.length > 0">
-          <div v-for="force in side.forces" :key="force.objectHandle" class="my-2">
-            <div class="flex items-center justify-between pr-4">
-              <h4 class="text-sm ml-4">{{ force.name }}</h4>
-              <div class="gap-1 flex items-center">
-                <Badge v-if="force.militaryService" variant="secondary">{{
-                  force.militaryService
-                }}</Badge>
-                <Badge v-if="force.countryCode" variant="secondary">{{ force.countryCode }}</Badge>
-              </div>
-            </div>
-            <TreeDND :sideObjectHandle="side.objectHandle" />
-          </div>
-        </template>
-        <TreeDND v-else :sideObjectHandle="side.objectHandle" />
-      </AccordionContent>
-    </AccordionItem>
+    <SideItem
+      v-for="side in sides"
+      :key="side.objectHandle"
+      :sideObjectHandle="side.objectHandle"
+    />
   </Accordion>
   <div v-if="msdl">
     <div class="m-4">

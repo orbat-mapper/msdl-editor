@@ -1,22 +1,11 @@
 <script setup lang="ts">
 import { TreeRoot } from "reka-ui";
 import TreeItemDND from "./TreeItemDND.vue";
-import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
-import { monitorForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
-import { computed, ref, triggerRef, watchEffect } from "vue";
+import { computed, ref } from "vue";
 // import { updateTree } from "./utils";
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
 import { mapItem } from "@/components/orbat/utils.ts";
-import {
-  extractInstruction,
-  type Instruction,
-} from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
-import {
-  isEquipmentItemDragItem,
-  isOrbatItemDragItem,
-  isUnitDragItem,
-} from "@/types/draggables.ts";
 
 const { sideObjectHandle } = defineProps<{ sideObjectHandle: string }>();
 
@@ -42,49 +31,6 @@ const dummyKey = computed(() => {
     return 0;
   }
   return i++;
-});
-
-watchEffect((onCleanup) => {
-  const dndFunction = combine(
-    monitorForElements({
-      onDrop(args) {
-        const { location, source } = args;
-        // didn't drop on anything
-        if (!location.current.dropTargets.length) return;
-        const target = location.current.dropTargets[0];
-        const instruction: Instruction | null = extractInstruction(target.data);
-        if (!(isOrbatItemDragItem(source.data) && isOrbatItemDragItem(target.data))) {
-          return;
-        }
-        if (instruction?.type === "make-child") {
-          if (isUnitDragItem(source.data) && isUnitDragItem(target.data)) {
-            const sourceUnit = msdl.value?.getUnitById(source.data.item.objectHandle);
-            const targetUnit = msdl.value?.getUnitById(target.data.item.objectHandle);
-            if (!sourceUnit || !targetUnit) return;
-            msdl.value?.setUnitForceRelation(sourceUnit, targetUnit);
-            sourceUnit.setAffiliation(targetUnit.getAffiliation(), { recursive: true });
-          } else if (isEquipmentItemDragItem(source.data) && isUnitDragItem(target.data)) {
-            console.log("not implemented yet");
-          }
-          triggerRef(msdl);
-        }
-
-        // if (instruction !== null) {
-        //   items.value =
-        //     updateTree(items.value, {
-        //       type: "instruction",
-        //       instruction,
-        //       itemId,
-        //       targetId,
-        //     }) ?? [];
-        // }
-      },
-    }),
-  );
-
-  onCleanup(() => {
-    dndFunction();
-  });
 });
 </script>
 <template>
