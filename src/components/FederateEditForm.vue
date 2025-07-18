@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import type { Federate } from "@orbat-mapper/msdllib";
-import {
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { toTypedSchema } from "@vee-validate/zod";
 import * as z from "zod";
 import { useForm } from "vee-validate";
@@ -14,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import FormFooter from "@/components/FormFooter.vue";
 import type { FederateTypeInput } from "@orbat-mapper/msdllib";
 
-const props = defineProps<{ item: Federate, variant?: "new" | "edit" }>();
+const props = defineProps<{ item: Federate; variant?: "new" | "edit" }>();
 const emit = defineEmits<{
   (e: "cancel"): void;
   (e: "update", value: Partial<FederateTypeInput>): void;
@@ -50,7 +44,10 @@ const onSubmit = form.handleSubmit((values) => {
           <FormMessage />
         </FormItem>
       </FormField>
-      <FormFooter @cancel="emit('cancel')" :submit-label="variant === 'new' ? 'Create' : 'Update'" />
+      <FormFooter
+        @cancel="emit('cancel')"
+        :submit-label="variant === 'new' ? 'Create' : 'Update'"
+      />
     </form>
   </div>
 </template>

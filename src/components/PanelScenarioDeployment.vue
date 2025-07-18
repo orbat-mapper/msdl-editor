@@ -2,11 +2,6 @@
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { Button } from "@/components/ui/button";
 import { useDialogStore } from "@/stores/dialogStore.ts";
-import PanelDataGrid from "@/components/PanelDataGrid.vue";
-import { Badge } from "@/components/ui/badge";
-import ShowXMLDialog from "@/components/ShowXMLDialog.vue";
-import { computed } from "vue";
-import SidePanelDropdown from "@/components/SidePanelDropdown.vue";
 import { EllipsisVertical as DotsVerticalIcon } from "lucide-vue-next";
 import {
   Accordion,
@@ -19,10 +14,11 @@ import { useSelectStore } from "@/stores/selectStore.ts";
 import type { EquipmentItem, Unit } from "@orbat-mapper/msdllib";
 import DeploymentDropdown from "./DeploymentDropdown.vue";
 import CreateNewFederateDialog from "./CreateNewFederateDialog.vue";
+import AssignToFederateDropdown from "./AssignToFederateDropdown.vue";
 
 const {
   msdl,
-  modifyScenario: { addFederate },
+  modifyScenario: { addFederate, assignUnitToFederate, assignEquipmentToFederate },
 } = useScenarioStore();
 const selectStore = useSelectStore();
 const dialogStore = useDialogStore();
@@ -71,12 +67,19 @@ function createFederate() {
               <li
                 v-for="unit in getFederateUnits(federate.units)"
                 :key="unit.objectHandle"
-                class="flex items-center gap-1"
+                class="flex items-center justify-between gap-1"
               >
-                <MilSymbol :sidc="unit.sidc" :size="16" />
-                <Button variant="link" size="sm" @click="selectStore.activeItem = unit"
-                  >{{ unit.label }}
-                </Button>
+                <div class="flex items-center gap-1">
+                  <MilSymbol :sidc="unit.sidc" :size="16" />
+                  <Button variant="link" size="sm" @click="selectStore.activeItem = unit"
+                    >{{ unit.label }}
+                  </Button>
+                </div>
+                <AssignToFederateDropdown
+                  class="ml-auto"
+                  :object-handle="unit.objectHandle"
+                  @assign-to-federate="assignUnitToFederate"
+                ></AssignToFederateDropdown>
               </li>
             </ul>
           </template>
@@ -84,14 +87,21 @@ function createFederate() {
             <h4 class="text-xs/6 font-semibold mt-2">Equipment</h4>
             <ul>
               <li
-                v-for="equipmentItem in getFederateEquipment(federate.units)"
+                v-for="equipmentItem in getFederateEquipment(federate.equipment)"
                 :key="equipmentItem?.objectHandle"
-                class="flex items-center gap-1"
+                class="flex items-center justify-between gap-1"
               >
-                <MilSymbol :sidc="equipmentItem.sidc" :size="16" />
-                <Button variant="link" size="sm" @click="selectStore.activeItem = equipmentItem"
-                  >{{ equipmentItem.label }}
-                </Button>
+                <div class="flex items-center gap-1">
+                  <MilSymbol :sidc="equipmentItem.sidc" :size="16" />
+                  <Button variant="link" size="sm" @click="selectStore.activeItem = equipmentItem"
+                    >{{ equipmentItem.label }}
+                  </Button>
+                </div>
+                <AssignToFederateDropdown
+                  class="ml-auto"
+                  :object-handle="equipmentItem.objectHandle"
+                  @assign-to-federate="assignEquipmentToFederate"
+                ></AssignToFederateDropdown>
               </li>
             </ul>
           </template>
