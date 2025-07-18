@@ -133,7 +133,7 @@ watchEffect((onCleanup) => {
           indentPerLevel: 16,
           currentLevel: props.item.level,
           mode: mode.value,
-          block: [],
+          block: ["reorder-above", "reorder-below"],
         });
       },
       canDrop: ({ source }) => {

@@ -14,6 +14,7 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import {
   isEquipmentItemDragItem,
   isOrbatItemDragItem,
+  isSideDragItem,
   isUnitDragItem,
 } from "@/types/draggables.ts";
 import {
@@ -50,16 +51,24 @@ watchEffect((onCleanup) => {
         if (!location.current.dropTargets.length) return;
         const target = location.current.dropTargets[0];
         const instruction: Instruction | null = extractInstruction(target.data);
-        if (!(isOrbatItemDragItem(source.data) && isOrbatItemDragItem(target.data))) {
+        if (
+          !(
+            isOrbatItemDragItem(source.data) &&
+            (isOrbatItemDragItem(target.data) || isSideDragItem(target.data))
+          )
+        ) {
           return;
         }
         if (instruction?.type === "make-child") {
-          if (isUnitDragItem(source.data) && isUnitDragItem(target.data)) {
+          if (
+            isUnitDragItem(source.data) &&
+            (isUnitDragItem(target.data) || isSideDragItem(target.data))
+          ) {
             const sourceUnit = msdl.value?.getUnitById(source.data.item.objectHandle);
-            const targetUnit = msdl.value?.getUnitById(target.data.item.objectHandle);
-            if (!sourceUnit || !targetUnit) return;
-            msdl.value?.setUnitForceRelation(sourceUnit, targetUnit);
-            sourceUnit.setAffiliation(targetUnit.getAffiliation(), { recursive: true });
+            const targetItem = msdl.value?.getUnitOrForceSideById(target.data.item.objectHandle);
+            if (!sourceUnit || !targetItem) return;
+            msdl.value?.setUnitForceRelation(sourceUnit, targetItem);
+            sourceUnit.setAffiliation(targetItem.getAffiliation(), { recursive: true });
           } else if (isEquipmentItemDragItem(source.data) && isUnitDragItem(target.data)) {
             console.log("not implemented yet");
           }
@@ -109,7 +118,7 @@ function createForceSide() {
     @created="addForceSide"
   />
 
-  <Accordion type="multiple" class="mt-2">
+  <Accordion type="multiple" class="mt-2" v-model="sideStore.openSideItems">
     <SideItem
       v-for="side in sides"
       :key="side.objectHandle"
