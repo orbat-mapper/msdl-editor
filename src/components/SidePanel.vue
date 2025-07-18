@@ -42,6 +42,10 @@ const sides = computed(() => {
   return sortBy(msdl.value?.sides ?? [], "name");
 });
 
+const hasHiddenSides = computed(() => {
+  return (sides.value?.length ?? 0) < (msdl.value?.sides.length ?? 0);
+});
+
 watchEffect((onCleanup) => {
   const dndFunction = combine(
     monitorForElements({
@@ -110,7 +114,11 @@ function createForceSide() {
 
 <template>
   <header class="flex items-center justify-between px-4 mt-1">
-    <h3 class="text-xs/6 font-semibold uppercase">Sides</h3>
+    <h3 class="text-xs/6 font-semibold uppercase">
+      Sides<span v-if="hasHiddenSides" class="ml-2 text-muted-foreground text-xs"
+        >({{ sides.length }}/{{ msdl?.sides.length }})</span
+      >
+    </h3>
     <SidePanelDropdown @toggleVisibility="toggleLayers" @createForceSide="createForceSide" />
   </header>
   <CreateNewForceSideDialog
