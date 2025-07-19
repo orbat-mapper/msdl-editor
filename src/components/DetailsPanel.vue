@@ -7,7 +7,7 @@ import { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
 import CloseButton from "@/components/CloseButton.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
-import { computed } from "vue";
+import { computed, ref, useTemplateRef, watchEffect } from "vue";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
@@ -21,6 +21,10 @@ import { useGetMapLocation } from "@/composables/geoMapLocation.ts";
 import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
 import { useWidthStore } from "@/stores/uiStore.ts";
 import DetailsPanelEquipment from "@/components/DetailsPanelEquipment.vue";
+import { unrefElement } from "@vueuse/core";
+import { draggable } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
+import { getEquipmentItemDragItem, getUnitDragItem } from "@/types/draggables.ts";
+import { mapItem } from "@/components/orbat/utils.ts";
 
 const props = defineProps<{
   item: Unit | EquipmentItem | ForceSide;
@@ -28,6 +32,9 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits(["flyTo"]);
+
+const elRef = useTemplateRef("elRef");
+const isDragging = ref(false);
 
 const {
   msdl,
@@ -65,6 +72,30 @@ const typeLabel = computed(() => {
   return "Item";
 });
 
+watchEffect((onCleanup) => {
+  const el = unrefElement(elRef.value) as HTMLElement | null;
+  if (!el) return;
+  const dndFunction = draggable({
+    element: el,
+    getInitialData: () => {
+      if (isUnit(props.item)) {
+        return getUnitDragItem({ item: mapItem(props.item) });
+      } else if (isEquipmentItem(props.item)) {
+        return getEquipmentItemDragItem({ item: mapItem(props.item) });
+      }
+      return {};
+    },
+    onDragStart: () => {
+      isDragging.value = true;
+    },
+    onDrop: () => {
+      isDragging.value = false;
+    },
+  });
+
+  onCleanup(() => dndFunction());
+});
+
 function goUp() {
   if (isUnitOrEquipment(props.item)) {
     const parentItem =
@@ -87,7 +118,7 @@ function goUp() {
   >
     <header class="px-4 h-10 mt-4 flex justify-between">
       <div v-if="isUnitOrEquipment(item)" class="flex gap-2">
-        <MilSymbol :sidc="item.sidc" :key="item.sidc" :size="16" />
+        <MilSymbol :sidc="item.sidc" :key="item.sidc" :size="16" ref="elRef" />
         <span class="text-base font-bold">{{ item.label }}</span>
       </div>
       <span v-else class="text-base font-bold">{{ item.name }}</span>

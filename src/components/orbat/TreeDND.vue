@@ -1,20 +1,15 @@
 <script setup lang="ts">
 import { TreeRoot } from "reka-ui";
 import TreeItemDND from "./TreeItemDND.vue";
-import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
-import { monitorForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
-import { computed, ref, toRaw, watch, watchEffect } from "vue";
-import {
-  extractInstruction,
-  type Instruction,
-} from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
+import { computed, ref } from "vue";
 // import { updateTree } from "./utils";
-import { type EquipmentItem, type ForceSide, Unit } from "@orbat-mapper/msdllib";
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
+import { mapItem } from "@/components/orbat/utils.ts";
+import { useScenarioStore } from "@/stores/scenarioStore.ts";
 
-const { side } = defineProps<{ side: ForceSide }>();
+const { sideObjectHandle } = defineProps<{ sideObjectHandle: string }>();
 
-const selectedItems = ref([]);
+const { msdl, modifyScenario } = useScenarioStore();
 
 function getChildren(item: OrbatTreeItem) {
   const children = [...(item?.subordinates ?? []), ...(item?.equipment ?? [])].map(mapItem);
@@ -23,64 +18,19 @@ function getChildren(item: OrbatTreeItem) {
 
 const defaultValue = ref([]);
 
-function mapItem(item: Unit | EquipmentItem): OrbatTreeItem {
-  if (item instanceof Unit) {
-    return {
-      label: item.label,
-      sidc: item.sidc,
-      itemType: "unit",
-      objectHandle: item.objectHandle,
-      subordinates: item.subordinates,
-      equipment: item.equipment,
-    };
-  }
-
-  return {
-    label: item.label,
-    sidc: item.sidc || "10031500000000000000",
-    itemType: "equipment",
-    objectHandle: item.objectHandle,
-  };
-}
-
 const items = computed(() => {
+  const side = msdl.value?.getForceSideById(sideObjectHandle);
+  if (!side) return [];
   return [...side.rootUnits, ...side.equipment].map(mapItem);
 });
 
-watch(defaultValue, () => {
-  console.log("Selected items:", toRaw(defaultValue.value));
-});
+let i = 0;
 
-watchEffect((onCleanup) => {
-  const dndFunction = combine(
-    monitorForElements({
-      onDrop(args) {
-        // const { location, source } = args;
-        // // didn't drop on anything
-        // if (!location.current.dropTargets.length) return;
-        //
-        // const itemId = source.data.id as string;
-        // const target = location.current.dropTargets[0];
-        // const targetId = target.data.id as string;
-        //
-        // const instruction: Instruction | null = extractInstruction(target.data);
-        //
-        // if (instruction !== null) {
-        //   items.value =
-        //     updateTree(items.value, {
-        //       type: "instruction",
-        //       instruction,
-        //       itemId,
-        //       targetId,
-        //     }) ?? [];
-        // }
-      },
-    }),
-  );
-
-  onCleanup(() => {
-    dndFunction();
-  });
+const dummyKey = computed(() => {
+  if (!msdl.value) {
+    return 0;
+  }
+  return i++;
 });
 </script>
 <template>
@@ -92,6 +42,7 @@ watchEffect((onCleanup) => {
       :getKey="(item) => item.objectHandle"
       :getChildren="getChildren"
       v-model:expanded="defaultValue"
+      :key="dummyKey"
     >
       <TreeItemDND
         v-for="item in flattenItems"
