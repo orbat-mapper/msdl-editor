@@ -2,7 +2,7 @@
 import { Accordion } from "@/components/ui/accordion";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import CreateNewForceSideDialog from "@/components/CreateNewForceSideDialog.vue";
-import { computed, triggerRef, watchEffect } from "vue";
+import { computed, watchEffect } from "vue";
 import { sortBy } from "@/utils.ts";
 import { Button } from "@/components/ui/button";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
@@ -11,21 +11,13 @@ import { useSideStore } from "@/stores/uiStore.ts";
 import { useDialogStore } from "@/stores/dialogStore";
 import { monitorForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
-import {
-  isEquipmentItemDragItem,
-  isOrbatItemDragItem,
-  isSideDragItem,
-  isUnitDragItem,
-} from "@/types/draggables.ts";
-import {
-  extractInstruction,
-  type Instruction,
-} from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
+import { isOrbatItemDragItem } from "@/types/draggables.ts";
+import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import SideItem from "@/components/orbat/SideItem.vue";
 
 const {
   msdl,
-  modifyScenario: { addForceSide },
+  modifyScenario: { addForceSide, updateOrbatDragItems },
 } = useScenarioStore();
 
 const layerStore = useLayerStore();
@@ -54,40 +46,11 @@ watchEffect((onCleanup) => {
         // didn't drop on anything
         if (!location.current.dropTargets.length) return;
         const target = location.current.dropTargets[0];
-        const instruction: Instruction | null = extractInstruction(target.data);
-        if (
-          !(
-            isOrbatItemDragItem(source.data) &&
-            (isOrbatItemDragItem(target.data) || isSideDragItem(target.data))
-          )
-        ) {
-          return;
-        }
-        if (instruction?.type === "make-child") {
-          if (
-            isUnitDragItem(source.data) &&
-            (isUnitDragItem(target.data) || isSideDragItem(target.data))
-          ) {
-            const sourceUnit = msdl.value?.getUnitById(source.data.item.objectHandle);
-            const targetItem = msdl.value?.getUnitOrForceSideById(target.data.item.objectHandle);
-            if (!sourceUnit || !targetItem) return;
-            msdl.value?.setUnitForceRelation(sourceUnit, targetItem);
-            sourceUnit.setAffiliation(targetItem.getAffiliation(), { recursive: true });
-          } else if (isEquipmentItemDragItem(source.data) && isUnitDragItem(target.data)) {
-            console.log("not implemented yet");
-          }
-          triggerRef(msdl);
-        }
+        const instruction = extractInstruction(target.data);
 
-        // if (instruction !== null) {
-        //   items.value =
-        //     updateTree(items.value, {
-        //       type: "instruction",
-        //       instruction,
-        //       itemId,
-        //       targetId,
-        //     }) ?? [];
-        // }
+        if (instruction && isOrbatItemDragItem(source.data) && isOrbatItemDragItem(target.data)) {
+          updateOrbatDragItems(source.data, target.data, instruction);
+        }
       },
     }),
   );

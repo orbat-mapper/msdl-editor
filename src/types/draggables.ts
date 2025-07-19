@@ -30,6 +30,8 @@ export type EquipmentItemDragItem = {
   item: OrbatTreeItem;
 };
 
+export type OrbatDragItem = UnitDragItem | EquipmentItemDragItem | SideDragItem;
+
 export function getSideDragItem(data: Omit<SideDragItem, typeof privateSideDragKey>): SideDragItem {
   return {
     [privateSideDragKey]: true,
@@ -52,10 +54,8 @@ export function getUnitDragItem(
   };
 }
 
-export function isOrbatItemDragItem(
-  data: Record<string | symbol, unknown>,
-): data is UnitDragItem | EquipmentItemDragItem {
-  return isUnitDragItem(data) || isEquipmentItemDragItem(data);
+export function isOrbatItemDragItem(data: Record<string | symbol, unknown>): data is OrbatDragItem {
+  return isUnitDragItem(data) || isEquipmentItemDragItem(data) || isSideDragItem(data);
 }
 
 export function isUnitDragItem(data: Record<string | symbol, unknown>): data is UnitDragItem {

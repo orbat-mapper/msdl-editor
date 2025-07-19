@@ -1,25 +1,25 @@
 import { computed, shallowRef, triggerRef } from "vue";
+import type {
+  FederateType,
+  ForceSideType,
+  HoldingType,
+  LngLatElevationTuple,
+  LngLatTuple,
+  MilitaryScenarioInputType,
+  ScenarioIdType,
+  StandardIdentity,
+  UnitEquipmentInterface,
+} from "@orbat-mapper/msdllib";
 import {
+  EquipmentItem,
+  EquipmentItemDisposition,
+  Federate,
   ForceSide,
   Holding,
   MilitaryScenario,
   ScenarioId,
   Unit,
   UnitDisposition,
-  EquipmentItem,
-  EquipmentItemDisposition,
-  Federate,
-} from "@orbat-mapper/msdllib";
-import type {
-  ForceSideType,
-  LngLatElevationTuple,
-  LngLatTuple,
-  StandardIdentity,
-  HoldingType,
-  MilitaryScenarioInputType,
-  ScenarioIdType,
-  UnitEquipmentInterface,
-  FederateType,
 } from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
@@ -33,6 +33,8 @@ import type {
   UnitModelType,
 } from "@orbat-mapper/msdllib/dist/lib/modelType";
 import { toast } from "vue-sonner";
+import { isEquipmentItemDragItem, isUnitDragItem, type OrbatDragItem } from "@/types/draggables.ts";
+import type { Instruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 
 export interface MetaEntry<T = string> {
   label: T;
@@ -355,6 +357,36 @@ function createScenarioKey(scenario: MilitaryScenario): string {
   return scenario.scenarioId.name + scenario.scenarioId.description;
 }
 
+function updateOrbatDragItems(
+  source: OrbatDragItem,
+  target: OrbatDragItem,
+  instruction: Instruction,
+) {
+  if (!msdl.value) return;
+  if (instruction.type !== "make-child") {
+    console.warn("Only 'make-child' instruction is currentl ysupported for Orbat drag items.");
+    return;
+  }
+  if (!isUnitDragItem(source)) {
+    console.warn("Only units can be made children of other items.");
+    return;
+  }
+  if (isEquipmentItemDragItem(target)) {
+    console.warn("Equipment cannot have children.");
+    return;
+  }
+
+  const sourceItem = msdl.value.getUnitById(source.item.objectHandle);
+  const targetItem = msdl.value?.getUnitOrForceSideById(target.item.objectHandle);
+  if (!sourceItem || !targetItem) {
+    console.warn("Source or target item not found in the scenario.");
+    return;
+  }
+  msdl.value?.setUnitForceRelation(sourceItem, targetItem);
+  sourceItem.setAffiliation(targetItem.getAffiliation(), { recursive: true });
+  triggerRef(msdl);
+}
+
 export function useScenarioStore() {
   const layerStore = useLayerStore();
   const selectStore = useSelectStore();
@@ -428,6 +460,7 @@ export function useScenarioStore() {
         sideStore.primarySideMap[scenarioKey] = primarySideKey;
       },
       setSideAffiliation,
+      updateOrbatDragItems,
     },
     isNETN,
   };
