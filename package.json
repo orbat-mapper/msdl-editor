@@ -16,7 +16,7 @@
   "dependencies": {
     "@atlaskit/pragmatic-drag-and-drop": "~1.6.1",
     "@atlaskit/pragmatic-drag-and-drop-hitbox": "^1.1.0",
-    "@orbat-mapper/msdllib": "^0.24.0",
+    "@orbat-mapper/msdllib": "^0.24.2",
     "@siso-entity-type/lib": "^1.0.0",
     "@tanstack/vue-table": "^8.21.3",
     "@tmcw/togeojson": "^7.1.2",
@@ -45,14 +45,14 @@
     "xast-util-to-xml": "^3.0.2",
     "xastscript": "^3.1.1",
     "xml-beautify": "^1.2.3",
-    "zod": "^3.25.72"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
     "@tsconfig/node22": "^22.0.2",
     "@types/geojson": "^7946.0.16",
-    "@types/node": "^22.16.0",
+    "@types/node": "^22.16.5",
     "@types/xast": "1.0.7",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/eslint-config-prettier": "^10.2.0",

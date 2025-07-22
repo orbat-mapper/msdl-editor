@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import DispositionEditForm from "@/components/DispositionEditForm.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { computed } from "vue";
-import type { DispositionBase, DispositionType } from "@orbat-mapper/msdllib/dist/lib/disposition";
+import type { DispositionBase, DispositionType } from "@orbat-mapper/msdllib";
 import { formatNumber } from "@/lib/utils";
 import { getElevation, getLatitude, getLongitude } from "@/lib/geoConvert";
 
