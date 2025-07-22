@@ -17,6 +17,12 @@ export const useSideStore = defineStore("sideStore", () => {
   return { hideEmptySides, primarySideMap, openSideItems };
 });
 
+export const useDeploymentStore = defineStore("deploymentStore", () => {
+  const openFederates = ref<string[]>([]);
+
+  return { openFederates };
+});
+
 export const useWidthStore = defineStore("panelWidth", {
   state: () => ({
     orbatPanelWidth: useLocalStorage("orbatPanelWidth", 400),

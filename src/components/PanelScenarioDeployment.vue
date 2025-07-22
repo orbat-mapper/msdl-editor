@@ -17,6 +17,7 @@ import DeploymentDropdown from "./DeploymentDropdown.vue";
 import CreateNewFederateDialog from "./CreateNewFederateDialog.vue";
 import AssignToFederateDropdown from "./AssignToFederateDropdown.vue";
 import { computed, ref } from "vue";
+import { useDeploymentStore } from "@/stores/uiStore";
 
 const {
   msdl,
@@ -30,8 +31,8 @@ const {
 } = useScenarioStore();
 const selectStore = useSelectStore();
 const dialogStore = useDialogStore();
+const deploymentStore = useDeploymentStore();
 
-const openFederates = ref<string[]>([]);
 const allFederateIds = computed(
   () => msdl.value?.deployment?.federates.map((f) => f.objectHandle) || [],
 );
@@ -55,10 +56,10 @@ function createFederate() {
 }
 
 function expandCollapseAll() {
-  if (openFederates.value.length === allFederateIds.value.length) {
-    openFederates.value = [];
+  if (deploymentStore.openFederates.length === allFederateIds.value.length) {
+    deploymentStore.openFederates = [];
   } else {
-    openFederates.value = allFederateIds.value;
+    deploymentStore.openFederates = allFederateIds.value;
   }
 }
 </script>
@@ -87,7 +88,7 @@ function expandCollapseAll() {
       v-model:open="dialogStore.isCreateFederateDialogOpen"
       @created="addFederate"
     />
-    <Accordion type="multiple" class="mt-2" v-model="openFederates">
+    <Accordion type="multiple" class="mt-2" v-model="deploymentStore.openFederates">
       <AccordionItem
         v-for="federate in msdl.deployment.federates"
         :key="federate.objectHandle"
