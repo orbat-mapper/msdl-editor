@@ -8,12 +8,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { ChevronsDownUp } from "lucide-vue-next";
 import MilSymbol from "@/components/MilSymbol.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import type { EquipmentItem, Unit } from "@orbat-mapper/msdllib";
 import DeploymentDropdown from "./DeploymentDropdown.vue";
 import CreateNewFederateDialog from "./CreateNewFederateDialog.vue";
 import AssignToFederateDropdown from "./AssignToFederateDropdown.vue";
+import { computed, ref } from "vue";
 
 const {
   msdl,
@@ -27,6 +30,11 @@ const {
 } = useScenarioStore();
 const selectStore = useSelectStore();
 const dialogStore = useDialogStore();
+
+const openFederates = ref<string[]>([]);
+const allFederateIds = computed(
+  () => msdl.value?.deployment?.federates.map((f) => f.objectHandle) || [],
+);
 
 function getFederateUnits(units: string[]): Unit[] {
   if (!msdl.value) return [];
@@ -45,18 +53,41 @@ function getFederateEquipment(equipment: string[]): EquipmentItem[] {
 function createFederate() {
   dialogStore.toggleCreateFederateDialog();
 }
+
+function expandCollapseAll() {
+  if (openFederates.value.length === allFederateIds.value.length) {
+    openFederates.value = [];
+  } else {
+    openFederates.value = allFederateIds.value;
+  }
+}
 </script>
 <template>
   <div v-if="msdl?.deployment">
     <header class="flex items-center justify-between px-4 mt-1">
       <h3 class="text-xs/6 font-semibold uppercase">Federates</h3>
-      <DeploymentDropdown @create-federate="createFederate"></DeploymentDropdown>
+      <span>
+        <TooltipProvider :delay-duration="600">
+          <Tooltip>
+            <TooltipTrigger as-child>
+              <Button @click.stop="expandCollapseAll" variant="ghost" size="icon">
+                <ChevronsDownUp class="size-4" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent> Expand/collapse all federates </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+        <DeploymentDropdown
+          @create-federate="createFederate"
+          @expand-collapse-all="expandCollapseAll"
+        />
+      </span>
     </header>
     <CreateNewFederateDialog
       v-model:open="dialogStore.isCreateFederateDialogOpen"
       @created="addFederate"
     />
-    <Accordion type="multiple" class="mt-2">
+    <Accordion type="multiple" class="mt-2" v-model="openFederates">
       <AccordionItem
         v-for="federate in msdl.deployment.federates"
         :key="federate.objectHandle"

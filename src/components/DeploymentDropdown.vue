@@ -9,8 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { PlusIcon } from "lucide-vue-next";
-import { EllipsisVertical as DotsVerticalIcon } from "lucide-vue-next";
+import { PlusIcon, EllipsisVertical as DotsVerticalIcon } from "lucide-vue-next";
 import { useScenarioStore } from "@/stores/scenarioStore";
 
 const emit = defineEmits(["createFederate"]);

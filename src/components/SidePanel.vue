@@ -2,9 +2,11 @@
 import { Accordion } from "@/components/ui/accordion";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import CreateNewForceSideDialog from "@/components/CreateNewForceSideDialog.vue";
-import { computed, watchEffect } from "vue";
+import { computed, ref, watchEffect } from "vue";
 import { sortBy } from "@/utils.ts";
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { ChevronsDownUp } from "lucide-vue-next";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import SidePanelDropdown from "@/components/SidePanelDropdown.vue";
 import { useSideStore } from "@/stores/uiStore.ts";
@@ -23,6 +25,8 @@ const {
 const layerStore = useLayerStore();
 const sideStore = useSideStore();
 const dialogStore = useDialogStore();
+
+const allSideIds = computed(() => msdl.value?.sides.map((s) => s.objectHandle) || []);
 
 const sides = computed(() => {
   if (sideStore.hideEmptySides) {
@@ -73,6 +77,14 @@ function toggleLayers() {
 function createForceSide() {
   dialogStore.toggleCreateForceSideDialog();
 }
+
+function expandCollapseAll() {
+  if (sideStore.openSideItems.length === allSideIds.value.length) {
+    sideStore.openSideItems = [];
+  } else {
+    sideStore.openSideItems = allSideIds.value;
+  }
+}
 </script>
 
 <template>
@@ -82,7 +94,19 @@ function createForceSide() {
         >({{ sides.length }}/{{ msdl?.sides.length }})</span
       >
     </h3>
-    <SidePanelDropdown @toggleVisibility="toggleLayers" @createForceSide="createForceSide" />
+    <span>
+      <TooltipProvider :delay-duration="600">
+        <Tooltip>
+          <TooltipTrigger as-child>
+            <Button @click.stop="expandCollapseAll" variant="ghost" size="icon">
+              <ChevronsDownUp class="size-4" />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent> Expand/collapse all sides </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+      <SidePanelDropdown @toggleVisibility="toggleLayers" @createForceSide="createForceSide" />
+    </span>
   </header>
   <CreateNewForceSideDialog
     v-model:open="dialogStore.isCreateForceSideDialogOpen"
