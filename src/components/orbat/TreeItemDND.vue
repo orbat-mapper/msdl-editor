@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, h, nextTick, ref, render, useTemplateRef, watchEffect } from "vue";
+import { computed, h, ref, render, useTemplateRef, watchEffect } from "vue";
 import { type FlattenedItem, TreeItem } from "reka-ui";
 import {
   draggable,
@@ -23,7 +23,7 @@ import {
   getEquipmentItemDragItem,
   getUnitDragItem,
   isEquipmentItemDragItem,
-  isUnitDragItem,
+  isUnitOrEquipmentItemDragItem,
 } from "@/types/draggables.ts";
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
 
@@ -137,23 +137,32 @@ watchEffect((onCleanup) => {
         });
       },
       canDrop: ({ source }) => {
-        if (source.data.id == item.id) {
-          return false;
-        }
-        // only units supported for now
-        if (isEquipmentItemDragItem(source.data) || props.item.value.itemType !== "unit") {
-          return false;
-        }
+        if (isUnitOrEquipmentItemDragItem(source.data)) {
+          const { item: sourceItem } = source.data;
+          if (sourceItem.objectHandle === item.id) {
+            console.log("dragging over self, ignoring");
+            return false;
+          }
+          if (isEquipmentItemDragItem(source.data)) {
+            return false;
+          }
 
-        return true;
+          return true;
+        }
+        return false;
       },
+
       onDrag: ({ self }) => {
         instruction.value = extractInstruction(self.data) as typeof instruction.value;
       },
       onDragEnter: ({ source }) => {
-        if (source.data.id !== item.id) {
+        if (
+          isUnitOrEquipmentItemDragItem(source.data) &&
+          source.data.item.objectHandle !== item.id
+        ) {
           isDraggedOver.value = true;
           if (!isPending.value) startOpenTimeout();
+        } else {
         }
       },
       onDragLeave: () => {
@@ -164,11 +173,7 @@ watchEffect((onCleanup) => {
       onDrop: ({ location }) => {
         isDraggedOver.value = false;
         instruction.value = null;
-        if (location.current.dropTargets[0].data.id === item.id) {
-          nextTick(() => {
-            expandItem();
-          });
-        }
+        stopOpenTimeout();
       },
       getIsSticky: () => true,
     }),

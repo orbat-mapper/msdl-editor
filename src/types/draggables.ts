@@ -58,6 +58,12 @@ export function isOrbatItemDragItem(data: Record<string | symbol, unknown>): dat
   return isUnitDragItem(data) || isEquipmentItemDragItem(data) || isSideDragItem(data);
 }
 
+export function isUnitOrEquipmentItemDragItem(
+  data: Record<string | symbol, unknown>,
+): data is UnitDragItem | EquipmentItemDragItem {
+  return isUnitDragItem(data) || isEquipmentItemDragItem(data);
+}
+
 export function isUnitDragItem(data: Record<string | symbol, unknown>): data is UnitDragItem {
   return Boolean(data[privateUnitDragKey]);
 }
