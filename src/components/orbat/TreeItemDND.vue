@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, h, nextTick, ref, render, useTemplateRef, watchEffect } from "vue";
+import { computed, h, ref, render, useTemplateRef, watchEffect } from "vue";
 import { type FlattenedItem, TreeItem } from "reka-ui";
 import {
   draggable,
@@ -19,7 +19,12 @@ import { unrefElement, useTimeoutFn } from "@vueuse/core";
 import MilSymbol from "@/components/MilSymbol.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
-import { getEquipmentItemDragItem, getUnitDragItem } from "@/types/draggables.ts";
+import {
+  getEquipmentItemDragItem,
+  getUnitDragItem,
+  isEquipmentItemDragItem,
+  isUnitOrEquipmentItemDragItem,
+} from "@/types/draggables.ts";
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
 
 const props = defineProps<{
@@ -41,7 +46,7 @@ const selectStore = useSelectStore();
 
 const mode = computed(() => {
   if (props.item.hasChildren) return "expanded";
-  if (props.item.index + 1 === props.item.parentItem?.children?.length) return "last-in-group";
+  if (props.item.index + 1 === props.item.parentItem?.childrenCount) return "last-in-group";
   return "standard";
 });
 
@@ -117,7 +122,10 @@ watchEffect((onCleanup) => {
     dropTargetForElements({
       element: currentElement,
       getData: ({ input, element }) => {
-        const data = { id: item.id };
+        const data =
+          props.item.value.itemType === "unit"
+            ? getUnitDragItem({ item: props.item.value })
+            : getEquipmentItemDragItem({ item: props.item.value });
 
         return attachInstruction(data, {
           input,
@@ -125,27 +133,36 @@ watchEffect((onCleanup) => {
           indentPerLevel: 16,
           currentLevel: props.item.level,
           mode: mode.value,
-          block: [],
+          block: ["reorder-above", "reorder-below"],
         });
       },
       canDrop: ({ source }) => {
+        if (isUnitOrEquipmentItemDragItem(source.data)) {
+          const { item: sourceItem } = source.data;
+          if (sourceItem.objectHandle === item.id) {
+            console.log("dragging over self, ignoring");
+            return false;
+          }
+          if (isEquipmentItemDragItem(source.data)) {
+            return false;
+          }
+
+          return true;
+        }
         return false;
-        /*if (source.data.id == item.id) {
-          return false;
-        }
-        if (item.itemType === "equipment" && instruction.value?.type === "make-child") {
-          console.log(JSON.stringify(instruction.value), item.itemType, source.data.itemType);
-          return false;
-        }
-        return true;*/
       },
+
       onDrag: ({ self }) => {
         instruction.value = extractInstruction(self.data) as typeof instruction.value;
       },
       onDragEnter: ({ source }) => {
-        if (source.data.id !== item.id) {
+        if (
+          isUnitOrEquipmentItemDragItem(source.data) &&
+          source.data.item.objectHandle !== item.id
+        ) {
           isDraggedOver.value = true;
           if (!isPending.value) startOpenTimeout();
+        } else {
         }
       },
       onDragLeave: () => {
@@ -156,11 +173,7 @@ watchEffect((onCleanup) => {
       onDrop: ({ location }) => {
         isDraggedOver.value = false;
         instruction.value = null;
-        if (location.current.dropTargets[0].data.id === item.id) {
-          nextTick(() => {
-            expandItem();
-          });
-        }
+        stopOpenTimeout();
       },
       getIsSticky: () => true,
     }),

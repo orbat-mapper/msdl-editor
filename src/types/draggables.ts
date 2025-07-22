@@ -1,11 +1,18 @@
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
 import type { Position } from "geojson";
+import type { ForceSide } from "@orbat-mapper/msdllib";
 
 export type UnitDragItemSource = "orbatTree" | "breadcrumbs";
 
 const privateUnitDragKey = Symbol("unit");
 const privateEquipmentDragKey = Symbol("equipmentItem");
 const privatePositionDragKey = Symbol("position");
+const privateSideDragKey = Symbol("side");
+
+export type SideDragItem = {
+  [privateSideDragKey]: boolean;
+  item: ForceSide;
+};
 
 export type PositionDropItem = {
   [privatePositionDragKey]: boolean;
@@ -23,6 +30,19 @@ export type EquipmentItemDragItem = {
   item: OrbatTreeItem;
 };
 
+export type OrbatDragItem = UnitDragItem | EquipmentItemDragItem | SideDragItem;
+
+export function getSideDragItem(data: Omit<SideDragItem, typeof privateSideDragKey>): SideDragItem {
+  return {
+    [privateSideDragKey]: true,
+    ...data,
+  };
+}
+
+export function isSideDragItem(data: Record<string | symbol, unknown>): data is SideDragItem {
+  return Boolean(data[privateSideDragKey]);
+}
+
 export function getUnitDragItem(
   data: Omit<UnitDragItem, typeof privateUnitDragKey>,
   source?: UnitDragItemSource,
@@ -32,6 +52,16 @@ export function getUnitDragItem(
     ...data,
     source,
   };
+}
+
+export function isOrbatItemDragItem(data: Record<string | symbol, unknown>): data is OrbatDragItem {
+  return isUnitDragItem(data) || isEquipmentItemDragItem(data) || isSideDragItem(data);
+}
+
+export function isUnitOrEquipmentItemDragItem(
+  data: Record<string | symbol, unknown>,
+): data is UnitDragItem | EquipmentItemDragItem {
+  return isUnitDragItem(data) || isEquipmentItemDragItem(data);
 }
 
 export function isUnitDragItem(data: Record<string | symbol, unknown>): data is UnitDragItem {
