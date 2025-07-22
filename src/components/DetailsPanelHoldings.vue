@@ -14,6 +14,7 @@ import { PencilIcon } from "lucide-vue-next";
 import HoldingsEditDialog from "@/components/HoldingsEditDialog.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { formatNumber } from "@/lib/utils";
 
 const {
   msdl,
@@ -70,9 +71,23 @@ function onUpdate(data: HoldingType[]) {
       </TableHeader>
       <TableBody>
         <TableRow v-for="(holding, i) in holdings()" :key="i">
-          <TableCell class="w-1/3">{{ holding.nsnName }}</TableCell>
+          <TableCell class="w-1/3">
+            <TooltipProvider v-if="holding.nsnName && holding.nsnName.length > 24">
+              <Tooltip>
+                <TooltipTrigger>
+                  <span class="block max-w-[24ch] truncate">{{ holding.nsnName }}</span>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{{ holding.nsnName }}</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+            <template v-else>{{ holding.nsnName }}</template>
+          </TableCell>
           <TableCell class="w-1/3">{{ holding.nsnCode }}</TableCell>
-          <TableCell class="w-1/3">{{ holding.onHandQuantity }}</TableCell>
+          <TableCell class="w-1/3">{{
+            formatNumber(holding.onHandQuantity, { maxDecimals: 1 })
+          }}</TableCell>
         </TableRow>
       </TableBody>
     </Table>
