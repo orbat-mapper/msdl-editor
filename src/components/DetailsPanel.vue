@@ -17,6 +17,7 @@ import UnitModelPanel from "@/components/UnitModelPanel.vue";
 import EquipmentItemModelPanel from "@/components/EquipmentItemModelPanel.vue";
 import { isEquipmentItem, isForceSide, isUnit, isUnitOrEquipment } from "@/utils.ts";
 import DetailsPanelForceSide from "@/components/DetailsPanelForceSide.vue";
+import DetailsPanelDisposition from "@/components/DetailsPanelDisposition.vue";
 import { useGetMapLocation } from "@/composables/geoMapLocation.ts";
 import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
 import { useWidthStore } from "@/stores/uiStore.ts";
@@ -127,12 +128,12 @@ function goUp() {
       </div>
     </header>
     <div class="flex items-center pl-2 py-1 border-b border-muted-foreground/20">
-      <Button variant="ghost" size="icon" @click="emit('flyTo', item)" title="Zoom to item"
-        ><FocusIcon
-      /></Button>
-      <Button variant="ghost" size="icon" @click="goUp" title="Go to parent"
-        ><ArrowUpIcon
-      /></Button>
+      <Button variant="ghost" size="icon" @click="emit('flyTo', item)" title="Zoom to item">
+        <FocusIcon />
+      </Button>
+      <Button variant="ghost" size="icon" @click="goUp" title="Go to parent">
+        <ArrowUpIcon />
+      </Button>
       <Button
         v-if="isUnitOrEquipment(item)"
         variant="ghost"
@@ -140,8 +141,8 @@ function goUp() {
         @click="startGetLocation()"
         :disabled="isGetLocationActive"
         title="Set location of item"
-        ><LocateFixedIcon
-      /></Button>
+        ><LocateFixedIcon />
+      </Button>
       <ShowXMLDialog :item="item">XML</ShowXMLDialog>
     </div>
     <Tabs default-value="info" class="mt-0">
@@ -161,8 +162,9 @@ function goUp() {
       </TabsList>
       <ScrollArea class="">
         <div class="max-h-[50vh] min-w-96">
-          <TabsContent value="info" class="p-4">
+          <TabsContent value="info" class="px-4">
             <DetailsPanelForceSide :item="item" v-if="isForceSide(item)" />
+            <DetailsPanelDisposition :item="item" v-if="isUnitOrEquipment(item)" />
             <Button
               v-else-if="isUnitOrEquipment(item)"
               :disabled="!item.location"
@@ -171,25 +173,17 @@ function goUp() {
               >Fly to</Button
             >
           </TabsContent>
-          <TabsContent v-if="isUnit(item)" value="equipment" class="p-4">
+          <TabsContent v-if="isUnit(item)" value="equipment" class="px-4">
             <DetailsPanelEquipment :item="item" @flyTo="emit('flyTo', $event)" />
           </TabsContent>
-          <TabsContent v-if="isNETN && isUnitOrEquipment(item)" value="holdings" class="p-4">
+          <TabsContent v-if="isNETN && isUnitOrEquipment(item)" value="holdings" class="px-4">
             <DetailsPanelHoldings :item="item" />
           </TabsContent>
-          <TabsContent v-if="isUnit(item)" value="model">
-            <div class="max-w-[40vw]">
-              <div class="bg-muted p-2 overflow-auto">
-                <UnitModelPanel :unit="item"> </UnitModelPanel>
-              </div>
-            </div>
+          <TabsContent v-if="isUnit(item)" value="model" class="px-4">
+            <UnitModelPanel :unit="item"> </UnitModelPanel>
           </TabsContent>
-          <TabsContent v-if="isEquipmentItem(item)" value="model">
-            <div class="max-w-[40vw]">
-              <div class="bg-muted p-2 overflow-auto">
-                <EquipmentItemModelPanel :equipment="item"> </EquipmentItemModelPanel>
-              </div>
-            </div>
+          <TabsContent v-if="isEquipmentItem(item)" value="model" class="px-4">
+            <EquipmentItemModelPanel :equipment="item"> </EquipmentItemModelPanel>
           </TabsContent>
         </div>
       </ScrollArea>

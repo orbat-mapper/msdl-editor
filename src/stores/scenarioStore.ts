@@ -1,5 +1,6 @@
 import { computed, shallowRef, triggerRef } from "vue";
 import type {
+  DispositionType,
   FederateType,
   ForceSideType,
   HoldingType,
@@ -192,6 +193,19 @@ function updateItemLocation(objectHandle: string, newLocation: Position) {
 
   triggerRef(msdl);
   // console.warn("Not implemented yet: updateItemLocation", newLocation);
+}
+
+function updateItemDisposition(objectHandle: string, disposition: DispositionType) {
+  if (!msdl.value) return;
+  const item = msdl.value.getUnitOrEquipmentById(objectHandle);
+  if (!item) {
+    console.warn(`Unit/EquipmentItem with object handle ${objectHandle} not found.`);
+    return;
+  }
+  if (disposition) {
+    item.disposition = disposition;
+  }
+  triggerRef(msdl);
 }
 
 function updateItemModel(
@@ -467,6 +481,7 @@ export function useScenarioStore() {
       updateScenarioId,
       updateForceSide,
       updateItemLocation,
+      updateItemDisposition,
       updateItemModel,
       updateHoldings,
       addUnit,

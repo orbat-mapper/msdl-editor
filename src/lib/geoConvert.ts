@@ -1,3 +1,4 @@
+import type { LngLatElevationTuple, LngLatTuple } from "@orbat-mapper/msdllib";
 import type { Position } from "geojson";
 import { forward } from "mgrs";
 
@@ -26,4 +27,19 @@ export function fixExtent(extent: number[] = []) {
   if (!extent || extent.length === 0) return;
   const [minx, miny, maxx, maxy] = extent;
   return [Math.min(minx, maxx), Math.min(miny, maxy), Math.max(minx, maxx), Math.max(miny, maxy)];
+}
+
+export function getLongitude(val?: LngLatTuple | LngLatElevationTuple): number {
+  if (!val || val.length < 1) return 0;
+  return val[0];
+}
+
+export function getLatitude(val?: LngLatTuple | LngLatElevationTuple): number {
+  if (!val || val.length < 2) return 0;
+  return val[1];
+}
+
+export function getElevation(val?: LngLatTuple | LngLatElevationTuple): number {
+  if (!val || val.length < 3) return 0;
+  return val[2] || 0;
 }

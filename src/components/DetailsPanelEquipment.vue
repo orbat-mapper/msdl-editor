@@ -23,7 +23,7 @@ function onSelectEquipment(eq: EquipmentItem) {
 
 <template>
   <div>
-    <Table class="-mt-4 w-full">
+    <Table class="w-full">
       <TableBody>
         <TableRow v-for="eq in item.equipment" :key="eq.objectHandle">
           <TableCell class="w-5 p-0">
