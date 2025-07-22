@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { EquipmentItem, Unit } from "@orbat-mapper/msdllib";
+import type { DispositionBase, DispositionType } from "@orbat-mapper/msdllib";
 import DescriptionList from "@/components/DescriptionList.vue";
 import DescriptionItem from "@/components/DescriptionItem.vue";
 import { useToggle } from "@vueuse/core";
@@ -8,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import DispositionEditForm from "@/components/DispositionEditForm.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { computed } from "vue";
-import type { DispositionBase, DispositionType } from "@orbat-mapper/msdllib/dist/lib/disposition";
 import { formatNumber } from "@/lib/utils";
 import { getElevation, getLatitude, getLongitude } from "@/lib/geoConvert";
 
