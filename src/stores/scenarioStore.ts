@@ -364,7 +364,7 @@ function updateOrbatDragItems(
 ) {
   if (!msdl.value) return;
   if (instruction.type !== "make-child") {
-    console.warn("Only 'make-child' instruction is currentl ysupported for Orbat drag items.");
+    console.warn("Only 'make-child' instruction is currently supported for Orbat drag items.");
     return;
   }
   if (!isUnitDragItem(source)) {
@@ -382,6 +382,18 @@ function updateOrbatDragItems(
     console.warn("Source or target item not found in the scenario.");
     return;
   }
+
+  if (sourceItem.objectHandle === targetItem.objectHandle) {
+    return;
+  }
+
+  // check that target is not a child of source
+  const { hierarchy } = msdl.value?.getItemHierarchy(targetItem);
+  if (hierarchy.map((i) => i.objectHandle).includes(sourceItem.objectHandle)) {
+    console.warn("Cannot make a child of an item that is already a child.");
+    return;
+  }
+
   msdl.value?.setUnitForceRelation(sourceItem, targetItem);
   sourceItem.setAffiliation(targetItem.getAffiliation(), { recursive: true });
   triggerRef(msdl);
