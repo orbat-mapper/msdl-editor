@@ -11,6 +11,7 @@ import ScenarioIdEditForm from "@/components/ScenarioIdEditForm.vue";
 import {
   ScenarioId,
   type MilitaryScenarioInputType,
+  type MsdlOptionsType,
   type ScenarioIdType,
 } from "@orbat-mapper/msdllib";
 
@@ -33,6 +34,7 @@ function cancel() {
 function onUpdate(values: Partial<ScenarioIdType>) {
   const scenInput: MilitaryScenarioInputType = {
     isNETN: true,
+    msdlOptions: {} as MsdlOptionsType,
     scenarioId: values as ScenarioIdType,
   };
   emit("created", scenInput);

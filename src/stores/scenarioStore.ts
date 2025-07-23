@@ -1,23 +1,25 @@
 import { computed, shallowRef, triggerRef } from "vue";
+import type {
+  FederateType,
+  ForceSideType,
+  HoldingType,
+  LngLatElevationTuple,
+  LngLatTuple,
+  MilitaryScenarioInputType,
+  ScenarioIdType,
+  StandardIdentity,
+  UnitEquipmentInterface,
+} from "@orbat-mapper/msdllib";
 import {
+  EquipmentItem,
+  EquipmentItemDisposition,
+  Federate,
   ForceSide,
   Holding,
   MilitaryScenario,
   ScenarioId,
   Unit,
   UnitDisposition,
-  EquipmentItem,
-  EquipmentItemDisposition,
-} from "@orbat-mapper/msdllib";
-import type {
-  ForceSideType,
-  LngLatElevationTuple,
-  LngLatTuple,
-  StandardIdentity,
-  HoldingType,
-  MilitaryScenarioInputType,
-  ScenarioIdType,
-  UnitEquipmentInterface,
 } from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
@@ -33,6 +35,8 @@ import type {
   UnitModelType,
 } from "@orbat-mapper/msdllib/dist/lib/modelType";
 import { toast } from "vue-sonner";
+import { isEquipmentItemDragItem, isUnitDragItem, type OrbatDragItem } from "@/types/draggables.ts";
+import type { Instruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 
 export interface MetaEntry<T = string> {
   label: T;
@@ -361,8 +365,70 @@ function removeForceSide(objectHandle: string) {
   triggerRef(msdl);
 }
 
+function addFederate(newFederate?: Partial<FederateType>) {
+  if (!msdl.value || !newFederate) return;
+  const fed = Federate.create();
+  fed.updateFromObject(newFederate);
+  msdl.value.addFederate(fed);
+  triggerRef(msdl);
+}
+
+function assignUnitToFederate(unit: string, federate: string) {
+  if (!msdl.value || !unit || !federate) return;
+  msdl.value.assignUnitToFederate(unit, federate);
+  triggerRef(msdl);
+}
+
+function assignEquipmentToFederate(equipment: string, federate: string) {
+  if (!msdl.value || !equipment || !federate) return;
+  msdl.value.assignEquipmentItemToFederate(equipment, federate);
+  triggerRef(msdl);
+}
+
 function createScenarioKey(scenario: MilitaryScenario): string {
   return scenario.scenarioId.name + scenario.scenarioId.description;
+}
+
+function updateOrbatDragItems(
+  source: OrbatDragItem,
+  target: OrbatDragItem,
+  instruction: Instruction,
+) {
+  if (!msdl.value) return;
+  if (instruction.type !== "make-child") {
+    console.warn("Only 'make-child' instruction is currently supported for Orbat drag items.");
+    return;
+  }
+  if (!isUnitDragItem(source)) {
+    console.warn("Only units can be made children of other items.");
+    return;
+  }
+  if (isEquipmentItemDragItem(target)) {
+    console.warn("Equipment cannot have children.");
+    return;
+  }
+
+  const sourceItem = msdl.value.getUnitById(source.item.objectHandle);
+  const targetItem = msdl.value?.getUnitOrForceSideById(target.item.objectHandle);
+  if (!sourceItem || !targetItem) {
+    console.warn("Source or target item not found in the scenario.");
+    return;
+  }
+
+  if (sourceItem.objectHandle === targetItem.objectHandle) {
+    return;
+  }
+
+  // check that target is not a child of source
+  const { hierarchy } = msdl.value?.getItemHierarchy(targetItem);
+  if (hierarchy.map((i) => i.objectHandle).includes(sourceItem.objectHandle)) {
+    console.warn("Cannot make a child of an item that is already a child.");
+    return;
+  }
+
+  msdl.value?.setUnitForceRelation(sourceItem, targetItem);
+  sourceItem.setAffiliation(targetItem.getAffiliation(), { recursive: true });
+  triggerRef(msdl);
 }
 
 export function useScenarioStore() {
@@ -427,6 +493,9 @@ export function useScenarioStore() {
       addUnit,
       addEquipmentItem,
       addForceSide,
+      addFederate,
+      assignUnitToFederate,
+      assignEquipmentToFederate,
       removeUnit,
       removeEquipmentItem,
       setPrimarySide: (side: ForceSide | string) => {
@@ -436,6 +505,7 @@ export function useScenarioStore() {
         sideStore.primarySideMap[scenarioKey] = primarySideKey;
       },
       setSideAffiliation,
+      updateOrbatDragItems,
     },
     isNETN,
   };

@@ -11,8 +11,9 @@ import MapContextMenu from "@/components/MapContextMenu.vue";
 import type { MapContextMenuEvent } from "@/components/types.ts";
 import { useUIStore } from "@/stores/uiStore.ts";
 import { getStyleForBaseLayer, useMapLayerStore } from "@/stores/mapLayerStore.ts";
+import { useMapDrop } from "@/composables/mapDrop.ts";
 
-const props = defineProps<{ mlMap: MlMap }>();
+const { mlMap } = defineProps<{ mlMap: MlMap }>();
 const emit = defineEmits(["showContextMenu"]);
 const { msdl } = useScenarioStore();
 
@@ -35,6 +36,8 @@ const sides = computed(() => {
 let contextmenuSub: Subscription;
 let clickSub: Subscription;
 
+const { isDragging, formattedPosition } = useMapDrop(mlMap);
+
 watchEffect(() => {
   const visibleSides = sides.value.filter((side) => store.layers.has(side.objectHandle));
 
@@ -42,23 +45,23 @@ watchEffect(() => {
     includeUnits: store.showUnits,
     includeEquipment: store.showEquipment,
   });
-  const source = props.mlMap.getSource("msdl-sides") as GeoJSONSource;
+  const source = mlMap.getSource("msdl-sides") as GeoJSONSource;
   if (!source) return;
   source.setData(featureCollection as never);
 });
 
 watchEffect(() => {
-  const { mlMap } = props;
+  /* eslint-disable vue/no-mutating-props */
   mlMap.showCollisionBoxes = mapSettings.showCollisionBoxes;
   mlMap.showPadding = mapSettings.showPadding;
   mlMap.showTileBoundaries = mapSettings.showTileBoundaries;
   mlMap.showOverdrawInspector = mapSettings.showOverdrawInspector;
+  /* eslint-enable vue/no-mutating-props */
 });
 
 watch(
   () => mapLayerStore.baseLayer,
   (baseLayer) => {
-    const { mlMap } = props;
     const newStyle = getStyleForBaseLayer(baseLayer);
     // filter keys that start with 'msdl-' from oldBaseLayer
 
@@ -84,7 +87,6 @@ watch(
 );
 
 function setTextField() {
-  const mlMap = props.mlMap;
   if (store.showLabels) {
     mlMap.setLayoutProperty("msdl-sides", "text-field", ["get", "label"]);
   } else {
@@ -102,7 +104,6 @@ watch(
 watch(
   () => store.showIconAnchors,
   (v) => {
-    const mlMap = props.mlMap;
     const hasLayer = !!mlMap.getLayer("msdl-points");
     if (!v) {
       if (hasLayer) mlMap.removeLayer("msdl-points");
@@ -121,8 +122,38 @@ watch(
   },
 );
 
+watchEffect(() => {
+  const hasLayer = !!mlMap.getLayer("msdl-area-of-interest");
+  const hasSource = !!mlMap.getSource("msdl-bbox");
+  const hasSidesLayer = !!mlMap.getLayer("msdl-sides");
+  const areaOfInterest = msdl.value?.environment?.areaOfInterest?.toGeoJson();
+  if (!store.showAreaOfInterest || !areaOfInterest) {
+    if (hasLayer) mlMap.removeLayer("msdl-area-of-interest");
+    if (hasSource) mlMap.removeSource("msdl-bbox");
+  } else {
+    if (hasLayer) return;
+    if (!areaOfInterest) return;
+    mlMap.addSource("msdl-bbox", {
+      type: "geojson",
+      data: areaOfInterest,
+    });
+    mlMap.addLayer(
+      {
+        id: "msdl-area-of-interest",
+        type: "line",
+        source: "msdl-bbox",
+        paint: {
+          "line-color": "blue",
+          "line-dasharray": [10, 10],
+          "line-width": 2,
+        },
+      },
+      hasSidesLayer ? "msdl-sides" : undefined,
+    );
+  }
+});
+
 watch([() => store.showSymbolOutline, () => store.symbolSize], () => {
-  const mlMap = props.mlMap;
   mlMap
     .listImages()
     .filter(checkIfSymbolCode)
@@ -242,7 +273,7 @@ function addSidesToMap(map: MlMap) {
   }, 600);
 }
 
-addSidesToMap(props.mlMap);
+addSidesToMap(mlMap);
 
 onUnmounted(() => {
   contextmenuSub?.unsubscribe();
@@ -250,5 +281,15 @@ onUnmounted(() => {
 });
 </script>
 <template>
+  <div
+    v-if="isDragging"
+    class="pointer-events-none absolute inset-0 border-4 border-dashed border-blue-700"
+  >
+    <p
+      class="absolute bottom-1 left-2 rounded bg-white px-1 text-base tracking-tighter text-gray-800 tabular-nums"
+    >
+      {{ formattedPosition }}
+    </p>
+  </div>
   <MapContextMenu v-model="isOpen" :event="mapEvent" />
 </template>

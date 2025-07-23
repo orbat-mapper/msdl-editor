@@ -12,10 +12,25 @@ import PanelScenarioOptions from "@/components/PanelScenarioOptions.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import PanelScenarioDeployment from "@/components/PanelScenarioDeployment.vue";
 import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
+import type { LngLatBoundsLike } from "maplibre-gl";
+import type { BBox } from "geojson";
+
+const { mlMap } = defineProps<{
+  mlMap?: maplibregl.Map;
+}>();
 
 const uiStore = useUIStore();
 const widthStore = useWidthStore();
 const { msdl } = useScenarioStore();
+
+function flyToBoundingBox(bbox: BBox) {
+  if (bbox.some((v) => v === Infinity || v === -Infinity)) {
+    return;
+  }
+  mlMap?.fitBounds(bbox as LngLatBoundsLike, {
+    padding: { top: 50, bottom: 50, left: widthStore.orbatPanelWidth + 50, right: 100 },
+  });
+}
 </script>
 <template>
   <aside
@@ -34,7 +49,7 @@ const { msdl } = useScenarioStore();
         </TabsList>
         <CloseButton @click="uiStore.toggleLeftPanel()" />
       </header>
-      <ScrollArea class="flex-auto pb-8 overflow-auto">
+      <div class="flex-auto pb-8 overflow-auto">
         <TabsContent value="orbat">
           <SidePanel />
         </TabsContent>
@@ -42,7 +57,7 @@ const { msdl } = useScenarioStore();
           <PanelMapDisplay class="mt-6 px-4" />
         </TabsContent>
         <TabsContent value="scenarioInfo">
-          <PanelScenarioInfo class="px-4" />
+          <PanelScenarioInfo class="px-4" @flyTo="flyToBoundingBox" />
         </TabsContent>
         <TabsContent value="scenarioOptions">
           <PanelScenarioOptions class="px-4" />
@@ -50,7 +65,7 @@ const { msdl } = useScenarioStore();
         <TabsContent v-if="msdl?.isNETN" value="deployment">
           <PanelScenarioDeployment />
         </TabsContent>
-      </ScrollArea>
+      </div>
     </Tabs>
     <PanelResizeHandle
       :width="widthStore.orbatPanelWidth"
@@ -69,3 +84,16 @@ const { msdl } = useScenarioStore();
     <span class="sr-only">Open panel</span>
   </Button>
 </template>
+<style scoped>
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+</style>

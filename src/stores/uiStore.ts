@@ -12,8 +12,9 @@ export const useUIStore = defineStore("uiStore", () => {
 export const useSideStore = defineStore("sideStore", () => {
   const hideEmptySides = ref(true);
   const primarySideMap = useLocalStorage<Record<string, string>>("primarySideMap", {});
+  const openSideItems = ref<string[]>([]);
 
-  return { hideEmptySides, primarySideMap };
+  return { hideEmptySides, primarySideMap, openSideItems };
 });
 
 export const useWidthStore = defineStore("panelWidth", {
