@@ -53,28 +53,28 @@ function onUpdate(data: Partial<MsdlOptionsType>) {
     />
     <DescriptionList v-else class="divide-y divide-border">
       <DescriptionItem label="MSDLVersion">{{
-        msdl.msdlOptions.MSDLVersion || "n/a"
-      }}</DescriptionItem>
-      <DescriptionItem label="StandardName">{{
-        msdl.msdlOptions.StandardName || "n/a"
-      }}</DescriptionItem>
-      <DescriptionItem label="MajorVersion">{{
-        msdl.msdlOptions.MajorVersion || "n/a"
-      }}</DescriptionItem>
-      <DescriptionItem label="MinorVersion">{{
-        msdl.msdlOptions.MinorVersion || "n/a"
-      }}</DescriptionItem>
-      <DescriptionItem label="CoordinateSystemType">{{
-        msdl.msdlOptions.CoordinateSystemType || "n/a"
-      }}</DescriptionItem>
-      <DescriptionItem label="CoordinateSystemDatum">{{
-        msdl.msdlOptions.CoordinateSystemDatum || "n/a"
+        msdl.msdlOptions.msdlVersion || "n/a"
       }}</DescriptionItem>
       <DescriptionItem label="AggregateBased">{{
-        msdl.msdlOptions.AggregateBased || "n/a"
+        msdl.msdlOptions.aggregateBased || "n/a"
       }}</DescriptionItem>
       <DescriptionItem label="AggregateEchelon">{{
-        msdl.msdlOptions.AggregateEchelon || "n/a"
+        msdl.msdlOptions.aggregateEchelon || "n/a"
+      }}</DescriptionItem>
+      <DescriptionItem label="StandardName">{{
+        msdl.msdlOptions.standardName || "n/a"
+      }}</DescriptionItem>
+      <DescriptionItem label="MajorVersion">{{
+        msdl.msdlOptions.majorVersion || "n/a"
+      }}</DescriptionItem>
+      <DescriptionItem label="MinorVersion">{{
+        msdl.msdlOptions.minorVersion || "n/a"
+      }}</DescriptionItem>
+      <DescriptionItem label="CoordinateSystemType">{{
+        msdl.msdlOptions.coordinateSystemType || "n/a"
+      }}</DescriptionItem>
+      <DescriptionItem label="CoordinateSystemDatum">{{
+        msdl.msdlOptions.coordinateSystemDatum || "n/a"
       }}</DescriptionItem>
       <div class="flex items-center justify-end mt-4">
         <Button variant="outline" type="button" size="sm" @click="toggleEditForm()"

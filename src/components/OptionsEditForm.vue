@@ -33,28 +33,28 @@ const emit = defineEmits<{
 
 const formSchema = toTypedSchema(
   z.object({
-    MSDLVersion: z.string().min(1, "MSDLVersion is required"),
-    AggregateBased: z.string(),
-    AggregateEchelon: z.string(),
-    StandardName: z.string(),
-    MajorVersion: z.string(),
-    MinorVersion: z.string(),
-    CoordinateSystemType: z.string(),
-    CoordinateSystemDatum: z.string(),
+    msdlVersion: z.string().min(1, "MSDLVersion is required"),
+    aggregateBased: z.string(),
+    aggregateEchelon: z.string(),
+    standardName: z.string(),
+    majorVersion: z.string(),
+    minorVersion: z.string(),
+    coordinateSystemType: z.string(),
+    coordinateSystemDatum: z.string(),
   }),
 );
 
 const form = useForm({
   validationSchema: formSchema,
   initialValues: {
-    MSDLVersion: props.item.MSDLVersion || "",
-    AggregateBased: props.item.AggregateBased || "",
-    AggregateEchelon: props.item.AggregateEchelon || "",
-    StandardName: props.item.StandardName || "",
-    MajorVersion: props.item.MajorVersion || "",
-    MinorVersion: props.item.MinorVersion || "",
-    CoordinateSystemType: props.item.CoordinateSystemType || "",
-    CoordinateSystemDatum: props.item.CoordinateSystemDatum || "",
+    msdlVersion: props.item.msdlVersion || "",
+    aggregateBased: props.item.aggregateBased || "",
+    aggregateEchelon: props.item.aggregateEchelon || "",
+    standardName: props.item.standardName || "",
+    majorVersion: props.item.majorVersion || "",
+    minorVersion: props.item.minorVersion || "",
+    coordinateSystemType: props.item.coordinateSystemType || "",
+    coordinateSystemDatum: props.item.coordinateSystemDatum || "",
   },
 });
 
@@ -84,7 +84,7 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
     <form @submit.prevent="onSubmit" class="flex flex-col gap-6 mt-6">
       <FormField
         v-slot="{ componentField }"
-        name="MSDLVersion"
+        name="msdlVersion"
         :validate-on-blur="!form.isFieldDirty"
       >
         <FormItem>
@@ -98,7 +98,54 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
 
       <FormField
         v-slot="{ componentField }"
-        name="StandardName"
+        name="aggregateBased"
+        :validate-on-blur="!form.isFieldDirty"
+      >
+        <FormItem>
+          <FormLabel>AggregateBased</FormLabel>
+          <FormControl>
+            <Input type="text" placeholder="n/a" v-bind="componentField" />
+          </FormControl>
+          <FormMessage />
+        </FormItem>
+      </FormField>
+      <FormField
+        v-slot="{ componentField }"
+        name="aggregateEchelon"
+        :validate-on-blur="!form.isFieldDirty"
+      >
+        <FormItem>
+          <FormLabel>AggregateEchelon</FormLabel>
+          <div class="flex">
+            <Select v-bind="componentField">
+              <FormControl class="w-full">
+                <SelectTrigger>
+                  <SelectValue placeholder="n/a" />
+                </SelectTrigger>
+              </FormControl>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectItem
+                    v-for="option in echelonOptions"
+                    :key="option.value"
+                    :value="option.value"
+                  >
+                    {{ option.label }}
+                  </SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+            <Button variant="outline" class="ml-4" @click.prevent="componentField.onChange('')"
+              >Clear</Button
+            >
+          </div>
+          <FormMessage />
+        </FormItem>
+      </FormField>
+
+      <FormField
+        v-slot="{ componentField }"
+        name="standardName"
         :validate-on-blur="!form.isFieldDirty"
       >
         <FormItem>
@@ -132,7 +179,7 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
 
       <FormField
         v-slot="{ componentField }"
-        name="MajorVersion"
+        name="majorVersion"
         :validate-on-blur="!form.isFieldDirty"
       >
         <FormItem>
@@ -146,7 +193,7 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
 
       <FormField
         v-slot="{ componentField }"
-        name="MinorVersion"
+        name="minorVersion"
         :validate-on-blur="!form.isFieldDirty"
       >
         <FormItem>
@@ -160,7 +207,7 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
 
       <FormField
         v-slot="{ componentField }"
-        name="CoordinateSystemType"
+        name="coordinateSystemType"
         :validate-on-blur="!form.isFieldDirty"
       >
         <FormItem>
@@ -194,7 +241,7 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
 
       <FormField
         v-slot="{ componentField }"
-        name="CoordinateSystemDatum"
+        name="coordinateSystemDatum"
         :validate-on-blur="!form.isFieldDirty"
       >
         <FormItem>
@@ -202,53 +249,6 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
           <FormControl>
             <Input type="text" placeholder="n/a" v-bind="componentField" />
           </FormControl>
-          <FormMessage />
-        </FormItem>
-      </FormField>
-
-      <FormField
-        v-slot="{ componentField }"
-        name="AggregateBased"
-        :validate-on-blur="!form.isFieldDirty"
-      >
-        <FormItem>
-          <FormLabel>AggregateBased</FormLabel>
-          <FormControl>
-            <Input type="text" placeholder="n/a" v-bind="componentField" />
-          </FormControl>
-          <FormMessage />
-        </FormItem>
-      </FormField>
-      <FormField
-        v-slot="{ componentField }"
-        name="AggregateEchelon"
-        :validate-on-blur="!form.isFieldDirty"
-      >
-        <FormItem>
-          <FormLabel>AggregateEchelon</FormLabel>
-          <div class="flex">
-            <Select v-bind="componentField">
-              <FormControl class="w-full">
-                <SelectTrigger>
-                  <SelectValue placeholder="n/a" />
-                </SelectTrigger>
-              </FormControl>
-              <SelectContent>
-                <SelectGroup>
-                  <SelectItem
-                    v-for="option in echelonOptions"
-                    :key="option.value"
-                    :value="option.value"
-                  >
-                    {{ option.label }}
-                  </SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-            <Button variant="outline" class="ml-4" @click.prevent="componentField.onChange('')"
-              >Clear</Button
-            >
-          </div>
           <FormMessage />
         </FormItem>
       </FormField>
