@@ -8,6 +8,7 @@ import CloseButton from "@/components/CloseButton.vue";
 import { Button } from "@/components/ui/button";
 import PanelMapDisplay from "@/components/PanelMapDisplay.vue";
 import PanelScenarioInfo from "@/components/PanelScenarioInfo.vue";
+import PanelScenarioOptions from "@/components/PanelScenarioOptions.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import PanelScenarioDeployment from "@/components/PanelScenarioDeployment.vue";
 import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
@@ -43,6 +44,7 @@ function flyToBoundingBox(bbox: BBox) {
           <TabsTrigger value="orbat">ORBAT</TabsTrigger>
           <TabsTrigger value="mapdisplay">Display</TabsTrigger>
           <TabsTrigger value="scenarioInfo">Info</TabsTrigger>
+          <TabsTrigger value="scenarioOptions">Options</TabsTrigger>
           <TabsTrigger v-if="msdl?.isNETN" value="deployment">Deployment</TabsTrigger>
         </TabsList>
         <CloseButton @click="uiStore.toggleLeftPanel()" />
@@ -56,6 +58,9 @@ function flyToBoundingBox(bbox: BBox) {
         </TabsContent>
         <TabsContent value="scenarioInfo">
           <PanelScenarioInfo class="px-4" @flyTo="flyToBoundingBox" />
+        </TabsContent>
+        <TabsContent value="scenarioOptions">
+          <PanelScenarioOptions class="px-4" />
         </TabsContent>
         <TabsContent v-if="msdl?.isNETN" value="deployment">
           <PanelScenarioDeployment />

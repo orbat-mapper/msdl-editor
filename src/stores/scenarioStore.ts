@@ -23,6 +23,8 @@ import {
 } from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
+import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
+import type { MsdlOptionsType } from "@orbat-mapper/msdllib/dist/lib/msdlOptions";
 import { parseFromString, xmlToString } from "@/utils.ts";
 import type { Position } from "geojson";
 import { useSideStore } from "@/stores/uiStore.ts";
@@ -136,7 +138,37 @@ function updateScenarioId(value: Partial<ScenarioIdType>) {
   undoStack.value.push({ patches, inversePatches });
   redoStack.value.splice(0);
   triggerRef(msdl);
-  // console.log(undoStack.value);
+}
+
+function updateOptions(value: Partial<MsdlOptionsType>) {
+  if (!msdl.value) return;
+  const preSnapshot = xmlToString(msdl.value.msdlOptions.element);
+  const v = msdl.value.msdlOptions;
+  Object.entries(value).forEach(([key, value]) => {
+    if (key in v) {
+      (v as any)[key] = value;
+    } else {
+      console.warn(`Property ${key} does not exist on MsdlOptionsType class.`);
+    }
+  });
+  const postSnapshot = xmlToString(msdl.value.msdlOptions.element);
+  const inversePatches: Patch[] = [
+    {
+      op: "replace",
+      path: ["scenarioId"],
+      value: preSnapshot,
+    },
+  ];
+  const patches: Patch[] = [
+    {
+      op: "replace",
+      path: ["scenarioId"],
+      value: postSnapshot,
+    },
+  ];
+  undoStack.value.push({ patches, inversePatches });
+  redoStack.value.splice(0);
+  triggerRef(msdl);
 }
 
 function updateForceSide(objectHandle: string, value: Partial<ScenarioIdType>) {
@@ -462,6 +494,7 @@ export function useScenarioStore() {
     canRedo,
     modifyScenario: {
       updateScenarioId,
+      updateOptions,
       updateForceSide,
       updateItemLocation,
       updateItemModel,
