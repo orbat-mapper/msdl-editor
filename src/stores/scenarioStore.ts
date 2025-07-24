@@ -23,7 +23,6 @@ import {
 } from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
-import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
 import type { MsdlOptionsType } from "@orbat-mapper/msdllib/dist/lib/msdlOptions";
 import { parseFromString, xmlToString } from "@/utils.ts";
 import type { Position } from "geojson";
