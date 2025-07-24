@@ -35,7 +35,7 @@ import type {
   UnitModelType,
 } from "@orbat-mapper/msdllib/dist/lib/modelType";
 import { toast } from "vue-sonner";
-import { isEquipmentItemDragItem, isUnitDragItem, type OrbatDragItem } from "@/types/draggables.ts";
+import { isSideDragItem, type OrbatDragItem } from "@/types/draggables.ts";
 import type { Instruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 
 export interface MetaEntry<T = string> {
@@ -395,21 +395,14 @@ function updateOrbatDragItems(
   instruction: Instruction,
 ) {
   if (!msdl.value) return;
-  if (instruction.type !== "make-child") {
-    console.warn("Only 'make-child' instruction is currently supported for Orbat drag items.");
-    return;
-  }
-  if (!isUnitDragItem(source)) {
-    console.warn("Only units can be made children of other items.");
-    return;
-  }
-  if (isEquipmentItemDragItem(target)) {
-    console.warn("Equipment cannot have children.");
+
+  if (isSideDragItem(source)) {
+    console.warn("Cannot drag sides yet.");
     return;
   }
 
-  const sourceItem = msdl.value.getUnitById(source.item.objectHandle);
-  const targetItem = msdl.value?.getUnitOrForceSideById(target.item.objectHandle);
+  const sourceItem = msdl.value.getItemInstance(source.item.objectHandle);
+  const targetItem = msdl.value?.getItemInstance(target.item.objectHandle);
   if (!sourceItem || !targetItem) {
     console.warn("Source or target item not found in the scenario.");
     return;
@@ -426,7 +419,23 @@ function updateOrbatDragItems(
     return;
   }
 
-  msdl.value?.setUnitForceRelation(sourceItem, targetItem);
+  if (sourceItem instanceof ForceSide) {
+    console.warn("Cannot drag ForceSide items yet.");
+    return;
+  }
+
+  try {
+    msdl.value?.setItemRelation({
+      source: sourceItem,
+      target: targetItem,
+      // @ts-expect-error
+      instruction: instruction.type,
+    });
+  } catch (error) {
+    console.error("Failed to update item relation:", error);
+    toast.error("Failed to update item relation. Check console for details.");
+    return;
+  }
   sourceItem.setAffiliation(targetItem.getAffiliation(), { recursive: true });
   triggerRef(msdl);
 }

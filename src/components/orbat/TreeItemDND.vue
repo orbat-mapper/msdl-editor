@@ -23,6 +23,7 @@ import {
   getEquipmentItemDragItem,
   getUnitDragItem,
   isEquipmentItemDragItem,
+  isUnitDragItem,
   isUnitOrEquipmentItemDragItem,
 } from "@/types/draggables.ts";
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
@@ -121,11 +122,11 @@ watchEffect((onCleanup) => {
 
     dropTargetForElements({
       element: currentElement,
-      getData: ({ input, element }) => {
-        const data =
-          props.item.value.itemType === "unit"
-            ? getUnitDragItem({ item: props.item.value })
-            : getEquipmentItemDragItem({ item: props.item.value });
+      getData: ({ input, element, source }) => {
+        const isUnit = props.item.value.itemType === "unit";
+        const data = isUnit
+          ? getUnitDragItem({ item: props.item.value })
+          : getEquipmentItemDragItem({ item: props.item.value });
 
         return attachInstruction(data, {
           input,
@@ -133,17 +134,20 @@ watchEffect((onCleanup) => {
           indentPerLevel: 16,
           currentLevel: props.item.level,
           mode: mode.value,
-          block: ["reorder-above", "reorder-below"],
+          block: isEquipmentItemDragItem(source.data)
+            ? isUnit
+              ? ["reorder-below", "reorder-above"]
+              : ["make-child"]
+            : [],
         });
       },
       canDrop: ({ source }) => {
         if (isUnitOrEquipmentItemDragItem(source.data)) {
           const { item: sourceItem } = source.data;
           if (sourceItem.objectHandle === item.id) {
-            console.log("dragging over self, ignoring");
             return false;
           }
-          if (isEquipmentItemDragItem(source.data)) {
+          if (isUnitDragItem(source.data) && props.item.value.itemType === "equipment") {
             return false;
           }
 
