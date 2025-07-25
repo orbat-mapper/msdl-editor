@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ChevronDown, TableOfContentsIcon as SelectIcon } from "lucide-vue-next";
+import {
+  ChevronDown,
+  TableOfContentsIcon as SelectIcon,
+  GripVerticalIcon as DragIcon,
+} from "lucide-vue-next";
 import { Switch } from "@/components/ui/switch";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import ForceSideMenu from "@/components/ForceSideMenu.vue";
@@ -13,7 +17,10 @@ import TreeDND from "@/components/orbat/TreeDND.vue";
 import { unrefElement, useTimeoutFn } from "@vueuse/core";
 import { useSideStore } from "@/stores/uiStore.ts";
 import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
-import { dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
+import {
+  draggable,
+  dropTargetForElements,
+} from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { getSideDragItem, isOrbatItemDragItem } from "@/types/draggables.ts";
 import {
   attachInstruction,
@@ -25,8 +32,9 @@ const { sideObjectHandle } = defineProps<{
   sideObjectHandle: string;
 }>();
 
-const dropRef = useTemplateRef("dropRef");
+const dndRef = useTemplateRef("dndRef");
 const isDraggedOver = ref(false);
+const isDragging = ref(false);
 const { msdl } = useScenarioStore();
 
 const selectStore = useSelectStore();
@@ -60,12 +68,12 @@ function expandItem() {
 }
 
 watchEffect((onCleanup) => {
-  const dropElement = unrefElement(dropRef.value);
-  if (!dropElement) return;
+  const dndElement = unrefElement(dndRef.value);
+  if (!dndElement) return;
 
   const dndFunction = combine(
     dropTargetForElements({
-      element: dropElement,
+      element: dndElement,
       getData: ({ input, element }) => {
         const data = getSideDragItem({ item: side.value });
 
@@ -101,6 +109,19 @@ watchEffect((onCleanup) => {
         expandItem();
       },
     }),
+    draggable({
+      element: dndElement as HTMLElement,
+      getInitialData: () => {
+        return getSideDragItem({ item: side.value });
+      },
+
+      onDragStart: () => {
+        isDragging.value = true;
+      },
+      onDrop: () => {
+        isDragging.value = false;
+      },
+    }),
   );
 
   onCleanup(() => {
@@ -120,9 +141,12 @@ const toggleSide = (id: string) => {
   <AccordionItem :value="side.objectHandle">
     <AccordionTrigger
       class="bg-card-foreground/5 py-1 rounded-none px-4 group relative"
-      ref="dropRef"
+      ref="dndRef"
     >
       <div class="flex items-center gap-2 h-9">
+        <DragIcon
+          class="size-4 group-hover:opacity-100 cursor-move -ml-2 group-focus-within:opacity-100 opacity-0 text-muted-foreground"
+        />
         <span class="font-medium">{{ side.name }}</span
         ><Badge v-if="side === msdl?.primarySide">Primary</Badge>
       </div>
