@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ChevronDown, TableOfContentsIcon as SelectIcon } from "lucide-vue-next";
+import {
+  ChevronDown,
+  TableOfContentsIcon as SelectIcon,
+  GripVerticalIcon as DragIcon,
+} from "lucide-vue-next";
 import { Switch } from "@/components/ui/switch";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import ForceSideMenu from "@/components/ForceSideMenu.vue";
@@ -13,8 +17,11 @@ import TreeDND from "@/components/orbat/TreeDND.vue";
 import { unrefElement, useTimeoutFn } from "@vueuse/core";
 import { useSideStore } from "@/stores/uiStore.ts";
 import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
-import { dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
-import { getSideDragItem, isOrbatItemDragItem } from "@/types/draggables.ts";
+import {
+  draggable,
+  dropTargetForElements,
+} from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
+import { getSideDragItem, isOrbatItemDragItem, isSideDragItem } from "@/types/draggables.ts";
 import {
   attachInstruction,
   extractInstruction,
@@ -25,8 +32,9 @@ const { sideObjectHandle } = defineProps<{
   sideObjectHandle: string;
 }>();
 
-const dropRef = useTemplateRef("dropRef");
+const dndRef = useTemplateRef("dndRef");
 const isDraggedOver = ref(false);
+const isDragging = ref(false);
 const { msdl } = useScenarioStore();
 
 const selectStore = useSelectStore();
@@ -34,8 +42,8 @@ const sideStore = useSideStore();
 
 const layerStore = useLayerStore();
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
-const side = computed(() => msdl.value?.getForceSideById(sideObjectHandle)!);
+//@ts-expect-error
+const side = computed(() => msdl.value?.getForceSideById(sideObjectHandle) as ForceSide);
 const instruction = ref<Extract<
   Instruction,
   { type: "reorder-above" | "reorder-below" | "make-child" }
@@ -60,13 +68,13 @@ function expandItem() {
 }
 
 watchEffect((onCleanup) => {
-  const dropElement = unrefElement(dropRef.value);
-  if (!dropElement) return;
+  const dndElement = unrefElement(dndRef.value);
+  if (!dndElement) return;
 
   const dndFunction = combine(
     dropTargetForElements({
-      element: dropElement,
-      getData: ({ input, element }) => {
+      element: dndElement,
+      getData: ({ input, element, source }) => {
         const data = getSideDragItem({ item: side.value });
 
         return attachInstruction(data, {
@@ -75,7 +83,7 @@ watchEffect((onCleanup) => {
           indentPerLevel: 16,
           currentLevel: 0,
           mode: "standard",
-          block: ["reorder-above", "reorder-below"],
+          block: isSideDragItem(source.data) ? ["make-child"] : ["reorder-above", "reorder-below"],
         });
       },
       canDrop: ({ source }) => {
@@ -87,18 +95,33 @@ watchEffect((onCleanup) => {
       onDrag: ({ self }) => {
         instruction.value = extractInstruction(self.data) as typeof instruction.value;
       },
-      onDragEnter: () => {
+      onDragEnter: ({ source }) => {
         isDraggedOver.value = true;
-        if (!isPending.value) startOpenTimeout();
+        if (!isPending.value && !isSideDragItem(source.data)) startOpenTimeout();
       },
       onDragLeave: () => {
         isDraggedOver.value = false;
         instruction.value = null;
         stopOpenTimeout();
       },
-      onDrop: (args) => {
+      onDrop: ({ source }) => {
         instruction.value = null;
-        expandItem();
+        if (!isSideDragItem(source.data)) expandItem();
+      },
+    }),
+    draggable({
+      element: dndElement as HTMLElement,
+      getInitialData: () => {
+        return getSideDragItem({ item: side.value });
+      },
+      canDrag: () => {
+        return !sideStore.sortAlphabetically;
+      },
+      onDragStart: () => {
+        isDragging.value = true;
+      },
+      onDrop: () => {
+        isDragging.value = false;
       },
     }),
   );
@@ -120,10 +143,13 @@ const toggleSide = (id: string) => {
   <AccordionItem :value="side.objectHandle">
     <AccordionTrigger
       class="bg-card-foreground/5 py-1 rounded-none px-4 group relative"
-      ref="dropRef"
+      ref="dndRef"
     >
       <div class="flex items-center gap-2 h-9">
-        <span class="font-medium">{{ side.name }}</span
+        <DragIcon
+          v-if="!sideStore.sortAlphabetically"
+          class="size-4 group-hover:opacity-100 cursor-move -ml-2 group-focus-within:opacity-100 opacity-0 text-muted-foreground"
+        /><span v-else class="size-4 -ml-2" /> <span class="font-medium">{{ side.name }}</span
         ><Badge v-if="side === msdl?.primarySide">Primary</Badge>
       </div>
       <template #icon>

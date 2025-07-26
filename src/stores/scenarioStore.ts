@@ -395,11 +395,6 @@ function updateOrbatDragItems(
 ) {
   if (!msdl.value) return;
 
-  if (isSideDragItem(source)) {
-    console.warn("Cannot drag sides yet.");
-    return;
-  }
-
   const sourceItem = msdl.value.getItemInstance(source.item.objectHandle);
   const targetItem = msdl.value?.getItemInstance(target.item.objectHandle);
   if (!sourceItem || !targetItem) {
@@ -411,23 +406,11 @@ function updateOrbatDragItems(
     return;
   }
 
-  // check that target is not a child of source
-  const { hierarchy } = msdl.value?.getItemHierarchy(targetItem);
-  if (hierarchy.map((i) => i.objectHandle).includes(sourceItem.objectHandle)) {
-    console.warn("Cannot make a child of an item that is already a child.");
-    return;
-  }
-
-  if (sourceItem instanceof ForceSide) {
-    console.warn("Cannot drag ForceSide items yet.");
-    return;
-  }
-
   try {
     msdl.value?.setItemRelation({
       source: sourceItem,
       target: targetItem,
-      // @ts-expect-error
+      // @ts-expect-error xxx
       instruction: instruction.type,
     });
   } catch (error) {
@@ -435,7 +418,8 @@ function updateOrbatDragItems(
     toast.error("Failed to update item relation. Check console for details.");
     return;
   }
-  sourceItem.setAffiliation(targetItem.getAffiliation(), { recursive: true });
+  if (sourceItem instanceof Unit || sourceItem instanceof EquipmentItem)
+    sourceItem.setAffiliation(targetItem.getAffiliation(), { recursive: true });
   triggerRef(msdl);
 }
 

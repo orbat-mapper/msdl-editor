@@ -25,13 +25,13 @@ const sideStore = useSideStore();
 const dialogStore = useDialogStore();
 
 const sides = computed(() => {
+  const localSides = sideStore.sortAlphabetically
+    ? sortBy(msdl.value?.sides ?? [], "name")
+    : (msdl.value?.sides ?? []);
   if (sideStore.hideEmptySides) {
-    return sortBy(
-      msdl.value?.sides.filter((side) => side.rootUnits.length > 0) ?? [],
-      "name",
-    ).filter((side) => side.rootUnits.length > 0);
+    return localSides.filter((side) => side.rootUnits.length > 0);
   }
-  return sortBy(msdl.value?.sides ?? [], "name");
+  return localSides;
 });
 
 const hasHiddenSides = computed(() => {
