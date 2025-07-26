@@ -21,7 +21,7 @@ import {
   draggable,
   dropTargetForElements,
 } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
-import { getSideDragItem, isOrbatItemDragItem } from "@/types/draggables.ts";
+import { getSideDragItem, isOrbatItemDragItem, isSideDragItem } from "@/types/draggables.ts";
 import {
   attachInstruction,
   extractInstruction,
@@ -42,8 +42,8 @@ const sideStore = useSideStore();
 
 const layerStore = useLayerStore();
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
-const side = computed(() => msdl.value?.getForceSideById(sideObjectHandle)!);
+//@ts-expect-error
+const side = computed(() => msdl.value?.getForceSideById(sideObjectHandle) as ForceSide);
 const instruction = ref<Extract<
   Instruction,
   { type: "reorder-above" | "reorder-below" | "make-child" }
@@ -74,7 +74,7 @@ watchEffect((onCleanup) => {
   const dndFunction = combine(
     dropTargetForElements({
       element: dndElement,
-      getData: ({ input, element }) => {
+      getData: ({ input, element, source }) => {
         const data = getSideDragItem({ item: side.value });
 
         return attachInstruction(data, {
@@ -83,7 +83,7 @@ watchEffect((onCleanup) => {
           indentPerLevel: 16,
           currentLevel: 0,
           mode: "standard",
-          block: ["reorder-above", "reorder-below"],
+          block: isSideDragItem(source.data) ? ["make-child"] : ["reorder-above", "reorder-below"],
         });
       },
       canDrop: ({ source }) => {
@@ -95,18 +95,18 @@ watchEffect((onCleanup) => {
       onDrag: ({ self }) => {
         instruction.value = extractInstruction(self.data) as typeof instruction.value;
       },
-      onDragEnter: () => {
+      onDragEnter: ({ source }) => {
         isDraggedOver.value = true;
-        if (!isPending.value) startOpenTimeout();
+        if (!isPending.value && !isSideDragItem(source.data)) startOpenTimeout();
       },
       onDragLeave: () => {
         isDraggedOver.value = false;
         instruction.value = null;
         stopOpenTimeout();
       },
-      onDrop: (args) => {
+      onDrop: ({ source }) => {
         instruction.value = null;
-        expandItem();
+        if (!isSideDragItem(source.data)) expandItem();
       },
     }),
     draggable({
@@ -114,7 +114,9 @@ watchEffect((onCleanup) => {
       getInitialData: () => {
         return getSideDragItem({ item: side.value });
       },
-
+      canDrag: () => {
+        return !sideStore.sortAlphabetically;
+      },
       onDragStart: () => {
         isDragging.value = true;
       },
@@ -145,9 +147,9 @@ const toggleSide = (id: string) => {
     >
       <div class="flex items-center gap-2 h-9">
         <DragIcon
+          v-if="!sideStore.sortAlphabetically"
           class="size-4 group-hover:opacity-100 cursor-move -ml-2 group-focus-within:opacity-100 opacity-0 text-muted-foreground"
-        />
-        <span class="font-medium">{{ side.name }}</span
+        /><span v-else class="size-4 -ml-2" /> <span class="font-medium">{{ side.name }}</span
         ><Badge v-if="side === msdl?.primarySide">Primary</Badge>
       </div>
       <template #icon>

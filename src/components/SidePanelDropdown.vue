@@ -43,6 +43,9 @@ const { msdl } = useScenarioStore();
       <DropdownMenuCheckboxItem v-model="sideStore.hideEmptySides"
         >Hide empty sides
       </DropdownMenuCheckboxItem>
+      <DropdownMenuCheckboxItem v-model="sideStore.sortAlphabetically"
+        >Sort alphabetically</DropdownMenuCheckboxItem
+      >
     </DropdownMenuContent>
   </DropdownMenu>
 </template>

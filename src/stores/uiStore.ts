@@ -10,11 +10,12 @@ export const useUIStore = defineStore("uiStore", () => {
 });
 
 export const useSideStore = defineStore("sideStore", () => {
-  const hideEmptySides = ref(true);
+  const hideEmptySides = useLocalStorage("hideEmptySides", true);
   const primarySideMap = useLocalStorage<Record<string, string>>("primarySideMap", {});
   const openSideItems = ref<string[]>([]);
+  const sortAlphabetically = useLocalStorage("sortAlphabetically", false);
 
-  return { hideEmptySides, primarySideMap, openSideItems };
+  return { hideEmptySides, primarySideMap, openSideItems, sortAlphabetically };
 });
 
 export const useWidthStore = defineStore("panelWidth", {
