@@ -73,6 +73,10 @@ function toggleLayers() {
 function createForceSide() {
   dialogStore.toggleCreateForceSideDialog();
 }
+
+function showAssociations() {
+  dialogStore.toggleAssociationDialog();
+}
 </script>
 
 <template>
@@ -82,7 +86,11 @@ function createForceSide() {
         >({{ sides.length }}/{{ msdl?.sides.length }})</span
       >
     </h3>
-    <SidePanelDropdown @toggleVisibility="toggleLayers" @createForceSide="createForceSide" />
+    <SidePanelDropdown
+      @toggleVisibility="toggleLayers"
+      @createForceSide="createForceSide"
+      @showAssociations="showAssociations"
+    />
   </header>
   <CreateNewForceSideDialog
     v-model:open="dialogStore.isCreateForceSideDialogOpen"
