@@ -1,25 +1,25 @@
 import { computed, shallowRef, triggerRef } from "vue";
-import type {
-  FederateType,
-  ForceSideType,
-  HoldingType,
-  LngLatElevationTuple,
-  LngLatTuple,
-  MilitaryScenarioInputType,
-  ScenarioIdType,
-  StandardIdentity,
-  UnitEquipmentInterface,
-} from "@orbat-mapper/msdllib";
 import {
+  Association,
+  type AssociationType,
   EquipmentItem,
   EquipmentItemDisposition,
   Federate,
+  type FederateType,
   ForceSide,
+  type ForceSideType,
   Holding,
+  type HoldingType,
+  type LngLatElevationTuple,
+  type LngLatTuple,
   MilitaryScenario,
+  type MilitaryScenarioInputType,
   ScenarioId,
+  type ScenarioIdType,
+  type StandardIdentity,
   Unit,
   UnitDisposition,
+  type UnitEquipmentInterface,
 } from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
@@ -34,7 +34,7 @@ import type {
   UnitModelType,
 } from "@orbat-mapper/msdllib/dist/lib/modelType";
 import { toast } from "vue-sonner";
-import { isSideDragItem, type OrbatDragItem } from "@/types/draggables.ts";
+import { type OrbatDragItem } from "@/types/draggables.ts";
 import type { Instruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 
 export interface MetaEntry<T = string> {
@@ -423,6 +423,20 @@ function updateOrbatDragItems(
   triggerRef(msdl);
 }
 
+function updateForceSideAssociation(
+  objectHandleOrForceSide: string | ForceSide,
+  associations: (Association | AssociationType)[],
+) {
+  if (!msdl.value) return;
+  const forceSide = msdl.value.getItemInstance(objectHandleOrForceSide);
+  if (!forceSide || !(forceSide instanceof ForceSide)) {
+    console.warn(`Force side with object handle ${objectHandleOrForceSide} not found.`);
+    return;
+  }
+  forceSide.associations = associations;
+  triggerRef(msdl);
+}
+
 export function useScenarioStore() {
   const layerStore = useLayerStore();
   const selectStore = useSelectStore();
@@ -498,6 +512,7 @@ export function useScenarioStore() {
       },
       setSideAffiliation,
       updateOrbatDragItems,
+      updateForceSideAssociation,
     },
     isNETN,
   };
