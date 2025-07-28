@@ -1,7 +1,8 @@
 import type { InjectionKey } from "vue";
 import { inject } from "vue";
-import { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
+import { EquipmentItem, ForceSide, type MsdlEnumItem, Unit } from "@orbat-mapper/msdllib";
 import type { Position } from "geojson";
+import type { EnumItem } from "@/components/types.ts";
 
 export function sortBy<T extends object, K extends keyof T>(arr: T[], key: K, ascending = true) {
   return arr.sort((a, b) => {
@@ -128,4 +129,15 @@ export function isUnitOrEquipment(
   item: Unit | EquipmentItem | ForceSide,
 ): item is Unit | EquipmentItem {
   return isUnit(item) || isEquipmentItem(item);
+}
+
+export function enum2Object(enumItems: MsdlEnumItem[]): Record<string, EnumItem> {
+  return Object.fromEntries(
+    enumItems.map((item) => [
+      item.value,
+      {
+        ...item,
+      },
+    ]),
+  );
 }

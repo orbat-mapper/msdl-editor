@@ -19,7 +19,8 @@ import {
 import { computed, ref } from "vue";
 import { useSideStore } from "@/stores/uiStore.ts";
 import SwitchLabel from "@/components/SwitchLabel.vue";
-import { sortBy } from "@/utils.ts";
+import { enum2Object, sortBy } from "@/utils.ts";
+import { HostilityStatusCodeItems } from "@orbat-mapper/msdllib";
 
 const open = defineModel<boolean>("open", { required: true });
 
@@ -40,13 +41,12 @@ const associationMap = computed((): Record<string, Record<string, string>> => {
 
 const sides = computed(() => {
   if (sideStore.hideEmptySides) {
-    return sortBy(
-      msdl.value?.sides.filter((side) => side.rootUnits.length > 0) ?? [],
-      "name",
-    ).filter((side) => side.rootUnits.length > 0);
+    return sortBy(msdl.value?.sides.filter((side) => side.rootUnits.length > 0) ?? [], "name");
   }
   return sortBy(msdl.value?.sides ?? [], "name");
 });
+
+const enumLookup = enum2Object(HostilityStatusCodeItems);
 
 function setCurrentRowAndColumn(event: PointerEvent) {
   const target = event.target as HTMLElement;
@@ -97,14 +97,17 @@ function setCurrentRowAndColumn(event: PointerEvent) {
               >{{ forceSide.name }}</TableCell
             >
             <TableCell
-              v-for="(affiliate, columnIndex) in msdl.forceSides"
+              v-for="(affiliate, columnIndex) in sides"
               :key="affiliate.objectHandle"
               :data-column="columnIndex"
               :data-row="rowIndex"
               :class="
                 currentRow === rowIndex || currentColumn === columnIndex ? 'bg-accent/60' : ''
               "
-              >{{ associationMap[forceSide.objectHandle][affiliate.objectHandle] ?? "" }}</TableCell
+              >{{
+                enumLookup[associationMap[forceSide.objectHandle][affiliate.objectHandle]]?.label ??
+                ""
+              }}</TableCell
             >
           </TableRow>
         </TableBody>
