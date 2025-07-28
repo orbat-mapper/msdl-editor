@@ -9,12 +9,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { EyeIcon, PlusIcon } from "lucide-vue-next";
+import { EyeIcon, PlusIcon, Grid3x3Icon } from "lucide-vue-next";
 import { EllipsisVertical as DotsVerticalIcon } from "lucide-vue-next";
 import { useSideStore } from "@/stores/uiStore.ts";
 import { useScenarioStore } from "@/stores/scenarioStore";
 
-const emit = defineEmits(["toggleVisibility", "createForceSide"]);
+const emit = defineEmits(["toggleVisibility", "createForceSide", "showAssociations"]);
 
 const sideStore = useSideStore();
 const { msdl } = useScenarioStore();
@@ -33,6 +33,9 @@ const { msdl } = useScenarioStore();
         <PlusIcon />
         Create Force Side
       </DropdownMenuItem>
+      <DropdownMenuItem @select="emit('showAssociations')"
+        ><Grid3x3Icon /> Show side associations</DropdownMenuItem
+      >
       <DropdownMenuSeparator />
       <DropdownMenuItem @select.prevent="emit('toggleVisibility')">
         <EyeIcon />
