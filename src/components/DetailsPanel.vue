@@ -25,6 +25,8 @@ import { unrefElement } from "@vueuse/core";
 import { draggable } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { getEquipmentItemDragItem, getUnitDragItem } from "@/types/draggables.ts";
 import { mapItem } from "@/components/orbat/utils.ts";
+import DetailsPanelUnit from "@/components/DetailsPanelUnit.vue";
+import DetailsPanelEquipmentList from "@/components/DetailsPanelEquipmentList.vue";
 
 const props = defineProps<{
   item: Unit | EquipmentItem | ForceSide;
@@ -163,16 +165,11 @@ function goUp() {
         <div class="max-h-[50vh] min-w-96">
           <TabsContent value="info" class="p-4">
             <DetailsPanelForceSide :item="item" v-if="isForceSide(item)" />
-            <Button
-              v-else-if="isUnitOrEquipment(item)"
-              :disabled="!item.location"
-              @click="emit('flyTo', item)"
-              variant="outline"
-              >Fly to</Button
-            >
+            <DetailsPanelUnit v-else-if="isUnit(item)" :item />
+            <DetailsPanelEquipment v-else-if="isEquipmentItem(item)" :item />
           </TabsContent>
           <TabsContent v-if="isUnit(item)" value="equipment" class="p-4">
-            <DetailsPanelEquipment :item="item" @flyTo="emit('flyTo', $event)" />
+            <DetailsPanelEquipmentList :item="item" @flyTo="emit('flyTo', $event)" />
           </TabsContent>
           <TabsContent v-if="isNETN && isUnitOrEquipment(item)" value="holdings" class="p-4">
             <DetailsPanelHoldings :item="item" />
