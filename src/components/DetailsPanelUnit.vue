@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import {
-  type EquipmentItem,
-  type EquipmentSymbolModifiersType,
-  type ForceSide,
-  type Unit,
-  type UnitSymbolModifiersType,
-} from "@orbat-mapper/msdllib";
+import { type ForceSide, type Unit, type UnitSymbolModifiersType } from "@orbat-mapper/msdllib";
 import DescriptionList from "@/components/DescriptionList.vue";
 import DescriptionItem from "@/components/DescriptionItem.vue";
 import { useToggle } from "@vueuse/core";
@@ -19,7 +13,7 @@ const {
 } = useScenarioStore();
 
 const { item } = defineProps<{
-  item: EquipmentItem;
+  item: Unit;
 }>();
 
 const modifiers = computed(() => {
@@ -28,21 +22,22 @@ const modifiers = computed(() => {
 
 const [showEditForm, toggleEditForm] = useToggle(false);
 
-const dlItems: { label: string; value: keyof EquipmentSymbolModifiersType }[] = [
-  { label: "Quantity", value: "quantity" },
+const dlItems: { label: string; value: keyof UnitSymbolModifiersType }[] = [
+  { label: "Echelon", value: "echelon" },
+  { label: "Unique designation", value: "uniqueDesignation" },
+  { label: "Reinforced/reduced", value: "reinforcedReduced" },
   { label: "Staff comments", value: "staffComments" },
   { label: "Additional info", value: "additionalInfo" },
   { label: "Combat effectiveness", value: "combatEffectiveness" },
+  { label: "Higher formation", value: "higherFormation" },
   { label: "IFF", value: "iff" },
-  { label: "Unique designation", value: "uniqueDesignation" },
-  { label: "Equipment type", value: "equipmentType" },
-  { label: "Towed sonar array", value: "towedSonarArray" },
+  { label: "Special C2HQ", value: "specialC2HQ" },
 ];
 </script>
 
 <template>
   <div class="flex items-center justify-between mt-1">
-    <h4 class="text-sm font-bold">Equipment item</h4>
+    <h4 class="text-sm font-bold">Unit item</h4>
     <div class="flex items-center gap-1">
       <!--      <Button-->
       <!--        type="button"-->
