@@ -18,8 +18,10 @@ import { GlobalEvents } from "vue-global-events";
 import { inputEventFilter } from "@/utils.ts";
 import CommandPalette from "@/components/CommandPalette.vue";
 import EditAssociationsDialog from "@/components/EditAssociationsDialog.vue";
+import { useScenarioActions } from "@/composables/scenarioActions.ts";
 
 const { createScenario, loadScenario, msdl, undo, redo } = useScenarioStore();
+const { dispatchAction } = useScenarioActions();
 
 const mlMap = shallowRef<maplibregl.Map>();
 const showSearch = ref(false);
@@ -101,6 +103,7 @@ async function onDrop(files: File[] | null) {
       @keydown.meta.shift.z="redo()"
       @keyup.ctrl.shift.z="redo()"
       @keyup.ctrl.y="redo()"
+      @keyup.l.exact="dispatchAction('LocateInOrbat')"
     />
     <CommandPalette v-model:open="showSearch" />
   </div>

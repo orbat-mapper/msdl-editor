@@ -27,6 +27,7 @@ import {
   extractInstruction,
   type Instruction,
 } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
+import { useExpandedStore } from "@/stores/expandedStore.ts";
 
 const { sideObjectHandle } = defineProps<{
   sideObjectHandle: string;
@@ -39,6 +40,7 @@ const { msdl } = useScenarioStore();
 
 const selectStore = useSelectStore();
 const sideStore = useSideStore();
+const expandedStore = useExpandedStore();
 
 const layerStore = useLayerStore();
 
@@ -62,8 +64,8 @@ const {
 );
 
 function expandItem() {
-  if (!sideStore.openSideItems.includes(side.value.objectHandle)) {
-    sideStore.openSideItems.push(side.value.objectHandle);
+  if (!expandedStore.openSideItems.includes(side.value.objectHandle)) {
+    expandedStore.openSideItems.push(side.value.objectHandle);
   }
 }
 
