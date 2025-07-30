@@ -14,6 +14,7 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { isOrbatItemDragItem } from "@/types/draggables.ts";
 import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import SideItem from "@/components/orbat/SideItem.vue";
+import { useExpandedStore } from "@/stores/expandedStore.ts";
 
 const {
   msdl,
@@ -23,6 +24,7 @@ const {
 const layerStore = useLayerStore();
 const sideStore = useSideStore();
 const dialogStore = useDialogStore();
+const expandedStore = useExpandedStore();
 
 const sides = computed(() => {
   const localSides = sideStore.sortAlphabetically
@@ -97,7 +99,7 @@ function showAssociations() {
     @created="addForceSide"
   />
 
-  <Accordion type="multiple" class="mt-2" v-model="sideStore.openSideItems">
+  <Accordion type="multiple" class="mt-2" v-model="expandedStore.openSideItems">
     <SideItem
       v-for="side in sides"
       :key="side.objectHandle"

@@ -1,22 +1,32 @@
 <script setup lang="ts">
 import { TreeRoot } from "reka-ui";
 import TreeItemDND from "./TreeItemDND.vue";
-import { computed, ref } from "vue";
+import { computed } from "vue";
 // import { updateTree } from "./utils";
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
 import { mapItem } from "@/components/orbat/utils.ts";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
+import { useExpandedStore } from "@/stores/expandedStore.ts";
 
 const { sideObjectHandle } = defineProps<{ sideObjectHandle: string }>();
 
-const { msdl, modifyScenario } = useScenarioStore();
+const { msdl } = useScenarioStore();
 
 function getChildren(item: OrbatTreeItem) {
   const children = [...(item?.subordinates ?? []), ...(item?.equipment ?? [])].map(mapItem);
   return children.length > 0 ? children : undefined;
 }
 
-const defaultValue = ref([]);
+const expandedStore = useExpandedStore();
+
+if (!expandedStore.expandedItems.has(sideObjectHandle)) {
+  expandedStore.expandedItems.set(sideObjectHandle, []);
+}
+
+const expanded = computed({
+  get: () => expandedStore.expandedItems.get(sideObjectHandle) ?? [],
+  set: (value) => expandedStore.expandedItems.set(sideObjectHandle, value),
+});
 
 const items = computed(() => {
   const side = msdl.value?.getForceSideById(sideObjectHandle);
@@ -41,7 +51,7 @@ const dummyKey = computed(() => {
       :items
       :getKey="(item) => item.objectHandle"
       :getChildren="getChildren"
-      v-model:expanded="defaultValue"
+      v-model:expanded="expanded"
       :key="dummyKey"
     >
       <TreeItemDND
