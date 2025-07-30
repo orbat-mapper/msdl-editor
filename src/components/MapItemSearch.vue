@@ -22,12 +22,11 @@ const selectStore = useSelectStore();
 
 // Search query refs
 const searchQuery = ref<string>("");
-const searchSelection = ref<{ label: string; itemId: string, sidc: string }>();
-const searchResultsList = ref<{ label: string; itemId: string, sidc: string }[]>([]);
+const searchSelection = ref<{ label: string; itemId: string; sidc: string }>();
+const searchResultsList = ref<{ label: string; itemId: string; sidc: string }[]>([]);
 
 // update autocomplete
 const queryUpdated = () => {
-
   // Unit and Equipment maps
   const unitEntries = Object.entries(msdl.value?.unitMap || {});
   const equipmentEntries = Object.entries(msdl.value?.equipmentMap || {});
@@ -38,8 +37,8 @@ const queryUpdated = () => {
     .map(([key, item]) => ({
       label: item.label,
       sidc: item.sidc,
-      itemId: key
-  }));
+      itemId: key,
+    }));
 };
 
 // Watch for changes to the searchQuery
@@ -49,11 +48,9 @@ watch(searchQuery, (newVal: string) => {
 
 // Select new active item upon click
 const handleClick = async () => {
-
-  const activeItemId = searchSelection.value?.itemId
+  const activeItemId = searchSelection.value?.itemId;
   if (!activeItemId) return;
   selectStore.activeItem = msdl.value?.getUnitOrEquipmentById(activeItemId) ?? null;
-
 };
 </script>
 
@@ -61,7 +58,11 @@ const handleClick = async () => {
   <Combobox class="flex grow" v-model="searchSelection" @update:modelValue="handleClick">
     <ComboboxAnchor class="flex grow">
       <div class="relative w-full max-w-sm items-center">
-        <ComboboxInput class="pl-9" placeholder="Search unit or equipment name..." v-model="searchQuery"/>
+        <ComboboxInput
+          class="pl-9"
+          placeholder="Search unit or equipment name..."
+          v-model="searchQuery"
+        />
         <span class="absolute start-0 inset-y-0 flex items-center justify-center px-3">
           <Search class="size-4 text-muted-foreground" />
         </span>
@@ -70,9 +71,7 @@ const handleClick = async () => {
 
     <ComboboxList class="w-100">
       <ScrollArea class="h-100">
-        <ComboboxEmpty>
-          No data available
-        </ComboboxEmpty>
+        <ComboboxEmpty> No data available </ComboboxEmpty>
 
         <ComboboxGroup>
           <ComboboxItem
@@ -80,13 +79,12 @@ const handleClick = async () => {
             :key="searchResult.itemId"
             :value="searchResult"
             class="cursor-pointer"
-          > 
+          >
             <div>
-              <MilSymbol :sidc="searchResult.sidc"/>
+              <MilSymbol :sidc="searchResult.sidc" />
             </div>
-            
+
             <div class="grid grid-cols-[auto,1fr] gap-x-">
-              
               <div>{{ searchResult.label }}</div>
               <div class="font-light" style="color: var(--muted-foreground)">
                 {{ searchResult.itemId }}
