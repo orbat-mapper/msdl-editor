@@ -7,6 +7,7 @@ import { loadMSDLFromFile } from "@/lib/io.ts";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import EditableLabel from "@/components/EditableLabel.vue";
 import { computed } from "vue";
+import MapItemSearch from "@/components/MapItemSearch.vue";
 
 const {
   msdl,
@@ -45,7 +46,10 @@ const scenarioName = computed({
       <Button v-else variant="outline" @click="doLoading">Load scenario</Button>
     </div>
 
-    <div>
+    <div class="flex">
+      <div class="w-100">
+        <MapItemSearch></MapItemSearch>
+      </div>
       <Button variant="outline" @click="toggleDark()" size="icon">
         <MoonIcon v-if="isDark" class="size-4" />
         <SunIcon v-else class="size-4" />

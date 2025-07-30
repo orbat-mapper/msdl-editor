@@ -11,46 +11,49 @@ import {
   ComboboxItemIndicator,
   ComboboxList,
 } from "@/components/ui/combobox";
-import { useEntityTypeStore } from "@/stores/entityTypeStore";
-import { storeToRefs } from "pinia";
 import { watch, ref } from "vue";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useScenarioStore } from "@/stores/scenarioStore.ts";
+import { useSelectStore } from "@/stores/selectStore.ts";
+import MilSymbol from "@/components/MilSymbol.vue";
 
-// Get props from parent
-const props = defineProps<{
-  populateBuilder: (entType: string) => void; // Function to fill the dropdown lists
-}>();
-
-const store = useEntityTypeStore();
-const { searchResults } = storeToRefs(store);
+const { msdl } = useScenarioStore();
+const selectStore = useSelectStore();
 
 // Search query refs
 const searchQuery = ref<string>("");
-const searchMessage = ref<string>("");
-const searchSelection = ref<{ entType: string; descr: any }>();
-const searchResultsList = ref<{ entType: string; descr: any }[]>([]);
+const searchSelection = ref<{ label: string; itemId: string, sidc: string }>();
+const searchResultsList = ref<{ label: string; itemId: string, sidc: string }[]>([]);
 
-// update query within the store
+// update autocomplete
 const queryUpdated = () => {
-  store.search(searchQuery.value);
-  searchResultsList.value = Object.entries(searchResults.value).map((entr) => ({
-    entType: entr[0],
-    descr: entr[1],
+
+  // Unit and Equipment maps
+  const unitEntries = Object.entries(msdl.value?.unitMap || {});
+  const equipmentEntries = Object.entries(msdl.value?.equipmentMap || {});
+
+  // Provide autocomplete results based on searchquery
+  searchResultsList.value = [...unitEntries, ...equipmentEntries]
+    .filter(([, item]) => item.label.toLowerCase().includes(searchQuery.value.toLowerCase()))
+    .map(([key, item]) => ({
+      label: item.label,
+      sidc: item.sidc,
+      itemId: key
   }));
 };
 
 // Watch for changes to the searchQuery
 watch(searchQuery, (newVal: string) => {
   queryUpdated();
-
-  if (searchQuery.value?.length > 2) searchMessage.value = "No data available";
-  else searchMessage.value = "Query must be at least 3 characters";
 });
 
-// Call populate builder function upon click
+// Select new active item upon click
 const handleClick = async () => {
-  store.resetCategories();
-  await props.populateBuilder(searchSelection.value?.entType || "");
+
+  const activeItemId = searchSelection.value?.itemId
+  if (!activeItemId) return;
+  selectStore.activeItem = msdl.value?.getUnitOrEquipmentById(activeItemId) ?? null;
+
 };
 </script>
 
@@ -58,7 +61,7 @@ const handleClick = async () => {
   <Combobox class="flex grow" v-model="searchSelection" @update:modelValue="handleClick">
     <ComboboxAnchor class="flex grow">
       <div class="relative w-full max-w-sm items-center">
-        <ComboboxInput class="pl-9" placeholder="Entity name..." v-model="searchQuery" />
+        <ComboboxInput class="pl-9" placeholder="Search unit or equipment name..." v-model="searchQuery"/>
         <span class="absolute start-0 inset-y-0 flex items-center justify-center px-3">
           <Search class="size-4 text-muted-foreground" />
         </span>
@@ -68,20 +71,25 @@ const handleClick = async () => {
     <ComboboxList class="w-100">
       <ScrollArea class="h-100">
         <ComboboxEmpty>
-          {{ searchMessage }}
+          No data available
         </ComboboxEmpty>
 
         <ComboboxGroup>
           <ComboboxItem
             v-for="searchResult in searchResultsList"
-            :key="searchResult.entType"
+            :key="searchResult.itemId"
             :value="searchResult"
             class="cursor-pointer"
-          >
+          > 
+            <div>
+              <MilSymbol :sidc="searchResult.sidc"/>
+            </div>
+            
             <div class="grid grid-cols-[auto,1fr] gap-x-">
-              <div>{{ searchResult.entType }}</div>
+              
+              <div>{{ searchResult.label }}</div>
               <div class="font-light" style="color: var(--muted-foreground)">
-                {{ searchResult.descr }}
+                {{ searchResult.itemId }}
               </div>
             </div>
             <ComboboxItemIndicator>
