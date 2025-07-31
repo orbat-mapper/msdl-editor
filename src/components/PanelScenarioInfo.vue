@@ -11,6 +11,7 @@ import DescriptionList from "@/components/DescriptionList.vue";
 import ScenarioIdEditForm from "@/components/ScenarioIdEditForm.vue";
 import { useToggle } from "@vueuse/core";
 import type { ScenarioIdType } from "@orbat-mapper/msdllib/dist/lib/scenarioid";
+import ScenarioStats from "@/components/ScenarioStats.vue";
 
 const emit = defineEmits(["flyTo"]);
 
@@ -98,6 +99,8 @@ function onUpdate(data: Partial<ScenarioIdType>) {
         </div>
       </DescriptionItem>
     </DescriptionList>
+    <h4 class="text-base font font-semibold mt-4">Scenario statistics</h4>
+    <ScenarioStats />
     <div class="mt-4">
       <h4 class="text-sm font-bold">Debugging</h4>
       <div class="flex gap-2 mt-2">
