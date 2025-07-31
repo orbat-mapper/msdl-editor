@@ -16,12 +16,15 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
+import { useDebounce } from "@vueuse/core";
+import { Button } from "@/components/ui/button";
 
 const { msdl } = useScenarioStore();
 const selectStore = useSelectStore();
 
 // Search query refs
 const searchQuery = ref<string>("");
+const debouncedQuery = useDebounce(searchQuery, 200);
 const searchSelection = ref<{ label: string; itemId: string; sidc: string }>();
 const searchResultsList = ref<{ label: string; itemId: string; sidc: string }[]>([]);
 
@@ -33,7 +36,8 @@ const queryUpdated = () => {
 
   // Provide autocomplete results based on searchquery
   searchResultsList.value = [...unitEntries, ...equipmentEntries]
-    .filter(([, item]) => item.label.toLowerCase().includes(searchQuery.value.toLowerCase()))
+    .filter(([, item]) => item.label.toLowerCase().includes(debouncedQuery.value.toLowerCase()))
+    .slice(0, 10)
     .map(([key, item]) => ({
       label: item.label,
       sidc: item.sidc,
@@ -42,7 +46,7 @@ const queryUpdated = () => {
 };
 
 // Watch for changes to the searchQuery
-watch(searchQuery, (newVal: string) => {
+watch(debouncedQuery, (newVal: string) => {
   queryUpdated();
 });
 
@@ -80,8 +84,8 @@ const handleClick = async () => {
             :value="searchResult"
             class="cursor-pointer"
           >
-            <div>
-              <MilSymbol :sidc="searchResult.sidc" />
+            <div class="w-8 justify-center flex">
+              <MilSymbol :sidc="searchResult.sidc" :size="16"/>
             </div>
 
             <div class="grid grid-cols-[auto,1fr] gap-x-">
