@@ -94,7 +94,7 @@ export function useScenarioActions() {
               `Element with ID oi-${selectStore.activeItem?.objectHandle} not found in the ORBAT.`,
             );
           }
-        }, 100);
+        }, 250);
 
         break;
       case "CollapseOrbat":
