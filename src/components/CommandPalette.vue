@@ -8,6 +8,11 @@ import {
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
+import { watch, ref } from "vue";
+import { useDebounce } from "@vueuse/core";
+import { useScenarioStore } from "@/stores/scenarioStore.ts";
+import { useSelectStore } from "@/stores/selectStore.ts";
+import MilSymbol from "@/components/MilSymbol.vue";
 
 import { Download, Upload, Grid3x3Icon } from "lucide-vue-next";
 import { type ScenarioAction, useScenarioActions } from "@/composables/scenarioActions.ts";
@@ -15,17 +20,99 @@ import { type ScenarioAction, useScenarioActions } from "@/composables/scenarioA
 const open = defineModel<boolean>("open", { default: false });
 const { dispatchAction: _dispatchAction } = useScenarioActions();
 
+const { msdl } = useScenarioStore();
+const selectStore = useSelectStore();
+
+// Search query refs
+type SearchResultItem = { label: string; itemId: string; sidc: string, elementName: string };
+
+const searchQuery = ref<string>("");
+const debouncedQuery = useDebounce(searchQuery, 200);
+const searchResultsList = ref<SearchResultItem[]>([]);
+const groupedItems = ref<Record<string, SearchResultItem[]>>({})
+
 function dispatchAction(action: ScenarioAction) {
   _dispatchAction(action);
   open.value = false;
+}
+
+// Initialize query when opened
+watch(open, () => {
+  if (open.value){
+    queryUpdated();
+  }
+});
+
+// Update autocomplete
+const queryUpdated = () => {
+
+  // Unit and Equipment maps
+  const unitEntries = Object.entries(msdl.value?.unitMap || {});
+  const equipmentEntries = Object.entries(msdl.value?.equipmentMap || {});
+
+  // Provide autocomplete results based on searchquery
+  searchResultsList.value = [...unitEntries, ...equipmentEntries]
+    .filter(([, item]) => item.label.toLowerCase().includes(debouncedQuery.value.toLowerCase()))
+    .slice(0, 10)
+    .map(([key, item]) => ({
+      label: item.label,
+      sidc: item.sidc,
+      itemId: key,
+      elementName : item.element.localName
+    }));
+  
+  // Split into units and equipment
+  groupedItems.value = {}
+  searchResultsList.value.forEach((obj) => {
+      groupedItems.value[obj.elementName] =
+          groupedItems.value[obj.elementName] || [];
+      groupedItems.value[obj.elementName].push(obj);
+  });
+};
+
+// Watch for changes to the searchQuery
+watch(debouncedQuery, (newVal: string) => {
+  queryUpdated();
+});
+
+function selectItem(itemId: string) {
+  const activeItemId = itemId;
+  if (!activeItemId) return;
+  selectStore.activeItem = msdl.value?.getUnitOrEquipmentById(activeItemId) ?? null;
+  open.value = false;
+  searchQuery.value = "";
 }
 </script>
 
 <template>
   <CommandDialog v-model:open="open" @update:modelValue="open = false">
-    <CommandInput placeholder="Type a command or search..." />
+    <CommandInput placeholder="Type a command or search..." 
+      v-model="searchQuery"
+      />
     <CommandList>
       <CommandEmpty>No results found.</CommandEmpty>
+
+      <template v-for="(items, key) in groupedItems">
+        <CommandGroup v-if="items.length != 0" :heading="key">
+          <CommandItem 
+              v-for="item in items"
+              @select="selectItem(item.itemId)"
+              :key="item.itemId"
+              :value="item.itemId"
+              class="cursor-pointer">
+              <div class="w-8 justify-center flex">
+                <MilSymbol :sidc="item.sidc" :size="16"/>
+              </div>
+              <div class="grid grid-cols-[auto,1fr]">
+                <div>{{ item.label }}</div>
+                <div class="font-light" style="color: var(--muted-foreground)">
+                  {{ item.itemId }}
+                </div>
+              </div>
+          </CommandItem>
+        </CommandGroup>
+      </template>
+      
       <CommandGroup heading="Actions">
         <CommandItem value="CREATE_NEW_MSDL" @select="dispatchAction('CreateNewMSDL')">
           <Download />
