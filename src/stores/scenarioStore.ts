@@ -1,25 +1,28 @@
 import { computed, shallowRef, triggerRef } from "vue";
+import type {
+  AssociationType,
+  DispositionType,
+  FederateType,
+  ForceSideType,
+  HoldingType,
+  LngLatElevationTuple,
+  LngLatTuple,
+  MilitaryScenarioInputType,
+  ScenarioIdType,
+  StandardIdentity,
+  UnitEquipmentInterface,
+} from "@orbat-mapper/msdllib";
 import {
   Association,
-  type AssociationType,
   EquipmentItem,
   EquipmentItemDisposition,
   Federate,
-  type FederateType,
   ForceSide,
-  type ForceSideType,
   Holding,
-  type HoldingType,
-  type LngLatElevationTuple,
-  type LngLatTuple,
   MilitaryScenario,
-  type MilitaryScenarioInputType,
   ScenarioId,
-  type ScenarioIdType,
-  type StandardIdentity,
   Unit,
   UnitDisposition,
-  type UnitEquipmentInterface,
 } from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
@@ -223,6 +226,19 @@ function updateItemLocation(objectHandle: string, newLocation: Position) {
 
   triggerRef(msdl);
   // console.warn("Not implemented yet: updateItemLocation", newLocation);
+}
+
+function updateItemDisposition(objectHandle: string, disposition: DispositionType) {
+  if (!msdl.value) return;
+  const item = msdl.value.getUnitOrEquipmentById(objectHandle);
+  if (!item) {
+    console.warn(`Unit/EquipmentItem with object handle ${objectHandle} not found.`);
+    return;
+  }
+  if (disposition) {
+    item.disposition = disposition;
+  }
+  triggerRef(msdl);
 }
 
 function updateItemModel(
@@ -494,6 +510,7 @@ export function useScenarioStore() {
       updateOptions,
       updateForceSide,
       updateItemLocation,
+      updateItemDisposition,
       updateItemModel,
       updateHoldings,
       addUnit,

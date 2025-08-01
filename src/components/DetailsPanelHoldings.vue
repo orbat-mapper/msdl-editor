@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { PencilIcon } from "lucide-vue-next";
 import HoldingsEditDialog from "@/components/HoldingsEditDialog.vue";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const {
   msdl,
@@ -38,7 +39,7 @@ function onUpdate(data: HoldingType[]) {
 
 <template>
   <div>
-    <div class="flex items-center justify-between -mt-4">
+    <div class="flex items-center justify-between">
       <h4 class="text-sm font-bold ml-2">Holdings</h4>
       <Button
         class="mr-2"
