@@ -45,7 +45,11 @@ const associationMap = computed((): Record<string, Record<string, HostilityStatu
 
 const sides = computed(() => {
   if (sideStore.hideEmptySides) {
-    return sortBy(msdl.value?.sides.filter((side) => side.rootUnits.length > 0) ?? [], "name");
+    return sortBy(
+      msdl.value?.sides.filter((side) => side.rootUnits.length > 0 || side.equipment.length > 0) ??
+        [],
+      "name",
+    );
   }
   return sortBy(msdl.value?.sides ?? [], "name");
 });

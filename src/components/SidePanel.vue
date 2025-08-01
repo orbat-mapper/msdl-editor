@@ -31,7 +31,7 @@ const sides = computed(() => {
     ? sortBy(msdl.value?.sides ?? [], "name")
     : (msdl.value?.sides ?? []);
   if (sideStore.hideEmptySides) {
-    return localSides.filter((side) => side.rootUnits.length > 0);
+    return localSides.filter((side) => side.rootUnits.length > 0 || side.equipment.length > 0);
   }
   return localSides;
 });
