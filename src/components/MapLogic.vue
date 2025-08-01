@@ -15,6 +15,7 @@ import { useUIStore } from "@/stores/uiStore.ts";
 import { getStyleForBaseLayer, useMapLayerStore } from "@/stores/mapLayerStore.ts";
 import { useMapDrop } from "@/composables/mapDrop.ts";
 import type { Feature } from "geojson";
+import type { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
 
 const { mlMap } = defineProps<{ mlMap: MlMap }>();
 const emit = defineEmits(["showContextMenu"]);
@@ -306,24 +307,37 @@ function addSidesToMap(map: MlMap) {
   }, 600);
 }
 
+watch(msdl, () => {
+  // Check whether the activeItem was updated
+  if (!msdl.value || !selectStore.activeItem) return;
+  const item = msdl.value.getUnitOrEquipmentById(selectStore.activeItem.objectHandle);
+  if (!item) return;
+  updateActiveItem(item, null);
+});
+
 watch(
   () => selectStore.activeItem,
-  (newItem, prevItem) => {
-    const source = mlMap.getSource("msdl-selected-items") as GeoJSONSource;
-    if (prevItem && isUnitOrEquipment(prevItem)) {
-    }
-    if (newItem && isUnitOrEquipment(newItem)) {
-      const geoJson = newItem.toGeoJson();
-      geoJson.properties.sidc = `sel-${newItem.sidc}`;
-      geoJson.properties.label = newItem.label;
-      geoJson.properties.id = newItem.objectHandle;
-      // @ts-expect-error because
-      source.setData(createFeatureCollection([geoJson]));
-    } else {
-      source.setData(createFeatureCollection([]));
-    }
-  },
+  (newItem, prevItem) => updateActiveItem(newItem, prevItem),
 );
+
+function updateActiveItem(
+  newItem: ForceSide | Unit | EquipmentItem | null,
+  prevItem: ForceSide | Unit | EquipmentItem | null,
+) {
+  const source = mlMap.getSource("msdl-selected-items") as GeoJSONSource;
+  if (prevItem && isUnitOrEquipment(prevItem)) {
+  }
+  if (newItem && isUnitOrEquipment(newItem)) {
+    const geoJson = newItem.toGeoJson();
+    geoJson.properties.sidc = `sel-${newItem.sidc}`;
+    geoJson.properties.label = newItem.label;
+    geoJson.properties.id = newItem.objectHandle;
+    // @ts-expect-error because
+    source.setData(createFeatureCollection([geoJson]));
+  } else {
+    source.setData(createFeatureCollection([]));
+  }
+}
 
 addSidesToMap(mlMap);
 

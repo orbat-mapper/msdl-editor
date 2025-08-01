@@ -124,7 +124,7 @@ form.resetForm({
                 >
                   <FormItem>
                     <FormControl>
-                      <Input type="number" placeholder="" v-bind="componentField" />
+                      <Input type="number" step="any" placeholder="" v-bind="componentField" />
                     </FormControl>
                     <FormMessage v-if="errorMessage">{{ errorMessage }}</FormMessage>
                   </FormItem>
