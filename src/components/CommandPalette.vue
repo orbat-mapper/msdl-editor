@@ -25,12 +25,12 @@ const { msdl } = useScenarioStore();
 const selectStore = useSelectStore();
 
 // Search query refs
-type SearchResultItem = { label: string; itemId: string; sidc: string, elementName: string };
+type SearchResultItem = { label: string; itemId: string; sidc: string; elementName: string };
 
 const searchQuery = ref<string>("");
 const debouncedQuery = useDebounce(searchQuery, 200);
 const searchResultsList = ref<SearchResultItem[]>([]);
-const groupedItems = ref<Record<string, SearchResultItem[]>>({})
+const groupedItems = ref<Record<string, SearchResultItem[]>>({});
 
 function dispatchAction(action: ScenarioAction) {
   _dispatchAction(action);
@@ -39,14 +39,13 @@ function dispatchAction(action: ScenarioAction) {
 
 // Initialize query when opened
 watch(open, () => {
-  if (open.value){
+  if (open.value) {
     queryUpdated();
   }
 });
 
 // Update autocomplete
 const queryUpdated = () => {
-
   // Unit and Equipment maps
   const unitEntries = Object.entries(msdl.value?.unitMap || {});
   const equipmentEntries = Object.entries(msdl.value?.equipmentMap || {});
@@ -59,15 +58,14 @@ const queryUpdated = () => {
       label: item.label,
       sidc: item.sidc,
       itemId: key,
-      elementName : item.element.localName
+      elementName: item.element.localName,
     }));
-  
+
   // Split into units and equipment
-  groupedItems.value = {}
+  groupedItems.value = {};
   searchResultsList.value.forEach((obj) => {
-      groupedItems.value[obj.elementName] =
-          groupedItems.value[obj.elementName] || [];
-      groupedItems.value[obj.elementName].push(obj);
+    groupedItems.value[obj.elementName] = groupedItems.value[obj.elementName] || [];
+    groupedItems.value[obj.elementName].push(obj);
   });
 };
 
@@ -87,33 +85,32 @@ function selectItem(itemId: string) {
 
 <template>
   <CommandDialog v-model:open="open" @update:modelValue="open = false">
-    <CommandInput placeholder="Type a command or search..." 
-      v-model="searchQuery"
-      />
+    <CommandInput placeholder="Type a command or search..." v-model="searchQuery" />
     <CommandList>
       <CommandEmpty>No results found.</CommandEmpty>
 
       <template v-for="(items, key) in groupedItems">
         <CommandGroup v-if="items.length != 0" :heading="key">
-          <CommandItem 
-              v-for="item in items"
-              @select="selectItem(item.itemId)"
-              :key="item.itemId"
-              :value="item.itemId"
-              class="cursor-pointer">
-              <div class="w-8 justify-center flex">
-                <MilSymbol :sidc="item.sidc" :size="16"/>
+          <CommandItem
+            v-for="item in items"
+            @select="selectItem(item.itemId)"
+            :key="item.itemId"
+            :value="item.itemId"
+            class="cursor-pointer"
+          >
+            <div class="w-8 justify-center flex">
+              <MilSymbol :sidc="item.sidc" :size="16" />
+            </div>
+            <div class="grid grid-cols-[auto,1fr]">
+              <div>{{ item.label }}</div>
+              <div class="font-light" style="color: var(--muted-foreground)">
+                {{ item.itemId }}
               </div>
-              <div class="grid grid-cols-[auto,1fr]">
-                <div>{{ item.label }}</div>
-                <div class="font-light" style="color: var(--muted-foreground)">
-                  {{ item.itemId }}
-                </div>
-              </div>
+            </div>
           </CommandItem>
         </CommandGroup>
       </template>
-      
+
       <CommandGroup heading="Actions">
         <CommandItem value="LOCATE_IN_ORBAT" @select="dispatchAction('LocateInOrbat')">
           <ListTreeIcon />

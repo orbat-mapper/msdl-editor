@@ -49,8 +49,7 @@ const scenarioName = computed({
     </div>
 
     <div class="flex gap-2">
-      <Button variant="outline" @click="showSearch = true" size="icon"><SearchIcon
-      /></Button>
+      <Button variant="outline" @click="showSearch = true" size="icon"><SearchIcon /></Button>
       <CommandPalette v-model:open="showSearch" />
       <Button variant="outline" @click="toggleDark()" size="icon">
         <MoonIcon v-if="isDark" class="size-4" />
