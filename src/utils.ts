@@ -141,3 +141,19 @@ export function enum2Object(enumItems: MsdlEnumItem[]): Record<string, EnumItem>
     ]),
   );
 }
+
+export function triggerFlash(element: Element) {
+  element.animate(
+    [
+      {
+        backgroundColor: "#2b7fff",
+      },
+      {},
+    ],
+    {
+      duration: 1500,
+      easing: "cubic-bezier(0.25, 0.1, 0.25, 1.0)",
+      iterations: 1,
+    },
+  );
+}

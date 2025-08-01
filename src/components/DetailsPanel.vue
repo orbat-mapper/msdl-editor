@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { ArrowUpIcon, FocusIcon, LocateFixedIcon } from "lucide-vue-next";
+import {
+  ArrowUpIcon,
+  FocusIcon,
+  LocateFixedIcon,
+  ListTreeIcon as LocateOrbatIcon,
+} from "lucide-vue-next";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabsmod";
 import { Button } from "@/components/ui/button";
@@ -27,6 +32,7 @@ import { getEquipmentItemDragItem, getUnitDragItem } from "@/types/draggables.ts
 import { mapItem } from "@/components/orbat/utils.ts";
 import DetailsPanelUnit from "@/components/DetailsPanelUnit.vue";
 import DetailsPanelEquipmentList from "@/components/DetailsPanelEquipmentList.vue";
+import { useScenarioActions } from "@/composables/scenarioActions.ts";
 
 const props = defineProps<{
   item: Unit | EquipmentItem | ForceSide;
@@ -43,6 +49,8 @@ const {
   isNETN,
   modifyScenario: { updateItemLocation },
 } = useScenarioStore();
+
+const { dispatchAction } = useScenarioActions();
 
 const selectStore = useSelectStore();
 const widthStore = useWidthStore();
@@ -111,6 +119,8 @@ function goUp() {
     selectStore.activeItem = parentItem;
   }
 }
+
+function doLocate() {}
 </script>
 
 <template>
@@ -143,6 +153,13 @@ function goUp() {
         :disabled="isGetLocationActive"
         title="Set location of item"
         ><LocateFixedIcon
+      /></Button>
+      <Button
+        variant="ghost"
+        size="icon"
+        title="Locate in ORBAT"
+        @click="dispatchAction('LocateInOrbat')"
+        ><LocateOrbatIcon
       /></Button>
       <ShowXMLDialog :item="item">XML</ShowXMLDialog>
     </div>

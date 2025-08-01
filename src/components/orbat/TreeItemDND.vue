@@ -200,6 +200,7 @@ function onSelect(item: any) {
 <template>
   <TreeItem
     ref="elRef"
+    :id="`oi-${item._id}`"
     v-slot="{ isExpanded, handleToggle }"
     :value="item.value"
     :level="item.level"

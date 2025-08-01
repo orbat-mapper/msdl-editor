@@ -7,6 +7,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
+  CommandShortcut,
 } from "@/components/ui/command";
 import { watch, ref } from "vue";
 import { useDebounce } from "@vueuse/core";
@@ -14,7 +15,7 @@ import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
 
-import { Download, Upload, Grid3x3Icon } from "lucide-vue-next";
+import { Download, Upload, Grid3x3Icon, ListTreeIcon } from "lucide-vue-next";
 import { type ScenarioAction, useScenarioActions } from "@/composables/scenarioActions.ts";
 
 const open = defineModel<boolean>("open", { default: false });
@@ -114,6 +115,16 @@ function selectItem(itemId: string) {
       </template>
       
       <CommandGroup heading="Actions">
+        <CommandItem value="LOCATE_IN_ORBAT" @select="dispatchAction('LocateInOrbat')">
+          <ListTreeIcon />
+          <span>Locate active item in ORBAT</span>
+          <CommandShortcut>l</CommandShortcut>
+        </CommandItem>
+        <CommandItem value="COLLAPSE_ORBAT" @select="dispatchAction('CollapseOrbat')">
+          <ListTreeIcon />
+          <span>Collapse all ORBAT items</span>
+        </CommandItem>
+
         <CommandItem value="CREATE_NEW_MSDL" @select="dispatchAction('CreateNewMSDL')">
           <Download />
           <span>Create new MSDL...</span>

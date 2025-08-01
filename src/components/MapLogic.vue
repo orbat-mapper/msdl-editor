@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { GeoJSONSource, Map as MlMap, type Subscription } from "maplibre-gl";
 import { centroid } from "@turf/centroid";
+import { featureCollection as createFeatureCollection } from "@turf/helpers";
+
 import ms from "milsymbol";
 import { computed, onUnmounted, ref, watch, watchEffect } from "vue";
-import { combineSidesToJson, sortBy } from "@/utils.ts";
+import { combineSidesToJson, isUnitOrEquipment, sortBy } from "@/utils.ts";
 import { useLayerStore, useMapSettingsStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
@@ -12,6 +14,7 @@ import type { MapContextMenuEvent } from "@/components/types.ts";
 import { useUIStore } from "@/stores/uiStore.ts";
 import { getStyleForBaseLayer, useMapLayerStore } from "@/stores/mapLayerStore.ts";
 import { useMapDrop } from "@/composables/mapDrop.ts";
+import type { Feature } from "geojson";
 
 const { mlMap } = defineProps<{ mlMap: MlMap }>();
 const emit = defineEmits(["showContextMenu"]);
@@ -172,15 +175,28 @@ function addSidesToMap(map: MlMap) {
     includeUnits: store.showUnits,
     includeEquipment: store.showEquipment,
   });
+
+  map.addSource("msdl-selected-items", {
+    type: "geojson",
+    data: createFeatureCollection([]),
+  });
+
   map.addSource("msdl-sides", {
     type: "geojson",
     data: featureCollection as never,
+    promoteId: "id",
   });
 
   map.on("styleimagemissing", function (e) {
-    const symb = new ms.Symbol(e.id, {
+    const isSelected = e.id.startsWith("sel-");
+    const symbolCode = isSelected ? e.id.slice(4) : e.id;
+
+    const options = isSelected
+      ? { outlineWidth: 20, outlineColor: "yellow" }
+      : { outlineWidth: store.showSymbolOutline ? 7 : 0 };
+    const symb = new ms.Symbol(symbolCode, {
       size: store.symbolSize ?? 20,
-      outlineWidth: store.showSymbolOutline ? 7 : 0,
+      ...options,
     });
     const { width, height } = symb.getSize();
     const data = symb
@@ -205,6 +221,23 @@ function addSidesToMap(map: MlMap) {
       "icon-allow-overlap": true,
       "text-allow-overlap": false,
       "text-optional": true,
+    },
+  });
+
+  map.addLayer({
+    id: "msdl-selected-items",
+    type: "symbol",
+    source: "msdl-selected-items",
+    layout: {
+      "icon-image": ["case", ["==", ["get", "sidc"], ""], "10011500002201000000", ["get", "sidc"]],
+      "text-font": ["Noto Sans Italic"],
+      "text-offset": [0, 1.25],
+      "text-anchor": "top",
+      "text-size": 12,
+      "icon-allow-overlap": true,
+      "text-allow-overlap": true,
+      "text-optional": false,
+      "text-field": ["get", "label"],
     },
   });
 
@@ -272,6 +305,25 @@ function addSidesToMap(map: MlMap) {
     } catch {}
   }, 600);
 }
+
+watch(
+  () => selectStore.activeItem,
+  (newItem, prevItem) => {
+    const source = mlMap.getSource("msdl-selected-items") as GeoJSONSource;
+    if (prevItem && isUnitOrEquipment(prevItem)) {
+    }
+    if (newItem && isUnitOrEquipment(newItem)) {
+      const geoJson = newItem.toGeoJson();
+      geoJson.properties.sidc = `sel-${newItem.sidc}`;
+      geoJson.properties.label = newItem.label;
+      geoJson.properties.id = newItem.objectHandle;
+      // @ts-expect-error because
+      source.setData(createFeatureCollection([geoJson]));
+    } else {
+      source.setData(createFeatureCollection([]));
+    }
+  },
+);
 
 addSidesToMap(mlMap);
 
