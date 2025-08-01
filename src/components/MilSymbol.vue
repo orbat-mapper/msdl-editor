@@ -1,6 +1,5 @@
 <script lang="ts">
 import { defineComponent, h } from "vue";
-
 import ms from "milsymbol";
 
 export default defineComponent({
@@ -24,11 +23,24 @@ export default defineComponent({
       outlineWidth: 8,
       ...(props.modifiers ?? {}),
     });
-    return () =>
-      h("span", {
+    return () => {
+      const node = symb.asDOM();
+      return h(node.tagName, {
         class: "milsymbol",
-        innerHTML: symb.asSVG(),
+        ...getAttributes(node),
+        innerHTML: node.innerHTML,
       });
+    };
   },
 });
+
+function getAttributes(node: Element) {
+  return Array.from(node.attributes).reduce(
+    (attrs, attr) => {
+      attrs[attr.name] = attr.value;
+      return attrs;
+    },
+    {} as Record<string, any>,
+  );
+}
 </script>
