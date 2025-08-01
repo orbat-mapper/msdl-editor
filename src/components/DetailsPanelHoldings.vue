@@ -92,7 +92,7 @@ function onUpdate(data: HoldingType[]) {
             <template v-else>{{ holding.nsnCode }}</template>
           </TableCell>
           <TableCell class="w-1/3">
-            {{ formatNumber(holding.onHandQuantity, { maxDecimals: 1, maxCharacters: 12 }) }}
+            {{ formatNumber(holding.onHandQuantity, { maxDecimals: 1 }) }}
           </TableCell>
         </TableRow>
       </TableBody>

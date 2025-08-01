@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import DetailsPanel from "@/components/DetailsPanel.vue";
+import DeploymentPanel from "@/components/DeploymentPanel.vue";
 import type { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
 import type { LngLatBoundsLike, LngLatLike } from "maplibre-gl";
 import { useSelectStore } from "@/stores/selectStore.ts";
@@ -35,5 +36,10 @@ function flyToItem(item: EquipmentItem | Unit | ForceSide) {
     class="pointer-events-auto absolute right-2 top-[150px]"
     @flyTo="flyToItem"
     :mlMap
+  />
+  <DeploymentPanel
+    v-if="selectStore.activeFederate"
+    :federate="selectStore.activeFederate"
+    class="pointer-events-auto absolute right-2 top-[150px]"
   />
 </template>
