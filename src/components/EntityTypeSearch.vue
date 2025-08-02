@@ -15,6 +15,7 @@ import { useEntityTypeStore } from "@/stores/entityTypeStore";
 import { storeToRefs } from "pinia";
 import { watch, ref } from "vue";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useDebounce } from "@vueuse/core";
 
 // Get props from parent
 const props = defineProps<{
@@ -26,13 +27,14 @@ const { searchResults } = storeToRefs(store);
 
 // Search query refs
 const searchQuery = ref<string>("");
+const debouncedQuery = useDebounce(searchQuery, 200);
 const searchMessage = ref<string>("");
 const searchSelection = ref<{ entType: string; descr: any }>();
 const searchResultsList = ref<{ entType: string; descr: any }[]>([]);
 
 // update query within the store
 const queryUpdated = () => {
-  store.search(searchQuery.value);
+  store.search(debouncedQuery.value);
   searchResultsList.value = Object.entries(searchResults.value).map((entr) => ({
     entType: entr[0],
     descr: entr[1],
@@ -40,10 +42,10 @@ const queryUpdated = () => {
 };
 
 // Watch for changes to the searchQuery
-watch(searchQuery, (newVal: string) => {
+watch(debouncedQuery, (newVal: string) => {
   queryUpdated();
 
-  if (searchQuery.value?.length > 2) searchMessage.value = "No data available";
+  if (debouncedQuery.value?.length > 2) searchMessage.value = "No data available";
   else searchMessage.value = "Query must be at least 3 characters";
 });
 
@@ -76,8 +78,9 @@ const handleClick = async () => {
             v-for="searchResult in searchResultsList"
             :key="searchResult.entType"
             :value="searchResult"
+            class="cursor-pointer"
           >
-            <div class="grid grid-cols-[auto,1fr] gap-x-">
+            <div class="grid grid-cols-[auto,1fr]">
               <div>{{ searchResult.entType }}</div>
               <div class="font-light" style="color: var(--muted-foreground)">
                 {{ searchResult.descr }}
