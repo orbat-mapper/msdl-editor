@@ -7,8 +7,8 @@ export type BaseLayer = "none" | "osm" | "satellite" | "default" | "demo";
 
 export const mapProviders: EnumItem<BaseLayer>[] = [
   { value: "default", label: "OpenFreeMap" },
-  { value: "osm", label: "OpenStreetMap" },
-  { value: "satellite", label: "ESRI World imagery" },
+  { value: "osm", label: "OpenStreetMap (raster)" },
+  { value: "satellite", label: "ESRI World imagery (raster)" },
   { value: "demo", label: "Demo tiles" },
 ];
 
