@@ -5,16 +5,13 @@ import FederateStats from "@/components/FederateStats.vue";
 import { computed, ref, useTemplateRef, watchEffect } from "vue";
 import { unrefElement } from "@vueuse/core";
 import { dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
-import {
-  isOrbatItemDragItem,
-  isSideDragItem,
-  isUnitOrEquipmentItemDragItem,
-} from "@/types/draggables";
+import { isUnitOrEquipmentItemDragItem } from "@/types/draggables";
 import {
   extractInstruction,
   type Instruction,
 } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { useScenarioStore } from "@/stores/scenarioStore";
+import { UNALLOCATED_FEDERATE } from "@/stores/selectStore";
 
 const props = defineProps<{
   federate: Federate;
@@ -22,7 +19,12 @@ const props = defineProps<{
 
 const {
   msdl,
-  modifyScenario: { assignEquipmentToFederate, assignUnitToFederate },
+  modifyScenario: {
+    assignEquipmentToFederate,
+    assignUnitToFederate,
+    removeUnitFromFederate,
+    removeEquipmentFromFederate,
+  },
 } = useScenarioStore();
 
 const fedRef = useTemplateRef("fedRef");
@@ -59,16 +61,29 @@ watchEffect((onCleanup) => {
       instruction.value = null;
     },
     onDrop: ({ source }) => {
+      if (!msdl.value || !msdl.value.deployment) return;
       instruction.value = null;
       isDraggedOver.value = false;
       let data = source.data;
       if (isUnitOrEquipmentItemDragItem(data)) {
-        if (msdl.value?.getUnitById(data.item.objectHandle)) {
-          assignUnitToFederate(data.item.objectHandle, props.federate.objectHandle);
-        } else if (msdl.value?.getEquipmentById(data.item.objectHandle)) {
-          assignEquipmentToFederate(data.item.objectHandle, props.federate.objectHandle);
+        if (props.federate.objectHandle === UNALLOCATED_FEDERATE.objectHandle) {
+          if (msdl.value.getUnitById(data.item.objectHandle)) {
+            removeUnitFromFederate(data.item.objectHandle);
+          } else if (msdl.value.getEquipmentById(data.item.objectHandle)) {
+            removeEquipmentFromFederate(data.item.objectHandle);
+          } else {
+            console.warn(`Could not unallocate item ${source.data.objectHandle}`);
+          }
         } else {
-          console.warn(`Could not assign item ${source.data.objectHandle}`);
+          if (msdl.value.getUnitById(data.item.objectHandle)) {
+            assignUnitToFederate(data.item.objectHandle, props.federate.objectHandle);
+          } else if (msdl.value.getEquipmentById(data.item.objectHandle)) {
+            assignEquipmentToFederate(data.item.objectHandle, props.federate.objectHandle);
+          } else {
+            console.warn(
+              `Could not assign item ${source.data.objectHandle} to ${props.federate.objectHandle}`,
+            );
+          }
         }
       }
     },

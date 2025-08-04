@@ -23,24 +23,24 @@ const props = defineProps<{
 
 const { msdl } = useScenarioStore();
 
-const reactiveFederate = computed(() => {
+function getReactiveFederate() {
   return msdl.value?.getFederateById(props.federateHandle) ?? (UNALLOCATED_FEDERATE as Federate);
-});
+}
 
 const federateUnits = computed(() => {
-  return reactiveFederate.value === UNALLOCATED_FEDERATE
+  return getReactiveFederate() === UNALLOCATED_FEDERATE
     ? msdl.value?.deployment?.getUnallocatedUnits() || []
-    : reactiveFederate.value?.units || [];
+    : getReactiveFederate()?.units || [];
 });
 
 const federateEquipment = computed(() => {
-  return reactiveFederate.value === UNALLOCATED_FEDERATE
+  return getReactiveFederate() === UNALLOCATED_FEDERATE
     ? msdl.value?.deployment?.getUnallocatedEquipment() || []
-    : reactiveFederate.value?.equipment || [];
+    : getReactiveFederate()?.equipment || [];
 });
 
 const stats = computed(() => [
-  { name: "Units", value: federateUnits.value.length || 0 },
-  { name: "Equipment", value: federateEquipment.value.length || 0 },
+  { name: "Units", value: federateUnits.value.length },
+  { name: "Equipment", value: federateEquipment.value.length },
 ]);
 </script>
