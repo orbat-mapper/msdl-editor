@@ -2,41 +2,28 @@
 import { PlusIcon } from "lucide-vue-next";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { EquipmentItem, Federate, Unit } from "@orbat-mapper/msdllib";
+import { Federate } from "@orbat-mapper/msdllib";
 import CloseButton from "@/components/CloseButton.vue";
 import { useSelectStore, UNALLOCATED_FEDERATE } from "@/stores/selectStore.ts";
-import { computed, onMounted, ref, useTemplateRef, watchEffect } from "vue";
+import { computed, useTemplateRef } from "vue";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import ShowXMLDialog from "@/components/ShowXMLDialog.vue";
 import PanelResizeHandle from "@/components/PanelResizeHandle.vue";
 import { useWidthStore } from "@/stores/uiStore.ts";
-import { unrefElement } from "@vueuse/core";
-import { draggable, dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
-import { useScenarioActions } from "@/composables/scenarioActions.ts";
 import { useDialogStore } from "@/stores/dialogStore";
 import CreateNewFederateDialog from "@/components/CreateNewFederateDialog.vue";
-import FederateStats from "@/components/FederateStats.vue";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion } from "@/components/ui/accordion";
+import DeploymentFederate from "@/components/DeploymentFederate.vue";
 
 const props = defineProps<{
   federate: Federate;
 }>();
 
-const fedRef = useTemplateRef("fedRef");
-const isDragging = ref(false);
-
 const {
   msdl,
-  modifyScenario: { addFederate, assignUnitToFederate, assignEquipmentToFederate },
+  modifyScenario: { addFederate },
 } = useScenarioStore();
-
-const { dispatchAction } = useScenarioActions();
 
 const selectStore = useSelectStore();
 const widthStore = useWidthStore();
@@ -68,8 +55,8 @@ function createFederate() {
       </Button>
       <ShowXMLDialog :item="msdl?.deployment ?? { element: undefined }">XML</ShowXMLDialog>
     </div>
-    <ScrollArea class="" ref="fedRef">
-      <div v-if="msdl?.deployment" class="w-full">
+    <ScrollArea class="">
+      <div v-if="msdl?.deployment" class="w-full pb-4">
         <header class="flex items-center justify-between px-4 mt-1">
           <h3 class="text-xs/6 font-semibold uppercase">Federates</h3>
         </header>
@@ -77,19 +64,12 @@ function createFederate() {
           v-model:open="dialogStore.isCreateFederateDialogOpen"
           @created="addFederate"
         />
-        <Accordion type="multiple" class="mt-2">
-          <AccordionItem
+        <Accordion type="multiple" class="py-2">
+          <DeploymentFederate
             v-for="federate in allFederates"
             :key="federate.objectHandle"
-            :value="federate.objectHandle"
-          >
-            <AccordionTrigger class="bg-card-foreground/5 py-2 rounded-none px-4">
-              {{ federate.name }}
-            </AccordionTrigger>
-            <AccordionContent class="px-4">
-              <FederateStats :federate-handle="federate.objectHandle"></FederateStats>
-            </AccordionContent>
-          </AccordionItem>
+            :federate="federate"
+          />
         </Accordion>
       </div>
     </ScrollArea>
