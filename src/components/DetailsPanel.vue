@@ -120,8 +120,6 @@ function goUp() {
     selectStore.activeItem = parentItem;
   }
 }
-
-function doLocate() {}
 </script>
 
 <template>
@@ -131,7 +129,7 @@ function doLocate() {}
   >
     <header class="px-4 h-10 mt-4 flex justify-between">
       <div v-if="isUnitOrEquipment(item)" class="flex gap-2">
-        <MilSymbol :sidc="item.sidc" :key="item.sidc" :size="16" ref="elRef" />
+        <span ref="elRef"><MilSymbol :sidc="item.sidc" :key="item.sidc" :size="16" /></span>
         <span class="text-base font-bold">{{ item.label }}</span>
       </div>
       <span v-else class="text-base font-bold">{{ item.name }}</span>
