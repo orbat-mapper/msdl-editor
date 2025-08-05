@@ -27,20 +27,24 @@ function getReactiveFederate() {
   return msdl.value?.getFederateById(props.federateHandle) ?? (UNALLOCATED_FEDERATE as Federate);
 }
 
-const federateUnits = computed(() => {
-  return getReactiveFederate() === UNALLOCATED_FEDERATE
-    ? msdl.value?.deployment?.getUnallocatedUnits() || []
-    : getReactiveFederate()?.units || [];
-});
+function getReactiveDeployment() {
+  return msdl.value?.deployment;
+}
 
-const federateEquipment = computed(() => {
+function federateUnits() {
   return getReactiveFederate() === UNALLOCATED_FEDERATE
-    ? msdl.value?.deployment?.getUnallocatedEquipment() || []
-    : getReactiveFederate()?.equipment || [];
-});
+    ? getReactiveDeployment()?.getUnallocatedUnits() || []
+    : getReactiveFederate().units || [];
+}
+
+function federateEquipment() {
+  return getReactiveFederate() === UNALLOCATED_FEDERATE
+    ? getReactiveDeployment()?.getUnallocatedEquipment() || []
+    : getReactiveFederate().equipment || [];
+}
 
 const stats = computed(() => [
-  { name: "Units", value: federateUnits.value.length },
-  { name: "Equipment", value: federateEquipment.value.length },
+  { name: "Units", value: federateUnits().length },
+  { name: "Equipment", value: federateEquipment().length },
 ]);
 </script>

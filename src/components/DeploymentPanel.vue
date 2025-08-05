@@ -50,7 +50,7 @@ function createFederate() {
       </div>
     </header>
     <div class="flex items-center pl-2 py-1 border-b border-muted-foreground/20">
-      <Button variant="ghost" size="icon" @click="createFederate" title="Create new federate">
+      <Button variant="outline" size="icon" @click="createFederate" title="Create new federate" class="mr-1">
         <PlusIcon />
       </Button>
       <ShowXMLDialog :item="msdl?.deployment ?? { element: undefined }">XML</ShowXMLDialog>
