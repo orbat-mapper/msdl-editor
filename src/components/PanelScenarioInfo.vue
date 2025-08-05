@@ -69,11 +69,6 @@ function onUpdate(data: Partial<ScenarioIdType>) {
       </DescriptionItem>
       <DescriptionItem label="Type">{{ msdl.scenarioId.type || "n/a" }}</DescriptionItem>
       <DescriptionItem label="Version">{{ msdl.scenarioId.version || "n/a" }}</DescriptionItem>
-      <DescriptionItem label="Associations"
-        ><Button variant="outline" class="mt-2" @click="dialogStore.toggleAssociationDialog()"
-          >Show</Button
-        ></DescriptionItem
-      >
       <div class="flex items-center justify-end mt-4">
         <Button variant="outline" type="button" size="sm" @click="toggleEditForm()"
           >Modify ScenarioID</Button
