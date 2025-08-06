@@ -15,6 +15,7 @@ import { isOrbatItemDragItem } from "@/types/draggables.ts";
 import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import SideItem from "@/components/orbat/SideItem.vue";
 import { useExpandedStore } from "@/stores/expandedStore.ts";
+import { useSelectStore } from "@/stores/selectStore";
 
 const {
   msdl,
@@ -25,6 +26,7 @@ const layerStore = useLayerStore();
 const sideStore = useSideStore();
 const dialogStore = useDialogStore();
 const expandedStore = useExpandedStore();
+const selectStore = useSelectStore();
 
 const sides = computed(() => {
   const localSides = sideStore.sortAlphabetically
@@ -72,6 +74,10 @@ function toggleLayers() {
   });
 }
 
+function openFederatesPanel() {
+  selectStore.openFederatesPanel();
+}
+
 function createForceSide() {
   dialogStore.toggleCreateForceSideDialog();
 }
@@ -109,6 +115,9 @@ function showAssociations() {
   <div v-if="msdl">
     <div class="m-4">
       <Button variant="secondary" @click="toggleLayers()">Toggle all side visibilities</Button>
+      <Button v-if="msdl.deployment" variant="secondary" class="ml-4" @click="openFederatesPanel()"
+        >Show all federates</Button
+      >
     </div>
   </div>
 </template>

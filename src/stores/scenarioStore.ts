@@ -388,15 +388,35 @@ function addFederate(newFederate?: Partial<FederateType>) {
   triggerRef(msdl);
 }
 
-function assignUnitToFederate(unit: string, federate: string) {
+function assignUnitToFederate(
+  unit: string,
+  federate: string,
+  includeSubordinates: boolean = false,
+) {
   if (!msdl.value || !unit || !federate) return;
-  msdl.value.assignUnitToFederate(unit, federate);
+  msdl.value.assignUnitToFederate(unit, federate, includeSubordinates);
   triggerRef(msdl);
 }
 
 function assignEquipmentToFederate(equipment: string, federate: string) {
   if (!msdl.value || !equipment || !federate) return;
   msdl.value.assignEquipmentItemToFederate(equipment, federate);
+  triggerRef(msdl);
+}
+
+function removeUnitFromFederate(unit: string, includeSubordinates: boolean = false) {
+  if (!msdl.value || !unit) return;
+  const federate = msdl.value.getFederateOfUnit(unit);
+  if (!federate) return;
+  msdl.value.removeUnitFromFederate(unit, federate.objectHandle, includeSubordinates);
+  triggerRef(msdl);
+}
+
+function removeEquipmentFromFederate(equipment: string) {
+  if (!msdl.value || !equipment) return;
+  const federate = msdl.value.getFederateOfEquipment(equipment);
+  if (!federate) return;
+  msdl.value.removeEquipmentFromFederate(equipment, federate.objectHandle);
   triggerRef(msdl);
 }
 
@@ -519,6 +539,8 @@ export function useScenarioStore() {
       addFederate,
       assignUnitToFederate,
       assignEquipmentToFederate,
+      removeUnitFromFederate,
+      removeEquipmentFromFederate,
       removeUnit,
       removeEquipmentItem,
       setPrimarySide: (side: ForceSide | string) => {
