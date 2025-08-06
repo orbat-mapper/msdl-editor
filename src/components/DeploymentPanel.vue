@@ -33,6 +33,11 @@ const allFederates = computed(() => {
   return (msdl.value?.deployment?.federates || []).concat(UNALLOCATED_FEDERATE);
 });
 
+const deployment = computed(() =>
+  // Fixes reactivity/caching issues
+  msdl.value?.deployment ? { ...msdl.value.deployment } : undefined,
+);
+
 function createFederate() {
   dialogStore.toggleCreateFederateDialog();
 }
@@ -50,10 +55,16 @@ function createFederate() {
       </div>
     </header>
     <div class="flex items-center pl-2 py-1 border-b border-muted-foreground/20">
-      <Button variant="outline" size="icon" @click="createFederate" title="Create new federate" class="mr-1">
+      <Button
+        variant="outline"
+        size="icon"
+        @click="createFederate"
+        title="Create new federate"
+        class="mr-1"
+      >
         <PlusIcon />
       </Button>
-      <ShowXMLDialog :item="msdl?.deployment ?? { element: undefined }">XML</ShowXMLDialog>
+      <ShowXMLDialog :item="deployment">XML</ShowXMLDialog>
     </div>
     <ScrollArea class="">
       <div v-if="msdl?.deployment" class="w-full pb-4">

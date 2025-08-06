@@ -12,10 +12,15 @@ import {
 import { computed } from "vue";
 import XmlBeautify from "xml-beautify";
 
-const props = defineProps<{
-  item: { element?: Element };
-  title?: string;
-}>();
+const props = withDefaults(
+  defineProps<{
+    item?: { element?: Element };
+    title?: string;
+  }>(),
+  {
+    item: () => ({ element: undefined }),
+  },
+);
 
 const prettyXML = computed(() => {
   if (!props.item.element || !(props.item.element instanceof Element)) {

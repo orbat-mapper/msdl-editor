@@ -3,6 +3,7 @@ import { Federate } from "@orbat-mapper/msdllib";
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import FederateStats from "@/components/FederateStats.vue";
 import { computed, ref, useTemplateRef, watchEffect } from "vue";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { unrefElement } from "@vueuse/core";
 import { dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { isUnitOrEquipmentItemDragItem } from "@/types/draggables";
@@ -60,7 +61,8 @@ watchEffect((onCleanup) => {
       isDraggedOver.value = false;
       instruction.value = null;
     },
-    onDrop: ({ source }) => {
+    onDrop: ({ source, location }) => {
+      const shiftKeyPressed = location.current.input.shiftKey;
       if (!msdl.value || !msdl.value.deployment) return;
       instruction.value = null;
       isDraggedOver.value = false;
@@ -68,7 +70,7 @@ watchEffect((onCleanup) => {
       if (isUnitOrEquipmentItemDragItem(data)) {
         if (props.federate.objectHandle === UNALLOCATED_FEDERATE.objectHandle) {
           if (msdl.value.getUnitById(data.item.objectHandle)) {
-            removeUnitFromFederate(data.item.objectHandle);
+            removeUnitFromFederate(data.item.objectHandle, shiftKeyPressed);
           } else if (msdl.value.getEquipmentById(data.item.objectHandle)) {
             removeEquipmentFromFederate(data.item.objectHandle);
           } else {
@@ -76,7 +78,11 @@ watchEffect((onCleanup) => {
           }
         } else {
           if (msdl.value.getUnitById(data.item.objectHandle)) {
-            assignUnitToFederate(data.item.objectHandle, props.federate.objectHandle);
+            assignUnitToFederate(
+              data.item.objectHandle,
+              props.federate.objectHandle,
+              shiftKeyPressed,
+            );
           } else if (msdl.value.getEquipmentById(data.item.objectHandle)) {
             assignEquipmentToFederate(data.item.objectHandle, props.federate.objectHandle);
           } else {
@@ -96,12 +102,21 @@ watchEffect((onCleanup) => {
 </script>
 
 <template>
-  <AccordionItem :value="federate.objectHandle" ref="fedRef" :class="dndClasses">
-    <AccordionTrigger class="bg-card-foreground/5 py-2 rounded-none px-4">
-      {{ federate.name }}
-    </AccordionTrigger>
-    <AccordionContent class="px-4">
-      <FederateStats :federate-handle="federate.objectHandle"></FederateStats>
-    </AccordionContent>
-  </AccordionItem>
+  <TooltipProvider>
+    <Tooltip :open="isDraggedOver">
+      <TooltipTrigger as-child>
+        <AccordionItem :value="federate.objectHandle" ref="fedRef" :class="dndClasses">
+          <AccordionTrigger class="bg-card-foreground/5 py-2 rounded-none px-4">
+            {{ federate.name }}
+          </AccordionTrigger>
+          <AccordionContent class="px-4">
+            <FederateStats :federate-handle="federate.objectHandle"></FederateStats>
+          </AccordionContent>
+        </AccordionItem>
+      </TooltipTrigger>
+      <TooltipContent>
+        <p>Holding shift while dropping moves all subordinates too</p>
+      </TooltipContent>
+    </Tooltip>
+  </TooltipProvider>
 </template>
