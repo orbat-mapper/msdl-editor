@@ -86,7 +86,7 @@ export async function downloadAsKMZ(scenario: MilitaryScenario) {
 
   const zipData = zipSync(data);
   return await saveBlobToLocalFile(
-    new Blob([zipData], {
+    new Blob([zipData as BlobPart], {
       type: "application/octet-stream",
     }),
     "scenario.kmz",
