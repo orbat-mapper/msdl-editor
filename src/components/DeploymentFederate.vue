@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Federate } from "@orbat-mapper/msdllib";
+import { Check, ChevronDown, Cross, CrossIcon, Pencil, PencilIcon, X } from "lucide-vue-next";
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import FederateStats from "@/components/FederateStats.vue";
 import { computed, ref, useTemplateRef, watchEffect } from "vue";
@@ -13,6 +14,8 @@ import {
 } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { useScenarioStore } from "@/stores/scenarioStore";
 import { UNALLOCATED_FEDERATE } from "@/stores/selectStore";
+import { Button } from "./ui/button";
+import { Input } from "@/components/ui/input";
 
 const props = defineProps<{
   federate: Federate;
@@ -25,6 +28,7 @@ const {
     assignUnitToFederate,
     removeUnitFromFederate,
     removeEquipmentFromFederate,
+    updateFederate,
   },
 } = useScenarioStore();
 
@@ -99,6 +103,26 @@ watchEffect((onCleanup) => {
     dndFunction();
   });
 });
+
+const newName = ref("");
+const isEditing = ref(false);
+const isNullFederate = computed(
+  () => props.federate.objectHandle === UNALLOCATED_FEDERATE.objectHandle,
+);
+
+function startRename() {
+  newName.value = props.federate.name ?? "";
+  isEditing.value = true;
+}
+
+function applyRename() {
+  isEditing.value = false;
+  updateFederate(props.federate.objectHandle, { name: newName.value });
+}
+
+function cancelRename() {
+  isEditing.value = false;
+}
 </script>
 
 <template>
@@ -106,8 +130,41 @@ watchEffect((onCleanup) => {
     <Tooltip :open="isDraggedOver">
       <TooltipTrigger as-child>
         <AccordionItem :value="federate.objectHandle" ref="fedRef" :class="dndClasses">
-          <AccordionTrigger class="bg-card-foreground/5 py-2 rounded-none px-4">
-            {{ federate.name }}
+          <AccordionTrigger class="bg-card-foreground/5 py-2 rounded-none px-4 hover:no-underline">
+            <div class="flex w-full items-center justify-between">
+              <span v-if="!isEditing">
+                {{ federate.name }}
+              </span>
+              <span v-else class="flex items-center gap-1">
+                <Input type="text" placeholder="Federate name" v-model="newName" />
+                <Button
+                  variant="ghost"
+                  class="size-4"
+                  @click.stop="cancelRename"
+                  v-if="!isNullFederate"
+                  title="Cancel"
+                >
+                  <X class="text-muted-foreground" />
+                </Button>
+                <Button
+                  variant="ghost"
+                  class="size-4"
+                  @click.stop="applyRename"
+                  v-if="!isNullFederate"
+                  title="Apply"
+                >
+                  <Check class="text-muted-foreground" />
+                </Button>
+              </span>
+              <Button
+                variant="ghost"
+                class="size-4"
+                @click.stop="startRename"
+                v-if="!isNullFederate"
+              >
+                <PencilIcon class="text-muted-foreground" />
+              </Button>
+            </div>
           </AccordionTrigger>
           <AccordionContent class="px-4">
             <FederateStats :federate-handle="federate.objectHandle"></FederateStats>
