@@ -115,9 +115,9 @@ function showAssociations() {
   <div v-if="msdl">
     <div class="m-4">
       <Button variant="secondary" @click="toggleLayers()">Toggle all side visibilities</Button>
-      <Button v-if="msdl.deployment" variant="secondary" class="ml-4" @click="openFederatesPanel()"
-        >Show all federates</Button
-      >
+      <Button variant="secondary" class="ml-4" @click="openFederatesPanel()">
+        Show all federates
+      </Button>
     </div>
   </div>
 </template>

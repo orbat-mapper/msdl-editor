@@ -435,6 +435,12 @@ function createScenarioKey(scenario: MilitaryScenario): string {
   return scenario.scenarioId.name + scenario.scenarioId.description;
 }
 
+function createDeployment() {
+  if (!msdl.value) return;
+  msdl.value.createDeployment();
+  triggerRef(msdl);
+}
+
 function updateOrbatDragItems(
   source: OrbatDragItem,
   target: OrbatDragItem,
@@ -555,6 +561,7 @@ export function useScenarioStore() {
       removeEquipmentFromFederate,
       removeUnit,
       removeEquipmentItem,
+      createDeployment,
       setPrimarySide: (side: ForceSide | string) => {
         setPrimarySide(side);
         const scenarioKey = createScenarioKey(msdl.value!);
