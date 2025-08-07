@@ -173,6 +173,17 @@ function updateOptions(value: Partial<MsdlOptionsType>) {
   triggerRef(msdl);
 }
 
+function updateFederate(objectHandle: string, value: Partial<FederateType>) {
+  if (!msdl.value) return;
+  const federate = msdl.value.getFederateById(objectHandle);
+  if (!federate) {
+    console.warn(`Federate with object handle ${objectHandle} not found.`);
+    return;
+  }
+  federate.updateFromObject(value);
+  triggerRef(msdl);
+}
+
 function updateForceSide(objectHandle: string, value: Partial<ScenarioIdType>) {
   if (!msdl.value) return;
   const forceSide = msdl.value.getForceSideById(objectHandle);
@@ -424,6 +435,12 @@ function createScenarioKey(scenario: MilitaryScenario): string {
   return scenario.scenarioId.name + scenario.scenarioId.description;
 }
 
+function createDeployment() {
+  if (!msdl.value) return;
+  msdl.value.createDeployment();
+  triggerRef(msdl);
+}
+
 function updateOrbatDragItems(
   source: OrbatDragItem,
   target: OrbatDragItem,
@@ -528,6 +545,7 @@ export function useScenarioStore() {
     modifyScenario: {
       updateScenarioId,
       updateOptions,
+      updateFederate,
       updateForceSide,
       updateItemLocation,
       updateItemDisposition,
@@ -543,6 +561,7 @@ export function useScenarioStore() {
       removeEquipmentFromFederate,
       removeUnit,
       removeEquipmentItem,
+      createDeployment,
       setPrimarySide: (side: ForceSide | string) => {
         setPrimarySide(side);
         const scenarioKey = createScenarioKey(msdl.value!);

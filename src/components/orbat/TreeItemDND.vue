@@ -17,7 +17,7 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { ChevronDownIcon } from "lucide-vue-next";
 import { unrefElement, useTimeoutFn } from "@vueuse/core";
 import MilSymbol from "@/components/MilSymbol.vue";
-import { useSelectStore } from "@/stores/selectStore.ts";
+import { UNALLOCATED_FEDERATE, useSelectStore } from "@/stores/selectStore.ts";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import {
   getEquipmentItemDragItem,
@@ -29,8 +29,6 @@ import {
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
 import { Badge } from "@/components/ui/badge";
 import type { Federate } from "@orbat-mapper/msdllib";
-
-const UNALLOCATED_FEDERATE = "Unallocated";
 
 const props = defineProps<{
   item: FlattenedItem<OrbatTreeItem>;
@@ -56,7 +54,7 @@ const mode = computed(() => {
 });
 
 const federate = computed(() => {
-  return msdl.value?.getFederateOfUnitOrEquipment(props.item._id) || { name: UNALLOCATED_FEDERATE };
+  return msdl.value?.getFederateOfUnitOrEquipment(props.item._id) || UNALLOCATED_FEDERATE;
 });
 
 watchEffect((onCleanup) => {
@@ -206,11 +204,7 @@ function onSelect(item: any) {
 }
 
 function openFederateDetail() {
-  if (federate.value.name === UNALLOCATED_FEDERATE) {
-    console.log("TODO");
-  } else {
-    selectStore.activeFederate = federate.value as Federate;
-  }
+  selectStore.activeFederate = federate.value;
 }
 </script>
 <template>
