@@ -11,7 +11,10 @@
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "check-format": "prettier --check src/"
+    "check-format": "prettier --check src/",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@atlaskit/pragmatic-drag-and-drop": "~1.6.1",
@@ -70,6 +73,7 @@
     "vite": "^6.3.5",
     "vite-plugin-compression2": "^2.2.0",
     "vite-plugin-vue-devtools": "^7.7.7",
+    "vitepress": "^1.6.4",
     "vue-tsc": "^2.2.12"
   }
 }
