@@ -30,3 +30,7 @@ coverage
 *.tsbuildinfo
 
 /public/examples/
+
+# VitePress
+docs/.vitepress/cache/
+docs/.vitepress/dist/
