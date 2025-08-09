@@ -4,7 +4,9 @@ Military Scenario Definition Language (MSDL) is a standardized format for descri
 
 ## What is MSDL?
 
-MSDL (Military Scenario Definition Language) is an XML-based language designed to represent military scenarios in a standardized, interoperable format. It allows different simulation systems and tools to exchange scenario data consistently.
+MSDL (Military Scenario Definition Language) is an XML-based language designed to represent military scenarios in a
+standardized, interoperable format. It allows different simulation systems and tools to exchange scenario data
+consistently.
 
 ## Key Features of MSDL
 
@@ -24,8 +26,10 @@ MSDL files typically contain:
 
 ## Related Projects
 
-MSDL Editor is built on top of [msdllib](https://github.com/orbat-mapper/msdllib), a TypeScript library for working with MSDL files. This library provides the core functionality for parsing, validating, and manipulating MSDL data.
+MSDL Editor is built on top of [msdllib](https://github.com/orbat-mapper/msdllib), a TypeScript library for working with
+MSDL files. This library provides the core functionality for parsing, validating, and manipulating MSDL data.
 
 ## Learn More
 
-For more information about MSDL standards and specifications, consult the official military simulation documentation and standards bodies.
+For more information about MSDL standards and specifications, consult the official military simulation documentation and
+standards bodies.
