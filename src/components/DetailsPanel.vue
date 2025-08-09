@@ -12,7 +12,7 @@ import { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
 import CloseButton from "@/components/CloseButton.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
-import { computed, ref, useTemplateRef, watchEffect } from "vue";
+import { computed, ref, useTemplateRef, watch, watchEffect } from "vue";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
@@ -39,6 +39,13 @@ const props = defineProps<{
   item: Unit | EquipmentItem | ForceSide;
   mlMap: maplibregl.Map;
 }>();
+
+watch(
+  () => props.item,
+  (newItem) => {
+    console.log("DetailsPanel item changed:", newItem);
+  },
+);
 
 const emit = defineEmits(["flyTo"]);
 

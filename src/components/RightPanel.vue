@@ -7,11 +7,21 @@ import { useSelectStore } from "@/stores/selectStore.ts";
 import { isForceSide, isUnitOrEquipment } from "@/utils.ts";
 import bbox from "@turf/bbox";
 import type { GeoJSON } from "geojson";
+import { ref, watch, watchEffect } from "vue";
+import { useScenarioStore } from "@/stores/scenarioStore.ts";
 const { mlMap } = defineProps<{
   mlMap?: maplibregl.Map;
 }>();
 
 const selectStore = useSelectStore();
+const { msdl } = useScenarioStore();
+const key = ref(0);
+
+watchEffect(() => {
+  if (selectStore.activeItem && msdl.value) {
+    key.value++;
+  }
+});
 
 function flyToItem(item: EquipmentItem | Unit | ForceSide) {
   if (isUnitOrEquipment(item)) {

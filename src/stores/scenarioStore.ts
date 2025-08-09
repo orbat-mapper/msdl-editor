@@ -221,6 +221,28 @@ function updateForceSide(objectHandle: string, value: Partial<ScenarioIdType>) {
   triggerRef(msdl);
 }
 
+function updateUnit(objectHandle: string, value: Partial<UnitEquipmentInterface>) {
+  if (!msdl.value) return;
+  const unit = msdl.value.getUnitById(objectHandle);
+  if (!unit) {
+    console.warn(`Unit with object handle ${objectHandle} not found.`);
+    return;
+  }
+  unit.updateFromObject(value);
+  triggerRef(msdl);
+}
+
+function updateEquipmentItem(objectHandle: string, value: Partial<UnitEquipmentInterface>) {
+  if (!msdl.value) return;
+  const equipmentItem = msdl.value.getEquipmentById(objectHandle);
+  if (!equipmentItem) {
+    console.warn(`Equipment item with object handle ${objectHandle} not found.`);
+    return;
+  }
+  equipmentItem.updateFromObject(value);
+  triggerRef(msdl);
+}
+
 function updateItemLocation(objectHandle: string, newLocation: Position) {
   if (!msdl.value) return;
   const item = msdl.value.getUnitOrEquipmentById(objectHandle);
@@ -551,6 +573,8 @@ export function useScenarioStore() {
       updateItemDisposition,
       updateItemModel,
       updateHoldings,
+      updateUnit,
+      updateEquipmentItem,
       addUnit,
       addEquipmentItem,
       addForceSide,
