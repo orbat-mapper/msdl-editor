@@ -20,11 +20,9 @@ features:
   - title: "View MSDL Files"
     details: Load and visualize Military Scenario Definition Language files.
   - title: "Edit Scenarios"
-    details: Modify military scenarios with an intuitive interface.
+    details: Modify MSDL scenarios with an intuitive interface.
   - title: "Client-side Only"
     details: All your data stays on your computer - no server uploads required.
-  - title: "Export Data"
-    details: Export your scenarios in various formats for use in other tools.
   - title: "Modern Interface"
     details: Built with Vue.js and modern web technologies for a smooth experience.
   - title: "Open Source"
