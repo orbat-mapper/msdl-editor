@@ -1,13 +1,15 @@
-name: autofix.ci
+name: build-check
 on:
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - 'docs/**'
 permissions:
   contents: read
 
 jobs:
-  autofix:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,8 +17,6 @@ jobs:
         with:
           node-version: 'lts/*'
           cache: 'npm'
-
       - run: npm ci
-      - run: npm run format
-   
-      - uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27
+      - run: npm run build
+
