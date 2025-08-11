@@ -120,7 +120,9 @@ function showAssociations() {
       </Button>
       <h3 class="text-xs/6 font-semibold uppercase mt-4">Associations</h3>
       <DescriptionItem label="Associations">
-        <Button variant="outline" class="mt-2" @click="dialogStore.toggleAssociationDialog()">Show</Button>
+        <Button variant="outline" class="mt-2" @click="dialogStore.toggleAssociationDialog()"
+          >Show</Button
+        >
       </DescriptionItem>
     </div>
   </div>
