@@ -89,8 +89,8 @@ function selectItem(itemId: string) {
     <CommandList>
       <CommandEmpty>No results found.</CommandEmpty>
 
-      <template v-for="(items, key) in groupedItems">
-        <CommandGroup v-if="items.length != 0" :heading="key">
+      <template v-for="(items, key) in groupedItems" :key>
+        <CommandGroup v-if="items.length" :heading="key">
           <CommandItem
             v-for="item in items"
             @select="selectItem(item.itemId)"
