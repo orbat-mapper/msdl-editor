@@ -7,3 +7,9 @@ export const useExpandedStore = defineStore("expandedStore", () => {
   const openSideItems = ref<string[]>([]);
   return { expandedItems, openSideItems };
 });
+
+// This store is used to manage the currently expanded Federates in the DeploymentPanel
+export const useFederatesStore = defineStore("federatesStore", () => {
+  const openItems = ref<string[]>([]);
+  return { openItems };
+});

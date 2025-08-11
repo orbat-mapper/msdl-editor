@@ -17,7 +17,7 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { ChevronDownIcon } from "lucide-vue-next";
 import { unrefElement, useTimeoutFn } from "@vueuse/core";
 import MilSymbol from "@/components/MilSymbol.vue";
-import { useSelectStore } from "@/stores/selectStore.ts";
+import { UNALLOCATED_FEDERATE, useSelectStore } from "@/stores/selectStore.ts";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import {
   getEquipmentItemDragItem,
@@ -27,6 +27,8 @@ import {
   isUnitOrEquipmentItemDragItem,
 } from "@/types/draggables.ts";
 import type { OrbatTreeItem } from "@/components/orbat/types.ts";
+import { Badge } from "@/components/ui/badge";
+import type { Federate } from "@orbat-mapper/msdllib";
 
 const props = defineProps<{
   item: FlattenedItem<OrbatTreeItem>;
@@ -49,6 +51,10 @@ const mode = computed(() => {
   if (props.item.hasChildren) return "expanded";
   if (props.item.index + 1 === props.item.parentItem?.childrenCount) return "last-in-group";
   return "standard";
+});
+
+const federate = computed(() => {
+  return msdl.value?.getFederateOfUnitOrEquipment(props.item._id) || UNALLOCATED_FEDERATE;
 });
 
 watchEffect((onCleanup) => {
@@ -196,6 +202,10 @@ watchEffect((onCleanup) => {
 function onSelect(item: any) {
   selectStore.activeItem = msdl.value?.getUnitOrEquipmentById(item._id) ?? null;
 }
+
+function openFederateDetail() {
+  selectStore.activeFederate = federate.value;
+}
 </script>
 <template>
   <TreeItem
@@ -234,6 +244,7 @@ function onSelect(item: any) {
         '!border-t-2': instruction?.type === 'reorder-above',
         '!border-2 rounded': instruction?.type === 'make-child',
       }"
-    />
+    ></div>
+    <Badge class="ml-auto" @click.stop="openFederateDetail">{{ federate.name }}</Badge>
   </TreeItem>
 </template>

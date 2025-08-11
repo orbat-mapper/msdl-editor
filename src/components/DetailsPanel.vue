@@ -32,6 +32,7 @@ import { getEquipmentItemDragItem, getUnitDragItem } from "@/types/draggables.ts
 import { mapItem } from "@/components/orbat/utils.ts";
 import DetailsPanelUnit from "@/components/DetailsPanelUnit.vue";
 import DetailsPanelEquipmentList from "@/components/DetailsPanelEquipmentList.vue";
+import DetailsPanelDisposition from "@/components/DetailsPanelDisposition.vue";
 import { useScenarioActions } from "@/composables/scenarioActions.ts";
 
 const props = defineProps<{
@@ -119,8 +120,6 @@ function goUp() {
     selectStore.activeItem = parentItem;
   }
 }
-
-function doLocate() {}
 </script>
 
 <template>
@@ -130,7 +129,7 @@ function doLocate() {}
   >
     <header class="px-4 h-10 mt-4 flex justify-between">
       <div v-if="isUnitOrEquipment(item)" class="flex gap-2">
-        <MilSymbol :sidc="item.sidc" :key="item.sidc" :size="16" ref="elRef" />
+        <span ref="elRef"><MilSymbol :sidc="item.sidc" :key="item.sidc" :size="16" /></span>
         <span class="text-base font-bold">{{ item.label }}</span>
       </div>
       <span v-else class="text-base font-bold">{{ item.name }}</span>
@@ -184,6 +183,7 @@ function doLocate() {}
             <DetailsPanelForceSide :item="item" v-if="isForceSide(item)" />
             <DetailsPanelUnit v-else-if="isUnit(item)" :item />
             <DetailsPanelEquipment v-else-if="isEquipmentItem(item)" :item />
+            <DetailsPanelDisposition :item="item" v-if="isUnitOrEquipment(item)" />
           </TabsContent>
           <TabsContent v-if="isUnit(item)" value="equipment" class="p-4">
             <DetailsPanelEquipmentList :item="item" @flyTo="emit('flyTo', $event)" />

@@ -1,25 +1,28 @@
 import { computed, shallowRef, triggerRef } from "vue";
+import type {
+  AssociationType,
+  DispositionType,
+  FederateType,
+  ForceSideType,
+  HoldingType,
+  LngLatElevationTuple,
+  LngLatTuple,
+  MilitaryScenarioInputType,
+  ScenarioIdType,
+  StandardIdentity,
+  UnitEquipmentInterface,
+} from "@orbat-mapper/msdllib";
 import {
   Association,
-  type AssociationType,
   EquipmentItem,
   EquipmentItemDisposition,
   Federate,
-  type FederateType,
   ForceSide,
-  type ForceSideType,
   Holding,
-  type HoldingType,
-  type LngLatElevationTuple,
-  type LngLatTuple,
   MilitaryScenario,
-  type MilitaryScenarioInputType,
   ScenarioId,
-  type ScenarioIdType,
-  type StandardIdentity,
   Unit,
   UnitDisposition,
-  type UnitEquipmentInterface,
 } from "@orbat-mapper/msdllib";
 import { useLayerStore } from "@/stores/layerStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
@@ -170,6 +173,17 @@ function updateOptions(value: Partial<MsdlOptionsType>) {
   triggerRef(msdl);
 }
 
+function updateFederate(objectHandle: string, value: Partial<FederateType>) {
+  if (!msdl.value) return;
+  const federate = msdl.value.getFederateById(objectHandle);
+  if (!federate) {
+    console.warn(`Federate with object handle ${objectHandle} not found.`);
+    return;
+  }
+  federate.updateFromObject(value);
+  triggerRef(msdl);
+}
+
 function updateForceSide(objectHandle: string, value: Partial<ScenarioIdType>) {
   if (!msdl.value) return;
   const forceSide = msdl.value.getForceSideById(objectHandle);
@@ -223,6 +237,19 @@ function updateItemLocation(objectHandle: string, newLocation: Position) {
 
   triggerRef(msdl);
   // console.warn("Not implemented yet: updateItemLocation", newLocation);
+}
+
+function updateItemDisposition(objectHandle: string, disposition: DispositionType) {
+  if (!msdl.value) return;
+  const item = msdl.value.getUnitOrEquipmentById(objectHandle);
+  if (!item) {
+    console.warn(`Unit/EquipmentItem with object handle ${objectHandle} not found.`);
+    return;
+  }
+  if (disposition) {
+    item.disposition = disposition;
+  }
+  triggerRef(msdl);
 }
 
 function updateItemModel(
@@ -372,9 +399,13 @@ function addFederate(newFederate?: Partial<FederateType>) {
   triggerRef(msdl);
 }
 
-function assignUnitToFederate(unit: string, federate: string) {
+function assignUnitToFederate(
+  unit: string,
+  federate: string,
+  includeSubordinates: boolean = false,
+) {
   if (!msdl.value || !unit || !federate) return;
-  msdl.value.assignUnitToFederate(unit, federate);
+  msdl.value.assignUnitToFederate(unit, federate, includeSubordinates);
   triggerRef(msdl);
 }
 
@@ -384,8 +415,30 @@ function assignEquipmentToFederate(equipment: string, federate: string) {
   triggerRef(msdl);
 }
 
+function removeUnitFromFederate(unit: string, includeSubordinates: boolean = false) {
+  if (!msdl.value || !unit) return;
+  const federate = msdl.value.getFederateOfUnit(unit);
+  if (!federate) return;
+  msdl.value.removeUnitFromFederate(unit, federate.objectHandle, includeSubordinates);
+  triggerRef(msdl);
+}
+
+function removeEquipmentFromFederate(equipment: string) {
+  if (!msdl.value || !equipment) return;
+  const federate = msdl.value.getFederateOfEquipment(equipment);
+  if (!federate) return;
+  msdl.value.removeEquipmentFromFederate(equipment, federate.objectHandle);
+  triggerRef(msdl);
+}
+
 function createScenarioKey(scenario: MilitaryScenario): string {
   return scenario.scenarioId.name + scenario.scenarioId.description;
+}
+
+function createDeployment() {
+  if (!msdl.value) return;
+  msdl.value.createDeployment();
+  triggerRef(msdl);
 }
 
 function updateOrbatDragItems(
@@ -492,8 +545,10 @@ export function useScenarioStore() {
     modifyScenario: {
       updateScenarioId,
       updateOptions,
+      updateFederate,
       updateForceSide,
       updateItemLocation,
+      updateItemDisposition,
       updateItemModel,
       updateHoldings,
       addUnit,
@@ -502,8 +557,11 @@ export function useScenarioStore() {
       addFederate,
       assignUnitToFederate,
       assignEquipmentToFederate,
+      removeUnitFromFederate,
+      removeEquipmentFromFederate,
       removeUnit,
       removeEquipmentItem,
+      createDeployment,
       setPrimarySide: (side: ForceSide | string) => {
         setPrimarySide(side);
         const scenarioKey = createScenarioKey(msdl.value!);
