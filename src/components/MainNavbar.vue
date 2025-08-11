@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import MainDropdownMenu from "@/components/MainDropdownMenu.vue";
-import { MoonIcon, SunIcon } from "lucide-vue-next";
+import { MoonIcon, SunIcon, SearchIcon } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 import { useDark, useToggle } from "@vueuse/core";
 import { loadMSDLFromFile } from "@/lib/io.ts";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import EditableLabel from "@/components/EditableLabel.vue";
 import { computed } from "vue";
+import { ref } from "vue";
+import CommandPalette from "@/components/CommandPalette.vue";
 
 const {
   msdl,
@@ -16,6 +18,7 @@ const {
 
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
+const showSearch = ref(false);
 
 async function doLoading() {
   try {
@@ -45,7 +48,9 @@ const scenarioName = computed({
       <Button v-else variant="outline" @click="doLoading">Load scenario</Button>
     </div>
 
-    <div>
+    <div class="flex gap-2">
+      <Button variant="outline" @click="showSearch = true" size="icon"><SearchIcon /></Button>
+      <CommandPalette v-model:open="showSearch" />
       <Button variant="outline" @click="toggleDark()" size="icon">
         <MoonIcon v-if="isDark" class="size-4" />
         <SunIcon v-else class="size-4" />
