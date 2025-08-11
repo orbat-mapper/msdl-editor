@@ -99,7 +99,7 @@ function selectItem(itemId: string) {
             class="cursor-pointer"
           >
             <div class="w-8 justify-center flex">
-              <MilSymbol :sidc="item.sidc" :size="16" />
+              <MilSymbol class="size-6" :sidc="item.sidc" />
             </div>
             <div class="grid grid-cols-[auto,1fr]">
               <div>{{ item.label }}</div>
