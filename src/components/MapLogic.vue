@@ -32,7 +32,7 @@ const mapLayerStore = useMapLayerStore();
 
 const sides = computed(() => {
   return sortBy(msdl.value?.sides ?? [], "name").filter(
-    (side) => side.rootUnits.length > 0 || side.equipment.length > 0,
+    (side) => side.subordinates.length > 0 || side.equipment.length > 0,
   );
 });
 
