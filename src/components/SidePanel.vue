@@ -16,6 +16,7 @@ import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tre
 import SideItem from "@/components/orbat/SideItem.vue";
 import { useExpandedStore } from "@/stores/expandedStore.ts";
 import { useSelectStore } from "@/stores/selectStore";
+import DescriptionItem from "@/components/DescriptionItem.vue";
 
 const {
   msdl,
@@ -118,7 +119,6 @@ function showAssociations() {
       <Button variant="secondary" class="ml-4" @click="openFederatesPanel()">
         Show all federates
       </Button>
-      <h3 class="text-xs/6 font-semibold uppercase mt-4">Associations</h3>
       <DescriptionItem label="Associations">
         <Button variant="outline" class="mt-2" @click="dialogStore.toggleAssociationDialog()"
           >Show</Button
