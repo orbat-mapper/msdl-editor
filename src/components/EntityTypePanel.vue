@@ -234,26 +234,26 @@ const setLocalVariables = (entType: string) => {
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
+            <DialogTitle>Edit entity type</DialogTitle>
             <DialogDescription>
               Make changes to the entity type. Click save when done.
             </DialogDescription>
           </DialogHeader>
 
-          <div className="flex w-full max-w-sm items-center gap-2">
+          <div class="flex w-full max-w-sm items-center gap-2">
             <Label for="entityTypeNumber" class="text-nowrap">Entity type :</Label>
             <Input type="text" v-model="typeQuery" />
             <Button type="submit" @click="enterType">Set</Button>
           </div>
 
-          <div className="relative my-4 flex items-center justify-center overflow-hidden">
+          <div class="relative my-4 flex items-center justify-center overflow-hidden">
             <Separator />
-            <div className="px-2 text-center bg-background text-sm">OR</div>
+            <div class="px-2 text-center bg-background text-sm">OR</div>
             <Separator />
           </div>
 
           <PanelDataGrid class="" v-if="true">
-            <template v-for="(field, index) in uniqueEntityTypeFields" :key="index">
+            <template v-for="(field, index) in entityTypeFields" :key="index">
               <span class="p-2">{{ field.label }}</span>
 
               <EntityTypeForm
