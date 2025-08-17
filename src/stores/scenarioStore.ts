@@ -39,6 +39,7 @@ import type {
 import { toast } from "vue-sonner";
 import { type OrbatDragItem } from "@/types/draggables.ts";
 import type { Instruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
+import { assignMissingSymbols } from "@/lib/assignSymbols.ts";
 
 export interface MetaEntry<T = string> {
   label: T;
@@ -496,6 +497,14 @@ export function useScenarioStore() {
   const sideStore = useSideStore();
 
   function loadScenario(scenario: MilitaryScenario) {
+    const res = assignMissingSymbols(scenario, {
+      logWarnings: false,
+    });
+    if (res.missingUnitSymbols || res.missingEquipmentSymbols) {
+      console.log(
+        `Assigned missing symbols: ${res.missingEquipmentSymbols} equipment, ${res.missingUnitSymbols} units`,
+      );
+    }
     selectStore.clearActiveItem();
     const scenarioKey = createScenarioKey(scenario);
     if (scenarioKey in sideStore.primarySideMap) {
