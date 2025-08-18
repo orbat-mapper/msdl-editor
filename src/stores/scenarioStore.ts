@@ -500,6 +500,7 @@ function updateForceSideAssociation(
     return;
   }
   forceSide.associations = associations;
+  msdl.value.evaluateAssociations(forceSide);
   triggerRef(msdl);
 }
 
