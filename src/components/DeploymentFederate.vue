@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Federate } from "@orbat-mapper/msdllib";
-import { Check, ChevronDown, Cross, CrossIcon, Pencil, PencilIcon, X } from "lucide-vue-next";
+import { Check, PencilIcon, X } from "lucide-vue-next";
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import FederateStats from "@/components/FederateStats.vue";
 import { computed, ref, useTemplateRef, watchEffect } from "vue";

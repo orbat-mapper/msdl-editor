@@ -7,6 +7,7 @@ import { sortBy } from "@/utils.ts";
 import { Button } from "@/components/ui/button";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import SidePanelDropdown from "@/components/SidePanelDropdown.vue";
+import DescriptionItem from "@/components/DescriptionItem.vue";
 import { useSideStore } from "@/stores/uiStore.ts";
 import { useDialogStore } from "@/stores/dialogStore";
 import { monitorForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
