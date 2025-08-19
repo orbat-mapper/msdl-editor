@@ -3,10 +3,11 @@ import { useLocalStorage, useToggle } from "@vueuse/core";
 import { ref } from "vue";
 
 export const useUIStore = defineStore("uiStore", () => {
+  const modalOpen = ref(false);
   const [showLeftPanel, toggleLeftPanel] = useToggle(true);
   const hoverEnabled = ref(true);
 
-  return { showLeftPanel, toggleLeftPanel, hoverEnabled };
+  return { modalOpen, showLeftPanel, toggleLeftPanel, hoverEnabled };
 });
 
 export const useSideStore = defineStore("sideStore", () => {

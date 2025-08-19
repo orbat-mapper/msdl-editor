@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
-import { shallowRef, watch } from "vue";
+import { shallowRef, watch, triggerRef } from "vue";
 import { Federate, type EquipmentItem, type ForceSide, type Unit } from "@orbat-mapper/msdllib";
+import { isUnitOrEquipment } from "@/utils.ts";
 
 export const UNALLOCATED_FEDERATE: Federate = Federate.fromModel({ name: "Unallocated" });
 
@@ -24,8 +25,19 @@ export const useSelectStore = defineStore("selectStore", () => {
     if (val != null) clearActiveItem();
   });
 
+  function updateSidc(
+    sidc: string,
+  ){
+    if (!activeItem.value) return;
+    if (isUnitOrEquipment(activeItem.value)) {
+      activeItem.value.sidc = sidc
+      triggerRef(activeItem);
+    }
+  }
+
   return {
     activeItem,
+    updateSidc,
     clearActiveItem,
     activeFederate,
     clearActiveFederate,
