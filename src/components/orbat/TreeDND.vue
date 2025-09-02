@@ -31,7 +31,7 @@ const expanded = computed({
 const items = computed(() => {
   const side = msdl.value?.getForceSideById(sideObjectHandle);
   if (!side) return [];
-  return [...side.rootUnits, ...side.equipment].map(mapItem);
+  return [...side.subordinates, ...side.equipment].map(mapItem);
 });
 
 let i = 0;

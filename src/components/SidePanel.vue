@@ -16,6 +16,7 @@ import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tre
 import SideItem from "@/components/orbat/SideItem.vue";
 import { useExpandedStore } from "@/stores/expandedStore.ts";
 import { useSelectStore } from "@/stores/selectStore";
+import DescriptionItem from "@/components/DescriptionItem.vue";
 
 const {
   msdl,
@@ -33,7 +34,7 @@ const sides = computed(() => {
     ? sortBy(msdl.value?.sides ?? [], "name")
     : (msdl.value?.sides ?? []);
   if (sideStore.hideEmptySides) {
-    return localSides.filter((side) => side.rootUnits.length > 0 || side.equipment.length > 0);
+    return localSides.filter((side) => side.subordinates.length > 0 || side.equipment.length > 0);
   }
   return localSides;
 });
@@ -118,6 +119,11 @@ function showAssociations() {
       <Button variant="secondary" class="ml-4" @click="openFederatesPanel()">
         Show all federates
       </Button>
+      <DescriptionItem label="Associations">
+        <Button variant="outline" class="mt-2" @click="dialogStore.toggleAssociationDialog()"
+          >Show</Button
+        >
+      </DescriptionItem>
     </div>
   </div>
 </template>
