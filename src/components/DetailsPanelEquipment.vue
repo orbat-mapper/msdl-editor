@@ -13,11 +13,13 @@ import { PencilIcon } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { computed } from "vue";
+import { useSelectStore } from "@/stores/selectStore.ts";
 
 const {
   msdl,
   modifyScenario: { updateForceSide },
 } = useScenarioStore();
+const selectStore = useSelectStore();
 
 const props = defineProps<{
   item: EquipmentItem;
@@ -45,6 +47,8 @@ function getSymbolIdentifier(): string | null {
   const item = msdl.value?.getUnitOrEquipmentById(props.item.objectHandle) ?? null;
   return item?.symbolIdentifier ?? null;
 }
+
+const selectedName = computed(() => (selectStore.activeItem as EquipmentItem).name);
 </script>
 
 <template>
@@ -63,7 +67,7 @@ function getSymbolIdentifier(): string | null {
     </div>
   </div>
   <DescriptionList class="divide-y divide-border">
-    <DescriptionItem label="Name">{{ props.item.name || "n/a" }}</DescriptionItem>
+    <DescriptionItem label="Name">{{ selectedName || "n/a" }}</DescriptionItem>
     <DescriptionItem label="Symbol identifier">{{ getSymbolIdentifier() }}</DescriptionItem>
     <div v-if="modifiers" class="ml-6">
       <template v-for="dlItem in dlItems" :key="dlItem.value">

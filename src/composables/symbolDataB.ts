@@ -92,11 +92,17 @@ export function useSymbolItems(sidc: Ref<string>) {
 
   const statusItems = computed((): SymbolItem[] => {
     if (!symbology.value) return [];
+
+    let modifier = '-'
+    if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'I'){
+      modifier = 'H'
+    }
+
     return statusValuesB.map(({ code, text }) => {
       return {
       code,
       text,
-      sidc: codingSchemeValue.value + affiliationValue.value + battleDimensionValue.value + code + functionIdValue.value + modifier1Value.value + '----',
+      sidc: codingSchemeValue.value + affiliationValue.value + battleDimensionValue.value + code + functionIdValue.value + modifier + '----',
     }});
   });
 
@@ -113,7 +119,7 @@ export function useSymbolItems(sidc: Ref<string>) {
     } else if (battleDimensionValue.value == 'S' || battleDimensionValue.value == 'U') {                              // Seasurface or Subsurface
       values = towedArrayValuesB;
     } else {
-      values = [{ code: modifier1Value.value + "-", text: "Unspecified" }];
+      values = [{ code: "--", text: "Unspecified" }];
     } 
 
     return values.map(({ code, text }) => ({

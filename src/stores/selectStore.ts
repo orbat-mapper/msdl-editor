@@ -35,9 +35,20 @@ export const useSelectStore = defineStore("selectStore", () => {
     }
   }
 
+  function updateName(
+    name: string,
+  ){
+    if (!activeItem.value) return;
+    if (isUnitOrEquipment(activeItem.value)) {
+      activeItem.value.name = name
+      triggerRef(activeItem);
+    }
+  }
+
   return {
     activeItem,
     updateSidc,
+    updateName,
     clearActiveItem,
     activeFederate,
     clearActiveFederate,

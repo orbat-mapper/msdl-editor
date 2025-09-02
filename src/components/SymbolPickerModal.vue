@@ -29,6 +29,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   useSymbologySearch,
 } from "@/composables/symbolSearchingB";
+import { useSelectStore } from "@/stores/selectStore.ts";
+import { isUnitOrEquipment } from "@/utils.ts";
+import EditFieldToggle from "./EditFieldToggle.vue";
 
 interface Props {
   isVisible?: boolean;
@@ -41,33 +44,6 @@ const props = withDefaults(defineProps<Props>(), {
   isVisible: true,
   dialogTitle: "Symbol picker",
 });
-
-const currentTab = ref(props.initialTab ?? 0);
-
-const emit = defineEmits(["update:isVisible", "update:sidc", "cancel"]);
-const hitCount = ref(0);
-const open = useVModel(props, "isVisible");
-
-const searchQuery = ref("");
-const debouncedQuery = useDebounce(searchQuery, 100);
-
-// Values returned by getModalSidc
-const onSubmit = () => {
-  emit("update:sidc", {
-    sidc: csidc.value,
-  });
-  open.value = false;
-};
-
-// remove empty values in object
-const cleanObject = (obj: any) => {
-  Object.keys(obj).forEach((key) => {
-    if (obj[key] && typeof obj[key] === "object") cleanObject(obj[key]);
-    else if (obj[key] === "" || obj[key] === null || obj[key] === undefined)
-      delete obj[key];
-  });
-  return obj;
-};
 
 const {
   affiliationValue,
@@ -92,24 +68,68 @@ const {
 );
 loadData();
 
+const open = useVModel(props, "isVisible");
+const currentTab = ref(props.initialTab ?? 0);
+const hitCount = ref(0);
+const searchQuery = ref("");
+const debouncedQuery = useDebounce(searchQuery, 100);
 const searchSelection = ref<{ sidc: string; }>();
 const dimension = ref();
+const modifier = ref(modifier1Value.value + modifier2Value.value);
+const groupedHits = ref<ReturnType<typeof search>["groups"]>();
+const { search } = useSymbologySearch(affiliationValue);
+const selectStore = useSelectStore();
+
+const emit = defineEmits(["update:isVisible", "update:sidc", "cancel"]);
+
+// Values returned by getModalSidc
+const onSubmit = () => {
+  emit("update:sidc", {
+    sidc: csidc.value,
+  });
+  open.value = false;
+};
+
+// remove empty values in object
+const cleanObject = (obj: any) => {
+  Object.keys(obj).forEach((key) => {
+    if (obj[key] && typeof obj[key] === "object") cleanObject(obj[key]);
+    else if (obj[key] === "" || obj[key] === null || obj[key] === undefined)
+      delete obj[key];
+  });
+  return obj;
+};
+
 function initDimension(){
 
   let functionType = '*'
-  let modifier = '*'
+  let modifierInit = '*'
   if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'U'){
     functionType = 'U'
   } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'E') {
     functionType = 'E'
   } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'I') {
     functionType = 'I'
-    modifier = 'H'
+    modifierInit = 'H'
   } 
 
-  dimension.value = codingSchemeValue.value + '*' + battleDimensionValue.value + '*' + functionType + '*****' + modifier
+  dimension.value = codingSchemeValue.value + '*' + battleDimensionValue.value + '*' + functionType + '*****' + modifierInit
+
+  console.log('dim init')
+  console.log(modifier.value)
 }
 initDimension();
+
+function initModifier(){
+  if (modifier2Value.value == '-'){
+    modifier.value = '--'
+  }
+
+  if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'U'){
+    modifier.value = '-' + modifier2Value.value 
+  }
+}
+initModifier()
 
 // Handle correct functionality of other dropdown fields if dimension changes
 function setDimension() : void {
@@ -148,16 +168,9 @@ function updateModalSymbol(sidc : string) : void {
   modifier.value = modifier1Value.value + modifier2Value.value
 }
 
-// Handle modifier dropdown field
-const modifier = ref(modifier1Value.value + modifier2Value.value);
-
-watch(modifier, (newVal: string) => {
-  modifier1Value.value = newVal[0]
-  modifier2Value.value = newVal[1]
-});
-
-const groupedHits = ref<ReturnType<typeof search>["groups"]>();
-const { search } = useSymbologySearch(affiliationValue);
+function updateName(hit : {newValue : string}) {
+  selectStore.updateName(hit.newValue)
+}
 
 // Update the hitcount and groupedhits if the search query changes
 watchEffect(() => {
@@ -166,6 +179,10 @@ watchEffect(() => {
   groupedHits.value = groups;
 });
 
+watch(modifier, (newVal: string) => {
+  modifier1Value.value = newVal[0]
+  modifier2Value.value = newVal[1]
+});
 </script>
 
 <template>
@@ -178,7 +195,14 @@ watchEffect(() => {
   >
     <div class="flex h-full flex-col" @keyup.ctrl.enter="onSubmit">
       <header class="mt-4 flex h-20 w-full items-center justify-between">
-        <MilSymbol :sidc="csidc" :key="csidc" :size="34" />
+        <div class="flex">
+          <MilSymbol :sidc="csidc" :key="csidc" :size="34" />
+          <div v-if="selectStore.activeItem">
+            <span v-if="isUnitOrEquipment(selectStore.activeItem)" class="pl-8 items-center flex text-base font-bold">
+              <EditFieldToggle :field="selectStore.activeItem.name" @update="updateName" />
+            </span>
+          </div>
+        </div>
         <SymbolCodeViewer :sidc="csidc" @update="onSelect" />
       </header>
 

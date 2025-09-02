@@ -150,6 +150,11 @@ const selectedSidc = computed(() => {
   const item = selectStore.activeItem;
   return isUnitOrEquipment(item!) ? item.sidc : undefined;
 });
+
+const selectedName = computed(() => {
+  const item = selectStore.activeItem;
+  return isUnitOrEquipment(item!) ? item.label : item?.name;
+});
 </script>
 
 <template>
@@ -158,9 +163,9 @@ const selectedSidc = computed(() => {
     :style="{ width: widthStore.detailsWidth + 'px' }"
   >
     <header class="px-4 h-10 mt-4 flex justify-between">
-      <div v-if="isUnitOrEquipment(item)" class="flex gap-2">
+      <div class="flex gap-2">
         <span ref="elRef"><MilSymbol :sidc="selectedSidc" :key="selectedSidc" :size="16" /></span>
-        <span class="text-base font-bold">{{ item.label }}</span>
+        <span class="text-base font-bold">{{ selectedName }}</span>
         <Button
           type="button"
           variant="ghost"
@@ -169,7 +174,6 @@ const selectedSidc = computed(() => {
         ><PencilIcon />
       </Button>
       </div>
-      <span v-else class="text-base font-bold">{{ item.name }}</span>
       <div>
         <Badge>{{ typeLabel }}</Badge>
       </div>
