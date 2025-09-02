@@ -1,24 +1,19 @@
 <script setup lang="ts">
 import NewSimpleModal from "@/components/NewSimpleModal.vue";
+import SymbolCodeSelect from "./SymbolCodeSelect.vue";
+import SymbolCodeViewer from "./SymbolCodeViewer.vue";
 import {
-  mapReinforcedStatus2Field,
-  type ReinforcedStatus,
-  type UnitSymbolOptions,
-} from "@/types/scenarioModels";
-import {
-  breakpointsTailwind,
-  useBreakpoints,
   useDebounce,
   useVModel,
-  whenever,
 } from "@vueuse/core";
 import { Button } from "@/components/ui/button";
 import MilSymbol from "@/components/MilSymbol.vue";
 import { useSymbolItems } from "@/composables/symbolDataB";
-import { computed, defineAsyncComponent, nextTick, ref, watch, watchEffect } from "vue";
+import { computed, ref, watch, watchEffect } from "vue";
 import { SidcB } from "@/symbology/sidc";
+import TabItem from './TabItem.vue';
 import TabView from "./TabView.vue";
-import TabItem from "./TabItem.vue";
+import SymbolCodeMultilineSelect from "./SymbolCodeMultilineSelect.vue";
 import {
   Combobox,
   ComboboxAnchor,
@@ -28,35 +23,23 @@ import {
   ComboboxItem,
   ComboboxItemIndicator,
   ComboboxList,
-  ComboboxTrigger,
 } from "@/components/ui/combobox";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
-  type MainIconSearchResult,
-  type ModifierOneSearchResult,
-  type ModifierTwoSearchResult,
   useSymbologySearch,
 } from "@/composables/symbolSearchingB";
 
-
 interface Props {
   isVisible?: boolean;
-  sidc?: string; //<< initialSidcModalValue
+  sidc?: string;
   dialogTitle?: string;
-  hideModifiers?: boolean;
-  hideSymbolColor?: boolean;
-  inheritedSymbolOptions?: UnitSymbolOptions;
-  symbolOptions?: UnitSymbolOptions;
   initialTab?: number;
-  reinforcedStatus?: ReinforcedStatus;
 }
 
 const props = withDefaults(defineProps<Props>(), {
   isVisible: true,
   dialogTitle: "Symbol picker",
-  hideModifiers: false,
-  hideSymbolColor: false,
 });
 
 const currentTab = ref(props.initialTab ?? 0);
@@ -65,25 +48,6 @@ const emit = defineEmits(["update:isVisible", "update:sidc", "cancel"]);
 const hitCount = ref(0);
 const open = useVModel(props, "isVisible");
 
-// TODO: find a better solution for this
-const componentKey = ref(0);
-
-const internalSymbolOptions = ref<UnitSymbolOptions>({
-  ...(props.symbolOptions || {}),
-});
-
-const combinedSymbolOptions = computed(() => ({
-  ...(props.inheritedSymbolOptions || {}),
-  ...cleanObject(internalSymbolOptions.value || {}),
-}));
-
-const finalSymbolOptions = computed(() => ({
-  ...combinedSymbolOptions.value,
-  ...cleanObject({
-    reinforcedReduced: mapReinforcedStatus2Field(reinforcedReducedValue.value),
-  }),
-}));
-
 const searchQuery = ref("");
 const debouncedQuery = useDebounce(searchQuery, 100);
 
@@ -91,11 +55,6 @@ const debouncedQuery = useDebounce(searchQuery, 100);
 const onSubmit = () => {
   emit("update:sidc", {
     sidc: csidc.value,
-    // reinforcedStatus: 'hoiiiii',
-    // reinforcedStatus: reinforcedReducedValue.value,
-    // symbolOptions: internalSymbolOptions.value.fillColor
-    //   ? { fillColor: internalSymbolOptions.value.fillColor }
-    //   : {},
   });
   open.value = false;
 };
@@ -110,26 +69,6 @@ const cleanObject = (obj: any) => {
   return obj;
 };
 
-// function updateFromSidcInput(sidc: string) {
-//   if (!/^\d+$/.test(sidc)) {
-//     return;
-//   }
-//   const oldSidc = new Sidc(csidc.value);
-//   const ns = new Sidc(sidc);
-//   ns.standardIdentity = oldSidc.standardIdentity;
-
-//   csidc.value = ns.toString();
-// }
-
-// function clearModifiers() {
-//   mod1Value.value = "00";
-//   mod2Value.value = "00";
-//   emtValue.value = "00";
-//   hqtfdValue.value = "0";
-// }
-
-
-// !!!!!!! uses the B variant
 const {
   affiliationValue,
   csidc,
@@ -141,55 +80,83 @@ const {
   modifier1Value,
   modifier2Value,
   echelonValue,
-
+  isLoaded,
+  battleDimensionItems,
+  statusItems,
+  hqtfdItems,
+  echelonItems,
+  mainIconItems,
   loadData,
-  // isLoaded,
-  // sidValue,
-  // symbolSetValue,
-  // iconValue,
-  // statusValue,
-  // statusItems,
-  // hqtfdItems,
-  // hqtfdValue,
-  // emtValue,
-  // emtItems,
-  // mod1Value,
-  // mod2Value,
-  // mod1Items,
-  // mod2Items,
-  // icons,
-  // symbolSets,
-  // reinforcedReducedItems,
-  reinforcedReducedValue,
 } = useSymbolItems(
   computed(() => props.sidc || ""),
-  props.reinforcedStatus,
 );
 loadData();
 
-function onSelect(
-  hit: MainIconSearchResult | ModifierOneSearchResult | ModifierTwoSearchResult,
-) {
-  const newSidc = new SidcB(hit.sidc);
+const searchSelection = ref<{ sidc: string; }>();
+const dimension = ref();
+function initDimension(){
 
-  // Set the symbol of the modal
+  let functionType = '*'
+  let modifier = '*'
+  if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'U'){
+    functionType = 'U'
+  } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'E') {
+    functionType = 'E'
+  } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'I') {
+    functionType = 'I'
+    modifier = 'H'
+  } 
+
+  dimension.value = codingSchemeValue.value + '*' + battleDimensionValue.value + '*' + functionType + '*****' + modifier
+}
+initDimension();
+
+// Handle correct functionality of other dropdown fields if dimension changes
+function setDimension() : void {
+  let code = dimension.value.replaceAll('*','-')
+  
+  codingSchemeValue.value = code[0]
+  battleDimensionValue.value = code[2]
+  functionIdValue.value = code.slice(4,10)
+  modifier1Value.value = code[10]
+  modifier2Value.value = '-'
+
+  modifier.value = modifier1Value.value + modifier2Value.value
+}
+
+function onSelect(hit : {sidc : string}) {
+  updateModalSymbol(hit.sidc)
+}
+
+function onSearch() {
+  if (!(searchSelection.value?.sidc)) return
+  updateModalSymbol(searchSelection.value?.sidc)
+}
+
+function updateModalSymbol(sidc : string) : void {
+  const newSidc = new SidcB(sidc);
   codingSchemeValue.value = newSidc.codingScheme; 
   battleDimensionValue.value = newSidc.battleDimension
-  statusValue.value = newSidc.status
-  functionIdValue.value = newSidc.functionId
+  statusValue.value = newSidc.status == "-" ? 'P' : newSidc.status;
   contextValue.value = newSidc.context
   modifier1Value.value = newSidc.modifier1
   modifier2Value.value = newSidc.modifier2
   echelonValue.value = newSidc.echelon
+  functionIdValue.value = newSidc.functionId
 
-  // Rerender MilSymbol in the header
-  // TODO : Should find a better solution for this
-  componentKey.value++;
+  initDimension()
+  modifier.value = modifier1Value.value + modifier2Value.value
 }
 
-// Groupedhits is the return of the search() function, accessing the groups property
-const groupedHits = ref<ReturnType<typeof search>["groups"]>();
+// Handle modifier dropdown field
+const modifier = ref(modifier1Value.value + modifier2Value.value);
 
+watch(modifier, (newVal: string) => {
+  modifier1Value.value = newVal[0]
+  modifier2Value.value = newVal[1]
+});
+
+const groupedHits = ref<ReturnType<typeof search>["groups"]>();
 const { search } = useSymbologySearch(affiliationValue);
 
 // Update the hitcount and groupedhits if the search query changes
@@ -203,6 +170,7 @@ watchEffect(() => {
 
 <template>
   <NewSimpleModal
+    v-if="isLoaded"
     v-model="open"
     :dialog-title="dialogTitle"
     @cancel="emit('cancel')"
@@ -210,8 +178,8 @@ watchEffect(() => {
   >
     <div class="flex h-full flex-col" @keyup.ctrl.enter="onSubmit">
       <header class="mt-4 flex h-20 w-full items-center justify-between">
-        <MilSymbol :sidc="csidc" :size="34" :options="finalSymbolOptions" :key="componentKey"/>
-        <!-- <SymbolCodeViewer :sidc="csidc" @update="updateFromSidcInput" /> allow an input field -->
+        <MilSymbol :sidc="csidc" :key="csidc" :size="34" />
+        <SymbolCodeViewer :sidc="csidc" @update="onSelect" />
       </header>
 
       <TabView class="flex-auto" v-model:current-tab="currentTab">
@@ -220,88 +188,110 @@ watchEffect(() => {
           v-slot="{ isActive }"
           class="max-h-[50vh] overflow-auto sm:max-h-[60vh]"
         >
-          <Combobox @update:modelValue="onSelect">
-            <div class="relative">
-              <div class="relative">
-                <!-- <MagnifyingGlassIcon
-                  class="pointer-events-none absolute top-3.5 left-4 h-5 w-5 text-gray-400"
-                  aria-hidden="true"
-                /> -->
-                <ComboboxInput
+
+          <Combobox v-model="searchSelection" @update:modelValue="onSearch" class="flex mb-4">
+            <ComboboxAnchor class="grow">
+              <div class="w-full">
+                <ComboboxInput 
                   v-model="searchQuery"
-                  class="h-12 w-full border-0 bg-transparent pr-4 pl-11 focus:ring-0 sm:text-sm"
+                  class="h-12 border-0 bg-transparent pr-4 pl-11 focus:ring-0 sm:text-sm"
                   placeholder="Search..."
                   ref="searchInputRef"
                 />
               </div>
+            </ComboboxAnchor>
 
-              <ScrollArea class="h-72">
-                <ComboboxEmpty> No data available </ComboboxEmpty>
+              <ComboboxList class="md:w-(--breakpoint-md) lg:w-(--breakpoint-lg)">
+                <ComboboxEmpty>
+                  No framework found.
+                </ComboboxEmpty>
 
-                <ComboboxGroup>
-                  <li v-for="[source, hits] in groupedHits">
-                    <h2 class="text-xs font-semibold" style="color: red;">{{ source }}</h2>
+                <ScrollArea>
+                <ComboboxGroup >
+                  <li v-for="[source, hits] in groupedHits" style="list-style: none">
+                    <h2 class="text-xs font-semibold">{{ source }}</h2>
                     <ul class="text-sm font-medium">
-                      <ComboboxItem
-                        v-for="item in hits" 
-                        :key="item.sidc"
-                        :value="item"
-                      >
-                      <!-- <li
-                        :class="[
-                          'flex cursor-default items-center px-4 py-2 select-none',
-                          active ? 'bg-army text-white' : 'even:bg-gray-100',
-                        ]"
-                      > -->
-                                           <li
-                        :class="[
-                          'flex cursor-default items-center px-4 py-2 select-none',
-                          ,
-                        ]"
-                      >
-                        <div class="relative flex w-12 justify-center">
-                          <MilSymbol
-                            :sidc="item.sidc"
-                            :size="30"
-                            aria-hidden="true"
-                            :options="{
-                              ...combinedSymbolOptions,
-                              outlineColor: 'white',
-                              outlineWidth: 4,
-                            }"
+                  <ComboboxItem
+                          v-for="item in hits" 
+                          :key="item.sidc"
+                          :value="item"
+                        >
+                        <li
+                          :class="[
+                            'flex cursor-default items-center px-4 py-2 select-none',
+                          ]"
+                        >
+                          <div class="relative flex w-12 justify-center">
+                            <MilSymbol
+                              :sidc="item.sidc"
+                              :size="30"
+                              aria-hidden="true"
+                            />
+                          </div>
+                          <p
+                            class="ml-3 flex-auto truncate"
+                            v-html="item.highlight ? item.highlight : item.text"
                           />
-                        </div>
-                        <p
-                          class="ml-3 flex-auto truncate"
-                          v-html="item.highlight ? item.highlight : item.text"
-                        />
-                      </li>
-                        <ComboboxItemIndicator>
-                          <Check :class="cn('ml-auto h-4 w-4')" />
-                        </ComboboxItemIndicator>
-                      </ComboboxItem>
-                    </ul>
+                        </li>
+                          <ComboboxItemIndicator>
+                            <Check :class="cn('ml-auto h-4 w-4')" />
+                          </ComboboxItemIndicator>
+                        </ComboboxItem>
+                        </ul>
                   </li>
                 </ComboboxGroup>
-              </ScrollArea>
-              </div
-          ></Combobox>
-          <!-- Vanaf hier die dropdowns -->
-        </TabItem>
-         <TabItem label="Browse" v-slot="{ isActive }">
-          <keep-alive>
-          </keep-alive>
-        </TabItem>
+                </ScrollArea>
+              </ComboboxList>
+          </Combobox>
 
+          <form
+            class="space-y-4 p-0.5"
+            @submit.prevent="onSubmit"
+            v-if="isLoaded"
+            @keydown.ctrl.enter.exact="onSubmit"
+            @keydown.meta.enter.exact="onSubmit"
+          >
+            <div class="flex w-full items-end gap-1">
+              <SymbolCodeSelect
+                class="flex-auto"
+                v-model="dimension"
+                label="Battle Dimension"
+                :items="battleDimensionItems"
+                @update:modelValue="setDimension"
+              />
+            </div>
+
+            <SymbolCodeSelect
+              v-model="statusValue"
+              label="Status"
+              :items="statusItems"
+            />
+
+            <SymbolCodeSelect
+              v-model="modifier"
+              label="Echelon / Mobility / Towed array"
+              :items="echelonItems"
+            />
+
+            <SymbolCodeSelect
+              v-model="modifier1Value"
+              label="Headquaters / Task force / Dummy"
+              :items="hqtfdItems"
+            />
+
+            <SymbolCodeMultilineSelect
+              v-model="functionIdValue"
+              label="Main icon"
+              :items="mainIconItems"
+            />
+
+          </form>
+        </TabItem>
       </TabView>
       
       <div class="flex shrink-0 justify-end space-x-2 pt-4">
-        <!-- <Button type="button" @click="clearModifiers()" class=""
-          >Clear modifiers
-        </Button> -->
         <Button @click="onSubmit()" class="">Select symbol</Button>
       </div>
-   
 
     </div> 
   </NewSimpleModal>

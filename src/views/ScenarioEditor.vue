@@ -4,7 +4,7 @@ import MainNavbar from "@/components/MainNavbar.vue";
 import CreateNewScenarioDialog from "@/components/CreateNewScenarioDialog.vue";
 import LoadFromUrlDialog from "@/components/LoadFromUrlDialog.vue";
 import { useDialogStore } from "@/stores/dialogStore.ts";
-import { ref, shallowRef, useTemplateRef } from "vue";
+import { ref, shallowRef, useTemplateRef, provide } from "vue";
 import { MilitaryScenario } from "@orbat-mapper/msdllib";
 import maplibregl from "maplibre-gl";
 import MapLogic from "@/components/MapLogic.vue";
@@ -19,6 +19,9 @@ import { inputEventFilter } from "@/utils.ts";
 import CommandPalette from "@/components/CommandPalette.vue";
 import EditAssociationsDialog from "@/components/EditAssociationsDialog.vue";
 import { useScenarioActions } from "@/composables/scenarioActions.ts";
+import { useSidcModal } from "@/composables/modals";
+import { sidcModalKey } from "@/components/injects";
+import SymbolPickerModal from "@/components/SymbolPickerModal.vue"
 
 const { createScenario, loadScenario, msdl, undo, redo } = useScenarioStore();
 const { dispatchAction } = useScenarioActions();
@@ -68,6 +71,17 @@ async function onDrop(files: File[] | null) {
     console.error("Failed to load", file.name, e);
   }
 }
+
+const {
+  getModalSidc,
+  confirmSidcModal,
+  showSidcModal,
+  cancelSidcModal,
+  initialSidcModalValue,
+  sidcModalTitle,
+} = useSidcModal();
+provide(sidcModalKey, { getModalSidc });
+
 </script>
 <template>
   <div class="h-full w-full flex flex-col relative" ref="dropZoneRef">
@@ -106,5 +120,14 @@ async function onDrop(files: File[] | null) {
       @keyup.l.exact="dispatchAction('LocateInOrbat')"
     />
     <CommandPalette v-model:open="showSearch" />
+
+    <SymbolPickerModal
+      v-if="showSidcModal"
+      :sidc="initialSidcModalValue"
+      @update:sidc="confirmSidcModal($event)" 
+      @cancel="cancelSidcModal"
+      :dialog-title="sidcModalTitle"
+    />
+
   </div>
 </template>

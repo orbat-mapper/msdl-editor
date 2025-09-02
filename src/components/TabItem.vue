@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onBeforeUnmount, ref, watch } from "vue";
 import { tabsProviderKey } from "@/components/types";
 import { injectStrict } from "@/utils";
@@ -34,9 +34,3 @@ onBeforeUnmount(() => {
     <slot :is-active="isActive"></slot>
   </div>
 </template>
-<script>
-export default {
-  name: "TabItem",
-};
-</script>
-

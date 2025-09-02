@@ -8,9 +8,7 @@
  *
  */
 
-import type { SymbolSetMapB } from "../types";
-
-export const app6b: SymbolSetMapB = {
+export const app6b = {
   WAR: {
     name: "WARFIGHTING",
     SPC: {

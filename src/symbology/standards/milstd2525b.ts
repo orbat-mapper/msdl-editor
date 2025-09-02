@@ -1,0 +1,25771 @@
+/**
+ * MILSTD 2525-B symbology data
+ *
+ * Based on code and data from https://github.com/spatialillusions/mil-std-2525
+ *
+ * MIT License
+ * Copyright (c) 2017 Måns Beckman - www.spatialillusions.com
+ *
+ */
+
+export const ms2525b = {
+  WAR: {
+    name: "WARFIGHTING",
+    SPC: {
+      name: "SPACE",
+      mainIcon: [
+        {
+          hierarchy: "WAR.SPC",
+          names: [
+            ,
+            "SPACE TRACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "P",
+          status: "*",
+          functionid: "------",
+          name: "SPACE TRACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SPC.SAT",
+          names: [
+            ,
+            "SPACE TRACK",
+            "SATELLITE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "P",
+          status: "*",
+          functionid: "S-----",
+          name: "SATELLITE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SPC.CSV",
+          names: [
+            ,
+            "SPACE TRACK",
+            "CREWED SPACE VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "P",
+          status: "*",
+          functionid: "V-----",
+          name: "CREWED SPACE VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SPC.SST",
+          names: [
+            ,
+            "SPACE TRACK",
+            "SPACE STATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "P",
+          status: "*",
+          functionid: "T-----",
+          name: "SPACE STATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SPC.SLV",
+          names: [
+            ,
+            "SPACE TRACK",
+            "SPACE LAUNCH VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "P",
+          status: "*",
+          functionid: "L-----",
+          name: "SPACE LAUNCH VEHICLE",
+          remarks: ""
+        }
+      ]
+    },
+    AIRTRK: {
+      name: "AIR",
+      mainIcon: [
+        {
+          hierarchy: "WAR.AIRTRK",
+          names: [
+            ,
+            "AIR TRACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "------",
+          name: "AIR TRACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "M-----",
+          name: "MILITARY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MF----",
+          name: "FIXED WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.BMB",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "BOMBER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFB---",
+          name: "BOMBER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.FTR",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "FIGHTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFF---",
+          name: "FIGHTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.FTR.INCR",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "FIGHTER",
+            "INTERCEPTOR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFFI--",
+          name: "INTERCEPTOR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.TNE",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "TRAINER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFT---",
+          name: "TRAINER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.ATK",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "ATTACK/STRIKE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFA---",
+          name: "ATTACK/STRIKE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.VSTOL",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "VSTOL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFL---",
+          name: "VSTOL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.TNK",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "TANKER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFK---",
+          name: "TANKER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.TNK.BOOM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "TANKER",
+            "TANKER BOOM-ONLY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFKB--",
+          name: "TANKER BOOM-ONLY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.TNK.DROG",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "TANKER",
+            "TANKER DROGUE-ONLY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFKD--",
+          name: "TANKER DROGUE-ONLY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.CGOALT",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "CARGO AIRLIFT (TRANSPORT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFC---",
+          name: "CARGO AIRLIFT (TRANSPORT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.CGOALT.LIT",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "CARGO AIRLIFT (TRANSPORT)",
+            "CARGO AIRLIFT (LIGHT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFCL--",
+          name: "CARGO AIRLIFT (LIGHT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.CGOALT.MDM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "CARGO AIRLIFT (TRANSPORT)",
+            "CARGO AIRLIFT (MEDIUM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFCM--",
+          name: "CARGO AIRLIFT (MEDIUM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.CGOALT.HVY",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "CARGO AIRLIFT (TRANSPORT)",
+            "CARGO AIRLIFT (HEAVY)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFCH--",
+          name: "CARGO AIRLIFT (HEAVY)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.ECM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFJ---",
+          name: "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.MEDV",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "MEDEVAC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFO---",
+          name: "MEDEVAC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.RECON",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "RECONNAISSANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFR---",
+          name: "RECONNAISSANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.RECON.ABNEW",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "RECONNAISSANCE",
+            "AIRBORNE EARLY WARNING (AEW)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFRW--",
+          name: "AIRBORNE EARLY WARNING (AEW)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.RECON.ESM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "RECONNAISSANCE",
+            "ELECTRONIC SURVEILLANCE MEASURES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFRZ--",
+          name: "ELECTRONIC SURVEILLANCE MEASURES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.RECON.PHG",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "RECONNAISSANCE",
+            "PHOTOGRAPHIC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFRX--",
+          name: "PHOTOGRAPHIC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.PAT",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "PATROL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFP---",
+          name: "PATROL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.PAT.ASUW",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "PATROL",
+            "ANTISURFACE WARFARE (ASUW)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFPN--",
+          name: "ANTISURFACE WARFARE (ASUW)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.PAT.MNECM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "PATROL",
+            "MINE COUNTERMEASURES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFPM--",
+          name: "MINE COUNTERMEASURES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.UTY",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "UTILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFU---",
+          name: "UTILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.UTY.LIT",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "UTILITY",
+            "UTILITY (LIGHT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFUL--",
+          name: "UTILITY (LIGHT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.UTY.MDM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "UTILITY",
+            "UTILITY (MEDIUM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFUM--",
+          name: "UTILITY (MEDIUM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.UTY.HVY",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "UTILITY",
+            "UTILITY (HEAVY)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFUH--",
+          name: "UTILITY (HEAVY)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.COMM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "COMMUNICATIONS (C3I)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFY---",
+          name: "COMMUNICATIONS (C3I)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.CSAR",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "COMBAT SEARCH AND RESCUE (CSAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFH---",
+          name: "COMBAT SEARCH AND RESCUE (CSAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.ABNCP",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "AIRBORNE COMMAND POST (C2)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFD---",
+          name: "AIRBORNE COMMAND POST (C2)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQ---",
+          name: "DRONE (RPV/UAV)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ATK",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "ATTACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQA--",
+          name: "ATTACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.BMB",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "BOMBER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQB--",
+          name: "BOMBER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.CGO",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "CARGO"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQC--",
+          name: "CARGO",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ABNCP",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "AIRBORNE COMMAND POST"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQD--",
+          name: "AIRBORNE COMMAND POST",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.FTR",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "FIGHTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQF--",
+          name: "FIGHTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.CSAR",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "SEARCH & RESCUE (CSAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQH--",
+          name: "SEARCH & RESCUE (CSAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ECM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "ELECTRONIC COUNTERMEASURES (JAMMER)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQJ--",
+          name: "ELECTRONIC COUNTERMEASURES (JAMMER)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.TNK",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "TANKER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQK--",
+          name: "TANKER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.VSTOL",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "VSTOL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQL--",
+          name: "VSTOL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.SOF",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "SPECIAL OPERATIONS FORCES (SOF)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQM--",
+          name: "SPECIAL OPERATIONS FORCES (SOF)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.MNECM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "MINE COUNTERMEASURES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQI--",
+          name: "MINE COUNTERMEASURES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ASUW",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "ANTI-SURFACE WARFARE (ASUW)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQN--",
+          name: "ANTI-SURFACE WARFARE (ASUW)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.PAT",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "PATROL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQP--",
+          name: "PATROL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.RECON",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "RECONNAISSANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQR--",
+          name: "RECONNAISSANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.RECON.ABNEW",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "RECONNAISSANCE",
+            "AIRBORNE EARLY WARNING (AEW)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQRW-",
+          name: "AIRBORNE EARLY WARNING (AEW)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.RECON.ESM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "RECONNAISSANCE",
+            "ELECTRONIC SURVEILLANCE MEASURES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQRZ-",
+          name: "ELECTRONIC SURVEILLANCE MEASURES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.RECON.PHG",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "RECONNAISSANCE",
+            "PHOTOGRAPHIC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQRX-",
+          name: "PHOTOGRAPHIC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ASBW",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "ANTI-SUBMARINE WARFARE (ASW)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQS--",
+          name: "ANTI-SUBMARINE WARFARE (ASW)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.TNE",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "TRAINER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQT--",
+          name: "TRAINER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.UTY",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "UTILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQU--",
+          name: "UTILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.COMM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "COMMUNICATIONS (C3I)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQY--",
+          name: "COMMUNICATIONS (C3I)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.MEDV",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "DRONE (RPV/UAV)",
+            "MEDEVAC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFQO--",
+          name: "MEDEVAC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.ASBWCB",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "ANTISUBMARINE WARFARE (ASW) CARRIER BASED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFS---",
+          name: "ANTISUBMARINE WARFARE (ASW) CARRIER BASED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.FIXD.SOF",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "FIXED WING",
+            "SPECIAL OPERATIONS FORCES (SOF)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MFM---",
+          name: "SPECIAL OPERATIONS FORCES (SOF)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MH----",
+          name: "ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.ATK",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "ATTACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHA---",
+          name: "ATTACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.ASBW",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "ANTISUBMARINE WARFARE/MPA"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHS---",
+          name: "ANTISUBMARINE WARFARE/MPA",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.UTY",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "UTILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHU---",
+          name: "UTILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.UTY.LIT",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "UTILITY",
+            "UTILITY (LIGHT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHUL--",
+          name: "UTILITY (LIGHT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.UTY.MDM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "UTILITY",
+            "UTILITY (MEDIUM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHUM--",
+          name: "UTILITY (MEDIUM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.UTY.HVY",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "UTILITY",
+            "UTILITY (HEAVY)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHUH--",
+          name: "UTILITY (HEAVY)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.MNECM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "MINE COUNTERMEASURES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHI---",
+          name: "MINE COUNTERMEASURES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.CSAR",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "COMBAT SEARCH AND RESCUE (CSAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHH---",
+          name: "COMBAT SEARCH AND RESCUE (CSAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.RECON",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "RECONNAISSANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHR---",
+          name: "RECONNAISSANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.DRN",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "DRONE (RPV/UAV)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHQ---",
+          name: "DRONE (RPV/UAV)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.CGOALT",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "CARGO AIRLIFT (TRANSPORT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHC---",
+          name: "CARGO AIRLIFT (TRANSPORT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.CGOALT.LIT",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "CARGO AIRLIFT (TRANSPORT)",
+            "CARGO AIRLIFT (LIGHT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHCL--",
+          name: "CARGO AIRLIFT (LIGHT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.CGOALT.MDM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "CARGO AIRLIFT (TRANSPORT)",
+            "CARGO AIRLIFT (MEDIUM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHCM--",
+          name: "CARGO AIRLIFT (MEDIUM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.CGOALT.HVY",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "CARGO AIRLIFT (TRANSPORT)",
+            "CARGO AIRLIFT (HEAVY)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHCH--",
+          name: "CARGO AIRLIFT (HEAVY)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.TNE",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "TRAINER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHT---",
+          name: "TRAINER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.MEDV",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "MEDEVAC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHO---",
+          name: "MEDEVAC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.SOF",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "SPECIAL OPERATIONS FORCES (SOF)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHM---",
+          name: "SPECIAL OPERATIONS FORCES (SOF)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.ABNCP",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "AIRBORNE COMMAND POST (C2)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHD---",
+          name: "AIRBORNE COMMAND POST (C2)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.TNK",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "TANKER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHK---",
+          name: "TANKER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.ROT.ECM",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "ROTARY WING",
+            "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "MHJ---",
+          name: "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.MIL.LTA",
+          names: [
+            ,
+            "AIR TRACK",
+            "MILITARY",
+            "LIGHTER THAN AIR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "ML----",
+          name: "LIGHTER THAN AIR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "W-----",
+          name: "WEAPON",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WM----",
+          name: "MISSILE IN FLIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "SURFACE LAUNCHED MISSILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMS---",
+          name: "SURFACE LAUNCHED MISSILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM.SSM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "SURFACE LAUNCHED MISSILE",
+            "SURFACE TO SURFACE MISSILE (SSM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMSS--",
+          name: "SURFACE TO SURFACE MISSILE (SSM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM.SAM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "SURFACE LAUNCHED MISSILE",
+            "SURFACE TO AIR MISSILE (SAM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMSA--",
+          name: "SURFACE TO AIR MISSILE (SAM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM.SSUM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "SURFACE LAUNCHED MISSILE",
+            "SURFACE TO SUBSURFACE MISSILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMSU--",
+          name: "SURFACE TO SUBSURFACE MISSILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM.ABM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "SURFACE LAUNCHED MISSILE",
+            "ANTI-BALLISTIC MISSILE (ABM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMSB--",
+          name: "ANTI-BALLISTIC MISSILE (ABM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.ALM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "AIR LAUNCHED MISSILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMA---",
+          name: "AIR LAUNCHED MISSILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.ALM.ASM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "AIR LAUNCHED MISSILE",
+            "AIR TO SURFACE MISSILE (ASM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMAS--",
+          name: "AIR TO SURFACE MISSILE (ASM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.ALM.AAM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "AIR LAUNCHED MISSILE",
+            "AIR TO AIR MISSILE (AAM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMAA--",
+          name: "AIR TO AIR MISSILE (AAM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.ALM.ASPC",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "AIR LAUNCHED MISSILE",
+            "AIR TO SPACE MISSILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMAP--",
+          name: "AIR TO SPACE MISSILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.SBSM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "SUBSURFACE TO SURFACE MISSILE (S/SSM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMU---",
+          name: "SUBSURFACE TO SURFACE MISSILE (S/SSM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.CM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "CRUISE MISSILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMCM--",
+          name: "CRUISE MISSILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.MSLIF.BLST",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "MISSILE IN FLIGHT",
+            "BALLISTIC MISSILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WMB---",
+          name: "BALLISTIC MISSILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.BM",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "BOMB"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WB----",
+          name: "BOMB",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.WPN.DCY",
+          names: [
+            ,
+            "AIR TRACK",
+            "WEAPON",
+            "DECOY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "WD----",
+          name: "DECOY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.CVL",
+          names: [
+            ,
+            "AIR TRACK",
+            "CIVIL AIRCRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "C-----",
+          name: "CIVIL AIRCRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.CVL.FIXD",
+          names: [
+            ,
+            "AIR TRACK",
+            "CIVIL AIRCRAFT",
+            "FIXED WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "CF----",
+          name: "FIXED WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.CVL.ROT",
+          names: [
+            ,
+            "AIR TRACK",
+            "CIVIL AIRCRAFT",
+            "ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "CH----",
+          name: "ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.AIRTRK.CVL.LTA",
+          names: [
+            ,
+            "AIR TRACK",
+            "CIVIL AIRCRAFT",
+            "LIGHTER THAN AIR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "A",
+          status: "*",
+          functionid: "CL----",
+          name: "LIGHTER THAN AIR",
+          remarks: ""
+        }
+      ]
+    },
+    GRDTRK: {
+      name: "GROUND UNIT",
+      mainIcon: [
+        {
+          hierarchy: "WAR.GRDTRK",
+          names: [
+            ,
+            "GROUND TRACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "------",
+          name: "GROUND TRACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "U-----",
+          name: "UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UC----",
+          name: "COMBAT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCD---",
+          name: "AIR DEFENSE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.SHTR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "SHORT RANGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDS--",
+          name: "SHORT RANGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.SHTR.CPL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "SHORT RANGE",
+            "CHAPARRAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDSC-",
+          name: "CHAPARRAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.SHTR.STG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "SHORT RANGE",
+            "STINGER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDSS-",
+          name: "STINGER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.SHTR.VUL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "SHORT RANGE",
+            "VULCAN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDSV-",
+          name: "VULCAN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "AIR DEFENSE MISSILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDM--",
+          name: "AIR DEFENSE MISSILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "AIR DEFENSE MISSILE",
+            "AIR DEFENSE MISSILE LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDML-",
+          name: "AIR DEFENSE MISSILE LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.LIT.MOT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "AIR DEFENSE MISSILE",
+            "AIR DEFENSE MISSILE LIGHT",
+            "AIR DEFENSE MISSILE MOTORIZED (AVENGER)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDMLA",
+          name: "AIR DEFENSE MISSILE MOTORIZED (AVENGER)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "AIR DEFENSE MISSILE",
+            "AIR DEFENSE MISSILE MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDMM-",
+          name: "AIR DEFENSE MISSILE MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "AIR DEFENSE MISSILE",
+            "AIR DEFENSE MISSILE HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDMH-",
+          name: "AIR DEFENSE MISSILE HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "AIR DEFENSE MISSILE",
+            "H/MAD"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDH--",
+          name: "H/MAD",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.HWK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "AIR DEFENSE MISSILE",
+            "H/MAD",
+            "HAWK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDHH-",
+          name: "HAWK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.PATT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "AIR DEFENSE MISSILE",
+            "H/MAD",
+            "PATRIOT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDHP-",
+          name: "PATRIOT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.GUNUNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "GUN UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDG--",
+          name: "GUN UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.CMPS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "COMPOSITE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDC--",
+          name: "COMPOSITE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.TGTGUT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "TARGETING UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDT--",
+          name: "TARGETING UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.TMDU",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AIR DEFENSE",
+            "THEATER MISSILE DEFENSE UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCDO--",
+          name: "THEATER MISSILE DEFENSE UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCA---",
+          name: "ARMOR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR TRACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAT--",
+          name: "ARMOR TRACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR TRACK",
+            "ARMOR TRACK AIRBORNE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCATA-",
+          name: "ARMOR TRACK AIRBORNE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.AMP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR TRACK",
+            "ARMOR TRACK AMPHIBIOUS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCATW-",
+          name: "ARMOR TRACK AMPHIBIOUS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.AMP.RCY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR TRACK",
+            "ARMOR TRACK AMPHIBIOUS",
+            "ARMOR TRACK AMPHIBIOUS RECOVERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCATWR",
+          name: "ARMOR TRACK AMPHIBIOUS RECOVERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR TRACK",
+            "ARMOR TRACK, LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCATL-",
+          name: "ARMOR TRACK, LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR TRACK",
+            "ARMOR TRACK, MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCATM-",
+          name: "ARMOR TRACK, MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR TRACK",
+            "ARMOR TRACK, HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCATH-",
+          name: "ARMOR TRACK, HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.RCY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR TRACK",
+            "ARMOR TRACK, RECOVERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCATR-",
+          name: "ARMOR TRACK, RECOVERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR, WHEELED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAW--",
+          name: "ARMOR, WHEELED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR, WHEELED",
+            "ARMOR, WHEELED AIR ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAWS-",
+          name: "ARMOR, WHEELED AIR ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR, WHEELED",
+            "ARMOR, WHEELED AIRBORNE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAWA-",
+          name: "ARMOR, WHEELED AIRBORNE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.AMP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR, WHEELED",
+            "ARMOR, WHEELED AMPHIBIOUS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAWW-",
+          name: "ARMOR, WHEELED AMPHIBIOUS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.AMP.RCY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR, WHEELED",
+            "ARMOR, WHEELED AMPHIBIOUS",
+            "ARMOR, WHEELED AMPHIBIOUS RECOVERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAWWR",
+          name: "ARMOR, WHEELED AMPHIBIOUS RECOVERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR, WHEELED",
+            "ARMOR, WHEELED LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAWL-",
+          name: "ARMOR, WHEELED LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR, WHEELED",
+            "ARMOR, WHEELED MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAWM-",
+          name: "ARMOR, WHEELED MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR, WHEELED",
+            "ARMOR, WHEELED HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAWH-",
+          name: "ARMOR, WHEELED HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.RCY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ARMOR",
+            "ARMOR, WHEELED",
+            "ARMOR, WHEELED RECOVERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAWR-",
+          name: "ARMOR, WHEELED RECOVERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAA--",
+          name: "ANTI ARMOR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.DMD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR DISMOUNTED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAD-",
+          name: "ANTI ARMOR DISMOUNTED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAL-",
+          name: "ANTI ARMOR LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR AIRBORNE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAM-",
+          name: "ANTI ARMOR AIRBORNE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR AIR ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAS-",
+          name: "ANTI ARMOR AIR ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.MNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR MOUNTAIN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAU-",
+          name: "ANTI ARMOR MOUNTAIN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR ARCTIC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAC-",
+          name: "ANTI ARMOR ARCTIC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARMD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR ARMORED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAA-",
+          name: "ANTI ARMOR ARMORED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARMD.TKD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR ARMORED",
+            "ANTI ARMOR ARMORED TRACKED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAAT",
+          name: "ANTI ARMOR ARMORED TRACKED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARMD.WHD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR ARMORED",
+            "ANTI ARMOR ARMORED WHEELED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAAW",
+          name: "ANTI ARMOR ARMORED WHEELED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARMD.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR ARMORED",
+            "ANTI ARMOR ARMORED AIR ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAAS",
+          name: "ANTI ARMOR ARMORED AIR ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.MOT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR MOTORIZED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAO-",
+          name: "ANTI ARMOR MOTORIZED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.MOT.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ANTI ARMOR",
+            "ANTI ARMOR MOTORIZED",
+            "ANTI ARMOR MOTORIZED AIR ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCAAOS",
+          name: "ANTI ARMOR MOTORIZED AIR ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCV---",
+          name: "AVIATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.FIXD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "FIXED WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVF--",
+          name: "FIXED WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.FIXD.UTY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "FIXED WING",
+            "UTILITY FIXED WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVFU-",
+          name: "UTILITY FIXED WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.FIXD.ATK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "FIXED WING",
+            "ATTACK FIXED WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVFA-",
+          name: "ATTACK FIXED WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.FIXD.RECON",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "FIXED WING",
+            "RECON FIXED WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVFR-",
+          name: "RECON FIXED WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVR--",
+          name: "ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.ATK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "ATTACK ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRA-",
+          name: "ATTACK ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.SCUT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "SCOUT ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRS-",
+          name: "SCOUT ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.ASBW",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "ANTISUBMARINE WARFARE ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRW-",
+          name: "ANTISUBMARINE WARFARE ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.UTY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "UTILITY ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRU-",
+          name: "UTILITY ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.UTY.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "UTILITY ROTARY WING",
+            "LIGHT UTILITY ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRUL",
+          name: "LIGHT UTILITY ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.UTY.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "UTILITY ROTARY WING",
+            "MEDIUM UTILITY ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRUM",
+          name: "MEDIUM UTILITY ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.UTY.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "UTILITY ROTARY WING",
+            "HEAVY UTILITY ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRUH",
+          name: "HEAVY UTILITY ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.C2",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "C2 ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRUC",
+          name: "C2 ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.MEDV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "MEDEVAC ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRUE",
+          name: "MEDEVAC ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.MNECM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "ROTARY WING",
+            "MINE COUNTERMEASURE ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVRM-",
+          name: "MINE COUNTERMEASURE ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.SAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "SEARCH AND RESCUE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVS--",
+          name: "SEARCH AND RESCUE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.CMPS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "COMPOSITE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVC--",
+          name: "COMPOSITE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.VSTOL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "VERTICAL/SHORT TAKEOFF AND LANDING (V/STOL)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVV--",
+          name: "VERTICAL/SHORT TAKEOFF AND LANDING (V/STOL)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.UAV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "UNMANNED AERIAL VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVU--",
+          name: "UNMANNED AERIAL VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.UAV.FIXD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "UNMANNED AERIAL VEHICLE",
+            "UNMANNED AERIAL VEHICLE FIXED WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVUF-",
+          name: "UNMANNED AERIAL VEHICLE FIXED WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.UAV.ROT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "AVIATION",
+            "UNMANNED AERIAL VEHICLE",
+            "UNMANNED AERIAL VEHICLE ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCVUR-",
+          name: "UNMANNED AERIAL VEHICLE ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCI---",
+          name: "INFANTRY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY",
+            "INFANTRY LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCIL--",
+          name: "INFANTRY LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF.MOT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY",
+            "INFANTRY MOTORIZED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCIM--",
+          name: "INFANTRY MOTORIZED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF.MNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY",
+            "INFANTRY MOUNTAIN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCIO--",
+          name: "INFANTRY MOUNTAIN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY",
+            "INFANTRY AIRBORNE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCIA--",
+          name: "INFANTRY AIRBORNE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY",
+            "INFANTRY AIR ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCIS--",
+          name: "INFANTRY AIR ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF.MECH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY",
+            "INFANTRY MECHANIZED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCIZ--",
+          name: "INFANTRY MECHANIZED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF.NAV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY",
+            "INFANTRY NAVAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCIN--",
+          name: "INFANTRY NAVAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF.INFFV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY",
+            "INFANTRY FIGHTING VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCII--",
+          name: "INFANTRY FIGHTING VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.INF.ARC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INFANTRY",
+            "INFANTRY ARCTIC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCIC--",
+          name: "INFANTRY ARCTIC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCE---",
+          name: "ENGINEER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCEC--",
+          name: "ENGINEER COMBAT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT AIR ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECS-",
+          name: "ENGINEER COMBAT AIR ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT AIRBORNE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECA-",
+          name: "ENGINEER COMBAT AIRBORNE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.ARC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT ARCTIC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECC-",
+          name: "ENGINEER COMBAT ARCTIC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT LIGHT (SAPPER)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECL-",
+          name: "ENGINEER COMBAT LIGHT (SAPPER)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECM-",
+          name: "ENGINEER COMBAT MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECH-",
+          name: "ENGINEER COMBAT HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.MECH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT MECHANIZED (TRACK)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECT-",
+          name: "ENGINEER COMBAT MECHANIZED (TRACK)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.MOT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT MOTORIZED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECW-",
+          name: "ENGINEER COMBAT MOTORIZED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.MNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT MOUNTAIN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECO-",
+          name: "ENGINEER COMBAT MOUNTAIN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.RECON",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER COMBAT",
+            "ENGINEER COMBAT RECON"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCECR-",
+          name: "ENGINEER COMBAT RECON",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CSN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER CONSTRUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCEN--",
+          name: "ENGINEER CONSTRUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CSN.NAV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "ENGINEER",
+            "ENGINEER CONSTRUCTION",
+            "ENGINEER NAVAL CONSTRUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCENN-",
+          name: "ENGINEER NAVAL CONSTRUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCF---",
+          name: "FIELD ARTILLERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFH--",
+          name: "HOWITZER/GUN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.SPD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN",
+            "SELF-PROPELLED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFHE-",
+          name: "SELF-PROPELLED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN",
+            "AIR ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFHS-",
+          name: "AIR ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN",
+            "AIRBORNE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFHA-",
+          name: "AIRBORNE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.ARC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN",
+            "ARCTIC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFHC-",
+          name: "ARCTIC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.MNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN",
+            "MOUNTAIN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFHO-",
+          name: "MOUNTAIN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN",
+            "LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFHL-",
+          name: "LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN",
+            "MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFHM-",
+          name: "MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN",
+            "HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFHH-",
+          name: "HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.AMP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "HOWITZER/GUN",
+            "AMPHIBIOUS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFHX-",
+          name: "AMPHIBIOUS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ROCKET"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFR--",
+          name: "ROCKET",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ROCKET",
+            "SINGLE ROCKET LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFRS-",
+          name: "SINGLE ROCKET LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL.SRSPD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ROCKET",
+            "SINGLE ROCKET LAUNCHER",
+            "SINGLE ROCKET SELF-PROPELLED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFRSS",
+          name: "SINGLE ROCKET SELF-PROPELLED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL.SRTRK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ROCKET",
+            "SINGLE ROCKET LAUNCHER",
+            "SINGLE ROCKET TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFRSR",
+          name: "SINGLE ROCKET TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL.SRTOW",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ROCKET",
+            "SINGLE ROCKET LAUNCHER",
+            "SINGLE ROCKET TOWED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFRST",
+          name: "SINGLE ROCKET TOWED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.MRL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ROCKET",
+            "MULTI ROCKET LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFRM-",
+          name: "MULTI ROCKET LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.MRL.MRSPD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ROCKET",
+            "MULTI ROCKET LAUNCHER",
+            "MULTI ROCKET SELF-PROPELLED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFRMS",
+          name: "MULTI ROCKET SELF-PROPELLED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.MRL.MRTRK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ROCKET",
+            "MULTI ROCKET LAUNCHER",
+            "MULTI ROCKET TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFRMR",
+          name: "MULTI ROCKET TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.MRL.MRTOW",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ROCKET",
+            "MULTI ROCKET LAUNCHER",
+            "MULTI ROCKET TOWED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFRMT",
+          name: "MULTI ROCKET TOWED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "TARGET ACQUISITION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFT--",
+          name: "TARGET ACQUISITION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.RAD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "TARGET ACQUISITION",
+            "RADAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFTR-",
+          name: "RADAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.SND",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "TARGET ACQUISITION",
+            "SOUND"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFTS-",
+          name: "SOUND",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.FLH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "TARGET ACQUISITION",
+            "FLASH (OPTICAL)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFTF-",
+          name: "FLASH (OPTICAL)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "TARGET ACQUISITION",
+            "COLT/FIST"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFTC-",
+          name: "COLT/FIST",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT.DMD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "TARGET ACQUISITION",
+            "COLT/FIST",
+            "DISMOUNTED COLT/FIST"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFTCD",
+          name: "DISMOUNTED COLT/FIST",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT.TKD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "TARGET ACQUISITION",
+            "COLT/FIST",
+            "TRACKED COLT/FIST"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFTCM",
+          name: "TRACKED COLT/FIST",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.ANG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "TARGET ACQUISITION",
+            "ANGLICO"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFTA-",
+          name: "ANGLICO",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFM--",
+          name: "MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.SPDTRK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "MORTAR",
+            "SELF-PROPELLED (SP) TRACKED MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFMS-",
+          name: "SELF-PROPELLED (SP) TRACKED MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.SPDWHD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "MORTAR",
+            "SP WHEELED MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFMW-",
+          name: "SP WHEELED MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "MORTAR",
+            "TOWED MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFMT-",
+          name: "TOWED MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "MORTAR",
+            "TOWED MORTAR",
+            "TOWED AIRBORNE MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFMTA",
+          name: "TOWED AIRBORNE MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "MORTAR",
+            "TOWED MORTAR",
+            "TOWED AIR ASSAULT MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFMTS",
+          name: "TOWED AIR ASSAULT MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW.ARC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "MORTAR",
+            "TOWED MORTAR",
+            "TOWED ARCTIC MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFMTC",
+          name: "TOWED ARCTIC MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW.MNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "MORTAR",
+            "TOWED MORTAR",
+            "TOWED MOUNTAIN MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFMTO",
+          name: "TOWED MOUNTAIN MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.AMP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "MORTAR",
+            "AMPHIBIOUS MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFML-",
+          name: "AMPHIBIOUS MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ARTILLERY SURVEY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFS--",
+          name: "ARTILLERY SURVEY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ARTILLERY SURVEY",
+            "AIR ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFSS-",
+          name: "AIR ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ARTILLERY SURVEY",
+            "AIRBORNE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFSA-",
+          name: "AIRBORNE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ARTILLERY SURVEY",
+            "LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFSL-",
+          name: "LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.MNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "ARTILLERY SURVEY",
+            "MOUNTAIN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFSO-",
+          name: "MOUNTAIN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "METEOROLOGICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFO--",
+          name: "METEOROLOGICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "METEOROLOGICAL",
+            "AIR ASSAULT METEOROLOGICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFOS-",
+          name: "AIR ASSAULT METEOROLOGICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "METEOROLOGICAL",
+            "AIRBORNE METEOROLOGICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFOA-",
+          name: "AIRBORNE METEOROLOGICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "METEOROLOGICAL",
+            "LIGHT METEOROLOGICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFOL-",
+          name: "LIGHT METEOROLOGICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO.MNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "FIELD ARTILLERY",
+            "METEOROLOGICAL",
+            "MOUNTAIN METEOROLOGICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCFOO-",
+          name: "MOUNTAIN METEOROLOGICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCR---",
+          name: "RECONNAISSANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.HRE",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE HORSE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRH--",
+          name: "RECONNAISSANCE HORSE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE CAVALRY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRV--",
+          name: "RECONNAISSANCE CAVALRY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY.ARMD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE CAVALRY",
+            "RECONNAISSANCE CAVALRY ARMORED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRVA-",
+          name: "RECONNAISSANCE CAVALRY ARMORED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY.MOT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE CAVALRY",
+            "RECONNAISSANCE CAVALRY MOTORIZED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRVM-",
+          name: "RECONNAISSANCE CAVALRY MOTORIZED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY.GRD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE CAVALRY",
+            "RECONNAISSANCE CAVALRY GROUND"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRVG-",
+          name: "RECONNAISSANCE CAVALRY GROUND",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY.AIR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE CAVALRY",
+            "RECONNAISSANCE CAVALRY AIR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRVO-",
+          name: "RECONNAISSANCE CAVALRY AIR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.ARC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE ARCTIC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRC--",
+          name: "RECONNAISSANCE ARCTIC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.AAST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE AIR ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRS--",
+          name: "RECONNAISSANCE AIR ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.ABN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE AIRBORNE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRA--",
+          name: "RECONNAISSANCE AIRBORNE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE MOUNTAIN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRO--",
+          name: "RECONNAISSANCE MOUNTAIN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRL--",
+          name: "RECONNAISSANCE LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE MARINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRR--",
+          name: "RECONNAISSANCE MARINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MAR.DIV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE MARINE",
+            "RECONNAISSANCE MARINE DIVISION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRRD-",
+          name: "RECONNAISSANCE MARINE DIVISION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MAR.FOR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE MARINE",
+            "RECONNAISSANCE MARINE FORCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRRF-",
+          name: "RECONNAISSANCE MARINE FORCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MAR.LAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE MARINE",
+            "RECONNAISSANCE MARINE LIGHT ARMORED RECONNAISSNACE (LAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRRL-",
+          name: "RECONNAISSANCE MARINE LIGHT ARMORED RECONNAISSNACE (LAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.LRS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "RECONNAISSANCE",
+            "RECONNAISSANCE LONG RANGE SURVEILLANCE (LRS)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCRX--",
+          name: "RECONNAISSANCE LONG RANGE SURVEILLANCE (LRS)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.MSL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "MISSILE (SURF-SURF)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCM---",
+          name: "MISSILE (SURF-SURF)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.MSL.TAC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "MISSILE (SURF-SURF)",
+            "MISSILE (SURF-SURF) TACTICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCMT--",
+          name: "MISSILE (SURF-SURF) TACTICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.MSL.STGC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "MISSILE (SURF-SURF)",
+            "MISSILE (SURF-SURF) STRATEGIC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCMS--",
+          name: "MISSILE (SURF-SURF) STRATEGIC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ISF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INTERNAL SECURITY FORCES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCS---",
+          name: "INTERNAL SECURITY FORCES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.RIV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INTERNAL SECURITY FORCES",
+            "RIVERINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCSW--",
+          name: "RIVERINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.GRD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INTERNAL SECURITY FORCES",
+            "GROUND"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCSG--",
+          name: "GROUND",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.GRD.DMD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INTERNAL SECURITY FORCES",
+            "GROUND",
+            "DISMOUNTED GROUND"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCSGD-",
+          name: "DISMOUNTED GROUND",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.GRD.MOT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INTERNAL SECURITY FORCES",
+            "GROUND",
+            "MOTORIZED GROUND"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCSGM-",
+          name: "MOTORIZED GROUND",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.GRD.MECH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INTERNAL SECURITY FORCES",
+            "GROUND",
+            "MECHANIZED GROUND"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCSGA-",
+          name: "MECHANIZED GROUND",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.WHMECH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INTERNAL SECURITY FORCES",
+            "WHEELED MECHANIZED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCSM--",
+          name: "WHEELED MECHANIZED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.RALRD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INTERNAL SECURITY FORCES",
+            "RAILROAD"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCSR--",
+          name: "RAILROAD",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.AVN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT",
+            "INTERNAL SECURITY FORCES",
+            "AVIATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UCSA--",
+          name: "AVIATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UU----",
+          name: "COMBAT SUPPORT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUA---",
+          name: "COMBAT SUPPORT NBC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUAC--",
+          name: "CHEMICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMKDEC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL",
+            "SMOKE/DECON"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUACC-",
+          name: "SMOKE/DECON",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMKDEC.MECH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL",
+            "SMOKE/DECON",
+            "MECHANIZED SMOKE/DECON"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUACCK",
+          name: "MECHANIZED SMOKE/DECON",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMKDEC.MOT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL",
+            "SMOKE/DECON",
+            "MOTORIZED SMOKE/DECON"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUACCM",
+          name: "MOTORIZED SMOKE/DECON",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL",
+            "SMOKE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUACS-",
+          name: "SMOKE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMK.MOT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL",
+            "SMOKE",
+            "MOTORIZED SMOKE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUACSM",
+          name: "MOTORIZED SMOKE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMK.ARM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL",
+            "SMOKE",
+            "ARMOR SMOKE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUACSA",
+          name: "ARMOR SMOKE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.RECON",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL",
+            "CHEMICAL RECON"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUACR-",
+          name: "CHEMICAL RECON",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.RECON.WARMVH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL",
+            "CHEMICAL RECON",
+            "CHEMICAL WHEELED ARMORED VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUACRW",
+          name: "CHEMICAL WHEELED ARMORED VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.RECON.WAVS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "CHEMICAL",
+            "CHEMICAL RECON",
+            "CHEMICAL WHEELED ARMORED VEHICLE RECONNAISSANCE SURVEILLANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUACRS",
+          name: "CHEMICAL WHEELED ARMORED VEHICLE RECONNAISSANCE SURVEILLANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.NUC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "NUCLEAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUAN--",
+          name: "NUCLEAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.BIO",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "BIOLOGICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUAB--",
+          name: "BIOLOGICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.BIO.RECEQP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "BIOLOGICAL",
+            "RECON EQUIPPED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUABR-",
+          name: "RECON EQUIPPED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.NBC.DECON",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "COMBAT SUPPORT NBC",
+            "DECONTAMINATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUAD--",
+          name: "DECONTAMINATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUM---",
+          name: "MILITARY INTELLIGENCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.AEREXP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "AERIAL EXPLOITATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMA--",
+          name: "AERIAL EXPLOITATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SIGNAL INTELLIGENCE (SIGINT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMS--",
+          name: "SIGNAL INTELLIGENCE (SIGINT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SIGNAL INTELLIGENCE (SIGINT)",
+            "ELECTRONIC WARFARE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMSE-",
+          name: "ELECTRONIC WARFARE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.ARMWVH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SIGNAL INTELLIGENCE (SIGINT)",
+            "ELECTRONIC WARFARE",
+            "ARMORED WHEELED VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMSEA",
+          name: "ARMORED WHEELED VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.DFN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SIGNAL INTELLIGENCE (SIGINT)",
+            "ELECTRONIC WARFARE",
+            "DIRECTION FINDING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMSED",
+          name: "DIRECTION FINDING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.INC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SIGNAL INTELLIGENCE (SIGINT)",
+            "ELECTRONIC WARFARE",
+            "INTERCEPT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMSEI",
+          name: "INTERCEPT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.JMG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SIGNAL INTELLIGENCE (SIGINT)",
+            "ELECTRONIC WARFARE",
+            "JAMMING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMSEJ",
+          name: "JAMMING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SIGNAL INTELLIGENCE (SIGINT)",
+            "ELECTRONIC WARFARE",
+            "THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMSET",
+          name: "THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SIGNAL INTELLIGENCE (SIGINT)",
+            "ELECTRONIC WARFARE",
+            "CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMSEC",
+          name: "CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.CINT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "COUNTER INTELLIGENCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMC--",
+          name: "COUNTER INTELLIGENCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SURVEILLANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMR--",
+          name: "SURVEILLANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.GRDSR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SURVEILLANCE",
+            "GROUND SURVEILLANCE RADAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMRG-",
+          name: "GROUND SURVEILLANCE RADAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.SNS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SURVEILLANCE",
+            "SENSOR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMRS-",
+          name: "SENSOR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.SNS.SCM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SURVEILLANCE",
+            "SENSOR",
+            "SENSOR SCM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMRSS",
+          name: "SENSOR SCM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.GRDSM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SURVEILLANCE",
+            "GROUND STATION MODULE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMRX-",
+          name: "GROUND STATION MODULE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.METO",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "SURVEILLANCE",
+            "METEOROLOGICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMMO-",
+          name: "METEOROLOGICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.OPN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "OPERATIONS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMO--",
+          name: "OPERATIONS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.TACEXP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "TACTICAL EXPLOIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMT--",
+          name: "TACTICAL EXPLOIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.INTGN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "INTERROGATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMQ--",
+          name: "INTERROGATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.JINTCT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "MILITARY INTELLIGENCE",
+            "JOINT INTELLIGENCE CENTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUMJ--",
+          name: "JOINT INTELLIGENCE CENTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "LAW ENFORCEMENT UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUL---",
+          name: "LAW ENFORCEMENT UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.SHRPAT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "LAW ENFORCEMENT UNIT",
+            "SHORE PATROL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UULS--",
+          name: "SHORE PATROL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.MILP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "LAW ENFORCEMENT UNIT",
+            "MILITARY POLICE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UULM--",
+          name: "MILITARY POLICE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.CLE",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "LAW ENFORCEMENT UNIT",
+            "CIVILIAN LAW ENFORCEMENT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UULC--",
+          name: "CIVILIAN LAW ENFORCEMENT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.SECPOL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "LAW ENFORCEMENT UNIT",
+            "SECURITY POLICE (AIR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UULF--",
+          name: "SECURITY POLICE (AIR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.CID",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "LAW ENFORCEMENT UNIT",
+            "CENTRAL INTELLIGENCE DIVISION (CID)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UULD--",
+          name: "CENTRAL INTELLIGENCE DIVISION (CID)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUS---",
+          name: "SIGNAL UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.ARA",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "AREA"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSA--",
+          name: "AREA",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.COMCP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "COMMUNICATION CONFIGURED PACKAGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSC--",
+          name: "COMMUNICATION CONFIGURED PACKAGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.COMCP.LCCP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "COMMUNICATION CONFIGURED PACKAGE",
+            "LARGE COMMUNICATION CONFIGURED PACKAGE (LCCP)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSCL-",
+          name: "LARGE COMMUNICATION CONFIGURED PACKAGE (LCCP)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.CMDOPN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "COMMAND OPERATIONS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSO--",
+          name: "COMMAND OPERATIONS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.FWDCOM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "FORWARD COMMUNICATIONS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSF--",
+          name: "FORWARD COMMUNICATIONS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.MSE",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "MULTIPLE SUBSCRIBER ELEMENT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSM--",
+          name: "MULTIPLE SUBSCRIBER ELEMENT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.MSE.SEN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "MULTIPLE SUBSCRIBER ELEMENT",
+            "SMALL EXTENSION NODE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSMS-",
+          name: "SMALL EXTENSION NODE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.MSE.LEN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "MULTIPLE SUBSCRIBER ELEMENT",
+            "LARGE EXTENSION NODE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSML-",
+          name: "LARGE EXTENSION NODE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.MSE.NODCTR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "MULTIPLE SUBSCRIBER ELEMENT",
+            "NODE CENTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSMN-",
+          name: "NODE CENTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.RDOUNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "RADIO UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSR--",
+          name: "RADIO UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.RDOUNT.TACSAT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "RADIO UNIT",
+            "TACTICAL SATELLITE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSRS-",
+          name: "TACTICAL SATELLITE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.RDOUNT.TTYCTR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "RADIO UNIT",
+            "TELETYPE CENTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSRT-",
+          name: "TELETYPE CENTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.RDOUNT.RLY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "RADIO UNIT",
+            "RELAY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSRW-",
+          name: "RELAY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.SIGSUP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "SIGNAL SUPPORT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSS--",
+          name: "SIGNAL SUPPORT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.PHOSWT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "TELEPHONE SWITCH"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSW--",
+          name: "TELEPHONE SWITCH",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.ECRG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "SIGNAL UNIT",
+            "ELECTRONIC RANGING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUSX--",
+          name: "ELECTRONIC RANGING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.IWU",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "INFORMATION WARFARE UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUI---",
+          name: "INFORMATION WARFARE UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.LNDSUP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "LANDING SUPPORT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUP---",
+          name: "LANDING SUPPORT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CS.EOD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SUPPORT",
+            "EXPLOSIVE ORDNANCE DISPOSAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UUE---",
+          name: "EXPLOSIVE ORDNANCE DISPOSAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "US----",
+          name: "COMBAT SERVICE SUPPORT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USA---",
+          name: "ADMINISTRATIVE (ADMIN)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "ADMIN THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAT--",
+          name: "ADMIN THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "ADMIN CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAC--",
+          name: "ADMIN CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.JAG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "JUDGE ADVOCATE GENERAL (JAG)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAJ--",
+          name: "JUDGE ADVOCATE GENERAL (JAG)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.JAG.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "JUDGE ADVOCATE GENERAL (JAG)",
+            "JAG THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAJT-",
+          name: "JAG THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.JAG.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "JUDGE ADVOCATE GENERAL (JAG)",
+            "JAG CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAJC-",
+          name: "JAG CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "POSTAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAO--",
+          name: "POSTAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PST.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "POSTAL",
+            "POSTAL THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAOT-",
+          name: "POSTAL THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PST.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "POSTAL",
+            "POSTAL CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAOC-",
+          name: "POSTAL CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.FIN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "FINANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAF--",
+          name: "FINANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.FIN.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "FINANCE",
+            "FINANCE THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAFT-",
+          name: "FINANCE THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.FIN.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "FINANCE",
+            "FINANCE CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAFC-",
+          name: "FINANCE CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PERSVC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PERSONNEL SERVICES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAS--",
+          name: "PERSONNEL SERVICES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PERSVC.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PERSONNEL SERVICES",
+            "PERSONNEL THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAST-",
+          name: "PERSONNEL THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PERSVC.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PERSONNEL SERVICES",
+            "PERSONNEL CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USASC-",
+          name: "PERSONNEL CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MTRY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "MORTUARY/GRAVES REGISTRY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAM--",
+          name: "MORTUARY/GRAVES REGISTRY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MTRY.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "MORTUARY/GRAVES REGISTRY",
+            "MORTUARY/GRAVES REGISTRY THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAMT-",
+          name: "MORTUARY/GRAVES REGISTRY THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MTRY.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "MORTUARY/GRAVES REGISTRY",
+            "MORTUARY/GRAVES REGISTRY CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAMC-",
+          name: "MORTUARY/GRAVES REGISTRY CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RELG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "RELIGIOUS/CHAPLAIN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAR--",
+          name: "RELIGIOUS/CHAPLAIN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RELG.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "RELIGIOUS/CHAPLAIN",
+            "RELIGIOUS/CHAPLAIN THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USART-",
+          name: "RELIGIOUS/CHAPLAIN THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RELG.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "RELIGIOUS/CHAPLAIN",
+            "RELIGIOUS/CHAPLAIN CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USARC-",
+          name: "RELIGIOUS/CHAPLAIN CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PUBLIC AFFAIRS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAP--",
+          name: "PUBLIC AFFAIRS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PUBLIC AFFAIRS",
+            "PUBLIC AFFAIRS THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAPT-",
+          name: "PUBLIC AFFAIRS THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PUBLIC AFFAIRS",
+            "PUBLIC AFFAIRS CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAPC-",
+          name: "PUBLIC AFFAIRS CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.BRCT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PUBLIC AFFAIRS",
+            "PUBLIC AFFAIRS BROADCAST"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAPB-",
+          name: "PUBLIC AFFAIRS BROADCAST",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.BRCT.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PUBLIC AFFAIRS",
+            "PUBLIC AFFAIRS BROADCAST",
+            "PUBLIC AFFAIRS BROADCAST THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAPBT",
+          name: "PUBLIC AFFAIRS BROADCAST THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.BRCT.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PUBLIC AFFAIRS",
+            "PUBLIC AFFAIRS BROADCAST",
+            "PUBLIC AFFAIRS BROADCAST CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAPBC",
+          name: "PUBLIC AFFAIRS BROADCAST CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.JIB",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PUBLIC AFFAIRS",
+            "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAPM-",
+          name: "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.JIB.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PUBLIC AFFAIRS",
+            "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
+            "PUBLIC AFFAIRS JIB THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAPMT",
+          name: "PUBLIC AFFAIRS JIB THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.JIB.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "PUBLIC AFFAIRS",
+            "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
+            "PUBLIC AFFAIRS JIB CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAPMC",
+          name: "PUBLIC AFFAIRS JIB CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RHU",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "REPLACEMENT HOLDING UNIT (RHU)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAX--",
+          name: "REPLACEMENT HOLDING UNIT (RHU)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RHU.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "REPLACEMENT HOLDING UNIT (RHU)",
+            "RHU THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAXT-",
+          name: "RHU THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RHU.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "REPLACEMENT HOLDING UNIT (RHU)",
+            "RHU CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAXC-",
+          name: "RHU CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.LBR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "LABOR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAL--",
+          name: "LABOR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.LBR.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "LABOR",
+            "LABOR THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USALT-",
+          name: "LABOR THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.LBR.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "LABOR",
+            "LABOR CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USALC-",
+          name: "LABOR CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MWR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "MORALE, WELFARE, RECREATION (MWR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAW--",
+          name: "MORALE, WELFARE, RECREATION (MWR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MWR.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "MORALE, WELFARE, RECREATION (MWR)",
+            "MWR THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAWT-",
+          name: "MWR THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MWR.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "MORALE, WELFARE, RECREATION (MWR)",
+            "MWR CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAWC-",
+          name: "MWR CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.SUPPLY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "QUARTERMASTER (SUPPLY)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAQ--",
+          name: "QUARTERMASTER (SUPPLY)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.SUPPLY.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "QUARTERMASTER (SUPPLY)",
+            "QUARTERMASTER (SUPPLY) THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAQT-",
+          name: "QUARTERMASTER (SUPPLY) THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.SUPPLY.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "ADMINISTRATIVE (ADMIN)",
+            "QUARTERMASTER (SUPPLY)",
+            "QUARTERMASTER (SUPPLY) CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USAQC-",
+          name: "QUARTERMASTER (SUPPLY) CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USM---",
+          name: "MEDICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMT--",
+          name: "MEDICAL THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMC--",
+          name: "MEDICAL CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.MEDTF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL TREATMENT FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMM--",
+          name: "MEDICAL TREATMENT FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.MEDTF.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL TREATMENT FACILITY",
+            "MEDICAL TREATMENT FACILITY THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMMT-",
+          name: "MEDICAL TREATMENT FACILITY THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.MEDTF.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL TREATMENT FACILITY",
+            "MEDICAL TREATMENT FACILITY CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMMC-",
+          name: "MEDICAL TREATMENT FACILITY CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.VNY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL VETERINARY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMV--",
+          name: "MEDICAL VETERINARY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.VNY.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL VETERINARY",
+            "MEDICAL VETERINARY THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMVT-",
+          name: "MEDICAL VETERINARY THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.VNY.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL VETERINARY",
+            "MEDICAL VETERINARY CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMVC-",
+          name: "MEDICAL VETERINARY CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.DEN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL DENTAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMD--",
+          name: "MEDICAL DENTAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.DEN.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL DENTAL",
+            "MEDICAL DENTAL THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMDT-",
+          name: "MEDICAL DENTAL THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.DEN.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL DENTAL",
+            "MEDICAL DENTAL CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMDC-",
+          name: "MEDICAL DENTAL CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.PSY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL PSYCHOLOGICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMP--",
+          name: "MEDICAL PSYCHOLOGICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.PSY.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL PSYCHOLOGICAL",
+            "MEDICAL PSYCHOLOGICAL THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMPT-",
+          name: "MEDICAL PSYCHOLOGICAL THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MED.PSY.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MEDICAL",
+            "MEDICAL PSYCHOLOGICAL",
+            "MEDICAL PSYCHOLOGICAL CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USMPC-",
+          name: "MEDICAL PSYCHOLOGICAL CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS---",
+          name: "SUPPLY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USST--",
+          name: "SUPPLY THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSC--",
+          name: "SUPPLY CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS1",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS I"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS1--",
+          name: "SUPPLY CLASS I",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS1.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS I",
+            "SUPPLY CLASS I THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS1T-",
+          name: "SUPPLY CLASS I THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS1.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS I",
+            "SUPPLY CLASS I CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS1C-",
+          name: "SUPPLY CLASS I CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS2",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS II"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS2--",
+          name: "SUPPLY CLASS II",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS2.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS II",
+            "SUPPLY CLASS II THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS2T-",
+          name: "SUPPLY CLASS II THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS2.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS II",
+            "SUPPLY CLASS II CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS2C-",
+          name: "SUPPLY CLASS II CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS III"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS3--",
+          name: "SUPPLY CLASS III",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS III",
+            "SUPPLY CLASS III THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS3T-",
+          name: "SUPPLY CLASS III THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS III",
+            "SUPPLY CLASS III CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS3C-",
+          name: "SUPPLY CLASS III CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS III",
+            "SUPPLY CLASS III AVIATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS3A-",
+          name: "SUPPLY CLASS III AVIATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS III",
+            "SUPPLY CLASS III AVIATION",
+            "SUPPLY CLASS III AVIATION THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS3AT",
+          name: "SUPPLY CLASS III AVIATION THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS III",
+            "SUPPLY CLASS III AVIATION",
+            "SUPPLY CLASS III AVIATION CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS3AC",
+          name: "SUPPLY CLASS III AVIATION CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS4",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS IV"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS4--",
+          name: "SUPPLY CLASS IV",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS4.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS IV",
+            "SUPPLY CLASS IV THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS4T-",
+          name: "SUPPLY CLASS IV THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS4.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS IV",
+            "SUPPLY CLASS IV CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS4C-",
+          name: "SUPPLY CLASS IV CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS5",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS V"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS5--",
+          name: "SUPPLY CLASS V",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS5.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS V",
+            "SUPPLY CLASS V THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS5T-",
+          name: "SUPPLY CLASS V THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS5.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS V",
+            "SUPPLY CLASS V CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS5C-",
+          name: "SUPPLY CLASS V CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS6",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS VI"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS6--",
+          name: "SUPPLY CLASS VI",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS6.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS VI",
+            "SUPPLY CLASS VI THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS6T-",
+          name: "SUPPLY CLASS VI THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS6.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS VI",
+            "SUPPLY CLASS VI CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS6C-",
+          name: "SUPPLY CLASS VI CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS7",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS VII"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS7--",
+          name: "SUPPLY CLASS VII",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS7.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS VII",
+            "SUPPLY CLASS VII THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS7T-",
+          name: "SUPPLY CLASS VII THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS7.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS VII",
+            "SUPPLY CLASS VII CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS7C-",
+          name: "SUPPLY CLASS VII CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS8",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS VIII"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS8--",
+          name: "SUPPLY CLASS VIII",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS8.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS VIII",
+            "SUPPLY CLASS VIII THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS8T-",
+          name: "SUPPLY CLASS VIII THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS8.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS VIII",
+            "SUPPLY CLASS VIII CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS8C-",
+          name: "SUPPLY CLASS VIII CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS9",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS IX"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS9--",
+          name: "SUPPLY CLASS IX",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS9.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS IX",
+            "SUPPLY CLASS IX THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS9T-",
+          name: "SUPPLY CLASS IX THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS9.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS IX",
+            "SUPPLY CLASS IX CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USS9C-",
+          name: "SUPPLY CLASS IX CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS10",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS X"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSX--",
+          name: "SUPPLY CLASS X",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS10.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS X",
+            "SUPPLY CLASS X THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSXT-",
+          name: "SUPPLY CLASS X THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS10.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY CLASS X",
+            "SUPPLY CLASS X CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSXC-",
+          name: "SUPPLY CLASS X CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.LDY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY LAUNDRY/BATH"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSL--",
+          name: "SUPPLY LAUNDRY/BATH",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.LDY.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY LAUNDRY/BATH",
+            "SUPPLY LAUNDRY/BATH THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSLT-",
+          name: "SUPPLY LAUNDRY/BATH THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.LDY.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY LAUNDRY/BATH",
+            "SUPPLY LAUNDRY/BATH CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSLC-",
+          name: "SUPPLY LAUNDRY/BATH CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY WATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSW--",
+          name: "SUPPLY WATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY WATER",
+            "SUPPLY WATER THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSWT-",
+          name: "SUPPLY WATER THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY WATER",
+            "SUPPLY WATER CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSWC-",
+          name: "SUPPLY WATER CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.PUR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY WATER",
+            "SUPPLY WATER PURIFICATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSWP-",
+          name: "SUPPLY WATER PURIFICATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.PUR.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY WATER",
+            "SUPPLY WATER PURIFICATION",
+            "SUPPLY WATER PURIFICATION THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSWPT",
+          name: "SUPPLY WATER PURIFICATION THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.PUR.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "SUPPLY",
+            "SUPPLY WATER",
+            "SUPPLY WATER PURIFICATION",
+            "SUPPLY WATER PURIFICATION CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USSWPC",
+          name: "SUPPLY WATER PURIFICATION CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UST---",
+          name: "TRANSPORTATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "TRANSPORTATION THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTT--",
+          name: "TRANSPORTATION THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "TRANSPORTATION CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTC--",
+          name: "TRANSPORTATION CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MCC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "MOVEMENT CONTROL CENTER (MCC)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTM--",
+          name: "MOVEMENT CONTROL CENTER (MCC)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MCC.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "MOVEMENT CONTROL CENTER (MCC)",
+            "MCC THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTMT-",
+          name: "MCC THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MCC.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "MOVEMENT CONTROL CENTER (MCC)",
+            "MCC CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTMC-",
+          name: "MCC CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.RHD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "RAILHEAD"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTR--",
+          name: "RAILHEAD",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.RHD.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "RAILHEAD",
+            "RAILHEAD THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTRT-",
+          name: "RAILHEAD THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.RHD.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "RAILHEAD",
+            "RAILHEAD CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTRC-",
+          name: "RAILHEAD CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.SPOD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "SPOD/SPOE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTS--",
+          name: "SPOD/SPOE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.SPOD.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "SPOD/SPOE",
+            "SPOD/SPOE THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTST-",
+          name: "SPOD/SPOE THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.SPOD.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "SPOD/SPOE",
+            "SPOD/SPOE CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTSC-",
+          name: "SPOD/SPOE CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.APOD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "APOD/APOE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTA--",
+          name: "APOD/APOE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.APOD.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "APOD/APOE",
+            "APOD/APOE THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTAT-",
+          name: "APOD/APOE THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.APOD.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "APOD/APOE",
+            "APOD/APOE CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTAC-",
+          name: "APOD/APOE CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MSL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "MISSILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTI--",
+          name: "MISSILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MSL.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "MISSILE",
+            "MISSILE THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTIT-",
+          name: "MISSILE THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MSL.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "TRANSPORTATION",
+            "MISSILE",
+            "MISSILE CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USTIC-",
+          name: "MISSILE CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USX---",
+          name: "MAINTENANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "MAINTENANCE THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXT--",
+          name: "MAINTENANCE THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "MAINTENANCE CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXC--",
+          name: "MAINTENANCE CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "MAINTENANCE HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXH--",
+          name: "MAINTENANCE HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.HVY.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "MAINTENANCE HEAVY",
+            "MAINTENANCE HEAVY THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXHT-",
+          name: "MAINTENANCE HEAVY THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.HVY.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "MAINTENANCE HEAVY",
+            "MAINTENANCE HEAVY CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXHC-",
+          name: "MAINTENANCE HEAVY CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.RCY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "MAINTENANCE RECOVERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXR--",
+          name: "MAINTENANCE RECOVERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.RCY.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "MAINTENANCE RECOVERY",
+            "MAINTENANCE RECOVERY THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXRT-",
+          name: "MAINTENANCE RECOVERY THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.RCY.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "MAINTENANCE RECOVERY",
+            "MAINTENANCE RECOVERY CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXRC-",
+          name: "MAINTENANCE RECOVERY CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "ORDNANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXO--",
+          name: "ORDNANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "ORDNANCE",
+            "ORDNANCE THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXOT-",
+          name: "ORDNANCE THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "ORDNANCE",
+            "ORDNANCE CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXOC-",
+          name: "ORDNANCE CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.MSL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "ORDNANCE",
+            "ORDNANCE MISSILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXOM-",
+          name: "ORDNANCE MISSILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.MSL.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "ORDNANCE",
+            "ORDNANCE MISSILE",
+            "ORDNANCE MISSILE THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXOMT",
+          name: "ORDNANCE MISSILE THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.MSL.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "ORDNANCE",
+            "ORDNANCE MISSILE",
+            "ORDNANCE MISSILE CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXOMC",
+          name: "ORDNANCE MISSILE CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.EOP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "ELECTRO-OPTICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXE--",
+          name: "ELECTRO-OPTICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.EOP.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "ELECTRO-OPTICAL",
+            "ELECTRO-OPTICAL THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXET-",
+          name: "ELECTRO-OPTICAL THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.EOP.CRP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "COMBAT SERVICE SUPPORT",
+            "MAINTENANCE",
+            "ELECTRO-OPTICAL",
+            "ELECTRO-OPTICAL CORPS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "USXEC-",
+          name: "ELECTRO-OPTICAL CORPS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.UNT.C2HQ",
+          names: [
+            ,
+            "GROUND TRACK",
+            "UNIT",
+            "SPECIAL C2 HEADQUARTERS COMPONENT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "UH----",
+          name: "SPECIAL C2 HEADQUARTERS COMPONENT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "E-----",
+          name: "GROUND TRACK EQUIPMENT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EW----",
+          name: "WEAPON",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWM---",
+          name: "MISSILE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMA--",
+          name: "AIR DEFENSE (AD) MISSILE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.SHTR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "SHORT RANGE AD MISSILE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMAS-",
+          name: "SHORT RANGE AD MISSILE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.SHTR.TLAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "SHORT RANGE AD MISSILE LAUNCHER",
+            "TRANSPORTER LAUNCHER AND RADAR (TLAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMASR",
+          name: "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.SHTR.TELAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "SHORT RANGE AD MISSILE LAUNCHER",
+            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMASE",
+          name: "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.INTMR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "INTERMEDIATE RANGE AD MISSILE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMAI-",
+          name: "INTERMEDIATE RANGE AD MISSILE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.INTMR.TLAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "INTERMEDIATE RANGE AD MISSILE LAUNCHER",
+            "TRANSPORTER LAUNCHER AND RADAR (TLAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMAIR",
+          name: "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.INTMR.TELAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "INTERMEDIATE RANGE AD MISSILE LAUNCHER",
+            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMAIE",
+          name: "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.LNGR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "LONG RANGE AD MISSILE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMAL-",
+          name: "LONG RANGE AD MISSILE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.LNGR.TLAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "LONG RANGE AD MISSILE LAUNCHER",
+            "TRANSPORTER LAUNCHER AND RADAR (TLAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMALR",
+          name: "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.LNGR.TELAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "LONG RANGE AD MISSILE LAUNCHER",
+            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMALE",
+          name: "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "AD MISSILE LAUNCHER THEATER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMAT-",
+          name: "AD MISSILE LAUNCHER THEATER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT.TLAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "AD MISSILE LAUNCHER THEATER",
+            "TRANSPORTER LAUNCHER AND RADAR (TLAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMATR",
+          name: "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT.TELAR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
+            "AD MISSILE LAUNCHER THEATER",
+            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMATE",
+          name: "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.SUF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "SURF-SURF (SS) MISSILE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMS--",
+          name: "SURF-SURF (SS) MISSILE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.SUF.SHTR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "SURF-SURF (SS) MISSILE LAUNCHER",
+            "SHORT RANGE SS MISSILE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMSS-",
+          name: "SHORT RANGE SS MISSILE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.SUF.INTMR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "SURF-SURF (SS) MISSILE LAUNCHER",
+            "INTERMEDIATE RANGE SS MISSILE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMSI-",
+          name: "INTERMEDIATE RANGE SS MISSILE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.SUF.LNGR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "SURF-SURF (SS) MISSILE LAUNCHER",
+            "LONG RANGE SS MISSILE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMSL-",
+          name: "LONG RANGE SS MISSILE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.AT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "MISSILE LAUNCHER ANTITANK (AT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMT--",
+          name: "MISSILE LAUNCHER ANTITANK (AT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.AT.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "MISSILE LAUNCHER ANTITANK (AT)",
+            "MISSILE LAUNCHER AT LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMTL-",
+          name: "MISSILE LAUNCHER AT LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.AT.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "MISSILE LAUNCHER ANTITANK (AT)",
+            "MISSILE LAUNCHER AT MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMTM-",
+          name: "MISSILE LAUNCHER AT MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.AT.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MISSILE LAUNCHER",
+            "MISSILE LAUNCHER ANTITANK (AT)",
+            "MISSILE LAUNCHER AT HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWMTH-",
+          name: "MISSILE LAUNCHER AT HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.SRL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "SINGLE ROCKET LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWS---",
+          name: "SINGLE ROCKET LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.SRL.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "SINGLE ROCKET LAUNCHER",
+            "SINGLE ROCKET LAUNCHER LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWSL--",
+          name: "SINGLE ROCKET LAUNCHER LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.SRL.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "SINGLE ROCKET LAUNCHER",
+            "SINGLE ROCKET LAUNCHER MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWSM--",
+          name: "SINGLE ROCKET LAUNCHER MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.SRL.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "SINGLE ROCKET LAUNCHER",
+            "SINGLE ROCKET LAUNCHER HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWSH--",
+          name: "SINGLE ROCKET LAUNCHER HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MRL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MULTIPLE ROCKET LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWX---",
+          name: "MULTIPLE ROCKET LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MRL.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MULTIPLE ROCKET LAUNCHER",
+            "MULTIPLE ROCKET LAUNCHER LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWXL--",
+          name: "MULTIPLE ROCKET LAUNCHER LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MRL.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MULTIPLE ROCKET LAUNCHER",
+            "MULTIPLE ROCKET LAUNCHER MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWXM--",
+          name: "MULTIPLE ROCKET LAUNCHER MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MRL.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MULTIPLE ROCKET LAUNCHER",
+            "MULTIPLE ROCKET LAUNCHER HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWXH--",
+          name: "MULTIPLE ROCKET LAUNCHER HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ATRL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "ANTITANK ROCKET LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWT---",
+          name: "ANTITANK ROCKET LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ATRL.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "ANTITANK ROCKET LAUNCHER",
+            "ANTI-TANK ROCKET LAUNCHER LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWTL--",
+          name: "ANTI-TANK ROCKET LAUNCHER LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ATRL.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "ANTITANK ROCKET LAUNCHER",
+            "ANTI-TANK ROCKET LAUNCHER MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWTM--",
+          name: "ANTI-TANK ROCKET LAUNCHER MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ATRL.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "ANTITANK ROCKET LAUNCHER",
+            "ANTI-TANK ROCKET LAUNCHER HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWTH--",
+          name: "ANTI-TANK ROCKET LAUNCHER HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.RIFWPN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "RIFLE/AUTOMATIC WEAPON"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWR---",
+          name: "RIFLE/AUTOMATIC WEAPON",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.RIFWPN.RIF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "RIFLE/AUTOMATIC WEAPON",
+            "RIFLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWRR--",
+          name: "RIFLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.RIFWPN.LMG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "RIFLE/AUTOMATIC WEAPON",
+            "LIGHT MACHINE GUN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWRL--",
+          name: "LIGHT MACHINE GUN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.RIFWPN.HMG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "RIFLE/AUTOMATIC WEAPON",
+            "HEAVY MACHINE GUN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWRH--",
+          name: "HEAVY MACHINE GUN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.GREL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "GRENADE LAUNCHER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWZ---",
+          name: "GRENADE LAUNCHER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.GREL.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "GRENADE LAUNCHER",
+            "GRENADE LAUNCHER LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWZL--",
+          name: "GRENADE LAUNCHER LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.GREL.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "GRENADE LAUNCHER",
+            "GRENADE LAUNCHER MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWZM--",
+          name: "GRENADE LAUNCHER MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.GREL.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "GRENADE LAUNCHER",
+            "GRENADE LAUNCHER HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWZH--",
+          name: "GRENADE LAUNCHER HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MORT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MORTAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWO---",
+          name: "MORTAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MORT.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MORTAR",
+            "MORTAR LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWOL--",
+          name: "MORTAR LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MORT.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MORTAR",
+            "MORTAR MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWOM--",
+          name: "MORTAR MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.MORT.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "MORTAR",
+            "MORTAR HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWOH--",
+          name: "MORTAR HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.HOW",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "HOWITZER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWH---",
+          name: "HOWITZER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "HOWITZER",
+            "HOWITZER LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWHL--",
+          name: "HOWITZER LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.LIT.SPD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "HOWITZER",
+            "HOWITZER LIGHT",
+            "HOWITZER LIGHT SELF-PROPELLED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWHLS-",
+          name: "HOWITZER LIGHT SELF-PROPELLED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "HOWITZER",
+            "HOWITZER MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWHM--",
+          name: "HOWITZER MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.MDM.SPD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "HOWITZER",
+            "HOWITZER MEDIUM",
+            "HOWITZER MEDIUM SELF-PROPELLED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWHMS-",
+          name: "HOWITZER MEDIUM SELF-PROPELLED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "HOWITZER",
+            "HOWITZER HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWHH--",
+          name: "HOWITZER HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.HVY.SPD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "HOWITZER",
+            "HOWITZER HEAVY",
+            "HOWITZER HEAVY SELF-PROPELLED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWHHS-",
+          name: "HOWITZER HEAVY SELF-PROPELLED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ATG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "ANTI-TANK GUN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWG---",
+          name: "ANTI-TANK GUN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ATG.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "ANTI-TANK GUN",
+            "ANTI-TANK GUN LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWGL--",
+          name: "ANTI-TANK GUN LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ATG.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "ANTI-TANK GUN",
+            "ANTI-TANK GUN MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWGM--",
+          name: "ANTI-TANK GUN MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ATG.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "ANTI-TANK GUN",
+            "ANTI-TANK GUN HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWGH--",
+          name: "ANTI-TANK GUN HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ATG.RECL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "ANTI-TANK GUN",
+            "ANTI-TANK GUN RECOILLESS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWGR--",
+          name: "ANTI-TANK GUN RECOILLESS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.DFG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "DIRECT FIRE GUN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWD---",
+          name: "DIRECT FIRE GUN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "DIRECT FIRE GUN",
+            "DIRECT FIRE GUN LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWDL--",
+          name: "DIRECT FIRE GUN LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.LIT.SPD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "DIRECT FIRE GUN",
+            "DIRECT FIRE GUN LIGHT",
+            "DIRECT FIRE GUN LIGHT SELF-PROPELLED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWDLS-",
+          name: "DIRECT FIRE GUN LIGHT SELF-PROPELLED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "DIRECT FIRE GUN",
+            "DIRECT FIRE GUN MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWDM--",
+          name: "DIRECT FIRE GUN MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.MDM.SPD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "DIRECT FIRE GUN",
+            "DIRECT FIRE GUN MEDIUM",
+            "DIRECT FIRE GUN MEDIUM SELF-PROPELLED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWDMS-",
+          name: "DIRECT FIRE GUN MEDIUM SELF-PROPELLED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "DIRECT FIRE GUN",
+            "DIRECT FIRE GUN HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWDH--",
+          name: "DIRECT FIRE GUN HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.HVY.SPD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "DIRECT FIRE GUN",
+            "DIRECT FIRE GUN HEAVY",
+            "DIRECT FIRE GUN HEAVY SELF-PROPELLED"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWDHS-",
+          name: "DIRECT FIRE GUN HEAVY SELF-PROPELLED",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ADFG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "AIR DEFENSE GUN"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWA---",
+          name: "AIR DEFENSE GUN",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ADFG.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "AIR DEFENSE GUN",
+            "AIR DEFENSE GUN LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWAL--",
+          name: "AIR DEFENSE GUN LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ADFG.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "AIR DEFENSE GUN",
+            "AIR DEFENSE GUN MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWAM--",
+          name: "AIR DEFENSE GUN MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.WPN.ADFG.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "WEAPON",
+            "AIR DEFENSE GUN",
+            "AIR DEFENSE GUN HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EWAH--",
+          name: "AIR DEFENSE GUN HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EV----",
+          name: "GROUND VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVA---",
+          name: "ARMORED VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "TANK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVAT--",
+          name: "TANK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "TANK",
+            "TANK LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVATL-",
+          name: "TANK LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.LIT.RCY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "TANK",
+            "TANK LIGHT",
+            "TANK LIGHT RECOVERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVATLR",
+          name: "TANK LIGHT RECOVERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "TANK",
+            "TANK MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVATM-",
+          name: "TANK MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.MDM.RCY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "TANK",
+            "TANK MEDIUM",
+            "TANK MEDIUM RECOVERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVATMR",
+          name: "TANK MEDIUM RECOVERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "TANK",
+            "TANK HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVATH-",
+          name: "TANK HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.HVY.RCY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "TANK",
+            "TANK HEAVY",
+            "TANK HEAVY RECOVERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVATHR",
+          name: "TANK HEAVY RECOVERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.ARMPC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "ARMORED PERSONNEL CARRIER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVAA--",
+          name: "ARMORED PERSONNEL CARRIER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.ARMPC.RCY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "ARMORED PERSONNEL CARRIER",
+            "ARMORED PERSONNEL CARRIER RECOVERY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVAAR-",
+          name: "ARMORED PERSONNEL CARRIER RECOVERY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.ARMINF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "ARMORED INFANTRY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVAI--",
+          name: "ARMORED INFANTRY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.C2V",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "C2V/ACV"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVAC--",
+          name: "C2V/ACV",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.CSSVEH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "COMBAT SERVICE SUPPORT VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVAS--",
+          name: "COMBAT SERVICE SUPPORT VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.LARMVH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ARMORED VEHICLE",
+            "LIGHT ARMORED VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVAL--",
+          name: "LIGHT ARMORED VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVU---",
+          name: "UTILITY VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.BUS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "BUS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUB--",
+          name: "BUS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.SEMI",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "SEMI"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUS--",
+          name: "SEMI",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.SEMI.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "SEMI",
+            "SEMI LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUSL-",
+          name: "SEMI LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.SEMI.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "SEMI",
+            "SEMI MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUSM-",
+          name: "SEMI MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.SEMI.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "SEMI",
+            "SEMI HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUSH-",
+          name: "SEMI HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.LCCTRK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "LIMITED CROSS-COUNTRY TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUL--",
+          name: "LIMITED CROSS-COUNTRY TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.CCTRK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "CROSS-COUNTRY TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUX--",
+          name: "CROSS-COUNTRY TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.H2OCRT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "WATER CRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUR--",
+          name: "WATER CRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.TOWTRK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "TOW TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUT--",
+          name: "TOW TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.TOWTRK.LIT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "TOW TRUCK",
+            "TOW TRUCK LIGHT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUTL-",
+          name: "TOW TRUCK LIGHT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.TOWTRK.HVY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "TOW TRUCK",
+            "TOW TRUCK HEAVY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUTH-",
+          name: "TOW TRUCK HEAVY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.AMBLNC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "AMBULANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUA--",
+          name: "AMBULANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.AMBLNC.ARMD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "UTILITY VEHICLE",
+            "AMBULANCE",
+            "ARMORED AMBULANCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVUAA-",
+          name: "ARMORED AMBULANCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVE---",
+          name: "ENGINEER VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.BRG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "BRIDGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEB--",
+          name: "BRIDGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.ERHMR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "EARTHMOVER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEE--",
+          name: "EARTHMOVER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.CSNVEH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "CONSTRUCTION VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEC--",
+          name: "CONSTRUCTION VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MLVEH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "MINE LAYING VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEM--",
+          name: "MINE LAYING VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MLVEH.ARMCV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "MINE LAYING VEHICLE",
+            "ARMORED CARRIER WITH VOLCANO"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEMV-",
+          name: "ARMORED CARRIER WITH VOLCANO",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MLVEH.TRKMV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "MINE LAYING VEHICLE",
+            "TRUCK MOUNTED WITH VOLCANO"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEML-",
+          name: "TRUCK MOUNTED WITH VOLCANO",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MCVEH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "MINE CLEARING VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEA--",
+          name: "MINE CLEARING VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MCVEH.ARMVM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "MINE CLEARING VEHICLE",
+            "ARMORED MOUNTED MINE CLEARING VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEAA-",
+          name: "ARMORED MOUNTED MINE CLEARING VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MCVEH.TM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "MINE CLEARING VEHICLE",
+            "TRAILER MOUNTED MINE CLEARING VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEAT-",
+          name: "TRAILER MOUNTED MINE CLEARING VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.DZR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "DOZER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVED--",
+          name: "DOZER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.DZR.ARMD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "DOZER",
+            "ARMORED DOZER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEDA-",
+          name: "ARMORED DOZER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.AST",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "ARMORED ASSAULT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVES--",
+          name: "ARMORED ASSAULT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.ARMERV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "ARMORED ENGINEER RECON VEHICLE (AERV)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVER--",
+          name: "ARMORED ENGINEER RECON VEHICLE (AERV)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.BH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "BACKHOE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEH--",
+          name: "BACKHOE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.FRYTSP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "ENGINEER VEHICLE",
+            "FERRY TRANSPORTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVEF--",
+          name: "FERRY TRANSPORTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.TRNLCO",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "TRAIN LOCOMOTIVE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVT---",
+          name: "TRAIN LOCOMOTIVE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVC---",
+          name: "CIVILIAN VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.AUT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "AUTOMOBILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCA--",
+          name: "AUTOMOBILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.AUT.CPCT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "AUTOMOBILE",
+            "COMPACT AUTOMOBILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCAL-",
+          name: "COMPACT AUTOMOBILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.AUT.MDSZ",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "AUTOMOBILE",
+            "MIDSIZE AUTOMOBILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCAM-",
+          name: "MIDSIZE AUTOMOBILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.AUT.SDN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "AUTOMOBILE",
+            "SEDAN AUTOMOBILE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCAH-",
+          name: "SEDAN AUTOMOBILE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.OBTRK",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "OPEN-BED TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCO--",
+          name: "OPEN-BED TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.OBTRK.PU",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "OPEN-BED TRUCK",
+            "PICKUP OPEN-BED TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCOL-",
+          name: "PICKUP OPEN-BED TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.OBTRK.SMAL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "OPEN-BED TRUCK",
+            "SMALL OPEN-BED TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCOM-",
+          name: "SMALL OPEN-BED TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.OBTRK.LRG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "OPEN-BED TRUCK",
+            "LARGE OPEN-BED TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCOH-",
+          name: "LARGE OPEN-BED TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.MPV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "MULTI-PASSENGER VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCM--",
+          name: "MULTI-PASSENGER VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.MPV.VAN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "MULTI-PASSENGER VEHICLE",
+            "VAN MULTI-PASSENGER VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCML-",
+          name: "VAN MULTI-PASSENGER VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.MPV.SBUS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "MULTI-PASSENGER VEHICLE",
+            "SMALL BUS MULTI-PASSENGER VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCMM-",
+          name: "SMALL BUS MULTI-PASSENGER VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.MPV.LBUS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "MULTI-PASSENGER VEHICLE",
+            "LARGE BUS MULTI-PASSENGER VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCMH-",
+          name: "LARGE BUS MULTI-PASSENGER VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.UTYVEH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "UTILITY VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCU--",
+          name: "UTILITY VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.UTYVEH.SUV",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "UTILITY VEHICLE",
+            "SPORT UTILITY VEHICLE (SUV), UTILITY VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCUL-",
+          name: "SPORT UTILITY VEHICLE (SUV), UTILITY VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.UTYVEH.SBOX",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "UTILITY VEHICLE",
+            "SMALL BOX TRUCK, UTILITY VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCUM-",
+          name: "SMALL BOX TRUCK, UTILITY VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.UTYVEH.LBOX",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "UTILITY VEHICLE",
+            "LARGE BOX TRUCK, UTILITY VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCUH-",
+          name: "LARGE BOX TRUCK, UTILITY VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.JP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "JEEP TYPE VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCJ--",
+          name: "JEEP TYPE VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.JP.SMAL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "JEEP TYPE VEHICLE",
+            "SMALL/LIGHT JEEP TYPE VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCJL-",
+          name: "SMALL/LIGHT JEEP TYPE VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.JP.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "JEEP TYPE VEHICLE",
+            "MEDIUM JEEP TYPE VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCJM-",
+          name: "MEDIUM JEEP TYPE VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.JP.LRG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "JEEP TYPE VEHICLE",
+            "LARGE/HEAVY JEEP TYPE VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCJH-",
+          name: "LARGE/HEAVY JEEP TYPE VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "TRACTOR TRAILER TRUCK WITH BOX TRAILER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCT--",
+          name: "TRACTOR TRAILER TRUCK WITH BOX TRAILER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRL.SMAL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "TRACTOR TRAILER TRUCK WITH BOX TRAILER",
+            "SMALL/LIGHT BOX TRAILER, TRACTOR TRAILER TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCTL-",
+          name: "SMALL/LIGHT BOX TRAILER, TRACTOR TRAILER TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRL.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "TRACTOR TRAILER TRUCK WITH BOX TRAILER",
+            "MEDIUM BOX TRAILER, TRACTOR TRAILER TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCTM-",
+          name: "MEDIUM BOX TRAILER, TRACTOR TRAILER TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRL.LRG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "TRACTOR TRAILER TRUCK WITH BOX TRAILER",
+            "LARGE/HEAVY BOX TRAILER, TRACTOR TRAILER TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCTH-",
+          name: "LARGE/HEAVY BOX TRAILER, TRACTOR TRAILER TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCF--",
+          name: "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF.SMAL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER",
+            "SMALL/LIGHT FLATBED TRAILER, TRACTOR TRAILER TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCFL-",
+          name: "SMALL/LIGHT FLATBED TRAILER, TRACTOR TRAILER TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF.MDM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER",
+            "MEDIUM FLATBED TRAILER, TRACTOR TRAILER TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCFM-",
+          name: "MEDIUM FLATBED TRAILER, TRACTOR TRAILER TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF.LRG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "CIVILIAN VEHICLE",
+            "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER",
+            "LARGE/HEAVY FLATBED TRAILER, TRACTOR TRAILER TRUCK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVCFH-",
+          name: "LARGE/HEAVY FLATBED TRAILER, TRACTOR TRAILER TRUCK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.PKAN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "PACK ANIMAL(S)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVM---",
+          name: "PACK ANIMAL(S)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "MISSILE SUPPORT VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVS---",
+          name: "MISSILE SUPPORT VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.TLDR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "MISSILE SUPPORT VEHICLE",
+            "MISSILE SUPPORT VEHICLE TRANSLOADER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVST--",
+          name: "MISSILE SUPPORT VEHICLE TRANSLOADER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.TPTR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "MISSILE SUPPORT VEHICLE",
+            "MISSILE SUPPORT VEHICLE TRANSPORTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVSR--",
+          name: "MISSILE SUPPORT VEHICLE TRANSPORTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.CRN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "MISSILE SUPPORT VEHICLE",
+            "MISSILE SUPPORT VEHICLE CRANE/LOADING DEVICE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVSC--",
+          name: "MISSILE SUPPORT VEHICLE CRANE/LOADING DEVICE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.PLNT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "MISSILE SUPPORT VEHICLE",
+            "MISSILE SUPPORT VEHICLE PROPELLANT TRANSPORTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVSP--",
+          name: "MISSILE SUPPORT VEHICLE PROPELLANT TRANSPORTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.WH",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "GROUND VEHICLE",
+            "MISSILE SUPPORT VEHICLE",
+            "MISSILE SUPPORT VEHICLE WARHEAD TRANSPORTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EVSW--",
+          name: "MISSILE SUPPORT VEHICLE WARHEAD TRANSPORTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SNS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SENSOR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "ES----",
+          name: "SENSOR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SNS.RAD",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SENSOR",
+            "RADAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "ESR---",
+          name: "RADAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SNS.EMP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SENSOR",
+            "EMPLACED SENSOR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "ESE---",
+          name: "EMPLACED SENSOR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SPL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SPECIAL EQUIPMENT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EX----",
+          name: "SPECIAL EQUIPMENT",
+          remarks: "N/A"
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SPL.LSR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SPECIAL EQUIPMENT",
+            "LASER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EXL---",
+          name: "LASER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SPL.NBCEQT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SPECIAL EQUIPMENT",
+            "NBC EQUIPMENT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EXN---",
+          name: "NBC EQUIPMENT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SPL.FLMTHR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SPECIAL EQUIPMENT",
+            "FLAME THROWER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EXF---",
+          name: "FLAME THROWER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SPL.LNDMNE",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SPECIAL EQUIPMENT",
+            "LAND MINES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EXM---",
+          name: "LAND MINES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SPL.LNDMNE.CLM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SPECIAL EQUIPMENT",
+            "LAND MINES",
+            "CLAYMORE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EXMC--",
+          name: "CLAYMORE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.EQT.SPL.LNDMNE.LTL",
+          names: [
+            ,
+            "GROUND TRACK",
+            "GROUND TRACK EQUIPMENT",
+            "SPECIAL EQUIPMENT",
+            "LAND MINES",
+            "LESS THAN LETHAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "EXML--",
+          name: "LESS THAN LETHAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "I-----",
+          name: "INSTALLATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.RMP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "RAW MATERIAL PRODUCTION/STORAGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IR----",
+          name: "RAW MATERIAL PRODUCTION/STORAGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.RMP.MNE",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "RAW MATERIAL PRODUCTION/STORAGE",
+            "MINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IRM---",
+          name: "MINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.RMP.PGO",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "RAW MATERIAL PRODUCTION/STORAGE",
+            "PETROLEUM/GAS/OIL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IRP---",
+          name: "PETROLEUM/GAS/OIL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.RMP.NBC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "RAW MATERIAL PRODUCTION/STORAGE",
+            "NBC"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IRN---",
+          name: "NBC",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.RMP.NBC.BIO",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "RAW MATERIAL PRODUCTION/STORAGE",
+            "NBC",
+            "BIOLOGICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IRNB--",
+          name: "BIOLOGICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.RMP.NBC.CML",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "RAW MATERIAL PRODUCTION/STORAGE",
+            "NBC",
+            "CHEMICAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IRNC--",
+          name: "CHEMICAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.RMP.NBC.NUC",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "RAW MATERIAL PRODUCTION/STORAGE",
+            "NBC",
+            "NUCLEAR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IRNN--",
+          name: "NUCLEAR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.PF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "PROCESSING FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IP----",
+          name: "PROCESSING FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.PF.DECON",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "PROCESSING FACILITY",
+            "DECONTAMINATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IPD---",
+          name: "DECONTAMINATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.EQTMNF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "EQUIPMENT MANUFACTURE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IE----",
+          name: "EQUIPMENT MANUFACTURE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.SRUF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "SERVICE, RESEARCH, UTILITY FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IU----",
+          name: "SERVICE, RESEARCH, UTILITY FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.SRUF.TRF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "SERVICE, RESEARCH, UTILITY FACILITY",
+            "TECHNOLOGICAL RESEARCH FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IUR---",
+          name: "TECHNOLOGICAL RESEARCH FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.SRUF.TCF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "SERVICE, RESEARCH, UTILITY FACILITY",
+            "TELECOMMUNICATIONS FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IUT---",
+          name: "TELECOMMUNICATIONS FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.SRUF.EPF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "SERVICE, RESEARCH, UTILITY FACILITY",
+            "ELECTRIC POWER FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IUE---",
+          name: "ELECTRIC POWER FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.SRUF.EPF.NPT",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "SERVICE, RESEARCH, UTILITY FACILITY",
+            "ELECTRIC POWER FACILITY",
+            "NUCLEAR PLANT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IUEN--",
+          name: "NUCLEAR PLANT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.SRUF.EPF.DAM",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "SERVICE, RESEARCH, UTILITY FACILITY",
+            "ELECTRIC POWER FACILITY",
+            "DAM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IUED--",
+          name: "DAM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.SRUF.EPF.FOSF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "SERVICE, RESEARCH, UTILITY FACILITY",
+            "ELECTRIC POWER FACILITY",
+            "FOSSIL FUEL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IUEF--",
+          name: "FOSSIL FUEL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.SRUF.PWS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "SERVICE, RESEARCH, UTILITY FACILITY",
+            "PUBLIC WATER SERVICES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IUP---",
+          name: "PUBLIC WATER SERVICES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IM----",
+          name: "MILITARY MATERIEL FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.NENY",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "NUCLEAR ENERGY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMF---",
+          name: "NUCLEAR ENERGY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.NENY.ATMER",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "NUCLEAR ENERGY",
+            "ATOMIC ENERGY REACTOR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMFA--",
+          name: "ATOMIC ENERGY REACTOR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.NENY.NMP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "NUCLEAR ENERGY",
+            "NUCLEAR MATERIAL PRODUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMFP--",
+          name: "NUCLEAR MATERIAL PRODUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.NENY.NMP.WPNGR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "NUCLEAR ENERGY",
+            "NUCLEAR MATERIAL PRODUCTION",
+            "WEAPONS GRADE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMFPW-",
+          name: "WEAPONS GRADE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.NENY.NMS",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "NUCLEAR ENERGY",
+            "NUCLEAR MATERIAL STORAGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMFS--",
+          name: "NUCLEAR MATERIAL STORAGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.APA",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "AIRCRAFT PRODUCTION & ASSEMBLY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMA---",
+          name: "AIRCRAFT PRODUCTION & ASSEMBLY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.AMEP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "AMMUNITION AND EXPLOSIVES PRODUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IME---",
+          name: "AMMUNITION AND EXPLOSIVES PRODUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.AMTP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "ARMAMENT PRODUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMG---",
+          name: "ARMAMENT PRODUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.MILVP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "MILITARY VEHICLE PRODUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMV---",
+          name: "MILITARY VEHICLE PRODUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.ENGEP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "ENGINEERING EQUIPMENT PRODUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMN---",
+          name: "ENGINEERING EQUIPMENT PRODUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.ENGEP.BRG",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "ENGINEERING EQUIPMENT PRODUCTION",
+            "BRIDGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMNB--",
+          name: "BRIDGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.CBWP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "CHEMICAL & BIOLOGICAL WARFARE PRODUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMC---",
+          name: "CHEMICAL & BIOLOGICAL WARFARE PRODUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.SHPCSN",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "SHIP CONSTRUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMS---",
+          name: "SHIP CONSTRUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MMF.MSSP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY MATERIEL FACILITY",
+            "MISSILE & SPACE SYSTEM PRODUCTION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IMM---",
+          name: "MISSILE & SPACE SYSTEM PRODUCTION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.GOVLDR",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "GOVERNMENT LEADERSHIP"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IG----",
+          name: "GOVERNMENT LEADERSHIP",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MILBF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY BASE/FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IB----",
+          name: "MILITARY BASE/FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MILBF.AB",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY BASE/FACILITY",
+            "AIRPORT/AIRBASE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IBA---",
+          name: "AIRPORT/AIRBASE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MILBF.SP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MILITARY BASE/FACILITY",
+            "SEAPORT/NAVAL BASE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IBN---",
+          name: "SEAPORT/NAVAL BASE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.TSPF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "TRANSPORT FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IT----",
+          name: "TRANSPORT FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MEDF",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MEDICAL FACILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IX----",
+          name: "MEDICAL FACILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.GRDTRK.INS.MEDF.HSP",
+          names: [
+            ,
+            "GROUND TRACK",
+            "INSTALLATION",
+            "MEDICAL FACILITY",
+            "HOSPITAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "G",
+          status: "*",
+          functionid: "IXH---",
+          name: "HOSPITAL",
+          remarks: ""
+        }
+      ]
+    },
+    SSUF: {
+      name: "SEA SURFACE",
+      mainIcon: [
+        {
+          hierarchy: "WAR.SSUF",
+          names: [
+            ,
+            "SEA SURFACE TRACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "------",
+          name: "SEA SURFACE TRACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "C-----",
+          name: "COMBATANT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CL----",
+          name: "LINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE.CRR",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE",
+            "CARRIER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CLCV--",
+          name: "CARRIER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE.BBS",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE",
+            "BATTLESHIP"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CLBB--",
+          name: "BATTLESHIP",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE.CRU",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE",
+            "CRUISER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CLCC--",
+          name: "CRUISER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE.DD",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE",
+            "DESTROYER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CLDD--",
+          name: "DESTROYER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE.FFR",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE",
+            "FRIGATE/CORVETTE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CLFF--",
+          name: "FRIGATE/CORVETTE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE.LL",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE",
+            "LITTORAL COMBATANT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CLLL--",
+          name: "LITTORAL COMBATANT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE.LL.ASBW",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE",
+            "LITTORAL COMBATANT",
+            "ANTISUBMARINE WARFARE MISSION PACKAGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CLLLAS",
+          name: "ANTISUBMARINE WARFARE MISSION PACKAGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE.LL.MNEW",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE",
+            "LITTORAL COMBATANT",
+            "MINE WARFARE MISSION PACKAGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CLLLMI",
+          name: "MINE WARFARE MISSION PACKAGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.LNE.LL.SUW",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "LINE",
+            "LITTORAL COMBATANT",
+            "SURFACE WARFARE (SUW) MISSION PACKAGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CLLLSU",
+          name: "SURFACE WARFARE (SUW) MISSION PACKAGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.AMPWS",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "AMPHIBIOUS WARFARE SHIP"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CA----",
+          name: "AMPHIBIOUS WARFARE SHIP",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.AMPWS.ASTVES",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "AMPHIBIOUS WARFARE SHIP",
+            "ASSAULT VESSEL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CALA--",
+          name: "ASSAULT VESSEL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.AMPWS.LNDSHP",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "AMPHIBIOUS WARFARE SHIP",
+            "LANDING SHIP"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CALS--",
+          name: "LANDING SHIP",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.AMPWS.LNDSHP.MDM",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "AMPHIBIOUS WARFARE SHIP",
+            "LANDING SHIP",
+            "LANDING SHIP MEDIUM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CALSM-",
+          name: "LANDING SHIP MEDIUM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.AMPWS.LNDSHP.TANK",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "AMPHIBIOUS WARFARE SHIP",
+            "LANDING SHIP",
+            "LANDING SHIP TANK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CALST-",
+          name: "LANDING SHIP TANK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.AMPWS.LNDCRT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "AMPHIBIOUS WARFARE SHIP",
+            "LANDING CRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CALC--",
+          name: "LANDING CRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.MNEWV",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "MINE WARFARE VESSEL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CM----",
+          name: "MINE WARFARE VESSEL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.MNEWV.MNELYR",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "MINE WARFARE VESSEL",
+            "MINELAYER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CMML--",
+          name: "MINELAYER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.MNEWV.MNESWE",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "MINE WARFARE VESSEL",
+            "MINESWEEPER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CMMS--",
+          name: "MINESWEEPER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.MNEWV.MNEHNT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "MINE WARFARE VESSEL",
+            "MINEHUNTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CMMH--",
+          name: "MINEHUNTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.MNEWV.MCMSUP",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "MINE WARFARE VESSEL",
+            "MCM SUPPORT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CMMA--",
+          name: "MCM SUPPORT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.PAT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "PATROL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CP----",
+          name: "PATROL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.PAT.ASBW",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "PATROL",
+            "ANTISUBMARINE WARFARE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CPSB--",
+          name: "ANTISUBMARINE WARFARE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.PAT.ASUW",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "PATROL",
+            "ANTISURFACE WARFARE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CPSU--",
+          name: "ANTISURFACE WARFARE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.PAT.ASUW.ASMSL",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "PATROL",
+            "ANTISURFACE WARFARE",
+            "ANTI-SHIP MISSILE PATROL CRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CPSUM-",
+          name: "ANTI-SHIP MISSILE PATROL CRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.PAT.ASUW.TPD",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "PATROL",
+            "ANTISURFACE WARFARE",
+            "TORPEDO PATROL CRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CPSUT-",
+          name: "TORPEDO PATROL CRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.PAT.ASUW.GUN",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "PATROL",
+            "ANTISURFACE WARFARE",
+            "GUN PATROL CRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CPSUG-",
+          name: "GUN PATROL CRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.HOV",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "HOVERCRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CH----",
+          name: "HOVERCRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.STN",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "STATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "S-----",
+          name: "STATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.STN.PKT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "STATION",
+            "PICKET"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "SP----",
+          name: "PICKET",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.STN.ASWSHP",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "STATION",
+            "ASW SHIP"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "SA----",
+          name: "ASW SHIP",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.NAVGRP",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "NAVY GROUP"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "G-----",
+          name: "NAVY GROUP",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.NAVGRP.NAVTF",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "NAVY GROUP",
+            "NAVY TASK FORCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "GT----",
+          name: "NAVY TASK FORCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.NAVGRP.NAVTG",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "NAVY GROUP",
+            "NAVY TASK GROUP"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "GG----",
+          name: "NAVY TASK GROUP",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.NAVGRP.NAVTU",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "NAVY GROUP",
+            "NAVY TASK UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "GU----",
+          name: "NAVY TASK UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.NAVGRP.CNY",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "NAVY GROUP",
+            "CONVOY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "GC----",
+          name: "CONVOY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.SUFDCY",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "SURFACE DECOY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CD----",
+          name: "SURFACE DECOY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.USV",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "UNMANNED SURFACE VEHICLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CU----",
+          name: "UNMANNED SURFACE VEHICLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.USV.MNECM",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "UNMANNED SURFACE VEHICLE",
+            "MINE COUNTERMEASURES SURFACE DRONE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CUM---",
+          name: "MINE COUNTERMEASURES SURFACE DRONE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.USV.ASBW",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "UNMANNED SURFACE VEHICLE",
+            "ANTISUBMARINE WARFARE SURFACE DRONE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CUS---",
+          name: "ANTISUBMARINE WARFARE SURFACE DRONE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.CBTT.USV.ASUW",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "COMBATANT",
+            "UNMANNED SURFACE VEHICLE",
+            "ANTISURFACE WARFARE SURFACE DRONE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "CUN---",
+          name: "ANTISURFACE WARFARE SURFACE DRONE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NCBTT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NONCOMBATANT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "N-----",
+          name: "NONCOMBATANT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NCBTT.UWRPM",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NONCOMBATANT",
+            "UNDERWAY REPLENISHMENT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "NR----",
+          name: "UNDERWAY REPLENISHMENT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NCBTT.FLTSUP",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NONCOMBATANT",
+            "FLEET SUPPORT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "NF----",
+          name: "FLEET SUPPORT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NCBTT.INT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NONCOMBATANT",
+            "INTELLIGENCE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "NI----",
+          name: "INTELLIGENCE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NCBTT.SSH",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NONCOMBATANT",
+            "SERVICE & SUPPORT HARBOR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "NS----",
+          name: "SERVICE & SUPPORT HARBOR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NCBTT.HSPSHP",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NONCOMBATANT",
+            "HOSPITAL SHIP"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "NM----",
+          name: "HOSPITAL SHIP",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NCBTT.HOV",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NONCOMBATANT",
+            "HOVERCRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "NH----",
+          name: "HOVERCRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NCBTT.STN",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NONCOMBATANT",
+            "STATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "NN----",
+          name: "STATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NCBTT.STN.RSC",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NONCOMBATANT",
+            "STATION",
+            "RESCUE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "NNR---",
+          name: "RESCUE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "X-----",
+          name: "NON-MILITARY",
+          remarks: "N/A"
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.MCT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "MERCHANT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XM----",
+          name: "MERCHANT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.MCT.CGO",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "MERCHANT",
+            "CARGO"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XMC---",
+          name: "CARGO",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.MCT.RORO",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "MERCHANT",
+            "ROLL ON/ROLL OFF"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XMR---",
+          name: "ROLL ON/ROLL OFF",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.MCT.OLR",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "MERCHANT",
+            "OILER/TANKER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XMO---",
+          name: "OILER/TANKER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.MCT.TUG",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "MERCHANT",
+            "TUG"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XMTU--",
+          name: "TUG",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.MCT.FRY",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "MERCHANT",
+            "FERRY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XMF---",
+          name: "FERRY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.MCT.PSG",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "MERCHANT",
+            "PASSENGER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XMP---",
+          name: "PASSENGER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.MCT.HAZMAT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "MERCHANT",
+            "HAZARDOUS MATERIALS (HAZMAT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XMH---",
+          name: "HAZARDOUS MATERIALS (HAZMAT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.MCT.TOWVES",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "MERCHANT",
+            "TOWING VESSEL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XMTO--",
+          name: "TOWING VESSEL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.FSG",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "FISHING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XF----",
+          name: "FISHING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.FSG.DRFT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "FISHING",
+            "DRIFTER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XFDF--",
+          name: "DRIFTER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.FSG.DRG",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "FISHING",
+            "DREDGE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XFDR--",
+          name: "DREDGE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.FSG.TRW",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "FISHING",
+            "TRAWLER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XFTR--",
+          name: "TRAWLER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.LESCRT",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "LEISURE CRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XR----",
+          name: "LEISURE CRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.LAWENV",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "LAW ENFORCEMENT VESSEL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XL----",
+          name: "LAW ENFORCEMENT VESSEL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.NMIL.HOV",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "NON-MILITARY",
+            "HOVERCRAFT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "XH----",
+          name: "HOVERCRAFT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SSUF.OWN",
+          names: [
+            ,
+            "SEA SURFACE TRACK",
+            "OWN TRACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "S",
+          status: "*",
+          functionid: "O-----",
+          name: "OWN TRACK",
+          remarks: ""
+        }
+      ]
+    },
+    SBSUF: {
+      name: "SUBSURFACE",
+      mainIcon: [
+        {
+          hierarchy: "WAR.SBSUF",
+          names: [
+            ,
+            "SUBSURFACE TRACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "------",
+          name: "SUBSURFACE TRACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "S-----",
+          name: "SUBMARINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.SURF",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "SURFACED SUBMARINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SF----",
+          name: "SURFACED SUBMARINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.NPRN",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "NUCLEAR PROPULSION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SN----",
+          name: "NUCLEAR PROPULSION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.NPRN.SURF",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "NUCLEAR PROPULSION",
+            "SURFACED NUCLEAR PROPULSION SUBMARINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SNF---",
+          name: "SURFACED NUCLEAR PROPULSION SUBMARINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.NPRN.ATK",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "NUCLEAR PROPULSION",
+            "ATTACK SUBMARINE (SSN)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SNA---",
+          name: "ATTACK SUBMARINE (SSN)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.NPRN.MSL",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "NUCLEAR PROPULSION",
+            "MISSILE SUBMARINE (TYPE UNKNOWN)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SNM---",
+          name: "MISSILE SUBMARINE (TYPE UNKNOWN)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.NPRN.GDD",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "NUCLEAR PROPULSION",
+            "GUIDED MISSILE SUBMARINE (SSGN)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SNG---",
+          name: "GUIDED MISSILE SUBMARINE (SSGN)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.NPRN.BLST",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "NUCLEAR PROPULSION",
+            "BALLISTIC MISSILE SUBMARINE (SSBN)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SNB---",
+          name: "BALLISTIC MISSILE SUBMARINE (SSBN)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.CNVPRN",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "CONVENTIONAL PROPULSION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SC----",
+          name: "CONVENTIONAL PROPULSION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.CNVPRN.SURF",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "CONVENTIONAL PROPULSION",
+            "SURFACED CONVENTIONAL PROPULSION SUBMARINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SCF---",
+          name: "SURFACED CONVENTIONAL PROPULSION SUBMARINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.CNVPRN.ATK",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "CONVENTIONAL PROPULSION",
+            "ATTACK SUBMARINE (SS)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SCA---",
+          name: "ATTACK SUBMARINE (SS)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.CNVPRN.MSL",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "CONVENTIONAL PROPULSION",
+            "MISSILE SUBMARINE (TYPE UNKNOWN)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SCM---",
+          name: "MISSILE SUBMARINE (TYPE UNKNOWN)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.CNVPRN.GDD",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "CONVENTIONAL PROPULSION",
+            "GUIDED MISSILE SUBMARINE (SSG)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SCG---",
+          name: "GUIDED MISSILE SUBMARINE (SSG)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.CNVPRN.BLST",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "CONVENTIONAL PROPULSION",
+            "BALLISTIC MISSILE SUBMARINE (SSB)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SCB---",
+          name: "BALLISTIC MISSILE SUBMARINE (SSB)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.OTH",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "OTHER SUBMERSIBLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SO----",
+          name: "OTHER SUBMERSIBLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.OTH.SURF",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "OTHER SUBMERSIBLE",
+            "SURFACED OTHER SUBMERSIBLE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SOF---",
+          name: "SURFACED OTHER SUBMERSIBLE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.STN",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "STATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SS----",
+          name: "STATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.STN.ASWSUB",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "STATION",
+            "ASW SUBMARINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SSA---",
+          name: "ASW SUBMARINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.UUV",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "UNMANNED UNDERWATER VEHICLE (UUV)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SU----",
+          name: "UNMANNED UNDERWATER VEHICLE (UUV)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.UUV.MNEW",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "UNMANNED UNDERWATER VEHICLE (UUV)",
+            "MINE WARFARE SUBSURFACE DRONE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SUM---",
+          name: "MINE WARFARE SUBSURFACE DRONE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.UUV.ASBW",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "UNMANNED UNDERWATER VEHICLE (UUV)",
+            "ANTISUBMARINE WARFARE SUBSURFACE DRONE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SUS---",
+          name: "ANTISUBMARINE WARFARE SUBSURFACE DRONE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.SUB.UUV.ASUW",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "SUBMARINE",
+            "UNMANNED UNDERWATER VEHICLE (UUV)",
+            "ANTISURFACE WARFARE SUBSURFACE DRONE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "SUN---",
+          name: "ANTISURFACE WARFARE SUBSURFACE DRONE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "W-----",
+          name: "UNDERWATER WEAPON",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.TPD",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "TORPEDO"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WT----",
+          name: "TORPEDO",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WM----",
+          name: "SEA MINE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE.DLT",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE",
+            "SEA MINE DEALT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WMD---",
+          name: "SEA MINE DEALT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMG",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE",
+            "SEA MINE (GROUND)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WMG---",
+          name: "SEA MINE (GROUND)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMG.DLT",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE",
+            "SEA MINE (GROUND)",
+            "SEA MINE (GROUND) DEALT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WMGD--",
+          name: "SEA MINE (GROUND) DEALT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMM",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE",
+            "SEA MINE (MOORED)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WMM---",
+          name: "SEA MINE (MOORED)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMM.DLT",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE",
+            "SEA MINE (MOORED)",
+            "SEA MINE (MOORED) DEALT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WMMD--",
+          name: "SEA MINE (MOORED) DEALT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMF",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE",
+            "SEA MINE (FLOATING)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WMF---",
+          name: "SEA MINE (FLOATING)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMF.DLT",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE",
+            "SEA MINE (FLOATING)",
+            "SEA MINE (FLOATING) DEALT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WMFD--",
+          name: "SEA MINE (FLOATING) DEALT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMOP",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE",
+            "SEA MINE (OTHER POSITION)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WMO---",
+          name: "SEA MINE (OTHER POSITION)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMOP.DLT",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER WEAPON",
+            "SEA MINE",
+            "SEA MINE (OTHER POSITION)",
+            "SEA MINE (OTHER POSITION) DEALT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WMOD--",
+          name: "SEA MINE (OTHER POSITION) DEALT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2DCY",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER DECOY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WD----",
+          name: "UNDERWATER DECOY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.UH2DCY.SMDCY",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "UNDERWATER DECOY",
+            "SEA MINE DECOY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "WDM---",
+          name: "SEA MINE DECOY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SBSUF.NSUB",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "NON-SUBMARINE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "N-----",
+          name: "NON-SUBMARINE",
+          remarks: "N/A"
+        },
+        {
+          hierarchy: "WAR.SBSUF.NSUB.DVR",
+          names: [
+            ,
+            "SUBSURFACE TRACK",
+            "NON-SUBMARINE",
+            "DIVER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "U",
+          status: "*",
+          functionid: "ND----",
+          name: "DIVER",
+          remarks: ""
+        }
+      ]
+    },
+    SOFUNT: {
+      name: "SPECIAL OPERATIONS FORCES (SOF)",
+      mainIcon: [
+        {
+          hierarchy: "WAR.SOFUNT",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "------",
+          name: "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "A-----",
+          name: "SOF UNIT AVIATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.FIXD",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT FIXED WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AF----",
+          name: "SOF UNIT FIXED WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.FIXD.ATK",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT FIXED WING",
+            "SOF UNIT ATTACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AFA---",
+          name: "SOF UNIT ATTACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.FIXD.RFE",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT FIXED WING",
+            "SOF UNIT REFUEL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AFK---",
+          name: "SOF UNIT REFUEL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.FIXD.UTY",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT FIXED WING",
+            "SOF UNIT UTILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AFU---",
+          name: "SOF UNIT UTILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.FIXD.UTY.LIT",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT FIXED WING",
+            "SOF UNIT UTILITY",
+            "SOF UNIT UTILITY (LIGHT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AFUL--",
+          name: "SOF UNIT UTILITY (LIGHT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.FIXD.UTY.MDM",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT FIXED WING",
+            "SOF UNIT UTILITY",
+            "SOF UNIT UTILITY (MEDIUM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AFUM--",
+          name: "SOF UNIT UTILITY (MEDIUM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.FIXD.UTY.HVY",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT FIXED WING",
+            "SOF UNIT UTILITY",
+            "SOF UNIT UTILITY (HEAVY)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AFUH--",
+          name: "SOF UNIT UTILITY (HEAVY)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.VSTOL",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT V/STOL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AV----",
+          name: "SOF UNIT V/STOL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.ROT",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT ROTARY WING"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AH----",
+          name: "SOF UNIT ROTARY WING",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.ROT.CSAR",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT ROTARY WING",
+            "SOF UNIT COMBAT SEARCH AND RESCUE"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AHH---",
+          name: "SOF UNIT COMBAT SEARCH AND RESCUE",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.ROT.ATK",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT ROTARY WING",
+            "SOF UNIT ATTACK"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AHA---",
+          name: "SOF UNIT ATTACK",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.ROT.UTY",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT ROTARY WING",
+            "SOF UNIT UTILITY"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AHU---",
+          name: "SOF UNIT UTILITY",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.ROT.UTY.LIT",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT ROTARY WING",
+            "SOF UNIT UTILITY",
+            "SOF UNIT UTILITY (LIGHT)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AHUL--",
+          name: "SOF UNIT UTILITY (LIGHT)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.ROT.UTY.MDM",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT ROTARY WING",
+            "SOF UNIT UTILITY",
+            "SOF UNIT UTILITY (MEDIUM)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AHUM--",
+          name: "SOF UNIT UTILITY (MEDIUM)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.AVN.ROT.UTY.HVY",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT AVIATION",
+            "SOF UNIT ROTARY WING",
+            "SOF UNIT UTILITY",
+            "SOF UNIT UTILITY (HEAVY)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "AHUH--",
+          name: "SOF UNIT UTILITY (HEAVY)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.NAV",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT SOF UNIT NAVAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "N-----",
+          name: "SOF UNIT SOF UNIT NAVAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.NAV.SEAL",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT SOF UNIT NAVAL",
+            "SOF UNIT SEAL"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "NS----",
+          name: "SOF UNIT SEAL",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.NAV.UH2DML",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT SOF UNIT NAVAL",
+            "SOF UNIT UNDERWATER DEMOLITION TEAM"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "NU----",
+          name: "SOF UNIT UNDERWATER DEMOLITION TEAM",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.NAV.SBT",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT SOF UNIT NAVAL",
+            "SOF UNIT SPECIAL BOAT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "NB----",
+          name: "SOF UNIT SPECIAL BOAT",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.NAV.SSSNR",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT SOF UNIT NAVAL",
+            "SOF UNIT SPECIAL SSNR"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "NN----",
+          name: "SOF UNIT SPECIAL SSNR",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.GRD",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT GROUND"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "G-----",
+          name: "SOF UNIT GROUND",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.GRD.SOF",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT GROUND",
+            "SOF UNIT SPECIAL FORCES"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "GS----",
+          name: "SOF UNIT SPECIAL FORCES",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.GRD.RGR",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT GROUND",
+            "SOF UNIT RANGER"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "GR----",
+          name: "SOF UNIT RANGER",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.GRD.PSYOP",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT GROUND",
+            "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOP)"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "GP----",
+          name: "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOP)",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.GRD.PSYOP.FIXAVN",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT GROUND",
+            "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOP)",
+            "SOF UNIT FIXED WING AVIATION"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "GPA---",
+          name: "SOF UNIT FIXED WING AVIATION",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.GRD.CVLAFF",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT GROUND",
+            "SOF UNIT CIVIL AFFAIRS"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "GC----",
+          name: "SOF UNIT CIVIL AFFAIRS",
+          remarks: ""
+        },
+        {
+          hierarchy: "WAR.SOFUNT.SUP",
+          names: [
+            ,
+            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
+            "SOF UNIT SUPPORT"
+          ],
+          codingscheme: "S",
+          affiliation: "*",
+          battledimension: "F",
+          status: "*",
+          functionid: "B-----",
+          name: "SOF UNIT SUPPORT",
+          remarks: ""
+        }
+      ]
+    }
+  },
+  TACGRP: {
+    name: "TACTICAL GRAPHICS",
+    mainIcon: [
+      {
+        geometry: "",
+        hierarchy: "TACGRP",
+        names: [
+          "TACTICAL GRAPHICS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "-",
+        status: "-",
+        functionid: "-------",
+        name: "TACTICAL GRAPHICS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "------",
+        name: "TASKS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.BLK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "BLOCK"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "B-----",
+        name: "BLOCK",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.BRH",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "BREACH"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "H-----",
+        name: "BREACH",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.BYS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "BYPASS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "Y-----",
+        name: "BYPASS",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.CNZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "CANALIZE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "C-----",
+        name: "CANALIZE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.CLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "CLEAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "X-----",
+        name: "CLEAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.CNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "CONTAIN"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "J-----",
+        name: "CONTAIN",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.CATK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "COUNTERATTACK (CATK)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "K-----",
+        name: "COUNTERATTACK (CATK)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.CATK.CATKF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "COUNTERATTACK (CATK)",
+          "COUNTERATTACK BY FIRE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "KF----",
+        name: "COUNTERATTACK BY FIRE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.DLY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "DELAY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "L-----",
+        name: "DELAY",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.TSK.DSTY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "DESTROY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "D-----",
+        name: "DESTROY",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.DRT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "DISRUPT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "T-----",
+        name: "DISRUPT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.FIX",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "FIX"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "F-----",
+        name: "FIX",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.FLWASS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "FOLLOW AND ASSUME"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "A-----",
+        name: "FOLLOW AND ASSUME",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.FLWASS.FLWSUP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "FOLLOW AND ASSUME",
+          "FOLLOW AND SUPPORT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "AS----",
+        name: "FOLLOW AND SUPPORT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.TSK.ITDT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "INTERDICT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "I-----",
+        name: "INTERDICT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.ISL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "ISOLATE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "E-----",
+        name: "ISOLATE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.TSK.NEUT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "NEUTRALIZE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "N-----",
+        name: "NEUTRALIZE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.OCC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "OCCUPY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "O-----",
+        name: "OCCUPY",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.PNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "PENETRATE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "P-----",
+        name: "PENETRATE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.RIP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "RELIEF IN PLACE (RIP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "R-----",
+        name: "RELIEF IN PLACE (RIP)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.RTN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "RETAIN"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "Q-----",
+        name: "RETAIN",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.RTM",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "RETIREMENT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "M-----",
+        name: "RETIREMENT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.SCE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "SECURE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "S-----",
+        name: "SECURE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.SEC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "SECURITY"
+        ],
+        codingscheme: "G",
+        affiliation: "-",
+        battledimension: "T",
+        status: "*",
+        functionid: "U-----",
+        name: "SECURITY",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.SEC.SCN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "SECURITY",
+          "SCREEN"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "US----",
+        name: "SCREEN",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.SEC.GUD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "SECURITY",
+          "GUARD"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "UG----",
+        name: "GUARD",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.SEC.COV",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "SECURITY",
+          "COVER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "UC----",
+        name: "COVER",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.SZE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "SEIZE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "Z-----",
+        name: "SEIZE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.WDR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "WITHDRAW"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "W-----",
+        name: "WITHDRAW",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.TSK.WDR.WDRUP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "TASKS",
+          "WITHDRAW",
+          "WITHDRAW UNDER PRESSURE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "T",
+        status: "*",
+        functionid: "WP----",
+        name: "WITHDRAW UNDER PRESSURE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "------",
+        name: "COMMAND AND CONTROL AND GENERAL MANEUVER",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "G-----",
+        name: "GENERAL",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.PNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GP----",
+        name: "POINTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPU---",
+        name: "UNDER SEA WARFARE",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.UH2",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "UNDERWATER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUU--",
+        name: "UNDERWATER",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.UH2.DTM",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "UNDERWATER",
+          "DATUM"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUUD-",
+        name: "DATUM",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.UH2.BCON",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "UNDERWATER",
+          "BRIEF CONTACT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUUB-",
+        name: "BRIEF CONTACT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.UH2.LCON",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "UNDERWATER",
+          "LOST CONTACT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUUL-",
+        name: "LOST CONTACT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.UH2.SNK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "UNDERWATER",
+          "SINKER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUUS-",
+        name: "SINKER",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUY--",
+        name: "SONOBUOY",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.PTNCTR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "PATTERN CENTER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYP-",
+        name: "PATTERN CENTER",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.DIFAR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "DIRECTIONAL FREQUENCY ANALYZING AND RECORDING (DIFAR)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYD-",
+        name: "DIRECTIONAL FREQUENCY ANALYZING AND RECORDING (DIFAR)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.LOFAR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "LOW FREQUENCY ANALYZING AND RECORDING (LOFAR)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYL-",
+        name: "LOW FREQUENCY ANALYZING AND RECORDING (LOFAR)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.CASS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "COMMAND ACTIVE SONOBUOY SYSTEM (CASS)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYC-",
+        name: "COMMAND ACTIVE SONOBUOY SYSTEM (CASS)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.DICASS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "DIRECTIONAL COMMAND ACTIVE SONOBUOY SYSTEM (DICASS)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYS-",
+        name: "DIRECTIONAL COMMAND ACTIVE SONOBUOY SYSTEM (DICASS)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.BT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "BATHYTHERMOGRAPH TRANSMITTING (BT)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYB-",
+        name: "BATHYTHERMOGRAPH TRANSMITTING (BT)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.ANM",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "ANM"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYA-",
+        name: "ANM",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.VLAD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "VERTICAL LINE ARRAY DIFAR (VLAD)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYV-",
+        name: "VERTICAL LINE ARRAY DIFAR (VLAD)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.ATAC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "ATAC"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYT-",
+        name: "ATAC",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.RO",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "RANGE ONLY (RO)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYR-",
+        name: "RANGE ONLY (RO)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SNBY.KGP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SONOBUOY",
+          "KINGPIN"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUYK-",
+        name: "KINGPIN",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SRH",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SEARCH"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUS--",
+        name: "SEARCH",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SRH.ARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SEARCH",
+          "SEARCH AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUSA-",
+        name: "SEARCH AREA",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SRH.DIPPSN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SEARCH",
+          "DIP POSITION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUSD-",
+        name: "DIP POSITION",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.USW.SRH.CTR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "UNDER SEA WARFARE",
+          "SEARCH",
+          "SEARCH CENTER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPUSC-",
+        name: "SEARCH CENTER",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.REFPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "REFERENCE POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPR---",
+        name: "REFERENCE POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.REFPNT.SPLPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "REFERENCE POINT",
+          "SPECIAL POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPRS--",
+        name: "SPECIAL POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.REFPNT.NAVREF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "REFERENCE POINT",
+          "NAV REFERENCE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPRN--",
+        name: "NAV REFERENCE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.REFPNT.DLRP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "REFERENCE POINT",
+          "DLRP"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPRD--",
+        name: "DLRP",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.REFPNT.PNTINR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "REFERENCE POINT",
+          "POINT OF INTEREST"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPRI--",
+        name: "POINT OF INTEREST",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.WPN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "WEAPON"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPW---",
+        name: "WEAPON",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.WPN.AIMPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "WEAPON",
+          "AIM POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPWA--",
+        name: "AIM POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.WPN.DRPPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "WEAPON",
+          "DROP POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPWD--",
+        name: "DROP POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.WPN.ENTPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "WEAPON",
+          "ENTRY POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPWE--",
+        name: "ENTRY POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.WPN.GRDZRO",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "WEAPON",
+          "GROUND ZERO"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPWG--",
+        name: "GROUND ZERO",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.WPN.MSLPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "WEAPON",
+          "MSL DETECT POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPWM--",
+        name: "MSL DETECT POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.WPN.IMTPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "WEAPON",
+          "IMPACT POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPWI--",
+        name: "IMPACT POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.WPN.PIPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "WEAPON",
+          "PREDICTED IMPACT POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPWP--",
+        name: "PREDICTED IMPACT POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.FRMN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "FORMATION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPF---",
+        name: "FORMATION",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.HBR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "HARBOR (GENERAL)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPH---",
+        name: "HARBOR (GENERAL)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.HBR.PNTQ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "HARBOR (GENERAL)",
+          "POINT Q"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPHQ--",
+        name: "POINT Q",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.HBR.PNTA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "HARBOR (GENERAL)",
+          "POINT A"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPHA--",
+        name: "POINT A",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.HBR.PNTY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "HARBOR (GENERAL)",
+          "POINT Y"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPHY--",
+        name: "POINT Y",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.HBR.PNTX",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "HARBOR (GENERAL)",
+          "POINT X"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPHX--",
+        name: "POINT X",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.RTE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ROUTE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPO---",
+        name: "ROUTE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.RTE.RDV",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ROUTE",
+          "RENDEZVOUS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPOZ--",
+        name: "RENDEZVOUS",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.RTE.DVSN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ROUTE",
+          "DIVERSIONS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPOD--",
+        name: "DIVERSIONS",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.RTE.WAP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ROUTE",
+          "WAYPOINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPOW--",
+        name: "WAYPOINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.RTE.PIM",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ROUTE",
+          "PIM"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPOP--",
+        name: "PIM",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.RTE.PNTR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ROUTE",
+          "POINT R"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPOR--",
+        name: "POINT R",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPA---",
+        name: "AIR CONTROL",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.CAP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "COMBAT AIR PATROL (CAP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAP--",
+        name: "COMBAT AIR PATROL (CAP)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.ABNEW",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "AIRBORNE EARLY WARNING (AEW)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAW--",
+        name: "AIRBORNE EARLY WARNING (AEW)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.TCN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "TACAN"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAT--",
+        name: "TACAN",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.TAK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "TANKING"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAK--",
+        name: "TANKING",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.ASBWF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "ANTISUBMARINE WARFARE, FIXED WING"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAA--",
+        name: "ANTISUBMARINE WARFARE, FIXED WING",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.ASBWR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "ANTISUBMARINE WARFARE, ROTARY WING"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAH--",
+        name: "ANTISUBMARINE WARFARE, ROTARY WING",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.TMC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "TOMCAT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAO--",
+        name: "TOMCAT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.RSC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "RESCUE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAR--",
+        name: "RESCUE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.RPH",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "REPLENISH"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAL--",
+        name: "REPLENISH",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.MRSH",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "MARSHALL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAM--",
+        name: "MARSHALL",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.SKEIP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "STRIKE IP"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAS--",
+        name: "STRIKE IP",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTL.CRDRTB",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "AIR CONTROL",
+          "CORRIDOR TAB"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPAC--",
+        name: "CORRIDOR TAB",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPP---",
+        name: "ACTION POINTS (GENERAL)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.CHKPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "CHECK POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPK--",
+        name: "CHECK POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.CONPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "CONTACT POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPC--",
+        name: "CONTACT POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.CRDPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "COORDINATION POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPO--",
+        name: "COORDINATION POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.DCNPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "DECISION POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPD--",
+        name: "DECISION POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.LNKUPT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "LINKUP POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPL--",
+        name: "LINKUP POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.PSSPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "PASSAGE POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPP--",
+        name: "PASSAGE POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.RAYPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "RALLY POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPR--",
+        name: "RALLY POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.RELPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "RELEASE POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPE--",
+        name: "RELEASE POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.STRPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "START POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPS--",
+        name: "START POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.AMNPNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "AMNESTY POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPA--",
+        name: "AMNESTY POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.GNL.PNT.ACTPNT.WAP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "POINTS",
+          "ACTION POINTS (GENERAL)",
+          "WAYPOINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GPPW--",
+        name: "WAYPOINT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.LNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "LINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GL----",
+        name: "LINES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.LNE.BNDS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "LINES",
+          "BOUNDARIES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GLB---",
+        name: "BOUNDARIES",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.LNE.FLOT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "LINES",
+          "FORWARD LINE OF OWN TROOPS (FLOT)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GLF---",
+        name: "FORWARD LINE OF OWN TROOPS (FLOT)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.LNE.LOC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "LINES",
+          "LINE OF CONTACT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GLC---",
+        name: "LINE OF CONTACT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.LNE.PHELNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "LINES",
+          "PHASE LINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GLP---",
+        name: "PHASE LINE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.LNE.LITLNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "LINES",
+          "LIGHT LINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GLL---",
+        name: "LIGHT LINE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GA----",
+        name: "AREAS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.GENARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "GENERAL AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAG---",
+        name: "GENERAL AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.ABYARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "ASSEMBLY AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAA---",
+        name: "ASSEMBLY AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.EMTARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "ENGAGEMENT AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAE---",
+        name: "ENGAGEMENT AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.FTFDAR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "FORTIFIED AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAF---",
+        name: "FORTIFIED AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.DRPZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "DROP ZONE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAD---",
+        name: "DROP ZONE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.EZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "EXTRACTION ZONE (EZ)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAX---",
+        name: "EXTRACTION ZONE (EZ)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.LZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "LANDING ZONE (LZ)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAL---",
+        name: "LANDING ZONE (LZ)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.PZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "PICKUP ZONE (PZ)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAP---",
+        name: "PICKUP ZONE (PZ)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.SRHARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "SEARCH AREA/RECONNAISSANCE AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAS---",
+        name: "SEARCH AREA/RECONNAISSANCE AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.LAARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "LIMITED ACCESS AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAY---",
+        name: "LIMITED ACCESS AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.GNL.ARS.AIRFZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "GENERAL",
+          "AREAS",
+          "AIRFIELD ZONE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "GAZ---",
+        name: "AIRFIELD ZONE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "A-----",
+        name: "AVIATION",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.PNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "POINTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AP----",
+        name: "POINTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.AVN.PNT.ACP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "POINTS",
+          "AIR CONTROL POINT (ACP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "APP---",
+        name: "AIR CONTROL POINT (ACP)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.AVN.PNT.COMMCP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "POINTS",
+          "COMMUNICATIONS CHECKPOINT (CCP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "APC---",
+        name: "COMMUNICATIONS CHECKPOINT (CCP)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.AVN.PNT.PUP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "POINTS",
+          "PULL-UP POINT (PUP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "APU---",
+        name: "PULL-UP POINT (PUP)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.AVN.PNT.DAPP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "POINTS",
+          "DOWNED AIRCREW PICKUP POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "APD---",
+        name: "DOWNED AIRCREW PICKUP POINT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.LNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "LINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AL----",
+        name: "LINES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.LNE.ACDR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "LINES",
+          "AIR CORRIDOR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "ALC---",
+        name: "AIR CORRIDOR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.LNE.MRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "LINES",
+          "MINIMUM RISK ROUTE (MRR)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "ALM---",
+        name: "MINIMUM RISK ROUTE (MRR)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.LNE.SAAFR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "LINES",
+          "STANDARD-USE ARMY AIRCRAFT FLIGHT ROUTE (SAAFR)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "ALS---",
+        name: "STANDARD-USE ARMY AIRCRAFT FLIGHT ROUTE (SAAFR)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.LNE.UAVR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "LINES",
+          "UNMANNED AERIAL VEHICLE (UAV) ROUTE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "ALU---",
+        name: "UNMANNED AERIAL VEHICLE (UAV) ROUTE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.LNE.LLTR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "LINES",
+          "LOW LEVEL TRANSIT ROUTE (LLTR)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "ALL---",
+        name: "LOW LEVEL TRANSIT ROUTE (LLTR)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.ARS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "AREAS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AA----",
+        name: "AREAS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.ARS.ROZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "AREAS",
+          "RESTRICTED OPERATIONS ZONE (ROZ)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AAR---",
+        name: "RESTRICTED OPERATIONS ZONE (ROZ)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.ARS.FAADEZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "AREAS",
+          "FORWARD AREA AIR DEFENSE ZONE (FAADEZ)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AAF---",
+        name: "FORWARD AREA AIR DEFENSE ZONE (FAADEZ)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.ARS.HIDACZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "AREAS",
+          "HIGH DENSITY AIRSPACE CONTROL ZONE (HIDACZ)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AAH---",
+        name: "HIGH DENSITY AIRSPACE CONTROL ZONE (HIDACZ)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.ARS.MEZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "AREAS",
+          "MISSILE ENGAGEMENT ZONE (MEZ)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AAM---",
+        name: "MISSILE ENGAGEMENT ZONE (MEZ)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.ARS.MEZ.LAMEZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "AREAS",
+          "MISSILE ENGAGEMENT ZONE (MEZ)",
+          "LOW ALTITUDE MEZ"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AAML--",
+        name: "LOW ALTITUDE MEZ",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.ARS.MEZ.HAMEZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "AREAS",
+          "MISSILE ENGAGEMENT ZONE (MEZ)",
+          "HIGH ALTITUDE MEZ"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AAMH--",
+        name: "HIGH ALTITUDE MEZ",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.AVN.ARS.WFZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "AVIATION",
+          "AREAS",
+          "WEAPONS FREE ZONE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "AAW---",
+        name: "WEAPONS FREE ZONE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DCPN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DECEPTION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "P-----",
+        name: "DECEPTION",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DCPN.DMY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DECEPTION",
+          "DUMMY (DECEPTION/DECOY)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "PD----",
+        name: "DUMMY (DECEPTION/DECOY)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DCPN.AAFF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DECEPTION",
+          "AXIS OF ADVANCE FOR FEINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "PA----",
+        name: "AXIS OF ADVANCE FOR FEINT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DCPN.DAFF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DECEPTION",
+          "DIRECTION OF ATTACK FOR FEINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "PF----",
+        name: "DIRECTION OF ATTACK FOR FEINT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DCPN.DMA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DECEPTION",
+          "DECOY MINED AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "PM----",
+        name: "DECOY MINED AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DCPN.DMAF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DECEPTION",
+          "DECOY MINED AREA, FENCED"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "PY----",
+        name: "DECOY MINED AREA, FENCED",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DCPN.DMYMS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DECEPTION",
+          "DUMMY MINEFIELD (STATIC)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "PN----",
+        name: "DUMMY MINEFIELD (STATIC)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DCPN.DMYMD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DECEPTION",
+          "DUMMY MINEFIELD (DYNAMIC)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "PC----",
+        name: "DUMMY MINEFIELD (DYNAMIC)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DEF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "D-----",
+        name: "DEFENSE",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DEF.PNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "POINTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DP----",
+        name: "POINTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.DEF.PNT.TGTREF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "POINTS",
+          "TARGET REFERENCE POINT (TRP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DPT---",
+        name: "TARGET REFERENCE POINT (TRP)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.DEF.PNT.OBSPST",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "POINTS",
+          "OBSERVATION POST/OUTPOST"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DPO---",
+        name: "OBSERVATION POST/OUTPOST",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.DEF.PNT.OBSPST.CBTPST",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "POINTS",
+          "OBSERVATION POST/OUTPOST",
+          "COMBAT OUTPOST"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DPOC--",
+        name: "COMBAT OUTPOST",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.DEF.PNT.OBSPST.RECON",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "POINTS",
+          "OBSERVATION POST/OUTPOST",
+          "OBSERVATION POST OCCUPIED BY DISMOUNTED SCOUTS OR RECONNAISSANCE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DPOR--",
+        name: "OBSERVATION POST OCCUPIED BY DISMOUNTED SCOUTS OR RECONNAISSANCE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.DEF.PNT.OBSPST.FWDOP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "POINTS",
+          "OBSERVATION POST/OUTPOST",
+          "FORWARD OBSERVER POSITION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DPOF--",
+        name: "FORWARD OBSERVER POSITION",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.DEF.PNT.OBSPST.SOP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "POINTS",
+          "OBSERVATION POST/OUTPOST",
+          "SENSOR OUTPOST/LISTENING POST (OP/LP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DPOS--",
+        name: "SENSOR OUTPOST/LISTENING POST (OP/LP)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.DEF.PNT.OBSPST.NBCOP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "POINTS",
+          "OBSERVATION POST/OUTPOST",
+          "NBC OBSERVATION POST (DISMOUNTED)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DPON--",
+        name: "NBC OBSERVATION POST (DISMOUNTED)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DEF.LNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "LINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DL----",
+        name: "LINES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DEF.LNE.FEBA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "LINES",
+          "FORWARD EDGE OF BATTLE AREA (FEBA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DLF---",
+        name: "FORWARD EDGE OF BATTLE AREA (FEBA)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DEF.LNE.PDF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "LINES",
+          "PRINCIPAL DIRECTION OF FIRE (PDF)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DLP---",
+        name: "PRINCIPAL DIRECTION OF FIRE (PDF)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DEF.ARS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "AREAS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DA----",
+        name: "AREAS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DEF.ARS.BTLPSN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "AREAS",
+          "BATTLE POSITION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DAB---",
+        name: "BATTLE POSITION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DEF.ARS.BTLPSN.PBNO",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "AREAS",
+          "BATTLE POSITION",
+          "PREPARED BUT NOT OCCUPIED"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DABP--",
+        name: "PREPARED BUT NOT OCCUPIED",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.DEF.ARS.EMTARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "DEFENSE",
+          "AREAS",
+          "ENGAGEMENT AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "DAE---",
+        name: "ENGAGEMENT AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "O-----",
+        name: "OFFENSE",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.PNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "POINTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OP----",
+        name: "POINTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.C2GM.OFF.PNT.PNTD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "POINTS",
+          "POINT OF DEPARTURE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OPP---",
+        name: "POINT OF DEPARTURE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OL----",
+        name: "LINES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.AXSADV",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "AXIS OF ADVANCE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLA---",
+        name: "AXIS OF ADVANCE",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.AXSADV.AVN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "AXIS OF ADVANCE",
+          "AVIATION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLAV--",
+        name: "AVIATION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.AXSADV.ABN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "AXIS OF ADVANCE",
+          "AIRBORNE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLAA--",
+        name: "AIRBORNE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.AXSADV.ATK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "AXIS OF ADVANCE",
+          "ATTACK, ROTARY WING"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLAR--",
+        name: "ATTACK, ROTARY WING",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.AXSADV.GRD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "AXIS OF ADVANCE",
+          "GROUND"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLAG--",
+        name: "GROUND",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.AXSADV.GRD.MANATK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "AXIS OF ADVANCE",
+          "GROUND",
+          "MAIN ATTACK"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLAGM-",
+        name: "MAIN ATTACK",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.AXSADV.GRD.SUPATK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "AXIS OF ADVANCE",
+          "GROUND",
+          "SUPPORTING ATTACK"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLAGS-",
+        name: "SUPPORTING ATTACK",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.DIRATK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "DIRECTION OF ATTACK"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLK---",
+        name: "DIRECTION OF ATTACK",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.DIRATK.AVN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "DIRECTION OF ATTACK",
+          "AVIATION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLKA--",
+        name: "AVIATION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.DIRATK.GRD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "DIRECTION OF ATTACK",
+          "GROUND"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLKG--",
+        name: "GROUND",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.DIRATK.GRD.MANATK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "DIRECTION OF ATTACK",
+          "GROUND",
+          "MAIN ATTACK"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLKGM-",
+        name: "MAIN ATTACK",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.DIRATK.GRD.SUPATK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "DIRECTION OF ATTACK",
+          "GROUND",
+          "SUPPORTING ATTACK"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLKGS-",
+        name: "SUPPORTING ATTACK",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.FCL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "FINAL COORDINATION LINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLF---",
+        name: "FINAL COORDINATION LINE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.INFNLE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "INFILTRATION LANE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLI---",
+        name: "INFILTRATION LANE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.LMTADV",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "LIMIT OF ADVANCE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLL---",
+        name: "LIMIT OF ADVANCE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.LD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "LINE OF DEPARTURE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLT---",
+        name: "LINE OF DEPARTURE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.LDLC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "LINE OF DEPARTURE/LINE OF CONTACT (LD/LC)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLC---",
+        name: "LINE OF DEPARTURE/LINE OF CONTACT (LD/LC)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.LNE.PLD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "LINES",
+          "PROBABLE LINE OF DEPLOYMENT (PLD)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OLP---",
+        name: "PROBABLE LINE OF DEPLOYMENT (PLD)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.ARS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "AREAS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OA----",
+        name: "AREAS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.ARS.ASTPSN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "AREAS",
+          "ASSAULT POSITION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OAA---",
+        name: "ASSAULT POSITION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.ARS.ATKPSN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "AREAS",
+          "ATTACK POSITION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OAK---",
+        name: "ATTACK POSITION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.ARS.AFP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "AREAS",
+          "ATTACK BY FIRE POSITION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OAF---",
+        name: "ATTACK BY FIRE POSITION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.ARS.SFP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "AREAS",
+          "SUPPORT BY FIRE POSITION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OAS---",
+        name: "SUPPORT BY FIRE POSITION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.ARS.OBJ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "AREAS",
+          "OBJECTIVE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OAO---",
+        name: "OBJECTIVE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.OFF.ARS.PBX",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "OFFENSE",
+          "AREAS",
+          "PENETRATION BOX"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "OAP---",
+        name: "PENETRATION BOX",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "S-----",
+        name: "SPECIAL",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.LNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "LINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SL----",
+        name: "LINE",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.LNE.AMB",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "LINE",
+          "AMBUSH"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SLA---",
+        name: "AMBUSH",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.LNE.HGL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "LINE",
+          "HOLDING LINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SLH---",
+        name: "HOLDING LINE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.LNE.REL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "LINE",
+          "RELEASE LINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SLR---",
+        name: "RELEASE LINE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.LNE.BRGH",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "LINE",
+          "BRIDGEHEAD"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SLB---",
+        name: "BRIDGEHEAD",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.ARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SA----",
+        name: "AREA",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.ARA.AOO",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "AREA",
+          "AREA OF OPERATIONS (AO)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SAO---",
+        name: "AREA OF OPERATIONS (AO)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.ARA.AHD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "AREA",
+          "AIRHEAD"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SAA---",
+        name: "AIRHEAD",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.ARA.ENCMT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "AREA",
+          "ENCIRCLEMENT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SAE---",
+        name: "ENCIRCLEMENT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.ARA.NAI",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "AREA",
+          "NAMED AREA OF INTEREST (NAI)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SAN---",
+        name: "NAMED AREA OF INTEREST (NAI)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.C2GM.SPL.ARA.TAI",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMMAND AND CONTROL AND GENERAL MANEUVER",
+          "SPECIAL",
+          "AREA",
+          "TARGETED AREA OF INTEREST (TAI)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SAT---",
+        name: "TARGETED AREA OF INTEREST (TAI)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "------",
+        name: "MOBILITY/SURVIVABILITY",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "O-----",
+        name: "OBSTACLES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.GNL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "GENERAL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OG----",
+        name: "GENERAL",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.GNL.BLT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "GENERAL",
+          "BELT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OGB---",
+        name: "BELT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.GNL.LNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "GENERAL",
+          "LINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OGL---",
+        name: "LINE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.GNL.Z",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "GENERAL",
+          "ZONE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OGZ---",
+        name: "ZONE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.GNL.OFA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "GENERAL",
+          "OBSTACLE FREE AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OGF---",
+        name: "OBSTACLE FREE AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.GNL.ORA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "GENERAL",
+          "OBSTACLE RESTRICTED AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OGR---",
+        name: "OBSTACLE RESTRICTED AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.ABS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ABATIS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OS----",
+        name: "ABATIS",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OA----",
+        name: "ANTITANK OBSTACLES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO.ATD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES",
+          "ANTITANK DITCH"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OAD---",
+        name: "ANTITANK DITCH",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO.ATD.ATDUC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES",
+          "ANTITANK DITCH",
+          "UNDER CONSTRUCTION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OADU--",
+        name: "UNDER CONSTRUCTION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO.ATD.ATDC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES",
+          "ANTITANK DITCH",
+          "COMPLETE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OADC--",
+        name: "COMPLETE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO.ATDATM",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES",
+          "ANTITANK DITCH REINFORCED WITH ANTITANK MINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OAR---",
+        name: "ANTITANK DITCH REINFORCED WITH ANTITANK MINES",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO.TDTSM",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES",
+          "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OAO---",
+        name: "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO.TDTSM.FIXPFD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES",
+          "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES",
+          "FIXED AND PREFABRICATED"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OAOF--",
+        name: "FIXED AND PREFABRICATED",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO.TDTSM.MVB",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES",
+          "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES",
+          "MOVEABLE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OAOM--",
+        name: "MOVEABLE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO.TDTSM.MVBPFD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES",
+          "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES",
+          "MOVEABLE AND PREFABRICATED"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OAOP--",
+        name: "MOVEABLE AND PREFABRICATED",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.ATO.ATW",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ANTITANK OBSTACLES",
+          "ANTITANK WALL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OAW---",
+        name: "ANTITANK WALL",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.BBY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "BOOBY TRAP"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OB----",
+        name: "BOOBY TRAP",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.MNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OM----",
+        name: "MINES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.MNE.USPMNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINES",
+          "UNSPECIFIED MINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OMU---",
+        name: "UNSPECIFIED MINE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.MNE.ATMNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINES",
+          "ANTITANK MINE (AT)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OMT---",
+        name: "ANTITANK MINE (AT)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.MNE.ATMAHD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINES",
+          "ANTITANK MINE WITH ANTIHANDLING DEVICE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OMD---",
+        name: "ANTITANK MINE WITH ANTIHANDLING DEVICE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.MNE.ATMDIR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINES",
+          "ANTITANK MINE (DIRECTIONAL)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OME---",
+        name: "ANTITANK MINE (DIRECTIONAL)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.MNE.APMNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINES",
+          "ANTIPERSONNEL (AP) MINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OMP---",
+        name: "ANTIPERSONNEL (AP) MINES",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.MNE.WAMNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINES",
+          "WIDE AREA MINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OMW---",
+        name: "WIDE AREA MINES",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.MNE.MCLST",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINES",
+          "MINE CLUSTER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OMC---",
+        name: "MINE CLUSTER",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.MNEFLD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINEFIELDS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OF----",
+        name: "MINEFIELDS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBST.MNEFLD.STC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINEFIELDS",
+          "STATIC DEPICTION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OFS---",
+        name: "STATIC DEPICTION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.MNEFLD.DYN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINEFIELDS",
+          "DYNAMIC DEPICTION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OFD---",
+        name: "DYNAMIC DEPICTION",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.MNEFLD.GAP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINEFIELDS",
+          "GAP"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OFG---",
+        name: "GAP",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.MNEFLD.MNDARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "MINEFIELDS",
+          "MINED AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OFA---",
+        name: "MINED AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.OBSEFT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "OBSTACLE EFFECT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OE----",
+        name: "OBSTACLE EFFECT",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.OBSEFT.BLK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "OBSTACLE EFFECT",
+          "BLOCK"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OEB---",
+        name: "BLOCK",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.OBSEFT.FIX",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "OBSTACLE EFFECT",
+          "FIX"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OEF---",
+        name: "FIX",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.OBSEFT.TUR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "OBSTACLE EFFECT",
+          "TURN"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OET---",
+        name: "TURN",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.OBSEFT.DRT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "OBSTACLE EFFECT",
+          "DISRUPT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OED---",
+        name: "DISRUPT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.UXO",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "UNEXPLODED ORDNANCE AREA (UXO)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OU----",
+        name: "UNEXPLODED ORDNANCE AREA (UXO)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.RCBB",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OR----",
+        name: "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.RCBB.PLND",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
+          "PLANNED"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "ORP---",
+        name: "PLANNED",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.RCBB.SAFE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
+          "EXPLOSIVES, STATE OF READINESS 1 (SAFE)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "ORS---",
+        name: "EXPLOSIVES, STATE OF READINESS 1 (SAFE)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.RCBB.ABP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
+          "EXPLOSIVES, STATE OF READINESS 2 (ARMED-BUT PASSABLE)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "ORA---",
+        name: "EXPLOSIVES, STATE OF READINESS 2 (ARMED-BUT PASSABLE)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.RCBB.EXCD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
+          "ROADBLOCK COMPLETE (EXECUTED)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "ORC---",
+        name: "ROADBLOCK COMPLETE (EXECUTED)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.TRIPWR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "TRIP WIRE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OT----",
+        name: "TRIP WIRE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OW----",
+        name: "WIRE OBSTACLE",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.USP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "UNSPECIFIED"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWU---",
+        name: "UNSPECIFIED",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.SNGFNC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "SINGLE FENCE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWS---",
+        name: "SINGLE FENCE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.DBLFNC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "DOUBLE FENCE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWD---",
+        name: "DOUBLE FENCE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.DAFNC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "DOUBLE APRON FENCE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWA---",
+        name: "DOUBLE APRON FENCE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.LWFNC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "LOW WIRE FENCE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWL---",
+        name: "LOW WIRE FENCE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.HWFNC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "HIGH WIRE FENCE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWH---",
+        name: "HIGH WIRE FENCE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.CCTA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "CONCERTINA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWC---",
+        name: "CONCERTINA",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.CCTA.SNG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "CONCERTINA",
+          "SINGLE CONCERTINA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWCS--",
+        name: "SINGLE CONCERTINA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.CCTA.DBLSTD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "CONCERTINA",
+          "DOUBLE STRAND CONCERTINA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWCD--",
+        name: "DOUBLE STRAND CONCERTINA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBST.WREOBS.CCTA.TRISTD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLES",
+          "WIRE OBSTACLE",
+          "CONCERTINA",
+          "TRIPLE STRAND CONCERTINA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "OWCT--",
+        name: "TRIPLE STRAND CONCERTINA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "B-----",
+        name: "OBSTACLE BYPASS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.DFTY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "OBSTACLE BYPASS DIFFICULTY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BD----",
+        name: "OBSTACLE BYPASS DIFFICULTY",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.DFTY.ESY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "OBSTACLE BYPASS DIFFICULTY",
+          "BYPASS EASY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BDE---",
+        name: "BYPASS EASY",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.DFTY.DFT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "OBSTACLE BYPASS DIFFICULTY",
+          "BYPASS DIFFICULT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BDD---",
+        name: "BYPASS DIFFICULT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.DFTY.IMP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "OBSTACLE BYPASS DIFFICULTY",
+          "BYPASS IMPOSSIBLE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BDI---",
+        name: "BYPASS IMPOSSIBLE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.CSGSTE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "CROSSING SITE/WATER CROSSING"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BC----",
+        name: "CROSSING SITE/WATER CROSSING",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.CSGSTE.ASTCA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "CROSSING SITE/WATER CROSSING",
+          "ASSAULT CROSSING AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BCA---",
+        name: "ASSAULT CROSSING AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.CSGSTE.BRG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "CROSSING SITE/WATER CROSSING",
+          "BRIDGE OR GAP"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BCB---",
+        name: "BRIDGE OR GAP",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.CSGSTE.FRY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "CROSSING SITE/WATER CROSSING",
+          "FERRY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BCF---",
+        name: "FERRY",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.CSGSTE.FRDESY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "CROSSING SITE/WATER CROSSING",
+          "FORD EASY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BCE---",
+        name: "FORD EASY",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.CSGSTE.FRDDFT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "CROSSING SITE/WATER CROSSING",
+          "FORD DIFFICULT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BCD---",
+        name: "FORD DIFFICULT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.CSGSTE.LANE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "CROSSING SITE/WATER CROSSING",
+          "LANE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BCL---",
+        name: "LANE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.CSGSTE.RFT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "CROSSING SITE/WATER CROSSING",
+          "RAFT SITE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BCR---",
+        name: "RAFT SITE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.OBSTBP.CSGSTE.ERP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "OBSTACLE BYPASS",
+          "CROSSING SITE/WATER CROSSING",
+          "ENGINEER REGULATING POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "BCP---",
+        name: "ENGINEER REGULATING POINT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.SU",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "SURVIVABILITY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "S-----",
+        name: "SURVIVABILITY",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.SU.ESTOF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "SURVIVABILITY",
+          "EARTHWORK, SMALL TRENCH OR FORTIFICATION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "SE----",
+        name: "EARTHWORK, SMALL TRENCH OR FORTIFICATION",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.SU.FRT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "SURVIVABILITY",
+          "FORT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "SF----",
+        name: "FORT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.SU.FTFDLN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "SURVIVABILITY",
+          "FORTIFIED LINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "SL----",
+        name: "FORTIFIED LINE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.SU.FEWS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "SURVIVABILITY",
+          "FOXHOLE, EMPLACEMENT OR WEAPON SITE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "SW----",
+        name: "FOXHOLE, EMPLACEMENT OR WEAPON SITE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.SU.STRGPT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "SURVIVABILITY",
+          "STRONG POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "SP----",
+        name: "STRONG POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.SU.SUFSHL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "SURVIVABILITY",
+          "SURFACE SHELTER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "SS----",
+        name: "SURFACE SHELTER",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.SU.UGDSHL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "SURVIVABILITY",
+          "UNDERGROUND SHELTER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "SU----",
+        name: "UNDERGROUND SHELTER",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.NBC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "N-----",
+        name: "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.NBC.MSDZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "MINIMUM SAFE DISTANCE ZONES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NM----",
+        name: "MINIMUM SAFE DISTANCE ZONES",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.NDGZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "NUCLEAR DETINATIONS GROUND ZERO"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NZ----",
+        name: "NUCLEAR DETINATIONS GROUND ZERO",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.FAOTP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "FALLOUT PRODUCING"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NF----",
+        name: "FALLOUT PRODUCING",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.NBC.RADA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "RADIOACTIVE AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NR----",
+        name: "RADIOACTIVE AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.NBC.BIOCA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "BIOLOGICALLY CONTAMINATED AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NB----",
+        name: "BIOLOGICALLY CONTAMINATED AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.NBC.CMLCA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "CHEMICALLY CONTAMINATED AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NC----",
+        name: "CHEMICALLY CONTAMINATED AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.NBC.REEVNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "RELEASE EVENTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NE----",
+        name: "RELEASE EVENTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.REEVNT.BIO",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "RELEASE EVENTS",
+          "BIOLOGICAL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NEB---",
+        name: "BIOLOGICAL",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.REEVNT.CML",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "RELEASE EVENTS",
+          "CHEMICAL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NEC---",
+        name: "CHEMICAL",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.NBC.DECONP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "DECONTAMINATION (DECON) POINTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "ND----",
+        name: "DECONTAMINATION (DECON) POINTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.DECONP.USP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "DECONTAMINATION (DECON) POINTS",
+          "DECON SITE/POINT (UNSPECIFIED)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NDP---",
+        name: "DECON SITE/POINT (UNSPECIFIED)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.DECONP.ALTUSP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "DECONTAMINATION (DECON) POINTS",
+          "ALTERNATE DECON SITE/POINT (UNSPECIFIED)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NDA---",
+        name: "ALTERNATE DECON SITE/POINT (UNSPECIFIED)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.DECONP.TRP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "DECONTAMINATION (DECON) POINTS",
+          "DECON SITE/POINT (TROOPS)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NDT---",
+        name: "DECON SITE/POINT (TROOPS)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.DECONP.EQT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "DECONTAMINATION (DECON) POINTS",
+          "DECON SITE/POINT (EQUIPMENT)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NDE---",
+        name: "DECON SITE/POINT (EQUIPMENT)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.DECONP.EQTTRP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "DECONTAMINATION (DECON) POINTS",
+          "DECON SITE/POINT (EQUIPMENT AND TROOPS)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NDB---",
+        name: "DECON SITE/POINT (EQUIPMENT AND TROOPS)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.MOBSU.NBC.DECONP.OPDECN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "DECONTAMINATION (DECON) POINTS",
+          "DECON SITE/POINT (OPERATIONAL DECONTAMINATION)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NDO---",
+        name: "DECON SITE/POINT (OPERATIONAL DECONTAMINATION)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.NBC.DECONP.TRGH",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "DECONTAMINATION (DECON) POINTS",
+          "DECON SITE/POINT (THOROUGH DECONTAMINATION)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NDD---",
+        name: "DECON SITE/POINT (THOROUGH DECONTAMINATION)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.MOBSU.NBC.DRCL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "MOBILITY/SURVIVABILITY",
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL",
+          "DOSE RATE CONTOUR LINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "M",
+        status: "*",
+        functionid: "NL----",
+        name: "DOSE RATE CONTOUR LINES",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "------",
+        name: "FIRE SUPPORT",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.PNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "P-----",
+        name: "POINT",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.PNT.TGT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "TARGET"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PT----",
+        name: "TARGET",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.FSUPP.PNT.TGT.PTGT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "TARGET",
+          "POINT/SINGLE TARGET"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PTS---",
+        name: "POINT/SINGLE TARGET",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.FSUPP.PNT.TGT.NUCTGT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "TARGET",
+          "NUCLEAR TARGET"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PTN---",
+        name: "NUCLEAR TARGET",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.PNT.C2PNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "COMMAND & CONTROL POINTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PC----",
+        name: "COMMAND & CONTROL POINTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.FSUPP.PNT.C2PNT.FSS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "COMMAND & CONTROL POINTS",
+          "FIRE SUPPORT STATION"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PCF---",
+        name: "FIRE SUPPORT STATION",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.FSUPP.PNT.C2PNT.SCP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "COMMAND & CONTROL POINTS",
+          "SURVEY CONTROL POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PCS---",
+        name: "SURVEY CONTROL POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.FSUPP.PNT.C2PNT.FP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "COMMAND & CONTROL POINTS",
+          "FIRING POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PCB---",
+        name: "FIRING POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.FSUPP.PNT.C2PNT.RP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "COMMAND & CONTROL POINTS",
+          "RELOAD POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PCR---",
+        name: "RELOAD POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.FSUPP.PNT.C2PNT.HP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "COMMAND & CONTROL POINTS",
+          "HIDE POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PCH---",
+        name: "HIDE POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.FSUPP.PNT.C2PNT.LP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "POINT",
+          "COMMAND & CONTROL POINTS",
+          "LAUNCH POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "PCL---",
+        name: "LAUNCH POINT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.LNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "LINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "L-----",
+        name: "LINES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.LNE.LNRTGT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "LINES",
+          "LINEAR TARGET"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "LT----",
+        name: "LINEAR TARGET",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.LNE.LNRTGT.LSTGT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "LINES",
+          "LINEAR TARGET",
+          "LINEAR SMOKE TARGET"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "LTS---",
+        name: "LINEAR SMOKE TARGET",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.LNE.LNRTGT.FPF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "LINES",
+          "LINEAR TARGET",
+          "FINAL PROTECTIVE FIRE (FPF)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "LTF---",
+        name: "FINAL PROTECTIVE FIRE (FPF)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.LNE.C2LNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "LINES",
+          "COMMAND & CONTROL LINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "LC----",
+        name: "COMMAND & CONTROL LINES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.LNE.C2LNE.FSCL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "LINES",
+          "COMMAND & CONTROL LINES",
+          "FIRE SUPPORT COORDINATION LINE (FSCL)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "LCF---",
+        name: "FIRE SUPPORT COORDINATION LINE (FSCL)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.LNE.C2LNE.CFL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "LINES",
+          "COMMAND & CONTROL LINES",
+          "COORDINATED FIRE LINE (CFL)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "LCC---",
+        name: "COORDINATED FIRE LINE (CFL)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.LNE.C2LNE.NFL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "LINES",
+          "COMMAND & CONTROL LINES",
+          "NO-FIRE LINE (NFL)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "LCN---",
+        name: "NO-FIRE LINE (NFL)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.LNE.C2LNE.RFL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "LINES",
+          "COMMAND & CONTROL LINES",
+          "RESTRICTIVE FIRE LINE (RFL)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "LCR---",
+        name: "RESTRICTIVE FIRE LINE (RFL)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "A-----",
+        name: "AREAS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.ARATGT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "AREA TARGET"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AT----",
+        name: "AREA TARGET",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.ARATGT.RTGTGT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "AREA TARGET",
+          "RECTANGULAR TARGET"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ATR---",
+        name: "RECTANGULAR TARGET",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.ARATGT.CIRTGT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "AREA TARGET",
+          "CIRCULAR TARGET"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ATC---",
+        name: "CIRCULAR TARGET",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.ARATGT.SGTGT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "AREA TARGET",
+          "SERIES OR GROUP OF TARGETS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ATG---",
+        name: "SERIES OR GROUP OF TARGETS",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.ARATGT.SMK",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "AREA TARGET",
+          "SMOKE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ATS---",
+        name: "SMOKE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.ARATGT.BMARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "AREA TARGET",
+          "BOMB AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ATB---",
+        name: "BOMB AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AC----",
+        name: "COMMAND & CONTROL AREAS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.FSA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "FIRE SUPPORT AREA (FSA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACS---",
+        name: "FIRE SUPPORT AREA (FSA)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.FSA.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "FIRE SUPPORT AREA (FSA)",
+          "FIRE SUPPORT AREA (FSA), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACSI--",
+        name: "FIRE SUPPORT AREA (FSA), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.FSA.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "FIRE SUPPORT AREA (FSA)",
+          "FIRE SUPPORT AREA (FSA), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACSR--",
+        name: "FIRE SUPPORT AREA (FSA), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.FSA.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "FIRE SUPPORT AREA (FSA)",
+          "FIRE SUPPORT AREA (FSA), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACSC--",
+        name: "FIRE SUPPORT AREA (FSA), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.ACA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "AIRSPACE COORDINATION AREA (ACA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACA---",
+        name: "AIRSPACE COORDINATION AREA (ACA)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.ACA.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "AIRSPACE COORDINATION AREA (ACA)",
+          "AIRSPACE COORDINATION AREA (ACA), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACAI--",
+        name: "AIRSPACE COORDINATION AREA (ACA), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.ACA.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "AIRSPACE COORDINATION AREA (ACA)",
+          "AIRSPACE COORDINATION AREA (ACA), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACAR--",
+        name: "AIRSPACE COORDINATION AREA (ACA), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.ACA.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "AIRSPACE COORDINATION AREA (ACA)",
+          "AIRSPACE COORDINATION AREA (ACA), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACAC--",
+        name: "AIRSPACE COORDINATION AREA (ACA), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.FFA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "FREE FIRE AREA (FFA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACF---",
+        name: "FREE FIRE AREA (FFA)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.FFA.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "FREE FIRE AREA (FFA)",
+          "FREE FIRE AREA (FFA), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACFI--",
+        name: "FREE FIRE AREA (FFA), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.FFA.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "FREE FIRE AREA (FFA)",
+          "FREE FIRE AREA (FFA), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACFR--",
+        name: "FREE FIRE AREA (FFA), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.FFA.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "FREE FIRE AREA (FFA)",
+          "FREE FIRE AREA (FFA), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACFC--",
+        name: "FREE FIRE AREA (FFA), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.NFA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "NO-FIRE AREA (NFA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACN---",
+        name: "NO-FIRE AREA (NFA)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.NFA.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "NO-FIRE AREA (NFA)",
+          "NO FIRE AREA (NFA), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACNI--",
+        name: "NO FIRE AREA (NFA), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.NFA.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "NO-FIRE AREA (NFA)",
+          "NO FIRE AREA (NFA), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACNR--",
+        name: "NO FIRE AREA (NFA), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.NFA.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "NO-FIRE AREA (NFA)",
+          "NO FIRE AREA (NFA), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACNC--",
+        name: "NO FIRE AREA (NFA), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.RFA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "RESTRICTIVE FIRE AREA (RFA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACR---",
+        name: "RESTRICTIVE FIRE AREA (RFA)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.RFA.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "RESTRICTIVE FIRE AREA (RFA)",
+          "RESTRICTIVE FIRE AREA (RFA), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACRI--",
+        name: "RESTRICTIVE FIRE AREA (RFA), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.RFA.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "RESTRICTIVE FIRE AREA (RFA)",
+          "RESTRICTIVE FIRE AREA (RFA), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACRR--",
+        name: "RESTRICTIVE FIRE AREA (RFA), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.RFA.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "RESTRICTIVE FIRE AREA (RFA)",
+          "RESTRICTIVE FIRE AREA (RFA), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACRC--",
+        name: "RESTRICTIVE FIRE AREA (RFA), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.PAA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "POSITION AREA FOR ARTILLERY (PAA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACP---",
+        name: "POSITION AREA FOR ARTILLERY (PAA)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.PAA.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "POSITION AREA FOR ARTILLERY (PAA)",
+          "POSITION AREA FOR ARTILLERY (PAA), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACPR--",
+        name: "POSITION AREA FOR ARTILLERY (PAA), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.C2ARS.PAA.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "COMMAND & CONTROL AREAS",
+          "POSITION AREA FOR ARTILLERY (PAA)",
+          "POSITION AREA FOR ARTILLERY (PAA), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "ACPC--",
+        name: "POSITION AREA FOR ARTILLERY (PAA), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZ----",
+        name: "TARGET ACQUISTION ZONES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.ATIZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZI---",
+        name: "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.ATIZ.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE",
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZII--",
+        name: "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.ATIZ.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE",
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZIR--",
+        name: "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.ATIZ.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE",
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZIC--",
+        name: "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CFFZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CALL FOR FIRE ZONE (CFFZ)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZX---",
+        name: "CALL FOR FIRE ZONE (CFFZ)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CFFZ.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CALL FOR FIRE ZONE (CFFZ)",
+          "CALL FOR FIRE ZONE (CFFZ), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZXI--",
+        name: "CALL FOR FIRE ZONE (CFFZ), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CFFZ.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CALL FOR FIRE ZONE (CFFZ)",
+          "CALL FOR FIRE ZONE (CFFZ), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZXR--",
+        name: "CALL FOR FIRE ZONE (CFFZ), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CFFZ.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CALL FOR FIRE ZONE (CFFZ)",
+          "CALL FOR FIRE ZONE (CFFZ), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZXC--",
+        name: "CALL FOR FIRE ZONE (CFFZ), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.SNSZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "SENSOR ZONE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZS---",
+        name: "SENSOR ZONE",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.SNSZ.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "SENSOR ZONE",
+          "SENSOR ZONE, IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZSI--",
+        name: "SENSOR ZONE, IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.SNSZ.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "SENSOR ZONE",
+          "SENSOR ZONE, RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZSR--",
+        name: "SENSOR ZONE, RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.SNSZ.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "SENSOR ZONE",
+          "SENSOR ZONE, CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZSC--",
+        name: "SENSOR ZONE, CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CNS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CENSOR ZONE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZC---",
+        name: "CENSOR ZONE",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CNS.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CENSOR ZONE",
+          "CENSOR ZONE, IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZCI--",
+        name: "CENSOR ZONE, IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CNS.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CENSOR ZONE",
+          "CENSOR ZONE, RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZCR--",
+        name: "CENSOR ZONE, RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CNS.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CENSOR ZONE",
+          "CENSOR ZONE, CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZCC--",
+        name: "CENSOR ZONE, CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.DA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "DEAD SPACE AREA (DA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZD---",
+        name: "DEAD SPACE AREA (DA)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.DA.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "DEAD SPACE AREA (DA)",
+          "DEAD SPACE AREA (DA), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZDI--",
+        name: "DEAD SPACE AREA (DA), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.DA.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "DEAD SPACE AREA (DA)",
+          "DEAD SPACE AREA (DA), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZDR--",
+        name: "DEAD SPACE AREA (DA), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.DA.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "DEAD SPACE AREA (DA)",
+          "DEAD SPACE AREA (DA), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZDC--",
+        name: "DEAD SPACE AREA (DA), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CFZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CRITICAL FRIENDLY ZONE (CFZ)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZF---",
+        name: "CRITICAL FRIENDLY ZONE (CFZ)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CFZ.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CRITICAL FRIENDLY ZONE (CFZ)",
+          "CRITICAL FRIENDLY ZONE (CFZ), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZFI--",
+        name: "CRITICAL FRIENDLY ZONE (CFZ), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CFZ.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CRITICAL FRIENDLY ZONE (CFZ)",
+          "CRITICAL FRIENDLY ZONE (CFZ), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZFR--",
+        name: "CRITICAL FRIENDLY ZONE (CFZ), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.CFZ.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "CRITICAL FRIENDLY ZONE (CFZ)",
+          "CRITICAL FRIENDLY ZONE (CFZ), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZFC--",
+        name: "CRITICAL FRIENDLY ZONE (CFZ), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.ZOR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "ZONE OF RESPONSIBILITY (ZOR)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZZ---",
+        name: "ZONE OF RESPONSIBILITY (ZOR)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.ZOR.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "ZONE OF RESPONSIBILITY (ZOR)",
+          "ZONE OF RESPONSIBILITY (ZOR), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZZI--",
+        name: "ZONE OF RESPONSIBILITY (ZOR), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.ZOR.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "ZONE OF RESPONSIBILITY (ZOR)",
+          "ZONE OF RESPONSIBILITY (ZOR), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZZR--",
+        name: "ZONE OF RESPONSIBILITY (ZOR), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.ZOR.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "ZONE OF RESPONSIBILITY (ZOR)",
+          "ZONE OF RESPONSIBILITY (ZOR), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZZC--",
+        name: "ZONE OF RESPONSIBILITY (ZOR), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.TBA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "TARGET BUILD-UP AREA (TBA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZB---",
+        name: "TARGET BUILD-UP AREA (TBA)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.TBA.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "TARGET BUILD-UP AREA (TBA)",
+          "TARGET BUILD UP AREA (TBA), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZBI--",
+        name: "TARGET BUILD UP AREA (TBA), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.TBA.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "TARGET BUILD-UP AREA (TBA)",
+          "TARGET BUILD UP AREA (TBA), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZBR--",
+        name: "TARGET BUILD UP AREA (TBA), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.TBA.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "TARGET BUILD-UP AREA (TBA)",
+          "TARGET BUILD UP AREA (TBA), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZBC--",
+        name: "TARGET BUILD UP AREA (TBA), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.TVAR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "TARGET VALUE AREA (TVAR)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZV---",
+        name: "TARGET VALUE AREA (TVAR)",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.TVAR.IRR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "TARGET VALUE AREA (TVAR)",
+          "TARGET VALUE AREA (TVAR), IRREGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZVI--",
+        name: "TARGET VALUE AREA (TVAR), IRREGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.TVAR.RTG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "TARGET VALUE AREA (TVAR)",
+          "TARGET VALUE AREA (TVAR), RECTANGULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZVR--",
+        name: "TARGET VALUE AREA (TVAR), RECTANGULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ.TVAR.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "TARGET ACQUISTION ZONES",
+          "TARGET VALUE AREA (TVAR)",
+          "TARGET VALUE AREA (TVAR), CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AZVC--",
+        name: "TARGET VALUE AREA (TVAR), CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.WPNRF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "WEAPONS/RADAR RANGE FANS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AX----",
+        name: "WEAPONS/RADAR RANGE FANS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.WPNRF.CIRCLR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "WEAPONS/RADAR RANGE FANS",
+          "WEAPONS/RADAR RANGE FANS, CIRCULAR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AXC---",
+        name: "WEAPONS/RADAR RANGE FANS, CIRCULAR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.FSUPP.ARS.WPNRF.SCR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "FIRE SUPPORT",
+          "AREAS",
+          "WEAPONS/RADAR RANGE FANS",
+          "WEAPONS/RADAR RANGE FANS, SECTOR"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "F",
+        status: "*",
+        functionid: "AXS---",
+        name: "WEAPONS/RADAR RANGE FANS, SECTOR",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "------",
+        name: "COMBAT SERVICE SUPPORT",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.PNT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "P-----",
+        name: "POINTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.AEP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "AMBULANCE EXCHANGE POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PX----",
+        name: "AMBULANCE EXCHANGE POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.CBNP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "CANNIBALIZATION POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PC----",
+        name: "CANNIBALIZATION POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.CCP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "CASUALTY COLLECTION POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PY----",
+        name: "CASUALTY COLLECTION POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.CVP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "CIVILIAN COLLECTION POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PT----",
+        name: "CIVILIAN COLLECTION POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.DCP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "DETAINEE COLLECTION POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PD----",
+        name: "DETAINEE COLLECTION POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.EPWCP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "ENEMY PRISONER OF WAR (EPW) COLLECTION POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PE----",
+        name: "ENEMY PRISONER OF WAR (EPW) COLLECTION POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.LRP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "LOGISTICS RELEASE POINT (LRP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PL----",
+        name: "LOGISTICS RELEASE POINT (LRP)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.MCP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "MAINTENANCE COLLECTION POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PM----",
+        name: "MAINTENANCE COLLECTION POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.RRRP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "REARM, REFUEL AND RESUPPLY POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PR----",
+        name: "REARM, REFUEL AND RESUPPLY POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.ROM",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "REFUEL ON THE MOVE (ROM) POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PU----",
+        name: "REFUEL ON THE MOVE (ROM) POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.TCP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "TRAFFIC CONTROL POST (TCP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PO----",
+        name: "TRAFFIC CONTROL POST (TCP)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.TTP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "TRAILER TRANSFER POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PI----",
+        name: "TRAILER TRANSFER POINT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.UMC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "UNIT MAINTENANCE COLLECTION POINT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PN----",
+        name: "UNIT MAINTENANCE COLLECTION POINT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.PNT.SPT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PS----",
+        name: "SUPPLY POINTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.GNL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "GENERAL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSZ---",
+        name: "GENERAL",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS1",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS I"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSA---",
+        name: "CLASS I",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS2",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS II"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSB---",
+        name: "CLASS II",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS3",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS III"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSC---",
+        name: "CLASS III",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS4",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS IV"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSD---",
+        name: "CLASS IV",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS5",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS V"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSE---",
+        name: "CLASS V",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS6",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS VI"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSF---",
+        name: "CLASS VI",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS7",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS VII"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSG---",
+        name: "CLASS VII",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS8",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS VIII"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSH---",
+        name: "CLASS VIII",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS9",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS IX"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSI---",
+        name: "CLASS IX",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.SPT.CLS10",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "SUPPLY POINTS",
+          "CLASS X"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PSJ---",
+        name: "CLASS X",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.PNT.AP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "AMMUNITION POINTS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PA----",
+        name: "AMMUNITION POINTS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.AP.ASP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "AMMUNITION POINTS",
+          "AMMUNITION SUPPLY POINT (ASP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PAS---",
+        name: "AMMUNITION SUPPLY POINT (ASP)",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.CSS.PNT.AP.ATP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "POINTS",
+          "AMMUNITION POINTS",
+          "AMMUNITION TRANSFER POINT (ATP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "PAT---",
+        name: "AMMUNITION TRANSFER POINT (ATP)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "L-----",
+        name: "LINES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE.CNY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES",
+          "CONVOYS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "LC----",
+        name: "CONVOYS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE.CNY.MCNY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES",
+          "CONVOYS",
+          "MOVING CONVOY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "LCM---",
+        name: "MOVING CONVOY",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE.CNY.HCNY",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES",
+          "CONVOYS",
+          "HALTED CONVOY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "LCH---",
+        name: "HALTED CONVOY",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE.SLPRUT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES",
+          "SUPPLY ROUTES"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "LR----",
+        name: "SUPPLY ROUTES",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE.SLPRUT.MSRUT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES",
+          "SUPPLY ROUTES",
+          "MAIN SUPPLY ROUTE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "LRM---",
+        name: "MAIN SUPPLY ROUTE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE.SLPRUT.ASRUT",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES",
+          "SUPPLY ROUTES",
+          "ALTERNATE SUPPLY ROUTE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "LRA---",
+        name: "ALTERNATE SUPPLY ROUTE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE.SLPRUT.1WTRFF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES",
+          "SUPPLY ROUTES",
+          "ONE-WAY TRAFFIC"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "LRO---",
+        name: "ONE-WAY TRAFFIC",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE.SLPRUT.ATRFF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES",
+          "SUPPLY ROUTES",
+          "ALTERNATING TRAFFIC"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "LRT---",
+        name: "ALTERNATING TRAFFIC",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.LNE.SLPRUT.2WTRFF",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "LINES",
+          "SUPPLY ROUTES",
+          "TWO-WAY TRAFFIC"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "LRW---",
+        name: "TWO-WAY TRAFFIC",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.ARA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "A-----",
+        name: "AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.ARA.DHA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "AREA",
+          "DETAINEE HOLDING AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "AD----",
+        name: "DETAINEE HOLDING AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.ARA.EPWHA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "AREA",
+          "ENEMY PRISONER OF WAR (EPW) HOLDING AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "AE----",
+        name: "ENEMY PRISONER OF WAR (EPW) HOLDING AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.ARA.FARP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "AREA",
+          "FORWARD ARMING AND REFUELING AREA (FARP)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "AR----",
+        name: "FORWARD ARMING AND REFUELING AREA (FARP)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.ARA.RHA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "AREA",
+          "REFUGEE HOLDING AREA"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "AH----",
+        name: "REFUGEE HOLDING AREA",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.ARA.SUPARS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "AREA",
+          "SUPPORT AREAS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "AS----",
+        name: "SUPPORT AREAS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.ARA.SUPARS.BSA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "AREA",
+          "SUPPORT AREAS",
+          "BRIGADE (BSA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "ASB---",
+        name: "BRIGADE (BSA)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.ARA.SUPARS.DSA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "AREA",
+          "SUPPORT AREAS",
+          "DIVISION (DSA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "ASD---",
+        name: "DIVISION (DSA)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.CSS.ARA.SUPARS.RSA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "COMBAT SERVICE SUPPORT",
+          "AREA",
+          "SUPPORT AREAS",
+          "REGIMENTAL (RSA)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "ASR---",
+        name: "REGIMENTAL (RSA)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "------",
+        name: "OTHER",
+        remarks: "N/A"
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.ER",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "EMERGENCY"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "E-----",
+        name: "EMERGENCY",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.ER.DTHAC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "EMERGENCY",
+          "DITCHED AIRCRAFT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "ED----",
+        name: "DITCHED AIRCRAFT",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.ER.PIW",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "EMERGENCY",
+          "PERSON IN WATER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "EP----",
+        name: "PERSON IN WATER",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.ER.DSTVES",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "EMERGENCY",
+          "DISTRESSED VESSEL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "EV----",
+        name: "DISTRESSED VESSEL",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.HAZ",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "HAZARD"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "H-----",
+        name: "HAZARD",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.HAZ.SML",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "HAZARD",
+          "SEA MINE-LIKE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "HM----",
+        name: "SEA MINE-LIKE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.HAZ.NVGL",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "HAZARD",
+          "NAVIGATIONAL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "HN----",
+        name: "NAVIGATIONAL",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.HAZ.IB",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "HAZARD",
+          "ICEBERG"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "HI----",
+        name: "ICEBERG",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.HAZ.OLRG",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "HAZARD",
+          "OIL RIG"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "HO----",
+        name: "OIL RIG",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.SSUBSR",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "SEA SUBSURFACE RETURNS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "S-----",
+        name: "SEA SUBSURFACE RETURNS",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.SSUBSR.BTMRTN",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "SEA SUBSURFACE RETURNS",
+          "BOTTOM RETURN/NOMBO"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "SB----",
+        name: "BOTTOM RETURN/NOMBO",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.SSUBSR.BTMRTN.INS",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "SEA SUBSURFACE RETURNS",
+          "BOTTOM RETURN/NOMBO",
+          "INSTALLATION/MANMADE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "SBM---",
+        name: "INSTALLATION/MANMADE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.SSUBSR.BTMRTN.SBRSOO",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "SEA SUBSURFACE RETURNS",
+          "BOTTOM RETURN/NOMBO",
+          "SEABED ROCK/STONE, OBSTACLE, OTHER"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "SBN---",
+        name: "SEABED ROCK/STONE, OBSTACLE, OTHER",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.SSUBSR.BTMRTN.WRKND",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "SEA SUBSURFACE RETURNS",
+          "BOTTOM RETURN/NOMBO",
+          "WRECK, NON DANGEROUS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "SBW---",
+        name: "WRECK, NON DANGEROUS",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.SSUBSR.BTMRTN.WRKND.WRKD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "SEA SUBSURFACE RETURNS",
+          "BOTTOM RETURN/NOMBO",
+          "WRECK, NON DANGEROUS",
+          "WRECK, DANGEROUS"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "SBWD--",
+        name: "WRECK, DANGEROUS",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.SSUBSR.MARLFE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "SEA SUBSURFACE RETURNS",
+          "MARINE LIFE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "SM----",
+        name: "MARINE LIFE",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.SSUBSR.SA",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "SEA SUBSURFACE RETURNS",
+          "SEA ANOMALY (WAKE, CURRENT, KNUCKLE)"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "SS----",
+        name: "SEA ANOMALY (WAKE, CURRENT, KNUCKLE)",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.BERLNE",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "BEARING LINE"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "B-----",
+        name: "BEARING LINE",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.BERLNE.ELC",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "BEARING LINE",
+          "ELECTRONIC"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "BE----",
+        name: "ELECTRONIC",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.BERLNE.ACU",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "BEARING LINE",
+          "ACOUSTIC"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "BA----",
+        name: "ACOUSTIC",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.BERLNE.TPD",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "BEARING LINE",
+          "TORPEDO"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "BT----",
+        name: "TORPEDO",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.BERLNE.EOPI",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "BEARING LINE",
+          "ELECTRO-OPTICAL INTERCEPT"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "BO----",
+        name: "ELECTRO-OPTICAL INTERCEPT",
+        remarks: ""
+      },
+      {
+        geometry: "",
+        hierarchy: "TACGRP.OTH.FIX",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "FIX"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "F-----",
+        name: "FIX",
+        remarks: "N/A"
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.FIX.ACU",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "FIX",
+          "ACOUSTIC"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "FA----",
+        name: "ACOUSTIC",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.FIX.EM",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "FIX",
+          "ELECTRO-MAGNETIC"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "FE----",
+        name: "ELECTRO-MAGNETIC",
+        remarks: ""
+      },
+      {
+        geometry: "POINT",
+        hierarchy: "TACGRP.OTH.FIX.EOP",
+        names: [
+          "TACTICAL GRAPHICS",
+          "OTHER",
+          "FIX",
+          "ELECTRO-OPTICAL"
+        ],
+        codingscheme: "G",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "FO----",
+        name: "ELECTRO-OPTICAL",
+        remarks: ""
+      }
+    ]
+  },
+  SIGINT: {
+    name: "SIGNALS INTELLIGENCE",
+    mainIcon: [
+      {
+        hierarchy: "SIGINT",
+        names: [
+          "SIGNALS INTELLIGENCE"
+        ],
+        codingscheme: "I",
+        affiliation: "-",
+        battledimension: "-",
+        status: "*",
+        functionid: "------",
+        name: "SIGNALS INTELLIGENCE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "------",
+        name: "SPACE TRACK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "S-----",
+        name: "SIGNAL INTERCEPT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.COMM",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SC----",
+        name: "COMMUNICATIONS",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.COMM.SATDL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "SATELLITE DOWN-LINK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SCD---",
+        name: "SATELLITE DOWN-LINK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.RAD",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SR----",
+        name: "RADAR",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.RAD.DATTMN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "DATA TRANSMISSION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SRD---",
+        name: "DATA TRANSMISSION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.RAD.ERHSVL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "EARTH SURVEILLANCE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SRE---",
+        name: "EARTH SURVEILLANCE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.RAD.IFF",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "IFF (TRANSPONDER)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SRI---",
+        name: "IFF (TRANSPONDER)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.RAD.MFN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MULTI-FUNCTION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SRM---",
+        name: "MULTI-FUNCTION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.RAD.TGTAQ",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET ACQUISITION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SRT---",
+        name: "TARGET ACQUISITION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.RAD.SPC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "SPACE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SRS---",
+        name: "SPACE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SPC.SIGINC.RAD.UNK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SPACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "UNKNOWN"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "P",
+        status: "*",
+        functionid: "SRU---",
+        name: "UNKNOWN",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "------",
+        name: "AIR TRACK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "S-----",
+        name: "SIGNAL INTERCEPT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.COMM",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SC----",
+        name: "COMMUNICATIONS",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.COMM.CELL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "CELLULAR/MOBILE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SCC---",
+        name: "CELLULAR/MOBILE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.COMM.OLOS",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "OMNI-LINE-OF-SIGHT (LOS)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SCO---",
+        name: "OMNI-LINE-OF-SIGHT (LOS)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.COMM.PTPLOS",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "POINT-TO-POINT LINE-OF-SIGHT (LOS)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SCP---",
+        name: "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.COMM.SATUL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "SATELLITE UP-LINK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SCS---",
+        name: "SATELLITE UP-LINK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SR----",
+        name: "RADAR",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.ABNINC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "AIRBORNE INTERCEPT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRAI--",
+        name: "AIRBORNE INTERCEPT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.ABNSB",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "AIRBORNE SEARCH & BOMBING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRAS--",
+        name: "AIRBORNE SEARCH & BOMBING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.CTDINC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "CONTROLLED INTERCEPT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRC---",
+        name: "CONTROLLED INTERCEPT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.DATTMN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "DATA TRANSMISSION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRD---",
+        name: "DATA TRANSMISSION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.EW",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "EARLY WARNING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRE---",
+        name: "EARLY WARNING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.FIRCTL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "FIRE CONTROL"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRF---",
+        name: "FIRE CONTROL",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.IFF",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "IFF (TRANSPONDER)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRI---",
+        name: "IFF (TRANSPONDER)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MSLAQ",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE ACQUISITION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRMA--",
+        name: "MISSILE ACQUISITION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MSLDL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE DOWNLINK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRMD--",
+        name: "MISSILE DOWNLINK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MSLGDN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE GUIDANCE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRMG--",
+        name: "MISSILE GUIDANCE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MSLTRK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE TRACKING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRMT--",
+        name: "MISSILE TRACKING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MFN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MULTI-FUNCTION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRMF--",
+        name: "MULTI-FUNCTION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.TGTILL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET ILLUMINATOR"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRTI--",
+        name: "TARGET ILLUMINATOR",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.TGTAQ",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET ACQUISITION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRTA--",
+        name: "TARGET ACQUISITION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.TGTTRK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET TRACKING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRTT--",
+        name: "TARGET TRACKING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.UNK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "AIR TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "UNKNOWN"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "A",
+        status: "*",
+        functionid: "SRU---",
+        name: "UNKNOWN",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "------",
+        name: "GROUND TRACK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "S-----",
+        name: "SIGNAL INTERCEPT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.COMM",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SC----",
+        name: "COMMUNICATIONS",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.CELL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "CELLULAR/MOBILE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SCC---",
+        name: "CELLULAR/MOBILE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.OLOS",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "OMNI-LINE-OF-SIGHT (LOS)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SCO---",
+        name: "OMNI-LINE-OF-SIGHT (LOS)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.PTPLOS",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "POINT-TO-POINT LINE-OF-SIGHT (LOS)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SCP---",
+        name: "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.SATUL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "SATELLITE UP-LINK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SCS---",
+        name: "SATELLITE UP-LINK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.TPSSCT",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "TROPOSPHERIC SCATTER"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SCT---",
+        name: "TROPOSPHERIC SCATTER",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SR----",
+        name: "RADAR",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.ATCTL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "AIR TRAFFIC CONTROL"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRAT--",
+        name: "AIR TRAFFIC CONTROL",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.AA/C",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "ANTI-AIRCRAFT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRAA--",
+        name: "ANTI-AIRCRAFT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.BTFSVL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "BATTLEFIELD SURVEILLANCE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRB---",
+        name: "BATTLEFIELD SURVEILLANCE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.CSTSVL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "COASTAL SURVEILLANCE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRCS--",
+        name: "COASTAL SURVEILLANCE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.CTDAPP",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "CONTROLLED APPROACH"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRCA--",
+        name: "CONTROLLED APPROACH",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.DATTMN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "DATA TRANSMISSION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRD---",
+        name: "DATA TRANSMISSION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.EW",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "EARLY WARNING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRE---",
+        name: "EARLY WARNING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.FIRCTL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "FIRE CONTROL"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRF---",
+        name: "FIRE CONTROL",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.HGTFDG",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "HEIGHT FINDING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRH---",
+        name: "HEIGHT FINDING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.IDFF",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "IDENTIFICATION FRIEND/FOE (INTERROGATOR)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRI---",
+        name: "IDENTIFICATION FRIEND/FOE (INTERROGATOR)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.METO",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "METEOROLOGICAL (MILITARY)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRMM--",
+        name: "METEOROLOGICAL (MILITARY)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.MSLAQ",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE ACQUISITION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRMA--",
+        name: "MISSILE ACQUISITION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.MSLGDN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE GUIDANCE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRMG--",
+        name: "MISSILE GUIDANCE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.MSLTRK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE TRACKING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRMT--",
+        name: "MISSILE TRACKING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.MFN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MULTI-FUNCTION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRMF--",
+        name: "MULTI-FUNCTION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.SHETKG",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "SHELL TRACKING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRS---",
+        name: "SHELL TRACKING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.TGTAQ",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET ACQUISITION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRTA--",
+        name: "TARGET ACQUISITION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.TGTILL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET ILLUMINATOR"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRTI--",
+        name: "TARGET ILLUMINATOR",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.TGTTRK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET TRACKING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRTT--",
+        name: "TARGET TRACKING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.UNK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "GROUND TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "UNKNOWN"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "G",
+        status: "*",
+        functionid: "SRU---",
+        name: "UNKNOWN",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "------",
+        name: "SEA SURFACE TRACK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "S-----",
+        name: "SIGNAL INTERCEPT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.COMM",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SC----",
+        name: "COMMUNICATIONS",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.COMM.CELL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "CELLULAR/MOBILE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SCC---",
+        name: "CELLULAR/MOBILE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.COMM.OLOS",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "OMNI-LINE-OF-SIGHT (LOS)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SCO---",
+        name: "OMNI-LINE-OF-SIGHT (LOS)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.COMM.PTPLOS",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "POINT-TO-POINT LINE-OF-SIGHT (LOS)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SCP---",
+        name: "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.COMM.SATUL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "SATELLITE UP-LINK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SCS---",
+        name: "SATELLITE UP-LINK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SR----",
+        name: "RADAR",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.ATCTL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "AIR TRAFFIC CONTROL"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRAT--",
+        name: "AIR TRAFFIC CONTROL",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.AA/C",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "ANTI-AIRCRAFT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRAA--",
+        name: "ANTI-AIRCRAFT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.CTDAPP",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "CONTROLLED APPROACH"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRCA--",
+        name: "CONTROLLED APPROACH",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.CTDINC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "CONTROLLED INTERCEPT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRCI--",
+        name: "CONTROLLED INTERCEPT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.DATTMN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "DATA TRANSMISSION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRD---",
+        name: "DATA TRANSMISSION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.EW",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "EARLY WARNING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRE---",
+        name: "EARLY WARNING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.FIRCTL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "FIRE CONTROL"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRF---",
+        name: "FIRE CONTROL",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.HGTFDG",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "HEIGHT FINDING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRH---",
+        name: "HEIGHT FINDING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.IDFF",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "IDENTIFICATION FRIEND/FOE (INTERROGATOR)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRI---",
+        name: "IDENTIFICATION FRIEND/FOE (INTERROGATOR)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.METO",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "METEOROLOGICAL (MILITARY)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRMM--",
+        name: "METEOROLOGICAL (MILITARY)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.MSLAQ",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE ACQUISITION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRMA--",
+        name: "MISSILE ACQUISITION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.MSLGDN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE GUIDANCE"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRMG--",
+        name: "MISSILE GUIDANCE",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.MSLTRK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MISSILE TRACKING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRMT--",
+        name: "MISSILE TRACKING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.MFN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MULTI-FUNCTION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRMF--",
+        name: "MULTI-FUNCTION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.SUFSRH",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "SURFACE SEARCH"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRS---",
+        name: "SURFACE SEARCH",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.TGTAQ",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET ACQUISITION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRTA--",
+        name: "TARGET ACQUISITION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.TGTILL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET ILLUMINATOR"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRTI--",
+        name: "TARGET ILLUMINATOR",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.TGTTRK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET TRACKING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRTT--",
+        name: "TARGET TRACKING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SSUF.SIGINC.RAD.UNK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SEA SURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "UNKNOWN"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "S",
+        status: "*",
+        functionid: "SRU---",
+        name: "UNKNOWN",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "------",
+        name: "SUBSURFACE TRACK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "S-----",
+        name: "SIGNAL INTERCEPT",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.COMM",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SC----",
+        name: "COMMUNICATIONS",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.COMM.OLOS",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "OMNI-LINE-OF-SIGHT (LOS)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SCO---",
+        name: "OMNI-LINE-OF-SIGHT (LOS)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.COMM.PTPLOS",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "POINT-TO-POINT LINE-OF-SIGHT (LOS)"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SCP---",
+        name: "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.COMM.SATUL",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "COMMUNICATIONS",
+          "SATELLITE UP-LINK"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SCS---",
+        name: "SATELLITE UP-LINK",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.RAD",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SR----",
+        name: "RADAR",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.RAD.DATTMN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "DATA TRANSMISSION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SRD---",
+        name: "DATA TRANSMISSION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.RAD.EW",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "EARLY WARNING"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SRE---",
+        name: "EARLY WARNING",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.RAD.MFN",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "MULTI-FUNCTION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SRM---",
+        name: "MULTI-FUNCTION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.RAD.SUFSRH",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "SURFACE SEARCH"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SRS---",
+        name: "SURFACE SEARCH",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.RAD.TGTAQ",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "TARGET ACQUISITION"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SRT---",
+        name: "TARGET ACQUISITION",
+        remarks: ""
+      },
+      {
+        hierarchy: "SIGINT.SBSUF.SIGINC.RAD.UNK",
+        names: [
+          "SIGNALS INTELLIGENCE",
+          "SUBSURFACE TRACK",
+          "SIGNAL INTERCEPT",
+          "RADAR",
+          "UNKNOWN"
+        ],
+        codingscheme: "I",
+        affiliation: "*",
+        battledimension: "U",
+        status: "*",
+        functionid: "SRU---",
+        name: "UNKNOWN",
+        remarks: ""
+      }
+    ]
+  },
+  MOOTW: {
+    name: "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+    mainIcon: [
+      {
+        hierarchy: "MOOTW",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "-",
+        status: "*",
+        functionid: "------",
+        name: "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "------",
+        name: "VIOLENT ACTIVITIES (DEATH CAUSING)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.ASN",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "ARSON/FIRE"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "A-----",
+        name: "ARSON/FIRE",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.KILL",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "KILLING (GENERAL)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "M-----",
+        name: "KILLING (GENERAL)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.KILL.MDR",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "KILLING (GENERAL)",
+          "MURDER"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "MA----",
+        name: "MURDER",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.KILL.EX",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "KILLING (GENERAL)",
+          "EXECUTION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "MB----",
+        name: "EXECUTION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.KILL.ASS",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "KILLING (GENERAL)",
+          "ASSASSINATION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "MC----",
+        name: "ASSASSINATION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.BM",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "BOMB/BOMBING"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "B-----",
+        name: "BOMB/BOMBING",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.BBY",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "BOOBY TRAP"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "Y-----",
+        name: "BOOBY TRAP",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.DBS",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "DRIVE-BY SHOOTING"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "D-----",
+        name: "DRIVE-BY SHOOTING",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.SPG",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "SNIPING"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "S-----",
+        name: "SNIPING",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.VIOATY.PSNG",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
+          "POISONING"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "V",
+        status: "*",
+        functionid: "P-----",
+        name: "POISONING",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.LOCAT",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "LOCATIONS"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "L",
+        status: "*",
+        functionid: "------",
+        name: "LOCATIONS",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.LOCAT.BLST",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "LOCATIONS",
+          "BLACK LIST LOCATION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "L",
+        status: "*",
+        functionid: "B-----",
+        name: "BLACK LIST LOCATION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.LOCAT.GLST",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "LOCATIONS",
+          "GRAY LIST LOCATION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "L",
+        status: "*",
+        functionid: "G-----",
+        name: "GRAY LIST LOCATION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.LOCAT.WLST",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "LOCATIONS",
+          "WHITE LIST LOCATION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "L",
+        status: "*",
+        functionid: "W-----",
+        name: "WHITE LIST LOCATION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.LOCAT.MASS",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "LOCATIONS",
+          "MASS GRAVE LOCATION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "L",
+        status: "*",
+        functionid: "M-----",
+        name: "MASS GRAVE LOCATION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "------",
+        name: "OPERATIONS",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.PATG",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "PATROLLING"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "P-----",
+        name: "PATROLLING",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.RCMT",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "RECRUITMENT"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "R-----",
+        name: "RECRUITMENT",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.RCMT.WLG",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "RECRUITMENT",
+          "RECRUITMENT (WILLING)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "RW----",
+        name: "RECRUITMENT (WILLING)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.RCMT.CRCD",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "RECRUITMENT",
+          "RECRUITMENT (COERCED/IMPRESSED)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "RC----",
+        name: "RECRUITMENT (COERCED/IMPRESSED)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.DEMO",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "DEMONSTRATION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "D-----",
+        name: "DEMONSTRATION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.ML",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "MINE LAYING"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "M-----",
+        name: "MINE LAYING",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.PSYOP",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "PSYCHOLOGICAL OPERATIONS (PSYOP)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "Y-----",
+        name: "PSYCHOLOGICAL OPERATIONS (PSYOP)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.PSYOP.TARP",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "PSYCHOLOGICAL OPERATIONS (PSYOP)",
+          "PSYOP (TV AND RADIO PROPAGANDA)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "YT----",
+        name: "PSYOP (TV AND RADIO PROPAGANDA)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.PSYOP.WP",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "PSYCHOLOGICAL OPERATIONS (PSYOP)",
+          "PSYOP (WRITTEN PROPAGANDA)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "YW----",
+        name: "PSYOP (WRITTEN PROPAGANDA)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.PSYOP.HTHP",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "PSYCHOLOGICAL OPERATIONS (PSYOP)",
+          "HOUSE-TO-HOUSE PROPAGANDA"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "YH----",
+        name: "HOUSE-TO-HOUSE PROPAGANDA",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.FRGSRH",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "FORAGING/SEARCHING"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "F-----",
+        name: "FORAGING/SEARCHING",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.SPY",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "SPY"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "S-----",
+        name: "SPY",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.FDDIST",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "FOOD DISTRIBUTION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "O-----",
+        name: "FOOD DISTRIBUTION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.EXTN",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "EXTORTION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "E-----",
+        name: "EXTORTION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.HJKG",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "HIJACKING"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "H-----",
+        name: "HIJACKING",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.HJKG.VEH",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "HIJACKING",
+          "HIJACKING (VEHICLE)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "HT----",
+        name: "HIJACKING (VEHICLE)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.HJKG.APL",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "HIJACKING",
+          "HIJACKING (AIRPLANE)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "HA----",
+        name: "HIJACKING (AIRPLANE)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.HJKG.BOAT",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "HIJACKING",
+          "HIJACKING (BOAT)"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "HV----",
+        name: "HIJACKING (BOAT)",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.KDNG",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "KIDNAPPING"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "K-----",
+        name: "KIDNAPPING",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.ARR",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "ARREST"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "A-----",
+        name: "ARREST",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.OPN.DGOPN",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "OPERATIONS",
+          "DRUG OPERATION"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "O",
+        status: "*",
+        functionid: "U-----",
+        name: "DRUG OPERATION",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.ITM",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "ITEMS"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "I",
+        status: "*",
+        functionid: "------",
+        name: "ITEMS",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.ITM.RFG",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "ITEMS",
+          "REFUGEES"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "I",
+        status: "*",
+        functionid: "R-----",
+        name: "REFUGEES",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.ITM.SAFHSE",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "ITEMS",
+          "SAFE HOUSE"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "I",
+        status: "*",
+        functionid: "S-----",
+        name: "SAFE HOUSE",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.ITM.GRF",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "ITEMS",
+          "GRAFFITI"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "I",
+        status: "*",
+        functionid: "G-----",
+        name: "GRAFFITI",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.ITM.VRLRPS",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "ITEMS",
+          "VANDALISM/RAPE/LOOT/RANSACK/PLUNDER/SACK"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "I",
+        status: "*",
+        functionid: "V-----",
+        name: "VANDALISM/RAPE/LOOT/RANSACK/PLUNDER/SACK",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.ITM.KNIVEH",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "ITEMS",
+          "KNOWN INSURGENT VEHICLE"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "I",
+        status: "*",
+        functionid: "I-----",
+        name: "KNOWN INSURGENT VEHICLE",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.ITM.DGVEH",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "ITEMS",
+          "DRUG VEHICLE"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "I",
+        status: "*",
+        functionid: "D-----",
+        name: "DRUG VEHICLE",
+        remarks: ""
+      },
+      {
+        hierarchy: "MOOTW.ITM.ISF",
+        names: [
+          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
+          "ITEMS",
+          "INTERNAL SECURITY FORCE"
+        ],
+        codingscheme: "O",
+        affiliation: "*",
+        battledimension: "I",
+        status: "*",
+        functionid: "F-----",
+        name: "INTERNAL SECURITY FORCE",
+        remarks: ""
+      }
+    ]
+  }
+};

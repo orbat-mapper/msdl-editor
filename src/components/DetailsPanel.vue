@@ -136,16 +136,10 @@ async function handleChangeSymbol() {
   }
   
   // Open modal and wait for confirm response
-  const newSidcValue = await getModalSidc(sidc,
-  {
-    // symbolOptions: unit.value.symbolOptions,
-    // inheritedSymbolOptions: getCombinedSymbolOptions(unit.value, true),
-    // reinforcedStatus: unit.value.reinforcedStatus,
-  });
+  const newSidcValue = await getModalSidc(sidc,{});
 
   if (selectStore.activeItem && newSidcValue !== undefined){
-    const { sidc, symbolOptions = {}, reinforcedStatus } = newSidcValue;
-
+    const { sidc } = newSidcValue;
     selectStore.updateSidc(sidc) //Update sidc for selected item
     updateSymbolIdentifier(props.item.objectHandle,sidc) // Update sidc in msdl
   }
@@ -156,7 +150,6 @@ const selectedSidc = computed(() => {
   const item = selectStore.activeItem;
   return isUnitOrEquipment(item!) ? item.sidc : undefined;
 });
-
 </script>
 
 <template>
@@ -169,8 +162,12 @@ const selectedSidc = computed(() => {
         <span ref="elRef"><MilSymbol :sidc="selectedSidc" :key="selectedSidc" :size="16" /></span>
         <span class="text-base font-bold">{{ item.label }}</span>
         <Button
-          @click="handleChangeSymbol()" title="Edit symbol and name"
-          ><PencilIcon /></Button>
+          type="button"
+          variant="ghost"
+          size="icon"
+          @click="handleChangeSymbol()"
+        ><PencilIcon />
+      </Button>
       </div>
       <span v-else class="text-base font-bold">{{ item.name }}</span>
       <div>
