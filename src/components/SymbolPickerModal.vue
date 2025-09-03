@@ -169,7 +169,7 @@ function updateModalSymbol(sidc: string): void {
 
 function updateName(hit: { newValue: string }) {
   selectStore.updateName(hit.newValue);
-  triggerRef(msdl) // Required to update map label
+  triggerRef(msdl); // Required to update map label
 }
 
 // Update the hitcount and groupedhits if the search query changes
