@@ -14,11 +14,7 @@ export interface SymbolSearchResult {
 }
 
 export function useSymbologySearch(sidValue: Ref<string>) {
-
-  const {  
-    symbology
-  } =
-    useSymbologyData();
+  const { symbology } = useSymbologyData();
 
   function searchMainIcons(query: string): SymbolSearchResult[] {
     let h = fuzzysort.go(query, symbology.value || [], {
@@ -33,9 +29,9 @@ export function useSymbologySearch(sidValue: Ref<string>) {
         name: obj.name,
         score: e.score,
         index: i,
-        highlight: 
-          fuzzysort.highlight({ ...rest, target: htmlTagEscape(rest.target) }) || "",
-        sidc: obj.codingscheme + sidValue.value + obj.battledimension + '-' + obj.functionid + '-----',
+        highlight: fuzzysort.highlight({ ...rest, target: htmlTagEscape(rest.target) }) || "",
+        sidc:
+          obj.codingscheme + sidValue.value + obj.battledimension + "-" + obj.functionid + "-----",
         category: obj.category,
       };
     });
@@ -44,7 +40,7 @@ export function useSymbologySearch(sidValue: Ref<string>) {
   // Direct search of main symbol icons
   function search(query: string) {
     const mainIconHits = searchMainIcons(query);
-    const numberOfHits = mainIconHits.length
+    const numberOfHits = mainIconHits.length;
     return { numberOfHits, groups: groupBy(mainIconHits, "category") };
   }
 

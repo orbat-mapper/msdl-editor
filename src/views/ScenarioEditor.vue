@@ -21,7 +21,7 @@ import EditAssociationsDialog from "@/components/EditAssociationsDialog.vue";
 import { useScenarioActions } from "@/composables/scenarioActions.ts";
 import { useSidcModal } from "@/composables/modals";
 import { sidcModalKey } from "@/components/injects";
-import SymbolPickerModal from "@/components/SymbolPickerModal.vue"
+import SymbolPickerModal from "@/components/SymbolPickerModal.vue";
 
 const { createScenario, loadScenario, msdl, undo, redo } = useScenarioStore();
 const { dispatchAction } = useScenarioActions();
@@ -81,7 +81,6 @@ const {
   sidcModalTitle,
 } = useSidcModal();
 provide(sidcModalKey, { getModalSidc });
-
 </script>
 <template>
   <div class="h-full w-full flex flex-col relative" ref="dropZoneRef">
@@ -124,10 +123,9 @@ provide(sidcModalKey, { getModalSidc });
     <SymbolPickerModal
       v-if="showSidcModal"
       :sidc="initialSidcModalValue"
-      @update:sidc="confirmSidcModal($event)" 
+      @update:sidc="confirmSidcModal($event)"
       @cancel="cancelSidcModal"
       :dialog-title="sidcModalTitle"
     />
-
   </div>
 </template>

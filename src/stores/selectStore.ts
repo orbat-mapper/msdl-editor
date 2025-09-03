@@ -25,22 +25,18 @@ export const useSelectStore = defineStore("selectStore", () => {
     if (val != null) clearActiveItem();
   });
 
-  function updateSidc(
-    sidc: string,
-  ){
+  function updateSidc(sidc: string) {
     if (!activeItem.value) return;
     if (isUnitOrEquipment(activeItem.value)) {
-      activeItem.value.sidc = sidc
+      activeItem.value.sidc = sidc;
       triggerRef(activeItem);
     }
   }
 
-  function updateName(
-    name: string,
-  ){
+  function updateName(name: string) {
     if (!activeItem.value) return;
     if (isUnitOrEquipment(activeItem.value)) {
-      activeItem.value.name = name
+      activeItem.value.name = name;
       triggerRef(activeItem);
     }
   }

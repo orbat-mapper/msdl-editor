@@ -19,41 +19,32 @@ watch(
 );
 
 function onSubmit() {
-  emit("update", {newValue: newValue.value});
+  emit("update", { newValue: newValue.value });
   newValue.value = props.field;
   toggleEditMode();
 }
 </script>
 <template>
   <div class="flex items-center">
-
     <template v-if="!isEditMode">
       {{ newValue }}
-      <Button 
-        @click="toggleEditMode()" 
-        type="button"
-        variant="ghost"
-        size="icon"
-        class="ml-2">
-        <PencilIcon/>
+      <Button @click="toggleEditMode()" type="button" variant="ghost" size="icon" class="ml-2">
+        <PencilIcon />
       </Button>
     </template>
 
     <template v-else>
       <form @submit.prevent="onSubmit" class="flex items-end">
-        <div
-          class="rounded border border-transparent font-mono text-base"
-        >
+        <div class="rounded border border-transparent font-mono text-base">
           <Input label="Symbol code" v-model="newValue" autofocus />
         </div>
 
         <Button type="submit" class="ml-2">
-          <CheckIcon/>
+          <CheckIcon />
         </Button>
         <Button type="submit" @click="toggleEditMode()" class="ml-2">
-          <XIcon/>
+          <XIcon />
         </Button>
-        
       </form>
     </template>
   </div>

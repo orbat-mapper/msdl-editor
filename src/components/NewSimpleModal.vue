@@ -30,9 +30,7 @@ onUnmounted(() => (uiStore.modalOpen = false));
 </script>
 <template>
   <Dialog v-model:open="open" @update:open="emit('cancel')">
-    <DialogScrollContent
-      :class="cn('max-w-[calc(100%-1rem)] rounded sm:max-w-lg', props.class)"
-    >
+    <DialogScrollContent :class="cn('max-w-[calc(100%-1rem)] rounded sm:max-w-lg', props.class)">
       <DialogHeader>
         <DialogTitle>{{ dialogTitle }}</DialogTitle>
         <DialogDescription v-if="dialogTitle || $slots.description">

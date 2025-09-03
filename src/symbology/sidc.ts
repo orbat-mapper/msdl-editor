@@ -9,9 +9,9 @@ export interface SicElementsB {
   battleDimension: string;
   status: string;
   functionId: string;
-  context: string; 
+  context: string;
   modifier1: string;
-  modifier2: string; 
+  modifier2: string;
   echelon: string;
 }
 
@@ -21,9 +21,9 @@ export class SidcB implements SicElementsB {
   battleDimension: string;
   status: string;
   functionId: string;
-  context: string; 
+  context: string;
   modifier1: string;
-  modifier2: string; 
+  modifier2: string;
   echelon: string;
 
   constructor(private sic: string = "SFGPU----------") {
@@ -52,8 +52,8 @@ export class SidcB implements SicElementsB {
       this.modifier1 +
       this.modifier2 +
       this.echelon +
-      this.context + 
-      '-'
+      this.context +
+      "-"
     );
   }
 }

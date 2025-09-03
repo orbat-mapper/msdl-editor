@@ -16,300 +16,206 @@ export const ms2525b = {
       mainIcon: [
         {
           hierarchy: "WAR.SPC",
-          names: [
-            ,
-            "SPACE TRACK"
-          ],
+          names: [, "SPACE TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "P",
           status: "*",
           functionid: "------",
           name: "SPACE TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SPC.SAT",
-          names: [
-            ,
-            "SPACE TRACK",
-            "SATELLITE"
-          ],
+          names: [, "SPACE TRACK", "SATELLITE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "P",
           status: "*",
           functionid: "S-----",
           name: "SATELLITE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SPC.CSV",
-          names: [
-            ,
-            "SPACE TRACK",
-            "CREWED SPACE VEHICLE"
-          ],
+          names: [, "SPACE TRACK", "CREWED SPACE VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "P",
           status: "*",
           functionid: "V-----",
           name: "CREWED SPACE VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SPC.SST",
-          names: [
-            ,
-            "SPACE TRACK",
-            "SPACE STATION"
-          ],
+          names: [, "SPACE TRACK", "SPACE STATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "P",
           status: "*",
           functionid: "T-----",
           name: "SPACE STATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SPC.SLV",
-          names: [
-            ,
-            "SPACE TRACK",
-            "SPACE LAUNCH VEHICLE"
-          ],
+          names: [, "SPACE TRACK", "SPACE LAUNCH VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "P",
           status: "*",
           functionid: "L-----",
           name: "SPACE LAUNCH VEHICLE",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     AIRTRK: {
       name: "AIR",
       mainIcon: [
         {
           hierarchy: "WAR.AIRTRK",
-          names: [
-            ,
-            "AIR TRACK"
-          ],
+          names: [, "AIR TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "------",
           name: "AIR TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY"
-          ],
+          names: [, "AIR TRACK", "MILITARY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "M-----",
           name: "MILITARY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MF----",
           name: "FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.BMB",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "BOMBER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "BOMBER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFB---",
           name: "BOMBER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.FTR",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "FIGHTER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "FIGHTER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFF---",
           name: "FIGHTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.FTR.INCR",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "FIGHTER",
-            "INTERCEPTOR"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "FIGHTER", "INTERCEPTOR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFFI--",
           name: "INTERCEPTOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.TNE",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "TRAINER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "TRAINER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFT---",
           name: "TRAINER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.ATK",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "ATTACK/STRIKE"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "ATTACK/STRIKE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFA---",
           name: "ATTACK/STRIKE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.VSTOL",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "VSTOL"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "VSTOL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFL---",
           name: "VSTOL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.TNK",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "TANKER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "TANKER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFK---",
           name: "TANKER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.TNK.BOOM",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "TANKER",
-            "TANKER BOOM-ONLY"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "TANKER", "TANKER BOOM-ONLY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFKB--",
           name: "TANKER BOOM-ONLY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.TNK.DROG",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "TANKER",
-            "TANKER DROGUE-ONLY"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "TANKER", "TANKER DROGUE-ONLY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFKD--",
           name: "TANKER DROGUE-ONLY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.CGOALT",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "CARGO AIRLIFT (TRANSPORT)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "CARGO AIRLIFT (TRANSPORT)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFC---",
           name: "CARGO AIRLIFT (TRANSPORT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.CGOALT.LIT",
@@ -319,7 +225,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (LIGHT)"
+            "CARGO AIRLIFT (LIGHT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -327,7 +233,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFCL--",
           name: "CARGO AIRLIFT (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.CGOALT.MDM",
@@ -337,7 +243,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (MEDIUM)"
+            "CARGO AIRLIFT (MEDIUM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -345,7 +251,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFCM--",
           name: "CARGO AIRLIFT (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.CGOALT.HVY",
@@ -355,7 +261,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (HEAVY)"
+            "CARGO AIRLIFT (HEAVY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -363,7 +269,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFCH--",
           name: "CARGO AIRLIFT (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.ECM",
@@ -372,7 +278,7 @@ export const ms2525b = {
             "AIR TRACK",
             "MILITARY",
             "FIXED WING",
-            "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)"
+            "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -380,41 +286,29 @@ export const ms2525b = {
           status: "*",
           functionid: "MFJ---",
           name: "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.MEDV",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "MEDEVAC"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "MEDEVAC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFO---",
           name: "MEDEVAC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.RECON",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "RECONNAISSANCE"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "RECONNAISSANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFR---",
           name: "RECONNAISSANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.RECON.ABNEW",
@@ -424,7 +318,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "RECONNAISSANCE",
-            "AIRBORNE EARLY WARNING (AEW)"
+            "AIRBORNE EARLY WARNING (AEW)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -432,7 +326,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFRW--",
           name: "AIRBORNE EARLY WARNING (AEW)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.RECON.ESM",
@@ -442,7 +336,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "RECONNAISSANCE",
-            "ELECTRONIC SURVEILLANCE MEASURES"
+            "ELECTRONIC SURVEILLANCE MEASURES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -450,271 +344,172 @@ export const ms2525b = {
           status: "*",
           functionid: "MFRZ--",
           name: "ELECTRONIC SURVEILLANCE MEASURES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.RECON.PHG",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "RECONNAISSANCE",
-            "PHOTOGRAPHIC"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "RECONNAISSANCE", "PHOTOGRAPHIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFRX--",
           name: "PHOTOGRAPHIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.PAT",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "PATROL"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "PATROL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFP---",
           name: "PATROL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.PAT.ASUW",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "PATROL",
-            "ANTISURFACE WARFARE (ASUW)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "PATROL", "ANTISURFACE WARFARE (ASUW)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFPN--",
           name: "ANTISURFACE WARFARE (ASUW)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.PAT.MNECM",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "PATROL",
-            "MINE COUNTERMEASURES"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "PATROL", "MINE COUNTERMEASURES"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFPM--",
           name: "MINE COUNTERMEASURES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.UTY",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "UTILITY"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "UTILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFU---",
           name: "UTILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.UTY.LIT",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "UTILITY",
-            "UTILITY (LIGHT)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "UTILITY", "UTILITY (LIGHT)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFUL--",
           name: "UTILITY (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.UTY.MDM",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "UTILITY",
-            "UTILITY (MEDIUM)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "UTILITY", "UTILITY (MEDIUM)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFUM--",
           name: "UTILITY (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.UTY.HVY",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "UTILITY",
-            "UTILITY (HEAVY)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "UTILITY", "UTILITY (HEAVY)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFUH--",
           name: "UTILITY (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.COMM",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "COMMUNICATIONS (C3I)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "COMMUNICATIONS (C3I)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFY---",
           name: "COMMUNICATIONS (C3I)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.CSAR",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "COMBAT SEARCH AND RESCUE (CSAR)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "COMBAT SEARCH AND RESCUE (CSAR)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFH---",
           name: "COMBAT SEARCH AND RESCUE (CSAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.ABNCP",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "AIRBORNE COMMAND POST (C2)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "AIRBORNE COMMAND POST (C2)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFD---",
           name: "AIRBORNE COMMAND POST (C2)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQ---",
           name: "DRONE (RPV/UAV)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ATK",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "ATTACK"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "ATTACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQA--",
           name: "ATTACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.BMB",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "BOMBER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "BOMBER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQB--",
           name: "BOMBER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.CGO",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "CARGO"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "CARGO"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQC--",
           name: "CARGO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ABNCP",
@@ -724,7 +519,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "DRONE (RPV/UAV)",
-            "AIRBORNE COMMAND POST"
+            "AIRBORNE COMMAND POST",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -732,25 +527,18 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQD--",
           name: "AIRBORNE COMMAND POST",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.FTR",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "FIGHTER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "FIGHTER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQF--",
           name: "FIGHTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.CSAR",
@@ -760,7 +548,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "DRONE (RPV/UAV)",
-            "SEARCH & RESCUE (CSAR)"
+            "SEARCH & RESCUE (CSAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -768,7 +556,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQH--",
           name: "SEARCH & RESCUE (CSAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ECM",
@@ -778,7 +566,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "DRONE (RPV/UAV)",
-            "ELECTRONIC COUNTERMEASURES (JAMMER)"
+            "ELECTRONIC COUNTERMEASURES (JAMMER)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -786,43 +574,29 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQJ--",
           name: "ELECTRONIC COUNTERMEASURES (JAMMER)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.TNK",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "TANKER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "TANKER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQK--",
           name: "TANKER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.VSTOL",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "VSTOL"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "VSTOL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQL--",
           name: "VSTOL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.SOF",
@@ -832,7 +606,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "DRONE (RPV/UAV)",
-            "SPECIAL OPERATIONS FORCES (SOF)"
+            "SPECIAL OPERATIONS FORCES (SOF)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -840,7 +614,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQM--",
           name: "SPECIAL OPERATIONS FORCES (SOF)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.MNECM",
@@ -850,7 +624,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "DRONE (RPV/UAV)",
-            "MINE COUNTERMEASURES"
+            "MINE COUNTERMEASURES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -858,7 +632,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQI--",
           name: "MINE COUNTERMEASURES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ASUW",
@@ -868,7 +642,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "DRONE (RPV/UAV)",
-            "ANTI-SURFACE WARFARE (ASUW)"
+            "ANTI-SURFACE WARFARE (ASUW)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -876,43 +650,29 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQN--",
           name: "ANTI-SURFACE WARFARE (ASUW)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.PAT",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "PATROL"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "PATROL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQP--",
           name: "PATROL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.RECON",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "RECONNAISSANCE"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "RECONNAISSANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQR--",
           name: "RECONNAISSANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.RECON.ABNEW",
@@ -923,7 +683,7 @@ export const ms2525b = {
             "FIXED WING",
             "DRONE (RPV/UAV)",
             "RECONNAISSANCE",
-            "AIRBORNE EARLY WARNING (AEW)"
+            "AIRBORNE EARLY WARNING (AEW)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -931,7 +691,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQRW-",
           name: "AIRBORNE EARLY WARNING (AEW)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.RECON.ESM",
@@ -942,7 +702,7 @@ export const ms2525b = {
             "FIXED WING",
             "DRONE (RPV/UAV)",
             "RECONNAISSANCE",
-            "ELECTRONIC SURVEILLANCE MEASURES"
+            "ELECTRONIC SURVEILLANCE MEASURES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -950,7 +710,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQRZ-",
           name: "ELECTRONIC SURVEILLANCE MEASURES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.RECON.PHG",
@@ -961,7 +721,7 @@ export const ms2525b = {
             "FIXED WING",
             "DRONE (RPV/UAV)",
             "RECONNAISSANCE",
-            "PHOTOGRAPHIC"
+            "PHOTOGRAPHIC",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -969,7 +729,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQRX-",
           name: "PHOTOGRAPHIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.ASBW",
@@ -979,7 +739,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "DRONE (RPV/UAV)",
-            "ANTI-SUBMARINE WARFARE (ASW)"
+            "ANTI-SUBMARINE WARFARE (ASW)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -987,43 +747,29 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQS--",
           name: "ANTI-SUBMARINE WARFARE (ASW)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.TNE",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "TRAINER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "TRAINER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQT--",
           name: "TRAINER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.UTY",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "UTILITY"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "UTILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQU--",
           name: "UTILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.COMM",
@@ -1033,7 +779,7 @@ export const ms2525b = {
             "MILITARY",
             "FIXED WING",
             "DRONE (RPV/UAV)",
-            "COMMUNICATIONS (C3I)"
+            "COMMUNICATIONS (C3I)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1041,25 +787,18 @@ export const ms2525b = {
           status: "*",
           functionid: "MFQY--",
           name: "COMMUNICATIONS (C3I)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.DRN.MEDV",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)",
-            "MEDEVAC"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)", "MEDEVAC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQO--",
           name: "MEDEVAC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.ASBWCB",
@@ -1068,7 +807,7 @@ export const ms2525b = {
             "AIR TRACK",
             "MILITARY",
             "FIXED WING",
-            "ANTISUBMARINE WARFARE (ASW) CARRIER BASED"
+            "ANTISUBMARINE WARFARE (ASW) CARRIER BASED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1076,230 +815,150 @@ export const ms2525b = {
           status: "*",
           functionid: "MFS---",
           name: "ANTISUBMARINE WARFARE (ASW) CARRIER BASED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.FIXD.SOF",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "SPECIAL OPERATIONS FORCES (SOF)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "FIXED WING", "SPECIAL OPERATIONS FORCES (SOF)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFM---",
           name: "SPECIAL OPERATIONS FORCES (SOF)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MH----",
           name: "ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.ATK",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "ATTACK"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "ATTACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHA---",
           name: "ATTACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.ASBW",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "ANTISUBMARINE WARFARE/MPA"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "ANTISUBMARINE WARFARE/MPA"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHS---",
           name: "ANTISUBMARINE WARFARE/MPA",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.UTY",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "UTILITY"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "UTILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHU---",
           name: "UTILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.UTY.LIT",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "UTILITY",
-            "UTILITY (LIGHT)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "UTILITY", "UTILITY (LIGHT)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHUL--",
           name: "UTILITY (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.UTY.MDM",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "UTILITY",
-            "UTILITY (MEDIUM)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "UTILITY", "UTILITY (MEDIUM)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHUM--",
           name: "UTILITY (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.UTY.HVY",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "UTILITY",
-            "UTILITY (HEAVY)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "UTILITY", "UTILITY (HEAVY)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHUH--",
           name: "UTILITY (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.MNECM",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "MINE COUNTERMEASURES"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "MINE COUNTERMEASURES"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHI---",
           name: "MINE COUNTERMEASURES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.CSAR",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "COMBAT SEARCH AND RESCUE (CSAR)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "COMBAT SEARCH AND RESCUE (CSAR)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHH---",
           name: "COMBAT SEARCH AND RESCUE (CSAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.RECON",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "RECONNAISSANCE"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "RECONNAISSANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHR---",
           name: "RECONNAISSANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.DRN",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "DRONE (RPV/UAV)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "DRONE (RPV/UAV)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHQ---",
           name: "DRONE (RPV/UAV)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.CGOALT",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "CARGO AIRLIFT (TRANSPORT)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "CARGO AIRLIFT (TRANSPORT)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHC---",
           name: "CARGO AIRLIFT (TRANSPORT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.CGOALT.LIT",
@@ -1309,7 +968,7 @@ export const ms2525b = {
             "MILITARY",
             "ROTARY WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (LIGHT)"
+            "CARGO AIRLIFT (LIGHT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1317,7 +976,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MHCL--",
           name: "CARGO AIRLIFT (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.CGOALT.MDM",
@@ -1327,7 +986,7 @@ export const ms2525b = {
             "MILITARY",
             "ROTARY WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (MEDIUM)"
+            "CARGO AIRLIFT (MEDIUM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1335,7 +994,7 @@ export const ms2525b = {
           status: "*",
           functionid: "MHCM--",
           name: "CARGO AIRLIFT (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.CGOALT.HVY",
@@ -1345,7 +1004,7 @@ export const ms2525b = {
             "MILITARY",
             "ROTARY WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (HEAVY)"
+            "CARGO AIRLIFT (HEAVY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1353,92 +1012,62 @@ export const ms2525b = {
           status: "*",
           functionid: "MHCH--",
           name: "CARGO AIRLIFT (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.TNE",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "TRAINER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "TRAINER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHT---",
           name: "TRAINER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.MEDV",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "MEDEVAC"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "MEDEVAC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHO---",
           name: "MEDEVAC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.SOF",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "SPECIAL OPERATIONS FORCES (SOF)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "SPECIAL OPERATIONS FORCES (SOF)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHM---",
           name: "SPECIAL OPERATIONS FORCES (SOF)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.ABNCP",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "AIRBORNE COMMAND POST (C2)"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "AIRBORNE COMMAND POST (C2)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHD---",
           name: "AIRBORNE COMMAND POST (C2)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.TNK",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "TANKER"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "ROTARY WING", "TANKER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHK---",
           name: "TANKER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.ROT.ECM",
@@ -1447,7 +1076,7 @@ export const ms2525b = {
             "AIR TRACK",
             "MILITARY",
             "ROTARY WING",
-            "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)"
+            "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1455,71 +1084,51 @@ export const ms2525b = {
           status: "*",
           functionid: "MHJ---",
           name: "ELECTRONIC COUNTERMEASURES (ECM/JAMMER)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.MIL.LTA",
-          names: [
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "LIGHTER THAN AIR"
-          ],
+          names: [, "AIR TRACK", "MILITARY", "LIGHTER THAN AIR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "ML----",
           name: "LIGHTER THAN AIR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN",
-          names: [
-            ,
-            "AIR TRACK",
-            "WEAPON"
-          ],
+          names: [, "AIR TRACK", "WEAPON"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "W-----",
           name: "WEAPON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF",
-          names: [
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "MISSILE IN FLIGHT"
-          ],
+          names: [, "AIR TRACK", "WEAPON", "MISSILE IN FLIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WM----",
           name: "MISSILE IN FLIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM",
-          names: [
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "MISSILE IN FLIGHT",
-            "SURFACE LAUNCHED MISSILE"
-          ],
+          names: [, "AIR TRACK", "WEAPON", "MISSILE IN FLIGHT", "SURFACE LAUNCHED MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WMS---",
           name: "SURFACE LAUNCHED MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM.SSM",
@@ -1529,7 +1138,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "SURFACE LAUNCHED MISSILE",
-            "SURFACE TO SURFACE MISSILE (SSM)"
+            "SURFACE TO SURFACE MISSILE (SSM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1537,7 +1146,7 @@ export const ms2525b = {
           status: "*",
           functionid: "WMSS--",
           name: "SURFACE TO SURFACE MISSILE (SSM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM.SAM",
@@ -1547,7 +1156,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "SURFACE LAUNCHED MISSILE",
-            "SURFACE TO AIR MISSILE (SAM)"
+            "SURFACE TO AIR MISSILE (SAM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1555,7 +1164,7 @@ export const ms2525b = {
           status: "*",
           functionid: "WMSA--",
           name: "SURFACE TO AIR MISSILE (SAM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM.SSUM",
@@ -1565,7 +1174,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "SURFACE LAUNCHED MISSILE",
-            "SURFACE TO SUBSURFACE MISSILE"
+            "SURFACE TO SUBSURFACE MISSILE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1573,7 +1182,7 @@ export const ms2525b = {
           status: "*",
           functionid: "WMSU--",
           name: "SURFACE TO SUBSURFACE MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.SLM.ABM",
@@ -1583,7 +1192,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "SURFACE LAUNCHED MISSILE",
-            "ANTI-BALLISTIC MISSILE (ABM)"
+            "ANTI-BALLISTIC MISSILE (ABM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1591,24 +1200,18 @@ export const ms2525b = {
           status: "*",
           functionid: "WMSB--",
           name: "ANTI-BALLISTIC MISSILE (ABM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.ALM",
-          names: [
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "MISSILE IN FLIGHT",
-            "AIR LAUNCHED MISSILE"
-          ],
+          names: [, "AIR TRACK", "WEAPON", "MISSILE IN FLIGHT", "AIR LAUNCHED MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WMA---",
           name: "AIR LAUNCHED MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.ALM.ASM",
@@ -1618,7 +1221,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "AIR LAUNCHED MISSILE",
-            "AIR TO SURFACE MISSILE (ASM)"
+            "AIR TO SURFACE MISSILE (ASM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1626,7 +1229,7 @@ export const ms2525b = {
           status: "*",
           functionid: "WMAS--",
           name: "AIR TO SURFACE MISSILE (ASM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.ALM.AAM",
@@ -1636,7 +1239,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "AIR LAUNCHED MISSILE",
-            "AIR TO AIR MISSILE (AAM)"
+            "AIR TO AIR MISSILE (AAM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1644,7 +1247,7 @@ export const ms2525b = {
           status: "*",
           functionid: "WMAA--",
           name: "AIR TO AIR MISSILE (AAM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.ALM.ASPC",
@@ -1654,7 +1257,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "AIR LAUNCHED MISSILE",
-            "AIR TO SPACE MISSILE"
+            "AIR TO SPACE MISSILE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1662,7 +1265,7 @@ export const ms2525b = {
           status: "*",
           functionid: "WMAP--",
           name: "AIR TO SPACE MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.SBSM",
@@ -1671,7 +1274,7 @@ export const ms2525b = {
             "AIR TRACK",
             "WEAPON",
             "MISSILE IN FLIGHT",
-            "SUBSURFACE TO SURFACE MISSILE (S/SSM)"
+            "SUBSURFACE TO SURFACE MISSILE (S/SSM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1679,296 +1282,199 @@ export const ms2525b = {
           status: "*",
           functionid: "WMU---",
           name: "SUBSURFACE TO SURFACE MISSILE (S/SSM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.CM",
-          names: [
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "MISSILE IN FLIGHT",
-            "CRUISE MISSILE"
-          ],
+          names: [, "AIR TRACK", "WEAPON", "MISSILE IN FLIGHT", "CRUISE MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WMCM--",
           name: "CRUISE MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.MSLIF.BLST",
-          names: [
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "MISSILE IN FLIGHT",
-            "BALLISTIC MISSILE"
-          ],
+          names: [, "AIR TRACK", "WEAPON", "MISSILE IN FLIGHT", "BALLISTIC MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WMB---",
           name: "BALLISTIC MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.BM",
-          names: [
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "BOMB"
-          ],
+          names: [, "AIR TRACK", "WEAPON", "BOMB"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WB----",
           name: "BOMB",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.WPN.DCY",
-          names: [
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "DECOY"
-          ],
+          names: [, "AIR TRACK", "WEAPON", "DECOY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WD----",
           name: "DECOY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.CVL",
-          names: [
-            ,
-            "AIR TRACK",
-            "CIVIL AIRCRAFT"
-          ],
+          names: [, "AIR TRACK", "CIVIL AIRCRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "C-----",
           name: "CIVIL AIRCRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.CVL.FIXD",
-          names: [
-            ,
-            "AIR TRACK",
-            "CIVIL AIRCRAFT",
-            "FIXED WING"
-          ],
+          names: [, "AIR TRACK", "CIVIL AIRCRAFT", "FIXED WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "CF----",
           name: "FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.CVL.ROT",
-          names: [
-            ,
-            "AIR TRACK",
-            "CIVIL AIRCRAFT",
-            "ROTARY WING"
-          ],
+          names: [, "AIR TRACK", "CIVIL AIRCRAFT", "ROTARY WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "CH----",
           name: "ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.AIRTRK.CVL.LTA",
-          names: [
-            ,
-            "AIR TRACK",
-            "CIVIL AIRCRAFT",
-            "LIGHTER THAN AIR"
-          ],
+          names: [, "AIR TRACK", "CIVIL AIRCRAFT", "LIGHTER THAN AIR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "CL----",
           name: "LIGHTER THAN AIR",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     GRDTRK: {
       name: "GROUND UNIT",
       mainIcon: [
         {
           hierarchy: "WAR.GRDTRK",
-          names: [
-            ,
-            "GROUND TRACK"
-          ],
+          names: [, "GROUND TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "------",
           name: "GROUND TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT"
-          ],
+          names: [, "GROUND TRACK", "UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "U-----",
           name: "UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UC----",
           name: "COMBAT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENSE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENSE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCD---",
           name: "AIR DEFENSE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.SHTR",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENSE",
-            "SHORT RANGE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENSE", "SHORT RANGE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDS--",
           name: "SHORT RANGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.SHTR.CPL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENSE",
-            "SHORT RANGE",
-            "CHAPARRAL"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENSE", "SHORT RANGE", "CHAPARRAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDSC-",
           name: "CHAPARRAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.SHTR.STG",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENSE",
-            "SHORT RANGE",
-            "STINGER"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENSE", "SHORT RANGE", "STINGER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDSS-",
           name: "STINGER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.SHTR.VUL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENSE",
-            "SHORT RANGE",
-            "VULCAN"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENSE", "SHORT RANGE", "VULCAN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDSV-",
           name: "VULCAN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENSE",
-            "AIR DEFENSE MISSILE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENSE", "AIR DEFENSE MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDM--",
           name: "AIR DEFENSE MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.LIT",
@@ -1979,7 +1485,7 @@ export const ms2525b = {
             "COMBAT",
             "AIR DEFENSE",
             "AIR DEFENSE MISSILE",
-            "AIR DEFENSE MISSILE LIGHT"
+            "AIR DEFENSE MISSILE LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1987,7 +1493,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCDML-",
           name: "AIR DEFENSE MISSILE LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.LIT.MOT",
@@ -1999,7 +1505,7 @@ export const ms2525b = {
             "AIR DEFENSE",
             "AIR DEFENSE MISSILE",
             "AIR DEFENSE MISSILE LIGHT",
-            "AIR DEFENSE MISSILE MOTORIZED (AVENGER)"
+            "AIR DEFENSE MISSILE MOTORIZED (AVENGER)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2007,7 +1513,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCDMLA",
           name: "AIR DEFENSE MISSILE MOTORIZED (AVENGER)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.MDM",
@@ -2018,7 +1524,7 @@ export const ms2525b = {
             "COMBAT",
             "AIR DEFENSE",
             "AIR DEFENSE MISSILE",
-            "AIR DEFENSE MISSILE MEDIUM"
+            "AIR DEFENSE MISSILE MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2026,7 +1532,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCDMM-",
           name: "AIR DEFENSE MISSILE MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.HVY",
@@ -2037,7 +1543,7 @@ export const ms2525b = {
             "COMBAT",
             "AIR DEFENSE",
             "AIR DEFENSE MISSILE",
-            "AIR DEFENSE MISSILE HEAVY"
+            "AIR DEFENSE MISSILE HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2045,7 +1551,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCDMH-",
           name: "AIR DEFENSE MISSILE HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD",
@@ -2056,7 +1562,7 @@ export const ms2525b = {
             "COMBAT",
             "AIR DEFENSE",
             "AIR DEFENSE MISSILE",
-            "H/MAD"
+            "H/MAD",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2064,7 +1570,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCDH--",
           name: "H/MAD",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.HWK",
@@ -2076,7 +1582,7 @@ export const ms2525b = {
             "AIR DEFENSE",
             "AIR DEFENSE MISSILE",
             "H/MAD",
-            "HAWK"
+            "HAWK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2084,7 +1590,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCDHH-",
           name: "HAWK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.PATT",
@@ -2096,7 +1602,7 @@ export const ms2525b = {
             "AIR DEFENSE",
             "AIR DEFENSE MISSILE",
             "H/MAD",
-            "PATRIOT"
+            "PATRIOT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2104,61 +1610,40 @@ export const ms2525b = {
           status: "*",
           functionid: "UCDHP-",
           name: "PATRIOT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.GUNUNT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENSE",
-            "GUN UNIT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENSE", "GUN UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDG--",
           name: "GUN UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.CMPS",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENSE",
-            "COMPOSITE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENSE", "COMPOSITE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDC--",
           name: "COMPOSITE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.TGTGUT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENSE",
-            "TARGETING UNIT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENSE", "TARGETING UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDT--",
           name: "TARGETING UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ADF.TMDU",
@@ -2168,7 +1653,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT",
             "AIR DEFENSE",
-            "THEATER MISSILE DEFENSE UNIT"
+            "THEATER MISSILE DEFENSE UNIT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2176,42 +1661,29 @@ export const ms2525b = {
           status: "*",
           functionid: "UCDO--",
           name: "THEATER MISSILE DEFENSE UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ARMOR"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ARMOR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCA---",
           name: "ARMOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ARMOR",
-            "ARMOR TRACK"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ARMOR", "ARMOR TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAT--",
           name: "ARMOR TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.ABN",
@@ -2222,7 +1694,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR TRACK",
-            "ARMOR TRACK AIRBORNE"
+            "ARMOR TRACK AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2230,7 +1702,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCATA-",
           name: "ARMOR TRACK AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.AMP",
@@ -2241,7 +1713,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR TRACK",
-            "ARMOR TRACK AMPHIBIOUS"
+            "ARMOR TRACK AMPHIBIOUS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2249,7 +1721,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCATW-",
           name: "ARMOR TRACK AMPHIBIOUS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.AMP.RCY",
@@ -2261,7 +1733,7 @@ export const ms2525b = {
             "ARMOR",
             "ARMOR TRACK",
             "ARMOR TRACK AMPHIBIOUS",
-            "ARMOR TRACK AMPHIBIOUS RECOVERY"
+            "ARMOR TRACK AMPHIBIOUS RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2269,26 +1741,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCATWR",
           name: "ARMOR TRACK AMPHIBIOUS RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.LIT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ARMOR",
-            "ARMOR TRACK",
-            "ARMOR TRACK, LIGHT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ARMOR", "ARMOR TRACK", "ARMOR TRACK, LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCATL-",
           name: "ARMOR TRACK, LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.MDM",
@@ -2299,7 +1763,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR TRACK",
-            "ARMOR TRACK, MEDIUM"
+            "ARMOR TRACK, MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2307,26 +1771,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCATM-",
           name: "ARMOR TRACK, MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.HVY",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ARMOR",
-            "ARMOR TRACK",
-            "ARMOR TRACK, HEAVY"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ARMOR", "ARMOR TRACK", "ARMOR TRACK, HEAVY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCATH-",
           name: "ARMOR TRACK, HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.TRK.RCY",
@@ -2337,7 +1793,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR TRACK",
-            "ARMOR TRACK, RECOVERY"
+            "ARMOR TRACK, RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2345,25 +1801,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCATR-",
           name: "ARMOR TRACK, RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ARMOR",
-            "ARMOR, WHEELED"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ARMOR", "ARMOR, WHEELED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAW--",
           name: "ARMOR, WHEELED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.AAST",
@@ -2374,7 +1823,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR, WHEELED",
-            "ARMOR, WHEELED AIR ASSAULT"
+            "ARMOR, WHEELED AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2382,7 +1831,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAWS-",
           name: "ARMOR, WHEELED AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.ABN",
@@ -2393,7 +1842,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR, WHEELED",
-            "ARMOR, WHEELED AIRBORNE"
+            "ARMOR, WHEELED AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2401,7 +1850,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAWA-",
           name: "ARMOR, WHEELED AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.AMP",
@@ -2412,7 +1861,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR, WHEELED",
-            "ARMOR, WHEELED AMPHIBIOUS"
+            "ARMOR, WHEELED AMPHIBIOUS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2420,7 +1869,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAWW-",
           name: "ARMOR, WHEELED AMPHIBIOUS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.AMP.RCY",
@@ -2432,7 +1881,7 @@ export const ms2525b = {
             "ARMOR",
             "ARMOR, WHEELED",
             "ARMOR, WHEELED AMPHIBIOUS",
-            "ARMOR, WHEELED AMPHIBIOUS RECOVERY"
+            "ARMOR, WHEELED AMPHIBIOUS RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2440,7 +1889,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAWWR",
           name: "ARMOR, WHEELED AMPHIBIOUS RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.LIT",
@@ -2451,7 +1900,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR, WHEELED",
-            "ARMOR, WHEELED LIGHT"
+            "ARMOR, WHEELED LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2459,7 +1908,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAWL-",
           name: "ARMOR, WHEELED LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.MDM",
@@ -2470,7 +1919,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR, WHEELED",
-            "ARMOR, WHEELED MEDIUM"
+            "ARMOR, WHEELED MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2478,7 +1927,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAWM-",
           name: "ARMOR, WHEELED MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.HVY",
@@ -2489,7 +1938,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR, WHEELED",
-            "ARMOR, WHEELED HEAVY"
+            "ARMOR, WHEELED HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2497,7 +1946,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAWH-",
           name: "ARMOR, WHEELED HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ARM.WHD.RCY",
@@ -2508,7 +1957,7 @@ export const ms2525b = {
             "COMBAT",
             "ARMOR",
             "ARMOR, WHEELED",
-            "ARMOR, WHEELED RECOVERY"
+            "ARMOR, WHEELED RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2516,150 +1965,95 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAWR-",
           name: "ARMOR, WHEELED RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOR"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAA--",
           name: "ANTI ARMOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.DMD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOR",
-            "ANTI ARMOR DISMOUNTED"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOR", "ANTI ARMOR DISMOUNTED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAD-",
           name: "ANTI ARMOR DISMOUNTED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.LIT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOR",
-            "ANTI ARMOR LIGHT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOR", "ANTI ARMOR LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAL-",
           name: "ANTI ARMOR LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ABN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOR",
-            "ANTI ARMOR AIRBORNE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOR", "ANTI ARMOR AIRBORNE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAM-",
           name: "ANTI ARMOR AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.AAST",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOR",
-            "ANTI ARMOR AIR ASSAULT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOR", "ANTI ARMOR AIR ASSAULT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAS-",
           name: "ANTI ARMOR AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.MNT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOR",
-            "ANTI ARMOR MOUNTAIN"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOR", "ANTI ARMOR MOUNTAIN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAU-",
           name: "ANTI ARMOR MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARC",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOR",
-            "ANTI ARMOR ARCTIC"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOR", "ANTI ARMOR ARCTIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAC-",
           name: "ANTI ARMOR ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARMD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOR",
-            "ANTI ARMOR ARMORED"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOR", "ANTI ARMOR ARMORED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAA-",
           name: "ANTI ARMOR ARMORED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARMD.TKD",
@@ -2670,7 +2064,7 @@ export const ms2525b = {
             "COMBAT",
             "ANTI ARMOR",
             "ANTI ARMOR ARMORED",
-            "ANTI ARMOR ARMORED TRACKED"
+            "ANTI ARMOR ARMORED TRACKED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2678,7 +2072,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAAAT",
           name: "ANTI ARMOR ARMORED TRACKED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARMD.WHD",
@@ -2689,7 +2083,7 @@ export const ms2525b = {
             "COMBAT",
             "ANTI ARMOR",
             "ANTI ARMOR ARMORED",
-            "ANTI ARMOR ARMORED WHEELED"
+            "ANTI ARMOR ARMORED WHEELED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2697,7 +2091,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAAAW",
           name: "ANTI ARMOR ARMORED WHEELED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.ARMD.AAST",
@@ -2708,7 +2102,7 @@ export const ms2525b = {
             "COMBAT",
             "ANTI ARMOR",
             "ANTI ARMOR ARMORED",
-            "ANTI ARMOR ARMORED AIR ASSAULT"
+            "ANTI ARMOR ARMORED AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2716,25 +2110,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAAAS",
           name: "ANTI ARMOR ARMORED AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.MOT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOR",
-            "ANTI ARMOR MOTORIZED"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOR", "ANTI ARMOR MOTORIZED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAO-",
           name: "ANTI ARMOR MOTORIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AARM.MOT.AAST",
@@ -2745,7 +2132,7 @@ export const ms2525b = {
             "COMBAT",
             "ANTI ARMOR",
             "ANTI ARMOR MOTORIZED",
-            "ANTI ARMOR MOTORIZED AIR ASSAULT"
+            "ANTI ARMOR MOTORIZED AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2753,42 +2140,29 @@ export const ms2525b = {
           status: "*",
           functionid: "UCAAOS",
           name: "ANTI ARMOR MOTORIZED AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AVIATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCV---",
           name: "AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.FIXD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "FIXED WING"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "FIXED WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVF--",
           name: "FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.FIXD.UTY",
@@ -2799,7 +2173,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "FIXED WING",
-            "UTILITY FIXED WING"
+            "UTILITY FIXED WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2807,7 +2181,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVFU-",
           name: "UTILITY FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.FIXD.ATK",
@@ -2818,7 +2192,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "FIXED WING",
-            "ATTACK FIXED WING"
+            "ATTACK FIXED WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2826,44 +2200,29 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVFA-",
           name: "ATTACK FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.FIXD.RECON",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "FIXED WING",
-            "RECON FIXED WING"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "FIXED WING", "RECON FIXED WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVFR-",
           name: "RECON FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "ROTARY WING"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "ROTARY WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVR--",
           name: "ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.ATK",
@@ -2874,7 +2233,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "ATTACK ROTARY WING"
+            "ATTACK ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2882,7 +2241,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVRA-",
           name: "ATTACK ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.SCUT",
@@ -2893,7 +2252,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "SCOUT ROTARY WING"
+            "SCOUT ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2901,7 +2260,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVRS-",
           name: "SCOUT ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.ASBW",
@@ -2912,7 +2271,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "ANTISUBMARINE WARFARE ROTARY WING"
+            "ANTISUBMARINE WARFARE ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2920,7 +2279,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVRW-",
           name: "ANTISUBMARINE WARFARE ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.UTY",
@@ -2931,7 +2290,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "UTILITY ROTARY WING"
+            "UTILITY ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2939,7 +2298,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVRU-",
           name: "UTILITY ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.UTY.LIT",
@@ -2951,7 +2310,7 @@ export const ms2525b = {
             "AVIATION",
             "ROTARY WING",
             "UTILITY ROTARY WING",
-            "LIGHT UTILITY ROTARY WING"
+            "LIGHT UTILITY ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2959,7 +2318,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVRUL",
           name: "LIGHT UTILITY ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.UTY.MDM",
@@ -2971,7 +2330,7 @@ export const ms2525b = {
             "AVIATION",
             "ROTARY WING",
             "UTILITY ROTARY WING",
-            "MEDIUM UTILITY ROTARY WING"
+            "MEDIUM UTILITY ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2979,7 +2338,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVRUM",
           name: "MEDIUM UTILITY ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.UTY.HVY",
@@ -2991,7 +2350,7 @@ export const ms2525b = {
             "AVIATION",
             "ROTARY WING",
             "UTILITY ROTARY WING",
-            "HEAVY UTILITY ROTARY WING"
+            "HEAVY UTILITY ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2999,26 +2358,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVRUH",
           name: "HEAVY UTILITY ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.C2",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "ROTARY WING",
-            "C2 ROTARY WING"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "ROTARY WING", "C2 ROTARY WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVRUC",
           name: "C2 ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.MEDV",
@@ -3029,7 +2380,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "MEDEVAC ROTARY WING"
+            "MEDEVAC ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3037,7 +2388,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVRUE",
           name: "MEDEVAC ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.ROT.MNECM",
@@ -3048,7 +2399,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "MINE COUNTERMEASURE ROTARY WING"
+            "MINE COUNTERMEASURE ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3056,43 +2407,29 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVRM-",
           name: "MINE COUNTERMEASURE ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.SAR",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "SEARCH AND RESCUE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "SEARCH AND RESCUE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVS--",
           name: "SEARCH AND RESCUE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.CMPS",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "COMPOSITE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "COMPOSITE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVC--",
           name: "COMPOSITE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.VSTOL",
@@ -3102,7 +2439,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT",
             "AVIATION",
-            "VERTICAL/SHORT TAKEOFF AND LANDING (V/STOL)"
+            "VERTICAL/SHORT TAKEOFF AND LANDING (V/STOL)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3110,25 +2447,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVV--",
           name: "VERTICAL/SHORT TAKEOFF AND LANDING (V/STOL)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.UAV",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "UNMANNED AERIAL VEHICLE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "UNMANNED AERIAL VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVU--",
           name: "UNMANNED AERIAL VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.UAV.FIXD",
@@ -3139,7 +2469,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "UNMANNED AERIAL VEHICLE",
-            "UNMANNED AERIAL VEHICLE FIXED WING"
+            "UNMANNED AERIAL VEHICLE FIXED WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3147,7 +2477,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVUF-",
           name: "UNMANNED AERIAL VEHICLE FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.AVN.UAV.ROT",
@@ -3158,7 +2488,7 @@ export const ms2525b = {
             "COMBAT",
             "AVIATION",
             "UNMANNED AERIAL VEHICLE",
-            "UNMANNED AERIAL VEHICLE ROTARY WING"
+            "UNMANNED AERIAL VEHICLE ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3166,221 +2496,139 @@ export const ms2525b = {
           status: "*",
           functionid: "UCVUR-",
           name: "UNMANNED AERIAL VEHICLE ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCI---",
           name: "INFANTRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF.LIT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY LIGHT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIL--",
           name: "INFANTRY LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF.MOT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY MOTORIZED"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY MOTORIZED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIM--",
           name: "INFANTRY MOTORIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF.MNT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY MOUNTAIN"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY MOUNTAIN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIO--",
           name: "INFANTRY MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF.ABN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY AIRBORNE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY AIRBORNE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIA--",
           name: "INFANTRY AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF.AAST",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY AIR ASSAULT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY AIR ASSAULT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIS--",
           name: "INFANTRY AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF.MECH",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY MECHANIZED"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY MECHANIZED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIZ--",
           name: "INFANTRY MECHANIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF.NAV",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY NAVAL"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY NAVAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIN--",
           name: "INFANTRY NAVAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF.INFFV",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY FIGHTING VEHICLE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY FIGHTING VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCII--",
           name: "INFANTRY FIGHTING VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.INF.ARC",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY ARCTIC"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY ARCTIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIC--",
           name: "INFANTRY ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ENGINEER"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ENGINEER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCE---",
           name: "ENGINEER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ENGINEER",
-            "ENGINEER COMBAT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ENGINEER", "ENGINEER COMBAT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCEC--",
           name: "ENGINEER COMBAT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.AAST",
@@ -3391,7 +2639,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT AIR ASSAULT"
+            "ENGINEER COMBAT AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3399,7 +2647,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECS-",
           name: "ENGINEER COMBAT AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.ABN",
@@ -3410,7 +2658,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT AIRBORNE"
+            "ENGINEER COMBAT AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3418,7 +2666,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECA-",
           name: "ENGINEER COMBAT AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.ARC",
@@ -3429,7 +2677,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT ARCTIC"
+            "ENGINEER COMBAT ARCTIC",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3437,7 +2685,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECC-",
           name: "ENGINEER COMBAT ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.LIT",
@@ -3448,7 +2696,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT LIGHT (SAPPER)"
+            "ENGINEER COMBAT LIGHT (SAPPER)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3456,7 +2704,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECL-",
           name: "ENGINEER COMBAT LIGHT (SAPPER)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.MDM",
@@ -3467,7 +2715,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MEDIUM"
+            "ENGINEER COMBAT MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3475,7 +2723,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECM-",
           name: "ENGINEER COMBAT MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.HVY",
@@ -3486,7 +2734,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT HEAVY"
+            "ENGINEER COMBAT HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3494,7 +2742,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECH-",
           name: "ENGINEER COMBAT HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.MECH",
@@ -3505,7 +2753,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MECHANIZED (TRACK)"
+            "ENGINEER COMBAT MECHANIZED (TRACK)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3513,7 +2761,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECT-",
           name: "ENGINEER COMBAT MECHANIZED (TRACK)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.MOT",
@@ -3524,7 +2772,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MOTORIZED"
+            "ENGINEER COMBAT MOTORIZED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3532,7 +2780,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECW-",
           name: "ENGINEER COMBAT MOTORIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.MNT",
@@ -3543,7 +2791,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MOUNTAIN"
+            "ENGINEER COMBAT MOUNTAIN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3551,7 +2799,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECO-",
           name: "ENGINEER COMBAT MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CBT.RECON",
@@ -3562,7 +2810,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT RECON"
+            "ENGINEER COMBAT RECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3570,25 +2818,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCECR-",
           name: "ENGINEER COMBAT RECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CSN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ENGINEER",
-            "ENGINEER CONSTRUCTION"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "ENGINEER", "ENGINEER CONSTRUCTION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCEN--",
           name: "ENGINEER CONSTRUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ENG.CSN.NAV",
@@ -3599,7 +2840,7 @@ export const ms2525b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER CONSTRUCTION",
-            "ENGINEER NAVAL CONSTRUCTION"
+            "ENGINEER NAVAL CONSTRUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3607,42 +2848,29 @@ export const ms2525b = {
           status: "*",
           functionid: "UCENN-",
           name: "ENGINEER NAVAL CONSTRUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCF---",
           name: "FIELD ARTILLERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "HOWITZER/GUN"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "HOWITZER/GUN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFH--",
           name: "HOWITZER/GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.SPD",
@@ -3653,7 +2881,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "SELF-PROPELLED"
+            "SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3661,7 +2889,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFHE-",
           name: "SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.AAST",
@@ -3672,7 +2900,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "AIR ASSAULT"
+            "AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3680,7 +2908,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFHS-",
           name: "AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.ABN",
@@ -3691,7 +2919,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "AIRBORNE"
+            "AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3699,26 +2927,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFHA-",
           name: "AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.ARC",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "HOWITZER/GUN",
-            "ARCTIC"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "HOWITZER/GUN", "ARCTIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFHC-",
           name: "ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.MNT",
@@ -3729,7 +2949,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "MOUNTAIN"
+            "MOUNTAIN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3737,64 +2957,40 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFHO-",
           name: "MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.LIT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "HOWITZER/GUN",
-            "LIGHT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "HOWITZER/GUN", "LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFHL-",
           name: "LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.MDM",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "HOWITZER/GUN",
-            "MEDIUM"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "HOWITZER/GUN", "MEDIUM"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFHM-",
           name: "MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.HVY",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "HOWITZER/GUN",
-            "HEAVY"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "HOWITZER/GUN", "HEAVY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFHH-",
           name: "HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.HOW.AMP",
@@ -3805,7 +3001,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "AMPHIBIOUS"
+            "AMPHIBIOUS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3813,25 +3009,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFHX-",
           name: "AMPHIBIOUS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "ROCKET"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "ROCKET"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFR--",
           name: "ROCKET",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL",
@@ -3842,7 +3031,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ROCKET",
-            "SINGLE ROCKET LAUNCHER"
+            "SINGLE ROCKET LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3850,7 +3039,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFRS-",
           name: "SINGLE ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL.SRSPD",
@@ -3862,7 +3051,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET SELF-PROPELLED"
+            "SINGLE ROCKET SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3870,7 +3059,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFRSS",
           name: "SINGLE ROCKET SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL.SRTRK",
@@ -3882,7 +3071,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET TRUCK"
+            "SINGLE ROCKET TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3890,7 +3079,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFRSR",
           name: "SINGLE ROCKET TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL.SRTOW",
@@ -3902,7 +3091,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET TOWED"
+            "SINGLE ROCKET TOWED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3910,7 +3099,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFRST",
           name: "SINGLE ROCKET TOWED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.MRL",
@@ -3921,7 +3110,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ROCKET",
-            "MULTI ROCKET LAUNCHER"
+            "MULTI ROCKET LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3929,7 +3118,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFRM-",
           name: "MULTI ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.MRL.MRSPD",
@@ -3941,7 +3130,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "MULTI ROCKET LAUNCHER",
-            "MULTI ROCKET SELF-PROPELLED"
+            "MULTI ROCKET SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3949,7 +3138,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFRMS",
           name: "MULTI ROCKET SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.MRL.MRTRK",
@@ -3961,7 +3150,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "MULTI ROCKET LAUNCHER",
-            "MULTI ROCKET TRUCK"
+            "MULTI ROCKET TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3969,7 +3158,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFRMR",
           name: "MULTI ROCKET TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ROC.MRL.MRTOW",
@@ -3981,7 +3170,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "MULTI ROCKET LAUNCHER",
-            "MULTI ROCKET TOWED"
+            "MULTI ROCKET TOWED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3989,25 +3178,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFRMT",
           name: "MULTI ROCKET TOWED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "TARGET ACQUISITION"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "TARGET ACQUISITION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFT--",
           name: "TARGET ACQUISITION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.RAD",
@@ -4018,7 +3200,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "RADAR"
+            "RADAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4026,7 +3208,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFTR-",
           name: "RADAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.SND",
@@ -4037,7 +3219,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "SOUND"
+            "SOUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4045,7 +3227,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFTS-",
           name: "SOUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.FLH",
@@ -4056,7 +3238,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "FLASH (OPTICAL)"
+            "FLASH (OPTICAL)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4064,7 +3246,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFTF-",
           name: "FLASH (OPTICAL)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT",
@@ -4075,7 +3257,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "COLT/FIST"
+            "COLT/FIST",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4083,7 +3265,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFTC-",
           name: "COLT/FIST",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT.DMD",
@@ -4095,7 +3277,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
             "COLT/FIST",
-            "DISMOUNTED COLT/FIST"
+            "DISMOUNTED COLT/FIST",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4103,7 +3285,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFTCD",
           name: "DISMOUNTED COLT/FIST",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT.TKD",
@@ -4115,7 +3297,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
             "COLT/FIST",
-            "TRACKED COLT/FIST"
+            "TRACKED COLT/FIST",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4123,7 +3305,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFTCM",
           name: "TRACKED COLT/FIST",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.ANG",
@@ -4134,7 +3316,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "ANGLICO"
+            "ANGLICO",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4142,25 +3324,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFTA-",
           name: "ANGLICO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "MORTAR"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "MORTAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFM--",
           name: "MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.SPDTRK",
@@ -4171,7 +3346,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "MORTAR",
-            "SELF-PROPELLED (SP) TRACKED MORTAR"
+            "SELF-PROPELLED (SP) TRACKED MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4179,7 +3354,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFMS-",
           name: "SELF-PROPELLED (SP) TRACKED MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.SPDWHD",
@@ -4190,7 +3365,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "MORTAR",
-            "SP WHEELED MORTAR"
+            "SP WHEELED MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4198,26 +3373,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFMW-",
           name: "SP WHEELED MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "MORTAR",
-            "TOWED MORTAR"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "MORTAR", "TOWED MORTAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFMT-",
           name: "TOWED MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW.ABN",
@@ -4229,7 +3396,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "MORTAR",
             "TOWED MORTAR",
-            "TOWED AIRBORNE MORTAR"
+            "TOWED AIRBORNE MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4237,7 +3404,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFMTA",
           name: "TOWED AIRBORNE MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW.AAST",
@@ -4249,7 +3416,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "MORTAR",
             "TOWED MORTAR",
-            "TOWED AIR ASSAULT MORTAR"
+            "TOWED AIR ASSAULT MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4257,7 +3424,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFMTS",
           name: "TOWED AIR ASSAULT MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW.ARC",
@@ -4269,7 +3436,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "MORTAR",
             "TOWED MORTAR",
-            "TOWED ARCTIC MORTAR"
+            "TOWED ARCTIC MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4277,7 +3444,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFMTC",
           name: "TOWED ARCTIC MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.TOW.MNT",
@@ -4289,7 +3456,7 @@ export const ms2525b = {
             "FIELD ARTILLERY",
             "MORTAR",
             "TOWED MORTAR",
-            "TOWED MOUNTAIN MORTAR"
+            "TOWED MOUNTAIN MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4297,7 +3464,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFMTO",
           name: "TOWED MOUNTAIN MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.MORT.AMP",
@@ -4308,7 +3475,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "MORTAR",
-            "AMPHIBIOUS MORTAR"
+            "AMPHIBIOUS MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4316,25 +3483,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFML-",
           name: "AMPHIBIOUS MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "ARTILLERY SURVEY"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "ARTILLERY SURVEY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFS--",
           name: "ARTILLERY SURVEY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.AAST",
@@ -4345,7 +3505,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ARTILLERY SURVEY",
-            "AIR ASSAULT"
+            "AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4353,7 +3513,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFSS-",
           name: "AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.ABN",
@@ -4364,7 +3524,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ARTILLERY SURVEY",
-            "AIRBORNE"
+            "AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4372,7 +3532,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFSA-",
           name: "AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.LIT",
@@ -4383,7 +3543,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ARTILLERY SURVEY",
-            "LIGHT"
+            "LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4391,7 +3551,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFSL-",
           name: "LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.MNT",
@@ -4402,7 +3562,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ARTILLERY SURVEY",
-            "MOUNTAIN"
+            "MOUNTAIN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4410,25 +3570,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFSO-",
           name: "MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "METEOROLOGICAL"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "METEOROLOGICAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFO--",
           name: "METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO.AAST",
@@ -4439,7 +3592,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "METEOROLOGICAL",
-            "AIR ASSAULT METEOROLOGICAL"
+            "AIR ASSAULT METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4447,7 +3600,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFOS-",
           name: "AIR ASSAULT METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO.ABN",
@@ -4458,7 +3611,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "METEOROLOGICAL",
-            "AIRBORNE METEOROLOGICAL"
+            "AIRBORNE METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4466,7 +3619,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFOA-",
           name: "AIRBORNE METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO.LIT",
@@ -4477,7 +3630,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "METEOROLOGICAL",
-            "LIGHT METEOROLOGICAL"
+            "LIGHT METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4485,7 +3638,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFOL-",
           name: "LIGHT METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.FLDART.METO.MNT",
@@ -4496,7 +3649,7 @@ export const ms2525b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "METEOROLOGICAL",
-            "MOUNTAIN METEOROLOGICAL"
+            "MOUNTAIN METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4504,60 +3657,40 @@ export const ms2525b = {
           status: "*",
           functionid: "UCFOO-",
           name: "MOUNTAIN METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCR---",
           name: "RECONNAISSANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.HRE",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE HORSE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE HORSE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRH--",
           name: "RECONNAISSANCE HORSE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE CAVALRY"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE CAVALRY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRV--",
           name: "RECONNAISSANCE CAVALRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY.ARMD",
@@ -4568,7 +3701,7 @@ export const ms2525b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE CAVALRY",
-            "RECONNAISSANCE CAVALRY ARMORED"
+            "RECONNAISSANCE CAVALRY ARMORED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4576,7 +3709,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCRVA-",
           name: "RECONNAISSANCE CAVALRY ARMORED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY.MOT",
@@ -4587,7 +3720,7 @@ export const ms2525b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE CAVALRY",
-            "RECONNAISSANCE CAVALRY MOTORIZED"
+            "RECONNAISSANCE CAVALRY MOTORIZED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4595,7 +3728,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCRVM-",
           name: "RECONNAISSANCE CAVALRY MOTORIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY.GRD",
@@ -4606,7 +3739,7 @@ export const ms2525b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE CAVALRY",
-            "RECONNAISSANCE CAVALRY GROUND"
+            "RECONNAISSANCE CAVALRY GROUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4614,7 +3747,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCRVG-",
           name: "RECONNAISSANCE CAVALRY GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.CVY.AIR",
@@ -4625,7 +3758,7 @@ export const ms2525b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE CAVALRY",
-            "RECONNAISSANCE CAVALRY AIR"
+            "RECONNAISSANCE CAVALRY AIR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4633,25 +3766,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCRVO-",
           name: "RECONNAISSANCE CAVALRY AIR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.ARC",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE ARCTIC"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE ARCTIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRC--",
           name: "RECONNAISSANCE ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.AAST",
@@ -4661,7 +3787,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT",
             "RECONNAISSANCE",
-            "RECONNAISSANCE AIR ASSAULT"
+            "RECONNAISSANCE AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4669,79 +3795,51 @@ export const ms2525b = {
           status: "*",
           functionid: "UCRS--",
           name: "RECONNAISSANCE AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.ABN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE AIRBORNE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE AIRBORNE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRA--",
           name: "RECONNAISSANCE AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MNT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE MOUNTAIN"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE MOUNTAIN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRO--",
           name: "RECONNAISSANCE MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.LIT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE LIGHT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRL--",
           name: "RECONNAISSANCE LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MAR",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE MARINE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE MARINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRR--",
           name: "RECONNAISSANCE MARINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MAR.DIV",
@@ -4752,7 +3850,7 @@ export const ms2525b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE MARINE",
-            "RECONNAISSANCE MARINE DIVISION"
+            "RECONNAISSANCE MARINE DIVISION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4760,7 +3858,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCRRD-",
           name: "RECONNAISSANCE MARINE DIVISION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MAR.FOR",
@@ -4771,7 +3869,7 @@ export const ms2525b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE MARINE",
-            "RECONNAISSANCE MARINE FORCE"
+            "RECONNAISSANCE MARINE FORCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4779,7 +3877,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCRRF-",
           name: "RECONNAISSANCE MARINE FORCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.MAR.LAR",
@@ -4790,7 +3888,7 @@ export const ms2525b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE MARINE",
-            "RECONNAISSANCE MARINE LIGHT ARMORED RECONNAISSNACE (LAR)"
+            "RECONNAISSANCE MARINE LIGHT ARMORED RECONNAISSNACE (LAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4798,7 +3896,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCRRL-",
           name: "RECONNAISSANCE MARINE LIGHT ARMORED RECONNAISSNACE (LAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.RECON.LRS",
@@ -4808,7 +3906,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT",
             "RECONNAISSANCE",
-            "RECONNAISSANCE LONG RANGE SURVEILLANCE (LRS)"
+            "RECONNAISSANCE LONG RANGE SURVEILLANCE (LRS)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4816,24 +3914,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UCRX--",
           name: "RECONNAISSANCE LONG RANGE SURVEILLANCE (LRS)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.MSL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "MISSILE (SURF-SURF)"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "MISSILE (SURF-SURF)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCM---",
           name: "MISSILE (SURF-SURF)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.MSL.TAC",
@@ -4843,7 +3935,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT",
             "MISSILE (SURF-SURF)",
-            "MISSILE (SURF-SURF) TACTICAL"
+            "MISSILE (SURF-SURF) TACTICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4851,7 +3943,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCMT--",
           name: "MISSILE (SURF-SURF) TACTICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.MSL.STGC",
@@ -4861,7 +3953,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT",
             "MISSILE (SURF-SURF)",
-            "MISSILE (SURF-SURF) STRATEGIC"
+            "MISSILE (SURF-SURF) STRATEGIC",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4869,60 +3961,40 @@ export const ms2525b = {
           status: "*",
           functionid: "UCMS--",
           name: "MISSILE (SURF-SURF) STRATEGIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ISF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCS---",
           name: "INTERNAL SECURITY FORCES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.RIV",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES",
-            "RIVERINE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES", "RIVERINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCSW--",
           name: "RIVERINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.GRD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES",
-            "GROUND"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES", "GROUND"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCSG--",
           name: "GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.GRD.DMD",
@@ -4933,7 +4005,7 @@ export const ms2525b = {
             "COMBAT",
             "INTERNAL SECURITY FORCES",
             "GROUND",
-            "DISMOUNTED GROUND"
+            "DISMOUNTED GROUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4941,7 +4013,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCSGD-",
           name: "DISMOUNTED GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.GRD.MOT",
@@ -4952,7 +4024,7 @@ export const ms2525b = {
             "COMBAT",
             "INTERNAL SECURITY FORCES",
             "GROUND",
-            "MOTORIZED GROUND"
+            "MOTORIZED GROUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4960,7 +4032,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCSGM-",
           name: "MOTORIZED GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.GRD.MECH",
@@ -4971,7 +4043,7 @@ export const ms2525b = {
             "COMBAT",
             "INTERNAL SECURITY FORCES",
             "GROUND",
-            "MECHANIZED GROUND"
+            "MECHANIZED GROUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4979,7 +4051,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UCSGA-",
           name: "MECHANIZED GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.WHMECH",
@@ -4989,7 +4061,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT",
             "INTERNAL SECURITY FORCES",
-            "WHEELED MECHANIZED"
+            "WHEELED MECHANIZED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4997,94 +4069,62 @@ export const ms2525b = {
           status: "*",
           functionid: "UCSM--",
           name: "WHEELED MECHANIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.RALRD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES",
-            "RAILROAD"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES", "RAILROAD"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCSR--",
           name: "RAILROAD",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CBT.ISF.AVN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES",
-            "AVIATION"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES", "AVIATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCSA--",
           name: "AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UU----",
           name: "COMBAT SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "COMBAT SUPPORT NBC"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "COMBAT SUPPORT NBC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUA---",
           name: "COMBAT SUPPORT NBC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "COMBAT SUPPORT NBC",
-            "CHEMICAL"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "COMBAT SUPPORT NBC", "CHEMICAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUAC--",
           name: "CHEMICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMKDEC",
@@ -5095,7 +4135,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "COMBAT SUPPORT NBC",
             "CHEMICAL",
-            "SMOKE/DECON"
+            "SMOKE/DECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5103,7 +4143,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUACC-",
           name: "SMOKE/DECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMKDEC.MECH",
@@ -5115,7 +4155,7 @@ export const ms2525b = {
             "COMBAT SUPPORT NBC",
             "CHEMICAL",
             "SMOKE/DECON",
-            "MECHANIZED SMOKE/DECON"
+            "MECHANIZED SMOKE/DECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5123,7 +4163,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUACCK",
           name: "MECHANIZED SMOKE/DECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMKDEC.MOT",
@@ -5135,7 +4175,7 @@ export const ms2525b = {
             "COMBAT SUPPORT NBC",
             "CHEMICAL",
             "SMOKE/DECON",
-            "MOTORIZED SMOKE/DECON"
+            "MOTORIZED SMOKE/DECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5143,7 +4183,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUACCM",
           name: "MOTORIZED SMOKE/DECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMK",
@@ -5154,7 +4194,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "COMBAT SUPPORT NBC",
             "CHEMICAL",
-            "SMOKE"
+            "SMOKE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5162,7 +4202,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUACS-",
           name: "SMOKE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMK.MOT",
@@ -5174,7 +4214,7 @@ export const ms2525b = {
             "COMBAT SUPPORT NBC",
             "CHEMICAL",
             "SMOKE",
-            "MOTORIZED SMOKE"
+            "MOTORIZED SMOKE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5182,7 +4222,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUACSM",
           name: "MOTORIZED SMOKE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.SMK.ARM",
@@ -5194,7 +4234,7 @@ export const ms2525b = {
             "COMBAT SUPPORT NBC",
             "CHEMICAL",
             "SMOKE",
-            "ARMOR SMOKE"
+            "ARMOR SMOKE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5202,7 +4242,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUACSA",
           name: "ARMOR SMOKE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.RECON",
@@ -5213,7 +4253,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "COMBAT SUPPORT NBC",
             "CHEMICAL",
-            "CHEMICAL RECON"
+            "CHEMICAL RECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5221,7 +4261,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUACR-",
           name: "CHEMICAL RECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.RECON.WARMVH",
@@ -5233,7 +4273,7 @@ export const ms2525b = {
             "COMBAT SUPPORT NBC",
             "CHEMICAL",
             "CHEMICAL RECON",
-            "CHEMICAL WHEELED ARMORED VEHICLE"
+            "CHEMICAL WHEELED ARMORED VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5241,7 +4281,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUACRW",
           name: "CHEMICAL WHEELED ARMORED VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.CML.RECON.WAVS",
@@ -5253,7 +4293,7 @@ export const ms2525b = {
             "COMBAT SUPPORT NBC",
             "CHEMICAL",
             "CHEMICAL RECON",
-            "CHEMICAL WHEELED ARMORED VEHICLE RECONNAISSANCE SURVEILLANCE"
+            "CHEMICAL WHEELED ARMORED VEHICLE RECONNAISSANCE SURVEILLANCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5261,43 +4301,29 @@ export const ms2525b = {
           status: "*",
           functionid: "UUACRS",
           name: "CHEMICAL WHEELED ARMORED VEHICLE RECONNAISSANCE SURVEILLANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.NUC",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "COMBAT SUPPORT NBC",
-            "NUCLEAR"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "COMBAT SUPPORT NBC", "NUCLEAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUAN--",
           name: "NUCLEAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.BIO",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "COMBAT SUPPORT NBC",
-            "BIOLOGICAL"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "COMBAT SUPPORT NBC", "BIOLOGICAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUAB--",
           name: "BIOLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.BIO.RECEQP",
@@ -5308,7 +4334,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "COMBAT SUPPORT NBC",
             "BIOLOGICAL",
-            "RECON EQUIPPED"
+            "RECON EQUIPPED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5316,7 +4342,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUABR-",
           name: "RECON EQUIPPED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.NBC.DECON",
@@ -5326,7 +4352,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "COMBAT SUPPORT NBC",
-            "DECONTAMINATION"
+            "DECONTAMINATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5334,24 +4360,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UUAD--",
           name: "DECONTAMINATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "MILITARY INTELLIGENCE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "MILITARY INTELLIGENCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUM---",
           name: "MILITARY INTELLIGENCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.AEREXP",
@@ -5361,7 +4381,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "AERIAL EXPLOITATION"
+            "AERIAL EXPLOITATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5369,7 +4389,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMA--",
           name: "AERIAL EXPLOITATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT",
@@ -5379,7 +4399,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "SIGNAL INTELLIGENCE (SIGINT)"
+            "SIGNAL INTELLIGENCE (SIGINT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5387,7 +4407,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMS--",
           name: "SIGNAL INTELLIGENCE (SIGINT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW",
@@ -5398,7 +4418,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
-            "ELECTRONIC WARFARE"
+            "ELECTRONIC WARFARE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5406,7 +4426,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMSE-",
           name: "ELECTRONIC WARFARE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.ARMWVH",
@@ -5418,7 +4438,7 @@ export const ms2525b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "ARMORED WHEELED VEHICLE"
+            "ARMORED WHEELED VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5426,7 +4446,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMSEA",
           name: "ARMORED WHEELED VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.DFN",
@@ -5438,7 +4458,7 @@ export const ms2525b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "DIRECTION FINDING"
+            "DIRECTION FINDING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5446,7 +4466,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMSED",
           name: "DIRECTION FINDING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.INC",
@@ -5458,7 +4478,7 @@ export const ms2525b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "INTERCEPT"
+            "INTERCEPT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5466,7 +4486,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMSEI",
           name: "INTERCEPT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.JMG",
@@ -5478,7 +4498,7 @@ export const ms2525b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "JAMMING"
+            "JAMMING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5486,7 +4506,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMSEJ",
           name: "JAMMING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.THT",
@@ -5498,7 +4518,7 @@ export const ms2525b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "THEATER"
+            "THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5506,7 +4526,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMSET",
           name: "THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.CRP",
@@ -5518,7 +4538,7 @@ export const ms2525b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "CORPS"
+            "CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5526,7 +4546,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMSEC",
           name: "CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.CINT",
@@ -5536,7 +4556,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "COUNTER INTELLIGENCE"
+            "COUNTER INTELLIGENCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5544,7 +4564,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMC--",
           name: "COUNTER INTELLIGENCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL",
@@ -5554,7 +4574,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "SURVEILLANCE"
+            "SURVEILLANCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5562,7 +4582,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMR--",
           name: "SURVEILLANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.GRDSR",
@@ -5573,7 +4593,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
-            "GROUND SURVEILLANCE RADAR"
+            "GROUND SURVEILLANCE RADAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5581,7 +4601,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMRG-",
           name: "GROUND SURVEILLANCE RADAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.SNS",
@@ -5592,7 +4612,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
-            "SENSOR"
+            "SENSOR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5600,7 +4620,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMRS-",
           name: "SENSOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.SNS.SCM",
@@ -5612,7 +4632,7 @@ export const ms2525b = {
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
             "SENSOR",
-            "SENSOR SCM"
+            "SENSOR SCM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5620,7 +4640,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMRSS",
           name: "SENSOR SCM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.GRDSM",
@@ -5631,7 +4651,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
-            "GROUND STATION MODULE"
+            "GROUND STATION MODULE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5639,7 +4659,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMRX-",
           name: "GROUND STATION MODULE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.SVL.METO",
@@ -5650,7 +4670,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
-            "METEOROLOGICAL"
+            "METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5658,7 +4678,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMMO-",
           name: "METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.OPN",
@@ -5668,7 +4688,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "OPERATIONS"
+            "OPERATIONS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5676,7 +4696,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMO--",
           name: "OPERATIONS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.TACEXP",
@@ -5686,7 +4706,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "TACTICAL EXPLOIT"
+            "TACTICAL EXPLOIT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5694,7 +4714,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMT--",
           name: "TACTICAL EXPLOIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.INTGN",
@@ -5704,7 +4724,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "INTERROGATION"
+            "INTERROGATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5712,7 +4732,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMQ--",
           name: "INTERROGATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.MILINT.JINTCT",
@@ -5722,7 +4742,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "JOINT INTELLIGENCE CENTER"
+            "JOINT INTELLIGENCE CENTER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5730,24 +4750,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UUMJ--",
           name: "JOINT INTELLIGENCE CENTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "LAW ENFORCEMENT UNIT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "LAW ENFORCEMENT UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUL---",
           name: "LAW ENFORCEMENT UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.SHRPAT",
@@ -5757,7 +4771,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "SHORE PATROL"
+            "SHORE PATROL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5765,7 +4779,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UULS--",
           name: "SHORE PATROL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.MILP",
@@ -5775,7 +4789,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "MILITARY POLICE"
+            "MILITARY POLICE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5783,7 +4797,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UULM--",
           name: "MILITARY POLICE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.CLE",
@@ -5793,7 +4807,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "CIVILIAN LAW ENFORCEMENT"
+            "CIVILIAN LAW ENFORCEMENT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5801,7 +4815,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UULC--",
           name: "CIVILIAN LAW ENFORCEMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.SECPOL",
@@ -5811,7 +4825,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "SECURITY POLICE (AIR)"
+            "SECURITY POLICE (AIR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5819,7 +4833,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UULF--",
           name: "SECURITY POLICE (AIR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.LAWENU.CID",
@@ -5829,7 +4843,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "CENTRAL INTELLIGENCE DIVISION (CID)"
+            "CENTRAL INTELLIGENCE DIVISION (CID)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5837,42 +4851,29 @@ export const ms2525b = {
           status: "*",
           functionid: "UULD--",
           name: "CENTRAL INTELLIGENCE DIVISION (CID)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUS---",
           name: "SIGNAL UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.ARA",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "AREA"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "AREA"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSA--",
           name: "AREA",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.COMCP",
@@ -5882,7 +4883,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
-            "COMMUNICATION CONFIGURED PACKAGE"
+            "COMMUNICATION CONFIGURED PACKAGE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5890,7 +4891,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUSC--",
           name: "COMMUNICATION CONFIGURED PACKAGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.COMCP.LCCP",
@@ -5901,7 +4902,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "COMMUNICATION CONFIGURED PACKAGE",
-            "LARGE COMMUNICATION CONFIGURED PACKAGE (LCCP)"
+            "LARGE COMMUNICATION CONFIGURED PACKAGE (LCCP)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5909,25 +4910,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UUSCL-",
           name: "LARGE COMMUNICATION CONFIGURED PACKAGE (LCCP)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.CMDOPN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "COMMAND OPERATIONS"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "COMMAND OPERATIONS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSO--",
           name: "COMMAND OPERATIONS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.FWDCOM",
@@ -5937,7 +4931,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
-            "FORWARD COMMUNICATIONS"
+            "FORWARD COMMUNICATIONS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5945,7 +4939,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUSF--",
           name: "FORWARD COMMUNICATIONS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.MSE",
@@ -5955,7 +4949,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
-            "MULTIPLE SUBSCRIBER ELEMENT"
+            "MULTIPLE SUBSCRIBER ELEMENT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5963,7 +4957,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUSM--",
           name: "MULTIPLE SUBSCRIBER ELEMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.MSE.SEN",
@@ -5974,7 +4968,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "MULTIPLE SUBSCRIBER ELEMENT",
-            "SMALL EXTENSION NODE"
+            "SMALL EXTENSION NODE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5982,7 +4976,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUSMS-",
           name: "SMALL EXTENSION NODE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.MSE.LEN",
@@ -5993,7 +4987,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "MULTIPLE SUBSCRIBER ELEMENT",
-            "LARGE EXTENSION NODE"
+            "LARGE EXTENSION NODE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6001,7 +4995,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUSML-",
           name: "LARGE EXTENSION NODE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.MSE.NODCTR",
@@ -6012,7 +5006,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "MULTIPLE SUBSCRIBER ELEMENT",
-            "NODE CENTER"
+            "NODE CENTER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6020,25 +5014,18 @@ export const ms2525b = {
           status: "*",
           functionid: "UUSMN-",
           name: "NODE CENTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.RDOUNT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "RADIO UNIT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "RADIO UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSR--",
           name: "RADIO UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.RDOUNT.TACSAT",
@@ -6049,7 +5036,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "RADIO UNIT",
-            "TACTICAL SATELLITE"
+            "TACTICAL SATELLITE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6057,7 +5044,7 @@ export const ms2525b = {
           status: "*",
           functionid: "UUSRS-",
           name: "TACTICAL SATELLITE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.RDOUNT.TTYCTR",
@@ -6068,7 +5055,7 @@ export const ms2525b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "RADIO UNIT",
-            "TELETYPE CENTER"
+            "TELETYPE CENTER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6076,164 +5063,106 @@ export const ms2525b = {
           status: "*",
           functionid: "UUSRT-",
           name: "TELETYPE CENTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.RDOUNT.RLY",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "RADIO UNIT",
-            "RELAY"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "RADIO UNIT", "RELAY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSRW-",
           name: "RELAY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.SIGSUP",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "SIGNAL SUPPORT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "SIGNAL SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSS--",
           name: "SIGNAL SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.PHOSWT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "TELEPHONE SWITCH"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "TELEPHONE SWITCH"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSW--",
           name: "TELEPHONE SWITCH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.SIGUNT.ECRG",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "ELECTRONIC RANGING"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "ELECTRONIC RANGING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSX--",
           name: "ELECTRONIC RANGING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.IWU",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "INFORMATION WARFARE UNIT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "INFORMATION WARFARE UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUI---",
           name: "INFORMATION WARFARE UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.LNDSUP",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "LANDING SUPPORT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "LANDING SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUP---",
           name: "LANDING SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CS.EOD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "EXPLOSIVE ORDNANCE DISPOSAL"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "EXPLOSIVE ORDNANCE DISPOSAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUE---",
           name: "EXPLOSIVE ORDNANCE DISPOSAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "US----",
           name: "COMBAT SERVICE SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "ADMINISTRATIVE (ADMIN)"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "ADMINISTRATIVE (ADMIN)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USA---",
           name: "ADMINISTRATIVE (ADMIN)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.THT",
@@ -6243,7 +5172,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "ADMIN THEATER"
+            "ADMIN THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6251,7 +5180,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAT--",
           name: "ADMIN THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.CRP",
@@ -6261,7 +5190,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "ADMIN CORPS"
+            "ADMIN CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6269,7 +5198,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAC--",
           name: "ADMIN CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.JAG",
@@ -6279,7 +5208,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "JUDGE ADVOCATE GENERAL (JAG)"
+            "JUDGE ADVOCATE GENERAL (JAG)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6287,7 +5216,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAJ--",
           name: "JUDGE ADVOCATE GENERAL (JAG)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.JAG.THT",
@@ -6298,7 +5227,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "JUDGE ADVOCATE GENERAL (JAG)",
-            "JAG THEATER"
+            "JAG THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6306,7 +5235,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAJT-",
           name: "JAG THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.JAG.CRP",
@@ -6317,7 +5246,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "JUDGE ADVOCATE GENERAL (JAG)",
-            "JAG CORPS"
+            "JAG CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6325,7 +5254,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAJC-",
           name: "JAG CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PST",
@@ -6335,7 +5264,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "POSTAL"
+            "POSTAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6343,7 +5272,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAO--",
           name: "POSTAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PST.THT",
@@ -6354,7 +5283,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "POSTAL",
-            "POSTAL THEATER"
+            "POSTAL THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6362,7 +5291,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAOT-",
           name: "POSTAL THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PST.CRP",
@@ -6373,7 +5302,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "POSTAL",
-            "POSTAL CORPS"
+            "POSTAL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6381,7 +5310,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAOC-",
           name: "POSTAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.FIN",
@@ -6391,7 +5320,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "FINANCE"
+            "FINANCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6399,7 +5328,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAF--",
           name: "FINANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.FIN.THT",
@@ -6410,7 +5339,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "FINANCE",
-            "FINANCE THEATER"
+            "FINANCE THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6418,7 +5347,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAFT-",
           name: "FINANCE THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.FIN.CRP",
@@ -6429,7 +5358,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "FINANCE",
-            "FINANCE CORPS"
+            "FINANCE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6437,7 +5366,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAFC-",
           name: "FINANCE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PERSVC",
@@ -6447,7 +5376,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "PERSONNEL SERVICES"
+            "PERSONNEL SERVICES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6455,7 +5384,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAS--",
           name: "PERSONNEL SERVICES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PERSVC.THT",
@@ -6466,7 +5395,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PERSONNEL SERVICES",
-            "PERSONNEL THEATER"
+            "PERSONNEL THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6474,7 +5403,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAST-",
           name: "PERSONNEL THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PERSVC.CRP",
@@ -6485,7 +5414,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PERSONNEL SERVICES",
-            "PERSONNEL CORPS"
+            "PERSONNEL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6493,7 +5422,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USASC-",
           name: "PERSONNEL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MTRY",
@@ -6503,7 +5432,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "MORTUARY/GRAVES REGISTRY"
+            "MORTUARY/GRAVES REGISTRY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6511,7 +5440,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAM--",
           name: "MORTUARY/GRAVES REGISTRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MTRY.THT",
@@ -6522,7 +5451,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "MORTUARY/GRAVES REGISTRY",
-            "MORTUARY/GRAVES REGISTRY THEATER"
+            "MORTUARY/GRAVES REGISTRY THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6530,7 +5459,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAMT-",
           name: "MORTUARY/GRAVES REGISTRY THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MTRY.CRP",
@@ -6541,7 +5470,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "MORTUARY/GRAVES REGISTRY",
-            "MORTUARY/GRAVES REGISTRY CORPS"
+            "MORTUARY/GRAVES REGISTRY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6549,7 +5478,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAMC-",
           name: "MORTUARY/GRAVES REGISTRY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RELG",
@@ -6559,7 +5488,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "RELIGIOUS/CHAPLAIN"
+            "RELIGIOUS/CHAPLAIN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6567,7 +5496,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAR--",
           name: "RELIGIOUS/CHAPLAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RELG.THT",
@@ -6578,7 +5507,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "RELIGIOUS/CHAPLAIN",
-            "RELIGIOUS/CHAPLAIN THEATER"
+            "RELIGIOUS/CHAPLAIN THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6586,7 +5515,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USART-",
           name: "RELIGIOUS/CHAPLAIN THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RELG.CRP",
@@ -6597,7 +5526,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "RELIGIOUS/CHAPLAIN",
-            "RELIGIOUS/CHAPLAIN CORPS"
+            "RELIGIOUS/CHAPLAIN CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6605,7 +5534,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USARC-",
           name: "RELIGIOUS/CHAPLAIN CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF",
@@ -6615,7 +5544,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "PUBLIC AFFAIRS"
+            "PUBLIC AFFAIRS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6623,7 +5552,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAP--",
           name: "PUBLIC AFFAIRS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.THT",
@@ -6634,7 +5563,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
-            "PUBLIC AFFAIRS THEATER"
+            "PUBLIC AFFAIRS THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6642,7 +5571,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAPT-",
           name: "PUBLIC AFFAIRS THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.CRP",
@@ -6653,7 +5582,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
-            "PUBLIC AFFAIRS CORPS"
+            "PUBLIC AFFAIRS CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6661,7 +5590,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAPC-",
           name: "PUBLIC AFFAIRS CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.BRCT",
@@ -6672,7 +5601,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
-            "PUBLIC AFFAIRS BROADCAST"
+            "PUBLIC AFFAIRS BROADCAST",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6680,7 +5609,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAPB-",
           name: "PUBLIC AFFAIRS BROADCAST",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.BRCT.THT",
@@ -6692,7 +5621,7 @@ export const ms2525b = {
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
             "PUBLIC AFFAIRS BROADCAST",
-            "PUBLIC AFFAIRS BROADCAST THEATER"
+            "PUBLIC AFFAIRS BROADCAST THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6700,7 +5629,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAPBT",
           name: "PUBLIC AFFAIRS BROADCAST THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.BRCT.CRP",
@@ -6712,7 +5641,7 @@ export const ms2525b = {
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
             "PUBLIC AFFAIRS BROADCAST",
-            "PUBLIC AFFAIRS BROADCAST CORPS"
+            "PUBLIC AFFAIRS BROADCAST CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6720,7 +5649,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAPBC",
           name: "PUBLIC AFFAIRS BROADCAST CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.JIB",
@@ -6731,7 +5660,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
-            "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)"
+            "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6739,7 +5668,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAPM-",
           name: "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.JIB.THT",
@@ -6751,7 +5680,7 @@ export const ms2525b = {
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
             "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
-            "PUBLIC AFFAIRS JIB THEATER"
+            "PUBLIC AFFAIRS JIB THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6759,7 +5688,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAPMT",
           name: "PUBLIC AFFAIRS JIB THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.PUBAFF.JIB.CRP",
@@ -6771,7 +5700,7 @@ export const ms2525b = {
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
             "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
-            "PUBLIC AFFAIRS JIB CORPS"
+            "PUBLIC AFFAIRS JIB CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6779,7 +5708,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAPMC",
           name: "PUBLIC AFFAIRS JIB CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RHU",
@@ -6789,7 +5718,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "REPLACEMENT HOLDING UNIT (RHU)"
+            "REPLACEMENT HOLDING UNIT (RHU)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6797,7 +5726,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAX--",
           name: "REPLACEMENT HOLDING UNIT (RHU)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RHU.THT",
@@ -6808,7 +5737,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "REPLACEMENT HOLDING UNIT (RHU)",
-            "RHU THEATER"
+            "RHU THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6816,7 +5745,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAXT-",
           name: "RHU THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.RHU.CRP",
@@ -6827,7 +5756,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "REPLACEMENT HOLDING UNIT (RHU)",
-            "RHU CORPS"
+            "RHU CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6835,7 +5764,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAXC-",
           name: "RHU CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.LBR",
@@ -6845,7 +5774,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "LABOR"
+            "LABOR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6853,7 +5782,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAL--",
           name: "LABOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.LBR.THT",
@@ -6864,7 +5793,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "LABOR",
-            "LABOR THEATER"
+            "LABOR THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6872,7 +5801,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USALT-",
           name: "LABOR THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.LBR.CRP",
@@ -6883,7 +5812,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "LABOR",
-            "LABOR CORPS"
+            "LABOR CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6891,7 +5820,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USALC-",
           name: "LABOR CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MWR",
@@ -6901,7 +5830,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "MORALE, WELFARE, RECREATION (MWR)"
+            "MORALE, WELFARE, RECREATION (MWR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6909,7 +5838,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAW--",
           name: "MORALE, WELFARE, RECREATION (MWR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MWR.THT",
@@ -6920,7 +5849,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "MORALE, WELFARE, RECREATION (MWR)",
-            "MWR THEATER"
+            "MWR THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6928,7 +5857,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAWT-",
           name: "MWR THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.MWR.CRP",
@@ -6939,7 +5868,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "MORALE, WELFARE, RECREATION (MWR)",
-            "MWR CORPS"
+            "MWR CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6947,7 +5876,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAWC-",
           name: "MWR CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.SUPPLY",
@@ -6957,7 +5886,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "QUARTERMASTER (SUPPLY)"
+            "QUARTERMASTER (SUPPLY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6965,7 +5894,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAQ--",
           name: "QUARTERMASTER (SUPPLY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.SUPPLY.THT",
@@ -6976,7 +5905,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "QUARTERMASTER (SUPPLY)",
-            "QUARTERMASTER (SUPPLY) THEATER"
+            "QUARTERMASTER (SUPPLY) THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6984,7 +5913,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USAQT-",
           name: "QUARTERMASTER (SUPPLY) THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.ADMIN.SUPPLY.CRP",
@@ -6995,7 +5924,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "QUARTERMASTER (SUPPLY)",
-            "QUARTERMASTER (SUPPLY) CORPS"
+            "QUARTERMASTER (SUPPLY) CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7003,60 +5932,40 @@ export const ms2525b = {
           status: "*",
           functionid: "USAQC-",
           name: "QUARTERMASTER (SUPPLY) CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MEDICAL"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MEDICAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USM---",
           name: "MEDICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.THT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MEDICAL",
-            "MEDICAL THEATER"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MEDICAL", "MEDICAL THEATER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USMT--",
           name: "MEDICAL THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.CRP",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MEDICAL",
-            "MEDICAL CORPS"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MEDICAL", "MEDICAL CORPS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USMC--",
           name: "MEDICAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.MEDTF",
@@ -7066,7 +5975,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
-            "MEDICAL TREATMENT FACILITY"
+            "MEDICAL TREATMENT FACILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7074,7 +5983,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USMM--",
           name: "MEDICAL TREATMENT FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.MEDTF.THT",
@@ -7085,7 +5994,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL TREATMENT FACILITY",
-            "MEDICAL TREATMENT FACILITY THEATER"
+            "MEDICAL TREATMENT FACILITY THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7093,7 +6002,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USMMT-",
           name: "MEDICAL TREATMENT FACILITY THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.MEDTF.CRP",
@@ -7104,7 +6013,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL TREATMENT FACILITY",
-            "MEDICAL TREATMENT FACILITY CORPS"
+            "MEDICAL TREATMENT FACILITY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7112,7 +6021,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USMMC-",
           name: "MEDICAL TREATMENT FACILITY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.VNY",
@@ -7122,7 +6031,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
-            "MEDICAL VETERINARY"
+            "MEDICAL VETERINARY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7130,7 +6039,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USMV--",
           name: "MEDICAL VETERINARY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.VNY.THT",
@@ -7141,7 +6050,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL VETERINARY",
-            "MEDICAL VETERINARY THEATER"
+            "MEDICAL VETERINARY THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7149,7 +6058,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USMVT-",
           name: "MEDICAL VETERINARY THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.VNY.CRP",
@@ -7160,7 +6069,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL VETERINARY",
-            "MEDICAL VETERINARY CORPS"
+            "MEDICAL VETERINARY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7168,25 +6077,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USMVC-",
           name: "MEDICAL VETERINARY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.DEN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MEDICAL",
-            "MEDICAL DENTAL"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MEDICAL", "MEDICAL DENTAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USMD--",
           name: "MEDICAL DENTAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.DEN.THT",
@@ -7197,7 +6099,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL DENTAL",
-            "MEDICAL DENTAL THEATER"
+            "MEDICAL DENTAL THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7205,7 +6107,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USMDT-",
           name: "MEDICAL DENTAL THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.DEN.CRP",
@@ -7216,7 +6118,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL DENTAL",
-            "MEDICAL DENTAL CORPS"
+            "MEDICAL DENTAL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7224,7 +6126,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USMDC-",
           name: "MEDICAL DENTAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.PSY",
@@ -7234,7 +6136,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
-            "MEDICAL PSYCHOLOGICAL"
+            "MEDICAL PSYCHOLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7242,7 +6144,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USMP--",
           name: "MEDICAL PSYCHOLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.PSY.THT",
@@ -7253,7 +6155,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL PSYCHOLOGICAL",
-            "MEDICAL PSYCHOLOGICAL THEATER"
+            "MEDICAL PSYCHOLOGICAL THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7261,7 +6163,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USMPT-",
           name: "MEDICAL PSYCHOLOGICAL THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MED.PSY.CRP",
@@ -7272,7 +6174,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL PSYCHOLOGICAL",
-            "MEDICAL PSYCHOLOGICAL CORPS"
+            "MEDICAL PSYCHOLOGICAL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7280,78 +6182,51 @@ export const ms2525b = {
           status: "*",
           functionid: "USMPC-",
           name: "MEDICAL PSYCHOLOGICAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS---",
           name: "SUPPLY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.THT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY THEATER"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY THEATER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USST--",
           name: "SUPPLY THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CRP",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CORPS"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CORPS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USSC--",
           name: "SUPPLY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS1",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS I"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS I"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS1--",
           name: "SUPPLY CLASS I",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS1.THT",
@@ -7362,7 +6237,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS I",
-            "SUPPLY CLASS I THEATER"
+            "SUPPLY CLASS I THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7370,7 +6245,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS1T-",
           name: "SUPPLY CLASS I THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS1.CRP",
@@ -7381,7 +6256,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS I",
-            "SUPPLY CLASS I CORPS"
+            "SUPPLY CLASS I CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7389,25 +6264,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USS1C-",
           name: "SUPPLY CLASS I CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS2",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS II"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS II"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS2--",
           name: "SUPPLY CLASS II",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS2.THT",
@@ -7418,7 +6286,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS II",
-            "SUPPLY CLASS II THEATER"
+            "SUPPLY CLASS II THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7426,7 +6294,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS2T-",
           name: "SUPPLY CLASS II THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS2.CRP",
@@ -7437,7 +6305,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS II",
-            "SUPPLY CLASS II CORPS"
+            "SUPPLY CLASS II CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7445,25 +6313,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USS2C-",
           name: "SUPPLY CLASS II CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS III"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS III"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS3--",
           name: "SUPPLY CLASS III",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.THT",
@@ -7474,7 +6335,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS III",
-            "SUPPLY CLASS III THEATER"
+            "SUPPLY CLASS III THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7482,7 +6343,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS3T-",
           name: "SUPPLY CLASS III THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.CRP",
@@ -7493,7 +6354,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS III",
-            "SUPPLY CLASS III CORPS"
+            "SUPPLY CLASS III CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7501,7 +6362,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS3C-",
           name: "SUPPLY CLASS III CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN",
@@ -7512,7 +6373,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS III",
-            "SUPPLY CLASS III AVIATION"
+            "SUPPLY CLASS III AVIATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7520,7 +6381,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS3A-",
           name: "SUPPLY CLASS III AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN.THT",
@@ -7532,7 +6393,7 @@ export const ms2525b = {
             "SUPPLY",
             "SUPPLY CLASS III",
             "SUPPLY CLASS III AVIATION",
-            "SUPPLY CLASS III AVIATION THEATER"
+            "SUPPLY CLASS III AVIATION THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7540,7 +6401,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS3AT",
           name: "SUPPLY CLASS III AVIATION THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN.CRP",
@@ -7552,7 +6413,7 @@ export const ms2525b = {
             "SUPPLY",
             "SUPPLY CLASS III",
             "SUPPLY CLASS III AVIATION",
-            "SUPPLY CLASS III AVIATION CORPS"
+            "SUPPLY CLASS III AVIATION CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7560,25 +6421,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USS3AC",
           name: "SUPPLY CLASS III AVIATION CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS4",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS IV"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS IV"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS4--",
           name: "SUPPLY CLASS IV",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS4.THT",
@@ -7589,7 +6443,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS IV",
-            "SUPPLY CLASS IV THEATER"
+            "SUPPLY CLASS IV THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7597,7 +6451,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS4T-",
           name: "SUPPLY CLASS IV THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS4.CRP",
@@ -7608,7 +6462,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS IV",
-            "SUPPLY CLASS IV CORPS"
+            "SUPPLY CLASS IV CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7616,25 +6470,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USS4C-",
           name: "SUPPLY CLASS IV CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS5",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS V"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS V"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS5--",
           name: "SUPPLY CLASS V",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS5.THT",
@@ -7645,7 +6492,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS V",
-            "SUPPLY CLASS V THEATER"
+            "SUPPLY CLASS V THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7653,7 +6500,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS5T-",
           name: "SUPPLY CLASS V THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS5.CRP",
@@ -7664,7 +6511,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS V",
-            "SUPPLY CLASS V CORPS"
+            "SUPPLY CLASS V CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7672,25 +6519,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USS5C-",
           name: "SUPPLY CLASS V CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS6",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS VI"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS VI"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS6--",
           name: "SUPPLY CLASS VI",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS6.THT",
@@ -7701,7 +6541,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VI",
-            "SUPPLY CLASS VI THEATER"
+            "SUPPLY CLASS VI THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7709,7 +6549,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS6T-",
           name: "SUPPLY CLASS VI THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS6.CRP",
@@ -7720,7 +6560,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VI",
-            "SUPPLY CLASS VI CORPS"
+            "SUPPLY CLASS VI CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7728,25 +6568,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USS6C-",
           name: "SUPPLY CLASS VI CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS7",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS VII"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS VII"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS7--",
           name: "SUPPLY CLASS VII",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS7.THT",
@@ -7757,7 +6590,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VII",
-            "SUPPLY CLASS VII THEATER"
+            "SUPPLY CLASS VII THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7765,7 +6598,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS7T-",
           name: "SUPPLY CLASS VII THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS7.CRP",
@@ -7776,7 +6609,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VII",
-            "SUPPLY CLASS VII CORPS"
+            "SUPPLY CLASS VII CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7784,7 +6617,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS7C-",
           name: "SUPPLY CLASS VII CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS8",
@@ -7794,7 +6627,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY CLASS VIII"
+            "SUPPLY CLASS VIII",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7802,7 +6635,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS8--",
           name: "SUPPLY CLASS VIII",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS8.THT",
@@ -7813,7 +6646,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VIII",
-            "SUPPLY CLASS VIII THEATER"
+            "SUPPLY CLASS VIII THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7821,7 +6654,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS8T-",
           name: "SUPPLY CLASS VIII THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS8.CRP",
@@ -7832,7 +6665,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VIII",
-            "SUPPLY CLASS VIII CORPS"
+            "SUPPLY CLASS VIII CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7840,25 +6673,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USS8C-",
           name: "SUPPLY CLASS VIII CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS9",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS IX"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS IX"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS9--",
           name: "SUPPLY CLASS IX",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS9.THT",
@@ -7869,7 +6695,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS IX",
-            "SUPPLY CLASS IX THEATER"
+            "SUPPLY CLASS IX THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7877,7 +6703,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USS9T-",
           name: "SUPPLY CLASS IX THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS9.CRP",
@@ -7888,7 +6714,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS IX",
-            "SUPPLY CLASS IX CORPS"
+            "SUPPLY CLASS IX CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7896,25 +6722,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USS9C-",
           name: "SUPPLY CLASS IX CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS10",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS X"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS X"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USSX--",
           name: "SUPPLY CLASS X",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS10.THT",
@@ -7925,7 +6744,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS X",
-            "SUPPLY CLASS X THEATER"
+            "SUPPLY CLASS X THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7933,7 +6752,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USSXT-",
           name: "SUPPLY CLASS X THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.CLS10.CRP",
@@ -7944,7 +6763,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS X",
-            "SUPPLY CLASS X CORPS"
+            "SUPPLY CLASS X CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7952,7 +6771,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USSXC-",
           name: "SUPPLY CLASS X CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.LDY",
@@ -7962,7 +6781,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY LAUNDRY/BATH"
+            "SUPPLY LAUNDRY/BATH",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7970,7 +6789,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USSL--",
           name: "SUPPLY LAUNDRY/BATH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.LDY.THT",
@@ -7981,7 +6800,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY LAUNDRY/BATH",
-            "SUPPLY LAUNDRY/BATH THEATER"
+            "SUPPLY LAUNDRY/BATH THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7989,7 +6808,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USSLT-",
           name: "SUPPLY LAUNDRY/BATH THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.LDY.CRP",
@@ -8000,7 +6819,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY LAUNDRY/BATH",
-            "SUPPLY LAUNDRY/BATH CORPS"
+            "SUPPLY LAUNDRY/BATH CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8008,25 +6827,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USSLC-",
           name: "SUPPLY LAUNDRY/BATH CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY WATER"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY WATER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USSW--",
           name: "SUPPLY WATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.THT",
@@ -8037,7 +6849,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY WATER",
-            "SUPPLY WATER THEATER"
+            "SUPPLY WATER THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8045,7 +6857,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USSWT-",
           name: "SUPPLY WATER THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.CRP",
@@ -8056,7 +6868,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY WATER",
-            "SUPPLY WATER CORPS"
+            "SUPPLY WATER CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8064,7 +6876,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USSWC-",
           name: "SUPPLY WATER CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.PUR",
@@ -8075,7 +6887,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY WATER",
-            "SUPPLY WATER PURIFICATION"
+            "SUPPLY WATER PURIFICATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8083,7 +6895,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USSWP-",
           name: "SUPPLY WATER PURIFICATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.PUR.THT",
@@ -8095,7 +6907,7 @@ export const ms2525b = {
             "SUPPLY",
             "SUPPLY WATER",
             "SUPPLY WATER PURIFICATION",
-            "SUPPLY WATER PURIFICATION THEATER"
+            "SUPPLY WATER PURIFICATION THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8103,7 +6915,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USSWPT",
           name: "SUPPLY WATER PURIFICATION THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.SLP.H2O.PUR.CRP",
@@ -8115,7 +6927,7 @@ export const ms2525b = {
             "SUPPLY",
             "SUPPLY WATER",
             "SUPPLY WATER PURIFICATION",
-            "SUPPLY WATER PURIFICATION CORPS"
+            "SUPPLY WATER PURIFICATION CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8123,24 +6935,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USSWPC",
           name: "SUPPLY WATER PURIFICATION CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "TRANSPORTATION"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "TRANSPORTATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UST---",
           name: "TRANSPORTATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.THT",
@@ -8150,7 +6956,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "TRANSPORTATION THEATER"
+            "TRANSPORTATION THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8158,7 +6964,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTT--",
           name: "TRANSPORTATION THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.CRP",
@@ -8168,7 +6974,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "TRANSPORTATION CORPS"
+            "TRANSPORTATION CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8176,7 +6982,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTC--",
           name: "TRANSPORTATION CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MCC",
@@ -8186,7 +6992,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "MOVEMENT CONTROL CENTER (MCC)"
+            "MOVEMENT CONTROL CENTER (MCC)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8194,7 +7000,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTM--",
           name: "MOVEMENT CONTROL CENTER (MCC)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MCC.THT",
@@ -8205,7 +7011,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "MOVEMENT CONTROL CENTER (MCC)",
-            "MCC THEATER"
+            "MCC THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8213,7 +7019,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTMT-",
           name: "MCC THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MCC.CRP",
@@ -8224,7 +7030,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "MOVEMENT CONTROL CENTER (MCC)",
-            "MCC CORPS"
+            "MCC CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8232,25 +7038,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USTMC-",
           name: "MCC CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.RHD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "TRANSPORTATION",
-            "RAILHEAD"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "TRANSPORTATION", "RAILHEAD"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USTR--",
           name: "RAILHEAD",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.RHD.THT",
@@ -8261,7 +7060,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "RAILHEAD",
-            "RAILHEAD THEATER"
+            "RAILHEAD THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8269,7 +7068,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTRT-",
           name: "RAILHEAD THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.RHD.CRP",
@@ -8280,7 +7079,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "RAILHEAD",
-            "RAILHEAD CORPS"
+            "RAILHEAD CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8288,7 +7087,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTRC-",
           name: "RAILHEAD CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.SPOD",
@@ -8298,7 +7097,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "SPOD/SPOE"
+            "SPOD/SPOE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8306,7 +7105,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTS--",
           name: "SPOD/SPOE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.SPOD.THT",
@@ -8317,7 +7116,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "SPOD/SPOE",
-            "SPOD/SPOE THEATER"
+            "SPOD/SPOE THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8325,7 +7124,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTST-",
           name: "SPOD/SPOE THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.SPOD.CRP",
@@ -8336,7 +7135,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "SPOD/SPOE",
-            "SPOD/SPOE CORPS"
+            "SPOD/SPOE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8344,7 +7143,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTSC-",
           name: "SPOD/SPOE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.APOD",
@@ -8354,7 +7153,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "APOD/APOE"
+            "APOD/APOE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8362,7 +7161,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTA--",
           name: "APOD/APOE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.APOD.THT",
@@ -8373,7 +7172,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "APOD/APOE",
-            "APOD/APOE THEATER"
+            "APOD/APOE THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8381,7 +7180,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTAT-",
           name: "APOD/APOE THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.APOD.CRP",
@@ -8392,7 +7191,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "APOD/APOE",
-            "APOD/APOE CORPS"
+            "APOD/APOE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8400,25 +7199,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USTAC-",
           name: "APOD/APOE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MSL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "TRANSPORTATION",
-            "MISSILE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "TRANSPORTATION", "MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USTI--",
           name: "MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MSL.THT",
@@ -8429,7 +7221,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "MISSILE",
-            "MISSILE THEATER"
+            "MISSILE THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8437,7 +7229,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USTIT-",
           name: "MISSILE THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.TPT.MSL.CRP",
@@ -8448,7 +7240,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "MISSILE",
-            "MISSILE CORPS"
+            "MISSILE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8456,24 +7248,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USTIC-",
           name: "MISSILE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MAINTENANCE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MAINTENANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USX---",
           name: "MAINTENANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.THT",
@@ -8483,7 +7269,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "MAINTENANCE THEATER"
+            "MAINTENANCE THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8491,7 +7277,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXT--",
           name: "MAINTENANCE THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.CRP",
@@ -8501,7 +7287,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "MAINTENANCE CORPS"
+            "MAINTENANCE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8509,7 +7295,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXC--",
           name: "MAINTENANCE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.HVY",
@@ -8519,7 +7305,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "MAINTENANCE HEAVY"
+            "MAINTENANCE HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8527,7 +7313,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXH--",
           name: "MAINTENANCE HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.HVY.THT",
@@ -8538,7 +7324,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "MAINTENANCE HEAVY",
-            "MAINTENANCE HEAVY THEATER"
+            "MAINTENANCE HEAVY THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8546,7 +7332,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXHT-",
           name: "MAINTENANCE HEAVY THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.HVY.CRP",
@@ -8557,7 +7343,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "MAINTENANCE HEAVY",
-            "MAINTENANCE HEAVY CORPS"
+            "MAINTENANCE HEAVY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8565,7 +7351,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXHC-",
           name: "MAINTENANCE HEAVY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.RCY",
@@ -8575,7 +7361,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "MAINTENANCE RECOVERY"
+            "MAINTENANCE RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8583,7 +7369,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXR--",
           name: "MAINTENANCE RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.RCY.THT",
@@ -8594,7 +7380,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "MAINTENANCE RECOVERY",
-            "MAINTENANCE RECOVERY THEATER"
+            "MAINTENANCE RECOVERY THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8602,7 +7388,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXRT-",
           name: "MAINTENANCE RECOVERY THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.RCY.CRP",
@@ -8613,7 +7399,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "MAINTENANCE RECOVERY",
-            "MAINTENANCE RECOVERY CORPS"
+            "MAINTENANCE RECOVERY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8621,25 +7407,18 @@ export const ms2525b = {
           status: "*",
           functionid: "USXRC-",
           name: "MAINTENANCE RECOVERY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MAINTENANCE",
-            "ORDNANCE"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MAINTENANCE", "ORDNANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USXO--",
           name: "ORDNANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.THT",
@@ -8650,7 +7429,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ORDNANCE",
-            "ORDNANCE THEATER"
+            "ORDNANCE THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8658,7 +7437,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXOT-",
           name: "ORDNANCE THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.CRP",
@@ -8669,7 +7448,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ORDNANCE",
-            "ORDNANCE CORPS"
+            "ORDNANCE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8677,7 +7456,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXOC-",
           name: "ORDNANCE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.MSL",
@@ -8688,7 +7467,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ORDNANCE",
-            "ORDNANCE MISSILE"
+            "ORDNANCE MISSILE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8696,7 +7475,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXOM-",
           name: "ORDNANCE MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.MSL.THT",
@@ -8708,7 +7487,7 @@ export const ms2525b = {
             "MAINTENANCE",
             "ORDNANCE",
             "ORDNANCE MISSILE",
-            "ORDNANCE MISSILE THEATER"
+            "ORDNANCE MISSILE THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8716,7 +7495,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXOMT",
           name: "ORDNANCE MISSILE THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.ORD.MSL.CRP",
@@ -8728,7 +7507,7 @@ export const ms2525b = {
             "MAINTENANCE",
             "ORDNANCE",
             "ORDNANCE MISSILE",
-            "ORDNANCE MISSILE CORPS"
+            "ORDNANCE MISSILE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8736,7 +7515,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXOMC",
           name: "ORDNANCE MISSILE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.EOP",
@@ -8746,7 +7525,7 @@ export const ms2525b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "ELECTRO-OPTICAL"
+            "ELECTRO-OPTICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8754,7 +7533,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXE--",
           name: "ELECTRO-OPTICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.EOP.THT",
@@ -8765,7 +7544,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ELECTRO-OPTICAL",
-            "ELECTRO-OPTICAL THEATER"
+            "ELECTRO-OPTICAL THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8773,7 +7552,7 @@ export const ms2525b = {
           status: "*",
           functionid: "USXET-",
           name: "ELECTRO-OPTICAL THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.CSS.MAINT.EOP.CRP",
@@ -8784,7 +7563,7 @@ export const ms2525b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ELECTRO-OPTICAL",
-            "ELECTRO-OPTICAL CORPS"
+            "ELECTRO-OPTICAL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8792,71 +7571,51 @@ export const ms2525b = {
           status: "*",
           functionid: "USXEC-",
           name: "ELECTRO-OPTICAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.UNT.C2HQ",
-          names: [
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "SPECIAL C2 HEADQUARTERS COMPONENT"
-          ],
+          names: [, "GROUND TRACK", "UNIT", "SPECIAL C2 HEADQUARTERS COMPONENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UH----",
           name: "SPECIAL C2 HEADQUARTERS COMPONENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "E-----",
           name: "GROUND TRACK EQUIPMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EW----",
           name: "WEAPON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "MISSILE LAUNCHER"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "MISSILE LAUNCHER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWM---",
           name: "MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD",
@@ -8866,7 +7625,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "MISSILE LAUNCHER",
-            "AIR DEFENSE (AD) MISSILE LAUNCHER"
+            "AIR DEFENSE (AD) MISSILE LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8874,7 +7633,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMA--",
           name: "AIR DEFENSE (AD) MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.SHTR",
@@ -8885,7 +7644,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
-            "SHORT RANGE AD MISSILE LAUNCHER"
+            "SHORT RANGE AD MISSILE LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8893,7 +7652,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMAS-",
           name: "SHORT RANGE AD MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.SHTR.TLAR",
@@ -8905,7 +7664,7 @@ export const ms2525b = {
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
             "SHORT RANGE AD MISSILE LAUNCHER",
-            "TRANSPORTER LAUNCHER AND RADAR (TLAR)"
+            "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8913,7 +7672,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMASR",
           name: "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.SHTR.TELAR",
@@ -8925,7 +7684,7 @@ export const ms2525b = {
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
             "SHORT RANGE AD MISSILE LAUNCHER",
-            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)"
+            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8933,7 +7692,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMASE",
           name: "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.INTMR",
@@ -8944,7 +7703,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
-            "INTERMEDIATE RANGE AD MISSILE LAUNCHER"
+            "INTERMEDIATE RANGE AD MISSILE LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8952,7 +7711,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMAI-",
           name: "INTERMEDIATE RANGE AD MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.INTMR.TLAR",
@@ -8964,7 +7723,7 @@ export const ms2525b = {
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
             "INTERMEDIATE RANGE AD MISSILE LAUNCHER",
-            "TRANSPORTER LAUNCHER AND RADAR (TLAR)"
+            "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8972,7 +7731,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMAIR",
           name: "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.INTMR.TELAR",
@@ -8984,7 +7743,7 @@ export const ms2525b = {
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
             "INTERMEDIATE RANGE AD MISSILE LAUNCHER",
-            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)"
+            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8992,7 +7751,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMAIE",
           name: "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.LNGR",
@@ -9003,7 +7762,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
-            "LONG RANGE AD MISSILE LAUNCHER"
+            "LONG RANGE AD MISSILE LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9011,7 +7770,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMAL-",
           name: "LONG RANGE AD MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.LNGR.TLAR",
@@ -9023,7 +7782,7 @@ export const ms2525b = {
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
             "LONG RANGE AD MISSILE LAUNCHER",
-            "TRANSPORTER LAUNCHER AND RADAR (TLAR)"
+            "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9031,7 +7790,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMALR",
           name: "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.LNGR.TELAR",
@@ -9043,7 +7802,7 @@ export const ms2525b = {
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
             "LONG RANGE AD MISSILE LAUNCHER",
-            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)"
+            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9051,7 +7810,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMALE",
           name: "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT",
@@ -9062,7 +7821,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
-            "AD MISSILE LAUNCHER THEATER"
+            "AD MISSILE LAUNCHER THEATER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9070,7 +7829,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMAT-",
           name: "AD MISSILE LAUNCHER THEATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT.TLAR",
@@ -9082,7 +7841,7 @@ export const ms2525b = {
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
             "AD MISSILE LAUNCHER THEATER",
-            "TRANSPORTER LAUNCHER AND RADAR (TLAR)"
+            "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9090,7 +7849,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMATR",
           name: "TRANSPORTER LAUNCHER AND RADAR (TLAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT.TELAR",
@@ -9102,7 +7861,7 @@ export const ms2525b = {
             "MISSILE LAUNCHER",
             "AIR DEFENSE (AD) MISSILE LAUNCHER",
             "AD MISSILE LAUNCHER THEATER",
-            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)"
+            "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9110,7 +7869,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMATE",
           name: "TRANSPORTER ERECTOR LAUNCHER AND RADAR (TELAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.SUF",
@@ -9120,7 +7879,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "MISSILE LAUNCHER",
-            "SURF-SURF (SS) MISSILE LAUNCHER"
+            "SURF-SURF (SS) MISSILE LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9128,7 +7887,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMS--",
           name: "SURF-SURF (SS) MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.SUF.SHTR",
@@ -9139,7 +7898,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "SURF-SURF (SS) MISSILE LAUNCHER",
-            "SHORT RANGE SS MISSILE LAUNCHER"
+            "SHORT RANGE SS MISSILE LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9147,7 +7906,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMSS-",
           name: "SHORT RANGE SS MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.SUF.INTMR",
@@ -9158,7 +7917,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "SURF-SURF (SS) MISSILE LAUNCHER",
-            "INTERMEDIATE RANGE SS MISSILE LAUNCHER"
+            "INTERMEDIATE RANGE SS MISSILE LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9166,7 +7925,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMSI-",
           name: "INTERMEDIATE RANGE SS MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.SUF.LNGR",
@@ -9177,7 +7936,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "SURF-SURF (SS) MISSILE LAUNCHER",
-            "LONG RANGE SS MISSILE LAUNCHER"
+            "LONG RANGE SS MISSILE LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9185,7 +7944,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMSL-",
           name: "LONG RANGE SS MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.AT",
@@ -9195,7 +7954,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "MISSILE LAUNCHER",
-            "MISSILE LAUNCHER ANTITANK (AT)"
+            "MISSILE LAUNCHER ANTITANK (AT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9203,7 +7962,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMT--",
           name: "MISSILE LAUNCHER ANTITANK (AT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.AT.LIT",
@@ -9214,7 +7973,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "MISSILE LAUNCHER ANTITANK (AT)",
-            "MISSILE LAUNCHER AT LIGHT"
+            "MISSILE LAUNCHER AT LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9222,7 +7981,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMTL-",
           name: "MISSILE LAUNCHER AT LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.AT.MDM",
@@ -9233,7 +7992,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "MISSILE LAUNCHER ANTITANK (AT)",
-            "MISSILE LAUNCHER AT MEDIUM"
+            "MISSILE LAUNCHER AT MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9241,7 +8000,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMTM-",
           name: "MISSILE LAUNCHER AT MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MSLL.AT.HVY",
@@ -9252,7 +8011,7 @@ export const ms2525b = {
             "WEAPON",
             "MISSILE LAUNCHER",
             "MISSILE LAUNCHER ANTITANK (AT)",
-            "MISSILE LAUNCHER AT HEAVY"
+            "MISSILE LAUNCHER AT HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9260,24 +8019,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EWMTH-",
           name: "MISSILE LAUNCHER AT HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.SRL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "SINGLE ROCKET LAUNCHER"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "SINGLE ROCKET LAUNCHER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWS---",
           name: "SINGLE ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.SRL.LIT",
@@ -9287,7 +8040,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET LAUNCHER LIGHT"
+            "SINGLE ROCKET LAUNCHER LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9295,7 +8048,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWSL--",
           name: "SINGLE ROCKET LAUNCHER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.SRL.MDM",
@@ -9305,7 +8058,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET LAUNCHER MEDIUM"
+            "SINGLE ROCKET LAUNCHER MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9313,7 +8066,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWSM--",
           name: "SINGLE ROCKET LAUNCHER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.SRL.HVY",
@@ -9323,7 +8076,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET LAUNCHER HEAVY"
+            "SINGLE ROCKET LAUNCHER HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9331,24 +8084,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EWSH--",
           name: "SINGLE ROCKET LAUNCHER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MRL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "MULTIPLE ROCKET LAUNCHER"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "MULTIPLE ROCKET LAUNCHER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWX---",
           name: "MULTIPLE ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MRL.LIT",
@@ -9358,7 +8105,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "MULTIPLE ROCKET LAUNCHER",
-            "MULTIPLE ROCKET LAUNCHER LIGHT"
+            "MULTIPLE ROCKET LAUNCHER LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9366,7 +8113,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWXL--",
           name: "MULTIPLE ROCKET LAUNCHER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MRL.MDM",
@@ -9376,7 +8123,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "MULTIPLE ROCKET LAUNCHER",
-            "MULTIPLE ROCKET LAUNCHER MEDIUM"
+            "MULTIPLE ROCKET LAUNCHER MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9384,7 +8131,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWXM--",
           name: "MULTIPLE ROCKET LAUNCHER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MRL.HVY",
@@ -9394,7 +8141,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "MULTIPLE ROCKET LAUNCHER",
-            "MULTIPLE ROCKET LAUNCHER HEAVY"
+            "MULTIPLE ROCKET LAUNCHER HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9402,24 +8149,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EWXH--",
           name: "MULTIPLE ROCKET LAUNCHER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ATRL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "ANTITANK ROCKET LAUNCHER"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "ANTITANK ROCKET LAUNCHER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWT---",
           name: "ANTITANK ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ATRL.LIT",
@@ -9429,7 +8170,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "ANTITANK ROCKET LAUNCHER",
-            "ANTI-TANK ROCKET LAUNCHER LIGHT"
+            "ANTI-TANK ROCKET LAUNCHER LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9437,7 +8178,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWTL--",
           name: "ANTI-TANK ROCKET LAUNCHER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ATRL.MDM",
@@ -9447,7 +8188,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "ANTITANK ROCKET LAUNCHER",
-            "ANTI-TANK ROCKET LAUNCHER MEDIUM"
+            "ANTI-TANK ROCKET LAUNCHER MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9455,7 +8196,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWTM--",
           name: "ANTI-TANK ROCKET LAUNCHER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ATRL.HVY",
@@ -9465,7 +8206,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "ANTITANK ROCKET LAUNCHER",
-            "ANTI-TANK ROCKET LAUNCHER HEAVY"
+            "ANTI-TANK ROCKET LAUNCHER HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9473,24 +8214,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EWTH--",
           name: "ANTI-TANK ROCKET LAUNCHER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.RIFWPN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "RIFLE/AUTOMATIC WEAPON"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "RIFLE/AUTOMATIC WEAPON"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWR---",
           name: "RIFLE/AUTOMATIC WEAPON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.RIFWPN.RIF",
@@ -9500,7 +8235,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "RIFLE/AUTOMATIC WEAPON",
-            "RIFLE"
+            "RIFLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9508,7 +8243,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWRR--",
           name: "RIFLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.RIFWPN.LMG",
@@ -9518,7 +8253,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "RIFLE/AUTOMATIC WEAPON",
-            "LIGHT MACHINE GUN"
+            "LIGHT MACHINE GUN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9526,7 +8261,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWRL--",
           name: "LIGHT MACHINE GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.RIFWPN.HMG",
@@ -9536,7 +8271,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "RIFLE/AUTOMATIC WEAPON",
-            "HEAVY MACHINE GUN"
+            "HEAVY MACHINE GUN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9544,24 +8279,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EWRH--",
           name: "HEAVY MACHINE GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.GREL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "GRENADE LAUNCHER"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "GRENADE LAUNCHER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWZ---",
           name: "GRENADE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.GREL.LIT",
@@ -9571,7 +8300,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "GRENADE LAUNCHER",
-            "GRENADE LAUNCHER LIGHT"
+            "GRENADE LAUNCHER LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9579,7 +8308,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWZL--",
           name: "GRENADE LAUNCHER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.GREL.MDM",
@@ -9589,7 +8318,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "GRENADE LAUNCHER",
-            "GRENADE LAUNCHER MEDIUM"
+            "GRENADE LAUNCHER MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9597,7 +8326,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWZM--",
           name: "GRENADE LAUNCHER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.GREL.HVY",
@@ -9607,7 +8336,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "GRENADE LAUNCHER",
-            "GRENADE LAUNCHER HEAVY"
+            "GRENADE LAUNCHER HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9615,95 +8344,62 @@ export const ms2525b = {
           status: "*",
           functionid: "EWZH--",
           name: "GRENADE LAUNCHER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MORT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "MORTAR"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "MORTAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWO---",
           name: "MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MORT.LIT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "MORTAR",
-            "MORTAR LIGHT"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "MORTAR", "MORTAR LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWOL--",
           name: "MORTAR LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MORT.MDM",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "MORTAR",
-            "MORTAR MEDIUM"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "MORTAR", "MORTAR MEDIUM"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWOM--",
           name: "MORTAR MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.MORT.HVY",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "MORTAR",
-            "MORTAR HEAVY"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "MORTAR", "MORTAR HEAVY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWOH--",
           name: "MORTAR HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.HOW",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "HOWITZER"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "HOWITZER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWH---",
           name: "HOWITZER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.LIT",
@@ -9713,7 +8409,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "HOWITZER",
-            "HOWITZER LIGHT"
+            "HOWITZER LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9721,7 +8417,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWHL--",
           name: "HOWITZER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.LIT.SPD",
@@ -9732,7 +8428,7 @@ export const ms2525b = {
             "WEAPON",
             "HOWITZER",
             "HOWITZER LIGHT",
-            "HOWITZER LIGHT SELF-PROPELLED"
+            "HOWITZER LIGHT SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9740,7 +8436,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWHLS-",
           name: "HOWITZER LIGHT SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.MDM",
@@ -9750,7 +8446,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "HOWITZER",
-            "HOWITZER MEDIUM"
+            "HOWITZER MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9758,7 +8454,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWHM--",
           name: "HOWITZER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.MDM.SPD",
@@ -9769,7 +8465,7 @@ export const ms2525b = {
             "WEAPON",
             "HOWITZER",
             "HOWITZER MEDIUM",
-            "HOWITZER MEDIUM SELF-PROPELLED"
+            "HOWITZER MEDIUM SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9777,7 +8473,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWHMS-",
           name: "HOWITZER MEDIUM SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.HVY",
@@ -9787,7 +8483,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "HOWITZER",
-            "HOWITZER HEAVY"
+            "HOWITZER HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9795,7 +8491,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWHH--",
           name: "HOWITZER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.HOW.HVY.SPD",
@@ -9806,7 +8502,7 @@ export const ms2525b = {
             "WEAPON",
             "HOWITZER",
             "HOWITZER HEAVY",
-            "HOWITZER HEAVY SELF-PROPELLED"
+            "HOWITZER HEAVY SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9814,24 +8510,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EWHHS-",
           name: "HOWITZER HEAVY SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ATG",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "ANTI-TANK GUN"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "ANTI-TANK GUN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWG---",
           name: "ANTI-TANK GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ATG.LIT",
@@ -9841,7 +8531,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "ANTI-TANK GUN",
-            "ANTI-TANK GUN LIGHT"
+            "ANTI-TANK GUN LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9849,7 +8539,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWGL--",
           name: "ANTI-TANK GUN LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ATG.MDM",
@@ -9859,7 +8549,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "ANTI-TANK GUN",
-            "ANTI-TANK GUN MEDIUM"
+            "ANTI-TANK GUN MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9867,7 +8557,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWGM--",
           name: "ANTI-TANK GUN MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ATG.HVY",
@@ -9877,7 +8567,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "ANTI-TANK GUN",
-            "ANTI-TANK GUN HEAVY"
+            "ANTI-TANK GUN HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9885,7 +8575,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWGH--",
           name: "ANTI-TANK GUN HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ATG.RECL",
@@ -9895,7 +8585,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "ANTI-TANK GUN",
-            "ANTI-TANK GUN RECOILLESS"
+            "ANTI-TANK GUN RECOILLESS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9903,24 +8593,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EWGR--",
           name: "ANTI-TANK GUN RECOILLESS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.DFG",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "DIRECT FIRE GUN"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "DIRECT FIRE GUN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWD---",
           name: "DIRECT FIRE GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.LIT",
@@ -9930,7 +8614,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "DIRECT FIRE GUN",
-            "DIRECT FIRE GUN LIGHT"
+            "DIRECT FIRE GUN LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9938,7 +8622,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWDL--",
           name: "DIRECT FIRE GUN LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.LIT.SPD",
@@ -9949,7 +8633,7 @@ export const ms2525b = {
             "WEAPON",
             "DIRECT FIRE GUN",
             "DIRECT FIRE GUN LIGHT",
-            "DIRECT FIRE GUN LIGHT SELF-PROPELLED"
+            "DIRECT FIRE GUN LIGHT SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9957,7 +8641,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWDLS-",
           name: "DIRECT FIRE GUN LIGHT SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.MDM",
@@ -9967,7 +8651,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "DIRECT FIRE GUN",
-            "DIRECT FIRE GUN MEDIUM"
+            "DIRECT FIRE GUN MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9975,7 +8659,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWDM--",
           name: "DIRECT FIRE GUN MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.MDM.SPD",
@@ -9986,7 +8670,7 @@ export const ms2525b = {
             "WEAPON",
             "DIRECT FIRE GUN",
             "DIRECT FIRE GUN MEDIUM",
-            "DIRECT FIRE GUN MEDIUM SELF-PROPELLED"
+            "DIRECT FIRE GUN MEDIUM SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9994,7 +8678,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWDMS-",
           name: "DIRECT FIRE GUN MEDIUM SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.HVY",
@@ -10004,7 +8688,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "DIRECT FIRE GUN",
-            "DIRECT FIRE GUN HEAVY"
+            "DIRECT FIRE GUN HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10012,7 +8696,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWDH--",
           name: "DIRECT FIRE GUN HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.DFG.HVY.SPD",
@@ -10023,7 +8707,7 @@ export const ms2525b = {
             "WEAPON",
             "DIRECT FIRE GUN",
             "DIRECT FIRE GUN HEAVY",
-            "DIRECT FIRE GUN HEAVY SELF-PROPELLED"
+            "DIRECT FIRE GUN HEAVY SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10031,24 +8715,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EWDHS-",
           name: "DIRECT FIRE GUN HEAVY SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ADFG",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "WEAPON",
-            "AIR DEFENSE GUN"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "WEAPON", "AIR DEFENSE GUN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWA---",
           name: "AIR DEFENSE GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ADFG.LIT",
@@ -10058,7 +8736,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "AIR DEFENSE GUN",
-            "AIR DEFENSE GUN LIGHT"
+            "AIR DEFENSE GUN LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10066,7 +8744,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWAL--",
           name: "AIR DEFENSE GUN LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ADFG.MDM",
@@ -10076,7 +8754,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "AIR DEFENSE GUN",
-            "AIR DEFENSE GUN MEDIUM"
+            "AIR DEFENSE GUN MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10084,7 +8762,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EWAM--",
           name: "AIR DEFENSE GUN MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.WPN.ADFG.HVY",
@@ -10094,7 +8772,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPON",
             "AIR DEFENSE GUN",
-            "AIR DEFENSE GUN HEAVY"
+            "AIR DEFENSE GUN HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10102,40 +8780,29 @@ export const ms2525b = {
           status: "*",
           functionid: "EWAH--",
           name: "AIR DEFENSE GUN HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "GROUND VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EV----",
           name: "GROUND VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "ARMORED VEHICLE"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "ARMORED VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVA---",
           name: "ARMORED VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK",
@@ -10145,7 +8812,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
-            "TANK"
+            "TANK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10153,7 +8820,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVAT--",
           name: "TANK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.LIT",
@@ -10164,7 +8831,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
             "TANK",
-            "TANK LIGHT"
+            "TANK LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10172,7 +8839,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVATL-",
           name: "TANK LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.LIT.RCY",
@@ -10184,7 +8851,7 @@ export const ms2525b = {
             "ARMORED VEHICLE",
             "TANK",
             "TANK LIGHT",
-            "TANK LIGHT RECOVERY"
+            "TANK LIGHT RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10192,7 +8859,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVATLR",
           name: "TANK LIGHT RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.MDM",
@@ -10203,7 +8870,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
             "TANK",
-            "TANK MEDIUM"
+            "TANK MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10211,7 +8878,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVATM-",
           name: "TANK MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.MDM.RCY",
@@ -10223,7 +8890,7 @@ export const ms2525b = {
             "ARMORED VEHICLE",
             "TANK",
             "TANK MEDIUM",
-            "TANK MEDIUM RECOVERY"
+            "TANK MEDIUM RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10231,7 +8898,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVATMR",
           name: "TANK MEDIUM RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.HVY",
@@ -10242,7 +8909,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
             "TANK",
-            "TANK HEAVY"
+            "TANK HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10250,7 +8917,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVATH-",
           name: "TANK HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.TANK.HVY.RCY",
@@ -10262,7 +8929,7 @@ export const ms2525b = {
             "ARMORED VEHICLE",
             "TANK",
             "TANK HEAVY",
-            "TANK HEAVY RECOVERY"
+            "TANK HEAVY RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10270,7 +8937,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVATHR",
           name: "TANK HEAVY RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.ARMPC",
@@ -10280,7 +8947,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
-            "ARMORED PERSONNEL CARRIER"
+            "ARMORED PERSONNEL CARRIER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10288,7 +8955,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVAA--",
           name: "ARMORED PERSONNEL CARRIER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.ARMPC.RCY",
@@ -10299,7 +8966,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
             "ARMORED PERSONNEL CARRIER",
-            "ARMORED PERSONNEL CARRIER RECOVERY"
+            "ARMORED PERSONNEL CARRIER RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10307,7 +8974,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVAAR-",
           name: "ARMORED PERSONNEL CARRIER RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.ARMINF",
@@ -10317,7 +8984,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
-            "ARMORED INFANTRY"
+            "ARMORED INFANTRY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10325,7 +8992,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVAI--",
           name: "ARMORED INFANTRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.C2V",
@@ -10335,7 +9002,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
-            "C2V/ACV"
+            "C2V/ACV",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10343,7 +9010,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVAC--",
           name: "C2V/ACV",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.CSSVEH",
@@ -10353,7 +9020,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
-            "COMBAT SERVICE SUPPORT VEHICLE"
+            "COMBAT SERVICE SUPPORT VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10361,7 +9028,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVAS--",
           name: "COMBAT SERVICE SUPPORT VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ARMD.LARMVH",
@@ -10371,7 +9038,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMORED VEHICLE",
-            "LIGHT ARMORED VEHICLE"
+            "LIGHT ARMORED VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10379,24 +9046,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EVAL--",
           name: "LIGHT ARMORED VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "UTILITY VEHICLE"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "UTILITY VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVU---",
           name: "UTILITY VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.BUS",
@@ -10406,7 +9067,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "BUS"
+            "BUS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10414,7 +9075,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUB--",
           name: "BUS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.SEMI",
@@ -10424,7 +9085,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "SEMI"
+            "SEMI",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10432,7 +9093,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUS--",
           name: "SEMI",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.SEMI.LIT",
@@ -10443,7 +9104,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
             "SEMI",
-            "SEMI LIGHT"
+            "SEMI LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10451,7 +9112,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUSL-",
           name: "SEMI LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.SEMI.MDM",
@@ -10462,7 +9123,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
             "SEMI",
-            "SEMI MEDIUM"
+            "SEMI MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10470,7 +9131,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUSM-",
           name: "SEMI MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.SEMI.HVY",
@@ -10481,7 +9142,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
             "SEMI",
-            "SEMI HEAVY"
+            "SEMI HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10489,7 +9150,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUSH-",
           name: "SEMI HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.LCCTRK",
@@ -10499,7 +9160,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "LIMITED CROSS-COUNTRY TRUCK"
+            "LIMITED CROSS-COUNTRY TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10507,7 +9168,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUL--",
           name: "LIMITED CROSS-COUNTRY TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.CCTRK",
@@ -10517,7 +9178,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "CROSS-COUNTRY TRUCK"
+            "CROSS-COUNTRY TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10525,7 +9186,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUX--",
           name: "CROSS-COUNTRY TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.H2OCRT",
@@ -10535,7 +9196,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "WATER CRAFT"
+            "WATER CRAFT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10543,7 +9204,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUR--",
           name: "WATER CRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.TOWTRK",
@@ -10553,7 +9214,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "TOW TRUCK"
+            "TOW TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10561,7 +9222,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUT--",
           name: "TOW TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.TOWTRK.LIT",
@@ -10572,7 +9233,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
             "TOW TRUCK",
-            "TOW TRUCK LIGHT"
+            "TOW TRUCK LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10580,7 +9241,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUTL-",
           name: "TOW TRUCK LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.TOWTRK.HVY",
@@ -10591,7 +9252,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
             "TOW TRUCK",
-            "TOW TRUCK HEAVY"
+            "TOW TRUCK HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10599,7 +9260,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUTH-",
           name: "TOW TRUCK HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.AMBLNC",
@@ -10609,7 +9270,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "AMBULANCE"
+            "AMBULANCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10617,7 +9278,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUA--",
           name: "AMBULANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.UTYVEH.AMBLNC.ARMD",
@@ -10628,7 +9289,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
             "AMBULANCE",
-            "ARMORED AMBULANCE"
+            "ARMORED AMBULANCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10636,24 +9297,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EVUAA-",
           name: "ARMORED AMBULANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "ENGINEER VEHICLE"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "ENGINEER VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVE---",
           name: "ENGINEER VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.BRG",
@@ -10663,7 +9318,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "BRIDGE"
+            "BRIDGE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10671,7 +9326,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEB--",
           name: "BRIDGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.ERHMR",
@@ -10681,7 +9336,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "EARTHMOVER"
+            "EARTHMOVER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10689,7 +9344,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEE--",
           name: "EARTHMOVER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.CSNVEH",
@@ -10699,7 +9354,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "CONSTRUCTION VEHICLE"
+            "CONSTRUCTION VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10707,7 +9362,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEC--",
           name: "CONSTRUCTION VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MLVEH",
@@ -10717,7 +9372,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "MINE LAYING VEHICLE"
+            "MINE LAYING VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10725,7 +9380,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEM--",
           name: "MINE LAYING VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MLVEH.ARMCV",
@@ -10736,7 +9391,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "MINE LAYING VEHICLE",
-            "ARMORED CARRIER WITH VOLCANO"
+            "ARMORED CARRIER WITH VOLCANO",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10744,7 +9399,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEMV-",
           name: "ARMORED CARRIER WITH VOLCANO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MLVEH.TRKMV",
@@ -10755,7 +9410,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "MINE LAYING VEHICLE",
-            "TRUCK MOUNTED WITH VOLCANO"
+            "TRUCK MOUNTED WITH VOLCANO",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10763,7 +9418,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEML-",
           name: "TRUCK MOUNTED WITH VOLCANO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MCVEH",
@@ -10773,7 +9428,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "MINE CLEARING VEHICLE"
+            "MINE CLEARING VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10781,7 +9436,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEA--",
           name: "MINE CLEARING VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MCVEH.ARMVM",
@@ -10792,7 +9447,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "MINE CLEARING VEHICLE",
-            "ARMORED MOUNTED MINE CLEARING VEHICLE"
+            "ARMORED MOUNTED MINE CLEARING VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10800,7 +9455,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEAA-",
           name: "ARMORED MOUNTED MINE CLEARING VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.MCVEH.TM",
@@ -10811,7 +9466,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "MINE CLEARING VEHICLE",
-            "TRAILER MOUNTED MINE CLEARING VEHICLE"
+            "TRAILER MOUNTED MINE CLEARING VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10819,7 +9474,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEAT-",
           name: "TRAILER MOUNTED MINE CLEARING VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.DZR",
@@ -10829,7 +9484,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "DOZER"
+            "DOZER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10837,7 +9492,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVED--",
           name: "DOZER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.DZR.ARMD",
@@ -10848,7 +9503,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "DOZER",
-            "ARMORED DOZER"
+            "ARMORED DOZER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10856,7 +9511,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEDA-",
           name: "ARMORED DOZER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.AST",
@@ -10866,7 +9521,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "ARMORED ASSAULT"
+            "ARMORED ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10874,7 +9529,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVES--",
           name: "ARMORED ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.ARMERV",
@@ -10884,7 +9539,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "ARMORED ENGINEER RECON VEHICLE (AERV)"
+            "ARMORED ENGINEER RECON VEHICLE (AERV)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10892,7 +9547,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVER--",
           name: "ARMORED ENGINEER RECON VEHICLE (AERV)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.BH",
@@ -10902,7 +9557,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "BACKHOE"
+            "BACKHOE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10910,7 +9565,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEH--",
           name: "BACKHOE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.ENGVEH.FRYTSP",
@@ -10920,7 +9575,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "FERRY TRANSPORTER"
+            "FERRY TRANSPORTER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10928,41 +9583,29 @@ export const ms2525b = {
           status: "*",
           functionid: "EVEF--",
           name: "FERRY TRANSPORTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.TRNLCO",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "TRAIN LOCOMOTIVE"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "TRAIN LOCOMOTIVE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVT---",
           name: "TRAIN LOCOMOTIVE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "CIVILIAN VEHICLE"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "CIVILIAN VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVC---",
           name: "CIVILIAN VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.AUT",
@@ -10972,7 +9615,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
-            "AUTOMOBILE"
+            "AUTOMOBILE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10980,7 +9623,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCA--",
           name: "AUTOMOBILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.AUT.CPCT",
@@ -10991,7 +9634,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "AUTOMOBILE",
-            "COMPACT AUTOMOBILE"
+            "COMPACT AUTOMOBILE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10999,7 +9642,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCAL-",
           name: "COMPACT AUTOMOBILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.AUT.MDSZ",
@@ -11010,7 +9653,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "AUTOMOBILE",
-            "MIDSIZE AUTOMOBILE"
+            "MIDSIZE AUTOMOBILE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11018,7 +9661,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCAM-",
           name: "MIDSIZE AUTOMOBILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.AUT.SDN",
@@ -11029,7 +9672,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "AUTOMOBILE",
-            "SEDAN AUTOMOBILE"
+            "SEDAN AUTOMOBILE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11037,7 +9680,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCAH-",
           name: "SEDAN AUTOMOBILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.OBTRK",
@@ -11047,7 +9690,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
-            "OPEN-BED TRUCK"
+            "OPEN-BED TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11055,7 +9698,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCO--",
           name: "OPEN-BED TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.OBTRK.PU",
@@ -11066,7 +9709,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "OPEN-BED TRUCK",
-            "PICKUP OPEN-BED TRUCK"
+            "PICKUP OPEN-BED TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11074,7 +9717,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCOL-",
           name: "PICKUP OPEN-BED TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.OBTRK.SMAL",
@@ -11085,7 +9728,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "OPEN-BED TRUCK",
-            "SMALL OPEN-BED TRUCK"
+            "SMALL OPEN-BED TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11093,7 +9736,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCOM-",
           name: "SMALL OPEN-BED TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.OBTRK.LRG",
@@ -11104,7 +9747,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "OPEN-BED TRUCK",
-            "LARGE OPEN-BED TRUCK"
+            "LARGE OPEN-BED TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11112,7 +9755,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCOH-",
           name: "LARGE OPEN-BED TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.MPV",
@@ -11122,7 +9765,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
-            "MULTI-PASSENGER VEHICLE"
+            "MULTI-PASSENGER VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11130,7 +9773,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCM--",
           name: "MULTI-PASSENGER VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.MPV.VAN",
@@ -11141,7 +9784,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "MULTI-PASSENGER VEHICLE",
-            "VAN MULTI-PASSENGER VEHICLE"
+            "VAN MULTI-PASSENGER VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11149,7 +9792,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCML-",
           name: "VAN MULTI-PASSENGER VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.MPV.SBUS",
@@ -11160,7 +9803,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "MULTI-PASSENGER VEHICLE",
-            "SMALL BUS MULTI-PASSENGER VEHICLE"
+            "SMALL BUS MULTI-PASSENGER VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11168,7 +9811,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCMM-",
           name: "SMALL BUS MULTI-PASSENGER VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.MPV.LBUS",
@@ -11179,7 +9822,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "MULTI-PASSENGER VEHICLE",
-            "LARGE BUS MULTI-PASSENGER VEHICLE"
+            "LARGE BUS MULTI-PASSENGER VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11187,7 +9830,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCMH-",
           name: "LARGE BUS MULTI-PASSENGER VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.UTYVEH",
@@ -11197,7 +9840,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
-            "UTILITY VEHICLE"
+            "UTILITY VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11205,7 +9848,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCU--",
           name: "UTILITY VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.UTYVEH.SUV",
@@ -11216,7 +9859,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "UTILITY VEHICLE",
-            "SPORT UTILITY VEHICLE (SUV), UTILITY VEHICLE"
+            "SPORT UTILITY VEHICLE (SUV), UTILITY VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11224,7 +9867,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCUL-",
           name: "SPORT UTILITY VEHICLE (SUV), UTILITY VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.UTYVEH.SBOX",
@@ -11235,7 +9878,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "UTILITY VEHICLE",
-            "SMALL BOX TRUCK, UTILITY VEHICLE"
+            "SMALL BOX TRUCK, UTILITY VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11243,7 +9886,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCUM-",
           name: "SMALL BOX TRUCK, UTILITY VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.UTYVEH.LBOX",
@@ -11254,7 +9897,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "UTILITY VEHICLE",
-            "LARGE BOX TRUCK, UTILITY VEHICLE"
+            "LARGE BOX TRUCK, UTILITY VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11262,7 +9905,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCUH-",
           name: "LARGE BOX TRUCK, UTILITY VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.JP",
@@ -11272,7 +9915,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
-            "JEEP TYPE VEHICLE"
+            "JEEP TYPE VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11280,7 +9923,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCJ--",
           name: "JEEP TYPE VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.JP.SMAL",
@@ -11291,7 +9934,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "JEEP TYPE VEHICLE",
-            "SMALL/LIGHT JEEP TYPE VEHICLE"
+            "SMALL/LIGHT JEEP TYPE VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11299,7 +9942,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCJL-",
           name: "SMALL/LIGHT JEEP TYPE VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.JP.MDM",
@@ -11310,7 +9953,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "JEEP TYPE VEHICLE",
-            "MEDIUM JEEP TYPE VEHICLE"
+            "MEDIUM JEEP TYPE VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11318,7 +9961,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCJM-",
           name: "MEDIUM JEEP TYPE VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.JP.LRG",
@@ -11329,7 +9972,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "JEEP TYPE VEHICLE",
-            "LARGE/HEAVY JEEP TYPE VEHICLE"
+            "LARGE/HEAVY JEEP TYPE VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11337,7 +9980,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCJH-",
           name: "LARGE/HEAVY JEEP TYPE VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRL",
@@ -11347,7 +9990,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
-            "TRACTOR TRAILER TRUCK WITH BOX TRAILER"
+            "TRACTOR TRAILER TRUCK WITH BOX TRAILER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11355,7 +9998,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCT--",
           name: "TRACTOR TRAILER TRUCK WITH BOX TRAILER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRL.SMAL",
@@ -11366,7 +10009,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "TRACTOR TRAILER TRUCK WITH BOX TRAILER",
-            "SMALL/LIGHT BOX TRAILER, TRACTOR TRAILER TRUCK"
+            "SMALL/LIGHT BOX TRAILER, TRACTOR TRAILER TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11374,7 +10017,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCTL-",
           name: "SMALL/LIGHT BOX TRAILER, TRACTOR TRAILER TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRL.MDM",
@@ -11385,7 +10028,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "TRACTOR TRAILER TRUCK WITH BOX TRAILER",
-            "MEDIUM BOX TRAILER, TRACTOR TRAILER TRUCK"
+            "MEDIUM BOX TRAILER, TRACTOR TRAILER TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11393,7 +10036,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCTM-",
           name: "MEDIUM BOX TRAILER, TRACTOR TRAILER TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRL.LRG",
@@ -11404,7 +10047,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "TRACTOR TRAILER TRUCK WITH BOX TRAILER",
-            "LARGE/HEAVY BOX TRAILER, TRACTOR TRAILER TRUCK"
+            "LARGE/HEAVY BOX TRAILER, TRACTOR TRAILER TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11412,7 +10055,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCTH-",
           name: "LARGE/HEAVY BOX TRAILER, TRACTOR TRAILER TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF",
@@ -11422,7 +10065,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
-            "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER"
+            "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11430,7 +10073,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCF--",
           name: "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF.SMAL",
@@ -11441,7 +10084,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER",
-            "SMALL/LIGHT FLATBED TRAILER, TRACTOR TRAILER TRUCK"
+            "SMALL/LIGHT FLATBED TRAILER, TRACTOR TRAILER TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11449,7 +10092,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCFL-",
           name: "SMALL/LIGHT FLATBED TRAILER, TRACTOR TRAILER TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF.MDM",
@@ -11460,7 +10103,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER",
-            "MEDIUM FLATBED TRAILER, TRACTOR TRAILER TRUCK"
+            "MEDIUM FLATBED TRAILER, TRACTOR TRAILER TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11468,7 +10111,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCFM-",
           name: "MEDIUM FLATBED TRAILER, TRACTOR TRAILER TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF.LRG",
@@ -11479,7 +10122,7 @@ export const ms2525b = {
             "GROUND VEHICLE",
             "CIVILIAN VEHICLE",
             "TRACTOR TRAILER TRUCK WITH FLATBED TRAILER",
-            "LARGE/HEAVY FLATBED TRAILER, TRACTOR TRAILER TRUCK"
+            "LARGE/HEAVY FLATBED TRAILER, TRACTOR TRAILER TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11487,24 +10130,18 @@ export const ms2525b = {
           status: "*",
           functionid: "EVCFH-",
           name: "LARGE/HEAVY FLATBED TRAILER, TRACTOR TRAILER TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.PKAN",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "PACK ANIMAL(S)"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "PACK ANIMAL(S)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVM---",
           name: "PACK ANIMAL(S)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT",
@@ -11513,7 +10150,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
-            "MISSILE SUPPORT VEHICLE"
+            "MISSILE SUPPORT VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11521,7 +10158,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVS---",
           name: "MISSILE SUPPORT VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.TLDR",
@@ -11531,7 +10168,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "MISSILE SUPPORT VEHICLE",
-            "MISSILE SUPPORT VEHICLE TRANSLOADER"
+            "MISSILE SUPPORT VEHICLE TRANSLOADER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11539,7 +10176,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVST--",
           name: "MISSILE SUPPORT VEHICLE TRANSLOADER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.TPTR",
@@ -11549,7 +10186,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "MISSILE SUPPORT VEHICLE",
-            "MISSILE SUPPORT VEHICLE TRANSPORTER"
+            "MISSILE SUPPORT VEHICLE TRANSPORTER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11557,7 +10194,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVSR--",
           name: "MISSILE SUPPORT VEHICLE TRANSPORTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.CRN",
@@ -11567,7 +10204,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "MISSILE SUPPORT VEHICLE",
-            "MISSILE SUPPORT VEHICLE CRANE/LOADING DEVICE"
+            "MISSILE SUPPORT VEHICLE CRANE/LOADING DEVICE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11575,7 +10212,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVSC--",
           name: "MISSILE SUPPORT VEHICLE CRANE/LOADING DEVICE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.PLNT",
@@ -11585,7 +10222,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "MISSILE SUPPORT VEHICLE",
-            "MISSILE SUPPORT VEHICLE PROPELLANT TRANSPORTER"
+            "MISSILE SUPPORT VEHICLE PROPELLANT TRANSPORTER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11593,7 +10230,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EVSP--",
           name: "MISSILE SUPPORT VEHICLE PROPELLANT TRANSPORTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.GRDVEH.MSLSPT.WH",
@@ -11603,7 +10240,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "MISSILE SUPPORT VEHICLE",
-            "MISSILE SUPPORT VEHICLE WARHEAD TRANSPORTER"
+            "MISSILE SUPPORT VEHICLE WARHEAD TRANSPORTER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11611,141 +10248,95 @@ export const ms2525b = {
           status: "*",
           functionid: "EVSW--",
           name: "MISSILE SUPPORT VEHICLE WARHEAD TRANSPORTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SNS",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "SENSOR"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "SENSOR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "ES----",
           name: "SENSOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SNS.RAD",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "SENSOR",
-            "RADAR"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "SENSOR", "RADAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "ESR---",
           name: "RADAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SNS.EMP",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "SENSOR",
-            "EMPLACED SENSOR"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "SENSOR", "EMPLACED SENSOR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "ESE---",
           name: "EMPLACED SENSOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SPL",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EX----",
           name: "SPECIAL EQUIPMENT",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SPL.LSR",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT",
-            "LASER"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT", "LASER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EXL---",
           name: "LASER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SPL.NBCEQT",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT",
-            "NBC EQUIPMENT"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT", "NBC EQUIPMENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EXN---",
           name: "NBC EQUIPMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SPL.FLMTHR",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT",
-            "FLAME THROWER"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT", "FLAME THROWER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EXF---",
           name: "FLAME THROWER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SPL.LNDMNE",
-          names: [
-            ,
-            "GROUND TRACK",
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT",
-            "LAND MINES"
-          ],
+          names: [, "GROUND TRACK", "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT", "LAND MINES"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EXM---",
           name: "LAND MINES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SPL.LNDMNE.CLM",
@@ -11755,7 +10346,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "SPECIAL EQUIPMENT",
             "LAND MINES",
-            "CLAYMORE"
+            "CLAYMORE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11763,7 +10354,7 @@ export const ms2525b = {
           status: "*",
           functionid: "EXMC--",
           name: "CLAYMORE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.EQT.SPL.LNDMNE.LTL",
@@ -11773,7 +10364,7 @@ export const ms2525b = {
             "GROUND TRACK EQUIPMENT",
             "SPECIAL EQUIPMENT",
             "LAND MINES",
-            "LESS THAN LETHAL"
+            "LESS THAN LETHAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11781,55 +10372,40 @@ export const ms2525b = {
           status: "*",
           functionid: "EXML--",
           name: "LESS THAN LETHAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "I-----",
           name: "INSTALLATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.RMP",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IR----",
           name: "RAW MATERIAL PRODUCTION/STORAGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.RMP.MNE",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE",
-            "MINE"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE", "MINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IRM---",
           name: "MINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.RMP.PGO",
@@ -11838,7 +10414,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "RAW MATERIAL PRODUCTION/STORAGE",
-            "PETROLEUM/GAS/OIL"
+            "PETROLEUM/GAS/OIL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11846,24 +10422,18 @@ export const ms2525b = {
           status: "*",
           functionid: "IRP---",
           name: "PETROLEUM/GAS/OIL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.RMP.NBC",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE",
-            "NBC"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE", "NBC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IRN---",
           name: "NBC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.RMP.NBC.BIO",
@@ -11873,7 +10443,7 @@ export const ms2525b = {
             "INSTALLATION",
             "RAW MATERIAL PRODUCTION/STORAGE",
             "NBC",
-            "BIOLOGICAL"
+            "BIOLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11881,7 +10451,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IRNB--",
           name: "BIOLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.RMP.NBC.CML",
@@ -11891,7 +10461,7 @@ export const ms2525b = {
             "INSTALLATION",
             "RAW MATERIAL PRODUCTION/STORAGE",
             "NBC",
-            "CHEMICAL"
+            "CHEMICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11899,7 +10469,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IRNC--",
           name: "CHEMICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.RMP.NBC.NUC",
@@ -11909,7 +10479,7 @@ export const ms2525b = {
             "INSTALLATION",
             "RAW MATERIAL PRODUCTION/STORAGE",
             "NBC",
-            "NUCLEAR"
+            "NUCLEAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11917,72 +10487,51 @@ export const ms2525b = {
           status: "*",
           functionid: "IRNN--",
           name: "NUCLEAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.PF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "PROCESSING FACILITY"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "PROCESSING FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IP----",
           name: "PROCESSING FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.PF.DECON",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "PROCESSING FACILITY",
-            "DECONTAMINATION"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "PROCESSING FACILITY", "DECONTAMINATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IPD---",
           name: "DECONTAMINATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.EQTMNF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "EQUIPMENT MANUFACTURE"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "EQUIPMENT MANUFACTURE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IE----",
           name: "EQUIPMENT MANUFACTURE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.SRUF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "SERVICE, RESEARCH, UTILITY FACILITY"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "SERVICE, RESEARCH, UTILITY FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IU----",
           name: "SERVICE, RESEARCH, UTILITY FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.SRUF.TRF",
@@ -11991,7 +10540,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
-            "TECHNOLOGICAL RESEARCH FACILITY"
+            "TECHNOLOGICAL RESEARCH FACILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11999,7 +10548,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IUR---",
           name: "TECHNOLOGICAL RESEARCH FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.SRUF.TCF",
@@ -12008,7 +10557,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
-            "TELECOMMUNICATIONS FACILITY"
+            "TELECOMMUNICATIONS FACILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12016,7 +10565,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IUT---",
           name: "TELECOMMUNICATIONS FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.SRUF.EPF",
@@ -12025,7 +10574,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
-            "ELECTRIC POWER FACILITY"
+            "ELECTRIC POWER FACILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12033,7 +10582,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IUE---",
           name: "ELECTRIC POWER FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.SRUF.EPF.NPT",
@@ -12043,7 +10592,7 @@ export const ms2525b = {
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
             "ELECTRIC POWER FACILITY",
-            "NUCLEAR PLANT"
+            "NUCLEAR PLANT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12051,7 +10600,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IUEN--",
           name: "NUCLEAR PLANT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.SRUF.EPF.DAM",
@@ -12061,7 +10610,7 @@ export const ms2525b = {
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
             "ELECTRIC POWER FACILITY",
-            "DAM"
+            "DAM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12069,7 +10618,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IUED--",
           name: "DAM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.SRUF.EPF.FOSF",
@@ -12079,7 +10628,7 @@ export const ms2525b = {
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
             "ELECTRIC POWER FACILITY",
-            "FOSSIL FUEL"
+            "FOSSIL FUEL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12087,7 +10636,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IUEF--",
           name: "FOSSIL FUEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.SRUF.PWS",
@@ -12096,7 +10645,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
-            "PUBLIC WATER SERVICES"
+            "PUBLIC WATER SERVICES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12104,40 +10653,29 @@ export const ms2525b = {
           status: "*",
           functionid: "IUP---",
           name: "PUBLIC WATER SERVICES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "MILITARY MATERIEL FACILITY"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "MILITARY MATERIEL FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IM----",
           name: "MILITARY MATERIEL FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.NENY",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "MILITARY MATERIEL FACILITY",
-            "NUCLEAR ENERGY"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "MILITARY MATERIEL FACILITY", "NUCLEAR ENERGY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IMF---",
           name: "NUCLEAR ENERGY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.NENY.ATMER",
@@ -12147,7 +10685,7 @@ export const ms2525b = {
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
             "NUCLEAR ENERGY",
-            "ATOMIC ENERGY REACTOR"
+            "ATOMIC ENERGY REACTOR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12155,7 +10693,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMFA--",
           name: "ATOMIC ENERGY REACTOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.NENY.NMP",
@@ -12165,7 +10703,7 @@ export const ms2525b = {
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
             "NUCLEAR ENERGY",
-            "NUCLEAR MATERIAL PRODUCTION"
+            "NUCLEAR MATERIAL PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12173,7 +10711,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMFP--",
           name: "NUCLEAR MATERIAL PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.NENY.NMP.WPNGR",
@@ -12184,7 +10722,7 @@ export const ms2525b = {
             "MILITARY MATERIEL FACILITY",
             "NUCLEAR ENERGY",
             "NUCLEAR MATERIAL PRODUCTION",
-            "WEAPONS GRADE"
+            "WEAPONS GRADE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12192,7 +10730,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMFPW-",
           name: "WEAPONS GRADE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.NENY.NMS",
@@ -12202,7 +10740,7 @@ export const ms2525b = {
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
             "NUCLEAR ENERGY",
-            "NUCLEAR MATERIAL STORAGE"
+            "NUCLEAR MATERIAL STORAGE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12210,7 +10748,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMFS--",
           name: "NUCLEAR MATERIAL STORAGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.APA",
@@ -12219,7 +10757,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "AIRCRAFT PRODUCTION & ASSEMBLY"
+            "AIRCRAFT PRODUCTION & ASSEMBLY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12227,7 +10765,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMA---",
           name: "AIRCRAFT PRODUCTION & ASSEMBLY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.AMEP",
@@ -12236,7 +10774,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "AMMUNITION AND EXPLOSIVES PRODUCTION"
+            "AMMUNITION AND EXPLOSIVES PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12244,7 +10782,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IME---",
           name: "AMMUNITION AND EXPLOSIVES PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.AMTP",
@@ -12253,7 +10791,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "ARMAMENT PRODUCTION"
+            "ARMAMENT PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12261,7 +10799,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMG---",
           name: "ARMAMENT PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.MILVP",
@@ -12270,7 +10808,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "MILITARY VEHICLE PRODUCTION"
+            "MILITARY VEHICLE PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12278,7 +10816,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMV---",
           name: "MILITARY VEHICLE PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.ENGEP",
@@ -12287,7 +10825,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "ENGINEERING EQUIPMENT PRODUCTION"
+            "ENGINEERING EQUIPMENT PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12295,7 +10833,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMN---",
           name: "ENGINEERING EQUIPMENT PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.ENGEP.BRG",
@@ -12305,7 +10843,7 @@ export const ms2525b = {
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
             "ENGINEERING EQUIPMENT PRODUCTION",
-            "BRIDGE"
+            "BRIDGE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12313,7 +10851,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMNB--",
           name: "BRIDGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.CBWP",
@@ -12322,7 +10860,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "CHEMICAL & BIOLOGICAL WARFARE PRODUCTION"
+            "CHEMICAL & BIOLOGICAL WARFARE PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12330,7 +10868,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMC---",
           name: "CHEMICAL & BIOLOGICAL WARFARE PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.SHPCSN",
@@ -12339,7 +10877,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "SHIP CONSTRUCTION"
+            "SHIP CONSTRUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12347,7 +10885,7 @@ export const ms2525b = {
           status: "*",
           functionid: "IMS---",
           name: "SHIP CONSTRUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MMF.MSSP",
@@ -12356,7 +10894,7 @@ export const ms2525b = {
             "GROUND TRACK",
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "MISSILE & SPACE SYSTEM PRODUCTION"
+            "MISSILE & SPACE SYSTEM PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12364,274 +10902,188 @@ export const ms2525b = {
           status: "*",
           functionid: "IMM---",
           name: "MISSILE & SPACE SYSTEM PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.GOVLDR",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "GOVERNMENT LEADERSHIP"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "GOVERNMENT LEADERSHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IG----",
           name: "GOVERNMENT LEADERSHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MILBF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "MILITARY BASE/FACILITY"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "MILITARY BASE/FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IB----",
           name: "MILITARY BASE/FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MILBF.AB",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "MILITARY BASE/FACILITY",
-            "AIRPORT/AIRBASE"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "MILITARY BASE/FACILITY", "AIRPORT/AIRBASE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IBA---",
           name: "AIRPORT/AIRBASE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MILBF.SP",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "MILITARY BASE/FACILITY",
-            "SEAPORT/NAVAL BASE"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "MILITARY BASE/FACILITY", "SEAPORT/NAVAL BASE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IBN---",
           name: "SEAPORT/NAVAL BASE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.TSPF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "TRANSPORT FACILITY"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "TRANSPORT FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IT----",
           name: "TRANSPORT FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MEDF",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "MEDICAL FACILITY"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "MEDICAL FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IX----",
           name: "MEDICAL FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.GRDTRK.INS.MEDF.HSP",
-          names: [
-            ,
-            "GROUND TRACK",
-            "INSTALLATION",
-            "MEDICAL FACILITY",
-            "HOSPITAL"
-          ],
+          names: [, "GROUND TRACK", "INSTALLATION", "MEDICAL FACILITY", "HOSPITAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IXH---",
           name: "HOSPITAL",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     SSUF: {
       name: "SEA SURFACE",
       mainIcon: [
         {
           hierarchy: "WAR.SSUF",
-          names: [
-            ,
-            "SEA SURFACE TRACK"
-          ],
+          names: [, "SEA SURFACE TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "------",
           name: "SEA SURFACE TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "C-----",
           name: "COMBATANT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "LINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CL----",
           name: "LINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE.CRR",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "CARRIER"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "LINE", "CARRIER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLCV--",
           name: "CARRIER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE.BBS",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "BATTLESHIP"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "LINE", "BATTLESHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLBB--",
           name: "BATTLESHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE.CRU",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "CRUISER"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "LINE", "CRUISER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLCC--",
           name: "CRUISER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE.DD",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "DESTROYER"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "LINE", "DESTROYER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLDD--",
           name: "DESTROYER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE.FFR",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "FRIGATE/CORVETTE"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "LINE", "FRIGATE/CORVETTE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLFF--",
           name: "FRIGATE/CORVETTE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE.LL",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "LITTORAL COMBATANT"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "LINE", "LITTORAL COMBATANT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLLL--",
           name: "LITTORAL COMBATANT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE.LL.ASBW",
@@ -12641,7 +11093,7 @@ export const ms2525b = {
             "COMBATANT",
             "LINE",
             "LITTORAL COMBATANT",
-            "ANTISUBMARINE WARFARE MISSION PACKAGE"
+            "ANTISUBMARINE WARFARE MISSION PACKAGE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12649,7 +11101,7 @@ export const ms2525b = {
           status: "*",
           functionid: "CLLLAS",
           name: "ANTISUBMARINE WARFARE MISSION PACKAGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE.LL.MNEW",
@@ -12659,7 +11111,7 @@ export const ms2525b = {
             "COMBATANT",
             "LINE",
             "LITTORAL COMBATANT",
-            "MINE WARFARE MISSION PACKAGE"
+            "MINE WARFARE MISSION PACKAGE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12667,7 +11119,7 @@ export const ms2525b = {
           status: "*",
           functionid: "CLLLMI",
           name: "MINE WARFARE MISSION PACKAGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.LNE.LL.SUW",
@@ -12677,7 +11129,7 @@ export const ms2525b = {
             "COMBATANT",
             "LINE",
             "LITTORAL COMBATANT",
-            "SURFACE WARFARE (SUW) MISSION PACKAGE"
+            "SURFACE WARFARE (SUW) MISSION PACKAGE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12685,57 +11137,40 @@ export const ms2525b = {
           status: "*",
           functionid: "CLLLSU",
           name: "SURFACE WARFARE (SUW) MISSION PACKAGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.AMPWS",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "AMPHIBIOUS WARFARE SHIP"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "AMPHIBIOUS WARFARE SHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CA----",
           name: "AMPHIBIOUS WARFARE SHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.AMPWS.ASTVES",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "AMPHIBIOUS WARFARE SHIP",
-            "ASSAULT VESSEL"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "AMPHIBIOUS WARFARE SHIP", "ASSAULT VESSEL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CALA--",
           name: "ASSAULT VESSEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.AMPWS.LNDSHP",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "AMPHIBIOUS WARFARE SHIP",
-            "LANDING SHIP"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "AMPHIBIOUS WARFARE SHIP", "LANDING SHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CALS--",
           name: "LANDING SHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.AMPWS.LNDSHP.MDM",
@@ -12745,7 +11180,7 @@ export const ms2525b = {
             "COMBATANT",
             "AMPHIBIOUS WARFARE SHIP",
             "LANDING SHIP",
-            "LANDING SHIP MEDIUM"
+            "LANDING SHIP MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12753,7 +11188,7 @@ export const ms2525b = {
           status: "*",
           functionid: "CALSM-",
           name: "LANDING SHIP MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.AMPWS.LNDSHP.TANK",
@@ -12763,7 +11198,7 @@ export const ms2525b = {
             "COMBATANT",
             "AMPHIBIOUS WARFARE SHIP",
             "LANDING SHIP",
-            "LANDING SHIP TANK"
+            "LANDING SHIP TANK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12771,158 +11206,106 @@ export const ms2525b = {
           status: "*",
           functionid: "CALST-",
           name: "LANDING SHIP TANK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.AMPWS.LNDCRT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "AMPHIBIOUS WARFARE SHIP",
-            "LANDING CRAFT"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "AMPHIBIOUS WARFARE SHIP", "LANDING CRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CALC--",
           name: "LANDING CRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.MNEWV",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CM----",
           name: "MINE WARFARE VESSEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.MNEWV.MNELYR",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL",
-            "MINELAYER"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL", "MINELAYER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CMML--",
           name: "MINELAYER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.MNEWV.MNESWE",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL",
-            "MINESWEEPER"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL", "MINESWEEPER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CMMS--",
           name: "MINESWEEPER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.MNEWV.MNEHNT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL",
-            "MINEHUNTER"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL", "MINEHUNTER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CMMH--",
           name: "MINEHUNTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.MNEWV.MCMSUP",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL",
-            "MCM SUPPORT"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL", "MCM SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CMMA--",
           name: "MCM SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.PAT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "PATROL"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "PATROL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CP----",
           name: "PATROL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.PAT.ASBW",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "PATROL",
-            "ANTISUBMARINE WARFARE"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "PATROL", "ANTISUBMARINE WARFARE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CPSB--",
           name: "ANTISUBMARINE WARFARE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.PAT.ASUW",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "PATROL",
-            "ANTISURFACE WARFARE"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "PATROL", "ANTISURFACE WARFARE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CPSU--",
           name: "ANTISURFACE WARFARE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.PAT.ASUW.ASMSL",
@@ -12932,7 +11315,7 @@ export const ms2525b = {
             "COMBATANT",
             "PATROL",
             "ANTISURFACE WARFARE",
-            "ANTI-SHIP MISSILE PATROL CRAFT"
+            "ANTI-SHIP MISSILE PATROL CRAFT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12940,7 +11323,7 @@ export const ms2525b = {
           status: "*",
           functionid: "CPSUM-",
           name: "ANTI-SHIP MISSILE PATROL CRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.PAT.ASUW.TPD",
@@ -12950,7 +11333,7 @@ export const ms2525b = {
             "COMBATANT",
             "PATROL",
             "ANTISURFACE WARFARE",
-            "TORPEDO PATROL CRAFT"
+            "TORPEDO PATROL CRAFT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12958,7 +11341,7 @@ export const ms2525b = {
           status: "*",
           functionid: "CPSUT-",
           name: "TORPEDO PATROL CRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.PAT.ASUW.GUN",
@@ -12968,7 +11351,7 @@ export const ms2525b = {
             "COMBATANT",
             "PATROL",
             "ANTISURFACE WARFARE",
-            "GUN PATROL CRAFT"
+            "GUN PATROL CRAFT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12976,189 +11359,128 @@ export const ms2525b = {
           status: "*",
           functionid: "CPSUG-",
           name: "GUN PATROL CRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.HOV",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "HOVERCRAFT"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "HOVERCRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CH----",
           name: "HOVERCRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.STN",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "STATION"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "STATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "S-----",
           name: "STATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.STN.PKT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "STATION",
-            "PICKET"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "STATION", "PICKET"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "SP----",
           name: "PICKET",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.STN.ASWSHP",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "STATION",
-            "ASW SHIP"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "STATION", "ASW SHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "SA----",
           name: "ASW SHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.NAVGRP",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "G-----",
           name: "NAVY GROUP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.NAVGRP.NAVTF",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP",
-            "NAVY TASK FORCE"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP", "NAVY TASK FORCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "GT----",
           name: "NAVY TASK FORCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.NAVGRP.NAVTG",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP",
-            "NAVY TASK GROUP"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP", "NAVY TASK GROUP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "GG----",
           name: "NAVY TASK GROUP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.NAVGRP.NAVTU",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP",
-            "NAVY TASK UNIT"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP", "NAVY TASK UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "GU----",
           name: "NAVY TASK UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.NAVGRP.CNY",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP",
-            "CONVOY"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP", "CONVOY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "GC----",
           name: "CONVOY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.SUFDCY",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "SURFACE DECOY"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "SURFACE DECOY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CD----",
           name: "SURFACE DECOY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.USV",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "UNMANNED SURFACE VEHICLE"
-          ],
+          names: [, "SEA SURFACE TRACK", "COMBATANT", "UNMANNED SURFACE VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CU----",
           name: "UNMANNED SURFACE VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.USV.MNECM",
@@ -13167,7 +11489,7 @@ export const ms2525b = {
             "SEA SURFACE TRACK",
             "COMBATANT",
             "UNMANNED SURFACE VEHICLE",
-            "MINE COUNTERMEASURES SURFACE DRONE"
+            "MINE COUNTERMEASURES SURFACE DRONE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13175,7 +11497,7 @@ export const ms2525b = {
           status: "*",
           functionid: "CUM---",
           name: "MINE COUNTERMEASURES SURFACE DRONE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.USV.ASBW",
@@ -13184,7 +11506,7 @@ export const ms2525b = {
             "SEA SURFACE TRACK",
             "COMBATANT",
             "UNMANNED SURFACE VEHICLE",
-            "ANTISUBMARINE WARFARE SURFACE DRONE"
+            "ANTISUBMARINE WARFARE SURFACE DRONE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13192,7 +11514,7 @@ export const ms2525b = {
           status: "*",
           functionid: "CUS---",
           name: "ANTISUBMARINE WARFARE SURFACE DRONE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.CBTT.USV.ASUW",
@@ -13201,7 +11523,7 @@ export const ms2525b = {
             "SEA SURFACE TRACK",
             "COMBATANT",
             "UNMANNED SURFACE VEHICLE",
-            "ANTISURFACE WARFARE SURFACE DRONE"
+            "ANTISURFACE WARFARE SURFACE DRONE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13209,284 +11531,194 @@ export const ms2525b = {
           status: "*",
           functionid: "CUN---",
           name: "ANTISURFACE WARFARE SURFACE DRONE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NCBTT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT"
-          ],
+          names: [, "SEA SURFACE TRACK", "NONCOMBATANT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "N-----",
           name: "NONCOMBATANT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NCBTT.UWRPM",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "UNDERWAY REPLENISHMENT"
-          ],
+          names: [, "SEA SURFACE TRACK", "NONCOMBATANT", "UNDERWAY REPLENISHMENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NR----",
           name: "UNDERWAY REPLENISHMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NCBTT.FLTSUP",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "FLEET SUPPORT"
-          ],
+          names: [, "SEA SURFACE TRACK", "NONCOMBATANT", "FLEET SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NF----",
           name: "FLEET SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NCBTT.INT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "INTELLIGENCE"
-          ],
+          names: [, "SEA SURFACE TRACK", "NONCOMBATANT", "INTELLIGENCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NI----",
           name: "INTELLIGENCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NCBTT.SSH",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "SERVICE & SUPPORT HARBOR"
-          ],
+          names: [, "SEA SURFACE TRACK", "NONCOMBATANT", "SERVICE & SUPPORT HARBOR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NS----",
           name: "SERVICE & SUPPORT HARBOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NCBTT.HSPSHP",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "HOSPITAL SHIP"
-          ],
+          names: [, "SEA SURFACE TRACK", "NONCOMBATANT", "HOSPITAL SHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NM----",
           name: "HOSPITAL SHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NCBTT.HOV",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "HOVERCRAFT"
-          ],
+          names: [, "SEA SURFACE TRACK", "NONCOMBATANT", "HOVERCRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NH----",
           name: "HOVERCRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NCBTT.STN",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "STATION"
-          ],
+          names: [, "SEA SURFACE TRACK", "NONCOMBATANT", "STATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NN----",
           name: "STATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NCBTT.STN.RSC",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "STATION",
-            "RESCUE"
-          ],
+          names: [, "SEA SURFACE TRACK", "NONCOMBATANT", "STATION", "RESCUE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NNR---",
           name: "RESCUE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "X-----",
           name: "NON-MILITARY",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.MCT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "MERCHANT"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "MERCHANT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XM----",
           name: "MERCHANT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.MCT.CGO",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "MERCHANT",
-            "CARGO"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "MERCHANT", "CARGO"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMC---",
           name: "CARGO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.MCT.RORO",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "MERCHANT",
-            "ROLL ON/ROLL OFF"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "MERCHANT", "ROLL ON/ROLL OFF"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMR---",
           name: "ROLL ON/ROLL OFF",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.MCT.OLR",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "MERCHANT",
-            "OILER/TANKER"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "MERCHANT", "OILER/TANKER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMO---",
           name: "OILER/TANKER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.MCT.TUG",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "MERCHANT",
-            "TUG"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "MERCHANT", "TUG"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMTU--",
           name: "TUG",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.MCT.FRY",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "MERCHANT",
-            "FERRY"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "MERCHANT", "FERRY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMF---",
           name: "FERRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.MCT.PSG",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "MERCHANT",
-            "PASSENGER"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "MERCHANT", "PASSENGER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMP---",
           name: "PASSENGER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.MCT.HAZMAT",
@@ -13495,7 +11727,7 @@ export const ms2525b = {
             "SEA SURFACE TRACK",
             "NON-MILITARY",
             "MERCHANT",
-            "HAZARDOUS MATERIALS (HAZMAT)"
+            "HAZARDOUS MATERIALS (HAZMAT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13503,220 +11735,155 @@ export const ms2525b = {
           status: "*",
           functionid: "XMH---",
           name: "HAZARDOUS MATERIALS (HAZMAT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.MCT.TOWVES",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "MERCHANT",
-            "TOWING VESSEL"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "MERCHANT", "TOWING VESSEL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMTO--",
           name: "TOWING VESSEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.FSG",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "FISHING"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "FISHING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XF----",
           name: "FISHING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.FSG.DRFT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "FISHING",
-            "DRIFTER"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "FISHING", "DRIFTER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XFDF--",
           name: "DRIFTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.FSG.DRG",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "FISHING",
-            "DREDGE"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "FISHING", "DREDGE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XFDR--",
           name: "DREDGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.FSG.TRW",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "FISHING",
-            "TRAWLER"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "FISHING", "TRAWLER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XFTR--",
           name: "TRAWLER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.LESCRT",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "LEISURE CRAFT"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "LEISURE CRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XR----",
           name: "LEISURE CRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.LAWENV",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "LAW ENFORCEMENT VESSEL"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "LAW ENFORCEMENT VESSEL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XL----",
           name: "LAW ENFORCEMENT VESSEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.NMIL.HOV",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "NON-MILITARY",
-            "HOVERCRAFT"
-          ],
+          names: [, "SEA SURFACE TRACK", "NON-MILITARY", "HOVERCRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XH----",
           name: "HOVERCRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SSUF.OWN",
-          names: [
-            ,
-            "SEA SURFACE TRACK",
-            "OWN TRACK"
-          ],
+          names: [, "SEA SURFACE TRACK", "OWN TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "O-----",
           name: "OWN TRACK",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     SBSUF: {
       name: "SUBSURFACE",
       mainIcon: [
         {
           hierarchy: "WAR.SBSUF",
-          names: [
-            ,
-            "SUBSURFACE TRACK"
-          ],
+          names: [, "SUBSURFACE TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "------",
           name: "SUBSURFACE TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE"
-          ],
+          names: [, "SUBSURFACE TRACK", "SUBMARINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "S-----",
           name: "SUBMARINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.SURF",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "SURFACED SUBMARINE"
-          ],
+          names: [, "SUBSURFACE TRACK", "SUBMARINE", "SURFACED SUBMARINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SF----",
           name: "SURFACED SUBMARINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.NPRN",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "NUCLEAR PROPULSION"
-          ],
+          names: [, "SUBSURFACE TRACK", "SUBMARINE", "NUCLEAR PROPULSION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SN----",
           name: "NUCLEAR PROPULSION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.NPRN.SURF",
@@ -13725,7 +11892,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "NUCLEAR PROPULSION",
-            "SURFACED NUCLEAR PROPULSION SUBMARINE"
+            "SURFACED NUCLEAR PROPULSION SUBMARINE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13733,7 +11900,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SNF---",
           name: "SURFACED NUCLEAR PROPULSION SUBMARINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.NPRN.ATK",
@@ -13742,7 +11909,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "NUCLEAR PROPULSION",
-            "ATTACK SUBMARINE (SSN)"
+            "ATTACK SUBMARINE (SSN)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13750,7 +11917,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SNA---",
           name: "ATTACK SUBMARINE (SSN)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.NPRN.MSL",
@@ -13759,7 +11926,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "NUCLEAR PROPULSION",
-            "MISSILE SUBMARINE (TYPE UNKNOWN)"
+            "MISSILE SUBMARINE (TYPE UNKNOWN)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13767,7 +11934,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SNM---",
           name: "MISSILE SUBMARINE (TYPE UNKNOWN)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.NPRN.GDD",
@@ -13776,7 +11943,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "NUCLEAR PROPULSION",
-            "GUIDED MISSILE SUBMARINE (SSGN)"
+            "GUIDED MISSILE SUBMARINE (SSGN)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13784,7 +11951,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SNG---",
           name: "GUIDED MISSILE SUBMARINE (SSGN)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.NPRN.BLST",
@@ -13793,7 +11960,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "NUCLEAR PROPULSION",
-            "BALLISTIC MISSILE SUBMARINE (SSBN)"
+            "BALLISTIC MISSILE SUBMARINE (SSBN)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13801,23 +11968,18 @@ export const ms2525b = {
           status: "*",
           functionid: "SNB---",
           name: "BALLISTIC MISSILE SUBMARINE (SSBN)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.CNVPRN",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "CONVENTIONAL PROPULSION"
-          ],
+          names: [, "SUBSURFACE TRACK", "SUBMARINE", "CONVENTIONAL PROPULSION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SC----",
           name: "CONVENTIONAL PROPULSION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.CNVPRN.SURF",
@@ -13826,7 +11988,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "CONVENTIONAL PROPULSION",
-            "SURFACED CONVENTIONAL PROPULSION SUBMARINE"
+            "SURFACED CONVENTIONAL PROPULSION SUBMARINE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13834,7 +11996,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SCF---",
           name: "SURFACED CONVENTIONAL PROPULSION SUBMARINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.CNVPRN.ATK",
@@ -13843,7 +12005,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "CONVENTIONAL PROPULSION",
-            "ATTACK SUBMARINE (SS)"
+            "ATTACK SUBMARINE (SS)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13851,7 +12013,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SCA---",
           name: "ATTACK SUBMARINE (SS)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.CNVPRN.MSL",
@@ -13860,7 +12022,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "CONVENTIONAL PROPULSION",
-            "MISSILE SUBMARINE (TYPE UNKNOWN)"
+            "MISSILE SUBMARINE (TYPE UNKNOWN)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13868,7 +12030,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SCM---",
           name: "MISSILE SUBMARINE (TYPE UNKNOWN)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.CNVPRN.GDD",
@@ -13877,7 +12039,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "CONVENTIONAL PROPULSION",
-            "GUIDED MISSILE SUBMARINE (SSG)"
+            "GUIDED MISSILE SUBMARINE (SSG)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13885,7 +12047,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SCG---",
           name: "GUIDED MISSILE SUBMARINE (SSG)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.CNVPRN.BLST",
@@ -13894,7 +12056,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "CONVENTIONAL PROPULSION",
-            "BALLISTIC MISSILE SUBMARINE (SSB)"
+            "BALLISTIC MISSILE SUBMARINE (SSB)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13902,23 +12064,18 @@ export const ms2525b = {
           status: "*",
           functionid: "SCB---",
           name: "BALLISTIC MISSILE SUBMARINE (SSB)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.OTH",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "OTHER SUBMERSIBLE"
-          ],
+          names: [, "SUBSURFACE TRACK", "SUBMARINE", "OTHER SUBMERSIBLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SO----",
           name: "OTHER SUBMERSIBLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.OTH.SURF",
@@ -13927,7 +12084,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "OTHER SUBMERSIBLE",
-            "SURFACED OTHER SUBMERSIBLE"
+            "SURFACED OTHER SUBMERSIBLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13935,56 +12092,40 @@ export const ms2525b = {
           status: "*",
           functionid: "SOF---",
           name: "SURFACED OTHER SUBMERSIBLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.STN",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "STATION"
-          ],
+          names: [, "SUBSURFACE TRACK", "SUBMARINE", "STATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SS----",
           name: "STATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.STN.ASWSUB",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "STATION",
-            "ASW SUBMARINE"
-          ],
+          names: [, "SUBSURFACE TRACK", "SUBMARINE", "STATION", "ASW SUBMARINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SSA---",
           name: "ASW SUBMARINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.UUV",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "UNMANNED UNDERWATER VEHICLE (UUV)"
-          ],
+          names: [, "SUBSURFACE TRACK", "SUBMARINE", "UNMANNED UNDERWATER VEHICLE (UUV)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SU----",
           name: "UNMANNED UNDERWATER VEHICLE (UUV)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.UUV.MNEW",
@@ -13993,7 +12134,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "UNMANNED UNDERWATER VEHICLE (UUV)",
-            "MINE WARFARE SUBSURFACE DRONE"
+            "MINE WARFARE SUBSURFACE DRONE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14001,7 +12142,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SUM---",
           name: "MINE WARFARE SUBSURFACE DRONE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.UUV.ASBW",
@@ -14010,7 +12151,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "UNMANNED UNDERWATER VEHICLE (UUV)",
-            "ANTISUBMARINE WARFARE SUBSURFACE DRONE"
+            "ANTISUBMARINE WARFARE SUBSURFACE DRONE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14018,7 +12159,7 @@ export const ms2525b = {
           status: "*",
           functionid: "SUS---",
           name: "ANTISUBMARINE WARFARE SUBSURFACE DRONE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.SUB.UUV.ASUW",
@@ -14027,7 +12168,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "SUBMARINE",
             "UNMANNED UNDERWATER VEHICLE (UUV)",
-            "ANTISURFACE WARFARE SUBSURFACE DRONE"
+            "ANTISURFACE WARFARE SUBSURFACE DRONE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14035,88 +12176,62 @@ export const ms2525b = {
           status: "*",
           functionid: "SUN---",
           name: "ANTISURFACE WARFARE SUBSURFACE DRONE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON"
-          ],
+          names: [, "SUBSURFACE TRACK", "UNDERWATER WEAPON"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "W-----",
           name: "UNDERWATER WEAPON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.TPD",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "TORPEDO"
-          ],
+          names: [, "SUBSURFACE TRACK", "UNDERWATER WEAPON", "TORPEDO"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WT----",
           name: "TORPEDO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE"
-          ],
+          names: [, "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WM----",
           name: "SEA MINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE.DLT",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE",
-            "SEA MINE DEALT"
-          ],
+          names: [, "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE", "SEA MINE DEALT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WMD---",
           name: "SEA MINE DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMG",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE",
-            "SEA MINE (GROUND)"
-          ],
+          names: [, "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE", "SEA MINE (GROUND)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WMG---",
           name: "SEA MINE (GROUND)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMG.DLT",
@@ -14126,7 +12241,7 @@ export const ms2525b = {
             "UNDERWATER WEAPON",
             "SEA MINE",
             "SEA MINE (GROUND)",
-            "SEA MINE (GROUND) DEALT"
+            "SEA MINE (GROUND) DEALT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14134,24 +12249,18 @@ export const ms2525b = {
           status: "*",
           functionid: "WMGD--",
           name: "SEA MINE (GROUND) DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMM",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE",
-            "SEA MINE (MOORED)"
-          ],
+          names: [, "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE", "SEA MINE (MOORED)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WMM---",
           name: "SEA MINE (MOORED)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMM.DLT",
@@ -14161,7 +12270,7 @@ export const ms2525b = {
             "UNDERWATER WEAPON",
             "SEA MINE",
             "SEA MINE (MOORED)",
-            "SEA MINE (MOORED) DEALT"
+            "SEA MINE (MOORED) DEALT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14169,24 +12278,18 @@ export const ms2525b = {
           status: "*",
           functionid: "WMMD--",
           name: "SEA MINE (MOORED) DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMF",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE",
-            "SEA MINE (FLOATING)"
-          ],
+          names: [, "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE", "SEA MINE (FLOATING)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WMF---",
           name: "SEA MINE (FLOATING)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMF.DLT",
@@ -14196,7 +12299,7 @@ export const ms2525b = {
             "UNDERWATER WEAPON",
             "SEA MINE",
             "SEA MINE (FLOATING)",
-            "SEA MINE (FLOATING) DEALT"
+            "SEA MINE (FLOATING) DEALT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14204,7 +12307,7 @@ export const ms2525b = {
           status: "*",
           functionid: "WMFD--",
           name: "SEA MINE (FLOATING) DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMOP",
@@ -14213,7 +12316,7 @@ export const ms2525b = {
             "SUBSURFACE TRACK",
             "UNDERWATER WEAPON",
             "SEA MINE",
-            "SEA MINE (OTHER POSITION)"
+            "SEA MINE (OTHER POSITION)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14221,7 +12324,7 @@ export const ms2525b = {
           status: "*",
           functionid: "WMO---",
           name: "SEA MINE (OTHER POSITION)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2WPN.SMNE.SMOP.DLT",
@@ -14231,7 +12334,7 @@ export const ms2525b = {
             "UNDERWATER WEAPON",
             "SEA MINE",
             "SEA MINE (OTHER POSITION)",
-            "SEA MINE (OTHER POSITION) DEALT"
+            "SEA MINE (OTHER POSITION) DEALT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14239,103 +12342,78 @@ export const ms2525b = {
           status: "*",
           functionid: "WMOD--",
           name: "SEA MINE (OTHER POSITION) DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2DCY",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER DECOY"
-          ],
+          names: [, "SUBSURFACE TRACK", "UNDERWATER DECOY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WD----",
           name: "UNDERWATER DECOY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.UH2DCY.SMDCY",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER DECOY",
-            "SEA MINE DECOY"
-          ],
+          names: [, "SUBSURFACE TRACK", "UNDERWATER DECOY", "SEA MINE DECOY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WDM---",
           name: "SEA MINE DECOY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SBSUF.NSUB",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "NON-SUBMARINE"
-          ],
+          names: [, "SUBSURFACE TRACK", "NON-SUBMARINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "N-----",
           name: "NON-SUBMARINE",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "WAR.SBSUF.NSUB.DVR",
-          names: [
-            ,
-            "SUBSURFACE TRACK",
-            "NON-SUBMARINE",
-            "DIVER"
-          ],
+          names: [, "SUBSURFACE TRACK", "NON-SUBMARINE", "DIVER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "ND----",
           name: "DIVER",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     SOFUNT: {
       name: "SPECIAL OPERATIONS FORCES (SOF)",
       mainIcon: [
         {
           hierarchy: "WAR.SOFUNT",
-          names: [
-            ,
-            "SPECIAL OPERATIONS FORCES (SOF) UNIT"
-          ],
+          names: [, "SPECIAL OPERATIONS FORCES (SOF) UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "------",
           name: "SPECIAL OPERATIONS FORCES (SOF) UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN",
-          names: [
-            ,
-            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
-            "SOF UNIT AVIATION"
-          ],
+          names: [, "SPECIAL OPERATIONS FORCES (SOF) UNIT", "SOF UNIT AVIATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "A-----",
           name: "SOF UNIT AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.FIXD",
@@ -14343,7 +12421,7 @@ export const ms2525b = {
             ,
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT AVIATION",
-            "SOF UNIT FIXED WING"
+            "SOF UNIT FIXED WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14351,7 +12429,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AF----",
           name: "SOF UNIT FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.FIXD.ATK",
@@ -14360,7 +12438,7 @@ export const ms2525b = {
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
-            "SOF UNIT ATTACK"
+            "SOF UNIT ATTACK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14368,7 +12446,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AFA---",
           name: "SOF UNIT ATTACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.FIXD.RFE",
@@ -14377,7 +12455,7 @@ export const ms2525b = {
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
-            "SOF UNIT REFUEL"
+            "SOF UNIT REFUEL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14385,7 +12463,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AFK---",
           name: "SOF UNIT REFUEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.FIXD.UTY",
@@ -14394,7 +12472,7 @@ export const ms2525b = {
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
-            "SOF UNIT UTILITY"
+            "SOF UNIT UTILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14402,7 +12480,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AFU---",
           name: "SOF UNIT UTILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.FIXD.UTY.LIT",
@@ -14412,7 +12490,7 @@ export const ms2525b = {
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (LIGHT)"
+            "SOF UNIT UTILITY (LIGHT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14420,7 +12498,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AFUL--",
           name: "SOF UNIT UTILITY (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.FIXD.UTY.MDM",
@@ -14430,7 +12508,7 @@ export const ms2525b = {
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (MEDIUM)"
+            "SOF UNIT UTILITY (MEDIUM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14438,7 +12516,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AFUM--",
           name: "SOF UNIT UTILITY (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.FIXD.UTY.HVY",
@@ -14448,7 +12526,7 @@ export const ms2525b = {
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (HEAVY)"
+            "SOF UNIT UTILITY (HEAVY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14456,23 +12534,18 @@ export const ms2525b = {
           status: "*",
           functionid: "AFUH--",
           name: "SOF UNIT UTILITY (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.VSTOL",
-          names: [
-            ,
-            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
-            "SOF UNIT AVIATION",
-            "SOF UNIT V/STOL"
-          ],
+          names: [, "SPECIAL OPERATIONS FORCES (SOF) UNIT", "SOF UNIT AVIATION", "SOF UNIT V/STOL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "AV----",
           name: "SOF UNIT V/STOL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.ROT",
@@ -14480,7 +12553,7 @@ export const ms2525b = {
             ,
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT AVIATION",
-            "SOF UNIT ROTARY WING"
+            "SOF UNIT ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14488,7 +12561,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AH----",
           name: "SOF UNIT ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.ROT.CSAR",
@@ -14497,7 +12570,7 @@ export const ms2525b = {
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
-            "SOF UNIT COMBAT SEARCH AND RESCUE"
+            "SOF UNIT COMBAT SEARCH AND RESCUE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14505,7 +12578,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AHH---",
           name: "SOF UNIT COMBAT SEARCH AND RESCUE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.ROT.ATK",
@@ -14514,7 +12587,7 @@ export const ms2525b = {
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
-            "SOF UNIT ATTACK"
+            "SOF UNIT ATTACK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14522,7 +12595,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AHA---",
           name: "SOF UNIT ATTACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.ROT.UTY",
@@ -14531,7 +12604,7 @@ export const ms2525b = {
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
-            "SOF UNIT UTILITY"
+            "SOF UNIT UTILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14539,7 +12612,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AHU---",
           name: "SOF UNIT UTILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.ROT.UTY.LIT",
@@ -14549,7 +12622,7 @@ export const ms2525b = {
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (LIGHT)"
+            "SOF UNIT UTILITY (LIGHT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14557,7 +12630,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AHUL--",
           name: "SOF UNIT UTILITY (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.ROT.UTY.MDM",
@@ -14567,7 +12640,7 @@ export const ms2525b = {
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (MEDIUM)"
+            "SOF UNIT UTILITY (MEDIUM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14575,7 +12648,7 @@ export const ms2525b = {
           status: "*",
           functionid: "AHUM--",
           name: "SOF UNIT UTILITY (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.AVN.ROT.UTY.HVY",
@@ -14585,7 +12658,7 @@ export const ms2525b = {
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (HEAVY)"
+            "SOF UNIT UTILITY (HEAVY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14593,22 +12666,18 @@ export const ms2525b = {
           status: "*",
           functionid: "AHUH--",
           name: "SOF UNIT UTILITY (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.NAV",
-          names: [
-            ,
-            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
-            "SOF UNIT SOF UNIT NAVAL"
-          ],
+          names: [, "SPECIAL OPERATIONS FORCES (SOF) UNIT", "SOF UNIT SOF UNIT NAVAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "N-----",
           name: "SOF UNIT SOF UNIT NAVAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.NAV.SEAL",
@@ -14616,7 +12685,7 @@ export const ms2525b = {
             ,
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT SOF UNIT NAVAL",
-            "SOF UNIT SEAL"
+            "SOF UNIT SEAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14624,7 +12693,7 @@ export const ms2525b = {
           status: "*",
           functionid: "NS----",
           name: "SOF UNIT SEAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.NAV.UH2DML",
@@ -14632,7 +12701,7 @@ export const ms2525b = {
             ,
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT SOF UNIT NAVAL",
-            "SOF UNIT UNDERWATER DEMOLITION TEAM"
+            "SOF UNIT UNDERWATER DEMOLITION TEAM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14640,7 +12709,7 @@ export const ms2525b = {
           status: "*",
           functionid: "NU----",
           name: "SOF UNIT UNDERWATER DEMOLITION TEAM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.NAV.SBT",
@@ -14648,7 +12717,7 @@ export const ms2525b = {
             ,
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT SOF UNIT NAVAL",
-            "SOF UNIT SPECIAL BOAT"
+            "SOF UNIT SPECIAL BOAT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14656,7 +12725,7 @@ export const ms2525b = {
           status: "*",
           functionid: "NB----",
           name: "SOF UNIT SPECIAL BOAT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.NAV.SSSNR",
@@ -14664,7 +12733,7 @@ export const ms2525b = {
             ,
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT SOF UNIT NAVAL",
-            "SOF UNIT SPECIAL SSNR"
+            "SOF UNIT SPECIAL SSNR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14672,22 +12741,18 @@ export const ms2525b = {
           status: "*",
           functionid: "NN----",
           name: "SOF UNIT SPECIAL SSNR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.GRD",
-          names: [
-            ,
-            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
-            "SOF UNIT GROUND"
-          ],
+          names: [, "SPECIAL OPERATIONS FORCES (SOF) UNIT", "SOF UNIT GROUND"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "G-----",
           name: "SOF UNIT GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.GRD.SOF",
@@ -14695,7 +12760,7 @@ export const ms2525b = {
             ,
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT GROUND",
-            "SOF UNIT SPECIAL FORCES"
+            "SOF UNIT SPECIAL FORCES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14703,23 +12768,18 @@ export const ms2525b = {
           status: "*",
           functionid: "GS----",
           name: "SOF UNIT SPECIAL FORCES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.GRD.RGR",
-          names: [
-            ,
-            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
-            "SOF UNIT GROUND",
-            "SOF UNIT RANGER"
-          ],
+          names: [, "SPECIAL OPERATIONS FORCES (SOF) UNIT", "SOF UNIT GROUND", "SOF UNIT RANGER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "GR----",
           name: "SOF UNIT RANGER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.GRD.PSYOP",
@@ -14727,7 +12787,7 @@ export const ms2525b = {
             ,
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT GROUND",
-            "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOP)"
+            "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOP)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14735,7 +12795,7 @@ export const ms2525b = {
           status: "*",
           functionid: "GP----",
           name: "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOP)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.GRD.PSYOP.FIXAVN",
@@ -14744,7 +12804,7 @@ export const ms2525b = {
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT GROUND",
             "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOP)",
-            "SOF UNIT FIXED WING AVIATION"
+            "SOF UNIT FIXED WING AVIATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14752,7 +12812,7 @@ export const ms2525b = {
           status: "*",
           functionid: "GPA---",
           name: "SOF UNIT FIXED WING AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.GRD.CVLAFF",
@@ -14760,7 +12820,7 @@ export const ms2525b = {
             ,
             "SPECIAL OPERATIONS FORCES (SOF) UNIT",
             "SOF UNIT GROUND",
-            "SOF UNIT CIVIL AFFAIRS"
+            "SOF UNIT CIVIL AFFAIRS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -14768,25 +12828,21 @@ export const ms2525b = {
           status: "*",
           functionid: "GC----",
           name: "SOF UNIT CIVIL AFFAIRS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "WAR.SOFUNT.SUP",
-          names: [
-            ,
-            "SPECIAL OPERATIONS FORCES (SOF) UNIT",
-            "SOF UNIT SUPPORT"
-          ],
+          names: [, "SPECIAL OPERATIONS FORCES (SOF) UNIT", "SOF UNIT SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "B-----",
           name: "SOF UNIT SUPPORT",
-          remarks: ""
-        }
-      ]
-    }
+          remarks: "",
+        },
+      ],
+    },
   },
   TACGRP: {
     name: "TACTICAL GRAPHICS",
@@ -14794,548 +12850,410 @@ export const ms2525b = {
       {
         geometry: "",
         hierarchy: "TACGRP",
-        names: [
-          "TACTICAL GRAPHICS"
-        ],
+        names: ["TACTICAL GRAPHICS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "-",
         status: "-",
         functionid: "-------",
         name: "TACTICAL GRAPHICS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "------",
         name: "TASKS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.BLK",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "BLOCK"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "BLOCK"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "B-----",
         name: "BLOCK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.BRH",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "BREACH"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "BREACH"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "H-----",
         name: "BREACH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.BYS",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "BYPASS"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "BYPASS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "Y-----",
         name: "BYPASS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.CNZ",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "CANALIZE"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "CANALIZE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "C-----",
         name: "CANALIZE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.CLR",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "CLEAR"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "CLEAR"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "X-----",
         name: "CLEAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.CNT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "CONTAIN"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "CONTAIN"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "J-----",
         name: "CONTAIN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.CATK",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "COUNTERATTACK (CATK)"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "COUNTERATTACK (CATK)"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "K-----",
         name: "COUNTERATTACK (CATK)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.CATK.CATKF",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "COUNTERATTACK (CATK)",
-          "COUNTERATTACK BY FIRE"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "COUNTERATTACK (CATK)", "COUNTERATTACK BY FIRE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "KF----",
         name: "COUNTERATTACK BY FIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.DLY",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "DELAY"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "DELAY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "L-----",
         name: "DELAY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.TSK.DSTY",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "DESTROY"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "DESTROY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "D-----",
         name: "DESTROY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.DRT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "DISRUPT"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "DISRUPT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "T-----",
         name: "DISRUPT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.FIX",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "FIX"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "FIX"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "F-----",
         name: "FIX",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.FLWASS",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "FOLLOW AND ASSUME"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "FOLLOW AND ASSUME"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "A-----",
         name: "FOLLOW AND ASSUME",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.FLWASS.FLWSUP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "FOLLOW AND ASSUME",
-          "FOLLOW AND SUPPORT"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "FOLLOW AND ASSUME", "FOLLOW AND SUPPORT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "AS----",
         name: "FOLLOW AND SUPPORT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.TSK.ITDT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "INTERDICT"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "INTERDICT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "I-----",
         name: "INTERDICT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.ISL",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "ISOLATE"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "ISOLATE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "E-----",
         name: "ISOLATE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.TSK.NEUT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "NEUTRALIZE"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "NEUTRALIZE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "N-----",
         name: "NEUTRALIZE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.OCC",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "OCCUPY"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "OCCUPY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "O-----",
         name: "OCCUPY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.PNE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "PENETRATE"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "PENETRATE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "P-----",
         name: "PENETRATE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.RIP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "RELIEF IN PLACE (RIP)"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "RELIEF IN PLACE (RIP)"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "R-----",
         name: "RELIEF IN PLACE (RIP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.RTN",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "RETAIN"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "RETAIN"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "Q-----",
         name: "RETAIN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.RTM",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "RETIREMENT"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "RETIREMENT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "M-----",
         name: "RETIREMENT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.SCE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "SECURE"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "SECURE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "S-----",
         name: "SECURE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.SEC",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "SECURITY"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "SECURITY"],
         codingscheme: "G",
         affiliation: "-",
         battledimension: "T",
         status: "*",
         functionid: "U-----",
         name: "SECURITY",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.SEC.SCN",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "SECURITY",
-          "SCREEN"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "SECURITY", "SCREEN"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "US----",
         name: "SCREEN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.SEC.GUD",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "SECURITY",
-          "GUARD"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "SECURITY", "GUARD"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "UG----",
         name: "GUARD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.SEC.COV",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "SECURITY",
-          "COVER"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "SECURITY", "COVER"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "UC----",
         name: "COVER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.SZE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "SEIZE"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "SEIZE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "Z-----",
         name: "SEIZE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.WDR",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "WITHDRAW"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "WITHDRAW"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "W-----",
         name: "WITHDRAW",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.TSK.WDR.WDRUP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "WITHDRAW",
-          "WITHDRAW UNDER PRESSURE"
-        ],
+        names: ["TACTICAL GRAPHICS", "TASKS", "WITHDRAW", "WITHDRAW UNDER PRESSURE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "WP----",
         name: "WITHDRAW UNDER PRESSURE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.C2GM",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMMAND AND CONTROL AND GENERAL MANEUVER"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMMAND AND CONTROL AND GENERAL MANEUVER"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "------",
         name: "COMMAND AND CONTROL AND GENERAL MANEUVER",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.C2GM.GNL",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMMAND AND CONTROL AND GENERAL MANEUVER",
-          "GENERAL"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMMAND AND CONTROL AND GENERAL MANEUVER", "GENERAL"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "G-----",
         name: "GENERAL",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -15344,7 +13262,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
-          "POINTS"
+          "POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15352,7 +13270,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GP----",
         name: "POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -15362,7 +13280,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "POINTS",
-          "UNDER SEA WARFARE"
+          "UNDER SEA WARFARE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15370,7 +13288,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPU---",
         name: "UNDER SEA WARFARE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -15381,7 +13299,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "UNDER SEA WARFARE",
-          "UNDERWATER"
+          "UNDERWATER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15389,7 +13307,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUU--",
         name: "UNDERWATER",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -15401,7 +13319,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "UNDERWATER",
-          "DATUM"
+          "DATUM",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15409,7 +13327,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUUD-",
         name: "DATUM",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15421,7 +13339,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "UNDERWATER",
-          "BRIEF CONTACT"
+          "BRIEF CONTACT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15429,7 +13347,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUUB-",
         name: "BRIEF CONTACT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15441,7 +13359,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "UNDERWATER",
-          "LOST CONTACT"
+          "LOST CONTACT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15449,7 +13367,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUUL-",
         name: "LOST CONTACT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15461,7 +13379,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "UNDERWATER",
-          "SINKER"
+          "SINKER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15469,7 +13387,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUUS-",
         name: "SINKER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15480,7 +13398,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "UNDER SEA WARFARE",
-          "SONOBUOY"
+          "SONOBUOY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15488,7 +13406,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUY--",
         name: "SONOBUOY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15500,7 +13418,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "PATTERN CENTER"
+          "PATTERN CENTER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15508,7 +13426,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYP-",
         name: "PATTERN CENTER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15520,7 +13438,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "DIRECTIONAL FREQUENCY ANALYZING AND RECORDING (DIFAR)"
+          "DIRECTIONAL FREQUENCY ANALYZING AND RECORDING (DIFAR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15528,7 +13446,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYD-",
         name: "DIRECTIONAL FREQUENCY ANALYZING AND RECORDING (DIFAR)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15540,7 +13458,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "LOW FREQUENCY ANALYZING AND RECORDING (LOFAR)"
+          "LOW FREQUENCY ANALYZING AND RECORDING (LOFAR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15548,7 +13466,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYL-",
         name: "LOW FREQUENCY ANALYZING AND RECORDING (LOFAR)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15560,7 +13478,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "COMMAND ACTIVE SONOBUOY SYSTEM (CASS)"
+          "COMMAND ACTIVE SONOBUOY SYSTEM (CASS)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15568,7 +13486,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYC-",
         name: "COMMAND ACTIVE SONOBUOY SYSTEM (CASS)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15580,7 +13498,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "DIRECTIONAL COMMAND ACTIVE SONOBUOY SYSTEM (DICASS)"
+          "DIRECTIONAL COMMAND ACTIVE SONOBUOY SYSTEM (DICASS)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15588,7 +13506,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYS-",
         name: "DIRECTIONAL COMMAND ACTIVE SONOBUOY SYSTEM (DICASS)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15600,7 +13518,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "BATHYTHERMOGRAPH TRANSMITTING (BT)"
+          "BATHYTHERMOGRAPH TRANSMITTING (BT)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15608,7 +13526,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYB-",
         name: "BATHYTHERMOGRAPH TRANSMITTING (BT)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15620,7 +13538,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "ANM"
+          "ANM",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15628,7 +13546,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYA-",
         name: "ANM",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15640,7 +13558,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "VERTICAL LINE ARRAY DIFAR (VLAD)"
+          "VERTICAL LINE ARRAY DIFAR (VLAD)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15648,7 +13566,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYV-",
         name: "VERTICAL LINE ARRAY DIFAR (VLAD)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15660,7 +13578,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "ATAC"
+          "ATAC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15668,7 +13586,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYT-",
         name: "ATAC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15680,7 +13598,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "RANGE ONLY (RO)"
+          "RANGE ONLY (RO)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15688,7 +13606,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYR-",
         name: "RANGE ONLY (RO)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15700,7 +13618,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SONOBUOY",
-          "KINGPIN"
+          "KINGPIN",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15708,7 +13626,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUYK-",
         name: "KINGPIN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15719,7 +13637,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "UNDER SEA WARFARE",
-          "SEARCH"
+          "SEARCH",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15727,7 +13645,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUS--",
         name: "SEARCH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15739,7 +13657,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SEARCH",
-          "SEARCH AREA"
+          "SEARCH AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15747,7 +13665,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUSA-",
         name: "SEARCH AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15759,7 +13677,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SEARCH",
-          "DIP POSITION"
+          "DIP POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15767,7 +13685,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUSD-",
         name: "DIP POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15779,7 +13697,7 @@ export const ms2525b = {
           "POINTS",
           "UNDER SEA WARFARE",
           "SEARCH",
-          "SEARCH CENTER"
+          "SEARCH CENTER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15787,7 +13705,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPUSC-",
         name: "SEARCH CENTER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -15797,7 +13715,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "POINTS",
-          "REFERENCE POINT"
+          "REFERENCE POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15805,7 +13723,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPR---",
         name: "REFERENCE POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15816,7 +13734,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "REFERENCE POINT",
-          "SPECIAL POINT"
+          "SPECIAL POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15824,7 +13742,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPRS--",
         name: "SPECIAL POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15835,7 +13753,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "REFERENCE POINT",
-          "NAV REFERENCE"
+          "NAV REFERENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15843,7 +13761,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPRN--",
         name: "NAV REFERENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15854,7 +13772,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "REFERENCE POINT",
-          "DLRP"
+          "DLRP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15862,7 +13780,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPRD--",
         name: "DLRP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15873,7 +13791,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "REFERENCE POINT",
-          "POINT OF INTEREST"
+          "POINT OF INTEREST",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15881,7 +13799,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPRI--",
         name: "POINT OF INTEREST",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -15891,7 +13809,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "POINTS",
-          "WEAPON"
+          "WEAPON",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15899,7 +13817,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPW---",
         name: "WEAPON",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -15910,7 +13828,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "WEAPON",
-          "AIM POINT"
+          "AIM POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15918,7 +13836,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPWA--",
         name: "AIM POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15929,7 +13847,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "WEAPON",
-          "DROP POINT"
+          "DROP POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15937,7 +13855,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPWD--",
         name: "DROP POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15948,7 +13866,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "WEAPON",
-          "ENTRY POINT"
+          "ENTRY POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15956,7 +13874,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPWE--",
         name: "ENTRY POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15967,7 +13885,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "WEAPON",
-          "GROUND ZERO"
+          "GROUND ZERO",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15975,7 +13893,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPWG--",
         name: "GROUND ZERO",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15986,7 +13904,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "WEAPON",
-          "MSL DETECT POINT"
+          "MSL DETECT POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15994,7 +13912,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPWM--",
         name: "MSL DETECT POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16005,7 +13923,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "WEAPON",
-          "IMPACT POINT"
+          "IMPACT POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16013,7 +13931,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPWI--",
         name: "IMPACT POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16024,7 +13942,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "WEAPON",
-          "PREDICTED IMPACT POINT"
+          "PREDICTED IMPACT POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16032,7 +13950,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPWP--",
         name: "PREDICTED IMPACT POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16042,7 +13960,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "POINTS",
-          "FORMATION"
+          "FORMATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16050,7 +13968,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPF---",
         name: "FORMATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16060,7 +13978,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "POINTS",
-          "HARBOR (GENERAL)"
+          "HARBOR (GENERAL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16068,7 +13986,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPH---",
         name: "HARBOR (GENERAL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16079,7 +13997,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "HARBOR (GENERAL)",
-          "POINT Q"
+          "POINT Q",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16087,7 +14005,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPHQ--",
         name: "POINT Q",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16098,7 +14016,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "HARBOR (GENERAL)",
-          "POINT A"
+          "POINT A",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16106,7 +14024,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPHA--",
         name: "POINT A",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16117,7 +14035,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "HARBOR (GENERAL)",
-          "POINT Y"
+          "POINT Y",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16125,7 +14043,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPHY--",
         name: "POINT Y",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16136,7 +14054,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "HARBOR (GENERAL)",
-          "POINT X"
+          "POINT X",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16144,7 +14062,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPHX--",
         name: "POINT X",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16154,7 +14072,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "POINTS",
-          "ROUTE"
+          "ROUTE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16162,7 +14080,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPO---",
         name: "ROUTE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16173,7 +14091,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ROUTE",
-          "RENDEZVOUS"
+          "RENDEZVOUS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16181,7 +14099,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPOZ--",
         name: "RENDEZVOUS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16192,7 +14110,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ROUTE",
-          "DIVERSIONS"
+          "DIVERSIONS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16200,7 +14118,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPOD--",
         name: "DIVERSIONS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16211,7 +14129,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ROUTE",
-          "WAYPOINT"
+          "WAYPOINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16219,7 +14137,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPOW--",
         name: "WAYPOINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16230,7 +14148,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ROUTE",
-          "PIM"
+          "PIM",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16238,7 +14156,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPOP--",
         name: "PIM",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16249,7 +14167,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ROUTE",
-          "POINT R"
+          "POINT R",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16257,7 +14175,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPOR--",
         name: "POINT R",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16267,7 +14185,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "POINTS",
-          "AIR CONTROL"
+          "AIR CONTROL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16275,7 +14193,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPA---",
         name: "AIR CONTROL",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -16286,7 +14204,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "COMBAT AIR PATROL (CAP)"
+          "COMBAT AIR PATROL (CAP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16294,7 +14212,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAP--",
         name: "COMBAT AIR PATROL (CAP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16305,7 +14223,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "AIRBORNE EARLY WARNING (AEW)"
+          "AIRBORNE EARLY WARNING (AEW)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16313,7 +14231,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAW--",
         name: "AIRBORNE EARLY WARNING (AEW)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16324,7 +14242,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "TACAN"
+          "TACAN",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16332,7 +14250,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAT--",
         name: "TACAN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16343,7 +14261,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "TANKING"
+          "TANKING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16351,7 +14269,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAK--",
         name: "TANKING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16362,7 +14280,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "ANTISUBMARINE WARFARE, FIXED WING"
+          "ANTISUBMARINE WARFARE, FIXED WING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16370,7 +14288,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAA--",
         name: "ANTISUBMARINE WARFARE, FIXED WING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16381,7 +14299,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "ANTISUBMARINE WARFARE, ROTARY WING"
+          "ANTISUBMARINE WARFARE, ROTARY WING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16389,7 +14307,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAH--",
         name: "ANTISUBMARINE WARFARE, ROTARY WING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16400,7 +14318,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "TOMCAT"
+          "TOMCAT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16408,7 +14326,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAO--",
         name: "TOMCAT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16419,7 +14337,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "RESCUE"
+          "RESCUE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16427,7 +14345,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAR--",
         name: "RESCUE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16438,7 +14356,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "REPLENISH"
+          "REPLENISH",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16446,7 +14364,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAL--",
         name: "REPLENISH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16457,7 +14375,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "MARSHALL"
+          "MARSHALL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16465,7 +14383,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAM--",
         name: "MARSHALL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16476,7 +14394,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "STRIKE IP"
+          "STRIKE IP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16484,7 +14402,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAS--",
         name: "STRIKE IP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16495,7 +14413,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "AIR CONTROL",
-          "CORRIDOR TAB"
+          "CORRIDOR TAB",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16503,7 +14421,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPAC--",
         name: "CORRIDOR TAB",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16513,7 +14431,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "POINTS",
-          "ACTION POINTS (GENERAL)"
+          "ACTION POINTS (GENERAL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16521,7 +14439,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPP---",
         name: "ACTION POINTS (GENERAL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16532,7 +14450,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "CHECK POINT"
+          "CHECK POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16540,7 +14458,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPK--",
         name: "CHECK POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16551,7 +14469,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "CONTACT POINT"
+          "CONTACT POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16559,7 +14477,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPC--",
         name: "CONTACT POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16570,7 +14488,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "COORDINATION POINT"
+          "COORDINATION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16578,7 +14496,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPO--",
         name: "COORDINATION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16589,7 +14507,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "DECISION POINT"
+          "DECISION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16597,7 +14515,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPD--",
         name: "DECISION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16608,7 +14526,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "LINKUP POINT"
+          "LINKUP POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16616,7 +14534,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPL--",
         name: "LINKUP POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16627,7 +14545,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "PASSAGE POINT"
+          "PASSAGE POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16635,7 +14553,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPP--",
         name: "PASSAGE POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16646,7 +14564,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "RALLY POINT"
+          "RALLY POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16654,7 +14572,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPR--",
         name: "RALLY POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16665,7 +14583,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "RELEASE POINT"
+          "RELEASE POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16673,7 +14591,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPE--",
         name: "RELEASE POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16684,7 +14602,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "START POINT"
+          "START POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16692,7 +14610,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPS--",
         name: "START POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16703,7 +14621,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "AMNESTY POINT"
+          "AMNESTY POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16711,7 +14629,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPA--",
         name: "AMNESTY POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16722,7 +14640,7 @@ export const ms2525b = {
           "GENERAL",
           "POINTS",
           "ACTION POINTS (GENERAL)",
-          "WAYPOINT"
+          "WAYPOINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16730,7 +14648,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GPPW--",
         name: "WAYPOINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16739,7 +14657,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
-          "LINES"
+          "LINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16747,7 +14665,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GL----",
         name: "LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -16757,7 +14675,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "LINES",
-          "BOUNDARIES"
+          "BOUNDARIES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16765,7 +14683,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GLB---",
         name: "BOUNDARIES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16775,7 +14693,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "LINES",
-          "FORWARD LINE OF OWN TROOPS (FLOT)"
+          "FORWARD LINE OF OWN TROOPS (FLOT)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16783,7 +14701,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GLF---",
         name: "FORWARD LINE OF OWN TROOPS (FLOT)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16793,7 +14711,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "LINES",
-          "LINE OF CONTACT"
+          "LINE OF CONTACT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16801,7 +14719,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GLC---",
         name: "LINE OF CONTACT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16811,7 +14729,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "LINES",
-          "PHASE LINE"
+          "PHASE LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16819,7 +14737,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GLP---",
         name: "PHASE LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16829,7 +14747,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "LINES",
-          "LIGHT LINE"
+          "LIGHT LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16837,7 +14755,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GLL---",
         name: "LIGHT LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16846,7 +14764,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
-          "AREAS"
+          "AREAS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16854,7 +14772,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GA----",
         name: "AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -16864,7 +14782,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "GENERAL AREA"
+          "GENERAL AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16872,7 +14790,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAG---",
         name: "GENERAL AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16882,7 +14800,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "ASSEMBLY AREA"
+          "ASSEMBLY AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16890,7 +14808,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAA---",
         name: "ASSEMBLY AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16900,7 +14818,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "ENGAGEMENT AREA"
+          "ENGAGEMENT AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16908,7 +14826,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAE---",
         name: "ENGAGEMENT AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16918,7 +14836,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "FORTIFIED AREA"
+          "FORTIFIED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16926,7 +14844,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAF---",
         name: "FORTIFIED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16936,7 +14854,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "DROP ZONE"
+          "DROP ZONE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16944,7 +14862,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAD---",
         name: "DROP ZONE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16954,7 +14872,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "EXTRACTION ZONE (EZ)"
+          "EXTRACTION ZONE (EZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16962,7 +14880,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAX---",
         name: "EXTRACTION ZONE (EZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16972,7 +14890,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "LANDING ZONE (LZ)"
+          "LANDING ZONE (LZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16980,7 +14898,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAL---",
         name: "LANDING ZONE (LZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16990,7 +14908,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "PICKUP ZONE (PZ)"
+          "PICKUP ZONE (PZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16998,7 +14916,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAP---",
         name: "PICKUP ZONE (PZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17008,7 +14926,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "SEARCH AREA/RECONNAISSANCE AREA"
+          "SEARCH AREA/RECONNAISSANCE AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17016,7 +14934,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAS---",
         name: "SEARCH AREA/RECONNAISSANCE AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17026,7 +14944,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "LIMITED ACCESS AREA"
+          "LIMITED ACCESS AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17034,7 +14952,7 @@ export const ms2525b = {
         status: "*",
         functionid: "GAY---",
         name: "LIMITED ACCESS AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17044,7 +14962,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "GENERAL",
           "AREAS",
-          "AIRFIELD ZONE"
+          "AIRFIELD ZONE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17052,23 +14970,19 @@ export const ms2525b = {
         status: "*",
         functionid: "GAZ---",
         name: "AIRFIELD ZONE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.C2GM.AVN",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMMAND AND CONTROL AND GENERAL MANEUVER",
-          "AVIATION"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMMAND AND CONTROL AND GENERAL MANEUVER", "AVIATION"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "A-----",
         name: "AVIATION",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17077,7 +14991,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
-          "POINTS"
+          "POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17085,7 +14999,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AP----",
         name: "POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -17095,7 +15009,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "POINTS",
-          "AIR CONTROL POINT (ACP)"
+          "AIR CONTROL POINT (ACP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17103,7 +15017,7 @@ export const ms2525b = {
         status: "*",
         functionid: "APP---",
         name: "AIR CONTROL POINT (ACP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17113,7 +15027,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "POINTS",
-          "COMMUNICATIONS CHECKPOINT (CCP)"
+          "COMMUNICATIONS CHECKPOINT (CCP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17121,7 +15035,7 @@ export const ms2525b = {
         status: "*",
         functionid: "APC---",
         name: "COMMUNICATIONS CHECKPOINT (CCP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17131,7 +15045,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "POINTS",
-          "PULL-UP POINT (PUP)"
+          "PULL-UP POINT (PUP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17139,7 +15053,7 @@ export const ms2525b = {
         status: "*",
         functionid: "APU---",
         name: "PULL-UP POINT (PUP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17149,7 +15063,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "POINTS",
-          "DOWNED AIRCREW PICKUP POINT"
+          "DOWNED AIRCREW PICKUP POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17157,7 +15071,7 @@ export const ms2525b = {
         status: "*",
         functionid: "APD---",
         name: "DOWNED AIRCREW PICKUP POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17166,7 +15080,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
-          "LINES"
+          "LINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17174,7 +15088,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AL----",
         name: "LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17184,7 +15098,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "LINES",
-          "AIR CORRIDOR"
+          "AIR CORRIDOR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17192,7 +15106,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ALC---",
         name: "AIR CORRIDOR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17202,7 +15116,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "LINES",
-          "MINIMUM RISK ROUTE (MRR)"
+          "MINIMUM RISK ROUTE (MRR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17210,7 +15124,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ALM---",
         name: "MINIMUM RISK ROUTE (MRR)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17220,7 +15134,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "LINES",
-          "STANDARD-USE ARMY AIRCRAFT FLIGHT ROUTE (SAAFR)"
+          "STANDARD-USE ARMY AIRCRAFT FLIGHT ROUTE (SAAFR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17228,7 +15142,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ALS---",
         name: "STANDARD-USE ARMY AIRCRAFT FLIGHT ROUTE (SAAFR)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17238,7 +15152,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "LINES",
-          "UNMANNED AERIAL VEHICLE (UAV) ROUTE"
+          "UNMANNED AERIAL VEHICLE (UAV) ROUTE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17246,7 +15160,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ALU---",
         name: "UNMANNED AERIAL VEHICLE (UAV) ROUTE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17256,7 +15170,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "LINES",
-          "LOW LEVEL TRANSIT ROUTE (LLTR)"
+          "LOW LEVEL TRANSIT ROUTE (LLTR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17264,7 +15178,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ALL---",
         name: "LOW LEVEL TRANSIT ROUTE (LLTR)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17273,7 +15187,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
-          "AREAS"
+          "AREAS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17281,7 +15195,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AA----",
         name: "AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17291,7 +15205,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "AREAS",
-          "RESTRICTED OPERATIONS ZONE (ROZ)"
+          "RESTRICTED OPERATIONS ZONE (ROZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17299,7 +15213,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AAR---",
         name: "RESTRICTED OPERATIONS ZONE (ROZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17309,7 +15223,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "AREAS",
-          "FORWARD AREA AIR DEFENSE ZONE (FAADEZ)"
+          "FORWARD AREA AIR DEFENSE ZONE (FAADEZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17317,7 +15231,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AAF---",
         name: "FORWARD AREA AIR DEFENSE ZONE (FAADEZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17327,7 +15241,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "AREAS",
-          "HIGH DENSITY AIRSPACE CONTROL ZONE (HIDACZ)"
+          "HIGH DENSITY AIRSPACE CONTROL ZONE (HIDACZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17335,7 +15249,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AAH---",
         name: "HIGH DENSITY AIRSPACE CONTROL ZONE (HIDACZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17345,7 +15259,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "AREAS",
-          "MISSILE ENGAGEMENT ZONE (MEZ)"
+          "MISSILE ENGAGEMENT ZONE (MEZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17353,7 +15267,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AAM---",
         name: "MISSILE ENGAGEMENT ZONE (MEZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17364,7 +15278,7 @@ export const ms2525b = {
           "AVIATION",
           "AREAS",
           "MISSILE ENGAGEMENT ZONE (MEZ)",
-          "LOW ALTITUDE MEZ"
+          "LOW ALTITUDE MEZ",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17372,7 +15286,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AAML--",
         name: "LOW ALTITUDE MEZ",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17383,7 +15297,7 @@ export const ms2525b = {
           "AVIATION",
           "AREAS",
           "MISSILE ENGAGEMENT ZONE (MEZ)",
-          "HIGH ALTITUDE MEZ"
+          "HIGH ALTITUDE MEZ",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17391,7 +15305,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AAMH--",
         name: "HIGH ALTITUDE MEZ",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17401,7 +15315,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "AVIATION",
           "AREAS",
-          "WEAPONS FREE ZONE"
+          "WEAPONS FREE ZONE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17409,23 +15323,19 @@ export const ms2525b = {
         status: "*",
         functionid: "AAW---",
         name: "WEAPONS FREE ZONE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.C2GM.DCPN",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMMAND AND CONTROL AND GENERAL MANEUVER",
-          "DECEPTION"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMMAND AND CONTROL AND GENERAL MANEUVER", "DECEPTION"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "P-----",
         name: "DECEPTION",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17434,7 +15344,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DECEPTION",
-          "DUMMY (DECEPTION/DECOY)"
+          "DUMMY (DECEPTION/DECOY)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17442,7 +15352,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PD----",
         name: "DUMMY (DECEPTION/DECOY)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17451,7 +15361,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DECEPTION",
-          "AXIS OF ADVANCE FOR FEINT"
+          "AXIS OF ADVANCE FOR FEINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17459,7 +15369,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PA----",
         name: "AXIS OF ADVANCE FOR FEINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17468,7 +15378,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DECEPTION",
-          "DIRECTION OF ATTACK FOR FEINT"
+          "DIRECTION OF ATTACK FOR FEINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17476,7 +15386,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PF----",
         name: "DIRECTION OF ATTACK FOR FEINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17485,7 +15395,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DECEPTION",
-          "DECOY MINED AREA"
+          "DECOY MINED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17493,7 +15403,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PM----",
         name: "DECOY MINED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17502,7 +15412,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DECEPTION",
-          "DECOY MINED AREA, FENCED"
+          "DECOY MINED AREA, FENCED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17510,7 +15420,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PY----",
         name: "DECOY MINED AREA, FENCED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17519,7 +15429,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DECEPTION",
-          "DUMMY MINEFIELD (STATIC)"
+          "DUMMY MINEFIELD (STATIC)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17527,7 +15437,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PN----",
         name: "DUMMY MINEFIELD (STATIC)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17536,7 +15446,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DECEPTION",
-          "DUMMY MINEFIELD (DYNAMIC)"
+          "DUMMY MINEFIELD (DYNAMIC)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17544,23 +15454,19 @@ export const ms2525b = {
         status: "*",
         functionid: "PC----",
         name: "DUMMY MINEFIELD (DYNAMIC)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.C2GM.DEF",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMMAND AND CONTROL AND GENERAL MANEUVER",
-          "DEFENSE"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMMAND AND CONTROL AND GENERAL MANEUVER", "DEFENSE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "D-----",
         name: "DEFENSE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17569,7 +15475,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DEFENSE",
-          "POINTS"
+          "POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17577,7 +15483,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DP----",
         name: "POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -17587,7 +15493,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DEFENSE",
           "POINTS",
-          "TARGET REFERENCE POINT (TRP)"
+          "TARGET REFERENCE POINT (TRP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17595,7 +15501,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DPT---",
         name: "TARGET REFERENCE POINT (TRP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17605,7 +15511,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DEFENSE",
           "POINTS",
-          "OBSERVATION POST/OUTPOST"
+          "OBSERVATION POST/OUTPOST",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17613,7 +15519,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DPO---",
         name: "OBSERVATION POST/OUTPOST",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17624,7 +15530,7 @@ export const ms2525b = {
           "DEFENSE",
           "POINTS",
           "OBSERVATION POST/OUTPOST",
-          "COMBAT OUTPOST"
+          "COMBAT OUTPOST",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17632,7 +15538,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DPOC--",
         name: "COMBAT OUTPOST",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17643,7 +15549,7 @@ export const ms2525b = {
           "DEFENSE",
           "POINTS",
           "OBSERVATION POST/OUTPOST",
-          "OBSERVATION POST OCCUPIED BY DISMOUNTED SCOUTS OR RECONNAISSANCE"
+          "OBSERVATION POST OCCUPIED BY DISMOUNTED SCOUTS OR RECONNAISSANCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17651,7 +15557,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DPOR--",
         name: "OBSERVATION POST OCCUPIED BY DISMOUNTED SCOUTS OR RECONNAISSANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17662,7 +15568,7 @@ export const ms2525b = {
           "DEFENSE",
           "POINTS",
           "OBSERVATION POST/OUTPOST",
-          "FORWARD OBSERVER POSITION"
+          "FORWARD OBSERVER POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17670,7 +15576,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DPOF--",
         name: "FORWARD OBSERVER POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17681,7 +15587,7 @@ export const ms2525b = {
           "DEFENSE",
           "POINTS",
           "OBSERVATION POST/OUTPOST",
-          "SENSOR OUTPOST/LISTENING POST (OP/LP)"
+          "SENSOR OUTPOST/LISTENING POST (OP/LP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17689,7 +15595,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DPOS--",
         name: "SENSOR OUTPOST/LISTENING POST (OP/LP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17700,7 +15606,7 @@ export const ms2525b = {
           "DEFENSE",
           "POINTS",
           "OBSERVATION POST/OUTPOST",
-          "NBC OBSERVATION POST (DISMOUNTED)"
+          "NBC OBSERVATION POST (DISMOUNTED)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17708,7 +15614,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DPON--",
         name: "NBC OBSERVATION POST (DISMOUNTED)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17717,7 +15623,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DEFENSE",
-          "LINES"
+          "LINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17725,7 +15631,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DL----",
         name: "LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17735,7 +15641,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DEFENSE",
           "LINES",
-          "FORWARD EDGE OF BATTLE AREA (FEBA)"
+          "FORWARD EDGE OF BATTLE AREA (FEBA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17743,7 +15649,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DLF---",
         name: "FORWARD EDGE OF BATTLE AREA (FEBA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17753,7 +15659,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DEFENSE",
           "LINES",
-          "PRINCIPAL DIRECTION OF FIRE (PDF)"
+          "PRINCIPAL DIRECTION OF FIRE (PDF)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17761,7 +15667,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DLP---",
         name: "PRINCIPAL DIRECTION OF FIRE (PDF)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17770,7 +15676,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DEFENSE",
-          "AREAS"
+          "AREAS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17778,7 +15684,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DA----",
         name: "AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17788,7 +15694,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DEFENSE",
           "AREAS",
-          "BATTLE POSITION"
+          "BATTLE POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17796,7 +15702,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DAB---",
         name: "BATTLE POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17807,7 +15713,7 @@ export const ms2525b = {
           "DEFENSE",
           "AREAS",
           "BATTLE POSITION",
-          "PREPARED BUT NOT OCCUPIED"
+          "PREPARED BUT NOT OCCUPIED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17815,7 +15721,7 @@ export const ms2525b = {
         status: "*",
         functionid: "DABP--",
         name: "PREPARED BUT NOT OCCUPIED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17825,7 +15731,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "DEFENSE",
           "AREAS",
-          "ENGAGEMENT AREA"
+          "ENGAGEMENT AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17833,23 +15739,19 @@ export const ms2525b = {
         status: "*",
         functionid: "DAE---",
         name: "ENGAGEMENT AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.C2GM.OFF",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMMAND AND CONTROL AND GENERAL MANEUVER",
-          "OFFENSE"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMMAND AND CONTROL AND GENERAL MANEUVER", "OFFENSE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "O-----",
         name: "OFFENSE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17858,7 +15760,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
-          "POINTS"
+          "POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17866,7 +15768,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OP----",
         name: "POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -17876,7 +15778,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "POINTS",
-          "POINT OF DEPARTURE"
+          "POINT OF DEPARTURE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17884,7 +15786,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OPP---",
         name: "POINT OF DEPARTURE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17893,7 +15795,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
-          "LINES"
+          "LINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17901,7 +15803,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OL----",
         name: "LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17911,7 +15813,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "LINES",
-          "AXIS OF ADVANCE"
+          "AXIS OF ADVANCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17919,7 +15821,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLA---",
         name: "AXIS OF ADVANCE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17930,7 +15832,7 @@ export const ms2525b = {
           "OFFENSE",
           "LINES",
           "AXIS OF ADVANCE",
-          "AVIATION"
+          "AVIATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17938,7 +15840,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLAV--",
         name: "AVIATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17949,7 +15851,7 @@ export const ms2525b = {
           "OFFENSE",
           "LINES",
           "AXIS OF ADVANCE",
-          "AIRBORNE"
+          "AIRBORNE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17957,7 +15859,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLAA--",
         name: "AIRBORNE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17968,7 +15870,7 @@ export const ms2525b = {
           "OFFENSE",
           "LINES",
           "AXIS OF ADVANCE",
-          "ATTACK, ROTARY WING"
+          "ATTACK, ROTARY WING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17976,7 +15878,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLAR--",
         name: "ATTACK, ROTARY WING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17987,7 +15889,7 @@ export const ms2525b = {
           "OFFENSE",
           "LINES",
           "AXIS OF ADVANCE",
-          "GROUND"
+          "GROUND",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17995,7 +15897,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLAG--",
         name: "GROUND",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18007,7 +15909,7 @@ export const ms2525b = {
           "LINES",
           "AXIS OF ADVANCE",
           "GROUND",
-          "MAIN ATTACK"
+          "MAIN ATTACK",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18015,7 +15917,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLAGM-",
         name: "MAIN ATTACK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18027,7 +15929,7 @@ export const ms2525b = {
           "LINES",
           "AXIS OF ADVANCE",
           "GROUND",
-          "SUPPORTING ATTACK"
+          "SUPPORTING ATTACK",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18035,7 +15937,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLAGS-",
         name: "SUPPORTING ATTACK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18045,7 +15947,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "LINES",
-          "DIRECTION OF ATTACK"
+          "DIRECTION OF ATTACK",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18053,7 +15955,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLK---",
         name: "DIRECTION OF ATTACK",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18064,7 +15966,7 @@ export const ms2525b = {
           "OFFENSE",
           "LINES",
           "DIRECTION OF ATTACK",
-          "AVIATION"
+          "AVIATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18072,7 +15974,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLKA--",
         name: "AVIATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18083,7 +15985,7 @@ export const ms2525b = {
           "OFFENSE",
           "LINES",
           "DIRECTION OF ATTACK",
-          "GROUND"
+          "GROUND",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18091,7 +15993,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLKG--",
         name: "GROUND",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18103,7 +16005,7 @@ export const ms2525b = {
           "LINES",
           "DIRECTION OF ATTACK",
           "GROUND",
-          "MAIN ATTACK"
+          "MAIN ATTACK",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18111,7 +16013,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLKGM-",
         name: "MAIN ATTACK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18123,7 +16025,7 @@ export const ms2525b = {
           "LINES",
           "DIRECTION OF ATTACK",
           "GROUND",
-          "SUPPORTING ATTACK"
+          "SUPPORTING ATTACK",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18131,7 +16033,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLKGS-",
         name: "SUPPORTING ATTACK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18141,7 +16043,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "LINES",
-          "FINAL COORDINATION LINE"
+          "FINAL COORDINATION LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18149,7 +16051,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLF---",
         name: "FINAL COORDINATION LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18159,7 +16061,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "LINES",
-          "INFILTRATION LANE"
+          "INFILTRATION LANE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18167,7 +16069,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLI---",
         name: "INFILTRATION LANE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18177,7 +16079,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "LINES",
-          "LIMIT OF ADVANCE"
+          "LIMIT OF ADVANCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18185,7 +16087,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLL---",
         name: "LIMIT OF ADVANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18195,7 +16097,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "LINES",
-          "LINE OF DEPARTURE"
+          "LINE OF DEPARTURE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18203,7 +16105,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLT---",
         name: "LINE OF DEPARTURE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18213,7 +16115,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "LINES",
-          "LINE OF DEPARTURE/LINE OF CONTACT (LD/LC)"
+          "LINE OF DEPARTURE/LINE OF CONTACT (LD/LC)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18221,7 +16123,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLC---",
         name: "LINE OF DEPARTURE/LINE OF CONTACT (LD/LC)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18231,7 +16133,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "LINES",
-          "PROBABLE LINE OF DEPLOYMENT (PLD)"
+          "PROBABLE LINE OF DEPLOYMENT (PLD)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18239,7 +16141,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OLP---",
         name: "PROBABLE LINE OF DEPLOYMENT (PLD)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18248,7 +16150,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
-          "AREAS"
+          "AREAS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18256,7 +16158,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OA----",
         name: "AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18266,7 +16168,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "AREAS",
-          "ASSAULT POSITION"
+          "ASSAULT POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18274,7 +16176,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAA---",
         name: "ASSAULT POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18284,7 +16186,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "AREAS",
-          "ATTACK POSITION"
+          "ATTACK POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18292,7 +16194,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAK---",
         name: "ATTACK POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18302,7 +16204,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "AREAS",
-          "ATTACK BY FIRE POSITION"
+          "ATTACK BY FIRE POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18310,7 +16212,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAF---",
         name: "ATTACK BY FIRE POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18320,7 +16222,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "AREAS",
-          "SUPPORT BY FIRE POSITION"
+          "SUPPORT BY FIRE POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18328,7 +16230,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAS---",
         name: "SUPPORT BY FIRE POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18338,7 +16240,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "AREAS",
-          "OBJECTIVE"
+          "OBJECTIVE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18346,7 +16248,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAO---",
         name: "OBJECTIVE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18356,7 +16258,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "OFFENSE",
           "AREAS",
-          "PENETRATION BOX"
+          "PENETRATION BOX",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18364,40 +16266,31 @@ export const ms2525b = {
         status: "*",
         functionid: "OAP---",
         name: "PENETRATION BOX",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.C2GM.SPL",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMMAND AND CONTROL AND GENERAL MANEUVER",
-          "SPECIAL"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMMAND AND CONTROL AND GENERAL MANEUVER", "SPECIAL"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "S-----",
         name: "SPECIAL",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.C2GM.SPL.LNE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMMAND AND CONTROL AND GENERAL MANEUVER",
-          "SPECIAL",
-          "LINE"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMMAND AND CONTROL AND GENERAL MANEUVER", "SPECIAL", "LINE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "SL----",
         name: "LINE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18407,7 +16300,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "SPECIAL",
           "LINE",
-          "AMBUSH"
+          "AMBUSH",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18415,7 +16308,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SLA---",
         name: "AMBUSH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18425,7 +16318,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "SPECIAL",
           "LINE",
-          "HOLDING LINE"
+          "HOLDING LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18433,7 +16326,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SLH---",
         name: "HOLDING LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18443,7 +16336,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "SPECIAL",
           "LINE",
-          "RELEASE LINE"
+          "RELEASE LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18451,7 +16344,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SLR---",
         name: "RELEASE LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18461,7 +16354,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "SPECIAL",
           "LINE",
-          "BRIDGEHEAD"
+          "BRIDGEHEAD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18469,24 +16362,19 @@ export const ms2525b = {
         status: "*",
         functionid: "SLB---",
         name: "BRIDGEHEAD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.C2GM.SPL.ARA",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMMAND AND CONTROL AND GENERAL MANEUVER",
-          "SPECIAL",
-          "AREA"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMMAND AND CONTROL AND GENERAL MANEUVER", "SPECIAL", "AREA"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "SA----",
         name: "AREA",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18496,7 +16384,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "SPECIAL",
           "AREA",
-          "AREA OF OPERATIONS (AO)"
+          "AREA OF OPERATIONS (AO)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18504,7 +16392,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SAO---",
         name: "AREA OF OPERATIONS (AO)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18514,7 +16402,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "SPECIAL",
           "AREA",
-          "AIRHEAD"
+          "AIRHEAD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18522,7 +16410,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SAA---",
         name: "AIRHEAD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18532,7 +16420,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "SPECIAL",
           "AREA",
-          "ENCIRCLEMENT"
+          "ENCIRCLEMENT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18540,7 +16428,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SAE---",
         name: "ENCIRCLEMENT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18550,7 +16438,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "SPECIAL",
           "AREA",
-          "NAMED AREA OF INTEREST (NAI)"
+          "NAMED AREA OF INTEREST (NAI)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18558,7 +16446,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SAN---",
         name: "NAMED AREA OF INTEREST (NAI)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18568,7 +16456,7 @@ export const ms2525b = {
           "COMMAND AND CONTROL AND GENERAL MANEUVER",
           "SPECIAL",
           "AREA",
-          "TARGETED AREA OF INTEREST (TAI)"
+          "TARGETED AREA OF INTEREST (TAI)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18576,109 +16464,79 @@ export const ms2525b = {
         status: "*",
         functionid: "SAT---",
         name: "TARGETED AREA OF INTEREST (TAI)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "------",
         name: "MOBILITY/SURVIVABILITY",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "O-----",
         name: "OBSTACLES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.GNL",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "GENERAL"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "GENERAL"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OG----",
         name: "GENERAL",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.GNL.BLT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "GENERAL",
-          "BELT"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "GENERAL", "BELT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OGB---",
         name: "BELT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.GNL.LNE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "GENERAL",
-          "LINE"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "GENERAL", "LINE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OGL---",
         name: "LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.GNL.Z",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "GENERAL",
-          "ZONE"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "GENERAL", "ZONE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OGZ---",
         name: "ZONE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18688,7 +16546,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "GENERAL",
-          "OBSTACLE FREE AREA"
+          "OBSTACLE FREE AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18696,7 +16554,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OGF---",
         name: "OBSTACLE FREE AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18706,7 +16564,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "GENERAL",
-          "OBSTACLE RESTRICTED AREA"
+          "OBSTACLE RESTRICTED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18714,41 +16572,31 @@ export const ms2525b = {
         status: "*",
         functionid: "OGR---",
         name: "OBSTACLE RESTRICTED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.ABS",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "ABATIS"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "ABATIS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OS----",
         name: "ABATIS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.ATO",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "ANTITANK OBSTACLES"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "ANTITANK OBSTACLES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OA----",
         name: "ANTITANK OBSTACLES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18758,7 +16606,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ANTITANK OBSTACLES",
-          "ANTITANK DITCH"
+          "ANTITANK DITCH",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18766,7 +16614,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAD---",
         name: "ANTITANK DITCH",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18777,7 +16625,7 @@ export const ms2525b = {
           "OBSTACLES",
           "ANTITANK OBSTACLES",
           "ANTITANK DITCH",
-          "UNDER CONSTRUCTION"
+          "UNDER CONSTRUCTION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18785,7 +16633,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OADU--",
         name: "UNDER CONSTRUCTION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18796,7 +16644,7 @@ export const ms2525b = {
           "OBSTACLES",
           "ANTITANK OBSTACLES",
           "ANTITANK DITCH",
-          "COMPLETE"
+          "COMPLETE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18804,7 +16652,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OADC--",
         name: "COMPLETE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18814,7 +16662,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ANTITANK OBSTACLES",
-          "ANTITANK DITCH REINFORCED WITH ANTITANK MINES"
+          "ANTITANK DITCH REINFORCED WITH ANTITANK MINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18822,7 +16670,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAR---",
         name: "ANTITANK DITCH REINFORCED WITH ANTITANK MINES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18832,7 +16680,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ANTITANK OBSTACLES",
-          "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES"
+          "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18840,7 +16688,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAO---",
         name: "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -18851,7 +16699,7 @@ export const ms2525b = {
           "OBSTACLES",
           "ANTITANK OBSTACLES",
           "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES",
-          "FIXED AND PREFABRICATED"
+          "FIXED AND PREFABRICATED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18859,7 +16707,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAOF--",
         name: "FIXED AND PREFABRICATED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18870,7 +16718,7 @@ export const ms2525b = {
           "OBSTACLES",
           "ANTITANK OBSTACLES",
           "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES",
-          "MOVEABLE"
+          "MOVEABLE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18878,7 +16726,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAOM--",
         name: "MOVEABLE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18889,7 +16737,7 @@ export const ms2525b = {
           "OBSTACLES",
           "ANTITANK OBSTACLES",
           "ANTITANK OBSTACLES: TETRAHEDRONS, DRAGONS TEETH, AND OTHER SIMILAR OBSTACLES",
-          "MOVEABLE AND PREFABRICATED"
+          "MOVEABLE AND PREFABRICATED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18897,7 +16745,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OAOP--",
         name: "MOVEABLE AND PREFABRICATED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18907,7 +16755,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ANTITANK OBSTACLES",
-          "ANTITANK WALL"
+          "ANTITANK WALL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18915,41 +16763,31 @@ export const ms2525b = {
         status: "*",
         functionid: "OAW---",
         name: "ANTITANK WALL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.MOBSU.OBST.BBY",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "BOOBY TRAP"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "BOOBY TRAP"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OB----",
         name: "BOOBY TRAP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.MNE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "MINES"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "MINES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OM----",
         name: "MINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -18959,7 +16797,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "UNSPECIFIED MINE"
+          "UNSPECIFIED MINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18967,7 +16805,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OMU---",
         name: "UNSPECIFIED MINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18977,7 +16815,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "ANTITANK MINE (AT)"
+          "ANTITANK MINE (AT)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18985,7 +16823,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OMT---",
         name: "ANTITANK MINE (AT)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18995,7 +16833,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "ANTITANK MINE WITH ANTIHANDLING DEVICE"
+          "ANTITANK MINE WITH ANTIHANDLING DEVICE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19003,7 +16841,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OMD---",
         name: "ANTITANK MINE WITH ANTIHANDLING DEVICE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19013,7 +16851,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "ANTITANK MINE (DIRECTIONAL)"
+          "ANTITANK MINE (DIRECTIONAL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19021,7 +16859,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OME---",
         name: "ANTITANK MINE (DIRECTIONAL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19031,7 +16869,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "ANTIPERSONNEL (AP) MINES"
+          "ANTIPERSONNEL (AP) MINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19039,7 +16877,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OMP---",
         name: "ANTIPERSONNEL (AP) MINES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19049,7 +16887,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "WIDE AREA MINES"
+          "WIDE AREA MINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19057,7 +16895,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OMW---",
         name: "WIDE AREA MINES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19067,7 +16905,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "MINE CLUSTER"
+          "MINE CLUSTER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19075,24 +16913,19 @@ export const ms2525b = {
         status: "*",
         functionid: "OMC---",
         name: "MINE CLUSTER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.MNEFLD",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "MINEFIELDS"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "MINEFIELDS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OF----",
         name: "MINEFIELDS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -19102,7 +16935,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "STATIC DEPICTION"
+          "STATIC DEPICTION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19110,7 +16943,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OFS---",
         name: "STATIC DEPICTION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19120,7 +16953,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "DYNAMIC DEPICTION"
+          "DYNAMIC DEPICTION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19128,25 +16961,19 @@ export const ms2525b = {
         status: "*",
         functionid: "OFD---",
         name: "DYNAMIC DEPICTION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.MNEFLD.GAP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "MINEFIELDS",
-          "GAP"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "MINEFIELDS", "GAP"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OFG---",
         name: "GAP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19156,7 +16983,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "MINED AREA"
+          "MINED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19164,24 +16991,19 @@ export const ms2525b = {
         status: "*",
         functionid: "OFA---",
         name: "MINED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.OBSEFT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "OBSTACLE EFFECT"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "OBSTACLE EFFECT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OE----",
         name: "OBSTACLE EFFECT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19191,7 +17013,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "OBSTACLE EFFECT",
-          "BLOCK"
+          "BLOCK",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19199,7 +17021,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OEB---",
         name: "BLOCK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19209,7 +17031,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "OBSTACLE EFFECT",
-          "FIX"
+          "FIX",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19217,7 +17039,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OEF---",
         name: "FIX",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19227,7 +17049,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "OBSTACLE EFFECT",
-          "TURN"
+          "TURN",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19235,7 +17057,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OET---",
         name: "TURN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19245,7 +17067,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "OBSTACLE EFFECT",
-          "DISRUPT"
+          "DISRUPT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19253,7 +17075,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OED---",
         name: "DISRUPT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19262,7 +17084,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "UNEXPLODED ORDNANCE AREA (UXO)"
+          "UNEXPLODED ORDNANCE AREA (UXO)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19270,7 +17092,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OU----",
         name: "UNEXPLODED ORDNANCE AREA (UXO)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19279,7 +17101,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES"
+          "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19287,7 +17109,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OR----",
         name: "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19297,7 +17119,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
-          "PLANNED"
+          "PLANNED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19305,7 +17127,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ORP---",
         name: "PLANNED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19315,7 +17137,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
-          "EXPLOSIVES, STATE OF READINESS 1 (SAFE)"
+          "EXPLOSIVES, STATE OF READINESS 1 (SAFE)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19323,7 +17145,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ORS---",
         name: "EXPLOSIVES, STATE OF READINESS 1 (SAFE)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19333,7 +17155,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
-          "EXPLOSIVES, STATE OF READINESS 2 (ARMED-BUT PASSABLE)"
+          "EXPLOSIVES, STATE OF READINESS 2 (ARMED-BUT PASSABLE)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19341,7 +17163,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ORA---",
         name: "EXPLOSIVES, STATE OF READINESS 2 (ARMED-BUT PASSABLE)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19351,7 +17173,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ROADBLOCKS, CRATERS, AND BLOWN BRIDGES",
-          "ROADBLOCK COMPLETE (EXECUTED)"
+          "ROADBLOCK COMPLETE (EXECUTED)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19359,41 +17181,31 @@ export const ms2525b = {
         status: "*",
         functionid: "ORC---",
         name: "ROADBLOCK COMPLETE (EXECUTED)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.TRIPWR",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "TRIP WIRE"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "TRIP WIRE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OT----",
         name: "TRIP WIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBST.WREOBS",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES",
-          "WIRE OBSTACLE"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLES", "WIRE OBSTACLE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "OW----",
         name: "WIRE OBSTACLE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19403,7 +17215,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLE",
-          "UNSPECIFIED"
+          "UNSPECIFIED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19411,7 +17223,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OWU---",
         name: "UNSPECIFIED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19421,7 +17233,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLE",
-          "SINGLE FENCE"
+          "SINGLE FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19429,7 +17241,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OWS---",
         name: "SINGLE FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19439,7 +17251,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLE",
-          "DOUBLE FENCE"
+          "DOUBLE FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19447,7 +17259,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OWD---",
         name: "DOUBLE FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19457,7 +17269,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLE",
-          "DOUBLE APRON FENCE"
+          "DOUBLE APRON FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19465,7 +17277,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OWA---",
         name: "DOUBLE APRON FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19475,7 +17287,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLE",
-          "LOW WIRE FENCE"
+          "LOW WIRE FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19483,7 +17295,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OWL---",
         name: "LOW WIRE FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19493,7 +17305,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLE",
-          "HIGH WIRE FENCE"
+          "HIGH WIRE FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19501,7 +17313,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OWH---",
         name: "HIGH WIRE FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19511,7 +17323,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLE",
-          "CONCERTINA"
+          "CONCERTINA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19519,7 +17331,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OWC---",
         name: "CONCERTINA",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19530,7 +17342,7 @@ export const ms2525b = {
           "OBSTACLES",
           "WIRE OBSTACLE",
           "CONCERTINA",
-          "SINGLE CONCERTINA"
+          "SINGLE CONCERTINA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19538,7 +17350,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OWCS--",
         name: "SINGLE CONCERTINA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19549,7 +17361,7 @@ export const ms2525b = {
           "OBSTACLES",
           "WIRE OBSTACLE",
           "CONCERTINA",
-          "DOUBLE STRAND CONCERTINA"
+          "DOUBLE STRAND CONCERTINA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19557,7 +17369,7 @@ export const ms2525b = {
         status: "*",
         functionid: "OWCD--",
         name: "DOUBLE STRAND CONCERTINA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19568,7 +17380,7 @@ export const ms2525b = {
           "OBSTACLES",
           "WIRE OBSTACLE",
           "CONCERTINA",
-          "TRIPLE STRAND CONCERTINA"
+          "TRIPLE STRAND CONCERTINA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19576,23 +17388,19 @@ export const ms2525b = {
         status: "*",
         functionid: "OWCT--",
         name: "TRIPLE STRAND CONCERTINA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.OBSTBP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLE BYPASS"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "OBSTACLE BYPASS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "B-----",
         name: "OBSTACLE BYPASS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19601,7 +17409,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
-          "OBSTACLE BYPASS DIFFICULTY"
+          "OBSTACLE BYPASS DIFFICULTY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19609,7 +17417,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BD----",
         name: "OBSTACLE BYPASS DIFFICULTY",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19619,7 +17427,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "OBSTACLE BYPASS DIFFICULTY",
-          "BYPASS EASY"
+          "BYPASS EASY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19627,7 +17435,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BDE---",
         name: "BYPASS EASY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19637,7 +17445,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "OBSTACLE BYPASS DIFFICULTY",
-          "BYPASS DIFFICULT"
+          "BYPASS DIFFICULT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19645,7 +17453,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BDD---",
         name: "BYPASS DIFFICULT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19655,7 +17463,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "OBSTACLE BYPASS DIFFICULTY",
-          "BYPASS IMPOSSIBLE"
+          "BYPASS IMPOSSIBLE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19663,7 +17471,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BDI---",
         name: "BYPASS IMPOSSIBLE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19672,7 +17480,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
-          "CROSSING SITE/WATER CROSSING"
+          "CROSSING SITE/WATER CROSSING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19680,7 +17488,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BC----",
         name: "CROSSING SITE/WATER CROSSING",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19690,7 +17498,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "ASSAULT CROSSING AREA"
+          "ASSAULT CROSSING AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19698,7 +17506,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BCA---",
         name: "ASSAULT CROSSING AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19708,7 +17516,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "BRIDGE OR GAP"
+          "BRIDGE OR GAP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19716,7 +17524,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BCB---",
         name: "BRIDGE OR GAP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19726,7 +17534,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "FERRY"
+          "FERRY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19734,7 +17542,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BCF---",
         name: "FERRY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19744,7 +17552,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "FORD EASY"
+          "FORD EASY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19752,7 +17560,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BCE---",
         name: "FORD EASY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19762,7 +17570,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "FORD DIFFICULT"
+          "FORD DIFFICULT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19770,7 +17578,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BCD---",
         name: "FORD DIFFICULT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19780,7 +17588,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "LANE"
+          "LANE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19788,7 +17596,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BCL---",
         name: "LANE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19798,7 +17606,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "RAFT SITE"
+          "RAFT SITE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19806,7 +17614,7 @@ export const ms2525b = {
         status: "*",
         functionid: "BCR---",
         name: "RAFT SITE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19816,7 +17624,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "ENGINEER REGULATING POINT"
+          "ENGINEER REGULATING POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19824,23 +17632,19 @@ export const ms2525b = {
         status: "*",
         functionid: "BCP---",
         name: "ENGINEER REGULATING POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.SU",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "SURVIVABILITY"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "SURVIVABILITY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "S-----",
         name: "SURVIVABILITY",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -19849,7 +17653,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "EARTHWORK, SMALL TRENCH OR FORTIFICATION"
+          "EARTHWORK, SMALL TRENCH OR FORTIFICATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19857,41 +17661,31 @@ export const ms2525b = {
         status: "*",
         functionid: "SE----",
         name: "EARTHWORK, SMALL TRENCH OR FORTIFICATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.MOBSU.SU.FRT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "SURVIVABILITY",
-          "FORT"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "SURVIVABILITY", "FORT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "SF----",
         name: "FORT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.SU.FTFDLN",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "SURVIVABILITY",
-          "FORTIFIED LINE"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "SURVIVABILITY", "FORTIFIED LINE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "SL----",
         name: "FORTIFIED LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19900,7 +17694,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "FOXHOLE, EMPLACEMENT OR WEAPON SITE"
+          "FOXHOLE, EMPLACEMENT OR WEAPON SITE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19908,41 +17702,31 @@ export const ms2525b = {
         status: "*",
         functionid: "SW----",
         name: "FOXHOLE, EMPLACEMENT OR WEAPON SITE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.SU.STRGPT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "SURVIVABILITY",
-          "STRONG POINT"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "SURVIVABILITY", "STRONG POINT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "SP----",
         name: "STRONG POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.MOBSU.SU.SUFSHL",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "SURVIVABILITY",
-          "SURFACE SHELTER"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "SURVIVABILITY", "SURFACE SHELTER"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "SS----",
         name: "SURFACE SHELTER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19951,7 +17735,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "UNDERGROUND SHELTER"
+          "UNDERGROUND SHELTER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19959,23 +17743,19 @@ export const ms2525b = {
         status: "*",
         functionid: "SU----",
         name: "UNDERGROUND SHELTER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.MOBSU.NBC",
-        names: [
-          "TACTICAL GRAPHICS",
-          "MOBILITY/SURVIVABILITY",
-          "NUCLEAR, BIOLOGICAL AND CHEMICAL"
-        ],
+        names: ["TACTICAL GRAPHICS", "MOBILITY/SURVIVABILITY", "NUCLEAR, BIOLOGICAL AND CHEMICAL"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "M",
         status: "*",
         functionid: "N-----",
         name: "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19984,7 +17764,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-          "MINIMUM SAFE DISTANCE ZONES"
+          "MINIMUM SAFE DISTANCE ZONES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19992,7 +17772,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NM----",
         name: "MINIMUM SAFE DISTANCE ZONES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20001,7 +17781,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-          "NUCLEAR DETINATIONS GROUND ZERO"
+          "NUCLEAR DETINATIONS GROUND ZERO",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20009,7 +17789,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NZ----",
         name: "NUCLEAR DETINATIONS GROUND ZERO",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20018,7 +17798,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-          "FALLOUT PRODUCING"
+          "FALLOUT PRODUCING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20026,7 +17806,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NF----",
         name: "FALLOUT PRODUCING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20035,7 +17815,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-          "RADIOACTIVE AREA"
+          "RADIOACTIVE AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20043,7 +17823,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NR----",
         name: "RADIOACTIVE AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20052,7 +17832,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-          "BIOLOGICALLY CONTAMINATED AREA"
+          "BIOLOGICALLY CONTAMINATED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20060,7 +17840,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NB----",
         name: "BIOLOGICALLY CONTAMINATED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20069,7 +17849,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-          "CHEMICALLY CONTAMINATED AREA"
+          "CHEMICALLY CONTAMINATED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20077,7 +17857,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NC----",
         name: "CHEMICALLY CONTAMINATED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20086,7 +17866,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-          "RELEASE EVENTS"
+          "RELEASE EVENTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20094,7 +17874,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NE----",
         name: "RELEASE EVENTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -20104,7 +17884,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
           "RELEASE EVENTS",
-          "BIOLOGICAL"
+          "BIOLOGICAL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20112,7 +17892,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NEB---",
         name: "BIOLOGICAL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20122,7 +17902,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
           "RELEASE EVENTS",
-          "CHEMICAL"
+          "CHEMICAL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20130,7 +17910,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NEC---",
         name: "CHEMICAL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20139,7 +17919,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-          "DECONTAMINATION (DECON) POINTS"
+          "DECONTAMINATION (DECON) POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20147,7 +17927,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ND----",
         name: "DECONTAMINATION (DECON) POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -20157,7 +17937,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (UNSPECIFIED)"
+          "DECON SITE/POINT (UNSPECIFIED)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20165,7 +17945,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NDP---",
         name: "DECON SITE/POINT (UNSPECIFIED)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20175,7 +17955,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
           "DECONTAMINATION (DECON) POINTS",
-          "ALTERNATE DECON SITE/POINT (UNSPECIFIED)"
+          "ALTERNATE DECON SITE/POINT (UNSPECIFIED)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20183,7 +17963,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NDA---",
         name: "ALTERNATE DECON SITE/POINT (UNSPECIFIED)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20193,7 +17973,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (TROOPS)"
+          "DECON SITE/POINT (TROOPS)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20201,7 +17981,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NDT---",
         name: "DECON SITE/POINT (TROOPS)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20211,7 +17991,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (EQUIPMENT)"
+          "DECON SITE/POINT (EQUIPMENT)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20219,7 +17999,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NDE---",
         name: "DECON SITE/POINT (EQUIPMENT)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20229,7 +18009,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (EQUIPMENT AND TROOPS)"
+          "DECON SITE/POINT (EQUIPMENT AND TROOPS)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20237,7 +18017,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NDB---",
         name: "DECON SITE/POINT (EQUIPMENT AND TROOPS)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20247,7 +18027,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (OPERATIONAL DECONTAMINATION)"
+          "DECON SITE/POINT (OPERATIONAL DECONTAMINATION)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20255,7 +18035,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NDO---",
         name: "DECON SITE/POINT (OPERATIONAL DECONTAMINATION)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20265,7 +18045,7 @@ export const ms2525b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (THOROUGH DECONTAMINATION)"
+          "DECON SITE/POINT (THOROUGH DECONTAMINATION)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20273,7 +18053,7 @@ export const ms2525b = {
         status: "*",
         functionid: "NDD---",
         name: "DECON SITE/POINT (THOROUGH DECONTAMINATION)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20282,7 +18062,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL",
-          "DOSE RATE CONTOUR LINES"
+          "DOSE RATE CONTOUR LINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20290,108 +18070,79 @@ export const ms2525b = {
         status: "*",
         functionid: "NL----",
         name: "DOSE RATE CONTOUR LINES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "------",
         name: "FIRE SUPPORT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.PNT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "POINT"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "POINT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "P-----",
         name: "POINT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.PNT.TGT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "POINT",
-          "TARGET"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "POINT", "TARGET"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "PT----",
         name: "TARGET",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.FSUPP.PNT.TGT.PTGT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "POINT",
-          "TARGET",
-          "POINT/SINGLE TARGET"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "POINT", "TARGET", "POINT/SINGLE TARGET"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "PTS---",
         name: "POINT/SINGLE TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.FSUPP.PNT.TGT.NUCTGT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "POINT",
-          "TARGET",
-          "NUCLEAR TARGET"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "POINT", "TARGET", "NUCLEAR TARGET"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "PTN---",
         name: "NUCLEAR TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.PNT.C2PNT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "POINT",
-          "COMMAND & CONTROL POINTS"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "POINT", "COMMAND & CONTROL POINTS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "PC----",
         name: "COMMAND & CONTROL POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -20401,7 +18152,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "POINT",
           "COMMAND & CONTROL POINTS",
-          "FIRE SUPPORT STATION"
+          "FIRE SUPPORT STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20409,7 +18160,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PCF---",
         name: "FIRE SUPPORT STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20419,7 +18170,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "POINT",
           "COMMAND & CONTROL POINTS",
-          "SURVEY CONTROL POINT"
+          "SURVEY CONTROL POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20427,7 +18178,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PCS---",
         name: "SURVEY CONTROL POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20437,7 +18188,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "POINT",
           "COMMAND & CONTROL POINTS",
-          "FIRING POINT"
+          "FIRING POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20445,7 +18196,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PCB---",
         name: "FIRING POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20455,7 +18206,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "POINT",
           "COMMAND & CONTROL POINTS",
-          "RELOAD POINT"
+          "RELOAD POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20463,7 +18214,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PCR---",
         name: "RELOAD POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20473,7 +18224,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "POINT",
           "COMMAND & CONTROL POINTS",
-          "HIDE POINT"
+          "HIDE POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20481,7 +18232,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PCH---",
         name: "HIDE POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20491,7 +18242,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "POINT",
           "COMMAND & CONTROL POINTS",
-          "LAUNCH POINT"
+          "LAUNCH POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20499,40 +18250,31 @@ export const ms2525b = {
         status: "*",
         functionid: "PCL---",
         name: "LAUNCH POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.LNE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "LINES"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "LINES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "L-----",
         name: "LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.LNE.LNRTGT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "LINES",
-          "LINEAR TARGET"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "LINES", "LINEAR TARGET"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "LT----",
         name: "LINEAR TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20542,7 +18284,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "LINES",
           "LINEAR TARGET",
-          "LINEAR SMOKE TARGET"
+          "LINEAR SMOKE TARGET",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20550,7 +18292,7 @@ export const ms2525b = {
         status: "*",
         functionid: "LTS---",
         name: "LINEAR SMOKE TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20560,7 +18302,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "LINES",
           "LINEAR TARGET",
-          "FINAL PROTECTIVE FIRE (FPF)"
+          "FINAL PROTECTIVE FIRE (FPF)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20568,24 +18310,19 @@ export const ms2525b = {
         status: "*",
         functionid: "LTF---",
         name: "FINAL PROTECTIVE FIRE (FPF)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.LNE.C2LNE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "LINES",
-          "COMMAND & CONTROL LINES"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "LINES", "COMMAND & CONTROL LINES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "LC----",
         name: "COMMAND & CONTROL LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20595,7 +18332,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "LINES",
           "COMMAND & CONTROL LINES",
-          "FIRE SUPPORT COORDINATION LINE (FSCL)"
+          "FIRE SUPPORT COORDINATION LINE (FSCL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20603,7 +18340,7 @@ export const ms2525b = {
         status: "*",
         functionid: "LCF---",
         name: "FIRE SUPPORT COORDINATION LINE (FSCL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20613,7 +18350,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "LINES",
           "COMMAND & CONTROL LINES",
-          "COORDINATED FIRE LINE (CFL)"
+          "COORDINATED FIRE LINE (CFL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20621,7 +18358,7 @@ export const ms2525b = {
         status: "*",
         functionid: "LCC---",
         name: "COORDINATED FIRE LINE (CFL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20631,7 +18368,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "LINES",
           "COMMAND & CONTROL LINES",
-          "NO-FIRE LINE (NFL)"
+          "NO-FIRE LINE (NFL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20639,7 +18376,7 @@ export const ms2525b = {
         status: "*",
         functionid: "LCN---",
         name: "NO-FIRE LINE (NFL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20649,7 +18386,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "LINES",
           "COMMAND & CONTROL LINES",
-          "RESTRICTIVE FIRE LINE (RFL)"
+          "RESTRICTIVE FIRE LINE (RFL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20657,76 +18394,55 @@ export const ms2525b = {
         status: "*",
         functionid: "LCR---",
         name: "RESTRICTIVE FIRE LINE (RFL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.ARS",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "AREAS"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "AREAS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "A-----",
         name: "AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.ARS.ARATGT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "AREAS",
-          "AREA TARGET"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "AREAS", "AREA TARGET"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "AT----",
         name: "AREA TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.ARS.ARATGT.RTGTGT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "AREAS",
-          "AREA TARGET",
-          "RECTANGULAR TARGET"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "AREAS", "AREA TARGET", "RECTANGULAR TARGET"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "ATR---",
         name: "RECTANGULAR TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.ARS.ARATGT.CIRTGT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "AREAS",
-          "AREA TARGET",
-          "CIRCULAR TARGET"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "AREAS", "AREA TARGET", "CIRCULAR TARGET"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "ATC---",
         name: "CIRCULAR TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20736,7 +18452,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "AREA TARGET",
-          "SERIES OR GROUP OF TARGETS"
+          "SERIES OR GROUP OF TARGETS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20744,60 +18460,43 @@ export const ms2525b = {
         status: "*",
         functionid: "ATG---",
         name: "SERIES OR GROUP OF TARGETS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.ARS.ARATGT.SMK",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "AREAS",
-          "AREA TARGET",
-          "SMOKE"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "AREAS", "AREA TARGET", "SMOKE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "ATS---",
         name: "SMOKE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.ARS.ARATGT.BMARA",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "AREAS",
-          "AREA TARGET",
-          "BOMB AREA"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "AREAS", "AREA TARGET", "BOMB AREA"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "ATB---",
         name: "BOMB AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.ARS.C2ARS",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "AREAS",
-          "COMMAND & CONTROL AREAS"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "AREAS", "COMMAND & CONTROL AREAS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "AC----",
         name: "COMMAND & CONTROL AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20807,7 +18506,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "COMMAND & CONTROL AREAS",
-          "FIRE SUPPORT AREA (FSA)"
+          "FIRE SUPPORT AREA (FSA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20815,7 +18514,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACS---",
         name: "FIRE SUPPORT AREA (FSA)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20826,7 +18525,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "FIRE SUPPORT AREA (FSA)",
-          "FIRE SUPPORT AREA (FSA), IRREGULAR"
+          "FIRE SUPPORT AREA (FSA), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20834,7 +18533,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACSI--",
         name: "FIRE SUPPORT AREA (FSA), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20845,7 +18544,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "FIRE SUPPORT AREA (FSA)",
-          "FIRE SUPPORT AREA (FSA), RECTANGULAR"
+          "FIRE SUPPORT AREA (FSA), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20853,7 +18552,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACSR--",
         name: "FIRE SUPPORT AREA (FSA), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20864,7 +18563,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "FIRE SUPPORT AREA (FSA)",
-          "FIRE SUPPORT AREA (FSA), CIRCULAR"
+          "FIRE SUPPORT AREA (FSA), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20872,7 +18571,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACSC--",
         name: "FIRE SUPPORT AREA (FSA), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20882,7 +18581,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "COMMAND & CONTROL AREAS",
-          "AIRSPACE COORDINATION AREA (ACA)"
+          "AIRSPACE COORDINATION AREA (ACA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20890,7 +18589,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACA---",
         name: "AIRSPACE COORDINATION AREA (ACA)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20901,7 +18600,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "AIRSPACE COORDINATION AREA (ACA)",
-          "AIRSPACE COORDINATION AREA (ACA), IRREGULAR"
+          "AIRSPACE COORDINATION AREA (ACA), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20909,7 +18608,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACAI--",
         name: "AIRSPACE COORDINATION AREA (ACA), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20920,7 +18619,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "AIRSPACE COORDINATION AREA (ACA)",
-          "AIRSPACE COORDINATION AREA (ACA), RECTANGULAR"
+          "AIRSPACE COORDINATION AREA (ACA), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20928,7 +18627,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACAR--",
         name: "AIRSPACE COORDINATION AREA (ACA), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20939,7 +18638,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "AIRSPACE COORDINATION AREA (ACA)",
-          "AIRSPACE COORDINATION AREA (ACA), CIRCULAR"
+          "AIRSPACE COORDINATION AREA (ACA), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20947,7 +18646,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACAC--",
         name: "AIRSPACE COORDINATION AREA (ACA), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20957,7 +18656,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "COMMAND & CONTROL AREAS",
-          "FREE FIRE AREA (FFA)"
+          "FREE FIRE AREA (FFA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20965,7 +18664,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACF---",
         name: "FREE FIRE AREA (FFA)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20976,7 +18675,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "FREE FIRE AREA (FFA)",
-          "FREE FIRE AREA (FFA), IRREGULAR"
+          "FREE FIRE AREA (FFA), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20984,7 +18683,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACFI--",
         name: "FREE FIRE AREA (FFA), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20995,7 +18694,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "FREE FIRE AREA (FFA)",
-          "FREE FIRE AREA (FFA), RECTANGULAR"
+          "FREE FIRE AREA (FFA), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21003,7 +18702,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACFR--",
         name: "FREE FIRE AREA (FFA), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21014,7 +18713,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "FREE FIRE AREA (FFA)",
-          "FREE FIRE AREA (FFA), CIRCULAR"
+          "FREE FIRE AREA (FFA), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21022,7 +18721,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACFC--",
         name: "FREE FIRE AREA (FFA), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21032,7 +18731,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "COMMAND & CONTROL AREAS",
-          "NO-FIRE AREA (NFA)"
+          "NO-FIRE AREA (NFA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21040,7 +18739,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACN---",
         name: "NO-FIRE AREA (NFA)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21051,7 +18750,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "NO-FIRE AREA (NFA)",
-          "NO FIRE AREA (NFA), IRREGULAR"
+          "NO FIRE AREA (NFA), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21059,7 +18758,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACNI--",
         name: "NO FIRE AREA (NFA), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21070,7 +18769,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "NO-FIRE AREA (NFA)",
-          "NO FIRE AREA (NFA), RECTANGULAR"
+          "NO FIRE AREA (NFA), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21078,7 +18777,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACNR--",
         name: "NO FIRE AREA (NFA), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21089,7 +18788,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "NO-FIRE AREA (NFA)",
-          "NO FIRE AREA (NFA), CIRCULAR"
+          "NO FIRE AREA (NFA), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21097,7 +18796,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACNC--",
         name: "NO FIRE AREA (NFA), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21107,7 +18806,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "COMMAND & CONTROL AREAS",
-          "RESTRICTIVE FIRE AREA (RFA)"
+          "RESTRICTIVE FIRE AREA (RFA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21115,7 +18814,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACR---",
         name: "RESTRICTIVE FIRE AREA (RFA)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21126,7 +18825,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "RESTRICTIVE FIRE AREA (RFA)",
-          "RESTRICTIVE FIRE AREA (RFA), IRREGULAR"
+          "RESTRICTIVE FIRE AREA (RFA), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21134,7 +18833,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACRI--",
         name: "RESTRICTIVE FIRE AREA (RFA), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21145,7 +18844,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "RESTRICTIVE FIRE AREA (RFA)",
-          "RESTRICTIVE FIRE AREA (RFA), RECTANGULAR"
+          "RESTRICTIVE FIRE AREA (RFA), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21153,7 +18852,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACRR--",
         name: "RESTRICTIVE FIRE AREA (RFA), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21164,7 +18863,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "RESTRICTIVE FIRE AREA (RFA)",
-          "RESTRICTIVE FIRE AREA (RFA), CIRCULAR"
+          "RESTRICTIVE FIRE AREA (RFA), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21172,7 +18871,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACRC--",
         name: "RESTRICTIVE FIRE AREA (RFA), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21182,7 +18881,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "COMMAND & CONTROL AREAS",
-          "POSITION AREA FOR ARTILLERY (PAA)"
+          "POSITION AREA FOR ARTILLERY (PAA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21190,7 +18889,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACP---",
         name: "POSITION AREA FOR ARTILLERY (PAA)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21201,7 +18900,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "POSITION AREA FOR ARTILLERY (PAA)",
-          "POSITION AREA FOR ARTILLERY (PAA), RECTANGULAR"
+          "POSITION AREA FOR ARTILLERY (PAA), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21209,7 +18908,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ACPR--",
         name: "POSITION AREA FOR ARTILLERY (PAA), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21220,7 +18919,7 @@ export const ms2525b = {
           "AREAS",
           "COMMAND & CONTROL AREAS",
           "POSITION AREA FOR ARTILLERY (PAA)",
-          "POSITION AREA FOR ARTILLERY (PAA), CIRCULAR"
+          "POSITION AREA FOR ARTILLERY (PAA), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21228,24 +18927,19 @@ export const ms2525b = {
         status: "*",
         functionid: "ACPC--",
         name: "POSITION AREA FOR ARTILLERY (PAA), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.ARS.TGTAQZ",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "AREAS",
-          "TARGET ACQUISTION ZONES"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "AREAS", "TARGET ACQUISTION ZONES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "AZ----",
         name: "TARGET ACQUISTION ZONES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21255,7 +18949,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "TARGET ACQUISTION ZONES",
-          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE"
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21263,7 +18957,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZI---",
         name: "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21274,7 +18968,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE",
-          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, IRREGULAR"
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21282,7 +18976,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZII--",
         name: "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21293,7 +18987,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE",
-          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, RECTANGULAR"
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21301,7 +18995,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZIR--",
         name: "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21312,7 +19006,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE",
-          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, CIRCULAR"
+          "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21320,7 +19014,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZIC--",
         name: "ARTILLERY TARGET INTELLIGENCE (ATI) ZONE, CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21330,7 +19024,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "TARGET ACQUISTION ZONES",
-          "CALL FOR FIRE ZONE (CFFZ)"
+          "CALL FOR FIRE ZONE (CFFZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21338,7 +19032,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZX---",
         name: "CALL FOR FIRE ZONE (CFFZ)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21349,7 +19043,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "CALL FOR FIRE ZONE (CFFZ)",
-          "CALL FOR FIRE ZONE (CFFZ), IRREGULAR"
+          "CALL FOR FIRE ZONE (CFFZ), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21357,7 +19051,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZXI--",
         name: "CALL FOR FIRE ZONE (CFFZ), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21368,7 +19062,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "CALL FOR FIRE ZONE (CFFZ)",
-          "CALL FOR FIRE ZONE (CFFZ), RECTANGULAR"
+          "CALL FOR FIRE ZONE (CFFZ), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21376,7 +19070,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZXR--",
         name: "CALL FOR FIRE ZONE (CFFZ), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21387,7 +19081,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "CALL FOR FIRE ZONE (CFFZ)",
-          "CALL FOR FIRE ZONE (CFFZ), CIRCULAR"
+          "CALL FOR FIRE ZONE (CFFZ), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21395,7 +19089,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZXC--",
         name: "CALL FOR FIRE ZONE (CFFZ), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21405,7 +19099,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "TARGET ACQUISTION ZONES",
-          "SENSOR ZONE"
+          "SENSOR ZONE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21413,7 +19107,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZS---",
         name: "SENSOR ZONE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21424,7 +19118,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "SENSOR ZONE",
-          "SENSOR ZONE, IRREGULAR"
+          "SENSOR ZONE, IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21432,7 +19126,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZSI--",
         name: "SENSOR ZONE, IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21443,7 +19137,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "SENSOR ZONE",
-          "SENSOR ZONE, RECTANGULAR"
+          "SENSOR ZONE, RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21451,7 +19145,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZSR--",
         name: "SENSOR ZONE, RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21462,7 +19156,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "SENSOR ZONE",
-          "SENSOR ZONE, CIRCULAR"
+          "SENSOR ZONE, CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21470,7 +19164,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZSC--",
         name: "SENSOR ZONE, CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21480,7 +19174,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "TARGET ACQUISTION ZONES",
-          "CENSOR ZONE"
+          "CENSOR ZONE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21488,7 +19182,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZC---",
         name: "CENSOR ZONE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21499,7 +19193,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "CENSOR ZONE",
-          "CENSOR ZONE, IRREGULAR"
+          "CENSOR ZONE, IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21507,7 +19201,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZCI--",
         name: "CENSOR ZONE, IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21518,7 +19212,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "CENSOR ZONE",
-          "CENSOR ZONE, RECTANGULAR"
+          "CENSOR ZONE, RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21526,7 +19220,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZCR--",
         name: "CENSOR ZONE, RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21537,7 +19231,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "CENSOR ZONE",
-          "CENSOR ZONE, CIRCULAR"
+          "CENSOR ZONE, CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21545,7 +19239,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZCC--",
         name: "CENSOR ZONE, CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21555,7 +19249,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "TARGET ACQUISTION ZONES",
-          "DEAD SPACE AREA (DA)"
+          "DEAD SPACE AREA (DA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21563,7 +19257,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZD---",
         name: "DEAD SPACE AREA (DA)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21574,7 +19268,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "DEAD SPACE AREA (DA)",
-          "DEAD SPACE AREA (DA), IRREGULAR"
+          "DEAD SPACE AREA (DA), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21582,7 +19276,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZDI--",
         name: "DEAD SPACE AREA (DA), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21593,7 +19287,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "DEAD SPACE AREA (DA)",
-          "DEAD SPACE AREA (DA), RECTANGULAR"
+          "DEAD SPACE AREA (DA), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21601,7 +19295,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZDR--",
         name: "DEAD SPACE AREA (DA), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21612,7 +19306,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "DEAD SPACE AREA (DA)",
-          "DEAD SPACE AREA (DA), CIRCULAR"
+          "DEAD SPACE AREA (DA), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21620,7 +19314,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZDC--",
         name: "DEAD SPACE AREA (DA), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21630,7 +19324,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "TARGET ACQUISTION ZONES",
-          "CRITICAL FRIENDLY ZONE (CFZ)"
+          "CRITICAL FRIENDLY ZONE (CFZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21638,7 +19332,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZF---",
         name: "CRITICAL FRIENDLY ZONE (CFZ)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21649,7 +19343,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "CRITICAL FRIENDLY ZONE (CFZ)",
-          "CRITICAL FRIENDLY ZONE (CFZ), IRREGULAR"
+          "CRITICAL FRIENDLY ZONE (CFZ), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21657,7 +19351,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZFI--",
         name: "CRITICAL FRIENDLY ZONE (CFZ), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21668,7 +19362,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "CRITICAL FRIENDLY ZONE (CFZ)",
-          "CRITICAL FRIENDLY ZONE (CFZ), RECTANGULAR"
+          "CRITICAL FRIENDLY ZONE (CFZ), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21676,7 +19370,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZFR--",
         name: "CRITICAL FRIENDLY ZONE (CFZ), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21687,7 +19381,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "CRITICAL FRIENDLY ZONE (CFZ)",
-          "CRITICAL FRIENDLY ZONE (CFZ), CIRCULAR"
+          "CRITICAL FRIENDLY ZONE (CFZ), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21695,7 +19389,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZFC--",
         name: "CRITICAL FRIENDLY ZONE (CFZ), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21705,7 +19399,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "TARGET ACQUISTION ZONES",
-          "ZONE OF RESPONSIBILITY (ZOR)"
+          "ZONE OF RESPONSIBILITY (ZOR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21713,7 +19407,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZZ---",
         name: "ZONE OF RESPONSIBILITY (ZOR)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21724,7 +19418,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "ZONE OF RESPONSIBILITY (ZOR)",
-          "ZONE OF RESPONSIBILITY (ZOR), IRREGULAR"
+          "ZONE OF RESPONSIBILITY (ZOR), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21732,7 +19426,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZZI--",
         name: "ZONE OF RESPONSIBILITY (ZOR), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21743,7 +19437,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "ZONE OF RESPONSIBILITY (ZOR)",
-          "ZONE OF RESPONSIBILITY (ZOR), RECTANGULAR"
+          "ZONE OF RESPONSIBILITY (ZOR), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21751,7 +19445,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZZR--",
         name: "ZONE OF RESPONSIBILITY (ZOR), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21762,7 +19456,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "ZONE OF RESPONSIBILITY (ZOR)",
-          "ZONE OF RESPONSIBILITY (ZOR), CIRCULAR"
+          "ZONE OF RESPONSIBILITY (ZOR), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21770,7 +19464,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZZC--",
         name: "ZONE OF RESPONSIBILITY (ZOR), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21780,7 +19474,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "TARGET ACQUISTION ZONES",
-          "TARGET BUILD-UP AREA (TBA)"
+          "TARGET BUILD-UP AREA (TBA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21788,7 +19482,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZB---",
         name: "TARGET BUILD-UP AREA (TBA)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21799,7 +19493,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "TARGET BUILD-UP AREA (TBA)",
-          "TARGET BUILD UP AREA (TBA), IRREGULAR"
+          "TARGET BUILD UP AREA (TBA), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21807,7 +19501,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZBI--",
         name: "TARGET BUILD UP AREA (TBA), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21818,7 +19512,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "TARGET BUILD-UP AREA (TBA)",
-          "TARGET BUILD UP AREA (TBA), RECTANGULAR"
+          "TARGET BUILD UP AREA (TBA), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21826,7 +19520,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZBR--",
         name: "TARGET BUILD UP AREA (TBA), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21837,7 +19531,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "TARGET BUILD-UP AREA (TBA)",
-          "TARGET BUILD UP AREA (TBA), CIRCULAR"
+          "TARGET BUILD UP AREA (TBA), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21845,7 +19539,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZBC--",
         name: "TARGET BUILD UP AREA (TBA), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21855,7 +19549,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "TARGET ACQUISTION ZONES",
-          "TARGET VALUE AREA (TVAR)"
+          "TARGET VALUE AREA (TVAR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21863,7 +19557,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZV---",
         name: "TARGET VALUE AREA (TVAR)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21874,7 +19568,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "TARGET VALUE AREA (TVAR)",
-          "TARGET VALUE AREA (TVAR), IRREGULAR"
+          "TARGET VALUE AREA (TVAR), IRREGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21882,7 +19576,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZVI--",
         name: "TARGET VALUE AREA (TVAR), IRREGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21893,7 +19587,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "TARGET VALUE AREA (TVAR)",
-          "TARGET VALUE AREA (TVAR), RECTANGULAR"
+          "TARGET VALUE AREA (TVAR), RECTANGULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21901,7 +19595,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AZVR--",
         name: "TARGET VALUE AREA (TVAR), RECTANGULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21912,7 +19606,7 @@ export const ms2525b = {
           "AREAS",
           "TARGET ACQUISTION ZONES",
           "TARGET VALUE AREA (TVAR)",
-          "TARGET VALUE AREA (TVAR), CIRCULAR"
+          "TARGET VALUE AREA (TVAR), CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21920,24 +19614,19 @@ export const ms2525b = {
         status: "*",
         functionid: "AZVC--",
         name: "TARGET VALUE AREA (TVAR), CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.FSUPP.ARS.WPNRF",
-        names: [
-          "TACTICAL GRAPHICS",
-          "FIRE SUPPORT",
-          "AREAS",
-          "WEAPONS/RADAR RANGE FANS"
-        ],
+        names: ["TACTICAL GRAPHICS", "FIRE SUPPORT", "AREAS", "WEAPONS/RADAR RANGE FANS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "F",
         status: "*",
         functionid: "AX----",
         name: "WEAPONS/RADAR RANGE FANS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21947,7 +19636,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "WEAPONS/RADAR RANGE FANS",
-          "WEAPONS/RADAR RANGE FANS, CIRCULAR"
+          "WEAPONS/RADAR RANGE FANS, CIRCULAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21955,7 +19644,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AXC---",
         name: "WEAPONS/RADAR RANGE FANS, CIRCULAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21965,7 +19654,7 @@ export const ms2525b = {
           "FIRE SUPPORT",
           "AREAS",
           "WEAPONS/RADAR RANGE FANS",
-          "WEAPONS/RADAR RANGE FANS, SECTOR"
+          "WEAPONS/RADAR RANGE FANS, SECTOR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21973,38 +19662,31 @@ export const ms2525b = {
         status: "*",
         functionid: "AXS---",
         name: "WEAPONS/RADAR RANGE FANS, SECTOR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "------",
         name: "COMBAT SERVICE SUPPORT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.PNT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "POINTS"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "POINTS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "P-----",
         name: "POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -22013,7 +19695,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "AMBULANCE EXCHANGE POINT"
+          "AMBULANCE EXCHANGE POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22021,24 +19703,19 @@ export const ms2525b = {
         status: "*",
         functionid: "PX----",
         name: "AMBULANCE EXCHANGE POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.CSS.PNT.CBNP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "POINTS",
-          "CANNIBALIZATION POINT"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "POINTS", "CANNIBALIZATION POINT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "PC----",
         name: "CANNIBALIZATION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22047,7 +19724,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "CASUALTY COLLECTION POINT"
+          "CASUALTY COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22055,7 +19732,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PY----",
         name: "CASUALTY COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22064,7 +19741,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "CIVILIAN COLLECTION POINT"
+          "CIVILIAN COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22072,7 +19749,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PT----",
         name: "CIVILIAN COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22081,7 +19758,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "DETAINEE COLLECTION POINT"
+          "DETAINEE COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22089,7 +19766,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PD----",
         name: "DETAINEE COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22098,7 +19775,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "ENEMY PRISONER OF WAR (EPW) COLLECTION POINT"
+          "ENEMY PRISONER OF WAR (EPW) COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22106,7 +19783,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PE----",
         name: "ENEMY PRISONER OF WAR (EPW) COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22115,7 +19792,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "LOGISTICS RELEASE POINT (LRP)"
+          "LOGISTICS RELEASE POINT (LRP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22123,7 +19800,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PL----",
         name: "LOGISTICS RELEASE POINT (LRP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22132,7 +19809,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "MAINTENANCE COLLECTION POINT"
+          "MAINTENANCE COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22140,7 +19817,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PM----",
         name: "MAINTENANCE COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22149,7 +19826,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "REARM, REFUEL AND RESUPPLY POINT"
+          "REARM, REFUEL AND RESUPPLY POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22157,7 +19834,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PR----",
         name: "REARM, REFUEL AND RESUPPLY POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22166,7 +19843,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "REFUEL ON THE MOVE (ROM) POINT"
+          "REFUEL ON THE MOVE (ROM) POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22174,7 +19851,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PU----",
         name: "REFUEL ON THE MOVE (ROM) POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22183,7 +19860,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "TRAFFIC CONTROL POST (TCP)"
+          "TRAFFIC CONTROL POST (TCP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22191,24 +19868,19 @@ export const ms2525b = {
         status: "*",
         functionid: "PO----",
         name: "TRAFFIC CONTROL POST (TCP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.CSS.PNT.TTP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "POINTS",
-          "TRAILER TRANSFER POINT"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "POINTS", "TRAILER TRANSFER POINT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "PI----",
         name: "TRAILER TRANSFER POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22217,7 +19889,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "UNIT MAINTENANCE COLLECTION POINT"
+          "UNIT MAINTENANCE COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22225,24 +19897,19 @@ export const ms2525b = {
         status: "*",
         functionid: "PN----",
         name: "UNIT MAINTENANCE COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.PNT.SPT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "POINTS",
-          "SUPPLY POINTS"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "POINTS", "SUPPLY POINTS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "PS----",
         name: "SUPPLY POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -22252,7 +19919,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "GENERAL"
+          "GENERAL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22260,7 +19927,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSZ---",
         name: "GENERAL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22270,7 +19937,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS I"
+          "CLASS I",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22278,7 +19945,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSA---",
         name: "CLASS I",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22288,7 +19955,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS II"
+          "CLASS II",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22296,7 +19963,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSB---",
         name: "CLASS II",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22306,7 +19973,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS III"
+          "CLASS III",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22314,7 +19981,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSC---",
         name: "CLASS III",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22324,7 +19991,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS IV"
+          "CLASS IV",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22332,7 +19999,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSD---",
         name: "CLASS IV",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22342,7 +20009,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS V"
+          "CLASS V",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22350,7 +20017,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSE---",
         name: "CLASS V",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22360,7 +20027,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS VI"
+          "CLASS VI",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22368,7 +20035,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSF---",
         name: "CLASS VI",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22378,7 +20045,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS VII"
+          "CLASS VII",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22386,7 +20053,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSG---",
         name: "CLASS VII",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22396,7 +20063,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS VIII"
+          "CLASS VIII",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22404,7 +20071,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSH---",
         name: "CLASS VIII",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22414,7 +20081,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS IX"
+          "CLASS IX",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22422,7 +20089,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PSI---",
         name: "CLASS IX",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22432,7 +20099,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS X"
+          "CLASS X",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22440,24 +20107,19 @@ export const ms2525b = {
         status: "*",
         functionid: "PSJ---",
         name: "CLASS X",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.PNT.AP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "POINTS",
-          "AMMUNITION POINTS"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "POINTS", "AMMUNITION POINTS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "PA----",
         name: "AMMUNITION POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -22467,7 +20129,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "AMMUNITION POINTS",
-          "AMMUNITION SUPPLY POINT (ASP)"
+          "AMMUNITION SUPPLY POINT (ASP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22475,7 +20137,7 @@ export const ms2525b = {
         status: "*",
         functionid: "PAS---",
         name: "AMMUNITION SUPPLY POINT (ASP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22485,7 +20147,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "AMMUNITION POINTS",
-          "AMMUNITION TRANSFER POINT (ATP)"
+          "AMMUNITION TRANSFER POINT (ATP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22493,93 +20155,67 @@ export const ms2525b = {
         status: "*",
         functionid: "PAT---",
         name: "AMMUNITION TRANSFER POINT (ATP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.LNE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "LINES"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "LINES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "L-----",
         name: "LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.LNE.CNY",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "LINES",
-          "CONVOYS"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "LINES", "CONVOYS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "LC----",
         name: "CONVOYS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.LNE.CNY.MCNY",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "LINES",
-          "CONVOYS",
-          "MOVING CONVOY"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "LINES", "CONVOYS", "MOVING CONVOY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "LCM---",
         name: "MOVING CONVOY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.LNE.CNY.HCNY",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "LINES",
-          "CONVOYS",
-          "HALTED CONVOY"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "LINES", "CONVOYS", "HALTED CONVOY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "LCH---",
         name: "HALTED CONVOY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.LNE.SLPRUT",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "LINES",
-          "SUPPLY ROUTES"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "LINES", "SUPPLY ROUTES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "LR----",
         name: "SUPPLY ROUTES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -22589,7 +20225,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "MAIN SUPPLY ROUTE"
+          "MAIN SUPPLY ROUTE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22597,7 +20233,7 @@ export const ms2525b = {
         status: "*",
         functionid: "LRM---",
         name: "MAIN SUPPLY ROUTE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22607,7 +20243,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "ALTERNATE SUPPLY ROUTE"
+          "ALTERNATE SUPPLY ROUTE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22615,7 +20251,7 @@ export const ms2525b = {
         status: "*",
         functionid: "LRA---",
         name: "ALTERNATE SUPPLY ROUTE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22625,7 +20261,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "ONE-WAY TRAFFIC"
+          "ONE-WAY TRAFFIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22633,7 +20269,7 @@ export const ms2525b = {
         status: "*",
         functionid: "LRO---",
         name: "ONE-WAY TRAFFIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22643,7 +20279,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "ALTERNATING TRAFFIC"
+          "ALTERNATING TRAFFIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22651,7 +20287,7 @@ export const ms2525b = {
         status: "*",
         functionid: "LRT---",
         name: "ALTERNATING TRAFFIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22661,7 +20297,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "TWO-WAY TRAFFIC"
+          "TWO-WAY TRAFFIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22669,40 +20305,31 @@ export const ms2525b = {
         status: "*",
         functionid: "LRW---",
         name: "TWO-WAY TRAFFIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.ARA",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "AREA"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "AREA"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "A-----",
         name: "AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.ARA.DHA",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "AREA",
-          "DETAINEE HOLDING AREA"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "AREA", "DETAINEE HOLDING AREA"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "AD----",
         name: "DETAINEE HOLDING AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22711,7 +20338,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "AREA",
-          "ENEMY PRISONER OF WAR (EPW) HOLDING AREA"
+          "ENEMY PRISONER OF WAR (EPW) HOLDING AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22719,7 +20346,7 @@ export const ms2525b = {
         status: "*",
         functionid: "AE----",
         name: "ENEMY PRISONER OF WAR (EPW) HOLDING AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22728,7 +20355,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "COMBAT SERVICE SUPPORT",
           "AREA",
-          "FORWARD ARMING AND REFUELING AREA (FARP)"
+          "FORWARD ARMING AND REFUELING AREA (FARP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22736,41 +20363,31 @@ export const ms2525b = {
         status: "*",
         functionid: "AR----",
         name: "FORWARD ARMING AND REFUELING AREA (FARP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.ARA.RHA",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "AREA",
-          "REFUGEE HOLDING AREA"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "AREA", "REFUGEE HOLDING AREA"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "AH----",
         name: "REFUGEE HOLDING AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.CSS.ARA.SUPARS",
-        names: [
-          "TACTICAL GRAPHICS",
-          "COMBAT SERVICE SUPPORT",
-          "AREA",
-          "SUPPORT AREAS"
-        ],
+        names: ["TACTICAL GRAPHICS", "COMBAT SERVICE SUPPORT", "AREA", "SUPPORT AREAS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "AS----",
         name: "SUPPORT AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -22780,7 +20397,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "AREA",
           "SUPPORT AREAS",
-          "BRIGADE (BSA)"
+          "BRIGADE (BSA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22788,7 +20405,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ASB---",
         name: "BRIGADE (BSA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22798,7 +20415,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "AREA",
           "SUPPORT AREAS",
-          "DIVISION (DSA)"
+          "DIVISION (DSA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22806,7 +20423,7 @@ export const ms2525b = {
         status: "*",
         functionid: "ASD---",
         name: "DIVISION (DSA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22816,7 +20433,7 @@ export const ms2525b = {
           "COMBAT SERVICE SUPPORT",
           "AREA",
           "SUPPORT AREAS",
-          "REGIMENTAL (RSA)"
+          "REGIMENTAL (RSA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22824,206 +20441,151 @@ export const ms2525b = {
         status: "*",
         functionid: "ASR---",
         name: "REGIMENTAL (RSA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "------",
         name: "OTHER",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.ER",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "EMERGENCY"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "EMERGENCY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "E-----",
         name: "EMERGENCY",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.ER.DTHAC",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "EMERGENCY",
-          "DITCHED AIRCRAFT"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "EMERGENCY", "DITCHED AIRCRAFT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "ED----",
         name: "DITCHED AIRCRAFT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.ER.PIW",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "EMERGENCY",
-          "PERSON IN WATER"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "EMERGENCY", "PERSON IN WATER"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "EP----",
         name: "PERSON IN WATER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.ER.DSTVES",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "EMERGENCY",
-          "DISTRESSED VESSEL"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "EMERGENCY", "DISTRESSED VESSEL"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "EV----",
         name: "DISTRESSED VESSEL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.HAZ",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "HAZARD"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "HAZARD"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "H-----",
         name: "HAZARD",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.HAZ.SML",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "HAZARD",
-          "SEA MINE-LIKE"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "HAZARD", "SEA MINE-LIKE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "HM----",
         name: "SEA MINE-LIKE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.HAZ.NVGL",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "HAZARD",
-          "NAVIGATIONAL"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "HAZARD", "NAVIGATIONAL"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "HN----",
         name: "NAVIGATIONAL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.HAZ.IB",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "HAZARD",
-          "ICEBERG"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "HAZARD", "ICEBERG"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "HI----",
         name: "ICEBERG",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.HAZ.OLRG",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "HAZARD",
-          "OIL RIG"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "HAZARD", "OIL RIG"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "HO----",
         name: "OIL RIG",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.SSUBSR",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "SEA SUBSURFACE RETURNS"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "SEA SUBSURFACE RETURNS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "S-----",
         name: "SEA SUBSURFACE RETURNS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.SSUBSR.BTMRTN",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "SEA SUBSURFACE RETURNS",
-          "BOTTOM RETURN/NOMBO"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "SEA SUBSURFACE RETURNS", "BOTTOM RETURN/NOMBO"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "SB----",
         name: "BOTTOM RETURN/NOMBO",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23033,7 +20595,7 @@ export const ms2525b = {
           "OTHER",
           "SEA SUBSURFACE RETURNS",
           "BOTTOM RETURN/NOMBO",
-          "INSTALLATION/MANMADE"
+          "INSTALLATION/MANMADE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23041,7 +20603,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SBM---",
         name: "INSTALLATION/MANMADE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23051,7 +20613,7 @@ export const ms2525b = {
           "OTHER",
           "SEA SUBSURFACE RETURNS",
           "BOTTOM RETURN/NOMBO",
-          "SEABED ROCK/STONE, OBSTACLE, OTHER"
+          "SEABED ROCK/STONE, OBSTACLE, OTHER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23059,7 +20621,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SBN---",
         name: "SEABED ROCK/STONE, OBSTACLE, OTHER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23069,7 +20631,7 @@ export const ms2525b = {
           "OTHER",
           "SEA SUBSURFACE RETURNS",
           "BOTTOM RETURN/NOMBO",
-          "WRECK, NON DANGEROUS"
+          "WRECK, NON DANGEROUS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23077,7 +20639,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SBW---",
         name: "WRECK, NON DANGEROUS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23088,7 +20650,7 @@ export const ms2525b = {
           "SEA SUBSURFACE RETURNS",
           "BOTTOM RETURN/NOMBO",
           "WRECK, NON DANGEROUS",
-          "WRECK, DANGEROUS"
+          "WRECK, DANGEROUS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23096,24 +20658,19 @@ export const ms2525b = {
         status: "*",
         functionid: "SBWD--",
         name: "WRECK, DANGEROUS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.SSUBSR.MARLFE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "SEA SUBSURFACE RETURNS",
-          "MARINE LIFE"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "SEA SUBSURFACE RETURNS", "MARINE LIFE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "SM----",
         name: "MARINE LIFE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23122,7 +20679,7 @@ export const ms2525b = {
           "TACTICAL GRAPHICS",
           "OTHER",
           "SEA SUBSURFACE RETURNS",
-          "SEA ANOMALY (WAKE, CURRENT, KNUCKLE)"
+          "SEA ANOMALY (WAKE, CURRENT, KNUCKLE)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23130,221 +20687,164 @@ export const ms2525b = {
         status: "*",
         functionid: "SS----",
         name: "SEA ANOMALY (WAKE, CURRENT, KNUCKLE)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.BERLNE",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "BEARING LINE"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "BEARING LINE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "B-----",
         name: "BEARING LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.BERLNE.ELC",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "BEARING LINE",
-          "ELECTRONIC"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "BEARING LINE", "ELECTRONIC"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "BE----",
         name: "ELECTRONIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.BERLNE.ACU",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "BEARING LINE",
-          "ACOUSTIC"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "BEARING LINE", "ACOUSTIC"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "BA----",
         name: "ACOUSTIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.BERLNE.TPD",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "BEARING LINE",
-          "TORPEDO"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "BEARING LINE", "TORPEDO"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "BT----",
         name: "TORPEDO",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.BERLNE.EOPI",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "BEARING LINE",
-          "ELECTRO-OPTICAL INTERCEPT"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "BEARING LINE", "ELECTRO-OPTICAL INTERCEPT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "BO----",
         name: "ELECTRO-OPTICAL INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "TACGRP.OTH.FIX",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "FIX"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "FIX"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "F-----",
         name: "FIX",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.FIX.ACU",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "FIX",
-          "ACOUSTIC"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "FIX", "ACOUSTIC"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "FA----",
         name: "ACOUSTIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.FIX.EM",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "FIX",
-          "ELECTRO-MAGNETIC"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "FIX", "ELECTRO-MAGNETIC"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "FE----",
         name: "ELECTRO-MAGNETIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "TACGRP.OTH.FIX.EOP",
-        names: [
-          "TACTICAL GRAPHICS",
-          "OTHER",
-          "FIX",
-          "ELECTRO-OPTICAL"
-        ],
+        names: ["TACTICAL GRAPHICS", "OTHER", "FIX", "ELECTRO-OPTICAL"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "FO----",
         name: "ELECTRO-OPTICAL",
-        remarks: ""
-      }
-    ]
+        remarks: "",
+      },
+    ],
   },
   SIGINT: {
     name: "SIGNALS INTELLIGENCE",
     mainIcon: [
       {
         hierarchy: "SIGINT",
-        names: [
-          "SIGNALS INTELLIGENCE"
-        ],
+        names: ["SIGNALS INTELLIGENCE"],
         codingscheme: "I",
         affiliation: "-",
         battledimension: "-",
         status: "*",
         functionid: "------",
         name: "SIGNALS INTELLIGENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SPACE TRACK"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SPACE TRACK"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "P",
         status: "*",
         functionid: "------",
         name: "SPACE TRACK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SPACE TRACK",
-          "SIGNAL INTERCEPT"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SPACE TRACK", "SIGNAL INTERCEPT"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "P",
         status: "*",
         functionid: "S-----",
         name: "SIGNAL INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.COMM",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SPACE TRACK",
-          "SIGNAL INTERCEPT",
-          "COMMUNICATIONS"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SPACE TRACK", "SIGNAL INTERCEPT", "COMMUNICATIONS"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "P",
         status: "*",
         functionid: "SC----",
         name: "COMMUNICATIONS",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.COMM.SATDL",
@@ -23353,7 +20853,7 @@ export const ms2525b = {
           "SPACE TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "SATELLITE DOWN-LINK"
+          "SATELLITE DOWN-LINK",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23361,23 +20861,18 @@ export const ms2525b = {
         status: "*",
         functionid: "SCD---",
         name: "SATELLITE DOWN-LINK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.RAD",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SPACE TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SPACE TRACK", "SIGNAL INTERCEPT", "RADAR"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "P",
         status: "*",
         functionid: "SR----",
         name: "RADAR",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.RAD.DATTMN",
@@ -23386,7 +20881,7 @@ export const ms2525b = {
           "SPACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "DATA TRANSMISSION"
+          "DATA TRANSMISSION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23394,7 +20889,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRD---",
         name: "DATA TRANSMISSION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.RAD.ERHSVL",
@@ -23403,7 +20898,7 @@ export const ms2525b = {
           "SPACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "EARTH SURVEILLANCE"
+          "EARTH SURVEILLANCE",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23411,7 +20906,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRE---",
         name: "EARTH SURVEILLANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.RAD.IFF",
@@ -23420,7 +20915,7 @@ export const ms2525b = {
           "SPACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "IFF (TRANSPONDER)"
+          "IFF (TRANSPONDER)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23428,7 +20923,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRI---",
         name: "IFF (TRANSPONDER)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.RAD.MFN",
@@ -23437,7 +20932,7 @@ export const ms2525b = {
           "SPACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MULTI-FUNCTION"
+          "MULTI-FUNCTION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23445,7 +20940,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRM---",
         name: "MULTI-FUNCTION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.RAD.TGTAQ",
@@ -23454,7 +20949,7 @@ export const ms2525b = {
           "SPACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET ACQUISITION"
+          "TARGET ACQUISITION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23462,86 +20957,62 @@ export const ms2525b = {
         status: "*",
         functionid: "SRT---",
         name: "TARGET ACQUISITION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.RAD.SPC",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SPACE TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR",
-          "SPACE"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SPACE TRACK", "SIGNAL INTERCEPT", "RADAR", "SPACE"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "P",
         status: "*",
         functionid: "SRS---",
         name: "SPACE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SPC.SIGINC.RAD.UNK",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SPACE TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR",
-          "UNKNOWN"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SPACE TRACK", "SIGNAL INTERCEPT", "RADAR", "UNKNOWN"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "P",
         status: "*",
         functionid: "SRU---",
         name: "UNKNOWN",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "AIR TRACK"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "AIR TRACK"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "A",
         status: "*",
         functionid: "------",
         name: "AIR TRACK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "AIR TRACK",
-          "SIGNAL INTERCEPT"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "AIR TRACK", "SIGNAL INTERCEPT"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "A",
         status: "*",
         functionid: "S-----",
         name: "SIGNAL INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.COMM",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "AIR TRACK",
-          "SIGNAL INTERCEPT",
-          "COMMUNICATIONS"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "AIR TRACK", "SIGNAL INTERCEPT", "COMMUNICATIONS"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "A",
         status: "*",
         functionid: "SC----",
         name: "COMMUNICATIONS",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.COMM.CELL",
@@ -23550,7 +21021,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "CELLULAR/MOBILE"
+          "CELLULAR/MOBILE",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23558,7 +21029,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCC---",
         name: "CELLULAR/MOBILE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.COMM.OLOS",
@@ -23567,7 +21038,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "OMNI-LINE-OF-SIGHT (LOS)"
+          "OMNI-LINE-OF-SIGHT (LOS)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23575,7 +21046,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCO---",
         name: "OMNI-LINE-OF-SIGHT (LOS)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.COMM.PTPLOS",
@@ -23584,7 +21055,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "POINT-TO-POINT LINE-OF-SIGHT (LOS)"
+          "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23592,7 +21063,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCP---",
         name: "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.COMM.SATUL",
@@ -23601,7 +21072,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "SATELLITE UP-LINK"
+          "SATELLITE UP-LINK",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23609,23 +21080,18 @@ export const ms2525b = {
         status: "*",
         functionid: "SCS---",
         name: "SATELLITE UP-LINK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "AIR TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "AIR TRACK", "SIGNAL INTERCEPT", "RADAR"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "A",
         status: "*",
         functionid: "SR----",
         name: "RADAR",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.ABNINC",
@@ -23634,7 +21100,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "AIRBORNE INTERCEPT"
+          "AIRBORNE INTERCEPT",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23642,7 +21108,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRAI--",
         name: "AIRBORNE INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.ABNSB",
@@ -23651,7 +21117,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "AIRBORNE SEARCH & BOMBING"
+          "AIRBORNE SEARCH & BOMBING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23659,7 +21125,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRAS--",
         name: "AIRBORNE SEARCH & BOMBING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.CTDINC",
@@ -23668,7 +21134,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "CONTROLLED INTERCEPT"
+          "CONTROLLED INTERCEPT",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23676,7 +21142,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRC---",
         name: "CONTROLLED INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.DATTMN",
@@ -23685,7 +21151,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "DATA TRANSMISSION"
+          "DATA TRANSMISSION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23693,41 +21159,29 @@ export const ms2525b = {
         status: "*",
         functionid: "SRD---",
         name: "DATA TRANSMISSION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.EW",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "AIR TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR",
-          "EARLY WARNING"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "AIR TRACK", "SIGNAL INTERCEPT", "RADAR", "EARLY WARNING"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "A",
         status: "*",
         functionid: "SRE---",
         name: "EARLY WARNING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.FIRCTL",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "AIR TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR",
-          "FIRE CONTROL"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "AIR TRACK", "SIGNAL INTERCEPT", "RADAR", "FIRE CONTROL"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "A",
         status: "*",
         functionid: "SRF---",
         name: "FIRE CONTROL",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.IFF",
@@ -23736,7 +21190,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "IFF (TRANSPONDER)"
+          "IFF (TRANSPONDER)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23744,7 +21198,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRI---",
         name: "IFF (TRANSPONDER)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MSLAQ",
@@ -23753,7 +21207,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE ACQUISITION"
+          "MISSILE ACQUISITION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23761,7 +21215,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMA--",
         name: "MISSILE ACQUISITION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MSLDL",
@@ -23770,7 +21224,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE DOWNLINK"
+          "MISSILE DOWNLINK",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23778,7 +21232,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMD--",
         name: "MISSILE DOWNLINK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MSLGDN",
@@ -23787,7 +21241,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE GUIDANCE"
+          "MISSILE GUIDANCE",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23795,7 +21249,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMG--",
         name: "MISSILE GUIDANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MSLTRK",
@@ -23804,7 +21258,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE TRACKING"
+          "MISSILE TRACKING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23812,24 +21266,18 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMT--",
         name: "MISSILE TRACKING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.MFN",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "AIR TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR",
-          "MULTI-FUNCTION"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "AIR TRACK", "SIGNAL INTERCEPT", "RADAR", "MULTI-FUNCTION"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "A",
         status: "*",
         functionid: "SRMF--",
         name: "MULTI-FUNCTION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.TGTILL",
@@ -23838,7 +21286,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET ILLUMINATOR"
+          "TARGET ILLUMINATOR",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23846,7 +21294,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRTI--",
         name: "TARGET ILLUMINATOR",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.TGTAQ",
@@ -23855,7 +21303,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET ACQUISITION"
+          "TARGET ACQUISITION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23863,7 +21311,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRTA--",
         name: "TARGET ACQUISITION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.TGTTRK",
@@ -23872,7 +21320,7 @@ export const ms2525b = {
           "AIR TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET TRACKING"
+          "TARGET TRACKING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23880,69 +21328,51 @@ export const ms2525b = {
         status: "*",
         functionid: "SRTT--",
         name: "TARGET TRACKING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.AIRTRK.SIGINC.RAD.UNK",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "AIR TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR",
-          "UNKNOWN"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "AIR TRACK", "SIGNAL INTERCEPT", "RADAR", "UNKNOWN"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "A",
         status: "*",
         functionid: "SRU---",
         name: "UNKNOWN",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "GROUND TRACK"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "GROUND TRACK"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "------",
         name: "GROUND TRACK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "GROUND TRACK",
-          "SIGNAL INTERCEPT"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "GROUND TRACK", "SIGNAL INTERCEPT"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "S-----",
         name: "SIGNAL INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.COMM",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "GROUND TRACK",
-          "SIGNAL INTERCEPT",
-          "COMMUNICATIONS"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "GROUND TRACK", "SIGNAL INTERCEPT", "COMMUNICATIONS"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "SC----",
         name: "COMMUNICATIONS",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.CELL",
@@ -23951,7 +21381,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "CELLULAR/MOBILE"
+          "CELLULAR/MOBILE",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23959,7 +21389,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCC---",
         name: "CELLULAR/MOBILE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.OLOS",
@@ -23968,7 +21398,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "OMNI-LINE-OF-SIGHT (LOS)"
+          "OMNI-LINE-OF-SIGHT (LOS)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23976,7 +21406,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCO---",
         name: "OMNI-LINE-OF-SIGHT (LOS)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.PTPLOS",
@@ -23985,7 +21415,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "POINT-TO-POINT LINE-OF-SIGHT (LOS)"
+          "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -23993,7 +21423,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCP---",
         name: "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.SATUL",
@@ -24002,7 +21432,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "SATELLITE UP-LINK"
+          "SATELLITE UP-LINK",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24010,7 +21440,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCS---",
         name: "SATELLITE UP-LINK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.COMM.TPSSCT",
@@ -24019,7 +21449,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "TROPOSPHERIC SCATTER"
+          "TROPOSPHERIC SCATTER",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24027,23 +21457,18 @@ export const ms2525b = {
         status: "*",
         functionid: "SCT---",
         name: "TROPOSPHERIC SCATTER",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "GROUND TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "GROUND TRACK", "SIGNAL INTERCEPT", "RADAR"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "SR----",
         name: "RADAR",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.ATCTL",
@@ -24052,7 +21477,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "AIR TRAFFIC CONTROL"
+          "AIR TRAFFIC CONTROL",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24060,7 +21485,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRAT--",
         name: "AIR TRAFFIC CONTROL",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.AA/C",
@@ -24069,7 +21494,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "ANTI-AIRCRAFT"
+          "ANTI-AIRCRAFT",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24077,7 +21502,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRAA--",
         name: "ANTI-AIRCRAFT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.BTFSVL",
@@ -24086,7 +21511,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "BATTLEFIELD SURVEILLANCE"
+          "BATTLEFIELD SURVEILLANCE",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24094,7 +21519,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRB---",
         name: "BATTLEFIELD SURVEILLANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.CSTSVL",
@@ -24103,7 +21528,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "COASTAL SURVEILLANCE"
+          "COASTAL SURVEILLANCE",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24111,7 +21536,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRCS--",
         name: "COASTAL SURVEILLANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.CTDAPP",
@@ -24120,7 +21545,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "CONTROLLED APPROACH"
+          "CONTROLLED APPROACH",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24128,7 +21553,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRCA--",
         name: "CONTROLLED APPROACH",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.DATTMN",
@@ -24137,7 +21562,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "DATA TRANSMISSION"
+          "DATA TRANSMISSION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24145,7 +21570,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRD---",
         name: "DATA TRANSMISSION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.EW",
@@ -24154,7 +21579,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "EARLY WARNING"
+          "EARLY WARNING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24162,7 +21587,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRE---",
         name: "EARLY WARNING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.FIRCTL",
@@ -24171,7 +21596,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "FIRE CONTROL"
+          "FIRE CONTROL",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24179,7 +21604,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRF---",
         name: "FIRE CONTROL",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.HGTFDG",
@@ -24188,7 +21613,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "HEIGHT FINDING"
+          "HEIGHT FINDING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24196,7 +21621,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRH---",
         name: "HEIGHT FINDING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.IDFF",
@@ -24205,7 +21630,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "IDENTIFICATION FRIEND/FOE (INTERROGATOR)"
+          "IDENTIFICATION FRIEND/FOE (INTERROGATOR)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24213,7 +21638,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRI---",
         name: "IDENTIFICATION FRIEND/FOE (INTERROGATOR)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.METO",
@@ -24222,7 +21647,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "METEOROLOGICAL (MILITARY)"
+          "METEOROLOGICAL (MILITARY)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24230,7 +21655,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMM--",
         name: "METEOROLOGICAL (MILITARY)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.MSLAQ",
@@ -24239,7 +21664,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE ACQUISITION"
+          "MISSILE ACQUISITION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24247,7 +21672,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMA--",
         name: "MISSILE ACQUISITION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.MSLGDN",
@@ -24256,7 +21681,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE GUIDANCE"
+          "MISSILE GUIDANCE",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24264,7 +21689,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMG--",
         name: "MISSILE GUIDANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.MSLTRK",
@@ -24273,7 +21698,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE TRACKING"
+          "MISSILE TRACKING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24281,7 +21706,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMT--",
         name: "MISSILE TRACKING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.MFN",
@@ -24290,7 +21715,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MULTI-FUNCTION"
+          "MULTI-FUNCTION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24298,7 +21723,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMF--",
         name: "MULTI-FUNCTION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.SHETKG",
@@ -24307,7 +21732,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "SHELL TRACKING"
+          "SHELL TRACKING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24315,7 +21740,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRS---",
         name: "SHELL TRACKING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.TGTAQ",
@@ -24324,7 +21749,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET ACQUISITION"
+          "TARGET ACQUISITION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24332,7 +21757,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRTA--",
         name: "TARGET ACQUISITION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.TGTILL",
@@ -24341,7 +21766,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET ILLUMINATOR"
+          "TARGET ILLUMINATOR",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24349,7 +21774,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRTI--",
         name: "TARGET ILLUMINATOR",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.TGTTRK",
@@ -24358,7 +21783,7 @@ export const ms2525b = {
           "GROUND TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET TRACKING"
+          "TARGET TRACKING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24366,69 +21791,51 @@ export const ms2525b = {
         status: "*",
         functionid: "SRTT--",
         name: "TARGET TRACKING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.GRDTRK.SIGINC.RAD.UNK",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "GROUND TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR",
-          "UNKNOWN"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "GROUND TRACK", "SIGNAL INTERCEPT", "RADAR", "UNKNOWN"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "G",
         status: "*",
         functionid: "SRU---",
         name: "UNKNOWN",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SEA SURFACE TRACK"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SEA SURFACE TRACK"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "------",
         name: "SEA SURFACE TRACK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SEA SURFACE TRACK",
-          "SIGNAL INTERCEPT"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SEA SURFACE TRACK", "SIGNAL INTERCEPT"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "S-----",
         name: "SIGNAL INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.COMM",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SEA SURFACE TRACK",
-          "SIGNAL INTERCEPT",
-          "COMMUNICATIONS"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SEA SURFACE TRACK", "SIGNAL INTERCEPT", "COMMUNICATIONS"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "SC----",
         name: "COMMUNICATIONS",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.COMM.CELL",
@@ -24437,7 +21844,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "CELLULAR/MOBILE"
+          "CELLULAR/MOBILE",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24445,7 +21852,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCC---",
         name: "CELLULAR/MOBILE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.COMM.OLOS",
@@ -24454,7 +21861,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "OMNI-LINE-OF-SIGHT (LOS)"
+          "OMNI-LINE-OF-SIGHT (LOS)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24462,7 +21869,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCO---",
         name: "OMNI-LINE-OF-SIGHT (LOS)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.COMM.PTPLOS",
@@ -24471,7 +21878,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "POINT-TO-POINT LINE-OF-SIGHT (LOS)"
+          "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24479,7 +21886,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCP---",
         name: "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.COMM.SATUL",
@@ -24488,7 +21895,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "SATELLITE UP-LINK"
+          "SATELLITE UP-LINK",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24496,23 +21903,18 @@ export const ms2525b = {
         status: "*",
         functionid: "SCS---",
         name: "SATELLITE UP-LINK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SEA SURFACE TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SEA SURFACE TRACK", "SIGNAL INTERCEPT", "RADAR"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "S",
         status: "*",
         functionid: "SR----",
         name: "RADAR",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.ATCTL",
@@ -24521,7 +21923,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "AIR TRAFFIC CONTROL"
+          "AIR TRAFFIC CONTROL",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24529,7 +21931,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRAT--",
         name: "AIR TRAFFIC CONTROL",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.AA/C",
@@ -24538,7 +21940,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "ANTI-AIRCRAFT"
+          "ANTI-AIRCRAFT",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24546,7 +21948,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRAA--",
         name: "ANTI-AIRCRAFT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.CTDAPP",
@@ -24555,7 +21957,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "CONTROLLED APPROACH"
+          "CONTROLLED APPROACH",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24563,7 +21965,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRCA--",
         name: "CONTROLLED APPROACH",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.CTDINC",
@@ -24572,7 +21974,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "CONTROLLED INTERCEPT"
+          "CONTROLLED INTERCEPT",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24580,7 +21982,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRCI--",
         name: "CONTROLLED INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.DATTMN",
@@ -24589,7 +21991,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "DATA TRANSMISSION"
+          "DATA TRANSMISSION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24597,7 +21999,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRD---",
         name: "DATA TRANSMISSION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.EW",
@@ -24606,7 +22008,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "EARLY WARNING"
+          "EARLY WARNING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24614,7 +22016,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRE---",
         name: "EARLY WARNING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.FIRCTL",
@@ -24623,7 +22025,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "FIRE CONTROL"
+          "FIRE CONTROL",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24631,7 +22033,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRF---",
         name: "FIRE CONTROL",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.HGTFDG",
@@ -24640,7 +22042,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "HEIGHT FINDING"
+          "HEIGHT FINDING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24648,7 +22050,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRH---",
         name: "HEIGHT FINDING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.IDFF",
@@ -24657,7 +22059,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "IDENTIFICATION FRIEND/FOE (INTERROGATOR)"
+          "IDENTIFICATION FRIEND/FOE (INTERROGATOR)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24665,7 +22067,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRI---",
         name: "IDENTIFICATION FRIEND/FOE (INTERROGATOR)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.METO",
@@ -24674,7 +22076,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "METEOROLOGICAL (MILITARY)"
+          "METEOROLOGICAL (MILITARY)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24682,7 +22084,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMM--",
         name: "METEOROLOGICAL (MILITARY)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.MSLAQ",
@@ -24691,7 +22093,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE ACQUISITION"
+          "MISSILE ACQUISITION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24699,7 +22101,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMA--",
         name: "MISSILE ACQUISITION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.MSLGDN",
@@ -24708,7 +22110,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE GUIDANCE"
+          "MISSILE GUIDANCE",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24716,7 +22118,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMG--",
         name: "MISSILE GUIDANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.MSLTRK",
@@ -24725,7 +22127,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MISSILE TRACKING"
+          "MISSILE TRACKING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24733,7 +22135,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMT--",
         name: "MISSILE TRACKING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.MFN",
@@ -24742,7 +22144,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MULTI-FUNCTION"
+          "MULTI-FUNCTION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24750,7 +22152,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRMF--",
         name: "MULTI-FUNCTION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.SUFSRH",
@@ -24759,7 +22161,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "SURFACE SEARCH"
+          "SURFACE SEARCH",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24767,7 +22169,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRS---",
         name: "SURFACE SEARCH",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.TGTAQ",
@@ -24776,7 +22178,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET ACQUISITION"
+          "TARGET ACQUISITION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24784,7 +22186,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRTA--",
         name: "TARGET ACQUISITION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.TGTILL",
@@ -24793,7 +22195,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET ILLUMINATOR"
+          "TARGET ILLUMINATOR",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24801,7 +22203,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRTI--",
         name: "TARGET ILLUMINATOR",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.TGTTRK",
@@ -24810,7 +22212,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET TRACKING"
+          "TARGET TRACKING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24818,7 +22220,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRTT--",
         name: "TARGET TRACKING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SSUF.SIGINC.RAD.UNK",
@@ -24827,7 +22229,7 @@ export const ms2525b = {
           "SEA SURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "UNKNOWN"
+          "UNKNOWN",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24835,52 +22237,40 @@ export const ms2525b = {
         status: "*",
         functionid: "SRU---",
         name: "UNKNOWN",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SUBSURFACE TRACK"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SUBSURFACE TRACK"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "U",
         status: "*",
         functionid: "------",
         name: "SUBSURFACE TRACK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SUBSURFACE TRACK",
-          "SIGNAL INTERCEPT"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SUBSURFACE TRACK", "SIGNAL INTERCEPT"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "U",
         status: "*",
         functionid: "S-----",
         name: "SIGNAL INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.COMM",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SUBSURFACE TRACK",
-          "SIGNAL INTERCEPT",
-          "COMMUNICATIONS"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SUBSURFACE TRACK", "SIGNAL INTERCEPT", "COMMUNICATIONS"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "U",
         status: "*",
         functionid: "SC----",
         name: "COMMUNICATIONS",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.COMM.OLOS",
@@ -24889,7 +22279,7 @@ export const ms2525b = {
           "SUBSURFACE TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "OMNI-LINE-OF-SIGHT (LOS)"
+          "OMNI-LINE-OF-SIGHT (LOS)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24897,7 +22287,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCO---",
         name: "OMNI-LINE-OF-SIGHT (LOS)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.COMM.PTPLOS",
@@ -24906,7 +22296,7 @@ export const ms2525b = {
           "SUBSURFACE TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "POINT-TO-POINT LINE-OF-SIGHT (LOS)"
+          "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24914,7 +22304,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SCP---",
         name: "POINT-TO-POINT LINE-OF-SIGHT (LOS)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.COMM.SATUL",
@@ -24923,7 +22313,7 @@ export const ms2525b = {
           "SUBSURFACE TRACK",
           "SIGNAL INTERCEPT",
           "COMMUNICATIONS",
-          "SATELLITE UP-LINK"
+          "SATELLITE UP-LINK",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24931,23 +22321,18 @@ export const ms2525b = {
         status: "*",
         functionid: "SCS---",
         name: "SATELLITE UP-LINK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.RAD",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SUBSURFACE TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SUBSURFACE TRACK", "SIGNAL INTERCEPT", "RADAR"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "U",
         status: "*",
         functionid: "SR----",
         name: "RADAR",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.RAD.DATTMN",
@@ -24956,7 +22341,7 @@ export const ms2525b = {
           "SUBSURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "DATA TRANSMISSION"
+          "DATA TRANSMISSION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24964,7 +22349,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRD---",
         name: "DATA TRANSMISSION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.RAD.EW",
@@ -24973,7 +22358,7 @@ export const ms2525b = {
           "SUBSURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "EARLY WARNING"
+          "EARLY WARNING",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24981,7 +22366,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRE---",
         name: "EARLY WARNING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.RAD.MFN",
@@ -24990,7 +22375,7 @@ export const ms2525b = {
           "SUBSURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "MULTI-FUNCTION"
+          "MULTI-FUNCTION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -24998,7 +22383,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRM---",
         name: "MULTI-FUNCTION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.RAD.SUFSRH",
@@ -25007,7 +22392,7 @@ export const ms2525b = {
           "SUBSURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "SURFACE SEARCH"
+          "SURFACE SEARCH",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -25015,7 +22400,7 @@ export const ms2525b = {
         status: "*",
         functionid: "SRS---",
         name: "SURFACE SEARCH",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.RAD.TGTAQ",
@@ -25024,7 +22409,7 @@ export const ms2525b = {
           "SUBSURFACE TRACK",
           "SIGNAL INTERCEPT",
           "RADAR",
-          "TARGET ACQUISITION"
+          "TARGET ACQUISITION",
         ],
         codingscheme: "I",
         affiliation: "*",
@@ -25032,63 +22417,52 @@ export const ms2525b = {
         status: "*",
         functionid: "SRT---",
         name: "TARGET ACQUISITION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "SIGINT.SBSUF.SIGINC.RAD.UNK",
-        names: [
-          "SIGNALS INTELLIGENCE",
-          "SUBSURFACE TRACK",
-          "SIGNAL INTERCEPT",
-          "RADAR",
-          "UNKNOWN"
-        ],
+        names: ["SIGNALS INTELLIGENCE", "SUBSURFACE TRACK", "SIGNAL INTERCEPT", "RADAR", "UNKNOWN"],
         codingscheme: "I",
         affiliation: "*",
         battledimension: "U",
         status: "*",
         functionid: "SRU---",
         name: "UNKNOWN",
-        remarks: ""
-      }
-    ]
+        remarks: "",
+      },
+    ],
   },
   MOOTW: {
     name: "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
     mainIcon: [
       {
         hierarchy: "MOOTW",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "-",
         status: "*",
         functionid: "------",
         name: "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "VIOLENT ACTIVITIES (DEATH CAUSING)"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "VIOLENT ACTIVITIES (DEATH CAUSING)"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "V",
         status: "*",
         functionid: "------",
         name: "VIOLENT ACTIVITIES (DEATH CAUSING)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.ASN",
         names: [
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "ARSON/FIRE"
+          "ARSON/FIRE",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25096,14 +22470,14 @@ export const ms2525b = {
         status: "*",
         functionid: "A-----",
         name: "ARSON/FIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.KILL",
         names: [
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "KILLING (GENERAL)"
+          "KILLING (GENERAL)",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25111,7 +22485,7 @@ export const ms2525b = {
         status: "*",
         functionid: "M-----",
         name: "KILLING (GENERAL)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.KILL.MDR",
@@ -25119,7 +22493,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
           "KILLING (GENERAL)",
-          "MURDER"
+          "MURDER",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25127,7 +22501,7 @@ export const ms2525b = {
         status: "*",
         functionid: "MA----",
         name: "MURDER",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.KILL.EX",
@@ -25135,7 +22509,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
           "KILLING (GENERAL)",
-          "EXECUTION"
+          "EXECUTION",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25143,7 +22517,7 @@ export const ms2525b = {
         status: "*",
         functionid: "MB----",
         name: "EXECUTION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.KILL.ASS",
@@ -25151,7 +22525,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
           "KILLING (GENERAL)",
-          "ASSASSINATION"
+          "ASSASSINATION",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25159,14 +22533,14 @@ export const ms2525b = {
         status: "*",
         functionid: "MC----",
         name: "ASSASSINATION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.BM",
         names: [
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "BOMB/BOMBING"
+          "BOMB/BOMBING",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25174,14 +22548,14 @@ export const ms2525b = {
         status: "*",
         functionid: "B-----",
         name: "BOMB/BOMBING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.BBY",
         names: [
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "BOOBY TRAP"
+          "BOOBY TRAP",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25189,14 +22563,14 @@ export const ms2525b = {
         status: "*",
         functionid: "Y-----",
         name: "BOOBY TRAP",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.DBS",
         names: [
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "DRIVE-BY SHOOTING"
+          "DRIVE-BY SHOOTING",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25204,14 +22578,14 @@ export const ms2525b = {
         status: "*",
         functionid: "D-----",
         name: "DRIVE-BY SHOOTING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.SPG",
         names: [
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "SNIPING"
+          "SNIPING",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25219,14 +22593,14 @@ export const ms2525b = {
         status: "*",
         functionid: "S-----",
         name: "SNIPING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.VIOATY.PSNG",
         names: [
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "POISONING"
+          "POISONING",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25234,125 +22608,95 @@ export const ms2525b = {
         status: "*",
         functionid: "P-----",
         name: "POISONING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.LOCAT",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "LOCATIONS"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "LOCATIONS"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "L",
         status: "*",
         functionid: "------",
         name: "LOCATIONS",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.LOCAT.BLST",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "LOCATIONS",
-          "BLACK LIST LOCATION"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "LOCATIONS", "BLACK LIST LOCATION"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "L",
         status: "*",
         functionid: "B-----",
         name: "BLACK LIST LOCATION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.LOCAT.GLST",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "LOCATIONS",
-          "GRAY LIST LOCATION"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "LOCATIONS", "GRAY LIST LOCATION"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "L",
         status: "*",
         functionid: "G-----",
         name: "GRAY LIST LOCATION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.LOCAT.WLST",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "LOCATIONS",
-          "WHITE LIST LOCATION"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "LOCATIONS", "WHITE LIST LOCATION"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "L",
         status: "*",
         functionid: "W-----",
         name: "WHITE LIST LOCATION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.LOCAT.MASS",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "LOCATIONS",
-          "MASS GRAVE LOCATION"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "LOCATIONS", "MASS GRAVE LOCATION"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "L",
         status: "*",
         functionid: "M-----",
         name: "MASS GRAVE LOCATION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "------",
         name: "OPERATIONS",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.PATG",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "PATROLLING"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "PATROLLING"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "P-----",
         name: "PATROLLING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.RCMT",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "RECRUITMENT"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "RECRUITMENT"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "R-----",
         name: "RECRUITMENT",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.RCMT.WLG",
@@ -25360,7 +22704,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "OPERATIONS",
           "RECRUITMENT",
-          "RECRUITMENT (WILLING)"
+          "RECRUITMENT (WILLING)",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25368,7 +22712,7 @@ export const ms2525b = {
         status: "*",
         functionid: "RW----",
         name: "RECRUITMENT (WILLING)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.RCMT.CRCD",
@@ -25376,7 +22720,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "OPERATIONS",
           "RECRUITMENT",
-          "RECRUITMENT (COERCED/IMPRESSED)"
+          "RECRUITMENT (COERCED/IMPRESSED)",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25384,44 +22728,36 @@ export const ms2525b = {
         status: "*",
         functionid: "RC----",
         name: "RECRUITMENT (COERCED/IMPRESSED)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.DEMO",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "DEMONSTRATION"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "DEMONSTRATION"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "D-----",
         name: "DEMONSTRATION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.ML",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "MINE LAYING"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "MINE LAYING"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "M-----",
         name: "MINE LAYING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.PSYOP",
         names: [
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "OPERATIONS",
-          "PSYCHOLOGICAL OPERATIONS (PSYOP)"
+          "PSYCHOLOGICAL OPERATIONS (PSYOP)",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25429,7 +22765,7 @@ export const ms2525b = {
         status: "*",
         functionid: "Y-----",
         name: "PSYCHOLOGICAL OPERATIONS (PSYOP)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.PSYOP.TARP",
@@ -25437,7 +22773,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "OPERATIONS",
           "PSYCHOLOGICAL OPERATIONS (PSYOP)",
-          "PSYOP (TV AND RADIO PROPAGANDA)"
+          "PSYOP (TV AND RADIO PROPAGANDA)",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25445,7 +22781,7 @@ export const ms2525b = {
         status: "*",
         functionid: "YT----",
         name: "PSYOP (TV AND RADIO PROPAGANDA)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.PSYOP.WP",
@@ -25453,7 +22789,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "OPERATIONS",
           "PSYCHOLOGICAL OPERATIONS (PSYOP)",
-          "PSYOP (WRITTEN PROPAGANDA)"
+          "PSYOP (WRITTEN PROPAGANDA)",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25461,7 +22797,7 @@ export const ms2525b = {
         status: "*",
         functionid: "YW----",
         name: "PSYOP (WRITTEN PROPAGANDA)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.PSYOP.HTHP",
@@ -25469,7 +22805,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "OPERATIONS",
           "PSYCHOLOGICAL OPERATIONS (PSYOP)",
-          "HOUSE-TO-HOUSE PROPAGANDA"
+          "HOUSE-TO-HOUSE PROPAGANDA",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25477,82 +22813,62 @@ export const ms2525b = {
         status: "*",
         functionid: "YH----",
         name: "HOUSE-TO-HOUSE PROPAGANDA",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.FRGSRH",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "FORAGING/SEARCHING"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "FORAGING/SEARCHING"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "F-----",
         name: "FORAGING/SEARCHING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.SPY",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "SPY"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "SPY"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "S-----",
         name: "SPY",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.FDDIST",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "FOOD DISTRIBUTION"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "FOOD DISTRIBUTION"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "O-----",
         name: "FOOD DISTRIBUTION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.EXTN",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "EXTORTION"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "EXTORTION"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "E-----",
         name: "EXTORTION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.HJKG",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "HIJACKING"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "HIJACKING"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "H-----",
         name: "HIJACKING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.HJKG.VEH",
@@ -25560,7 +22876,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "OPERATIONS",
           "HIJACKING",
-          "HIJACKING (VEHICLE)"
+          "HIJACKING (VEHICLE)",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25568,7 +22884,7 @@ export const ms2525b = {
         status: "*",
         functionid: "HT----",
         name: "HIJACKING (VEHICLE)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.HJKG.APL",
@@ -25576,7 +22892,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "OPERATIONS",
           "HIJACKING",
-          "HIJACKING (AIRPLANE)"
+          "HIJACKING (AIRPLANE)",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25584,7 +22900,7 @@ export const ms2525b = {
         status: "*",
         functionid: "HA----",
         name: "HIJACKING (AIRPLANE)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.HJKG.BOAT",
@@ -25592,7 +22908,7 @@ export const ms2525b = {
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "OPERATIONS",
           "HIJACKING",
-          "HIJACKING (BOAT)"
+          "HIJACKING (BOAT)",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25600,118 +22916,91 @@ export const ms2525b = {
         status: "*",
         functionid: "HV----",
         name: "HIJACKING (BOAT)",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.KDNG",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "KIDNAPPING"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "KIDNAPPING"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "K-----",
         name: "KIDNAPPING",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.ARR",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "ARREST"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "ARREST"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "A-----",
         name: "ARREST",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.OPN.DGOPN",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "OPERATIONS",
-          "DRUG OPERATION"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "OPERATIONS", "DRUG OPERATION"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "U-----",
         name: "DRUG OPERATION",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.ITM",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "ITEMS"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "ITEMS"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "I",
         status: "*",
         functionid: "------",
         name: "ITEMS",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.ITM.RFG",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "ITEMS",
-          "REFUGEES"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "ITEMS", "REFUGEES"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "I",
         status: "*",
         functionid: "R-----",
         name: "REFUGEES",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.ITM.SAFHSE",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "ITEMS",
-          "SAFE HOUSE"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "ITEMS", "SAFE HOUSE"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "I",
         status: "*",
         functionid: "S-----",
         name: "SAFE HOUSE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.ITM.GRF",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "ITEMS",
-          "GRAFFITI"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "ITEMS", "GRAFFITI"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "I",
         status: "*",
         functionid: "G-----",
         name: "GRAFFITI",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.ITM.VRLRPS",
         names: [
           "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
           "ITEMS",
-          "VANDALISM/RAPE/LOOT/RANSACK/PLUNDER/SACK"
+          "VANDALISM/RAPE/LOOT/RANSACK/PLUNDER/SACK",
         ],
         codingscheme: "O",
         affiliation: "*",
@@ -25719,53 +23008,41 @@ export const ms2525b = {
         status: "*",
         functionid: "V-----",
         name: "VANDALISM/RAPE/LOOT/RANSACK/PLUNDER/SACK",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.ITM.KNIVEH",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "ITEMS",
-          "KNOWN INSURGENT VEHICLE"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "ITEMS", "KNOWN INSURGENT VEHICLE"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "I",
         status: "*",
         functionid: "I-----",
         name: "KNOWN INSURGENT VEHICLE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.ITM.DGVEH",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "ITEMS",
-          "DRUG VEHICLE"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "ITEMS", "DRUG VEHICLE"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "I",
         status: "*",
         functionid: "D-----",
         name: "DRUG VEHICLE",
-        remarks: ""
+        remarks: "",
       },
       {
         hierarchy: "MOOTW.ITM.ISF",
-        names: [
-          "MILITARY OPERATIONS OTHER THAN WAR (MOOTW)",
-          "ITEMS",
-          "INTERNAL SECURITY FORCE"
-        ],
+        names: ["MILITARY OPERATIONS OTHER THAN WAR (MOOTW)", "ITEMS", "INTERNAL SECURITY FORCE"],
         codingscheme: "O",
         affiliation: "*",
         battledimension: "I",
         status: "*",
         functionid: "F-----",
         name: "INTERNAL SECURITY FORCE",
-        remarks: ""
-      }
-    ]
-  }
+        remarks: "",
+      },
+    ],
+  },
 };

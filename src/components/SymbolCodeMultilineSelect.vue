@@ -8,7 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { type NullableSymbolItem} from "@/symbology/types";
+import { type NullableSymbolItem } from "@/symbology/types";
 import { Label } from "@/components/ui/label";
 import MilSymbol from "@/components/MilSymbol.vue";
 
@@ -56,14 +56,12 @@ const selected = computed(() => {
               :key="selected?.sidc"
               alt=""
               :size="20"
-              :options="{ 
-                outlineWidth: 4 }"
+              :options="{
+                outlineWidth: 4,
+              }"
             />
             <div class="ml-3 max-w-xs text-left sm:max-w-none">
-              <div
-                v-if="selected?.subLabel"
-                class="text-muted-foreground truncate text-xs"
-              >
+              <div v-if="selected?.subLabel" class="text-muted-foreground truncate text-xs">
                 {{ selected.subLabel }}
               </div>
               <div class="mt-0 truncate text-sm">
@@ -89,14 +87,12 @@ const selected = computed(() => {
                 :sidc="item.sidc || ''"
                 alt=""
                 :size="20"
-                :options="{ 
-                  outlineWidth: 4 }"
+                :options="{
+                  outlineWidth: 4,
+                }"
               />
               <div class="ml-3 max-w-xs flex-auto text-left sm:max-w-none">
-                <div
-                  v-if="selected?.subLabel"
-                  class="text-muted-foreground truncate text-xs"
-                >
+                <div v-if="selected?.subLabel" class="text-muted-foreground truncate text-xs">
                   {{ item.subLabel }}
                 </div>
                 <div class="mt-0 truncate">

@@ -2,16 +2,13 @@
 import NewSimpleModal from "@/components/NewSimpleModal.vue";
 import SymbolCodeSelect from "./SymbolCodeSelect.vue";
 import SymbolCodeViewer from "./SymbolCodeViewer.vue";
-import {
-  useDebounce,
-  useVModel,
-} from "@vueuse/core";
+import { useDebounce, useVModel } from "@vueuse/core";
 import { Button } from "@/components/ui/button";
 import MilSymbol from "@/components/MilSymbol.vue";
 import { useSymbolItems } from "@/composables/symbolDataB";
 import { computed, ref, watch, watchEffect } from "vue";
 import { SidcB } from "@/symbology/sidc";
-import TabItem from './TabItem.vue';
+import TabItem from "./TabItem.vue";
 import TabView from "./TabView.vue";
 import SymbolCodeMultilineSelect from "./SymbolCodeMultilineSelect.vue";
 import {
@@ -26,9 +23,7 @@ import {
 } from "@/components/ui/combobox";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import {
-  useSymbologySearch,
-} from "@/composables/symbolSearchingB";
+import { useSymbologySearch } from "@/composables/symbolSearchingB";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import { isUnitOrEquipment } from "@/utils.ts";
 import EditFieldToggle from "./EditFieldToggle.vue";
@@ -67,10 +62,8 @@ const {
   isGroundEquipment,
   isGroundInstallation,
   isSeaSurface,
-  isSeaSubsurface
-} = useSymbolItems(
-  computed(() => props.sidc || ""),
-);
+  isSeaSubsurface,
+} = useSymbolItems(computed(() => props.sidc || ""));
 loadData();
 
 const open = useVModel(props, "isVisible");
@@ -78,7 +71,7 @@ const currentTab = ref(props.initialTab ?? 0);
 const hitCount = ref(0);
 const searchQuery = ref("");
 const debouncedQuery = useDebounce(searchQuery, 100);
-const searchSelection = ref<{ sidc: string; }>();
+const searchSelection = ref<{ sidc: string }>();
 const dimension = ref();
 const groupedHits = ref<ReturnType<typeof search>["groups"]>();
 const { search } = useSymbologySearch(affiliationValue);
@@ -98,76 +91,81 @@ const onSubmit = () => {
 const cleanObject = (obj: any) => {
   Object.keys(obj).forEach((key) => {
     if (obj[key] && typeof obj[key] === "object") cleanObject(obj[key]);
-    else if (obj[key] === "" || obj[key] === null || obj[key] === undefined)
-      delete obj[key];
+    else if (obj[key] === "" || obj[key] === null || obj[key] === undefined) delete obj[key];
   });
   return obj;
 };
 
-function createDimensionCode(){
+function createDimensionCode() {
+  let functionType = "*";
+  let modifier = "*";
+  if (battleDimensionValue.value == "G" && functionIdValue.value[0] == "U") {
+    functionType = "U";
+  } else if (battleDimensionValue.value == "G" && functionIdValue.value[0] == "E") {
+    functionType = "E";
+  } else if (battleDimensionValue.value == "G" && functionIdValue.value[0] == "I") {
+    functionType = "I";
+    modifier = "H";
+  }
 
-  let functionType = '*'
-  let modifier = '*'
-  if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'U'){
-    functionType = 'U'
-  } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'E') {
-    functionType = 'E'
-  } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'I') {
-    functionType = 'I'
-    modifier = 'H'
-  } 
-
-  dimension.value = codingSchemeValue.value + '*' + battleDimensionValue.value + '*' + functionType + '*****' + modifier
+  dimension.value =
+    codingSchemeValue.value +
+    "*" +
+    battleDimensionValue.value +
+    "*" +
+    functionType +
+    "*****" +
+    modifier;
 }
 createDimensionCode();
 
 // Handle correct functionality of other dropdown fields if dimension changes
-function setDimension() : void {
-  let code = dimension.value.replaceAll('*','-')
-  
-  codingSchemeValue.value = code[0]
-  battleDimensionValue.value = code[2]
-  functionIdValue.value = code.slice(4,10)
-  modifier2Value.value = '-'
+function setDimension(): void {
+  let code = dimension.value.replaceAll("*", "-");
 
-  if (isGroundUnit()){
-    modifier1Value.value = '-'
-  } else if (isGroundEquipment()){
-    modifier1Value.value = 'M'
-  } else if (isGroundInstallation()){
-    modifier1Value.value = 'H'
-  } else if (isSeaSurface() || isSeaSubsurface()){
-    modifier1Value.value = 'N'
+  codingSchemeValue.value = code[0];
+  battleDimensionValue.value = code[2];
+  functionIdValue.value = code.slice(4, 10);
+  modifier2Value.value = "-";
+
+  if (isGroundUnit()) {
+    modifier1Value.value = "-";
+  } else if (isGroundEquipment()) {
+    modifier1Value.value = "M";
+  } else if (isGroundInstallation()) {
+    modifier1Value.value = "H";
+  } else if (isSeaSurface() || isSeaSubsurface()) {
+    modifier1Value.value = "N";
   } else {
-    modifier1Value.value = '-'
+    modifier1Value.value = "-";
   }
 }
 
-function onSelect(hit : {sidc : string}) {
-  updateModalSymbol(hit.sidc)
+function onSelect(hit: { sidc: string }) {
+  updateModalSymbol(hit.sidc);
 }
 
 function onSearch() {
-  if (!(searchSelection.value?.sidc)) return
-  updateModalSymbol(searchSelection.value?.sidc)
+  if (!searchSelection.value?.sidc) return;
+  updateModalSymbol(searchSelection.value?.sidc);
 }
 
-function updateModalSymbol(sidc : string) : void {
+function updateModalSymbol(sidc: string): void {
   const newSidc = new SidcB(sidc);
-  codingSchemeValue.value = newSidc.codingScheme; 
-  battleDimensionValue.value = newSidc.battleDimension
-  statusValue.value = newSidc.status == "-" ? 'P' : newSidc.status;
-  contextValue.value = newSidc.context
-  modifier1Value.value = newSidc.modifier1
-  modifier2Value.value = newSidc.modifier2
-  echelonValue.value = newSidc.echelon
-  functionIdValue.value = newSidc.functionId
+  codingSchemeValue.value = newSidc.codingScheme;
+  battleDimensionValue.value = newSidc.battleDimension;
+  statusValue.value = newSidc.status == "-" ? "P" : newSidc.status;
+  contextValue.value = newSidc.context;
+  modifier1Value.value = newSidc.modifier1;
+  modifier2Value.value = newSidc.modifier2;
+  echelonValue.value = newSidc.echelon;
+  functionIdValue.value = newSidc.functionId;
 
-  createDimensionCode()
+  createDimensionCode();
 }
 
-function updateName(hit : {newValue : string}) {
-  selectStore.updateName(hit.newValue)
+function updateName(hit: { newValue: string }) {
+  selectStore.updateName(hit.newValue);
 }
 
 // Update the hitcount and groupedhits if the search query changes
@@ -176,7 +174,6 @@ watchEffect(() => {
   hitCount.value = numberOfHits;
   groupedHits.value = groups;
 });
-
 </script>
 
 <template>
@@ -192,7 +189,10 @@ watchEffect(() => {
         <div class="flex">
           <MilSymbol :sidc="csidc" :key="csidc" :size="34" />
           <div v-if="selectStore.activeItem">
-            <span v-if="isUnitOrEquipment(selectStore.activeItem)" class="pl-8 items-center flex text-base font-bold">
+            <span
+              v-if="isUnitOrEquipment(selectStore.activeItem)"
+              class="pl-8 items-center flex text-base font-bold"
+            >
               <EditFieldToggle :field="selectStore.activeItem.name" @update="updateName" />
             </span>
           </div>
@@ -206,11 +206,10 @@ watchEffect(() => {
           v-slot="{ isActive }"
           class="max-h-[50vh] overflow-auto sm:max-h-[60vh]"
         >
-
           <Combobox v-model="searchSelection" @update:modelValue="onSearch" class="flex mb-4">
             <ComboboxAnchor class="grow">
               <div class="w-full">
-                <ComboboxInput 
+                <ComboboxInput
                   v-model="searchQuery"
                   class="h-12 border-0 bg-transparent pr-4 pl-11 focus:ring-0 sm:text-sm"
                   placeholder="Search..."
@@ -219,47 +218,33 @@ watchEffect(() => {
               </div>
             </ComboboxAnchor>
 
-              <ComboboxList class="md:w-(--breakpoint-md) lg:w-(--breakpoint-lg)">
-                <ComboboxEmpty>
-                  No framework found.
-                </ComboboxEmpty>
+            <ComboboxList class="md:w-(--breakpoint-md) lg:w-(--breakpoint-lg)">
+              <ComboboxEmpty> No framework found. </ComboboxEmpty>
 
-                <ScrollArea>
-                <ComboboxGroup >
+              <ScrollArea>
+                <ComboboxGroup>
                   <li v-for="[source, hits] in groupedHits" style="list-style: none">
                     <h2 class="text-xs font-semibold">{{ source }}</h2>
                     <ul class="text-sm font-medium">
-                  <ComboboxItem
-                          v-for="item in hits" 
-                          :key="item.sidc"
-                          :value="item"
-                        >
-                        <li
-                          :class="[
-                            'flex cursor-default items-center px-4 py-2 select-none',
-                          ]"
-                        >
+                      <ComboboxItem v-for="item in hits" :key="item.sidc" :value="item">
+                        <li :class="['flex cursor-default items-center px-4 py-2 select-none']">
                           <div class="relative flex w-12 justify-center">
-                            <MilSymbol
-                              :sidc="item.sidc"
-                              :size="30"
-                              aria-hidden="true"
-                            />
+                            <MilSymbol :sidc="item.sidc" :size="30" aria-hidden="true" />
                           </div>
                           <p
                             class="ml-3 flex-auto truncate"
                             v-html="item.highlight ? item.highlight : item.text"
                           />
                         </li>
-                          <ComboboxItemIndicator>
-                            <Check :class="cn('ml-auto h-4 w-4')" />
-                          </ComboboxItemIndicator>
-                        </ComboboxItem>
-                        </ul>
+                        <ComboboxItemIndicator>
+                          <Check :class="cn('ml-auto h-4 w-4')" />
+                        </ComboboxItemIndicator>
+                      </ComboboxItem>
+                    </ul>
                   </li>
                 </ComboboxGroup>
-                </ScrollArea>
-              </ComboboxList>
+              </ScrollArea>
+            </ComboboxList>
           </Combobox>
 
           <form
@@ -279,11 +264,7 @@ watchEffect(() => {
               />
             </div>
 
-            <SymbolCodeSelect
-              v-model="statusValue"
-              label="Status"
-              :items="statusItems"
-            />
+            <SymbolCodeSelect v-model="statusValue" label="Status" :items="statusItems" />
 
             <SymbolCodeSelect
               v-model="modifier2Value"
@@ -302,16 +283,13 @@ watchEffect(() => {
               label="Main icon"
               :items="mainIconItems"
             />
-
           </form>
         </TabItem>
       </TabView>
-      
+
       <div class="flex shrink-0 justify-end space-x-2 pt-4">
         <Button @click="onSubmit()" class="">Select symbol</Button>
       </div>
-
-    </div> 
+    </div>
   </NewSimpleModal>
 </template>
-

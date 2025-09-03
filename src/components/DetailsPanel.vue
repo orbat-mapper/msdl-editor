@@ -127,21 +127,20 @@ function goUp() {
 const { getModalSidc } = injectStrict(sidcModalKey);
 
 async function handleChangeSymbol() {
+  if (!isUnitOrEquipment(props.item)) return;
 
-  if (!isUnitOrEquipment(props.item)) return 
-
-  let sidc = props.item.sidc
+  let sidc = props.item.sidc;
   if (sidc.length !== 15) {
     throw new Error("Unsupported SIDC, must be exactly 15 characters long"); // Only support Revision-B Symbology for now
   }
-  
-  // Open modal and wait for confirm response
-  const newSidcValue = await getModalSidc(sidc,{});
 
-  if (selectStore.activeItem && newSidcValue !== undefined){
+  // Open modal and wait for confirm response
+  const newSidcValue = await getModalSidc(sidc, {});
+
+  if (selectStore.activeItem && newSidcValue !== undefined) {
     const { sidc } = newSidcValue;
-    selectStore.updateSidc(sidc) //Update sidc for selected item
-    updateSymbolIdentifier(props.item.objectHandle,sidc) // Update sidc in msdl
+    selectStore.updateSidc(sidc); //Update sidc for selected item
+    updateSymbolIdentifier(props.item.objectHandle, sidc); // Update sidc in msdl
   }
 }
 
@@ -166,13 +165,9 @@ const selectedName = computed(() => {
       <div class="flex gap-2">
         <span ref="elRef"><MilSymbol :sidc="selectedSidc" :key="selectedSidc" :size="16" /></span>
         <span class="text-base font-bold">{{ selectedName }}</span>
-        <Button
-          type="button"
-          variant="ghost"
-          size="icon"
-          @click="handleChangeSymbol()"
-        ><PencilIcon />
-      </Button>
+        <Button type="button" variant="ghost" size="icon" @click="handleChangeSymbol()"
+          ><PencilIcon />
+        </Button>
       </div>
       <div>
         <Badge>{{ typeLabel }}</Badge>

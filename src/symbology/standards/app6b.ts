@@ -16,264 +16,173 @@ export const app6b = {
       mainIcon: [
         {
           hierarchy: "1.X.1 ",
-          names: [
-            ,
-            ,
-            "SPACE TRACK"
-          ],
+          names: [, , "SPACE TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "P",
           status: "*",
           functionid: "------",
           name: "SPACE TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.1.1 ",
-          names: [
-            ,
-            ,
-            "SPACE TRACK",
-            "SATELLITE"
-          ],
+          names: [, , "SPACE TRACK", "SATELLITE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "P",
           status: "*",
           functionid: "S-----",
           name: "SATELLITE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.1.2 ",
-          names: [
-            ,
-            ,
-            "SPACE TRACK",
-            "CREWED SPACE VEHICLE"
-          ],
+          names: [, , "SPACE TRACK", "CREWED SPACE VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "P",
           status: "*",
           functionid: "V-----",
           name: "CREWED SPACE VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.1.3 ",
-          names: [
-            ,
-            ,
-            "SPACE TRACK",
-            "SPACE STATION"
-          ],
+          names: [, , "SPACE TRACK", "SPACE STATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "P",
           status: "*",
           functionid: "T-----",
           name: "SPACE STATION",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     AIRTRK: {
       name: "AIR",
       mainIcon: [
         {
           hierarchy: "1.X.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK"
-          ],
+          names: [, , "AIR TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "------",
           name: "AIR TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY"
-          ],
+          names: [, , "AIR TRACK", "MILITARY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "M-----",
           name: "MILITARY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MF----",
           name: "FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "BOMBER"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "BOMBER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFB---",
           name: "BOMBER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "FIGHTER"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "FIGHTER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFF---",
           name: "FIGHTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.2.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "FIGHTER",
-            "INTERCEPTOR"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "FIGHTER", "INTERCEPTOR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFFI--",
           name: "INTERCEPTOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.3 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "TRAINER"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "TRAINER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFT---",
           name: "TRAINER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.4 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "ATTACK/STRIKE"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "ATTACK/STRIKE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFA---",
           name: "ATTACK/STRIKE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.5 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "VSTOL"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "VSTOL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFL---",
           name: "VSTOL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.6 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "TANKER"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "TANKER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFK---",
           name: "TANKER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.7 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "CARGO AIRLIFT (TRANSPORT)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "CARGO AIRLIFT (TRANSPORT)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFC---",
           name: "CARGO AIRLIFT (TRANSPORT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.7.1 ",
@@ -284,7 +193,7 @@ export const app6b = {
             "MILITARY",
             "FIXED WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (LIGHT)"
+            "CARGO AIRLIFT (LIGHT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -292,7 +201,7 @@ export const app6b = {
           status: "*",
           functionid: "MFCL--",
           name: "CARGO AIRLIFT (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.7.2 ",
@@ -303,7 +212,7 @@ export const app6b = {
             "MILITARY",
             "FIXED WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (MEDIUM)"
+            "CARGO AIRLIFT (MEDIUM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -311,7 +220,7 @@ export const app6b = {
           status: "*",
           functionid: "MFCM--",
           name: "CARGO AIRLIFT (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.7.3 ",
@@ -322,7 +231,7 @@ export const app6b = {
             "MILITARY",
             "FIXED WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (HEAVY)"
+            "CARGO AIRLIFT (HEAVY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -330,7 +239,7 @@ export const app6b = {
           status: "*",
           functionid: "MFCH--",
           name: "CARGO AIRLIFT (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.8 ",
@@ -340,7 +249,7 @@ export const app6b = {
             "AIR TRACK",
             "MILITARY",
             "FIXED WING",
-            "ELECTRONIC COUNTERMEASURES(ECM/JAMMER)"
+            "ELECTRONIC COUNTERMEASURES(ECM/JAMMER)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -348,43 +257,29 @@ export const app6b = {
           status: "*",
           functionid: "MFJ---",
           name: "ELECTRONIC COUNTERMEASURES(ECM/JAMMER)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.9 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "MEDEVAC"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "MEDEVAC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFO---",
           name: "MEDEVAC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.10 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "RECONNAISSANCE"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "RECONNAISSANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFR---",
           name: "RECONNAISSANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.10.1 ",
@@ -395,7 +290,7 @@ export const app6b = {
             "MILITARY",
             "FIXED WING",
             "RECONNAISSANCE",
-            "AIRBORNE EARLY WARNING (AEW)"
+            "AIRBORNE EARLY WARNING (AEW)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -403,7 +298,7 @@ export const app6b = {
           status: "*",
           functionid: "MFRW--",
           name: "AIRBORNE EARLY WARNING (AEW)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.10.2 ",
@@ -414,7 +309,7 @@ export const app6b = {
             "MILITARY",
             "FIXED WING",
             "RECONNAISSANCE",
-            "ELECTRONIC SURVEILLANCE MEASURES"
+            "ELECTRONIC SURVEILLANCE MEASURES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -422,229 +317,139 @@ export const app6b = {
           status: "*",
           functionid: "MFRZ--",
           name: "ELECTRONIC SURVEILLANCE MEASURES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.10.3 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "RECONNAISSANCE",
-            "PHOTOGRAPHIC"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "RECONNAISSANCE", "PHOTOGRAPHIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFRX--",
           name: "PHOTOGRAPHIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.11 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "PATROL"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "PATROL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFP---",
           name: "PATROL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.11.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "PATROL",
-            "ANTI SURFACE WARFARE/ASUW"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "PATROL", "ANTI SURFACE WARFARE/ASUW"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFPN--",
           name: "ANTI SURFACE WARFARE/ASUW",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.11.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "PATROL",
-            "MINE COUNTER MEASURES"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "PATROL", "MINE COUNTER MEASURES"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFPM--",
           name: "MINE COUNTER MEASURES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.12 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "UTILITY"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "UTILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFU---",
           name: "UTILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.12.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "UTILITY",
-            "UTILITY (LIGHT)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "UTILITY", "UTILITY (LIGHT)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFUL--",
           name: "UTILITY (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.12.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "UTILITY",
-            "UTILITY (MEDIUM)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "UTILITY", "UTILITY (MEDIUM)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFUM--",
           name: "UTILITY (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.12.3 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "UTILITY",
-            "UTILITY (HEAVY)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "UTILITY", "UTILITY (HEAVY)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFUH--",
           name: "UTILITY (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.13 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "COMMUNICATIONS (C3I)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "COMMUNICATIONS (C3I)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFY---",
           name: "COMMUNICATIONS (C3I)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.14 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "SEARCH AND RESCUE (CSAR)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "SEARCH AND RESCUE (CSAR)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFH---",
           name: "SEARCH AND RESCUE (CSAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.15 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "AIRBORNE COMMAND POST (C2)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "AIRBORNE COMMAND POST (C2)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFD---",
           name: "AIRBORNE COMMAND POST (C2)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.16 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "DRONE (RPV/UAV)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "DRONE (RPV/UAV)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFQ---",
           name: "DRONE (RPV/UAV)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.17 ",
@@ -654,7 +459,7 @@ export const app6b = {
             "AIR TRACK",
             "MILITARY",
             "FIXED WING",
-            "ANTI SUBMARINE WARFARE (ASW) CARRIER BASED"
+            "ANTI SUBMARINE WARFARE (ASW) CARRIER BASED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -662,243 +467,150 @@ export const app6b = {
           status: "*",
           functionid: "MFS---",
           name: "ANTI SUBMARINE WARFARE (ASW) CARRIER BASED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.1.18 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "FIXED WING",
-            "SPECIAL OPERATIONS FORCE (SOF)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "FIXED WING", "SPECIAL OPERATIONS FORCE (SOF)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MFM---",
           name: "SPECIAL OPERATIONS FORCE (SOF)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MH----",
           name: "ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "ATTACK"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "ATTACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHA---",
           name: "ATTACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "ANTISUBMARINE WARFARE"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "ANTISUBMARINE WARFARE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHS---",
           name: "ANTISUBMARINE WARFARE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.3 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "UTILITY"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "UTILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHU---",
           name: "UTILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.3.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "UTILITY",
-            "UTILITY (LIGHT)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "UTILITY", "UTILITY (LIGHT)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHUL--",
           name: "UTILITY (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.3.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "UTILITY",
-            "UTILITY (MEDIUM)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "UTILITY", "UTILITY (MEDIUM)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHUM--",
           name: "UTILITY (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.3.3 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "UTILITY",
-            "UTILITY (HEAVY)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "UTILITY", "UTILITY (HEAVY)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHUH--",
           name: "UTILITY (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.4 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "MINE COUNTER MEASURES"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "MINE COUNTER MEASURES"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHI---",
           name: "MINE COUNTER MEASURES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.5 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "COMBAT SEARCH AND RESCUE (CSAR)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "COMBAT SEARCH AND RESCUE (CSAR)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHH---",
           name: "COMBAT SEARCH AND RESCUE (CSAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.6 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "RECONNAISSANCE"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "RECONNAISSANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHR---",
           name: "RECONNAISSANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.7 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "DRONE (RPV/UAV)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "DRONE (RPV/UAV)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHQ---",
           name: "DRONE (RPV/UAV)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.8 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "CARGO AIRLIFT (TRANSPORT)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "CARGO AIRLIFT (TRANSPORT)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHC---",
           name: "CARGO AIRLIFT (TRANSPORT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.8.1 ",
@@ -909,7 +621,7 @@ export const app6b = {
             "MILITARY",
             "ROTARY WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (LIGHT)"
+            "CARGO AIRLIFT (LIGHT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -917,7 +629,7 @@ export const app6b = {
           status: "*",
           functionid: "MHCL--",
           name: "CARGO AIRLIFT (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.8.2 ",
@@ -928,7 +640,7 @@ export const app6b = {
             "MILITARY",
             "ROTARY WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (MEDIUM)"
+            "CARGO AIRLIFT (MEDIUM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -936,7 +648,7 @@ export const app6b = {
           status: "*",
           functionid: "MHCM--",
           name: "CARGO AIRLIFT (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.8.3 ",
@@ -947,7 +659,7 @@ export const app6b = {
             "MILITARY",
             "ROTARY WING",
             "CARGO AIRLIFT (TRANSPORT)",
-            "CARGO AIRLIFT (HEAVY)"
+            "CARGO AIRLIFT (HEAVY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -955,97 +667,62 @@ export const app6b = {
           status: "*",
           functionid: "MHCH--",
           name: "CARGO AIRLIFT (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.9 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "TRAINER"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "TRAINER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHT---",
           name: "TRAINER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.10 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "MEDEVAC"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "MEDEVAC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHO---",
           name: "MEDEVAC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.11 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "SPECIAL OPERATIONS FORCE (SOF)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "SPECIAL OPERATIONS FORCE (SOF)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHM---",
           name: "SPECIAL OPERATIONS FORCE (SOF)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.12 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "AIRBORNE COMMAND POST (C2)"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "AIRBORNE COMMAND POST (C2)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHD---",
           name: "AIRBORNE COMMAND POST (C2)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.13 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "ROTARY WING",
-            "TANKER"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "ROTARY WING", "TANKER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "MHK---",
           name: "TANKER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.2.14 ",
@@ -1055,7 +732,7 @@ export const app6b = {
             "AIR TRACK",
             "MILITARY",
             "ROTARY WING",
-            "ELECTRONIC COUNTER MEASURES (ECM/JAMMER)"
+            "ELECTRONIC COUNTER MEASURES (ECM/JAMMER)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1063,75 +740,51 @@ export const app6b = {
           status: "*",
           functionid: "MHJ---",
           name: "ELECTRONIC COUNTER MEASURES (ECM/JAMMER)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.1.3 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "MILITARY",
-            "LIGHTER THAN AIR"
-          ],
+          names: [, , "AIR TRACK", "MILITARY", "LIGHTER THAN AIR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "ML----",
           name: "LIGHTER THAN AIR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "WEAPON"
-          ],
+          names: [, , "AIR TRACK", "WEAPON"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "W-----",
           name: "WEAPON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "MISSILE IN FLIGHT"
-          ],
+          names: [, , "AIR TRACK", "WEAPON", "MISSILE IN FLIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WM----",
           name: "MISSILE IN FLIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.1.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "MISSILE IN FLIGHT",
-            "SURFACE/LAND LAUNCHED MISSILE"
-          ],
+          names: [, , "AIR TRACK", "WEAPON", "MISSILE IN FLIGHT", "SURFACE/LAND LAUNCHED MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WMS---",
           name: "SURFACE/LAND LAUNCHED MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.1.1.1 ",
@@ -1142,7 +795,7 @@ export const app6b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "SURFACE/LAND LAUNCHED MISSILE",
-            "SURFACE TO SURFACE MISSILE (SSM)"
+            "SURFACE TO SURFACE MISSILE (SSM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1150,7 +803,7 @@ export const app6b = {
           status: "*",
           functionid: "WMSS--",
           name: "SURFACE TO SURFACE MISSILE (SSM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.1.1.2 ",
@@ -1161,7 +814,7 @@ export const app6b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "SURFACE/LAND LAUNCHED MISSILE",
-            "SURFACE TO AIR MISSILE (SAM)"
+            "SURFACE TO AIR MISSILE (SAM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1169,25 +822,18 @@ export const app6b = {
           status: "*",
           functionid: "WMSA--",
           name: "SURFACE TO AIR MISSILE (SAM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.1.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "MISSILE IN FLIGHT",
-            "AIR LAUNCHED MISSILE"
-          ],
+          names: [, , "AIR TRACK", "WEAPON", "MISSILE IN FLIGHT", "AIR LAUNCHED MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WMA---",
           name: "AIR LAUNCHED MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.1.2.1 ",
@@ -1198,7 +844,7 @@ export const app6b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "AIR LAUNCHED MISSILE",
-            "AIR TO SURFACE MISSILE (ASM)"
+            "AIR TO SURFACE MISSILE (ASM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1206,7 +852,7 @@ export const app6b = {
           status: "*",
           functionid: "WMAS--",
           name: "AIR TO SURFACE MISSILE (ASM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.1.2.2 ",
@@ -1217,7 +863,7 @@ export const app6b = {
             "WEAPON",
             "MISSILE IN FLIGHT",
             "AIR LAUNCHED MISSILE",
-            "AIR TO AIR MISSILE (AAM)"
+            "AIR TO AIR MISSILE (AAM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1225,7 +871,7 @@ export const app6b = {
           status: "*",
           functionid: "WMAA--",
           name: "AIR TO AIR MISSILE (AAM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.1.3 ",
@@ -1235,7 +881,7 @@ export const app6b = {
             "AIR TRACK",
             "WEAPON",
             "MISSILE IN FLIGHT",
-            "SUBSURFACE TO SURFACE MISSILE (S/SSM)"
+            "SUBSURFACE TO SURFACE MISSILE (S/SSM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1243,258 +889,166 @@ export const app6b = {
           status: "*",
           functionid: "WMU---",
           name: "SUBSURFACE TO SURFACE MISSILE (S/SSM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.1.4 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "MISSILE IN FLIGHT",
-            "LAND ATTACK MISSILE"
-          ],
+          names: [, , "AIR TRACK", "WEAPON", "MISSILE IN FLIGHT", "LAND ATTACK MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WML---",
           name: "LAND ATTACK MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.2.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "WEAPON",
-            "DECOY"
-          ],
+          names: [, , "AIR TRACK", "WEAPON", "DECOY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "WD----",
           name: "DECOY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.3 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "CIVIL AIRCRAFT"
-          ],
+          names: [, , "AIR TRACK", "CIVIL AIRCRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "C-----",
           name: "CIVIL AIRCRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.3.1 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "CIVIL AIRCRAFT",
-            "FIXED WING"
-          ],
+          names: [, , "AIR TRACK", "CIVIL AIRCRAFT", "FIXED WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "CF----",
           name: "FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.3.2 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "CIVIL AIRCRAFT",
-            "ROTARY WING"
-          ],
+          names: [, , "AIR TRACK", "CIVIL AIRCRAFT", "ROTARY WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "CH----",
           name: "ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.2.3.3 ",
-          names: [
-            ,
-            ,
-            "AIR TRACK",
-            "CIVIL AIRCRAFT",
-            "LIGHTER THAN AIR"
-          ],
+          names: [, , "AIR TRACK", "CIVIL AIRCRAFT", "LIGHTER THAN AIR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "A",
           status: "*",
           functionid: "CL----",
           name: "LIGHTER THAN AIR",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     GRDTRK_UNT: {
       name: "GROUND UNIT",
       mainIcon: [
         {
           hierarchy: "1.X.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK"
-          ],
+          names: [, , "GROUND TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "------",
           name: "GROUND TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "U-----",
           name: "UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UC----",
           name: "COMBAT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENCE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCD---",
           name: "AIR DEFENCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENCE",
-            "SHORT RANGE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENCE", "SHORT RANGE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDS--",
           name: "SHORT RANGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.1.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENCE",
-            "SHORT RANGE",
-            "MISSILE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENCE", "SHORT RANGE", "MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDS--",
           name: "MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.1.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENCE",
-            "SHORT RANGE",
-            "GUN"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENCE", "SHORT RANGE", "GUN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDS--",
           name: "GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENCE",
-            "AIR DEFENCE MISSILE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENCE", "AIR DEFENCE MISSILE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDM--",
           name: "AIR DEFENCE MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.2.1 ",
@@ -1506,7 +1060,7 @@ export const app6b = {
             "COMBAT",
             "AIR DEFENCE",
             "AIR DEFENCE MISSILE",
-            "AIR DEFENCE MISSILE LIGHT"
+            "AIR DEFENCE MISSILE LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1514,7 +1068,7 @@ export const app6b = {
           status: "*",
           functionid: "UCDML-",
           name: "AIR DEFENCE MISSILE LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.2.1.1 ",
@@ -1527,7 +1081,7 @@ export const app6b = {
             "AIR DEFENCE",
             "AIR DEFENCE MISSILE",
             "AIR DEFENCE MISSILE LIGHT",
-            "AIR DEFENCE MISSILE MOTORIZED"
+            "AIR DEFENCE MISSILE MOTORIZED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1535,7 +1089,7 @@ export const app6b = {
           status: "*",
           functionid: "UCDMLA",
           name: "AIR DEFENCE MISSILE MOTORIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.2.2 ",
@@ -1547,7 +1101,7 @@ export const app6b = {
             "COMBAT",
             "AIR DEFENCE",
             "AIR DEFENCE MISSILE",
-            "AIR DEFENCE MISSILE MEDIUM"
+            "AIR DEFENCE MISSILE MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1555,7 +1109,7 @@ export const app6b = {
           status: "*",
           functionid: "UCDMM-",
           name: "AIR DEFENCE MISSILE MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.2.3 ",
@@ -1567,7 +1121,7 @@ export const app6b = {
             "COMBAT",
             "AIR DEFENCE",
             "AIR DEFENCE MISSILE",
-            "AIR DEFENCE MISSILE HEAVY"
+            "AIR DEFENCE MISSILE HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1575,7 +1129,7 @@ export const app6b = {
           status: "*",
           functionid: "UCDMH-",
           name: "AIR DEFENCE MISSILE HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.2.4 ",
@@ -1587,7 +1141,7 @@ export const app6b = {
             "COMBAT",
             "AIR DEFENCE",
             "AIR DEFENCE MISSILE",
-            "H/MAD"
+            "H/MAD",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1595,64 +1149,40 @@ export const app6b = {
           status: "*",
           functionid: "UCDH--",
           name: "H/MAD",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENCE",
-            "GUN UNIT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENCE", "GUN UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDG--",
           name: "GUN UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENCE",
-            "COMPOSITE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENCE", "COMPOSITE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDC--",
           name: "COMPOSITE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AIR DEFENCE",
-            "TARGETING UNIT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AIR DEFENCE", "TARGETING UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCDT--",
           name: "TARGETING UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.1.6 ",
@@ -1663,7 +1193,7 @@ export const app6b = {
             "UNIT",
             "COMBAT",
             "AIR DEFENCE",
-            "THEATRE MISSILE DEFENCE UNIT"
+            "THEATRE MISSILE DEFENCE UNIT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1671,44 +1201,29 @@ export const app6b = {
           status: "*",
           functionid: "UCDO--",
           name: "THEATRE MISSILE DEFENCE UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ARMOUR"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ARMOUR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCA---",
           name: "ARMOUR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ARMOUR",
-            "ARMOUR TRACK"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ARMOUR", "ARMOUR TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAT--",
           name: "ARMOUR TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.1.1 ",
@@ -1720,7 +1235,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR TRACK",
-            "ARMOUR TRACK AIRBORNE"
+            "ARMOUR TRACK AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1728,7 +1243,7 @@ export const app6b = {
           status: "*",
           functionid: "UCATA-",
           name: "ARMOUR TRACK AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.1.2 ",
@@ -1740,7 +1255,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR TRACK",
-            "ARMOUR TRACK AMPHIBIOUS"
+            "ARMOUR TRACK AMPHIBIOUS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1748,7 +1263,7 @@ export const app6b = {
           status: "*",
           functionid: "UCATW-",
           name: "ARMOUR TRACK AMPHIBIOUS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.1.2.1 ",
@@ -1761,7 +1276,7 @@ export const app6b = {
             "ARMOUR",
             "ARMOUR TRACK",
             "ARMOUR TRACK AMPHIBIOUS",
-            "ARMOUR TRACK AMPHIBIOUS RECOVERY"
+            "ARMOUR TRACK AMPHIBIOUS RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1769,7 +1284,7 @@ export const app6b = {
           status: "*",
           functionid: "UCATWR",
           name: "ARMOUR TRACK AMPHIBIOUS RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.1.3 ",
@@ -1781,7 +1296,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR TRACK",
-            "ARMOUR TRACK, LIGHT"
+            "ARMOUR TRACK, LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1789,7 +1304,7 @@ export const app6b = {
           status: "*",
           functionid: "UCATL-",
           name: "ARMOUR TRACK, LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.1.4 ",
@@ -1801,7 +1316,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR TRACK",
-            "ARMOUR TRACK, MEDIUM"
+            "ARMOUR TRACK, MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1809,7 +1324,7 @@ export const app6b = {
           status: "*",
           functionid: "UCATM-",
           name: "ARMOUR TRACK, MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.1.5 ",
@@ -1821,7 +1336,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR TRACK",
-            "ARMOUR TRACK, HEAVY"
+            "ARMOUR TRACK, HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1829,7 +1344,7 @@ export const app6b = {
           status: "*",
           functionid: "UCATH-",
           name: "ARMOUR TRACK, HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.1.6 ",
@@ -1841,7 +1356,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR TRACK",
-            "ARMOUR TRACK, RECOVERY"
+            "ARMOUR TRACK, RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1849,26 +1364,18 @@ export const app6b = {
           status: "*",
           functionid: "UCATR-",
           name: "ARMOUR TRACK, RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ARMOUR",
-            "ARMOUR, WHEELED"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ARMOUR", "ARMOUR, WHEELED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAW--",
           name: "ARMOUR, WHEELED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.2.1 ",
@@ -1880,7 +1387,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR, WHEELED",
-            "ARMOUR, WHEELED AIR ASSAULT"
+            "ARMOUR, WHEELED AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1888,7 +1395,7 @@ export const app6b = {
           status: "*",
           functionid: "UCAWS-",
           name: "ARMOUR, WHEELED AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.2.2 ",
@@ -1900,7 +1407,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR, WHEELED",
-            "ARMOUR, WHEELED AIRBORNE"
+            "ARMOUR, WHEELED AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1908,7 +1415,7 @@ export const app6b = {
           status: "*",
           functionid: "UCAWA-",
           name: "ARMOUR, WHEELED AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.2.3 ",
@@ -1920,7 +1427,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR, WHEELED",
-            "ARMOUR, WHEELED AMPHIBIOUS"
+            "ARMOUR, WHEELED AMPHIBIOUS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1928,7 +1435,7 @@ export const app6b = {
           status: "*",
           functionid: "UCAWA-",
           name: "ARMOUR, WHEELED AMPHIBIOUS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.2.4 ",
@@ -1940,7 +1447,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR, WHEELED",
-            "ARMOUR, WHEELED LIGHT"
+            "ARMOUR, WHEELED LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1948,7 +1455,7 @@ export const app6b = {
           status: "*",
           functionid: "UCAWL-",
           name: "ARMOUR, WHEELED LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.2.5 ",
@@ -1960,7 +1467,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR, WHEELED",
-            "ARMOUR, WHEELED MEDIUM"
+            "ARMOUR, WHEELED MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1968,7 +1475,7 @@ export const app6b = {
           status: "*",
           functionid: "UCAWM-",
           name: "ARMOUR, WHEELED MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.2.6 ",
@@ -1980,7 +1487,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR, WHEELED",
-            "ARMOUR, WHEELED HEAVY"
+            "ARMOUR, WHEELED HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -1988,7 +1495,7 @@ export const app6b = {
           status: "*",
           functionid: "UCAWH-",
           name: "ARMOUR, WHEELED HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.2.2.7 ",
@@ -2000,7 +1507,7 @@ export const app6b = {
             "COMBAT",
             "ARMOUR",
             "ARMOUR, WHEELED",
-            "ARMOUR, WHEELED RECOVERY"
+            "ARMOUR, WHEELED RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2008,158 +1515,95 @@ export const app6b = {
           status: "*",
           functionid: "UCAWR-",
           name: "ARMOUR, WHEELED RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOUR"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOUR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAA--",
           name: "ANTI ARMOUR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOUR",
-            "ANTI ARMOUR DISMOUNTED"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOUR", "ANTI ARMOUR DISMOUNTED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAD-",
           name: "ANTI ARMOUR DISMOUNTED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOUR",
-            "ANTI ARMOUR LIGHT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOUR", "ANTI ARMOUR LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAL-",
           name: "ANTI ARMOUR LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOUR",
-            "ANTI ARMOUR AIRBORNE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOUR", "ANTI ARMOUR AIRBORNE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAM-",
           name: "ANTI ARMOUR AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOUR",
-            "ANTI ARMOUR AIR ASSAULT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOUR", "ANTI ARMOUR AIR ASSAULT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAS-",
           name: "ANTI ARMOUR AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOUR",
-            "ANTI ARMOUR MOUNTAIN"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOUR", "ANTI ARMOUR MOUNTAIN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAU-",
           name: "ANTI ARMOUR MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOUR",
-            "ANTI ARMOUR ARCTIC"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOUR", "ANTI ARMOUR ARCTIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAC-",
           name: "ANTI ARMOUR ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOUR",
-            "ANTI ARMOUR ARMOURED"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOUR", "ANTI ARMOUR ARMOURED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAA-",
           name: "ANTI ARMOUR ARMOURED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.7.1 ",
@@ -2171,7 +1615,7 @@ export const app6b = {
             "COMBAT",
             "ANTI ARMOUR",
             "ANTI ARMOUR ARMOURED",
-            "ANTI ARMOUR ARMOURED TRACKED"
+            "ANTI ARMOUR ARMOURED TRACKED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2179,7 +1623,7 @@ export const app6b = {
           status: "*",
           functionid: "UCAAAT",
           name: "ANTI ARMOUR ARMOURED TRACKED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.7.2 ",
@@ -2191,7 +1635,7 @@ export const app6b = {
             "COMBAT",
             "ANTI ARMOUR",
             "ANTI ARMOUR ARMOURED",
-            "ANTI ARMOUR ARMOURED WHEELED"
+            "ANTI ARMOUR ARMOURED WHEELED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2199,7 +1643,7 @@ export const app6b = {
           status: "*",
           functionid: "UCAAAW",
           name: "ANTI ARMOUR ARMOURED WHEELED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.7.3 ",
@@ -2211,7 +1655,7 @@ export const app6b = {
             "COMBAT",
             "ANTI ARMOUR",
             "ANTI ARMOUR ARMOURED",
-            "ANTI ARMOUR ARMOURED AIR ASSAULT"
+            "ANTI ARMOUR ARMOURED AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2219,26 +1663,18 @@ export const app6b = {
           status: "*",
           functionid: "UCAAAS",
           name: "ANTI ARMOUR ARMOURED AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.8 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ANTI ARMOUR",
-            "ANTI ARMOUR MOTORIZED"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ANTI ARMOUR", "ANTI ARMOUR MOTORIZED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCAAO-",
           name: "ANTI ARMOUR MOTORIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.3.8.1 ",
@@ -2250,7 +1686,7 @@ export const app6b = {
             "COMBAT",
             "ANTI ARMOUR",
             "ANTI ARMOUR MOTORIZED",
-            "ANTI ARMOUR MOTORIZED AIR ASSAULT"
+            "ANTI ARMOUR MOTORIZED AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2258,44 +1694,29 @@ export const app6b = {
           status: "*",
           functionid: "UCAAOS",
           name: "ANTI ARMOUR MOTORIZED AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AVIATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCV---",
           name: "AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "FIXED WING"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "FIXED WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVF--",
           name: "FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.1.1 ",
@@ -2307,7 +1728,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "FIXED WING",
-            "UTILITY FIXED WING"
+            "UTILITY FIXED WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2315,7 +1736,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVFU-",
           name: "UTILITY FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.1.2 ",
@@ -2327,7 +1748,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "FIXED WING",
-            "ATTACK FIXED WING"
+            "ATTACK FIXED WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2335,7 +1756,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVFA-",
           name: "ATTACK FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.1.2.1 ",
@@ -2348,7 +1769,7 @@ export const app6b = {
             "AVIATION",
             "FIXED WING",
             "ATTACK FIXED WING",
-            "TACTICAL AIR CONTROL PARTY (TACP)"
+            "TACTICAL AIR CONTROL PARTY (TACP)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2356,7 +1777,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVUTP",
           name: "TACTICAL AIR CONTROL PARTY (TACP)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.1.2.2 ",
@@ -2369,7 +1790,7 @@ export const app6b = {
             "AVIATION",
             "FIXED WING",
             "ATTACK FIXED WING",
-            "FORWARD AIR CONTROLLER (FAC)"
+            "FORWARD AIR CONTROLLER (FAC)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2377,7 +1798,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVUFC",
           name: "FORWARD AIR CONTROLLER (FAC)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.1.3 ",
@@ -2389,7 +1810,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "FIXED WING",
-            "RECON FIXED WING"
+            "RECON FIXED WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2397,26 +1818,18 @@ export const app6b = {
           status: "*",
           functionid: "UCVFR-",
           name: "RECON FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "ROTARY WING"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "ROTARY WING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVR--",
           name: "ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.1 ",
@@ -2428,7 +1841,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "ATTACK ROTARY WING"
+            "ATTACK ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2436,7 +1849,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVRA-",
           name: "ATTACK ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.2 ",
@@ -2448,7 +1861,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "SCOUT ROTARY WING"
+            "SCOUT ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2456,7 +1869,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVRS-",
           name: "SCOUT ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.3 ",
@@ -2468,7 +1881,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "ANTISUBMARINE WARFARE ROTARY WING"
+            "ANTISUBMARINE WARFARE ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2476,7 +1889,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVRW-",
           name: "ANTISUBMARINE WARFARE ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.4 ",
@@ -2488,7 +1901,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "UTILITY ROTARY WING"
+            "UTILITY ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2496,7 +1909,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVRU-",
           name: "UTILITY ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.4.1 ",
@@ -2509,7 +1922,7 @@ export const app6b = {
             "AVIATION",
             "ROTARY WING",
             "UTILITY ROTARY WING",
-            "LIGHT UTILITY ROTARY WING"
+            "LIGHT UTILITY ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2517,7 +1930,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVRUL",
           name: "LIGHT UTILITY ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.4.2 ",
@@ -2530,7 +1943,7 @@ export const app6b = {
             "AVIATION",
             "ROTARY WING",
             "UTILITY ROTARY WING",
-            "MEDIUM UTILITY ROTARY WING"
+            "MEDIUM UTILITY ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2538,7 +1951,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVRUM",
           name: "MEDIUM UTILITY ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.4.3 ",
@@ -2551,7 +1964,7 @@ export const app6b = {
             "AVIATION",
             "ROTARY WING",
             "UTILITY ROTARY WING",
-            "HEAVY UTILITY ROTARY WING"
+            "HEAVY UTILITY ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2559,7 +1972,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVRUH",
           name: "HEAVY UTILITY ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.5 ",
@@ -2571,7 +1984,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "C2 ROTARY WING"
+            "C2 ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2579,7 +1992,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVRUC",
           name: "C2 ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.6 ",
@@ -2591,7 +2004,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "MEDEVAC ROTARY WING"
+            "MEDEVAC ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2599,7 +2012,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVRUE",
           name: "MEDEVAC ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.2.7 ",
@@ -2611,7 +2024,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "ROTARY WING",
-            "MINE COUNTERMEASURE ROTARY WING"
+            "MINE COUNTERMEASURE ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2619,45 +2032,29 @@ export const app6b = {
           status: "*",
           functionid: "UCVRM-",
           name: "MINE COUNTERMEASURE ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "PERSONNEL RECOVERY"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "PERSONNEL RECOVERY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVS--",
           name: "PERSONNEL RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "COMPOSITE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "COMPOSITE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVC--",
           name: "COMPOSITE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.5 ",
@@ -2668,7 +2065,7 @@ export const app6b = {
             "UNIT",
             "COMBAT",
             "AVIATION",
-            "VERTICAL/SHORT TAKEOFF AND LANDING (V/STOL)"
+            "VERTICAL/SHORT TAKEOFF AND LANDING (V/STOL)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2676,26 +2073,18 @@ export const app6b = {
           status: "*",
           functionid: "UCVV--",
           name: "VERTICAL/SHORT TAKEOFF AND LANDING (V/STOL)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "AVIATION",
-            "UNMANNED AERIAL VEHICLE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "AVIATION", "UNMANNED AERIAL VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCVU--",
           name: "UNMANNED AERIAL VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.6.1 ",
@@ -2707,7 +2096,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "UNMANNED AERIAL VEHICLE",
-            "UNMANNED AERIAL VEHICLE FIXED WING"
+            "UNMANNED AERIAL VEHICLE FIXED WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2715,7 +2104,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVUF-",
           name: "UNMANNED AERIAL VEHICLE FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.6.1.1 ",
@@ -2728,7 +2117,7 @@ export const app6b = {
             "AVIATION",
             "UNMANNED AERIAL VEHICLE",
             "UNMANNED AERIAL VEHICLE FIXED WING",
-            "AVIATION UAV CONTROL"
+            "AVIATION UAV CONTROL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2736,7 +2125,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVU--",
           name: "AVIATION UAV CONTROL",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.4.6.1.2 ",
@@ -2749,7 +2138,7 @@ export const app6b = {
             "AVIATION",
             "UNMANNED AERIAL VEHICLE",
             "UNMANNED AERIAL VEHICLE FIXED WING",
-            "AVIATION UAV LAUNCHER"
+            "AVIATION UAV LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2757,7 +2146,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVU--",
           name: "AVIATION UAV LAUNCHER",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.4.6.1.3 ",
@@ -2770,7 +2159,7 @@ export const app6b = {
             "AVIATION",
             "UNMANNED AERIAL VEHICLE",
             "UNMANNED AERIAL VEHICLE FIXED WING",
-            "AVIATION UAV RECOVERY"
+            "AVIATION UAV RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2778,7 +2167,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVU--",
           name: "AVIATION UAV RECOVERY",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.4.6.2 ",
@@ -2790,7 +2179,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "UNMANNED AERIAL VEHICLE",
-            "UNMANNED AERIAL VEHICLE ROTARY WING"
+            "UNMANNED AERIAL VEHICLE ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2798,7 +2187,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVUR-",
           name: "UNMANNED AERIAL VEHICLE ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.6.3 ",
@@ -2810,7 +2199,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "UNMANNED AERIAL VEHICLE",
-            "TACTICAL AIR CONTROL PARTY (TACP)"
+            "TACTICAL AIR CONTROL PARTY (TACP)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2818,7 +2207,7 @@ export const app6b = {
           status: "*",
           functionid: "UCVUTP",
           name: "TACTICAL AIR CONTROL PARTY (TACP)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.4.6.4 ",
@@ -2830,7 +2219,7 @@ export const app6b = {
             "COMBAT",
             "AVIATION",
             "UNMANNED AERIAL VEHICLE",
-            "FORWARD AIR CONTROLLER (FAC)"
+            "FORWARD AIR CONTROLLER (FAC)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -2838,252 +2227,150 @@ export const app6b = {
           status: "*",
           functionid: "UCVUFC",
           name: "FORWARD AIR CONTROLLER (FAC)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCI---",
           name: "INFANTRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY LIGHT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIL--",
           name: "INFANTRY LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY MOTORIZED"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY MOTORIZED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIM--",
           name: "INFANTRY MOTORIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY MOUNTAIN"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY MOUNTAIN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIO--",
           name: "INFANTRY MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY AIRBORNE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY AIRBORNE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIA--",
           name: "INFANTRY AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY AIR ASSAULT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY AIR ASSAULT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIS--",
           name: "INFANTRY AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY MECHANIZED"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY MECHANIZED"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIZ--",
           name: "INFANTRY MECHANIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY NAVAL"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY NAVAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIN--",
           name: "INFANTRY NAVAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.8 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY FIGHTING VEHICLE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY FIGHTING VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCII--",
           name: "INFANTRY FIGHTING VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.9 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY ARCTIC"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY ARCTIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIC--",
           name: "INFANTRY ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.5.10 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INFANTRY",
-            "INFANTRY SNIPER"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INFANTRY", "INFANTRY SNIPER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCIC--",
           name: "INFANTRY SNIPER",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ENGINEER"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ENGINEER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCE---",
           name: "ENGINEER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ENGINEER",
-            "ENGINEER COMBAT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ENGINEER", "ENGINEER COMBAT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCEC--",
           name: "ENGINEER COMBAT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.1 ",
@@ -3095,7 +2382,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT AIR ASSAULT"
+            "ENGINEER COMBAT AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3103,7 +2390,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECS-",
           name: "ENGINEER COMBAT AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.2 ",
@@ -3115,7 +2402,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT AIRBORNE"
+            "ENGINEER COMBAT AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3123,7 +2410,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECA-",
           name: "ENGINEER COMBAT AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.3 ",
@@ -3135,7 +2422,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT ARCTIC"
+            "ENGINEER COMBAT ARCTIC",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3143,7 +2430,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECC-",
           name: "ENGINEER COMBAT ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.4 ",
@@ -3155,7 +2442,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT LIGHT"
+            "ENGINEER COMBAT LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3163,7 +2450,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECL-",
           name: "ENGINEER COMBAT LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.5 ",
@@ -3175,7 +2462,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MEDIUM"
+            "ENGINEER COMBAT MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3183,7 +2470,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECM-",
           name: "ENGINEER COMBAT MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.6 ",
@@ -3195,7 +2482,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT HEAVY"
+            "ENGINEER COMBAT HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3203,7 +2490,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECH-",
           name: "ENGINEER COMBAT HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.7 ",
@@ -3215,7 +2502,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MECHANIZED (TRACK)"
+            "ENGINEER COMBAT MECHANIZED (TRACK)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3223,7 +2510,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECT-",
           name: "ENGINEER COMBAT MECHANIZED (TRACK)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.8 ",
@@ -3235,7 +2522,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MOTORIZED"
+            "ENGINEER COMBAT MOTORIZED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3243,7 +2530,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECW-",
           name: "ENGINEER COMBAT MOTORIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.9 ",
@@ -3255,7 +2542,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MOUNTAIN"
+            "ENGINEER COMBAT MOUNTAIN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3263,7 +2550,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECO-",
           name: "ENGINEER COMBAT MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.10 ",
@@ -3275,7 +2562,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT RECON"
+            "ENGINEER COMBAT RECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3283,7 +2570,7 @@ export const app6b = {
           status: "*",
           functionid: "UCECR-",
           name: "ENGINEER COMBAT RECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.11 ",
@@ -3295,7 +2582,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT BRIDGING"
+            "ENGINEER COMBAT BRIDGING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3303,7 +2590,7 @@ export const app6b = {
           status: "*",
           functionid: "UCEC--",
           name: "ENGINEER COMBAT BRIDGING",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.12 ",
@@ -3315,7 +2602,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MINE CLEARING"
+            "ENGINEER COMBAT MINE CLEARING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3323,7 +2610,7 @@ export const app6b = {
           status: "*",
           functionid: "UCEC--",
           name: "ENGINEER COMBAT MINE CLEARING",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.13 ",
@@ -3335,7 +2622,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT MINE LAYING"
+            "ENGINEER COMBAT MINE LAYING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3343,7 +2630,7 @@ export const app6b = {
           status: "*",
           functionid: "UCEC--",
           name: "ENGINEER COMBAT MINE LAYING",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.6.1.14 ",
@@ -3355,7 +2642,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER COMBAT",
-            "ENGINEER COMBAT DIVING"
+            "ENGINEER COMBAT DIVING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3363,26 +2650,18 @@ export const app6b = {
           status: "*",
           functionid: "UCEC--",
           name: "ENGINEER COMBAT DIVING",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.6.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "ENGINEER",
-            "ENGINEER CONSTRUCTION"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "ENGINEER", "ENGINEER CONSTRUCTION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCEN--",
           name: "ENGINEER CONSTRUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.6.2.1 ",
@@ -3394,7 +2673,7 @@ export const app6b = {
             "COMBAT",
             "ENGINEER",
             "ENGINEER CONSTRUCTION",
-            "ENGINEER NAVAL CONSTRUCTION"
+            "ENGINEER NAVAL CONSTRUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3402,44 +2681,29 @@ export const app6b = {
           status: "*",
           functionid: "UCENN-",
           name: "ENGINEER NAVAL CONSTRUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCF---",
           name: "FIELD ARTILLERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "HOWITZER/GUN"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "HOWITZER/GUN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFH--",
           name: "HOWITZER/GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1.1 ",
@@ -3451,7 +2715,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "SELF PROPELLED"
+            "SELF PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3459,7 +2723,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFHE-",
           name: "SELF PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1.2 ",
@@ -3471,7 +2735,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "AIR ASSAULT"
+            "AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3479,7 +2743,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFHS-",
           name: "AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1.3 ",
@@ -3491,7 +2755,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "AIRBORNE"
+            "AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3499,7 +2763,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFHA-",
           name: "AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1.4 ",
@@ -3511,7 +2775,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "ARCTIC"
+            "ARCTIC",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3519,7 +2783,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFHC-",
           name: "ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1.5 ",
@@ -3531,7 +2795,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "MOUNTAIN"
+            "MOUNTAIN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3539,27 +2803,18 @@ export const app6b = {
           status: "*",
           functionid: "UCFHO-",
           name: "MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "HOWITZER/GUN",
-            "LIGHT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "HOWITZER/GUN", "LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFHL-",
           name: "LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1.7 ",
@@ -3571,7 +2826,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "MEDIUM"
+            "MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3579,27 +2834,18 @@ export const app6b = {
           status: "*",
           functionid: "UCFHM-",
           name: "MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1.8 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "HOWITZER/GUN",
-            "HEAVY"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "HOWITZER/GUN", "HEAVY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFHH-",
           name: "HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.1.9 ",
@@ -3611,7 +2857,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "HOWITZER/GUN",
-            "AMPHIBIOUS"
+            "AMPHIBIOUS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3619,26 +2865,18 @@ export const app6b = {
           status: "*",
           functionid: "UCFHX-",
           name: "AMPHIBIOUS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "ROCKET"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "ROCKET"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFR--",
           name: "ROCKET",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.2.1 ",
@@ -3650,7 +2888,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ROCKET",
-            "SINGLE ROCKET LAUNCHER"
+            "SINGLE ROCKET LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3658,7 +2896,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFRS-",
           name: "SINGLE ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.2.1.1 ",
@@ -3671,7 +2909,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET SELF PROPELLED"
+            "SINGLE ROCKET SELF PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3679,7 +2917,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFRSS",
           name: "SINGLE ROCKET SELF PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.2.1.2 ",
@@ -3692,7 +2930,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET TRUCK"
+            "SINGLE ROCKET TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3700,7 +2938,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFRSR",
           name: "SINGLE ROCKET TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.2.1.3 ",
@@ -3713,7 +2951,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET TOWED"
+            "SINGLE ROCKET TOWED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3721,7 +2959,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFRST",
           name: "SINGLE ROCKET TOWED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.2.2 ",
@@ -3733,7 +2971,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ROCKET",
-            "MULTI ROCKET LAUNCHER"
+            "MULTI ROCKET LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3741,7 +2979,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFRM-",
           name: "MULTI ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.2.2.1 ",
@@ -3754,7 +2992,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "MULTI ROCKET LAUNCHER",
-            "MULTI ROCKET SELF PROPELLED"
+            "MULTI ROCKET SELF PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3762,7 +3000,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFRMS",
           name: "MULTI ROCKET SELF PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.2.2.2 ",
@@ -3775,7 +3013,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "MULTI ROCKET LAUNCHER",
-            "MULTI ROCKET TRUCK"
+            "MULTI ROCKET TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3783,7 +3021,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFRMR",
           name: "MULTI ROCKET TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.2.2.3 ",
@@ -3796,7 +3034,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "ROCKET",
             "MULTI ROCKET LAUNCHER",
-            "MULTI ROCKET TOWED"
+            "MULTI ROCKET TOWED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3804,26 +3042,18 @@ export const app6b = {
           status: "*",
           functionid: "UCFRMT",
           name: "MULTI ROCKET TOWED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "TARGET ACQUISITION"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "TARGET ACQUISITION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFT--",
           name: "TARGET ACQUISITION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.3.1 ",
@@ -3835,7 +3065,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "RADAR"
+            "RADAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3843,7 +3073,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFTR-",
           name: "RADAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.3.2 ",
@@ -3855,7 +3085,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "SOUND"
+            "SOUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3863,7 +3093,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFTS-",
           name: "SOUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.3.3 ",
@@ -3875,7 +3105,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "FLASH (OPTICAL)"
+            "FLASH (OPTICAL)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3883,7 +3113,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFTF-",
           name: "FLASH (OPTICAL)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.3.4 ",
@@ -3895,7 +3125,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "TARGET ACQUISITION MOUNTED"
+            "TARGET ACQUISITION MOUNTED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3903,7 +3133,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFTC-",
           name: "TARGET ACQUISITION MOUNTED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.3.4.1 ",
@@ -3916,7 +3146,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
             "TARGET ACQUISITION MOUNTED",
-            "TARGET ACQUISITION DISMOUNTED"
+            "TARGET ACQUISITION DISMOUNTED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3924,7 +3154,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFTCD",
           name: "TARGET ACQUISITION DISMOUNTED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.3.4.2 ",
@@ -3937,7 +3167,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
             "TARGET ACQUISITION MOUNTED",
-            "TARGET ACQUISITION TRACKED"
+            "TARGET ACQUISITION TRACKED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3945,7 +3175,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFTCM",
           name: "TARGET ACQUISITION TRACKED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.3.5 ",
@@ -3957,7 +3187,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "TARGET ACQUISITION",
-            "TARGET ACQUISITION NAVAL GUNFIRE"
+            "TARGET ACQUISITION NAVAL GUNFIRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -3965,26 +3195,18 @@ export const app6b = {
           status: "*",
           functionid: "UCFTA-",
           name: "TARGET ACQUISITION NAVAL GUNFIRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "MORTAR"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "MORTAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFM--",
           name: "MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.4.1 ",
@@ -3996,7 +3218,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "MORTAR",
-            "SELF PROPELLED (SP) TRACKED MORTAR"
+            "SELF PROPELLED (SP) TRACKED MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4004,7 +3226,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFMS-",
           name: "SELF PROPELLED (SP) TRACKED MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.4.2 ",
@@ -4016,7 +3238,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "MORTAR",
-            "SP WHEELED MORTAR"
+            "SP WHEELED MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4024,7 +3246,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFMSW",
           name: "SP WHEELED MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.4.3 ",
@@ -4036,7 +3258,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "MORTAR",
-            "TOWED MORTAR"
+            "TOWED MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4044,7 +3266,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFMT-",
           name: "TOWED MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.4.3.1 ",
@@ -4057,7 +3279,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "MORTAR",
             "TOWED MORTAR",
-            "TOWED AIRBORNE MORTAR"
+            "TOWED AIRBORNE MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4065,7 +3287,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFMTA",
           name: "TOWED AIRBORNE MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.4.3.2 ",
@@ -4078,7 +3300,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "MORTAR",
             "TOWED MORTAR",
-            "TOWED AIR ASSAULT MORTAR"
+            "TOWED AIR ASSAULT MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4086,7 +3308,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFMTS",
           name: "TOWED AIR ASSAULT MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.4.3.3 ",
@@ -4099,7 +3321,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "MORTAR",
             "TOWED MORTAR",
-            "TOWED ARCTIC MORTAR"
+            "TOWED ARCTIC MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4107,7 +3329,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFMTC",
           name: "TOWED ARCTIC MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.4.3.4 ",
@@ -4120,7 +3342,7 @@ export const app6b = {
             "FIELD ARTILLERY",
             "MORTAR",
             "TOWED MORTAR",
-            "TOWED MOUNTAIN MORTAR"
+            "TOWED MOUNTAIN MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4128,7 +3350,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFMTO",
           name: "TOWED MOUNTAIN MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.4.4 ",
@@ -4140,7 +3362,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "MORTAR",
-            "AMPHIBIOUS MORTAR"
+            "AMPHIBIOUS MORTAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4148,26 +3370,18 @@ export const app6b = {
           status: "*",
           functionid: "UCFML-",
           name: "AMPHIBIOUS MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "ARTILLERY SURVEY"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "ARTILLERY SURVEY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFS--",
           name: "ARTILLERY SURVEY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.5.1 ",
@@ -4179,7 +3393,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ARTILLERY SURVEY",
-            "AIR ASSAULT"
+            "AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4187,7 +3401,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFSS-",
           name: "AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.5.2 ",
@@ -4199,7 +3413,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ARTILLERY SURVEY",
-            "AIRBORNE"
+            "AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4207,7 +3421,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFSA-",
           name: "AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.5.3 ",
@@ -4219,7 +3433,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ARTILLERY SURVEY",
-            "LIGHT"
+            "LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4227,7 +3441,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFSL-",
           name: "LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.5.4 ",
@@ -4239,7 +3453,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "ARTILLERY SURVEY",
-            "MOUNTAIN"
+            "MOUNTAIN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4247,26 +3461,18 @@ export const app6b = {
           status: "*",
           functionid: "UCFSO-",
           name: "MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "METEOROLOGICAL"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "METEOROLOGICAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCFO--",
           name: "METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.6.1 ",
@@ -4278,7 +3484,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "METEOROLOGICAL",
-            "AIR ASSAULT METEOROLOGICAL"
+            "AIR ASSAULT METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4286,7 +3492,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFOS-",
           name: "AIR ASSAULT METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.6.2 ",
@@ -4298,7 +3504,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "METEOROLOGICAL",
-            "AIRBORNE METEOROLOGICAL"
+            "AIRBORNE METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4306,7 +3512,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFOA-",
           name: "AIRBORNE METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.6.3 ",
@@ -4318,7 +3524,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "METEOROLOGICAL",
-            "LIGHT METEOROLOGICAL"
+            "LIGHT METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4326,7 +3532,7 @@ export const app6b = {
           status: "*",
           functionid: "UCFOL-",
           name: "LIGHT METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.6.4 ",
@@ -4338,7 +3544,7 @@ export const app6b = {
             "COMBAT",
             "FIELD ARTILLERY",
             "METEOROLOGICAL",
-            "MOUNTAIN METEOROLOGICAL"
+            "MOUNTAIN METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4346,101 +3552,62 @@ export const app6b = {
           status: "*",
           functionid: "UCFOO-",
           name: "MOUNTAIN METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.7.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "FIRE DIRECTION CENTRE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "FIRE DIRECTION CENTRE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCF---",
           name: "FIRE DIRECTION CENTRE",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.7.8 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "FIELD ARTILLERY",
-            "OBERSERVER"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "FIELD ARTILLERY", "OBERSERVER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCF---",
           name: "OBERSERVER",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.1.8 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCR---",
           name: "RECONNAISSANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE HORSE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE HORSE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRH--",
           name: "RECONNAISSANCE HORSE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE CAVALRY"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE CAVALRY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRV--",
           name: "RECONNAISSANCE CAVALRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.2.1 ",
@@ -4452,7 +3619,7 @@ export const app6b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE CAVALRY",
-            "RECONNAISSANCE CAVALRY ARMOURED"
+            "RECONNAISSANCE CAVALRY ARMOURED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4460,7 +3627,7 @@ export const app6b = {
           status: "*",
           functionid: "UCRVA-",
           name: "RECONNAISSANCE CAVALRY ARMOURED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.2.2 ",
@@ -4472,7 +3639,7 @@ export const app6b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE CAVALRY",
-            "RECONNAISSANCE CAVALRY MOTORIZED"
+            "RECONNAISSANCE CAVALRY MOTORIZED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4480,7 +3647,7 @@ export const app6b = {
           status: "*",
           functionid: "UCRVM-",
           name: "RECONNAISSANCE CAVALRY MOTORIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.2.3 ",
@@ -4492,7 +3659,7 @@ export const app6b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE CAVALRY",
-            "RECONNAISSANCE CAVALRY GROUND"
+            "RECONNAISSANCE CAVALRY GROUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4500,7 +3667,7 @@ export const app6b = {
           status: "*",
           functionid: "UCRVG-",
           name: "RECONNAISSANCE CAVALRY GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.2.4 ",
@@ -4512,7 +3679,7 @@ export const app6b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE CAVALRY",
-            "RECONNAISSANCE CAVALRY AIR"
+            "RECONNAISSANCE CAVALRY AIR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4520,26 +3687,18 @@ export const app6b = {
           status: "*",
           functionid: "UCRVO-",
           name: "RECONNAISSANCE CAVALRY AIR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE ARCTIC"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE ARCTIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRC--",
           name: "RECONNAISSANCE ARCTIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.4 ",
@@ -4550,7 +3709,7 @@ export const app6b = {
             "UNIT",
             "COMBAT",
             "RECONNAISSANCE",
-            "RECONNAISSANCE AIR ASSAULT"
+            "RECONNAISSANCE AIR ASSAULT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4558,7 +3717,7 @@ export const app6b = {
           status: "*",
           functionid: "UCRS--",
           name: "RECONNAISSANCE AIR ASSAULT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.5 ",
@@ -4569,7 +3728,7 @@ export const app6b = {
             "UNIT",
             "COMBAT",
             "RECONNAISSANCE",
-            "RECONNAISSANCE AIRBORNE"
+            "RECONNAISSANCE AIRBORNE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4577,7 +3736,7 @@ export const app6b = {
           status: "*",
           functionid: "UCRA--",
           name: "RECONNAISSANCE AIRBORNE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.6 ",
@@ -4588,7 +3747,7 @@ export const app6b = {
             "UNIT",
             "COMBAT",
             "RECONNAISSANCE",
-            "RECONNAISSANCE MOUNTAIN"
+            "RECONNAISSANCE MOUNTAIN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4596,45 +3755,29 @@ export const app6b = {
           status: "*",
           functionid: "UCRO--",
           name: "RECONNAISSANCE MOUNTAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE LIGHT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRLL--",
           name: "RECONNAISSANCE LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.8 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "RECONNAISSANCE",
-            "RECONNAISSANCE MARINE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "RECONNAISSANCE", "RECONNAISSANCE MARINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCRR--",
           name: "RECONNAISSANCE MARINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.8.1 ",
@@ -4646,7 +3789,7 @@ export const app6b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE MARINE",
-            "RECONNAISSANCE MARINE DIVISION"
+            "RECONNAISSANCE MARINE DIVISION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4654,7 +3797,7 @@ export const app6b = {
           status: "*",
           functionid: "UCRRD-",
           name: "RECONNAISSANCE MARINE DIVISION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.8.2 ",
@@ -4666,7 +3809,7 @@ export const app6b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE MARINE",
-            "RECONNAISSANCE MARINE FORCE"
+            "RECONNAISSANCE MARINE FORCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4674,7 +3817,7 @@ export const app6b = {
           status: "*",
           functionid: "UCRRF-",
           name: "RECONNAISSANCE MARINE FORCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.8.3 ",
@@ -4686,7 +3829,7 @@ export const app6b = {
             "COMBAT",
             "RECONNAISSANCE",
             "RECONNAISSANCE MARINE",
-            "RECONNAISSANCE MARINE LIGHT ARMOURED RECONNAISSANCE (LAR)"
+            "RECONNAISSANCE MARINE LIGHT ARMOURED RECONNAISSANCE (LAR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4694,7 +3837,7 @@ export const app6b = {
           status: "*",
           functionid: "UCRRL-",
           name: "RECONNAISSANCE MARINE LIGHT ARMOURED RECONNAISSANCE (LAR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.8.9 ",
@@ -4705,7 +3848,7 @@ export const app6b = {
             "UNIT",
             "COMBAT",
             "RECONNAISSANCE",
-            "RECONNAISSANCE LONG RANGE SURVEILLANCE (LRS)"
+            "RECONNAISSANCE LONG RANGE SURVEILLANCE (LRS)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4713,25 +3856,18 @@ export const app6b = {
           status: "*",
           functionid: "UCRX--",
           name: "RECONNAISSANCE LONG RANGE SURVEILLANCE (LRS)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.9 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "MISSILE (SURFACE-SURFACE)"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "MISSILE (SURFACE-SURFACE)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCM---",
           name: "MISSILE (SURFACE-SURFACE)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.9.1 ",
@@ -4742,7 +3878,7 @@ export const app6b = {
             "UNIT",
             "COMBAT",
             "MISSILE (SURFACE-SURFACE)",
-            "MISSILE (SURFACE-SURFACE) TACTICAL"
+            "MISSILE (SURFACE-SURFACE) TACTICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4750,7 +3886,7 @@ export const app6b = {
           status: "*",
           functionid: "UCMT--",
           name: "MISSILE (SURFACE-SURFACE) TACTICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.9.2 ",
@@ -4761,7 +3897,7 @@ export const app6b = {
             "UNIT",
             "COMBAT",
             "MISSILE (SURFACE-SURFACE)",
-            "MISSILE (SURFACE-SURFACE) STRATEGIC"
+            "MISSILE (SURFACE-SURFACE) STRATEGIC",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4769,63 +3905,40 @@ export const app6b = {
           status: "*",
           functionid: "UCMS--",
           name: "MISSILE (SURFACE-SURFACE) STRATEGIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.10 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCS---",
           name: "INTERNAL SECURITY FORCES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.10.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES",
-            "RIVERINE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES", "RIVERINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCSW--",
           name: "RIVERINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.10.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES",
-            "GROUND"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES", "GROUND"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCSG--",
           name: "GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.10.2.1 ",
@@ -4837,7 +3950,7 @@ export const app6b = {
             "COMBAT",
             "INTERNAL SECURITY FORCES",
             "GROUND",
-            "DISMOUNTED GROUND"
+            "DISMOUNTED GROUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4845,7 +3958,7 @@ export const app6b = {
           status: "*",
           functionid: "UCSGD-",
           name: "DISMOUNTED GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.10.2.2 ",
@@ -4857,7 +3970,7 @@ export const app6b = {
             "COMBAT",
             "INTERNAL SECURITY FORCES",
             "GROUND",
-            "MOTORIZED GROUND"
+            "MOTORIZED GROUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4865,7 +3978,7 @@ export const app6b = {
           status: "*",
           functionid: "UCSGM-",
           name: "MOTORIZED GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.10.2.3 ",
@@ -4877,7 +3990,7 @@ export const app6b = {
             "COMBAT",
             "INTERNAL SECURITY FORCES",
             "GROUND",
-            "MECHANIZED GROUND"
+            "MECHANIZED GROUND",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4885,7 +3998,7 @@ export const app6b = {
           status: "*",
           functionid: "UCSGA-",
           name: "MECHANIZED GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.10.3 ",
@@ -4896,7 +4009,7 @@ export const app6b = {
             "UNIT",
             "COMBAT",
             "INTERNAL SECURITY FORCES",
-            "WHEELED MECHANIZED"
+            "WHEELED MECHANIZED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -4904,99 +4017,62 @@ export const app6b = {
           status: "*",
           functionid: "UCSM--",
           name: "WHEELED MECHANIZED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.10.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES",
-            "RAILROAD"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES", "RAILROAD"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCSR--",
           name: "RAILROAD",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.1.10.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT",
-            "INTERNAL SECURITY FORCES",
-            "AVIATION"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT", "INTERNAL SECURITY FORCES", "AVIATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UCSA--",
           name: "AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UU----",
           name: "COMBAT SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "COMBAT SUPPORT CBRN"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "COMBAT SUPPORT CBRN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUA---",
           name: "COMBAT SUPPORT CBRN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "COMBAT SUPPORT CBRN",
-            "CHEMICAL"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "COMBAT SUPPORT CBRN", "CHEMICAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUAC--",
           name: "CHEMICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1.1 ",
@@ -5008,7 +4084,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "COMBAT SUPPORT CBRN",
             "CHEMICAL",
-            "SMOKE/DECON"
+            "SMOKE/DECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5016,7 +4092,7 @@ export const app6b = {
           status: "*",
           functionid: "UUACC-",
           name: "SMOKE/DECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1.1.1 ",
@@ -5029,7 +4105,7 @@ export const app6b = {
             "COMBAT SUPPORT CBRN",
             "CHEMICAL",
             "SMOKE/DECON",
-            "MECHANIZED SMOKE/DECON"
+            "MECHANIZED SMOKE/DECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5037,7 +4113,7 @@ export const app6b = {
           status: "*",
           functionid: "UUACCK",
           name: "MECHANIZED SMOKE/DECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1.1.2 ",
@@ -5050,7 +4126,7 @@ export const app6b = {
             "COMBAT SUPPORT CBRN",
             "CHEMICAL",
             "SMOKE/DECON",
-            "MOTORIZED SMOKE/DECON"
+            "MOTORIZED SMOKE/DECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5058,7 +4134,7 @@ export const app6b = {
           status: "*",
           functionid: "UUACCM",
           name: "MOTORIZED SMOKE/DECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1.2 ",
@@ -5070,7 +4146,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "COMBAT SUPPORT CBRN",
             "CHEMICAL",
-            "SMOKE"
+            "SMOKE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5078,7 +4154,7 @@ export const app6b = {
           status: "*",
           functionid: "UUACS-",
           name: "SMOKE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1.2.1 ",
@@ -5091,7 +4167,7 @@ export const app6b = {
             "COMBAT SUPPORT CBRN",
             "CHEMICAL",
             "SMOKE",
-            "MOTORIZED SMOKE"
+            "MOTORIZED SMOKE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5099,7 +4175,7 @@ export const app6b = {
           status: "*",
           functionid: "UUACSM",
           name: "MOTORIZED SMOKE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1.2.2 ",
@@ -5112,7 +4188,7 @@ export const app6b = {
             "COMBAT SUPPORT CBRN",
             "CHEMICAL",
             "SMOKE",
-            "ARMOUR SMOKE"
+            "ARMOUR SMOKE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5120,7 +4196,7 @@ export const app6b = {
           status: "*",
           functionid: "UUACSA",
           name: "ARMOUR SMOKE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1.3 ",
@@ -5132,7 +4208,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "COMBAT SUPPORT CBRN",
             "CHEMICAL",
-            "CHEMICAL RECON"
+            "CHEMICAL RECON",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5140,7 +4216,7 @@ export const app6b = {
           status: "*",
           functionid: "UUACR-",
           name: "CHEMICAL RECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1.3.1 ",
@@ -5153,7 +4229,7 @@ export const app6b = {
             "COMBAT SUPPORT CBRN",
             "CHEMICAL",
             "CHEMICAL RECON",
-            "CHEMICAL WHEELED ARMOURED VEHICLE"
+            "CHEMICAL WHEELED ARMOURED VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5161,7 +4237,7 @@ export const app6b = {
           status: "*",
           functionid: "UUACRW",
           name: "CHEMICAL WHEELED ARMOURED VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.1.3.2 ",
@@ -5174,7 +4250,7 @@ export const app6b = {
             "COMBAT SUPPORT CBRN",
             "CHEMICAL",
             "CHEMICAL RECON",
-            "CHEMICAL WHEELED ARMOURED VEHICLE RECONNAISSANCE SURVEILLANCE"
+            "CHEMICAL WHEELED ARMOURED VEHICLE RECONNAISSANCE SURVEILLANCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5182,26 +4258,18 @@ export const app6b = {
           status: "*",
           functionid: "UUACRS",
           name: "CHEMICAL WHEELED ARMOURED VEHICLE RECONNAISSANCE SURVEILLANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "COMBAT SUPPORT CBRN",
-            "NUCLEAR"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "COMBAT SUPPORT CBRN", "NUCLEAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUAN--",
           name: "NUCLEAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.3 ",
@@ -5212,7 +4280,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "COMBAT SUPPORT CBRN",
-            "BIOLOGICAL"
+            "BIOLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5220,7 +4288,7 @@ export const app6b = {
           status: "*",
           functionid: "UUAB--",
           name: "BIOLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.3.1 ",
@@ -5232,7 +4300,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "COMBAT SUPPORT CBRN",
             "BIOLOGICAL",
-            "RECON EQUIPPED"
+            "RECON EQUIPPED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5240,7 +4308,7 @@ export const app6b = {
           status: "*",
           functionid: "UUABR-",
           name: "RECON EQUIPPED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.1.4 ",
@@ -5251,7 +4319,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "COMBAT SUPPORT CBRN",
-            "DECONTAMINATION"
+            "DECONTAMINATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5259,25 +4327,18 @@ export const app6b = {
           status: "*",
           functionid: "UUAD--",
           name: "DECONTAMINATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "MILITARY INTELLIGENCE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "MILITARY INTELLIGENCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUM---",
           name: "MILITARY INTELLIGENCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.1 ",
@@ -5288,7 +4349,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "AERIAL EXPLOITATION"
+            "AERIAL EXPLOITATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5296,7 +4357,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMA--",
           name: "AERIAL EXPLOITATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.2 ",
@@ -5307,7 +4368,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "SIGNAL INTELLIGENCE (SIGINT)"
+            "SIGNAL INTELLIGENCE (SIGINT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5315,7 +4376,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMS--",
           name: "SIGNAL INTELLIGENCE (SIGINT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.2.1 ",
@@ -5327,7 +4388,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
-            "ELECTRONIC WARFARE"
+            "ELECTRONIC WARFARE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5335,7 +4396,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMSE-",
           name: "ELECTRONIC WARFARE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.2.1.1 ",
@@ -5348,7 +4409,7 @@ export const app6b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "ARMOURED WHEELED VEHICLE"
+            "ARMOURED WHEELED VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5356,7 +4417,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMSEA",
           name: "ARMOURED WHEELED VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.2.1.2 ",
@@ -5369,7 +4430,7 @@ export const app6b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "DIRECTION FINDING"
+            "DIRECTION FINDING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5377,7 +4438,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMSED",
           name: "DIRECTION FINDING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.2.1.3 ",
@@ -5390,7 +4451,7 @@ export const app6b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "INTERCEPT"
+            "INTERCEPT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5398,7 +4459,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMSEI",
           name: "INTERCEPT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.2.1.4 ",
@@ -5411,7 +4472,7 @@ export const app6b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "JAMMING"
+            "JAMMING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5419,7 +4480,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMSEJ",
           name: "JAMMING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.2.1.5 ",
@@ -5432,7 +4493,7 @@ export const app6b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "THEATRE"
+            "THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5440,7 +4501,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMSET",
           name: "THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.2.1.6 ",
@@ -5453,7 +4514,7 @@ export const app6b = {
             "MILITARY INTELLIGENCE",
             "SIGNAL INTELLIGENCE (SIGINT)",
             "ELECTRONIC WARFARE",
-            "CORPS"
+            "CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5461,7 +4522,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMSEC",
           name: "CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.3 ",
@@ -5472,7 +4533,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "COUNTER INTELLIGENCE"
+            "COUNTER INTELLIGENCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5480,7 +4541,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMC--",
           name: "COUNTER INTELLIGENCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.4 ",
@@ -5491,7 +4552,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "SURVEILLANCE"
+            "SURVEILLANCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5499,7 +4560,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMR--",
           name: "SURVEILLANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.4.1 ",
@@ -5511,7 +4572,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
-            "GROUND SURVEILLANCE RADAR"
+            "GROUND SURVEILLANCE RADAR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5519,7 +4580,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMRG-",
           name: "GROUND SURVEILLANCE RADAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.4.2 ",
@@ -5531,7 +4592,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
-            "SENSOR"
+            "SENSOR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5539,7 +4600,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMRS-",
           name: "SENSOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.4.2.1 ",
@@ -5552,7 +4613,7 @@ export const app6b = {
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
             "SENSOR",
-            "SENSOR SCM"
+            "SENSOR SCM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5560,7 +4621,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMRSS",
           name: "SENSOR SCM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.4.3 ",
@@ -5572,7 +4633,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
-            "GROUND STATION MODULE"
+            "GROUND STATION MODULE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5580,7 +4641,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMRX-",
           name: "GROUND STATION MODULE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.4.4 ",
@@ -5592,7 +4653,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
             "SURVEILLANCE",
-            "METEOROLOGICAL"
+            "METEOROLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5600,7 +4661,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMMO-",
           name: "METEOROLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.5 ",
@@ -5611,7 +4672,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "OPERATIONS"
+            "OPERATIONS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5619,7 +4680,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMO--",
           name: "OPERATIONS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.6 ",
@@ -5630,7 +4691,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "TACTICAL EXPLOIT"
+            "TACTICAL EXPLOIT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5638,7 +4699,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMT--",
           name: "TACTICAL EXPLOIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.7 ",
@@ -5649,7 +4710,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "INTERROGATION"
+            "INTERROGATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5657,7 +4718,7 @@ export const app6b = {
           status: "*",
           functionid: "UUMQ--",
           name: "INTERROGATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.2.8 ",
@@ -5668,7 +4729,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "MILITARY INTELLIGENCE",
-            "JOINT INTELLIGENCE CENTRE"
+            "JOINT INTELLIGENCE CENTRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5676,25 +4737,18 @@ export const app6b = {
           status: "*",
           functionid: "UUMJ--",
           name: "JOINT INTELLIGENCE CENTRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "LAW ENFORCEMENT UNIT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "LAW ENFORCEMENT UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUL---",
           name: "LAW ENFORCEMENT UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.3.1 ",
@@ -5705,7 +4759,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "SHORE PATROL"
+            "SHORE PATROL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5713,7 +4767,7 @@ export const app6b = {
           status: "*",
           functionid: "UULS--",
           name: "SHORE PATROL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.3.2 ",
@@ -5724,7 +4778,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "MILITARY POLICE"
+            "MILITARY POLICE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5732,7 +4786,7 @@ export const app6b = {
           status: "*",
           functionid: "UULM--",
           name: "MILITARY POLICE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.3.3 ",
@@ -5743,7 +4797,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "CIVILIAN LAW ENFORCEMENT"
+            "CIVILIAN LAW ENFORCEMENT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5751,7 +4805,7 @@ export const app6b = {
           status: "*",
           functionid: "UULC--",
           name: "CIVILIAN LAW ENFORCEMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.3.4 ",
@@ -5762,7 +4816,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "SECURITY POLICE (AIR)"
+            "SECURITY POLICE (AIR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5770,7 +4824,7 @@ export const app6b = {
           status: "*",
           functionid: "UULF--",
           name: "SECURITY POLICE (AIR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.3.5 ",
@@ -5781,7 +4835,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "LAW ENFORCEMENT UNIT",
-            "CENTRAL INTELLIGENCE DIVISION (CID)"
+            "CENTRAL INTELLIGENCE DIVISION (CID)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5789,44 +4843,29 @@ export const app6b = {
           status: "*",
           functionid: "UULD--",
           name: "CENTRAL INTELLIGENCE DIVISION (CID)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUS---",
           name: "SIGNAL UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "AREA"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "AREA"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSA--",
           name: "AREA",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.2 ",
@@ -5837,7 +4876,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
-            "COMMUNICATION CONFIGURED PACKAGE"
+            "COMMUNICATION CONFIGURED PACKAGE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5845,7 +4884,7 @@ export const app6b = {
           status: "*",
           functionid: "UUSC--",
           name: "COMMUNICATION CONFIGURED PACKAGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.2.1 ",
@@ -5857,7 +4896,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "COMMUNICATION CONFIGURED PACKAGE",
-            "LARGE COMMUNICATION CONFIGURED PACKAGE (LCCP)"
+            "LARGE COMMUNICATION CONFIGURED PACKAGE (LCCP)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5865,7 +4904,7 @@ export const app6b = {
           status: "*",
           functionid: "UUSCL-",
           name: "LARGE COMMUNICATION CONFIGURED PACKAGE (LCCP)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.3 ",
@@ -5876,7 +4915,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
-            "COMMAND OPERATIONS"
+            "COMMAND OPERATIONS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5884,7 +4923,7 @@ export const app6b = {
           status: "*",
           functionid: "UUSO--",
           name: "COMMAND OPERATIONS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.4 ",
@@ -5895,7 +4934,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
-            "FORWARD COMMUNICATIONS"
+            "FORWARD COMMUNICATIONS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5903,7 +4942,7 @@ export const app6b = {
           status: "*",
           functionid: "UUSF--",
           name: "FORWARD COMMUNICATIONS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.5 ",
@@ -5914,7 +4953,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
-            "MULTIPLE SUBSCRIBER ELEMENT"
+            "MULTIPLE SUBSCRIBER ELEMENT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5922,7 +4961,7 @@ export const app6b = {
           status: "*",
           functionid: "UUSM--",
           name: "MULTIPLE SUBSCRIBER ELEMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.5.1 ",
@@ -5934,7 +4973,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "MULTIPLE SUBSCRIBER ELEMENT",
-            "SMALL EXTENSION NODE"
+            "SMALL EXTENSION NODE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5942,7 +4981,7 @@ export const app6b = {
           status: "*",
           functionid: "UUSMS-",
           name: "SMALL EXTENSION NODE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.5.2 ",
@@ -5954,7 +4993,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "MULTIPLE SUBSCRIBER ELEMENT",
-            "LARGE EXTENSION NODE"
+            "LARGE EXTENSION NODE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5962,7 +5001,7 @@ export const app6b = {
           status: "*",
           functionid: "UUSML-",
           name: "LARGE EXTENSION NODE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.5.3 ",
@@ -5974,7 +5013,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "MULTIPLE SUBSCRIBER ELEMENT",
-            "NODE CENTRE"
+            "NODE CENTRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -5982,26 +5021,18 @@ export const app6b = {
           status: "*",
           functionid: "UUSMN-",
           name: "NODE CENTRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "RADIO UNIT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "RADIO UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSR--",
           name: "RADIO UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.6.1 ",
@@ -6013,7 +5044,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "RADIO UNIT",
-            "TACTICAL SATELLITE"
+            "TACTICAL SATELLITE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6021,7 +5052,7 @@ export const app6b = {
           status: "*",
           functionid: "UUSRS-",
           name: "TACTICAL SATELLITE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.6.2 ",
@@ -6033,7 +5064,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "RADIO UNIT",
-            "TELETYPE CENTRE"
+            "TELETYPE CENTRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6041,7 +5072,7 @@ export const app6b = {
           status: "*",
           functionid: "UUSRT-",
           name: "TELETYPE CENTRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.6.3 ",
@@ -6053,7 +5084,7 @@ export const app6b = {
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
             "RADIO UNIT",
-            "RELAY"
+            "RELAY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6061,45 +5092,29 @@ export const app6b = {
           status: "*",
           functionid: "UUSRW-",
           name: "RELAY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "SIGNAL SUPPORT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "SIGNAL SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSS--",
           name: "SIGNAL SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.8 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "SIGNAL UNIT",
-            "TELEPHONE SWITCH"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "SIGNAL UNIT", "TELEPHONE SWITCH"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUSW--",
           name: "TELEPHONE SWITCH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.4.9 ",
@@ -6110,7 +5125,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SUPPORT",
             "SIGNAL UNIT",
-            "ELECTRONIC RANGING"
+            "ELECTRONIC RANGING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6118,150 +5133,95 @@ export const app6b = {
           status: "*",
           functionid: "UUSX--",
           name: "ELECTRONIC RANGING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "INFORMATION WARFARE UNIT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "INFORMATION WARFARE UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUI---",
           name: "INFORMATION WARFARE UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "LANDING SUPPORT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "LANDING SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUX---",
           name: "LANDING SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "EXPLOSIVE ORDINANCE DISPOSAL"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "EXPLOSIVE ORDINANCE DISPOSAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUE---",
           name: "EXPLOSIVE ORDINANCE DISPOSAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.8 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "TOPOGRAPHIC"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "TOPOGRAPHIC"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUT---",
           name: "TOPOGRAPHIC",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.2.9 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "DOG"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "DOG"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UU----",
           name: "DOG",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.2.10 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SUPPORT",
-            "DRILLING"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SUPPORT", "DRILLING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UUD---",
           name: "DRILLING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "US----",
           name: "COMBAT SERVICE SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "ADMINISTRATIVE (ADMIN)"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "ADMINISTRATIVE (ADMIN)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USA---",
           name: "ADMINISTRATIVE (ADMIN)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.1 ",
@@ -6272,7 +5232,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "ADMIN THEATRE"
+            "ADMIN THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6280,7 +5240,7 @@ export const app6b = {
           status: "*",
           functionid: "USAT--",
           name: "ADMIN THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.2 ",
@@ -6291,7 +5251,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "ADMIN CORPS"
+            "ADMIN CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6299,7 +5259,7 @@ export const app6b = {
           status: "*",
           functionid: "USAC--",
           name: "ADMIN CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.3 ",
@@ -6310,7 +5270,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "JUDGE ADVOCATE GENERAL (JAG)"
+            "JUDGE ADVOCATE GENERAL (JAG)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6318,7 +5278,7 @@ export const app6b = {
           status: "*",
           functionid: "USAJ--",
           name: "JUDGE ADVOCATE GENERAL (JAG)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.3.1 ",
@@ -6330,7 +5290,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "JUDGE ADVOCATE GENERAL (JAG)",
-            "JAG THEATRE"
+            "JAG THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6338,7 +5298,7 @@ export const app6b = {
           status: "*",
           functionid: "USAJT-",
           name: "JAG THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.3.2 ",
@@ -6350,7 +5310,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "JUDGE ADVOCATE GENERAL (JAG)",
-            "JAG CORPS"
+            "JAG CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6358,7 +5318,7 @@ export const app6b = {
           status: "*",
           functionid: "USAJC-",
           name: "JAG CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.4 ",
@@ -6369,7 +5329,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "POSTAL"
+            "POSTAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6377,7 +5337,7 @@ export const app6b = {
           status: "*",
           functionid: "USAO--",
           name: "POSTAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.4.1 ",
@@ -6389,7 +5349,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "POSTAL",
-            "POSTAL THEATRE"
+            "POSTAL THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6397,7 +5357,7 @@ export const app6b = {
           status: "*",
           functionid: "USAOT-",
           name: "POSTAL THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.4.2 ",
@@ -6409,7 +5369,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "POSTAL",
-            "POSTAL CORPS"
+            "POSTAL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6417,7 +5377,7 @@ export const app6b = {
           status: "*",
           functionid: "USAOC-",
           name: "POSTAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.5 ",
@@ -6428,7 +5388,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "FINANCE"
+            "FINANCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6436,7 +5396,7 @@ export const app6b = {
           status: "*",
           functionid: "USAF--",
           name: "FINANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.5.1 ",
@@ -6448,7 +5408,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "FINANCE",
-            "FINANCE THEATRE"
+            "FINANCE THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6456,7 +5416,7 @@ export const app6b = {
           status: "*",
           functionid: "USAFT-",
           name: "FINANCE THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.5.2 ",
@@ -6468,7 +5428,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "FINANCE",
-            "FINANCE CORPS"
+            "FINANCE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6476,7 +5436,7 @@ export const app6b = {
           status: "*",
           functionid: "USAFC-",
           name: "FINANCE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.6 ",
@@ -6487,7 +5447,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "PERSONNEL SERVICES"
+            "PERSONNEL SERVICES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6495,7 +5455,7 @@ export const app6b = {
           status: "*",
           functionid: "USAS--",
           name: "PERSONNEL SERVICES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.6.1 ",
@@ -6507,7 +5467,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PERSONNEL SERVICES",
-            "PERSONNEL THEATRE"
+            "PERSONNEL THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6515,7 +5475,7 @@ export const app6b = {
           status: "*",
           functionid: "USAST-",
           name: "PERSONNEL THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.6.2 ",
@@ -6527,7 +5487,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PERSONNEL SERVICES",
-            "PERSONNEL CORPS"
+            "PERSONNEL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6535,7 +5495,7 @@ export const app6b = {
           status: "*",
           functionid: "USASC-",
           name: "PERSONNEL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.7 ",
@@ -6546,7 +5506,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "MORTUARY/GRAVES REGISTRY"
+            "MORTUARY/GRAVES REGISTRY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6554,7 +5514,7 @@ export const app6b = {
           status: "*",
           functionid: "USAM--",
           name: "MORTUARY/GRAVES REGISTRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.7.1 ",
@@ -6566,7 +5526,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "MORTUARY/GRAVES REGISTRY",
-            "MORTUARY/GRAVES REGISTRY THEATRE"
+            "MORTUARY/GRAVES REGISTRY THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6574,7 +5534,7 @@ export const app6b = {
           status: "*",
           functionid: "USAMT-",
           name: "MORTUARY/GRAVES REGISTRY THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.7.2 ",
@@ -6586,7 +5546,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "MORTUARY/GRAVES REGISTRY",
-            "MORTUARY/GRAVES REGISTRY CORPS"
+            "MORTUARY/GRAVES REGISTRY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6594,7 +5554,7 @@ export const app6b = {
           status: "*",
           functionid: "USAMC-",
           name: "MORTUARY/GRAVES REGISTRY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.8 ",
@@ -6605,7 +5565,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "RELIGIOUS/CHAPLAIN"
+            "RELIGIOUS/CHAPLAIN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6613,7 +5573,7 @@ export const app6b = {
           status: "*",
           functionid: "USAR--",
           name: "RELIGIOUS/CHAPLAIN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.8.1 ",
@@ -6625,7 +5585,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "RELIGIOUS/CHAPLAIN",
-            "RELIGIOUS/CHAPLAIN THEATRE"
+            "RELIGIOUS/CHAPLAIN THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6633,7 +5593,7 @@ export const app6b = {
           status: "*",
           functionid: "USART-",
           name: "RELIGIOUS/CHAPLAIN THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.8.2 ",
@@ -6645,7 +5605,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "RELIGIOUS/CHAPLAIN",
-            "RELIGIOUS/CHAPLAIN CORPS"
+            "RELIGIOUS/CHAPLAIN CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6653,7 +5613,7 @@ export const app6b = {
           status: "*",
           functionid: "USARC-",
           name: "RELIGIOUS/CHAPLAIN CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.9 ",
@@ -6664,7 +5624,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "PUBLIC AFFAIRS"
+            "PUBLIC AFFAIRS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6672,7 +5632,7 @@ export const app6b = {
           status: "*",
           functionid: "USAP--",
           name: "PUBLIC AFFAIRS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.9.1 ",
@@ -6684,7 +5644,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
-            "PUBLIC AFFAIRS THEATRE"
+            "PUBLIC AFFAIRS THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6692,7 +5652,7 @@ export const app6b = {
           status: "*",
           functionid: "USAPT-",
           name: "PUBLIC AFFAIRS THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.9.2 ",
@@ -6704,7 +5664,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
-            "PUBLIC AFFAIRS CORPS"
+            "PUBLIC AFFAIRS CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6712,7 +5672,7 @@ export const app6b = {
           status: "*",
           functionid: "USAPC-",
           name: "PUBLIC AFFAIRS CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.9.3 ",
@@ -6724,7 +5684,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
-            "PUBLIC AFFAIRS BROADCAST"
+            "PUBLIC AFFAIRS BROADCAST",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6732,7 +5692,7 @@ export const app6b = {
           status: "*",
           functionid: "USAPB-",
           name: "PUBLIC AFFAIRS BROADCAST",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.9.3.1 ",
@@ -6745,7 +5705,7 @@ export const app6b = {
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
             "PUBLIC AFFAIRS BROADCAST",
-            "PUBLIC AFFAIRS BROADCAST THEATRE"
+            "PUBLIC AFFAIRS BROADCAST THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6753,7 +5713,7 @@ export const app6b = {
           status: "*",
           functionid: "USAPBT",
           name: "PUBLIC AFFAIRS BROADCAST THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.9.3.2 ",
@@ -6766,7 +5726,7 @@ export const app6b = {
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
             "PUBLIC AFFAIRS BROADCAST",
-            "PUBLIC AFFAIRS BROADCAST CORPS"
+            "PUBLIC AFFAIRS BROADCAST CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6774,7 +5734,7 @@ export const app6b = {
           status: "*",
           functionid: "USAPBC",
           name: "PUBLIC AFFAIRS BROADCAST CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.9.4 ",
@@ -6786,7 +5746,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
-            "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)"
+            "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6794,7 +5754,7 @@ export const app6b = {
           status: "*",
           functionid: "USAPM-",
           name: "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.9.4.1 ",
@@ -6807,7 +5767,7 @@ export const app6b = {
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
             "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
-            "PUBLIC AFFAIRS JIB THEATRE"
+            "PUBLIC AFFAIRS JIB THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6815,7 +5775,7 @@ export const app6b = {
           status: "*",
           functionid: "USAPMT",
           name: "PUBLIC AFFAIRS JIB THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.9.4.2 ",
@@ -6828,7 +5788,7 @@ export const app6b = {
             "ADMINISTRATIVE (ADMIN)",
             "PUBLIC AFFAIRS",
             "PUBLIC AFFAIRS JOINT INFORMATION BUREAU (JIB)",
-            "PUBLIC AFFAIRS JIB CORPS"
+            "PUBLIC AFFAIRS JIB CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6836,7 +5796,7 @@ export const app6b = {
           status: "*",
           functionid: "USAPMC",
           name: "PUBLIC AFFAIRS JIB CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.10 ",
@@ -6847,7 +5807,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "REPLACEMENT HOLDING UNIT (RHU)"
+            "REPLACEMENT HOLDING UNIT (RHU)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6855,7 +5815,7 @@ export const app6b = {
           status: "*",
           functionid: "USAX--",
           name: "REPLACEMENT HOLDING UNIT (RHU)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.10.1 ",
@@ -6867,7 +5827,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "REPLACEMENT HOLDING UNIT (RHU)",
-            "RHU THEATRE"
+            "RHU THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6875,7 +5835,7 @@ export const app6b = {
           status: "*",
           functionid: "USAXT-",
           name: "RHU THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.10.2 ",
@@ -6887,7 +5847,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "REPLACEMENT HOLDING UNIT (RHU)",
-            "RHU CORPS"
+            "RHU CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6895,7 +5855,7 @@ export const app6b = {
           status: "*",
           functionid: "USAXC-",
           name: "RHU CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.11 ",
@@ -6906,7 +5866,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "LABOUR"
+            "LABOUR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6914,7 +5874,7 @@ export const app6b = {
           status: "*",
           functionid: "USAL--",
           name: "LABOUR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.11.1 ",
@@ -6926,7 +5886,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "LABOUR",
-            "LABOUR THEATRE"
+            "LABOUR THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6934,7 +5894,7 @@ export const app6b = {
           status: "*",
           functionid: "USALT-",
           name: "LABOUR THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.11.2 ",
@@ -6946,7 +5906,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "LABOUR",
-            "LABOUR CORPS"
+            "LABOUR CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6954,7 +5914,7 @@ export const app6b = {
           status: "*",
           functionid: "USALC-",
           name: "LABOUR CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.12 ",
@@ -6965,7 +5925,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "MORAL, WELFARE, RECREATION (MWR)"
+            "MORAL, WELFARE, RECREATION (MWR)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6973,7 +5933,7 @@ export const app6b = {
           status: "*",
           functionid: "USAW--",
           name: "MORAL, WELFARE, RECREATION (MWR)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.12.1 ",
@@ -6985,7 +5945,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "MORAL, WELFARE, RECREATION (MWR)",
-            "MWR THEATRE"
+            "MWR THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -6993,7 +5953,7 @@ export const app6b = {
           status: "*",
           functionid: "USAWT-",
           name: "MWR THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.12.2 ",
@@ -7005,7 +5965,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "MORAL, WELFARE, RECREATION (MWR)",
-            "MWR CORPS"
+            "MWR CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7013,7 +5973,7 @@ export const app6b = {
           status: "*",
           functionid: "USAWC-",
           name: "MWR CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.13 ",
@@ -7024,7 +5984,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
-            "QUARTERMASTER (SUPPLY)"
+            "QUARTERMASTER (SUPPLY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7032,7 +5992,7 @@ export const app6b = {
           status: "*",
           functionid: "USAQ--",
           name: "QUARTERMASTER (SUPPLY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.13.1 ",
@@ -7044,7 +6004,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "QUARTERMASTER (SUPPLY)",
-            "QUARTERMASTER (SUPPLY) THEATRE"
+            "QUARTERMASTER (SUPPLY) THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7052,7 +6012,7 @@ export const app6b = {
           status: "*",
           functionid: "USAQT-",
           name: "QUARTERMASTER (SUPPLY) THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.1.13.2 ",
@@ -7064,7 +6024,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "ADMINISTRATIVE (ADMIN)",
             "QUARTERMASTER (SUPPLY)",
-            "QUARTERMASTER (SUPPLY) CORPS"
+            "QUARTERMASTER (SUPPLY) CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7072,25 +6032,18 @@ export const app6b = {
           status: "*",
           functionid: "USAQC-",
           name: "QUARTERMASTER (SUPPLY) CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MEDICAL"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MEDICAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USM---",
           name: "MEDICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.1 ",
@@ -7101,7 +6054,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
-            "MEDICAL THEATRE"
+            "MEDICAL THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7109,26 +6062,18 @@ export const app6b = {
           status: "*",
           functionid: "USMT--",
           name: "MEDICAL THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MEDICAL",
-            "MEDICAL CORPS"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MEDICAL", "MEDICAL CORPS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USMC--",
           name: "MEDICAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.3 ",
@@ -7139,7 +6084,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
-            "MEDICAL TREATMENT FACILITY"
+            "MEDICAL TREATMENT FACILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7147,7 +6092,7 @@ export const app6b = {
           status: "*",
           functionid: "USMM--",
           name: "MEDICAL TREATMENT FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.3.1 ",
@@ -7159,7 +6104,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL TREATMENT FACILITY",
-            "MEDICAL TREATMENT FACILITY THEATRE"
+            "MEDICAL TREATMENT FACILITY THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7167,7 +6112,7 @@ export const app6b = {
           status: "*",
           functionid: "USMMT-",
           name: "MEDICAL TREATMENT FACILITY THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.3.2 ",
@@ -7179,7 +6124,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL TREATMENT FACILITY",
-            "MEDICAL TREATMENT FACILITY CORPS"
+            "MEDICAL TREATMENT FACILITY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7187,7 +6132,7 @@ export const app6b = {
           status: "*",
           functionid: "USMMC-",
           name: "MEDICAL TREATMENT FACILITY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.4 ",
@@ -7198,7 +6143,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
-            "MEDICAL VETERINARY"
+            "MEDICAL VETERINARY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7206,7 +6151,7 @@ export const app6b = {
           status: "*",
           functionid: "USMV--",
           name: "MEDICAL VETERINARY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.4.1 ",
@@ -7218,7 +6163,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL VETERINARY",
-            "MEDICAL VETERINARY THEATRE"
+            "MEDICAL VETERINARY THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7226,7 +6171,7 @@ export const app6b = {
           status: "*",
           functionid: "USMVT-",
           name: "MEDICAL VETERINARY THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.4.2 ",
@@ -7238,7 +6183,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL VETERINARY",
-            "MEDICAL VETERINARY CORPS"
+            "MEDICAL VETERINARY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7246,7 +6191,7 @@ export const app6b = {
           status: "*",
           functionid: "USMVC-",
           name: "MEDICAL VETERINARY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.5 ",
@@ -7257,7 +6202,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
-            "MEDICAL DENTAL"
+            "MEDICAL DENTAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7265,7 +6210,7 @@ export const app6b = {
           status: "*",
           functionid: "USMD--",
           name: "MEDICAL DENTAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.5.1 ",
@@ -7277,7 +6222,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL DENTAL",
-            "MEDICAL DENTAL THEATRE"
+            "MEDICAL DENTAL THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7285,7 +6230,7 @@ export const app6b = {
           status: "*",
           functionid: "USMDT-",
           name: "MEDICAL DENTAL THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.5.2 ",
@@ -7297,7 +6242,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL DENTAL",
-            "MEDICAL DENTAL CORPS"
+            "MEDICAL DENTAL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7305,7 +6250,7 @@ export const app6b = {
           status: "*",
           functionid: "USMDC-",
           name: "MEDICAL DENTAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.6 ",
@@ -7316,7 +6261,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
-            "MEDICAL PSYCHOLOGICAL"
+            "MEDICAL PSYCHOLOGICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7324,7 +6269,7 @@ export const app6b = {
           status: "*",
           functionid: "USMP--",
           name: "MEDICAL PSYCHOLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.6.1 ",
@@ -7336,7 +6281,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL PSYCHOLOGICAL",
-            "MEDICAL PSYCHOLOGICAL THEATRE"
+            "MEDICAL PSYCHOLOGICAL THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7344,7 +6289,7 @@ export const app6b = {
           status: "*",
           functionid: "USMPT-",
           name: "MEDICAL PSYCHOLOGICAL THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.2.6.2 ",
@@ -7356,7 +6301,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MEDICAL",
             "MEDICAL PSYCHOLOGICAL",
-            "MEDICAL PSYCHOLOGICAL CORPS"
+            "MEDICAL PSYCHOLOGICAL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7364,82 +6309,51 @@ export const app6b = {
           status: "*",
           functionid: "USMPC-",
           name: "MEDICAL PSYCHOLOGICAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS---",
           name: "SUPPLY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.1 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY THEATRE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY THEATRE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USST--",
           name: "SUPPLY THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.2 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CORPS"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CORPS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USSC--",
           name: "SUPPLY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.3 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS I"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS I"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS1--",
           name: "SUPPLY CLASS I",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.3.1 ",
@@ -7451,7 +6365,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS I",
-            "SUPPLY CLASS I THEATRE"
+            "SUPPLY CLASS I THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7459,7 +6373,7 @@ export const app6b = {
           status: "*",
           functionid: "USS1T-",
           name: "SUPPLY CLASS I THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.3.2 ",
@@ -7471,7 +6385,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS I",
-            "SUPPLY CLASS I CORPS"
+            "SUPPLY CLASS I CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7479,7 +6393,7 @@ export const app6b = {
           status: "*",
           functionid: "USS1C-",
           name: "SUPPLY CLASS I CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.4 ",
@@ -7490,7 +6404,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY CLASS II"
+            "SUPPLY CLASS II",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7498,7 +6412,7 @@ export const app6b = {
           status: "*",
           functionid: "USS2--",
           name: "SUPPLY CLASS II",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.4.1 ",
@@ -7510,7 +6424,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS II",
-            "SUPPLY CLASS II THEATRE"
+            "SUPPLY CLASS II THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7518,7 +6432,7 @@ export const app6b = {
           status: "*",
           functionid: "USS2T-",
           name: "SUPPLY CLASS II THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.4.2 ",
@@ -7530,7 +6444,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS II",
-            "SUPPLY CLASS II CORPS"
+            "SUPPLY CLASS II CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7538,7 +6452,7 @@ export const app6b = {
           status: "*",
           functionid: "USS2C-",
           name: "SUPPLY CLASS II CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.5 ",
@@ -7549,7 +6463,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY CLASS III"
+            "SUPPLY CLASS III",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7557,7 +6471,7 @@ export const app6b = {
           status: "*",
           functionid: "USS3--",
           name: "SUPPLY CLASS III",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.5.1 ",
@@ -7569,7 +6483,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS III",
-            "SUPPLY CLASS III THEATRE"
+            "SUPPLY CLASS III THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7577,7 +6491,7 @@ export const app6b = {
           status: "*",
           functionid: "USS3T-",
           name: "SUPPLY CLASS III THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.5.2 ",
@@ -7589,7 +6503,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS III",
-            "SUPPLY CLASS III CORPS"
+            "SUPPLY CLASS III CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7597,7 +6511,7 @@ export const app6b = {
           status: "*",
           functionid: "USS3C-",
           name: "SUPPLY CLASS III CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.5.3 ",
@@ -7609,7 +6523,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS III",
-            "SUPPLY CLASS III AVIATION"
+            "SUPPLY CLASS III AVIATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7617,7 +6531,7 @@ export const app6b = {
           status: "*",
           functionid: "USS3A-",
           name: "SUPPLY CLASS III AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.5.3.1 ",
@@ -7630,7 +6544,7 @@ export const app6b = {
             "SUPPLY",
             "SUPPLY CLASS III",
             "SUPPLY CLASS III AVIATION",
-            "SUPPLY CLASS III AVIATION"
+            "SUPPLY CLASS III AVIATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7638,7 +6552,7 @@ export const app6b = {
           status: "*",
           functionid: "USS3AT",
           name: "SUPPLY CLASS III AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.5.3.2 ",
@@ -7651,7 +6565,7 @@ export const app6b = {
             "SUPPLY",
             "SUPPLY CLASS III",
             "SUPPLY CLASS III AVIATION",
-            "SUPPLY CLASS III AVIATION CORPS"
+            "SUPPLY CLASS III AVIATION CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7659,7 +6573,7 @@ export const app6b = {
           status: "*",
           functionid: "USS3AC",
           name: "SUPPLY CLASS III AVIATION CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.6 ",
@@ -7670,7 +6584,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY CLASS IV"
+            "SUPPLY CLASS IV",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7678,7 +6592,7 @@ export const app6b = {
           status: "*",
           functionid: "USS4--",
           name: "SUPPLY CLASS IV",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.6.1 ",
@@ -7690,7 +6604,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS IV",
-            "SUPPLY CLASS IV THEATRE"
+            "SUPPLY CLASS IV THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7698,7 +6612,7 @@ export const app6b = {
           status: "*",
           functionid: "USS4T-",
           name: "SUPPLY CLASS IV THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.6.2 ",
@@ -7710,7 +6624,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS IV",
-            "SUPPLY CLASS IV CORPS"
+            "SUPPLY CLASS IV CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7718,26 +6632,18 @@ export const app6b = {
           status: "*",
           functionid: "USS4C-",
           name: "SUPPLY CLASS IV CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS V"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS V"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USS5--",
           name: "SUPPLY CLASS V",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.7.1 ",
@@ -7749,7 +6655,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS V",
-            "SUPPLY CLASS V THEATRE"
+            "SUPPLY CLASS V THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7757,7 +6663,7 @@ export const app6b = {
           status: "*",
           functionid: "USS5T-",
           name: "SUPPLY CLASS V THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.7.2 ",
@@ -7769,7 +6675,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS V",
-            "SUPPLY CLASS V CORPS"
+            "SUPPLY CLASS V CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7777,7 +6683,7 @@ export const app6b = {
           status: "*",
           functionid: "USS5C-",
           name: "SUPPLY CLASS V CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.8 ",
@@ -7788,7 +6694,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY CLASS VI"
+            "SUPPLY CLASS VI",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7796,7 +6702,7 @@ export const app6b = {
           status: "*",
           functionid: "USS6--",
           name: "SUPPLY CLASS VI",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.8.1 ",
@@ -7808,7 +6714,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VI",
-            "SUPPLY CLASS VI THEATRE"
+            "SUPPLY CLASS VI THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7816,7 +6722,7 @@ export const app6b = {
           status: "*",
           functionid: "USS6T-",
           name: "SUPPLY CLASS VI THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.8.2 ",
@@ -7828,7 +6734,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VI",
-            "SUPPLY CLASS VI CORPS"
+            "SUPPLY CLASS VI CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7836,7 +6742,7 @@ export const app6b = {
           status: "*",
           functionid: "USS6C-",
           name: "SUPPLY CLASS VI CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.9 ",
@@ -7847,7 +6753,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY CLASS VII"
+            "SUPPLY CLASS VII",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7855,7 +6761,7 @@ export const app6b = {
           status: "*",
           functionid: "USS7--",
           name: "SUPPLY CLASS VII",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.9.1 ",
@@ -7867,7 +6773,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VII",
-            "SUPPLY CLASS VII THEATRE"
+            "SUPPLY CLASS VII THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7875,7 +6781,7 @@ export const app6b = {
           status: "*",
           functionid: "USS7T-",
           name: "SUPPLY CLASS VII THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.9.2 ",
@@ -7887,7 +6793,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VII",
-            "SUPPLY CLASS VII CORPS"
+            "SUPPLY CLASS VII CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7895,7 +6801,7 @@ export const app6b = {
           status: "*",
           functionid: "USS7C-",
           name: "SUPPLY CLASS VII CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.10 ",
@@ -7906,7 +6812,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY CLASS VIII"
+            "SUPPLY CLASS VIII",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7914,7 +6820,7 @@ export const app6b = {
           status: "*",
           functionid: "USS8--",
           name: "SUPPLY CLASS VIII",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.10.1 ",
@@ -7926,7 +6832,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VIII",
-            "SUPPLY CLASS VIII THEATRE"
+            "SUPPLY CLASS VIII THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7934,7 +6840,7 @@ export const app6b = {
           status: "*",
           functionid: "USS8T-",
           name: "SUPPLY CLASS VIII THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.10.2 ",
@@ -7946,7 +6852,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS VIII",
-            "SUPPLY CLASS VIII CORPS"
+            "SUPPLY CLASS VIII CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7954,7 +6860,7 @@ export const app6b = {
           status: "*",
           functionid: "USS8C-",
           name: "SUPPLY CLASS VIII CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.11 ",
@@ -7965,7 +6871,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY CLASS IX"
+            "SUPPLY CLASS IX",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7973,7 +6879,7 @@ export const app6b = {
           status: "*",
           functionid: "USS9--",
           name: "SUPPLY CLASS IX",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.11.1 ",
@@ -7985,7 +6891,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS IX",
-            "SUPPLY CLASS IX THEATRE"
+            "SUPPLY CLASS IX THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -7993,7 +6899,7 @@ export const app6b = {
           status: "*",
           functionid: "USS9T-",
           name: "SUPPLY CLASS IX THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.11.2 ",
@@ -8005,7 +6911,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS IX",
-            "SUPPLY CLASS IX CORPS"
+            "SUPPLY CLASS IX CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8013,26 +6919,18 @@ export const app6b = {
           status: "*",
           functionid: "USS9C-",
           name: "SUPPLY CLASS IX CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.12 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY CLASS X"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY CLASS X"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USSX--",
           name: "SUPPLY CLASS X",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.12.1 ",
@@ -8044,7 +6942,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS X",
-            "SUPPLY CLASS X THEATRE"
+            "SUPPLY CLASS X THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8052,7 +6950,7 @@ export const app6b = {
           status: "*",
           functionid: "USSXT-",
           name: "SUPPLY CLASS X THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.12.2 ",
@@ -8064,7 +6962,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY CLASS X",
-            "SUPPLY CLASS X CORPS"
+            "SUPPLY CLASS X CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8072,7 +6970,7 @@ export const app6b = {
           status: "*",
           functionid: "USSXC-",
           name: "SUPPLY CLASS X CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.13 ",
@@ -8083,7 +6981,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
-            "SUPPLY LAUNDRY/BATH"
+            "SUPPLY LAUNDRY/BATH",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8091,7 +6989,7 @@ export const app6b = {
           status: "*",
           functionid: "USSL--",
           name: "SUPPLY LAUNDRY/BATH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.13.1 ",
@@ -8103,7 +7001,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY LAUNDRY/BATH",
-            "SUPPLY LAUNDRY/BATH THEATRE"
+            "SUPPLY LAUNDRY/BATH THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8111,7 +7009,7 @@ export const app6b = {
           status: "*",
           functionid: "USSLT-",
           name: "SUPPLY LAUNDRY/BATH THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.13.2 ",
@@ -8123,7 +7021,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY LAUNDRY/BATH",
-            "SUPPLY LAUNDRY/BATH CORPS"
+            "SUPPLY LAUNDRY/BATH CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8131,26 +7029,18 @@ export const app6b = {
           status: "*",
           functionid: "USSLC-",
           name: "SUPPLY LAUNDRY/BATH CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.14 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "SUPPLY",
-            "SUPPLY WATER"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "SUPPLY", "SUPPLY WATER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USSW--",
           name: "SUPPLY WATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.14.1 ",
@@ -8162,7 +7052,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY WATER",
-            "SUPPLY WATER THEATRE"
+            "SUPPLY WATER THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8170,7 +7060,7 @@ export const app6b = {
           status: "*",
           functionid: "USSWT-",
           name: "SUPPLY WATER THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.14.2 ",
@@ -8182,7 +7072,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY WATER",
-            "SUPPLY WATER CORPS"
+            "SUPPLY WATER CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8190,7 +7080,7 @@ export const app6b = {
           status: "*",
           functionid: "USSWC-",
           name: "SUPPLY WATER CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.14.3 ",
@@ -8202,7 +7092,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "SUPPLY",
             "SUPPLY WATER",
-            "SUPPLY WATER PURIFICATION"
+            "SUPPLY WATER PURIFICATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8210,7 +7100,7 @@ export const app6b = {
           status: "*",
           functionid: "USSWP-",
           name: "SUPPLY WATER PURIFICATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.14.3.1 ",
@@ -8223,7 +7113,7 @@ export const app6b = {
             "SUPPLY",
             "SUPPLY WATER",
             "SUPPLY WATER PURIFICATION",
-            "SUPPLY WATER PURIFICATION THEATRE"
+            "SUPPLY WATER PURIFICATION THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8231,7 +7121,7 @@ export const app6b = {
           status: "*",
           functionid: "USSWPT",
           name: "SUPPLY WATER PURIFICATION THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.3.14.3.2 ",
@@ -8244,7 +7134,7 @@ export const app6b = {
             "SUPPLY",
             "SUPPLY WATER",
             "SUPPLY WATER PURIFICATION",
-            "SUPPLY WATER PURIFICATION CORPS"
+            "SUPPLY WATER PURIFICATION CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8252,25 +7142,18 @@ export const app6b = {
           status: "*",
           functionid: "USSWPC",
           name: "SUPPLY WATER PURIFICATION CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "TRANSPORTATION"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "TRANSPORTATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UST---",
           name: "TRANSPORTATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.1 ",
@@ -8281,7 +7164,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "TRANSPORTATION THEATRE"
+            "TRANSPORTATION THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8289,7 +7172,7 @@ export const app6b = {
           status: "*",
           functionid: "USTT--",
           name: "TRANSPORTATION THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.2 ",
@@ -8300,7 +7183,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "TRANSPORTATION CORPS"
+            "TRANSPORTATION CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8308,7 +7191,7 @@ export const app6b = {
           status: "*",
           functionid: "USTC--",
           name: "TRANSPORTATION CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.3 ",
@@ -8319,7 +7202,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "MOVEMENT CONTROL CENTRE(MCC)"
+            "MOVEMENT CONTROL CENTRE(MCC)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8327,7 +7210,7 @@ export const app6b = {
           status: "*",
           functionid: "USTM--",
           name: "MOVEMENT CONTROL CENTRE(MCC)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.3.1 ",
@@ -8339,7 +7222,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "MOVEMENT CONTROL CENTRE(MCC)",
-            "MCC THEATRE"
+            "MCC THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8347,7 +7230,7 @@ export const app6b = {
           status: "*",
           functionid: "USTMT-",
           name: "MCC THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.3.2 ",
@@ -8359,7 +7242,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "MOVEMENT CONTROL CENTRE(MCC)",
-            "MCC CORPS"
+            "MCC CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8367,7 +7250,7 @@ export const app6b = {
           status: "*",
           functionid: "USTMC-",
           name: "MCC CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.4 ",
@@ -8378,7 +7261,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "RAILHEAD"
+            "RAILHEAD",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8386,7 +7269,7 @@ export const app6b = {
           status: "*",
           functionid: "USTR--",
           name: "RAILHEAD",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.4.1 ",
@@ -8398,7 +7281,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "RAILHEAD",
-            "RAILHEAD THEATRE"
+            "RAILHEAD THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8406,7 +7289,7 @@ export const app6b = {
           status: "*",
           functionid: "USTRT-",
           name: "RAILHEAD THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.4.2 ",
@@ -8418,7 +7301,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "RAILHEAD",
-            "RAILHEAD CORPS"
+            "RAILHEAD CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8426,7 +7309,7 @@ export const app6b = {
           status: "*",
           functionid: "USTRC-",
           name: "RAILHEAD CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.5 ",
@@ -8437,7 +7320,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "SPOD/SPOE"
+            "SPOD/SPOE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8445,7 +7328,7 @@ export const app6b = {
           status: "*",
           functionid: "USTS--",
           name: "SPOD/SPOE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.5.1 ",
@@ -8457,7 +7340,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "SPOD/SPOE",
-            "SPOD/SPOE THEATRE"
+            "SPOD/SPOE THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8465,7 +7348,7 @@ export const app6b = {
           status: "*",
           functionid: "USTST-",
           name: "SPOD/SPOE THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.5.2 ",
@@ -8477,7 +7360,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "SPOD/SPOE",
-            "SPOD/SPOE CORPS"
+            "SPOD/SPOE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8485,7 +7368,7 @@ export const app6b = {
           status: "*",
           functionid: "USTSC-",
           name: "SPOD/SPOE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.6 ",
@@ -8496,7 +7379,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "APOD/APOE"
+            "APOD/APOE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8504,7 +7387,7 @@ export const app6b = {
           status: "*",
           functionid: "USTA--",
           name: "APOD/APOE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.6.1 ",
@@ -8516,7 +7399,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "APOD/APOE",
-            "APOD/APOE THEATRE"
+            "APOD/APOE THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8524,7 +7407,7 @@ export const app6b = {
           status: "*",
           functionid: "USTAT-",
           name: "APOD/APOE THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.6.2 ",
@@ -8536,7 +7419,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "APOD/APOE",
-            "APOD/APOE CORPS"
+            "APOD/APOE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8544,7 +7427,7 @@ export const app6b = {
           status: "*",
           functionid: "USTAC-",
           name: "APOD/APOE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.7 ",
@@ -8555,7 +7438,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
-            "MISSILE"
+            "MISSILE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8563,7 +7446,7 @@ export const app6b = {
           status: "*",
           functionid: "USTI--",
           name: "MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.7.1 ",
@@ -8575,7 +7458,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "MISSILE",
-            "MISSILE THEATRE"
+            "MISSILE THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8583,7 +7466,7 @@ export const app6b = {
           status: "*",
           functionid: "USTIT-",
           name: "MISSILE THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.4.7.2 ",
@@ -8595,7 +7478,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "TRANSPORTATION",
             "MISSILE",
-            "MISSILE CORPS"
+            "MISSILE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8603,25 +7486,18 @@ export const app6b = {
           status: "*",
           functionid: "USTIC-",
           name: "MISSILE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MAINTENANCE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MAINTENANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USX---",
           name: "MAINTENANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.1 ",
@@ -8632,7 +7508,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "MAINTENANCE THEATRE"
+            "MAINTENANCE THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8640,7 +7516,7 @@ export const app6b = {
           status: "*",
           functionid: "USXT--",
           name: "MAINTENANCE THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.2 ",
@@ -8651,7 +7527,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "MAINTENANCE CORPS"
+            "MAINTENANCE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8659,7 +7535,7 @@ export const app6b = {
           status: "*",
           functionid: "USXC--",
           name: "MAINTENANCE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.3 ",
@@ -8670,7 +7546,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "MAINTENANCE HEAVY"
+            "MAINTENANCE HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8678,7 +7554,7 @@ export const app6b = {
           status: "*",
           functionid: "USXH--",
           name: "MAINTENANCE HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.3.1 ",
@@ -8690,7 +7566,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "MAINTENANCE HEAVY",
-            "MAINTENANCE HEAVY THEATRE"
+            "MAINTENANCE HEAVY THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8698,7 +7574,7 @@ export const app6b = {
           status: "*",
           functionid: "USXHT-",
           name: "MAINTENANCE HEAVY THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.3.2 ",
@@ -8710,7 +7586,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "MAINTENANCE HEAVY",
-            "MAINTENANCE HEAVY CORPS"
+            "MAINTENANCE HEAVY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8718,7 +7594,7 @@ export const app6b = {
           status: "*",
           functionid: "USXHC-",
           name: "MAINTENANCE HEAVY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.4 ",
@@ -8729,7 +7605,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "MAINTENANCE RECOVERY"
+            "MAINTENANCE RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8737,7 +7613,7 @@ export const app6b = {
           status: "*",
           functionid: "USXR--",
           name: "MAINTENANCE RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.4.1 ",
@@ -8749,7 +7625,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "MAINTENANCE RECOVERY",
-            "MAINTENANCE RECOVERY THEATRE"
+            "MAINTENANCE RECOVERY THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8757,7 +7633,7 @@ export const app6b = {
           status: "*",
           functionid: "USXRT-",
           name: "MAINTENANCE RECOVERY THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.4.2 ",
@@ -8769,7 +7645,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "MAINTENANCE RECOVERY",
-            "MAINTENANCE RECOVERY CORPS"
+            "MAINTENANCE RECOVERY CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8777,26 +7653,18 @@ export const app6b = {
           status: "*",
           functionid: "USXRC-",
           name: "MAINTENANCE RECOVERY CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "MAINTENANCE",
-            "ORDINANCE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "MAINTENANCE", "ORDINANCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USXO--",
           name: "ORDINANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.5.1 ",
@@ -8808,7 +7676,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ORDINANCE",
-            "ORDINANCE THEATRE"
+            "ORDINANCE THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8816,7 +7684,7 @@ export const app6b = {
           status: "*",
           functionid: "USXOT-",
           name: "ORDINANCE THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.5.2 ",
@@ -8828,7 +7696,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ORDINANCE",
-            "ORDINANCE CORPS"
+            "ORDINANCE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8836,7 +7704,7 @@ export const app6b = {
           status: "*",
           functionid: "USXOC-",
           name: "ORDINANCE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.5.3 ",
@@ -8848,7 +7716,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ORDINANCE",
-            "ORDINANCE MISSILE"
+            "ORDINANCE MISSILE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8856,7 +7724,7 @@ export const app6b = {
           status: "*",
           functionid: "USXOM-",
           name: "ORDINANCE MISSILE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.5.3.1 ",
@@ -8869,7 +7737,7 @@ export const app6b = {
             "MAINTENANCE",
             "ORDINANCE",
             "ORDINANCE MISSILE",
-            "ORDINANCE MISSILE THEATRE"
+            "ORDINANCE MISSILE THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8877,7 +7745,7 @@ export const app6b = {
           status: "*",
           functionid: "USXOMT",
           name: "ORDINANCE MISSILE THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.5.3.2 ",
@@ -8890,7 +7758,7 @@ export const app6b = {
             "MAINTENANCE",
             "ORDINANCE",
             "ORDINANCE MISSILE",
-            "ORDINANCE MISSILE CORPS"
+            "ORDINANCE MISSILE CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8898,7 +7766,7 @@ export const app6b = {
           status: "*",
           functionid: "USXOMC",
           name: "ORDINANCE MISSILE CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.6 ",
@@ -8909,7 +7777,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "ELECTRO-OPTICAL"
+            "ELECTRO-OPTICAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8917,7 +7785,7 @@ export const app6b = {
           status: "*",
           functionid: "USXE--",
           name: "ELECTRO-OPTICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.6.1 ",
@@ -8929,7 +7797,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ELECTRO-OPTICAL",
-            "ELECTRO-OPTICAL THEATRE"
+            "ELECTRO-OPTICAL THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8937,7 +7805,7 @@ export const app6b = {
           status: "*",
           functionid: "USXET-",
           name: "ELECTRO-OPTICAL THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.6.2 ",
@@ -8949,7 +7817,7 @@ export const app6b = {
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
             "ELECTRO-OPTICAL",
-            "ELECTRO-OPTICAL CORPS"
+            "ELECTRO-OPTICAL CORPS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8957,7 +7825,7 @@ export const app6b = {
           status: "*",
           functionid: "USXEC-",
           name: "ELECTRO-OPTICAL CORPS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.7 ",
@@ -8968,7 +7836,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "BATTLE DAMAGE REPAIR"
+            "BATTLE DAMAGE REPAIR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8976,7 +7844,7 @@ export const app6b = {
           status: "*",
           functionid: "USXBDR",
           name: "BATTLE DAMAGE REPAIR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.5.8 ",
@@ -8987,7 +7855,7 @@ export const app6b = {
             "UNIT",
             "COMBAT SERVICE SUPPORT",
             "MAINTENANCE",
-            "PREVENTIVE MAINTANANCE"
+            "PREVENTIVE MAINTANANCE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -8995,167 +7863,111 @@ export const app6b = {
           status: "*",
           functionid: "USXPM-",
           name: "PREVENTIVE MAINTANANCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "PIPELINE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "PIPELINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USXP--",
           name: "PIPELINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.3.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "COMBAT SERVICE SUPPORT",
-            "ENVIRONMENTAL PROTECTION"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "COMBAT SERVICE SUPPORT", "ENVIRONMENTAL PROTECTION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "USXEP-",
           name: "ENVIRONMENTAL PROTECTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.4 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "SPECIAL C2 HEADQUARTERS COMPONENT"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "SPECIAL C2 HEADQUARTERS COMPONENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UH----",
           name: "SPECIAL C2 HEADQUARTERS COMPONENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.1.5 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "UNIT GENERAL HEADQUARTERS"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "UNIT GENERAL HEADQUARTERS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UH----",
           name: "UNIT GENERAL HEADQUARTERS",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.6 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "GENERAL HEADQUARTERS AND SERVICE"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "GENERAL HEADQUARTERS AND SERVICE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UH----",
           name: "GENERAL HEADQUARTERS AND SERVICE",
-          remarks: "Error in standard"
+          remarks: "Error in standard",
         },
         {
           hierarchy: "1.X.3.1.7 ",
-          names: [
-            ,
-            ,
-            "GROUND TRACK",
-            "UNIT",
-            "UNIT GENERAL LIAISON"
-          ],
+          names: [, , "GROUND TRACK", "UNIT", "UNIT GENERAL LIAISON"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "UHGL--",
           name: "UNIT GENERAL LIAISON",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     GRDTRK_EQT: {
       name: "GROUND EQUIPMENT",
       mainIcon: [
         {
           hierarchy: "1.X.3.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "E-----",
           name: "GROUND TRACK EQUIPMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EW----",
           name: "WEAPONS",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "1.X.3.2.1.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "MISSILE LAUNCHERS"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "MISSILE LAUNCHERS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWM---",
           name: "MISSILE LAUNCHERS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.1 ",
@@ -9166,7 +7978,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "MISSILE LAUNCHERS",
-            "AIR DEFENCE (AD) MISSILE LAUNCH"
+            "AIR DEFENCE (AD) MISSILE LAUNCH",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9174,7 +7986,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMA--",
           name: "AIR DEFENCE (AD) MISSILE LAUNCH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.1.1 ",
@@ -9186,7 +7998,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "AIR DEFENCE (AD) MISSILE LAUNCH",
-            "SHORT RANGE AD MISSILE LAUNCHERS"
+            "SHORT RANGE AD MISSILE LAUNCHERS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9194,7 +8006,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMAS-",
           name: "SHORT RANGE AD MISSILE LAUNCHERS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.1.2 ",
@@ -9206,7 +8018,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "AIR DEFENCE (AD) MISSILE LAUNCH",
-            "INTERMEDIATE RANGE AD MISSILE LAUNCH"
+            "INTERMEDIATE RANGE AD MISSILE LAUNCH",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9214,7 +8026,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMAI-",
           name: "INTERMEDIATE RANGE AD MISSILE LAUNCH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.1.3 ",
@@ -9226,7 +8038,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "AIR DEFENCE (AD) MISSILE LAUNCH",
-            "LONG RANGE AD MISSILE LAUNCH"
+            "LONG RANGE AD MISSILE LAUNCH",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9234,7 +8046,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMAL-",
           name: "LONG RANGE AD MISSILE LAUNCH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.1.4 ",
@@ -9246,7 +8058,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "AIR DEFENCE (AD) MISSILE LAUNCH",
-            "AD MISSILE LAUNCH THEATRE"
+            "AD MISSILE LAUNCH THEATRE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9254,7 +8066,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMAT-",
           name: "AD MISSILE LAUNCH THEATRE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.2 ",
@@ -9265,7 +8077,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "MISSILE LAUNCHERS",
-            "SURFACE-SURFACE (SS) MISSILE LAUNCHER"
+            "SURFACE-SURFACE (SS) MISSILE LAUNCHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9273,7 +8085,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMS--",
           name: "SURFACE-SURFACE (SS) MISSILE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.2.1 ",
@@ -9285,7 +8097,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "SURFACE-SURFACE (SS) MISSILE LAUNCHER",
-            "SHORT RANGE SS MISSILE LAUNCH"
+            "SHORT RANGE SS MISSILE LAUNCH",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9293,7 +8105,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMSS-",
           name: "SHORT RANGE SS MISSILE LAUNCH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.2.2 ",
@@ -9305,7 +8117,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "SURFACE-SURFACE (SS) MISSILE LAUNCHER",
-            "INTERMEDIATE RANGE SS MISSILE LAUNCH"
+            "INTERMEDIATE RANGE SS MISSILE LAUNCH",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9313,7 +8125,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMSI-",
           name: "INTERMEDIATE RANGE SS MISSILE LAUNCH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.2.3 ",
@@ -9325,7 +8137,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "SURFACE-SURFACE (SS) MISSILE LAUNCHER",
-            "LONG RANGE SS MISSILE LAUNCH"
+            "LONG RANGE SS MISSILE LAUNCH",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9333,7 +8145,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMSL-",
           name: "LONG RANGE SS MISSILE LAUNCH",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.3 ",
@@ -9344,7 +8156,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "MISSILE LAUNCHERS",
-            "MISSILE LAUNCHERS ANTI TANK (AT)"
+            "MISSILE LAUNCHERS ANTI TANK (AT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9352,7 +8164,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMT--",
           name: "MISSILE LAUNCHERS ANTI TANK (AT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.3.1 ",
@@ -9364,7 +8176,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "MISSILE LAUNCHERS ANTI TANK (AT)",
-            "MISSILE LAUNCHERS AT LIGHT"
+            "MISSILE LAUNCHERS AT LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9372,7 +8184,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMTL-",
           name: "MISSILE LAUNCHERS AT LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.3.2 ",
@@ -9384,7 +8196,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "MISSILE LAUNCHERS ANTI TANK (AT)",
-            "MISSILE LAUNCHER AT MEDIUM"
+            "MISSILE LAUNCHER AT MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9392,7 +8204,7 @@ export const app6b = {
           status: "*",
           functionid: "EWMTM-",
           name: "MISSILE LAUNCHER AT MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.1.3.3 ",
@@ -9404,7 +8216,7 @@ export const app6b = {
             "WEAPONS",
             "MISSILE LAUNCHERS",
             "MISSILE LAUNCHERS ANTI TANK (AT)",
-            "MISSILE LAUNCHER AT HEAVY"
+            "MISSILE LAUNCHER AT HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9412,25 +8224,18 @@ export const app6b = {
           status: "*",
           functionid: "EWMTH-",
           name: "MISSILE LAUNCHER AT HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "SINGLE ROCKET LAUNCHER"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "SINGLE ROCKET LAUNCHER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWS---",
           name: "SINGLE ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.2.1 ",
@@ -9441,7 +8246,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET LAUNCHER LIGHT"
+            "SINGLE ROCKET LAUNCHER LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9449,7 +8254,7 @@ export const app6b = {
           status: "*",
           functionid: "EWSL--",
           name: "SINGLE ROCKET LAUNCHER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.2.2 ",
@@ -9460,7 +8265,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET LAUNCHER MEDIUM"
+            "SINGLE ROCKET LAUNCHER MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9468,7 +8273,7 @@ export const app6b = {
           status: "*",
           functionid: "EWSM--",
           name: "SINGLE ROCKET LAUNCHER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.2.3 ",
@@ -9479,7 +8284,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "SINGLE ROCKET LAUNCHER",
-            "SINGLE ROCKET LAUNCHER HEAVY"
+            "SINGLE ROCKET LAUNCHER HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9487,25 +8292,18 @@ export const app6b = {
           status: "*",
           functionid: "EWSH--",
           name: "SINGLE ROCKET LAUNCHER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "MULTIPLE ROCKET LAUNCHER"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "MULTIPLE ROCKET LAUNCHER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWX---",
           name: "MULTIPLE ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.3.1 ",
@@ -9516,7 +8314,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "MULTIPLE ROCKET LAUNCHER",
-            "MULTIPLE ROCKET LAUNCHER LIGHT"
+            "MULTIPLE ROCKET LAUNCHER LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9524,7 +8322,7 @@ export const app6b = {
           status: "*",
           functionid: "EWXL--",
           name: "MULTIPLE ROCKET LAUNCHER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.3.2 ",
@@ -9535,7 +8333,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "MULTIPLE ROCKET LAUNCHER",
-            "MULTIPLE ROCKET LAUNCHER MEDIUM"
+            "MULTIPLE ROCKET LAUNCHER MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9543,7 +8341,7 @@ export const app6b = {
           status: "*",
           functionid: "EWXM--",
           name: "MULTIPLE ROCKET LAUNCHER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.3.3 ",
@@ -9554,7 +8352,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "MULTIPLE ROCKET LAUNCHER",
-            "MULTIPLE ROCKET LAUNCHER HEAVY"
+            "MULTIPLE ROCKET LAUNCHER HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9562,25 +8360,18 @@ export const app6b = {
           status: "*",
           functionid: "EWXH--",
           name: "MULTIPLE ROCKET LAUNCHER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.4 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "ANTITANK ROCKET LAUNCHER"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "ANTITANK ROCKET LAUNCHER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWT---",
           name: "ANTITANK ROCKET LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.4.1 ",
@@ -9591,7 +8382,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "ANTITANK ROCKET LAUNCHER",
-            "ANTITANK ROCKET LAUNCHER LIGHT"
+            "ANTITANK ROCKET LAUNCHER LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9599,7 +8390,7 @@ export const app6b = {
           status: "*",
           functionid: "EWTL--",
           name: "ANTITANK ROCKET LAUNCHER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.4.2 ",
@@ -9610,7 +8401,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "ANTITANK ROCKET LAUNCHER",
-            "ANTITANK ROCKET LAUNCHER MEDIUM"
+            "ANTITANK ROCKET LAUNCHER MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9618,7 +8409,7 @@ export const app6b = {
           status: "*",
           functionid: "EWTM--",
           name: "ANTITANK ROCKET LAUNCHER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.4.3 ",
@@ -9629,7 +8420,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "ANTITANK ROCKET LAUNCHER",
-            "ANTITANK ROCKET LAUNCHER HEAVY"
+            "ANTITANK ROCKET LAUNCHER HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9637,44 +8428,29 @@ export const app6b = {
           status: "*",
           functionid: "EWTH--",
           name: "ANTITANK ROCKET LAUNCHER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.5 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "RIFLE/AUTOMATIC WEAPON"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "RIFLE/AUTOMATIC WEAPON"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWR---",
           name: "RIFLE/AUTOMATIC WEAPON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.5.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "RIFLE/AUTOMATIC WEAPON",
-            "RIFLE"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "RIFLE/AUTOMATIC WEAPON", "RIFLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWRR--",
           name: "RIFLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.5.2 ",
@@ -9685,7 +8461,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "RIFLE/AUTOMATIC WEAPON",
-            "LIGHT MACHINE GUN"
+            "LIGHT MACHINE GUN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9693,7 +8469,7 @@ export const app6b = {
           status: "*",
           functionid: "EWRL--",
           name: "LIGHT MACHINE GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.5.3 ",
@@ -9704,7 +8480,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "RIFLE/AUTOMATIC WEAPON",
-            "HEAVY MACHINE GUN"
+            "HEAVY MACHINE GUN",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9712,25 +8488,18 @@ export const app6b = {
           status: "*",
           functionid: "EWRH--",
           name: "HEAVY MACHINE GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.6 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "GRENADE LAUNCHER"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "GRENADE LAUNCHER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWZ---",
           name: "GRENADE LAUNCHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.6.1 ",
@@ -9741,7 +8510,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "GRENADE LAUNCHER",
-            "GRENADE LAUNCHER LIGHT"
+            "GRENADE LAUNCHER LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9749,7 +8518,7 @@ export const app6b = {
           status: "*",
           functionid: "EWZL--",
           name: "GRENADE LAUNCHER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.6.2 ",
@@ -9760,7 +8529,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "GRENADE LAUNCHER",
-            "GRENADE LAUNCHER MEDIUM"
+            "GRENADE LAUNCHER MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9768,7 +8537,7 @@ export const app6b = {
           status: "*",
           functionid: "EWZM--",
           name: "GRENADE LAUNCHER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.6.3 ",
@@ -9779,7 +8548,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "GRENADE LAUNCHER",
-            "GRENADE LAUNCHER HEAVY"
+            "GRENADE LAUNCHER HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9787,119 +8556,73 @@ export const app6b = {
           status: "*",
           functionid: "EWZH--",
           name: "GRENADE LAUNCHER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.7 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "MORTAR"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "MORTAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWO---",
           name: "MORTAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.7.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "MORTAR",
-            "MORTAR LIGHT"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "MORTAR", "MORTAR LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWOL--",
           name: "MORTAR LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.7.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "MORTAR",
-            "MORTAR MEDIUM"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "MORTAR", "MORTAR MEDIUM"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWOM--",
           name: "MORTAR MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.7.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "MORTAR",
-            "MORTAR HEAVY"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "MORTAR", "MORTAR HEAVY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWOH--",
           name: "MORTAR HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.8 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "HOWITZER"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "HOWITZER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWH---",
           name: "HOWITZER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.8.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "HOWITZER",
-            "HOWITZER LIGHT"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "HOWITZER", "HOWITZER LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWHL--",
           name: "HOWITZER LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.8.1.1 ",
@@ -9911,7 +8634,7 @@ export const app6b = {
             "WEAPONS",
             "HOWITZER",
             "HOWITZER LIGHT",
-            "HOWITZER LIGHT SELF-PROPELLED"
+            "HOWITZER LIGHT SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9919,26 +8642,18 @@ export const app6b = {
           status: "*",
           functionid: "EWHLS-",
           name: "HOWITZER LIGHT SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.8.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "HOWITZER",
-            "HOWITZER MEDIUM"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "HOWITZER", "HOWITZER MEDIUM"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWHM--",
           name: "HOWITZER MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.8.2.1 ",
@@ -9950,7 +8665,7 @@ export const app6b = {
             "WEAPONS",
             "HOWITZER",
             "HOWITZER MEDIUM",
-            "HOWITZER MEDIUM SELF-PROPELLED"
+            "HOWITZER MEDIUM SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9958,26 +8673,18 @@ export const app6b = {
           status: "*",
           functionid: "EWHMS-",
           name: "HOWITZER MEDIUM SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.8.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "HOWITZER",
-            "HOWITZER HEAVY"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "HOWITZER", "HOWITZER HEAVY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWHH--",
           name: "HOWITZER HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.8.3.1 ",
@@ -9989,7 +8696,7 @@ export const app6b = {
             "WEAPONS",
             "HOWITZER",
             "HOWITZER HEAVY",
-            "HOWITZER HEAVY SELF-PROPELLED"
+            "HOWITZER HEAVY SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -9997,25 +8704,18 @@ export const app6b = {
           status: "*",
           functionid: "EWHHS-",
           name: "HOWITZER HEAVY SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.9 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "ANTITANK GUN"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "ANTITANK GUN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWG---",
           name: "ANTITANK GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.9.1 ",
@@ -10026,7 +8726,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "ANTITANK GUN",
-            "ANTITANK GUN RECOILLESS"
+            "ANTITANK GUN RECOILLESS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10034,82 +8734,51 @@ export const app6b = {
           status: "*",
           functionid: "EWGR--",
           name: "ANTITANK GUN RECOILLESS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.9.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "ANTITANK GUN",
-            "ANTITANK GUN LIGHT"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "ANTITANK GUN", "ANTITANK GUN LIGHT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWGL--",
           name: "ANTITANK GUN LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.9.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "ANTITANK GUN",
-            "ANTITANK GUN MEDIUM"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "ANTITANK GUN", "ANTITANK GUN MEDIUM"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWGM--",
           name: "ANTITANK GUN MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.9.4 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "ANTITANK GUN",
-            "ANTITANK GUN HEAVY"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "ANTITANK GUN", "ANTITANK GUN HEAVY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWGH--",
           name: "ANTITANK GUN HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.10 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "DIRECT FIRE GUN"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "DIRECT FIRE GUN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWD---",
           name: "DIRECT FIRE GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.10.1 ",
@@ -10120,7 +8789,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "DIRECT FIRE GUN",
-            "DIRECT FIRE GUN LIGHT"
+            "DIRECT FIRE GUN LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10128,7 +8797,7 @@ export const app6b = {
           status: "*",
           functionid: "EWDL--",
           name: "DIRECT FIRE GUN LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.10.1.1 ",
@@ -10140,7 +8809,7 @@ export const app6b = {
             "WEAPONS",
             "DIRECT FIRE GUN",
             "DIRECT FIRE GUN LIGHT",
-            "DIRECT FIRE GUN LIGHT SELF-PROPELLED"
+            "DIRECT FIRE GUN LIGHT SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10148,7 +8817,7 @@ export const app6b = {
           status: "*",
           functionid: "EWDLS-",
           name: "DIRECT FIRE GUN LIGHT SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.10.2 ",
@@ -10159,7 +8828,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "DIRECT FIRE GUN",
-            "DIRECT FIRE GUN MEDIUM"
+            "DIRECT FIRE GUN MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10167,7 +8836,7 @@ export const app6b = {
           status: "*",
           functionid: "EWDM--",
           name: "DIRECT FIRE GUN MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.10.2.1 ",
@@ -10179,7 +8848,7 @@ export const app6b = {
             "WEAPONS",
             "DIRECT FIRE GUN",
             "DIRECT FIRE GUN MEDIUM",
-            "DIRECT FIRE GUN MEDIUM SELF-PROPELLED"
+            "DIRECT FIRE GUN MEDIUM SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10187,7 +8856,7 @@ export const app6b = {
           status: "*",
           functionid: "EWDMS-",
           name: "DIRECT FIRE GUN MEDIUM SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.10.3 ",
@@ -10198,7 +8867,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "DIRECT FIRE GUN",
-            "DIRECT FIRE GUN HEAVY"
+            "DIRECT FIRE GUN HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10206,7 +8875,7 @@ export const app6b = {
           status: "*",
           functionid: "EWDH--",
           name: "DIRECT FIRE GUN HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.10.3.1 ",
@@ -10218,7 +8887,7 @@ export const app6b = {
             "WEAPONS",
             "DIRECT FIRE GUN",
             "DIRECT FIRE GUN HEAVY",
-            "DIRECT FIRE GUN HEAVY SELF-PROPELLED"
+            "DIRECT FIRE GUN HEAVY SELF-PROPELLED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10226,25 +8895,18 @@ export const app6b = {
           status: "*",
           functionid: "EWDHS-",
           name: "DIRECT FIRE GUN HEAVY SELF-PROPELLED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.11 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "WEAPONS",
-            "AIR DEFENCE GUN"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "WEAPONS", "AIR DEFENCE GUN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EWA---",
           name: "AIR DEFENCE GUN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.11.1 ",
@@ -10255,7 +8917,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "AIR DEFENCE GUN",
-            "AIR DEFENCE GUN LIGHT"
+            "AIR DEFENCE GUN LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10263,7 +8925,7 @@ export const app6b = {
           status: "*",
           functionid: "EWAL--",
           name: "AIR DEFENCE GUN LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.11.2 ",
@@ -10274,7 +8936,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "AIR DEFENCE GUN",
-            "AIR DEFENCE GUN MEDIUM"
+            "AIR DEFENCE GUN MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10282,7 +8944,7 @@ export const app6b = {
           status: "*",
           functionid: "EWAM--",
           name: "AIR DEFENCE GUN MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.1.11.3 ",
@@ -10293,7 +8955,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "WEAPONS",
             "AIR DEFENCE GUN",
-            "AIR DEFENCE GUN HEAVY"
+            "AIR DEFENCE GUN HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10301,61 +8963,40 @@ export const app6b = {
           status: "*",
           functionid: "EWAH--",
           name: "AIR DEFENCE GUN HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EV----",
           name: "GROUND VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "ARMOURED VEHICLE"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "ARMOURED VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVA---",
           name: "ARMOURED VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "ARMOURED VEHICLE",
-            "TANK"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "ARMOURED VEHICLE", "TANK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVAT--",
           name: "TANK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.1.1 ",
@@ -10367,7 +9008,7 @@ export const app6b = {
             "GROUND VEHICLE",
             "ARMOURED VEHICLE",
             "TANK",
-            "TANK LIGHT"
+            "TANK LIGHT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10375,7 +9016,7 @@ export const app6b = {
           status: "*",
           functionid: "EVATL-",
           name: "TANK LIGHT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.1.1.1 ",
@@ -10388,7 +9029,7 @@ export const app6b = {
             "ARMOURED VEHICLE",
             "TANK",
             "TANK LIGHT",
-            "TANK LIGHT RECOVERY"
+            "TANK LIGHT RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10396,7 +9037,7 @@ export const app6b = {
           status: "*",
           functionid: "EVATW-",
           name: "TANK LIGHT RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.1.2 ",
@@ -10408,7 +9049,7 @@ export const app6b = {
             "GROUND VEHICLE",
             "ARMOURED VEHICLE",
             "TANK",
-            "TANK MEDIUM"
+            "TANK MEDIUM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10416,7 +9057,7 @@ export const app6b = {
           status: "*",
           functionid: "EVATM-",
           name: "TANK MEDIUM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.1.2.1 ",
@@ -10429,7 +9070,7 @@ export const app6b = {
             "ARMOURED VEHICLE",
             "TANK",
             "TANK MEDIUM",
-            "TANK MEDIUM RECOVERY"
+            "TANK MEDIUM RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10437,7 +9078,7 @@ export const app6b = {
           status: "*",
           functionid: "EVATX-",
           name: "TANK MEDIUM RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.1.3 ",
@@ -10449,7 +9090,7 @@ export const app6b = {
             "GROUND VEHICLE",
             "ARMOURED VEHICLE",
             "TANK",
-            "TANK HEAVY"
+            "TANK HEAVY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10457,7 +9098,7 @@ export const app6b = {
           status: "*",
           functionid: "EVATH-",
           name: "TANK HEAVY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.1.3.1 ",
@@ -10470,7 +9111,7 @@ export const app6b = {
             "ARMOURED VEHICLE",
             "TANK",
             "TANK HEAVY",
-            "TANK HEAVY RECOVERY"
+            "TANK HEAVY RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10478,7 +9119,7 @@ export const app6b = {
           status: "*",
           functionid: "EVATY-",
           name: "TANK HEAVY RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.2 ",
@@ -10489,7 +9130,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMOURED VEHICLE",
-            "ARMOURED PERSONNEL CARRIER"
+            "ARMOURED PERSONNEL CARRIER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10497,7 +9138,7 @@ export const app6b = {
           status: "*",
           functionid: "EVAA--",
           name: "ARMOURED PERSONNEL CARRIER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.2.1 ",
@@ -10509,7 +9150,7 @@ export const app6b = {
             "GROUND VEHICLE",
             "ARMOURED VEHICLE",
             "ARMOURED PERSONNEL CARRIER",
-            "ARMOURED PERSONNEL CARRIER RECOVERY"
+            "ARMOURED PERSONNEL CARRIER RECOVERY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10517,7 +9158,7 @@ export const app6b = {
           status: "*",
           functionid: "EVAAR-",
           name: "ARMOURED PERSONNEL CARRIER RECOVERY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.3 ",
@@ -10528,7 +9169,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMOURED VEHICLE",
-            "ARMOURED INFANTRY"
+            "ARMOURED INFANTRY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10536,26 +9177,18 @@ export const app6b = {
           status: "*",
           functionid: "EVAI--",
           name: "ARMOURED INFANTRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.4 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "ARMOURED VEHICLE",
-            "C2V/ACV"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "ARMOURED VEHICLE", "C2V/ACV"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVAC--",
           name: "C2V/ACV",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.5 ",
@@ -10566,7 +9199,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMOURED VEHICLE",
-            "COMBAT SERVICE SUPPORT VEHICLE"
+            "COMBAT SERVICE SUPPORT VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10574,7 +9207,7 @@ export const app6b = {
           status: "*",
           functionid: "EVAS--",
           name: "COMBAT SERVICE SUPPORT VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.1.6 ",
@@ -10585,7 +9218,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ARMOURED VEHICLE",
-            "LIGHT ARMOURED VEHICLE"
+            "LIGHT ARMOURED VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10593,63 +9226,40 @@ export const app6b = {
           status: "*",
           functionid: "EVAL--",
           name: "LIGHT ARMOURED VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "UTILITY VEHICLE"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "UTILITY VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVU---",
           name: "UTILITY VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.2.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "UTILITY VEHICLE",
-            "BUS"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "UTILITY VEHICLE", "BUS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVUB--",
           name: "BUS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.2.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "UTILITY VEHICLE",
-            "SEMI"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "UTILITY VEHICLE", "SEMI"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVUS--",
           name: "SEMI",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.2.3 ",
@@ -10660,7 +9270,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "LIMITED CROSS-COUNTRY TRUCK"
+            "LIMITED CROSS-COUNTRY TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10668,7 +9278,7 @@ export const app6b = {
           status: "*",
           functionid: "EVUL--",
           name: "LIMITED CROSS-COUNTRY TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.2.4 ",
@@ -10679,7 +9289,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "CROSS-COUNTRY TRUCK"
+            "CROSS-COUNTRY TRUCK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10687,7 +9297,7 @@ export const app6b = {
           status: "*",
           functionid: "EVUX--",
           name: "CROSS-COUNTRY TRUCK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.2.5 ",
@@ -10698,7 +9308,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "UTILITY VEHICLE",
-            "WATER CRAFT"
+            "WATER CRAFT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10706,44 +9316,29 @@ export const app6b = {
           status: "*",
           functionid: "EVUR--",
           name: "WATER CRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "ENGINEER VEHICLE"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "ENGINEER VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVE---",
           name: "ENGINEER VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "ENGINEER VEHICLE",
-            "BRIDGE"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "ENGINEER VEHICLE", "BRIDGE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVEB--",
           name: "BRIDGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.2 ",
@@ -10754,7 +9349,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "EARTHMOVER"
+            "EARTHMOVER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10762,7 +9357,7 @@ export const app6b = {
           status: "*",
           functionid: "EVEE--",
           name: "EARTHMOVER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.2.1 ",
@@ -10774,7 +9369,7 @@ export const app6b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "EARTHMOVER",
-            "MULTIFUNCTIONAL EARTHMOVER/DIGGER"
+            "MULTIFUNCTIONAL EARTHMOVER/DIGGER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10782,7 +9377,7 @@ export const app6b = {
           status: "*",
           functionid: "EVEE--",
           name: "MULTIFUNCTIONAL EARTHMOVER/DIGGER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.3 ",
@@ -10793,7 +9388,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "CONSTRUCTION VEHICLE"
+            "CONSTRUCTION VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10801,7 +9396,7 @@ export const app6b = {
           status: "*",
           functionid: "EVEC--",
           name: "CONSTRUCTION VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.4 ",
@@ -10812,7 +9407,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "MINE LAYING VEHICLE"
+            "MINE LAYING VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10820,7 +9415,7 @@ export const app6b = {
           status: "*",
           functionid: "EVEM--",
           name: "MINE LAYING VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.4.1 ",
@@ -10832,7 +9427,7 @@ export const app6b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "MINE LAYING VEHICLE",
-            "ARMOURED VEHICLE MOUNTED"
+            "ARMOURED VEHICLE MOUNTED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10840,7 +9435,7 @@ export const app6b = {
           status: "*",
           functionid: "EVEMA-",
           name: "ARMOURED VEHICLE MOUNTED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.4.2 ",
@@ -10852,7 +9447,7 @@ export const app6b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "MINE LAYING VEHICLE",
-            "TRAILER MOUNTED"
+            "TRAILER MOUNTED",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10860,7 +9455,7 @@ export const app6b = {
           status: "*",
           functionid: "EVEMT-",
           name: "TRAILER MOUNTED",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.4.3 ",
@@ -10872,7 +9467,7 @@ export const app6b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "MINE LAYING VEHICLE",
-            "ARMOURED CARRIER WITH VOLCANO"
+            "ARMOURED CARRIER WITH VOLCANO",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10880,7 +9475,7 @@ export const app6b = {
           status: "*",
           functionid: "EVEMV-",
           name: "ARMOURED CARRIER WITH VOLCANO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.4.5 ",
@@ -10892,7 +9487,7 @@ export const app6b = {
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
             "MINE LAYING VEHICLE",
-            "ARMOURED CARRIER WITH SCATTERABLE MINES"
+            "ARMOURED CARRIER WITH SCATTERABLE MINES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10900,26 +9495,18 @@ export const app6b = {
           status: "*",
           functionid: "EVEMSM",
           name: "ARMOURED CARRIER WITH SCATTERABLE MINES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.5 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "ENGINEER VEHICLE",
-            "DOZER"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "ENGINEER VEHICLE", "DOZER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVED--",
           name: "DOZER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.3.6 ",
@@ -10930,7 +9517,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "GROUND VEHICLE",
             "ENGINEER VEHICLE",
-            "DRILLING VEHICLE"
+            "DRILLING VEHICLE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -10938,185 +9525,117 @@ export const app6b = {
           status: "*",
           functionid: "EVD---",
           name: "DRILLING VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.4 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "TRAIN LOCOMOTIVE"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "TRAIN LOCOMOTIVE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVST--",
           name: "TRAIN LOCOMOTIVE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.2.5 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "GROUND VEHICLE",
-            "CIVILIAN VEHICLE"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "GROUND VEHICLE", "CIVILIAN VEHICLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EVC---",
           name: "CIVILIAN VEHICLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "SENSOR"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "SENSOR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "ES----",
           name: "SENSOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.3.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "SENSOR",
-            "RADAR"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "SENSOR", "RADAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "ESR---",
           name: "RADAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.3.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "SENSOR",
-            "EMPLACED SENSOR"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "SENSOR", "EMPLACED SENSOR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "ESE---",
           name: "EMPLACED SENSOR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.4 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EX----",
           name: "SPECIAL EQUIPMENT",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "1.X.3.2.4.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT",
-            "LASER"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT", "LASER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EXL---",
           name: "LASER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.4.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT",
-            "CBRN EQUIPMENT"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT", "CBRN EQUIPMENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EXN---",
           name: "CBRN EQUIPMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.4.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT",
-            "FLAME THROWER"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT", "FLAME THROWER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EXF---",
           name: "FLAME THROWER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.4.4 ",
-          names: [
-            ,
-            ,
-            ,
-            "GROUND TRACK EQUIPMENT",
-            "SPECIAL EQUIPMENT",
-            "LAND MINES"
-          ],
+          names: [, , , "GROUND TRACK EQUIPMENT", "SPECIAL EQUIPMENT", "LAND MINES"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "EXM---",
           name: "LAND MINES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.4.4.1 ",
@@ -11127,7 +9646,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "SPECIAL EQUIPMENT",
             "LAND MINES",
-            "LAND MINES, LETHAL"
+            "LAND MINES, LETHAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11135,7 +9654,7 @@ export const app6b = {
           status: "*",
           functionid: "EXMC--",
           name: "LAND MINES, LETHAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.2.4.4.2 ",
@@ -11146,7 +9665,7 @@ export const app6b = {
             "GROUND TRACK EQUIPMENT",
             "SPECIAL EQUIPMENT",
             "LAND MINES",
-            "LESS THAN LETHAL"
+            "LESS THAN LETHAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11154,225 +9673,144 @@ export const app6b = {
           status: "*",
           functionid: "EXML--",
           name: "LESS THAN LETHAL",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     GRDTRK_INS: {
       name: "GROUND INSTALLATION",
       mainIcon: [
         {
           hierarchy: "1.X.3.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION"
-          ],
+          names: [, , , "INSTALLATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "I-----",
           name: "INSTALLATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE"
-          ],
+          names: [, , , "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IR----",
           name: "RAW MATERIAL PRODUCTION/STORAGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.1.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE",
-            "MINE"
-          ],
+          names: [, , , "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE", "MINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IRM---",
           name: "MINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.1.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE",
-            "PETROLEUM/GAS/OIL"
-          ],
+          names: [, , , "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE", "PETROLEUM/GAS/OIL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IRP---",
           name: "PETROLEUM/GAS/OIL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.1.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE",
-            "CBRN"
-          ],
+          names: [, , , "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE", "CBRN"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IRN---",
           name: "CBRN",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.1.3.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE",
-            "CBRN",
-            "BIOLOGICAL"
-          ],
+          names: [, , , "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE", "CBRN", "BIOLOGICAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IRNB--",
           name: "BIOLOGICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.1.3.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE",
-            "CBRN",
-            "CHEMICAL"
-          ],
+          names: [, , , "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE", "CBRN", "CHEMICAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IRNC--",
           name: "CHEMICAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.1.3.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "RAW MATERIAL PRODUCTION/STORAGE",
-            "CBRN",
-            "NUCLEAR"
-          ],
+          names: [, , , "INSTALLATION", "RAW MATERIAL PRODUCTION/STORAGE", "CBRN", "NUCLEAR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IRNN--",
           name: "NUCLEAR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "PROCESSING FACILITY"
-          ],
+          names: [, , , "INSTALLATION", "PROCESSING FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IP----",
           name: "PROCESSING FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.2.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "PROCESSING FACILITY",
-            "DECON"
-          ],
+          names: [, , , "INSTALLATION", "PROCESSING FACILITY", "DECON"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IPD---",
           name: "DECON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.3 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "EQUIPMENT MANUFACTURE"
-          ],
+          names: [, , , "INSTALLATION", "EQUIPMENT MANUFACTURE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IE----",
           name: "EQUIPMENT MANUFACTURE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.4 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "SERVICE, RESEARCH, UTILITY FACILITY"
-          ],
+          names: [, , , "INSTALLATION", "SERVICE, RESEARCH, UTILITY FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IU----",
           name: "SERVICE, RESEARCH, UTILITY FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.4.1 ",
@@ -11382,7 +9820,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
-            "TECHNOLOGICAL RESEARCH FACILITY"
+            "TECHNOLOGICAL RESEARCH FACILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11390,7 +9828,7 @@ export const app6b = {
           status: "*",
           functionid: "IUR---",
           name: "TECHNOLOGICAL RESEARCH FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.4.2 ",
@@ -11400,7 +9838,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
-            "TELECOMMUNICATIONS FACILITY"
+            "TELECOMMUNICATIONS FACILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11408,7 +9846,7 @@ export const app6b = {
           status: "*",
           functionid: "IUT---",
           name: "TELECOMMUNICATIONS FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.4.3 ",
@@ -11418,7 +9856,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
-            "ELECTRIC POWER FACILITY"
+            "ELECTRIC POWER FACILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11426,7 +9864,7 @@ export const app6b = {
           status: "*",
           functionid: "IUE---",
           name: "ELECTRIC POWER FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.4.4 ",
@@ -11436,7 +9874,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "SERVICE, RESEARCH, UTILITY FACILITY",
-            "PUBLIC WATER SERVICES"
+            "PUBLIC WATER SERVICES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11444,42 +9882,29 @@ export const app6b = {
           status: "*",
           functionid: "IUP---",
           name: "PUBLIC WATER SERVICES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "MILITARY MATERIEL FACILITY"
-          ],
+          names: [, , , "INSTALLATION", "MILITARY MATERIEL FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IM----",
           name: "MILITARY MATERIEL FACILITY",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "1.X.3.3.5.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "MILITARY MATERIEL FACILITY",
-            "ATOMIC ENERGY PRODUCTION"
-          ],
+          names: [, , , "INSTALLATION", "MILITARY MATERIEL FACILITY", "ATOMIC ENERGY PRODUCTION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IMF---",
           name: "ATOMIC ENERGY PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5.2 ",
@@ -11489,7 +9914,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "AIRCRAFT PRODUCTION & ASSEMBLY"
+            "AIRCRAFT PRODUCTION & ASSEMBLY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11497,7 +9922,7 @@ export const app6b = {
           status: "*",
           functionid: "IMA---",
           name: "AIRCRAFT PRODUCTION & ASSEMBLY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5.3 ",
@@ -11507,7 +9932,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "AMMUNITION AND EXPLOSIVES PRODUCTION"
+            "AMMUNITION AND EXPLOSIVES PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11515,25 +9940,18 @@ export const app6b = {
           status: "*",
           functionid: "IME---",
           name: "AMMUNITION AND EXPLOSIVES PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5.4 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "MILITARY MATERIEL FACILITY",
-            "ARMAMENT PRODUCTION"
-          ],
+          names: [, , , "INSTALLATION", "MILITARY MATERIEL FACILITY", "ARMAMENT PRODUCTION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IMG---",
           name: "ARMAMENT PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5.5 ",
@@ -11543,7 +9961,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "MILITARY VEHICLE PRODUCTION"
+            "MILITARY VEHICLE PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11551,7 +9969,7 @@ export const app6b = {
           status: "*",
           functionid: "IMV---",
           name: "MILITARY VEHICLE PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5.6 ",
@@ -11561,7 +9979,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "ENGINEERING EQUIPMENT PRODUCTION"
+            "ENGINEERING EQUIPMENT PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11569,7 +9987,7 @@ export const app6b = {
           status: "*",
           functionid: "IMN---",
           name: "ENGINEERING EQUIPMENT PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5.6.1 ",
@@ -11580,7 +9998,7 @@ export const app6b = {
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
             "ENGINEERING EQUIPMENT PRODUCTION",
-            "BRIDGE"
+            "BRIDGE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11588,7 +10006,7 @@ export const app6b = {
           status: "*",
           functionid: "IMNB--",
           name: "BRIDGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5.7 ",
@@ -11598,7 +10016,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "CHEMICAL & BIOLOGICAL WARFARE PRODUCTION"
+            "CHEMICAL & BIOLOGICAL WARFARE PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11606,25 +10024,18 @@ export const app6b = {
           status: "*",
           functionid: "IMC---",
           name: "CHEMICAL & BIOLOGICAL WARFARE PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5.8 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "MILITARY MATERIEL FACILITY",
-            "SHIP CONSTRUCTION"
-          ],
+          names: [, , , "INSTALLATION", "MILITARY MATERIEL FACILITY", "SHIP CONSTRUCTION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IMS---",
           name: "SHIP CONSTRUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.5.9 ",
@@ -11634,7 +10045,7 @@ export const app6b = {
             ,
             "INSTALLATION",
             "MILITARY MATERIEL FACILITY",
-            "MISSILE & SPACE SYSTEM PRODUCTION"
+            "MISSILE & SPACE SYSTEM PRODUCTION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11642,322 +10053,210 @@ export const app6b = {
           status: "*",
           functionid: "IMM---",
           name: "MISSILE & SPACE SYSTEM PRODUCTION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.6 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "GOVERNMENT LEADERSHIP"
-          ],
+          names: [, , , "INSTALLATION", "GOVERNMENT LEADERSHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IG----",
           name: "GOVERNMENT LEADERSHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.7 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "MILITARY BASE/FACILITY"
-          ],
+          names: [, , , "INSTALLATION", "MILITARY BASE/FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IB----",
           name: "MILITARY BASE/FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.7.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "MILITARY BASE/FACILITY",
-            "AIRPORT/AIRBASE"
-          ],
+          names: [, , , "INSTALLATION", "MILITARY BASE/FACILITY", "AIRPORT/AIRBASE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IBA---",
           name: "AIRPORT/AIRBASE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.7.2 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "MILITARY BASE/FACILITY",
-            "SEAPORT/NAVAL BASE"
-          ],
+          names: [, , , "INSTALLATION", "MILITARY BASE/FACILITY", "SEAPORT/NAVAL BASE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IBN---",
           name: "SEAPORT/NAVAL BASE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.8 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "TRANSPORT FACILITY"
-          ],
+          names: [, , , "INSTALLATION", "TRANSPORT FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IT----",
           name: "TRANSPORT FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.9 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "MEDICAL FACILITY"
-          ],
+          names: [, , , "INSTALLATION", "MEDICAL FACILITY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IX----",
           name: "MEDICAL FACILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.3.9.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "INSTALLATION",
-            "MEDICAL FACILITY",
-            "HOSPITAL"
-          ],
+          names: [, , , "INSTALLATION", "MEDICAL FACILITY", "HOSPITAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IXH---",
           name: "HOSPITAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.4 ",
-          names: [
-            ,
-            ,
-            ,
-            "SEA SURFACE INSTALLATION"
-          ],
+          names: [, , , "SEA SURFACE INSTALLATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IR----",
           name: "SEA SURFACE INSTALLATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.3.4.1 ",
-          names: [
-            ,
-            ,
-            ,
-            "SEA SURFACE INSTALLATION",
-            "SEA SURFACE INSTALLATION"
-          ],
+          names: [, , , "SEA SURFACE INSTALLATION", "SEA SURFACE INSTALLATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "G",
           status: "*",
           functionid: "IRR---",
           name: "SEA SURFACE INSTALLATION",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     SSUF: {
       name: "SEA SURFACE",
       mainIcon: [
         {
           hierarchy: "1.X.4 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK"
-          ],
+          names: [, , "SEA SURFACE TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "------",
           name: "SEA SURFACE TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "C-----",
           name: "COMBATANT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "LINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CL----",
           name: "LINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.1.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "CARRIER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "LINE", "CARRIER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLCV--",
           name: "CARRIER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.1.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "BATTLESHIP"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "LINE", "BATTLESHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLBB--",
           name: "BATTLESHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.1.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "CRUISER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "LINE", "CRUISER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLCC--",
           name: "CRUISER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.1.4 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "DESTROYER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "LINE", "DESTROYER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLDD--",
           name: "DESTROYER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.1.5 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "LINE",
-            "FRIGATE/CORVETTE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "LINE", "FRIGATE/CORVETTE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CLFF--",
           name: "FRIGATE/CORVETTE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "AMPHIBIOUS WARFARE SHIP"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "AMPHIBIOUS WARFARE SHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CA----",
           name: "AMPHIBIOUS WARFARE SHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.2.1 ",
@@ -11967,7 +10266,7 @@ export const app6b = {
             "SEA SURFACE TRACK",
             "COMBATANT",
             "AMPHIBIOUS WARFARE SHIP",
-            "ASSAULT VESSEL"
+            "ASSAULT VESSEL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -11975,360 +10274,227 @@ export const app6b = {
           status: "*",
           functionid: "CALA--",
           name: "ASSAULT VESSEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.2.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "AMPHIBIOUS WARFARE SHIP",
-            "LANDING SHIP"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "AMPHIBIOUS WARFARE SHIP", "LANDING SHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CALS--",
           name: "LANDING SHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.2.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "AMPHIBIOUS WARFARE SHIP",
-            "LANDING CRAFT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "AMPHIBIOUS WARFARE SHIP", "LANDING CRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CALC--",
           name: "LANDING CRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CM----",
           name: "MINE WARFARE VESSEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.3.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL",
-            "MINELAYER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL", "MINELAYER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CMML--",
           name: "MINELAYER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.3.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL",
-            "MINESWEEPER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL", "MINESWEEPER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CMMS--",
           name: "MINESWEEPER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.3.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL",
-            "MINEHUNTER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL", "MINEHUNTER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CMMH--",
           name: "MINEHUNTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.3.4 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL",
-            "MCM SUPPORT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL", "MCM SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CMMA--",
           name: "MCM SUPPORT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.3.5 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "MINE WARFARE VESSEL",
-            "MCM DRONE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "MINE WARFARE VESSEL", "MCM DRONE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CMMD--",
           name: "MCM DRONE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.4 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "PATROL"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "PATROL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CP----",
           name: "PATROL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.4.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "PATROL",
-            "ANTI SUBMARINE WARFARE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "PATROL", "ANTI SUBMARINE WARFARE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CPSB--",
           name: "ANTI SUBMARINE WARFARE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.4.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "PATROL",
-            "ANTI SURFACE WARFARE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "PATROL", "ANTI SURFACE WARFARE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CPSU--",
           name: "ANTI SURFACE WARFARE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.5 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "HOVERCRAFT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "HOVERCRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "CH----",
           name: "HOVERCRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.6 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "G-----",
           name: "NAVY GROUP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.6.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP",
-            "NAVY TASK FORCE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP", "NAVY TASK FORCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "GT----",
           name: "NAVY TASK FORCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.6.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP",
-            "NAVY TASK GROUP"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP", "NAVY TASK GROUP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "GG----",
           name: "NAVY TASK GROUP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.6.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP",
-            "NAVY TASK UNIT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP", "NAVY TASK UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "GU----",
           name: "NAVY TASK UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.6.4 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP",
-            "NAVY TASK ELEMENT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP", "NAVY TASK ELEMENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "GE----",
           name: "NAVY TASK ELEMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.1.6.5 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "COMBATANT",
-            "NAVY GROUP",
-            "CONVOY"
-          ],
+          names: [, , "SEA SURFACE TRACK", "COMBATANT", "NAVY GROUP", "CONVOY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "GC----",
           name: "CONVOY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NONCOMBATANT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "N-----",
           name: "NONCOMBATANT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "UNDERWAY REPLENISHMENT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NONCOMBATANT", "UNDERWAY REPLENISHMENT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NR----",
           name: "UNDERWAY REPLENISHMENT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.1.1 ",
@@ -12338,7 +10504,7 @@ export const app6b = {
             "SEA SURFACE TRACK",
             "NONCOMBATANT",
             "UNDERWAY REPLENISHMENT",
-            "UNDERWAY REPLENISHMENT, AMMO"
+            "UNDERWAY REPLENISHMENT, AMMO",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12346,7 +10512,7 @@ export const app6b = {
           status: "*",
           functionid: "NRA---",
           name: "UNDERWAY REPLENISHMENT, AMMO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.1.2 ",
@@ -12356,7 +10522,7 @@ export const app6b = {
             "SEA SURFACE TRACK",
             "NONCOMBATANT",
             "UNDERWAY REPLENISHMENT",
-            "UNDERWAY REPLENISHMENT, OIL"
+            "UNDERWAY REPLENISHMENT, OIL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -12364,748 +10530,485 @@ export const app6b = {
           status: "*",
           functionid: "NRO---",
           name: "UNDERWAY REPLENISHMENT, OIL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "FLEET SUPPORT, TUG, OCEAN GOING"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NONCOMBATANT", "FLEET SUPPORT, TUG, OCEAN GOING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NFT---",
           name: "FLEET SUPPORT, TUG, OCEAN GOING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "INTELLIGENCE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NONCOMBATANT", "INTELLIGENCE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NI----",
           name: "INTELLIGENCE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.4 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "HOSPITAL SHIP"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NONCOMBATANT", "HOSPITAL SHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NM----",
           name: "HOSPITAL SHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.5 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "REPAIR SHIP"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NONCOMBATANT", "REPAIR SHIP"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NR----",
           name: "REPAIR SHIP",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.6 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "SUBMARINE TENDER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NONCOMBATANT", "SUBMARINE TENDER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NTS---",
           name: "SUBMARINE TENDER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.7 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "HOVERCRAFT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NONCOMBATANT", "HOVERCRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NH----",
           name: "HOVERCRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.2.8 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NONCOMBATANT",
-            "SERVICE & SUPPORT HARBOUR"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NONCOMBATANT", "SERVICE & SUPPORT HARBOUR"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "NS----",
           name: "SERVICE & SUPPORT HARBOUR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "X-----",
           name: "NON MILITARY",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "1.X.4.3.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "MERCHANT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "MERCHANT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XM----",
           name: "MERCHANT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.1.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "MERCHANT",
-            "CARGO"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "MERCHANT", "CARGO"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMC---",
           name: "CARGO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.1.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "MERCHANT",
-            "ROLL ON-ROLL OFF"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "MERCHANT", "ROLL ON-ROLL OFF"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XME---",
           name: "ROLL ON-ROLL OFF",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.1.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "MERCHANT",
-            "OILER/TANKER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "MERCHANT", "OILER/TANKER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMO---",
           name: "OILER/TANKER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.1.4 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "MERCHANT",
-            "TUG"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "MERCHANT", "TUG"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMT---",
           name: "TUG",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.1.5 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "MERCHANT",
-            "FERRY"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "MERCHANT", "FERRY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMF---",
           name: "FERRY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.1.6 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "MERCHANT",
-            "PASSENGER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "MERCHANT", "PASSENGER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMP---",
           name: "PASSENGER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.1.7 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "MERCHANT",
-            "HAZARDOUS MATERIALS"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "MERCHANT", "HAZARDOUS MATERIALS"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMH---",
           name: "HAZARDOUS MATERIALS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.1.8 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "MERCHANT",
-            "DREDGE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "MERCHANT", "DREDGE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XMD---",
           name: "DREDGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "FISHING"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "FISHING"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XF----",
           name: "FISHING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.2.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "FISHING",
-            "DRIFTER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "FISHING", "DRIFTER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XFDF--",
           name: "DRIFTER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.2.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "FISHING",
-            "DREDGE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "FISHING", "DREDGE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XFDR--",
           name: "DREDGE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.2.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "FISHING",
-            "TRAWLER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "FISHING", "TRAWLER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XFTR--",
           name: "TRAWLER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "LEISURE CRAFT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "LEISURE CRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XR----",
           name: "LEISURE CRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.4 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "LAW ENFORCEMENT VESSEL"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "LAW ENFORCEMENT VESSEL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XL----",
           name: "LAW ENFORCEMENT VESSEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.3.5 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "NON MILITARY",
-            "HOVERCRAFT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "NON MILITARY", "HOVERCRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "XH----",
           name: "HOVERCRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.4 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "OWN TRACK"
-          ],
+          names: [, , "SEA SURFACE TRACK", "OWN TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "O-----",
           name: "OWN TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.5 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "EMERGENCY"
-          ],
+          names: [, , "SEA SURFACE TRACK", "EMERGENCY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "E-----",
           name: "EMERGENCY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.5.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "EMERGENCY",
-            "DITCHED AIRCRAFT"
-          ],
+          names: [, , "SEA SURFACE TRACK", "EMERGENCY", "DITCHED AIRCRAFT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "ED----",
           name: "DITCHED AIRCRAFT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.5.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "EMERGENCY",
-            "PERSON IN WATER"
-          ],
+          names: [, , "SEA SURFACE TRACK", "EMERGENCY", "PERSON IN WATER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "EP----",
           name: "PERSON IN WATER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.5.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "EMERGENCY",
-            "DISTRESSED VESSEL"
-          ],
+          names: [, , "SEA SURFACE TRACK", "EMERGENCY", "DISTRESSED VESSEL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "EV----",
           name: "DISTRESSED VESSEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.6 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "HAZARD"
-          ],
+          names: [, , "SEA SURFACE TRACK", "HAZARD"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "Z-----",
           name: "HAZARD",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "1.X.4.6.1 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "HAZARD",
-            "SEA MINELIKE"
-          ],
+          names: [, , "SEA SURFACE TRACK", "HAZARD", "SEA MINELIKE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "ZM----",
           name: "SEA MINELIKE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.6.2 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "HAZARD",
-            "NAVIGATIONAL"
-          ],
+          names: [, , "SEA SURFACE TRACK", "HAZARD", "NAVIGATIONAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "ZN----",
           name: "NAVIGATIONAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.4.6.3 ",
-          names: [
-            ,
-            ,
-            "SEA SURFACE TRACK",
-            "HAZARD",
-            "ICEBERG"
-          ],
+          names: [, , "SEA SURFACE TRACK", "HAZARD", "ICEBERG"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "S",
           status: "*",
           functionid: "ZI----",
           name: "ICEBERG",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     SBSUF: {
       name: "SUBSURFACE",
       mainIcon: [
         {
           hierarchy: "1.X.5 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK"
-          ],
+          names: [, , "SUBSURFACE TRACK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "------",
           name: "SUBSURFACE TRACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.1 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE"
-          ],
+          names: [, , "SUBSURFACE TRACK", "SUBMARINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "S-----",
           name: "SUBMARINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.1.1 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "NUCLEAR PROPULSION"
-          ],
+          names: [, , "SUBSURFACE TRACK", "SUBMARINE", "NUCLEAR PROPULSION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SN----",
           name: "NUCLEAR PROPULSION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.1.2 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "CONVENTIONAL PROPULSION"
-          ],
+          names: [, , "SUBSURFACE TRACK", "SUBMARINE", "CONVENTIONAL PROPULSION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SC----",
           name: "CONVENTIONAL PROPULSION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.1.3 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "SUBMARINE",
-            "OTHER SUBMERSIBLE"
-          ],
+          names: [, , "SUBSURFACE TRACK", "SUBMARINE", "OTHER SUBMERSIBLE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "SO----",
           name: "OTHER SUBMERSIBLE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER WEAPON"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "W-----",
           name: "UNDERWATER WEAPON",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.1 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "TORPEDO"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER WEAPON", "TORPEDO"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WT----",
           name: "TORPEDO",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WM----",
           name: "SEA MINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2.1 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE",
-            "SEA MINE DEALT"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE", "SEA MINE DEALT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WMD---",
           name: "SEA MINE DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2.2 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE",
-            "SEA MINE (GROUND)"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE", "SEA MINE (GROUND)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WMG---",
           name: "SEA MINE (GROUND)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2.2.1 ",
@@ -13116,7 +11019,7 @@ export const app6b = {
             "UNDERWATER WEAPON",
             "SEA MINE",
             "SEA MINE (GROUND)",
-            "SEA MINE (GROUND) DEALT"
+            "SEA MINE (GROUND) DEALT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13124,25 +11027,18 @@ export const app6b = {
           status: "*",
           functionid: "WMGD--",
           name: "SEA MINE (GROUND) DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2.3 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE",
-            "SEA MINE (MOORED)"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE", "SEA MINE (MOORED)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WMM---",
           name: "SEA MINE (MOORED)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2.3.1 ",
@@ -13153,7 +11049,7 @@ export const app6b = {
             "UNDERWATER WEAPON",
             "SEA MINE",
             "SEA MINE (MOORED)",
-            "SEA MINE (MOORED DEALT"
+            "SEA MINE (MOORED DEALT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13161,25 +11057,18 @@ export const app6b = {
           status: "*",
           functionid: "WMMD--",
           name: "SEA MINE (MOORED DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2.4 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "SEA MINE",
-            "SEA MINE (FLOATING)"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER WEAPON", "SEA MINE", "SEA MINE (FLOATING)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WMF---",
           name: "SEA MINE (FLOATING)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2.4.1 ",
@@ -13190,7 +11079,7 @@ export const app6b = {
             "UNDERWATER WEAPON",
             "SEA MINE",
             "SEA MINE (FLOATING)",
-            "SEA MINE (FLOATING) DEALT"
+            "SEA MINE (FLOATING) DEALT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13198,7 +11087,7 @@ export const app6b = {
           status: "*",
           functionid: "WMFD--",
           name: "SEA MINE (FLOATING) DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2.5 ",
@@ -13208,7 +11097,7 @@ export const app6b = {
             "SUBSURFACE TRACK",
             "UNDERWATER WEAPON",
             "SEA MINE",
-            "SEA MINE (IN OTHER POSITION)"
+            "SEA MINE (IN OTHER POSITION)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13216,7 +11105,7 @@ export const app6b = {
           status: "*",
           functionid: "WMO---",
           name: "SEA MINE (IN OTHER POSITION)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.2.5.1 ",
@@ -13227,7 +11116,7 @@ export const app6b = {
             "UNDERWATER WEAPON",
             "SEA MINE",
             "SEA MINE (IN OTHER POSITION)",
-            "SEA MINE (IN OTHER POSITION) DEALT"
+            "SEA MINE (IN OTHER POSITION) DEALT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13235,107 +11124,73 @@ export const app6b = {
           status: "*",
           functionid: "WMOD--",
           name: "SEA MINE (IN OTHER POSITION) DEALT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.2.3 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER WEAPON",
-            "DRONE (UUV)"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER WEAPON", "DRONE (UUV)"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WV----",
           name: "DRONE (UUV)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.3 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER DECOY"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER DECOY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WD----",
           name: "UNDERWATER DECOY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.3.1 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "UNDERWATER DECOY",
-            "SEA MINE DECOY"
-          ],
+          names: [, , "SUBSURFACE TRACK", "UNDERWATER DECOY", "SEA MINE DECOY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "WDM---",
           name: "SEA MINE DECOY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.4 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "NON-SUBMARINE"
-          ],
+          names: [, , "SUBSURFACE TRACK", "NON-SUBMARINE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "N-----",
           name: "NON-SUBMARINE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.4.1 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "NON-SUBMARINE",
-            "DIVER"
-          ],
+          names: [, , "SUBSURFACE TRACK", "NON-SUBMARINE", "DIVER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "ND----",
           name: "DIVER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.4.2 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "NON-SUBMARINE",
-            "BOTTOM RETURN/NOMBO"
-          ],
+          names: [, , "SUBSURFACE TRACK", "NON-SUBMARINE", "BOTTOM RETURN/NOMBO"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "NB----",
           name: "BOTTOM RETURN/NOMBO",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "1.X.5.4.2.1 ",
@@ -13345,7 +11200,7 @@ export const app6b = {
             "SUBSURFACE TRACK",
             "NON-SUBMARINE",
             "BOTTOM RETURN/NOMBO",
-            "SEABED INSTALLATION/MANMADE"
+            "SEABED INSTALLATION/MANMADE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13353,7 +11208,7 @@ export const app6b = {
           status: "*",
           functionid: "NBS---",
           name: "SEABED INSTALLATION/MANMADE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.4.2.2 ",
@@ -13363,7 +11218,7 @@ export const app6b = {
             "SUBSURFACE TRACK",
             "NON-SUBMARINE",
             "BOTTOM RETURN/NOMBO",
-            "SEABED ROCK/STONE, OBSTACLE, OTHER"
+            "SEABED ROCK/STONE, OBSTACLE, OTHER",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13371,95 +11226,67 @@ export const app6b = {
           status: "*",
           functionid: "NBR---",
           name: "SEABED ROCK/STONE, OBSTACLE, OTHER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.4.2.3 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "NON-SUBMARINE",
-            "BOTTOM RETURN/NOMBO",
-            "WRECK"
-          ],
+          names: [, , "SUBSURFACE TRACK", "NON-SUBMARINE", "BOTTOM RETURN/NOMBO", "WRECK"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "NBW---",
           name: "WRECK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.4.3 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "NON-SUBMARINE",
-            "MARINE LIFE"
-          ],
+          names: [, , "SUBSURFACE TRACK", "NON-SUBMARINE", "MARINE LIFE"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "NM----",
           name: "MARINE LIFE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.5.4.4 ",
-          names: [
-            ,
-            ,
-            "SUBSURFACE TRACK",
-            "NON-SUBMARINE",
-            "SEA ANOMALY"
-          ],
+          names: [, , "SUBSURFACE TRACK", "NON-SUBMARINE", "SEA ANOMALY"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "U",
           status: "*",
           functionid: "NA----",
           name: "SEA ANOMALY",
-          remarks: ""
-        }
-      ]
+          remarks: "",
+        },
+      ],
     },
     SOFUNT: {
       name: "SPECIAL OPERATIONS FORCE (SOF)",
       mainIcon: [
         {
           hierarchy: "1.X.6 ",
-          names: [
-            ,
-            ,
-            "SPECIAL OPERATIONS FORCE (SOF) UNIT"
-          ],
+          names: [, , "SPECIAL OPERATIONS FORCE (SOF) UNIT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "------",
           name: "SPECIAL OPERATIONS FORCE (SOF) UNIT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1 ",
-          names: [
-            ,
-            ,
-            "SPECIAL OPERATIONS FORCE (SOF) UNIT",
-            "SOF UNIT AVIATION"
-          ],
+          names: [, , "SPECIAL OPERATIONS FORCE (SOF) UNIT", "SOF UNIT AVIATION"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "A-----",
           name: "SOF UNIT AVIATION",
-          remarks: "N/A"
+          remarks: "N/A",
         },
         {
           hierarchy: "1.X.6.1.1 ",
@@ -13468,7 +11295,7 @@ export const app6b = {
             ,
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT AVIATION",
-            "SOF UNIT FIXED WING"
+            "SOF UNIT FIXED WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13476,7 +11303,7 @@ export const app6b = {
           status: "*",
           functionid: "AF----",
           name: "SOF UNIT FIXED WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.1.1 ",
@@ -13486,7 +11313,7 @@ export const app6b = {
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
-            "SOF UNIT ATTACK"
+            "SOF UNIT ATTACK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13494,7 +11321,7 @@ export const app6b = {
           status: "*",
           functionid: "AFA---",
           name: "SOF UNIT ATTACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.1.2 ",
@@ -13504,7 +11331,7 @@ export const app6b = {
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
-            "SOF UNIT REFUEL"
+            "SOF UNIT REFUEL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13512,7 +11339,7 @@ export const app6b = {
           status: "*",
           functionid: "AFK---",
           name: "SOF UNIT REFUEL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.1.3 ",
@@ -13522,7 +11349,7 @@ export const app6b = {
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
-            "SOF UNIT UTILITY"
+            "SOF UNIT UTILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13530,7 +11357,7 @@ export const app6b = {
           status: "*",
           functionid: "AFU---",
           name: "SOF UNIT UTILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.1.3.1 ",
@@ -13541,7 +11368,7 @@ export const app6b = {
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (LIGHT)"
+            "SOF UNIT UTILITY (LIGHT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13549,7 +11376,7 @@ export const app6b = {
           status: "*",
           functionid: "AFUL--",
           name: "SOF UNIT UTILITY (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.1.3.2 ",
@@ -13560,7 +11387,7 @@ export const app6b = {
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (MEDIUM)"
+            "SOF UNIT UTILITY (MEDIUM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13568,7 +11395,7 @@ export const app6b = {
           status: "*",
           functionid: "AFUM--",
           name: "SOF UNIT UTILITY (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.1.3.3 ",
@@ -13579,7 +11406,7 @@ export const app6b = {
             "SOF UNIT AVIATION",
             "SOF UNIT FIXED WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (HEAVY)"
+            "SOF UNIT UTILITY (HEAVY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13587,24 +11414,18 @@ export const app6b = {
           status: "*",
           functionid: "AFUH--",
           name: "SOF UNIT UTILITY (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.2 ",
-          names: [
-            ,
-            ,
-            "SPECIAL OPERATIONS FORCE (SOF) UNIT",
-            "SOF UNIT AVIATION",
-            "SOF UNIT VSTOL"
-          ],
+          names: [, , "SPECIAL OPERATIONS FORCE (SOF) UNIT", "SOF UNIT AVIATION", "SOF UNIT VSTOL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "AV----",
           name: "SOF UNIT VSTOL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.3 ",
@@ -13613,7 +11434,7 @@ export const app6b = {
             ,
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT AVIATION",
-            "SOF UNIT ROTARY WING"
+            "SOF UNIT ROTARY WING",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13621,7 +11442,7 @@ export const app6b = {
           status: "*",
           functionid: "AH----",
           name: "SOF UNIT ROTARY WING",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.3.1 ",
@@ -13631,7 +11452,7 @@ export const app6b = {
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
-            "SOF UNIT COMBAT SEARCH AND RESCUE"
+            "SOF UNIT COMBAT SEARCH AND RESCUE",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13639,7 +11460,7 @@ export const app6b = {
           status: "*",
           functionid: "AHH---",
           name: "SOF UNIT COMBAT SEARCH AND RESCUE",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.3.2 ",
@@ -13649,7 +11470,7 @@ export const app6b = {
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
-            "SOF UNIT ATTACK"
+            "SOF UNIT ATTACK",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13657,7 +11478,7 @@ export const app6b = {
           status: "*",
           functionid: "AHA---",
           name: "SOF UNIT ATTACK",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.3.3 ",
@@ -13667,7 +11488,7 @@ export const app6b = {
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
-            "SOF UNIT UTILITY"
+            "SOF UNIT UTILITY",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13675,7 +11496,7 @@ export const app6b = {
           status: "*",
           functionid: "AHU---",
           name: "SOF UNIT UTILITY",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.3.3.1 ",
@@ -13686,7 +11507,7 @@ export const app6b = {
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (LIGHT)"
+            "SOF UNIT UTILITY (LIGHT)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13694,7 +11515,7 @@ export const app6b = {
           status: "*",
           functionid: "AHUL--",
           name: "SOF UNIT UTILITY (LIGHT)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.3.3.2 ",
@@ -13705,7 +11526,7 @@ export const app6b = {
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (MEDIUM)"
+            "SOF UNIT UTILITY (MEDIUM)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13713,7 +11534,7 @@ export const app6b = {
           status: "*",
           functionid: "AHUM--",
           name: "SOF UNIT UTILITY (MEDIUM)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.1.3.3.3 ",
@@ -13724,7 +11545,7 @@ export const app6b = {
             "SOF UNIT AVIATION",
             "SOF UNIT ROTARY WING",
             "SOF UNIT UTILITY",
-            "SOF UNIT UTILITY (HEAVY)"
+            "SOF UNIT UTILITY (HEAVY)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13732,23 +11553,18 @@ export const app6b = {
           status: "*",
           functionid: "AHUH--",
           name: "SOF UNIT UTILITY (HEAVY)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.2 ",
-          names: [
-            ,
-            ,
-            "SPECIAL OPERATIONS FORCE (SOF) UNIT",
-            "SOF UNIT SOF UNIT NAVAL"
-          ],
+          names: [, , "SPECIAL OPERATIONS FORCE (SOF) UNIT", "SOF UNIT SOF UNIT NAVAL"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "SN----",
           name: "SOF UNIT SOF UNIT NAVAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.2.1 ",
@@ -13757,7 +11573,7 @@ export const app6b = {
             ,
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT SOF UNIT NAVAL",
-            "SOF UNIT SEAL"
+            "SOF UNIT SEAL",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13765,7 +11581,7 @@ export const app6b = {
           status: "*",
           functionid: "SNS---",
           name: "SOF UNIT SEAL",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.2.2 ",
@@ -13774,7 +11590,7 @@ export const app6b = {
             ,
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT SOF UNIT NAVAL",
-            "SOF UNIT UNDERWATER DEMOLITION TEAM"
+            "SOF UNIT UNDERWATER DEMOLITION TEAM",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13782,7 +11598,7 @@ export const app6b = {
           status: "*",
           functionid: "SNU---",
           name: "SOF UNIT UNDERWATER DEMOLITION TEAM",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.2.3 ",
@@ -13791,7 +11607,7 @@ export const app6b = {
             ,
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT SOF UNIT NAVAL",
-            "SOF UNIT SPECIAL BOAT"
+            "SOF UNIT SPECIAL BOAT",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13799,7 +11615,7 @@ export const app6b = {
           status: "*",
           functionid: "SNB---",
           name: "SOF UNIT SPECIAL BOAT",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.2.4 ",
@@ -13808,7 +11624,7 @@ export const app6b = {
             ,
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT SOF UNIT NAVAL",
-            "SOF UNIT SPECIAL SSNR"
+            "SOF UNIT SPECIAL SSNR",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13816,23 +11632,18 @@ export const app6b = {
           status: "*",
           functionid: "SNN---",
           name: "SOF UNIT SPECIAL SSNR",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.3 ",
-          names: [
-            ,
-            ,
-            "SPECIAL OPERATIONS FORCE (SOF) UNIT",
-            "SOF UNIT GROUND"
-          ],
+          names: [, , "SPECIAL OPERATIONS FORCE (SOF) UNIT", "SOF UNIT GROUND"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "G-----",
           name: "SOF UNIT GROUND",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.3.1 ",
@@ -13841,7 +11652,7 @@ export const app6b = {
             ,
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT GROUND",
-            "SOF UNIT SPECIAL FORCES"
+            "SOF UNIT SPECIAL FORCES",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13849,24 +11660,18 @@ export const app6b = {
           status: "*",
           functionid: "GS----",
           name: "SOF UNIT SPECIAL FORCES",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.3.2 ",
-          names: [
-            ,
-            ,
-            "SPECIAL OPERATIONS FORCE (SOF) UNIT",
-            "SOF UNIT GROUND",
-            "SOF UNIT RANGER"
-          ],
+          names: [, , "SPECIAL OPERATIONS FORCE (SOF) UNIT", "SOF UNIT GROUND", "SOF UNIT RANGER"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "GSR---",
           name: "SOF UNIT RANGER",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.3.3 ",
@@ -13875,7 +11680,7 @@ export const app6b = {
             ,
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT GROUND",
-            "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOPS)"
+            "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOPS)",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13883,7 +11688,7 @@ export const app6b = {
           status: "*",
           functionid: "GSP---",
           name: "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOPS)",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.3.3.1 ",
@@ -13893,7 +11698,7 @@ export const app6b = {
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT GROUND",
             "SOF UNIT PSYCHOLOGICAL OPERATIONS (PSYOPS)",
-            "SOF UNIT FIXED AVIATION"
+            "SOF UNIT FIXED AVIATION",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13901,7 +11706,7 @@ export const app6b = {
           status: "*",
           functionid: "GSPA--",
           name: "SOF UNIT FIXED AVIATION",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.3.4 ",
@@ -13910,7 +11715,7 @@ export const app6b = {
             ,
             "SPECIAL OPERATIONS FORCE (SOF) UNIT",
             "SOF UNIT GROUND",
-            "SOF UNIT CIVIL AFFAIRS"
+            "SOF UNIT CIVIL AFFAIRS",
           ],
           codingscheme: "S",
           affiliation: "*",
@@ -13918,26 +11723,21 @@ export const app6b = {
           status: "*",
           functionid: "GCA---",
           name: "SOF UNIT CIVIL AFFAIRS",
-          remarks: ""
+          remarks: "",
         },
         {
           hierarchy: "1.X.6.4 ",
-          names: [
-            ,
-            ,
-            "SPECIAL OPERATIONS FORCE (SOF) UNIT",
-            "SOF UNIT SUPPORT"
-          ],
+          names: [, , "SPECIAL OPERATIONS FORCE (SOF) UNIT", "SOF UNIT SUPPORT"],
           codingscheme: "S",
           affiliation: "*",
           battledimension: "F",
           status: "*",
           functionid: "GB----",
           name: "SOF UNIT SUPPORT",
-          remarks: ""
-        }
-      ]
-    }
+          remarks: "",
+        },
+      ],
+    },
   },
   TACGRP: {
     name: "TACTICAL GRAPHICS",
@@ -13945,176 +11745,122 @@ export const app6b = {
       {
         geometry: "",
         hierarchy: "2.X",
-        names: [
-          ,
-          "TACTICAL GRAPHICS"
-        ],
+        names: [, "TACTICAL GRAPHICS"],
         codingscheme: "G",
         affiliation: "--",
         battledimension: "--",
         status: "-",
         functionid: "------",
         name: "TACTICAL GRAPHICS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.1",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "------",
         name: "TASKS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "2.X.1.1",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "G-----",
         name: "TASK GRAPHICSMULTIPOINT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.1",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "BLOCK"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "BLOCK"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GB----",
         name: "BLOCK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.2",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "BREACH"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "BREACH"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GH----",
         name: "BREACH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.3",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "BYPASS"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "BYPASS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GY----",
         name: "BYPASS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.4",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "CANALIZE"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "CANALIZE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GC----",
         name: "CANALIZE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.5",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "CLEAR"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "CLEAR"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GX----",
         name: "CLEAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.6",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "CONTAIN"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "CONTAIN"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GJ----",
         name: "CONTAIN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.7",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "COUNTERATTACK (CATK)"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "COUNTERATTACK (CATK)"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GK----",
         name: "COUNTERATTACK (CATK)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
@@ -14125,7 +11871,7 @@ export const app6b = {
           "TASKS",
           "TASK GRAPHICSMULTIPOINT",
           "COUNTERATTACK (CATK)",
-          "COUNTERATTACK BY FIRE"
+          "COUNTERATTACK BY FIRE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14133,25 +11879,19 @@ export const app6b = {
         status: "*",
         functionid: "GKF---",
         name: "COUNTERATTACK BY FIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.8",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "DELAY"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "DELAY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GL----",
         name: "DELAY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
@@ -14162,7 +11902,7 @@ export const app6b = {
           "TASKS",
           "TASK GRAPHICSMULTIPOINT",
           "DELAY",
-          "DELAY (UNTIL A SPECIFIED TIME)"
+          "DELAY (UNTIL A SPECIFIED TIME)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14170,79 +11910,55 @@ export const app6b = {
         status: "*",
         functionid: "GLT---",
         name: "DELAY (UNTIL A SPECIFIED TIME)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "2.X.1.1.9",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "DESTROY"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "DESTROY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GD----",
         name: "DESTROY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.10",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "DISRUPT"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "DISRUPT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GT----",
         name: "DISRUPT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.11",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "FIX"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "FIX"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GF----",
         name: "FIX",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.12",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "FOLLOW AND ASSUME"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "FOLLOW AND ASSUME"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GA----",
         name: "FOLLOW AND ASSUME",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
@@ -14253,7 +11969,7 @@ export const app6b = {
           "TASKS",
           "TASK GRAPHICSMULTIPOINT",
           "FOLLOW AND ASSUME",
-          "FOLLOW AND SUPPORT"
+          "FOLLOW AND SUPPORT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14261,169 +11977,115 @@ export const app6b = {
         status: "*",
         functionid: "GAS---",
         name: "FOLLOW AND SUPPORT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "2.X.1.1.13",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "INTERDICT"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "INTERDICT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GI----",
         name: "INTERDICT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.14",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "ISOLATE"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "ISOLATE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GE----",
         name: "ISOLATE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
         hierarchy: "2.X.1.1.15",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "NEUTRALIZE"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "NEUTRALIZE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GN----",
         name: "NEUTRALIZE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.16",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "OCCUPY"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "OCCUPY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GO----",
         name: "OCCUPY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.17",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "PENETRATE"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "PENETRATE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GP----",
         name: "PENETRATE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.18",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "RELIEF IN PLACE (RIP)"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "RELIEF IN PLACE (RIP)"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GR----",
         name: "RELIEF IN PLACE (RIP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.19",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "RETAIN"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "RETAIN"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GQ----",
         name: "RETAIN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.20",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "RETIREMENT"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "RETIREMENT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GM----",
         name: "RETIREMENT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.21",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "SECURE"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "SECURE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GS----",
         name: "SECURE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
@@ -14434,7 +12096,7 @@ export const app6b = {
           "TASKS",
           "TASK GRAPHICSMULTIPOINT",
           "SECURE",
-          "SECURITY (SCREEN)"
+          "SECURITY (SCREEN)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14442,7 +12104,7 @@ export const app6b = {
         status: "*",
         functionid: "GSS---",
         name: "SECURITY (SCREEN)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
@@ -14453,7 +12115,7 @@ export const app6b = {
           "TASKS",
           "TASK GRAPHICSMULTIPOINT",
           "SECURE",
-          "SECURITY (GUARD)"
+          "SECURITY (GUARD)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14461,7 +12123,7 @@ export const app6b = {
         status: "*",
         functionid: "GSG---",
         name: "SECURITY (GUARD)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
@@ -14472,7 +12134,7 @@ export const app6b = {
           "TASKS",
           "TASK GRAPHICSMULTIPOINT",
           "SECURE",
-          "SECURITY (COVER)"
+          "SECURITY (COVER)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14480,43 +12142,31 @@ export const app6b = {
         status: "*",
         functionid: "GSC---",
         name: "SECURITY (COVER)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.22",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "SEIZE"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "SEIZE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GZ----",
         name: "SEIZE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
         hierarchy: "2.X.1.1.23",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "TASKS",
-          "TASK GRAPHICSMULTIPOINT",
-          "WITHDRAW"
-        ],
+        names: [, "TACTICAL GRAPHICS", "TASKS", "TASK GRAPHICSMULTIPOINT", "WITHDRAW"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "T",
         status: "*",
         functionid: "GW----",
         name: "WITHDRAW",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "MULTIPOINT",
@@ -14527,7 +12177,7 @@ export const app6b = {
           "TASKS",
           "TASK GRAPHICSMULTIPOINT",
           "WITHDRAW",
-          "WITHDRAW UNDER PRESSURE"
+          "WITHDRAW UNDER PRESSURE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14535,40 +12185,31 @@ export const app6b = {
         status: "*",
         functionid: "GWP---",
         name: "WITHDRAW UNDER PRESSURE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "------",
         name: "CONTROL MEASURES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.1",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "MANOEUVRE GRAPHICS"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "MANOEUVRE GRAPHICS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "M-----",
         name: "MANOEUVRE GRAPHICS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -14578,7 +12219,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
-          "GENERAL MANOEUVRE GRAPHICS"
+          "GENERAL MANOEUVRE GRAPHICS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14586,7 +12227,7 @@ export const app6b = {
         status: "*",
         functionid: "MG----",
         name: "GENERAL MANOEUVRE GRAPHICS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -14597,7 +12238,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
-          "POINTS"
+          "POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14605,7 +12246,7 @@ export const app6b = {
         status: "*",
         functionid: "MGP---",
         name: "POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -14617,7 +12258,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
           "POINTS",
-          "FIX"
+          "FIX",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14625,7 +12266,7 @@ export const app6b = {
         status: "*",
         functionid: "MGPF--",
         name: "FIX",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -14638,7 +12279,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "POINTS",
           "FIX",
-          "ELECTRO-MAGNETIC"
+          "ELECTRO-MAGNETIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14646,7 +12287,7 @@ export const app6b = {
         status: "*",
         functionid: "MGPFE-",
         name: "ELECTRO-MAGNETIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -14659,7 +12300,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "POINTS",
           "FIX",
-          "ACOUSTIC"
+          "ACOUSTIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14667,7 +12308,7 @@ export const app6b = {
         status: "*",
         functionid: "MGPFA-",
         name: "ACOUSTIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -14680,7 +12321,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "POINTS",
           "FIX",
-          "ELECTRO-OPTICAL"
+          "ELECTRO-OPTICAL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14688,7 +12329,7 @@ export const app6b = {
         status: "*",
         functionid: "MGPFO-",
         name: "ELECTRO-OPTICAL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -14700,7 +12341,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
           "POINTS",
-          "POINT OF INTEREST"
+          "POINT OF INTEREST",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14708,7 +12349,7 @@ export const app6b = {
         status: "*",
         functionid: "MGPI--",
         name: "POINT OF INTEREST",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -14719,7 +12360,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
-          "LINES"
+          "LINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14727,7 +12368,7 @@ export const app6b = {
         status: "*",
         functionid: "MGL---",
         name: "LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -14739,7 +12380,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
-          "BOUNDARIES"
+          "BOUNDARIES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14747,7 +12388,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLB--",
         name: "BOUNDARIES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -14760,7 +12401,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
           "BOUNDARIES",
-          "GENERAL BOUNDARIES"
+          "GENERAL BOUNDARIES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14768,7 +12409,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLBG-",
         name: "GENERAL BOUNDARIES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "LINE",
@@ -14782,7 +12423,7 @@ export const app6b = {
           "LINES",
           "BOUNDARIES",
           "GENERAL BOUNDARIES",
-          "FRIENDLY PRESENT"
+          "FRIENDLY PRESENT",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -14790,7 +12431,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLBGF",
         name: "FRIENDLY PRESENT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14804,7 +12445,7 @@ export const app6b = {
           "LINES",
           "BOUNDARIES",
           "GENERAL BOUNDARIES",
-          "FRIENDLY PLANNED OR ON ORDER"
+          "FRIENDLY PLANNED OR ON ORDER",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -14812,7 +12453,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLBGO",
         name: "FRIENDLY PLANNED OR ON ORDER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14826,7 +12467,7 @@ export const app6b = {
           "LINES",
           "BOUNDARIES",
           "GENERAL BOUNDARIES",
-          "ENEMY KNOWN"
+          "ENEMY KNOWN",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -14834,7 +12475,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLBGK",
         name: "ENEMY KNOWN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14848,7 +12489,7 @@ export const app6b = {
           "LINES",
           "BOUNDARIES",
           "GENERAL BOUNDARIES",
-          "ENEMY SUSPECTED OR TEMPLATED"
+          "ENEMY SUSPECTED OR TEMPLATED",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -14856,7 +12497,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLBGS",
         name: "ENEMY SUSPECTED OR TEMPLATED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14869,7 +12510,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
           "BOUNDARIES",
-          "LATERAL BOUNDARY"
+          "LATERAL BOUNDARY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14877,7 +12518,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLBL-",
         name: "LATERAL BOUNDARY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14890,7 +12531,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
           "BOUNDARIES",
-          "FORWARD BOUNDARY"
+          "FORWARD BOUNDARY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14898,7 +12539,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLBF-",
         name: "FORWARD BOUNDARY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14911,7 +12552,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
           "BOUNDARIES",
-          "REAR BOUNDARY"
+          "REAR BOUNDARY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14919,7 +12560,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLBR-",
         name: "REAR BOUNDARY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14931,7 +12572,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
-          "FORWARD LINE OF TROOPS (FLOT)"
+          "FORWARD LINE OF TROOPS (FLOT)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14939,7 +12580,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLF--",
         name: "FORWARD LINE OF TROOPS (FLOT)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14951,7 +12592,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
-          "LINE OF CONTACT"
+          "LINE OF CONTACT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14959,7 +12600,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLL--",
         name: "LINE OF CONTACT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14971,7 +12612,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
-          "PHASE/COORDINATION LINE"
+          "PHASE/COORDINATION LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14979,7 +12620,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLP--",
         name: "PHASE/COORDINATION LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -14991,7 +12632,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
-          "BEARING LINE"
+          "BEARING LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -14999,7 +12640,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLE--",
         name: "BEARING LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -15012,7 +12653,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
           "BEARING LINE",
-          "ELECTRONIC"
+          "ELECTRONIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15020,7 +12661,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLEE-",
         name: "ELECTRONIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -15033,7 +12674,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
           "BEARING LINE",
-          "ACOUSTIC"
+          "ACOUSTIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15041,7 +12682,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLEA-",
         name: "ACOUSTIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -15054,7 +12695,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
           "BEARING LINE",
-          "TORPEDO"
+          "TORPEDO",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15062,7 +12703,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLET-",
         name: "TORPEDO",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -15075,7 +12716,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "LINES",
           "BEARING LINE",
-          "ELECTRO-OPTICAL INTERCEPT"
+          "ELECTRO-OPTICAL INTERCEPT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15083,7 +12724,7 @@ export const app6b = {
         status: "*",
         functionid: "MGLEO-",
         name: "ELECTRO-OPTICAL INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -15094,7 +12735,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
-          "AREAS"
+          "AREAS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15102,7 +12743,7 @@ export const app6b = {
         status: "*",
         functionid: "MGA---",
         name: "AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -15114,7 +12755,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
-          "UNSPECIFIED AREA"
+          "UNSPECIFIED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15122,7 +12763,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAU--",
         name: "UNSPECIFIED AREA",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -15135,7 +12776,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "UNSPECIFIED AREA",
-          "GENERAL AREA"
+          "GENERAL AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15143,7 +12784,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAUA-",
         name: "GENERAL AREA",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POLYGON",
@@ -15157,7 +12798,7 @@ export const app6b = {
           "AREAS",
           "UNSPECIFIED AREA",
           "GENERAL AREA",
-          "FRIENDLY"
+          "FRIENDLY",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -15165,7 +12806,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAUAF",
         name: "FRIENDLY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15179,7 +12820,7 @@ export const app6b = {
           "AREAS",
           "UNSPECIFIED AREA",
           "GENERAL AREA",
-          "FRIENDLY PLANNED/ON ORDER"
+          "FRIENDLY PLANNED/ON ORDER",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -15187,7 +12828,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAUAP",
         name: "FRIENDLY PLANNED/ON ORDER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15201,7 +12842,7 @@ export const app6b = {
           "AREAS",
           "UNSPECIFIED AREA",
           "GENERAL AREA",
-          "ENEMY KNOWN/CONFIRMED"
+          "ENEMY KNOWN/CONFIRMED",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -15209,7 +12850,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAUAE",
         name: "ENEMY KNOWN/CONFIRMED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15223,7 +12864,7 @@ export const app6b = {
           "AREAS",
           "UNSPECIFIED AREA",
           "GENERAL AREA",
-          "ENEMY SUSPECTED/TEMPLATED"
+          "ENEMY SUSPECTED/TEMPLATED",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -15231,7 +12872,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAUAS",
         name: "ENEMY SUSPECTED/TEMPLATED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15244,7 +12885,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "UNSPECIFIED AREA",
-          "ASSEMBLY AREA"
+          "ASSEMBLY AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15252,7 +12893,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAUB-",
         name: "ASSEMBLY AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15266,7 +12907,7 @@ export const app6b = {
           "AREAS",
           "UNSPECIFIED AREA",
           "ASSEMBLY AREA",
-          "OCCUPIED"
+          "OCCUPIED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15274,7 +12915,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAUBO",
         name: "OCCUPIED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15288,7 +12929,7 @@ export const app6b = {
           "AREAS",
           "UNSPECIFIED AREA",
           "ASSEMBLY AREA",
-          "OCCUPIED BY MULTIPLE UNITS"
+          "OCCUPIED BY MULTIPLE UNITS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15296,7 +12937,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAUBM",
         name: "OCCUPIED BY MULTIPLE UNITS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15310,7 +12951,7 @@ export const app6b = {
           "AREAS",
           "UNSPECIFIED AREA",
           "ASSEMBLY AREA",
-          "PROPOSED/ON ORDER"
+          "PROPOSED/ON ORDER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15318,7 +12959,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAUBR",
         name: "PROPOSED/ON ORDER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -15330,7 +12971,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
-          "SPECIFIED AREA"
+          "SPECIFIED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15338,7 +12979,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAS--",
         name: "SPECIFIED AREA",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POLYGON",
@@ -15351,7 +12992,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "SPECIFIED AREA",
-          "DROP ZONE (DZ)"
+          "DROP ZONE (DZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15359,7 +13000,7 @@ export const app6b = {
         status: "*",
         functionid: "MGASD-",
         name: "DROP ZONE (DZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15372,7 +13013,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "SPECIFIED AREA",
-          "EXTRACTION ZONE (EZ)"
+          "EXTRACTION ZONE (EZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15380,7 +13021,7 @@ export const app6b = {
         status: "*",
         functionid: "MGASE-",
         name: "EXTRACTION ZONE (EZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15393,7 +13034,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "SPECIFIED AREA",
-          "LANDING ZONE (LZ)"
+          "LANDING ZONE (LZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15401,7 +13042,7 @@ export const app6b = {
         status: "*",
         functionid: "MGASL-",
         name: "LANDING ZONE (LZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15414,7 +13055,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "SPECIFIED AREA",
-          "PICKUP ZONE (PZ)"
+          "PICKUP ZONE (PZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15422,7 +13063,7 @@ export const app6b = {
         status: "*",
         functionid: "MGASP-",
         name: "PICKUP ZONE (PZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15435,7 +13076,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "SPECIFIED AREA",
-          "SEARCH AREA/RECONNAISSANCE AREA"
+          "SEARCH AREA/RECONNAISSANCE AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15443,7 +13084,7 @@ export const app6b = {
         status: "*",
         functionid: "MGASS-",
         name: "SEARCH AREA/RECONNAISSANCE AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15456,7 +13097,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "SPECIFIED AREA",
-          "LIMITED ACCESS AREA"
+          "LIMITED ACCESS AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15464,7 +13105,7 @@ export const app6b = {
         status: "*",
         functionid: "MGASM-",
         name: "LIMITED ACCESS AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15477,7 +13118,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "SPECIFIED AREA",
-          "ENGAGEMENT AREA"
+          "ENGAGEMENT AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15485,7 +13126,7 @@ export const app6b = {
         status: "*",
         functionid: "MGASG-",
         name: "ENGAGEMENT AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15498,7 +13139,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "SPECIFIED AREA",
-          "FORTIFIED AREA"
+          "FORTIFIED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15506,7 +13147,7 @@ export const app6b = {
         status: "*",
         functionid: "MGASF-",
         name: "FORTIFIED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15519,7 +13160,7 @@ export const app6b = {
           "GENERAL MANOEUVRE GRAPHICS",
           "AREAS",
           "SPECIFIED AREA",
-          "STAGING AREA"
+          "STAGING AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15527,7 +13168,7 @@ export const app6b = {
         status: "*",
         functionid: "MGAST-",
         name: "STAGING AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -15537,7 +13178,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
-          "AVIATION MANOEUVRE GRAPHICS"
+          "AVIATION MANOEUVRE GRAPHICS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15545,7 +13186,7 @@ export const app6b = {
         status: "*",
         functionid: "MA----",
         name: "AVIATION MANOEUVRE GRAPHICS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -15556,7 +13197,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
-          "AVIATION POINTS"
+          "AVIATION POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15564,7 +13205,7 @@ export const app6b = {
         status: "*",
         functionid: "MAA---",
         name: "AVIATION POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -15576,7 +13217,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION POINTS",
-          "AIR CONTROL POINT (ACP)"
+          "AIR CONTROL POINT (ACP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15584,7 +13225,7 @@ export const app6b = {
         status: "*",
         functionid: "MAAP--",
         name: "AIR CONTROL POINT (ACP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15596,7 +13237,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION POINTS",
-          "COMMUNICATIONS CHECKPOINT (CCP)"
+          "COMMUNICATIONS CHECKPOINT (CCP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15604,7 +13245,7 @@ export const app6b = {
         status: "*",
         functionid: "MAAC--",
         name: "COMMUNICATIONS CHECKPOINT (CCP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15616,7 +13257,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION POINTS",
-          "POP UP POINT (PUP)"
+          "POP UP POINT (PUP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15624,7 +13265,7 @@ export const app6b = {
         status: "*",
         functionid: "MAAU--",
         name: "POP UP POINT (PUP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -15636,7 +13277,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION POINTS",
-          "DOWNED AIRCREW PICK UP POINT"
+          "DOWNED AIRCREW PICK UP POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15644,7 +13285,7 @@ export const app6b = {
         status: "*",
         functionid: "MAAD--",
         name: "DOWNED AIRCREW PICK UP POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -15655,7 +13296,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
-          "AVIATION LINES"
+          "AVIATION LINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15663,7 +13304,7 @@ export const app6b = {
         status: "*",
         functionid: "MAL---",
         name: "AVIATION LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "LINE",
@@ -15675,7 +13316,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION LINES",
-          "AIR CORRIDOR"
+          "AIR CORRIDOR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15683,7 +13324,7 @@ export const app6b = {
         status: "*",
         functionid: "MALC--",
         name: "AIR CORRIDOR",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "LINE",
@@ -15695,7 +13336,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION LINES",
-          "MINIMUM RISK ROUTE (MRR)"
+          "MINIMUM RISK ROUTE (MRR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15703,7 +13344,7 @@ export const app6b = {
         status: "*",
         functionid: "MALM--",
         name: "MINIMUM RISK ROUTE (MRR)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -15715,7 +13356,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION LINES",
-          "STANDARD-USE ARMY AIRCRAFT FLIGHT ROUTE (SAAFR)"
+          "STANDARD-USE ARMY AIRCRAFT FLIGHT ROUTE (SAAFR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15723,7 +13364,7 @@ export const app6b = {
         status: "*",
         functionid: "MALS--",
         name: "STANDARD-USE ARMY AIRCRAFT FLIGHT ROUTE (SAAFR)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -15735,7 +13376,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION LINES",
-          "UNMANNED AERIAL VEHICLE (UAV) ROUTE"
+          "UNMANNED AERIAL VEHICLE (UAV) ROUTE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15743,7 +13384,7 @@ export const app6b = {
         status: "*",
         functionid: "MALU--",
         name: "UNMANNED AERIAL VEHICLE (UAV) ROUTE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -15755,7 +13396,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION LINES",
-          "LOW LEVEL TRANSIT ROUTE (LLTR)"
+          "LOW LEVEL TRANSIT ROUTE (LLTR)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15763,7 +13404,7 @@ export const app6b = {
         status: "*",
         functionid: "MALL--",
         name: "LOW LEVEL TRANSIT ROUTE (LLTR)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -15775,7 +13416,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION LINES",
-          "IFF ON LINE"
+          "IFF ON LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15783,7 +13424,7 @@ export const app6b = {
         status: "*",
         functionid: "MALIN-",
         name: "IFF ON LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -15795,7 +13436,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION LINES",
-          "IFF OFF LINE"
+          "IFF OFF LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15803,7 +13444,7 @@ export const app6b = {
         status: "*",
         functionid: "MALIF-",
         name: "IFF OFF LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -15814,7 +13455,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
-          "AVIATION AREAS"
+          "AVIATION AREAS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15822,7 +13463,7 @@ export const app6b = {
         status: "*",
         functionid: "MAV---",
         name: "AVIATION AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POLYGON",
@@ -15834,7 +13475,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION AREAS",
-          "RESTRICTED OPERATIONS ZONE (ROZ)"
+          "RESTRICTED OPERATIONS ZONE (ROZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15842,7 +13483,7 @@ export const app6b = {
         status: "*",
         functionid: "MAVR--",
         name: "RESTRICTED OPERATIONS ZONE (ROZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15854,7 +13495,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION AREAS",
-          "FORWARD AREA AIR DEFENCE ZONE (FAADEZ)"
+          "FORWARD AREA AIR DEFENCE ZONE (FAADEZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15862,7 +13503,7 @@ export const app6b = {
         status: "*",
         functionid: "MAVF--",
         name: "FORWARD AREA AIR DEFENCE ZONE (FAADEZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15874,7 +13515,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION AREAS",
-          "HIGH DENSITY AIRSPACE CONTROL ZONE (HIDACZ)"
+          "HIGH DENSITY AIRSPACE CONTROL ZONE (HIDACZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15882,7 +13523,7 @@ export const app6b = {
         status: "*",
         functionid: "MAVH--",
         name: "HIGH DENSITY AIRSPACE CONTROL ZONE (HIDACZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15894,7 +13535,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION AREAS",
-          "MISSILE ENGAGEMENT ZONE (MEZ)"
+          "MISSILE ENGAGEMENT ZONE (MEZ)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15902,7 +13543,7 @@ export const app6b = {
         status: "*",
         functionid: "MAVM--",
         name: "MISSILE ENGAGEMENT ZONE (MEZ)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15915,7 +13556,7 @@ export const app6b = {
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION AREAS",
           "MISSILE ENGAGEMENT ZONE (MEZ)",
-          "LOW ALTITUDE MEZ"
+          "LOW ALTITUDE MEZ",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15923,7 +13564,7 @@ export const app6b = {
         status: "*",
         functionid: "MAVML-",
         name: "LOW ALTITUDE MEZ",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15936,7 +13577,7 @@ export const app6b = {
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION AREAS",
           "MISSILE ENGAGEMENT ZONE (MEZ)",
-          "HIGH ALTITUDE MEZ"
+          "HIGH ALTITUDE MEZ",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15944,7 +13585,7 @@ export const app6b = {
         status: "*",
         functionid: "MAVMH-",
         name: "HIGH ALTITUDE MEZ",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -15956,7 +13597,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "AVIATION MANOEUVRE GRAPHICS",
           "AVIATION AREAS",
-          "WEAPONS FREE ZONE"
+          "WEAPONS FREE ZONE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15964,7 +13605,7 @@ export const app6b = {
         status: "*",
         functionid: "MAVW--",
         name: "WEAPONS FREE ZONE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -15974,7 +13615,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
-          "DECEPTION GRAPHICS"
+          "DECEPTION GRAPHICS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -15982,7 +13623,7 @@ export const app6b = {
         status: "*",
         functionid: "MD----",
         name: "DECEPTION GRAPHICS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -15993,7 +13634,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "DECEPTION GRAPHICS",
-          "DUMMY (DECEPTION)(DECOY)"
+          "DUMMY (DECEPTION)(DECOY)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16001,7 +13642,7 @@ export const app6b = {
         status: "*",
         functionid: "MDD---",
         name: "DUMMY (DECEPTION)(DECOY)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16012,7 +13653,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "DECEPTION GRAPHICS",
-          "AXIS OF ADVANCE FOR FEINT"
+          "AXIS OF ADVANCE FOR FEINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16020,7 +13661,7 @@ export const app6b = {
         status: "*",
         functionid: "MDA---",
         name: "AXIS OF ADVANCE FOR FEINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16031,7 +13672,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "DECEPTION GRAPHICS",
-          "DIRECTION OF ATTACK FOR FEINT"
+          "DIRECTION OF ATTACK FOR FEINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16039,7 +13680,7 @@ export const app6b = {
         status: "*",
         functionid: "MDF---",
         name: "DIRECTION OF ATTACK FOR FEINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16050,7 +13691,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "DECEPTION GRAPHICS",
-          "DECOY MINED AREA"
+          "DECOY MINED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16058,7 +13699,7 @@ export const app6b = {
         status: "*",
         functionid: "MDM---",
         name: "DECOY MINED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16069,7 +13710,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "DECEPTION GRAPHICS",
-          "DECOY MINED AREA, FENCED"
+          "DECOY MINED AREA, FENCED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16077,7 +13718,7 @@ export const app6b = {
         status: "*",
         functionid: "MDY---",
         name: "DECOY MINED AREA, FENCED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16088,7 +13729,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "DECEPTION GRAPHICS",
-          "DUMMY MINEFIELD"
+          "DUMMY MINEFIELD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16096,7 +13737,7 @@ export const app6b = {
         status: "*",
         functionid: "MDN---",
         name: "DUMMY MINEFIELD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16106,7 +13747,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
-          "DEFENCE MANOEUVRE GRAPHIC"
+          "DEFENCE MANOEUVRE GRAPHIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16114,7 +13755,7 @@ export const app6b = {
         status: "*",
         functionid: "MM----",
         name: "DEFENCE MANOEUVRE GRAPHIC",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -16125,7 +13766,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
-          "DEFENCE POINT GRAPHIC"
+          "DEFENCE POINT GRAPHIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16133,7 +13774,7 @@ export const app6b = {
         status: "*",
         functionid: "MMP---",
         name: "DEFENCE POINT GRAPHIC",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -16145,7 +13786,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
-          "TARGET REFERENCE POINT (TRP)"
+          "TARGET REFERENCE POINT (TRP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16153,7 +13794,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPT--",
         name: "TARGET REFERENCE POINT (TRP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16165,7 +13806,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
-          "BATTLE POSITION"
+          "BATTLE POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16173,7 +13814,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPB--",
         name: "BATTLE POSITION",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POLYGON",
@@ -16186,7 +13827,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "BATTLE POSITION",
-          "OCCUPIED (BATTALION SIZED UNIT)"
+          "OCCUPIED (BATTALION SIZED UNIT)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16194,7 +13835,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPB O-",
         name: "OCCUPIED (BATTALION SIZED UNIT)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -16207,15 +13848,15 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "BATTLE POSITION",
-          "PREPARED \"(P)\" BUT NOT OCCUPIED"
+          'PREPARED "(P)" BUT NOT OCCUPIED',
         ],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "MMPB P-",
-        name: "PREPARED \"(P)\" BUT NOT OCCUPIED",
-        remarks: ""
+        name: 'PREPARED "(P)" BUT NOT OCCUPIED',
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -16228,7 +13869,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "BATTLE POSITION",
-          "PLANNED"
+          "PLANNED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16236,7 +13877,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPB L-",
         name: "PLANNED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16248,7 +13889,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
-          "STRONG POINT (SP)"
+          "STRONG POINT (SP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16256,7 +13897,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPS--",
         name: "STRONG POINT (SP)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POLYGON",
@@ -16269,7 +13910,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "STRONG POINT (SP)",
-          "FRIENDLY"
+          "FRIENDLY",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -16277,7 +13918,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPSF-",
         name: "FRIENDLY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -16290,7 +13931,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "STRONG POINT (SP)",
-          "ENEMY KNOWN AND CONFIRMED"
+          "ENEMY KNOWN AND CONFIRMED",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -16298,7 +13939,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPSE-",
         name: "ENEMY KNOWN AND CONFIRMED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16310,7 +13951,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
-          "OBSERVATION POST/OUTPOST"
+          "OBSERVATION POST/OUTPOST",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16318,7 +13959,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPO--",
         name: "OBSERVATION POST/OUTPOST",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16331,7 +13972,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "OBSERVATION POST/OUTPOST",
-          "COMBAT OUTPOST"
+          "COMBAT OUTPOST",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16339,7 +13980,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPOC-",
         name: "COMBAT OUTPOST",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16352,7 +13993,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "OBSERVATION POST/OUTPOST",
-          "OBSERVATION POST OCCUPIED BY DISMOUNTED SCOUTS OR RECONNAISSANCE"
+          "OBSERVATION POST OCCUPIED BY DISMOUNTED SCOUTS OR RECONNAISSANCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16360,7 +14001,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPOR-",
         name: "OBSERVATION POST OCCUPIED BY DISMOUNTED SCOUTS OR RECONNAISSANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16373,7 +14014,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "OBSERVATION POST/OUTPOST",
-          "FORWARD OBSERVER POSITION"
+          "FORWARD OBSERVER POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16381,7 +14022,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPOF-",
         name: "FORWARD OBSERVER POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16394,7 +14035,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "OBSERVATION POST/OUTPOST",
-          "SENSOR OUTPOST/LISTENING POST (OP/LP)"
+          "SENSOR OUTPOST/LISTENING POST (OP/LP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16402,7 +14043,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPOS-",
         name: "SENSOR OUTPOST/LISTENING POST (OP/LP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16415,7 +14056,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "OBSERVATION POST/OUTPOST",
-          "CBRN OBSERVATION POST (DISMOUNTED)"
+          "CBRN OBSERVATION POST (DISMOUNTED)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16423,7 +14064,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPON-",
         name: "CBRN OBSERVATION POST (DISMOUNTED)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16436,7 +14077,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "OBSERVATION POST/OUTPOST",
-          "FORWARD AIR CONTROLLER (FAC)"
+          "FORWARD AIR CONTROLLER (FAC)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16444,7 +14085,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPON-",
         name: "FORWARD AIR CONTROLLER (FAC)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -16457,7 +14098,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE POINT GRAPHIC",
           "OBSERVATION POST/OUTPOST",
-          "TACTICAL AIR CONTROL PARTY (TACP)"
+          "TACTICAL AIR CONTROL PARTY (TACP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16465,7 +14106,7 @@ export const app6b = {
         status: "*",
         functionid: "MMPON-",
         name: "TACTICAL AIR CONTROL PARTY (TACP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16476,7 +14117,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
-          "DEFENCE LINE GRAPHIC"
+          "DEFENCE LINE GRAPHIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16484,7 +14125,7 @@ export const app6b = {
         status: "*",
         functionid: "MMD---",
         name: "DEFENCE LINE GRAPHIC",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "LINE",
@@ -16496,7 +14137,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE LINE GRAPHIC",
-          "FORWARD EDGE OF BATTLE AREA (FEBA)"
+          "FORWARD EDGE OF BATTLE AREA (FEBA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16504,7 +14145,7 @@ export const app6b = {
         status: "*",
         functionid: "MMDF--",
         name: "FORWARD EDGE OF BATTLE AREA (FEBA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16517,7 +14158,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE LINE GRAPHIC",
           "FORWARD EDGE OF BATTLE AREA (FEBA)",
-          "ACTUAL TRACE OF THE FEBA"
+          "ACTUAL TRACE OF THE FEBA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16525,7 +14166,7 @@ export const app6b = {
         status: "*",
         functionid: "MMDFA-",
         name: "ACTUAL TRACE OF THE FEBA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16538,7 +14179,7 @@ export const app6b = {
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE LINE GRAPHIC",
           "FORWARD EDGE OF BATTLE AREA (FEBA)",
-          "PROPOSED OR ON ORDER TRACE OF THE FEBA"
+          "PROPOSED OR ON ORDER TRACE OF THE FEBA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16546,7 +14187,7 @@ export const app6b = {
         status: "*",
         functionid: "MMDFP-",
         name: "PROPOSED OR ON ORDER TRACE OF THE FEBA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16558,7 +14199,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE LINE GRAPHIC",
-          "PRINCIPLE DIRECTION OF FIRE (PDF)"
+          "PRINCIPLE DIRECTION OF FIRE (PDF)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16566,7 +14207,7 @@ export const app6b = {
         status: "*",
         functionid: "MMDP--",
         name: "PRINCIPLE DIRECTION OF FIRE (PDF)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16577,7 +14218,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
-          "DEFENCE AREA GRAPHIC"
+          "DEFENCE AREA GRAPHIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16585,7 +14226,7 @@ export const app6b = {
         status: "*",
         functionid: "MMA---",
         name: "DEFENCE AREA GRAPHIC",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POLYGON",
@@ -16597,7 +14238,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "DEFENCE MANOEUVRE GRAPHIC",
           "DEFENCE AREA GRAPHIC",
-          "ENGAGEMENT AREA (EA)"
+          "ENGAGEMENT AREA (EA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16605,7 +14246,7 @@ export const app6b = {
         status: "*",
         functionid: "MMAE--",
         name: "ENGAGEMENT AREA (EA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16615,7 +14256,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
-          "OFFENCE MANOEUVRE GRAPHICS"
+          "OFFENCE MANOEUVRE GRAPHICS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16623,7 +14264,7 @@ export const app6b = {
         status: "*",
         functionid: "MO----",
         name: "OFFENCE MANOEUVRE GRAPHICS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -16634,7 +14275,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
-          "OFFENCE POINT GRAPHIC"
+          "OFFENCE POINT GRAPHIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16642,7 +14283,7 @@ export const app6b = {
         status: "*",
         functionid: "MOP---",
         name: "OFFENCE POINT GRAPHIC",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -16654,7 +14295,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE POINT GRAPHIC",
-          "POINT OF DEPARTURE"
+          "POINT OF DEPARTURE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16662,7 +14303,7 @@ export const app6b = {
         status: "*",
         functionid: "MOPD--",
         name: "POINT OF DEPARTURE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16673,7 +14314,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
-          "OFFENCE LINE GRAPHIC"
+          "OFFENCE LINE GRAPHIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16681,7 +14322,7 @@ export const app6b = {
         status: "*",
         functionid: "MOL---",
         name: "OFFENCE LINE GRAPHIC",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -16693,7 +14334,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
-          "AXIS OF ADVANCE"
+          "AXIS OF ADVANCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16701,7 +14342,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLA--",
         name: "AXIS OF ADVANCE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "LINE",
@@ -16714,7 +14355,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "AXIS OF ADVANCE",
-          "FRIENDLY AVIATION"
+          "FRIENDLY AVIATION",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -16722,7 +14363,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLAF-",
         name: "FRIENDLY AVIATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16735,7 +14376,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "AXIS OF ADVANCE",
-          "FRIENDLY AIRBORNE"
+          "FRIENDLY AIRBORNE",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -16743,7 +14384,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLAA-",
         name: "FRIENDLY AIRBORNE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16756,7 +14397,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "AXIS OF ADVANCE",
-          "FRIENDLY ATTACK HELICOPTER"
+          "FRIENDLY ATTACK HELICOPTER",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -16764,7 +14405,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLAH-",
         name: "FRIENDLY ATTACK HELICOPTER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16777,7 +14418,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "AXIS OF ADVANCE",
-          "FRIENDLY GROUND AXIS OF SUPPORTING ATTACK"
+          "FRIENDLY GROUND AXIS OF SUPPORTING ATTACK",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -16785,7 +14426,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLAS-",
         name: "FRIENDLY GROUND AXIS OF SUPPORTING ATTACK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16798,7 +14439,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "AXIS OF ADVANCE",
-          "FRIENDLY GROUND AXIS OF MAIN ATTACK"
+          "FRIENDLY GROUND AXIS OF MAIN ATTACK",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -16806,7 +14447,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLAM-",
         name: "FRIENDLY GROUND AXIS OF MAIN ATTACK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16819,7 +14460,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "AXIS OF ADVANCE",
-          "FRIENDLY GROUND AXIS ON ORDER WITH DATE AND TIME (IF KNOWN) EFFECTIVE"
+          "FRIENDLY GROUND AXIS ON ORDER WITH DATE AND TIME (IF KNOWN) EFFECTIVE",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -16827,7 +14468,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLAO-",
         name: "FRIENDLY GROUND AXIS ON ORDER WITH DATE AND TIME (IF KNOWN) EFFECTIVE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16840,7 +14481,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "AXIS OF ADVANCE",
-          "ENEMY CONFIRMED"
+          "ENEMY CONFIRMED",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -16848,7 +14489,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLAE-",
         name: "ENEMY CONFIRMED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16861,7 +14502,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "AXIS OF ADVANCE",
-          "ENEMY TEMPLATED"
+          "ENEMY TEMPLATED",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -16869,7 +14510,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLAT-",
         name: "ENEMY TEMPLATED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -16881,7 +14522,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
-          "DIRECTION OF ATTACK"
+          "DIRECTION OF ATTACK",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -16889,7 +14530,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLD--",
         name: "DIRECTION OF ATTACK",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "LINE",
@@ -16902,7 +14543,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "DIRECTION OF ATTACK",
-          "FRIENDLY AVIATION"
+          "FRIENDLY AVIATION",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -16910,7 +14551,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLDF-",
         name: "FRIENDLY AVIATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16923,7 +14564,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "DIRECTION OF ATTACK",
-          "FRIENDLY AVIATION PLANNED OR ON ORDER"
+          "FRIENDLY AVIATION PLANNED OR ON ORDER",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -16931,7 +14572,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLDY-",
         name: "FRIENDLY AVIATION PLANNED OR ON ORDER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16944,7 +14585,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "DIRECTION OF ATTACK",
-          "ENEMY KNOWN/CONFIRMED A VIA TION"
+          "ENEMY KNOWN/CONFIRMED A VIA TION",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -16952,7 +14593,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLDE-",
         name: "ENEMY KNOWN/CONFIRMED A VIA TION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16965,7 +14606,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "DIRECTION OF ATTACK",
-          "TEMPLATED ENEMY AVIATION"
+          "TEMPLATED ENEMY AVIATION",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -16973,7 +14614,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLDT-",
         name: "TEMPLATED ENEMY AVIATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -16986,7 +14627,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "DIRECTION OF ATTACK",
-          "ENEMY CONFIRMED/KNOWN GROUND"
+          "ENEMY CONFIRMED/KNOWN GROUND",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -16994,7 +14635,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLDG-",
         name: "ENEMY CONFIRMED/KNOWN GROUND",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17007,7 +14648,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "DIRECTION OF ATTACK",
-          "TEMPLATED ENEMY GROUND"
+          "TEMPLATED ENEMY GROUND",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -17015,7 +14656,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLDR-",
         name: "TEMPLATED ENEMY GROUND",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17028,7 +14669,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "DIRECTION OF ATTACK",
-          "FRIENDLY DIRECTION OF SUPPORTING ATTACK"
+          "FRIENDLY DIRECTION OF SUPPORTING ATTACK",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -17036,7 +14677,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLDS-",
         name: "FRIENDLY DIRECTION OF SUPPORTING ATTACK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17049,7 +14690,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "DIRECTION OF ATTACK",
-          "FRIENDLY DIRECTION OF MAIN ATTACK"
+          "FRIENDLY DIRECTION OF MAIN ATTACK",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -17057,7 +14698,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLDM-",
         name: "FRIENDLY DIRECTION OF MAIN ATTACK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17070,7 +14711,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
           "DIRECTION OF ATTACK",
-          "FRIENDLY PLANNED OR ON ORDER"
+          "FRIENDLY PLANNED OR ON ORDER",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -17078,7 +14719,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLDO-",
         name: "FRIENDLY PLANNED OR ON ORDER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17090,7 +14731,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
-          "FINAL COORDINATION LINE"
+          "FINAL COORDINATION LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17098,7 +14739,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLF--",
         name: "FINAL COORDINATION LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17110,7 +14751,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
-          "INFILTRATION LINE"
+          "INFILTRATION LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17118,7 +14759,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLI--",
         name: "INFILTRATION LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17130,7 +14771,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
-          "LIMIT OF ADVANCE"
+          "LIMIT OF ADVANCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17138,7 +14779,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLL--",
         name: "LIMIT OF ADVANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17150,7 +14791,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
-          "LINE OF DEPARTURE"
+          "LINE OF DEPARTURE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17158,7 +14799,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLT--",
         name: "LINE OF DEPARTURE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17170,7 +14811,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
-          "LINE OF DEPARTURE/LINE OF CONTACT (LD/LC)"
+          "LINE OF DEPARTURE/LINE OF CONTACT (LD/LC)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17178,7 +14819,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLC--",
         name: "LINE OF DEPARTURE/LINE OF CONTACT (LD/LC)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17190,7 +14831,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
-          "PROBABLE LINE OF DEPLOYMENT (PLD)"
+          "PROBABLE LINE OF DEPLOYMENT (PLD)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17198,7 +14839,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLP--",
         name: "PROBABLE LINE OF DEPLOYMENT (PLD)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17210,7 +14851,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE LINE GRAPHIC",
-          "RAID"
+          "RAID",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17218,7 +14859,7 @@ export const app6b = {
         status: "*",
         functionid: "MOLR--",
         name: "RAID",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17229,7 +14870,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
-          "OFFENCE AREA GRAPHIC"
+          "OFFENCE AREA GRAPHIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17237,7 +14878,7 @@ export const app6b = {
         status: "*",
         functionid: "MOO---",
         name: "OFFENCE AREA GRAPHIC",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POLYGON",
@@ -17249,7 +14890,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
-          "ASSAULT POSITION"
+          "ASSAULT POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17257,7 +14898,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOA--",
         name: "ASSAULT POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17269,7 +14910,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
-          "ATTACK POSITION"
+          "ATTACK POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17277,7 +14918,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOT--",
         name: "ATTACK POSITION",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17290,7 +14931,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
           "ATTACK POSITION",
-          "FRIENDLY ATTACK POSITION"
+          "FRIENDLY ATTACK POSITION",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -17298,7 +14939,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOTF-",
         name: "FRIENDLY ATTACK POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17311,7 +14952,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
           "ATTACK POSITION",
-          "FRIENDLY OCCUPIED (ONLY IF A UNIT MUST STOP IN THE ATTACK POSITION)"
+          "FRIENDLY OCCUPIED (ONLY IF A UNIT MUST STOP IN THE ATTACK POSITION)",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -17319,7 +14960,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOTC-",
         name: "FRIENDLY OCCUPIED (ONLY IF A UNIT MUST STOP IN THE ATTACK POSITION)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17332,7 +14973,7 @@ export const app6b = {
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
           "ATTACK POSITION",
-          "FRIENDLY PLANNED, PROPOSED OR ON ORDER"
+          "FRIENDLY PLANNED, PROPOSED OR ON ORDER",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -17340,7 +14981,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOTP-",
         name: "FRIENDLY PLANNED, PROPOSED OR ON ORDER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17352,7 +14993,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
-          "ATTACK BY FIRE POSITION"
+          "ATTACK BY FIRE POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17360,7 +15001,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOP--",
         name: "ATTACK BY FIRE POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17372,7 +15013,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
-          "SUPPORT BY FIRE POSITION"
+          "SUPPORT BY FIRE POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17380,7 +15021,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOS--",
         name: "SUPPORT BY FIRE POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17392,7 +15033,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
-          "OBJECTIVE"
+          "OBJECTIVE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17400,7 +15041,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOJ--",
         name: "OBJECTIVE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17412,7 +15053,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
-          "PENETRATION BOX"
+          "PENETRATION BOX",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17420,7 +15061,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOX--",
         name: "PENETRATION BOX",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17432,7 +15073,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "OFFENCE MANOEUVRE GRAPHICS",
           "OFFENCE AREA GRAPHIC",
-          "RAID AREA"
+          "RAID AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17440,7 +15081,7 @@ export const app6b = {
         status: "*",
         functionid: "MOOR--",
         name: "RAID AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17450,7 +15091,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
-          "SPECIAL MANOEUVRE GRAPHIC"
+          "SPECIAL MANOEUVRE GRAPHIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17458,7 +15099,7 @@ export const app6b = {
         status: "*",
         functionid: "MS----",
         name: "SPECIAL MANOEUVRE GRAPHIC",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17469,7 +15110,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
-          "GENERAL"
+          "GENERAL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17477,7 +15118,7 @@ export const app6b = {
         status: "*",
         functionid: "MSG---",
         name: "GENERAL",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17489,7 +15130,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
           "GENERAL",
-          "ENCIRCLEMENT"
+          "ENCIRCLEMENT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17497,7 +15138,7 @@ export const app6b = {
         status: "*",
         functionid: "MSGE--",
         name: "ENCIRCLEMENT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17510,7 +15151,7 @@ export const app6b = {
           "SPECIAL MANOEUVRE GRAPHIC",
           "GENERAL",
           "ENCIRCLEMENT",
-          "FRIENDLY"
+          "FRIENDLY",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -17518,7 +15159,7 @@ export const app6b = {
         status: "*",
         functionid: "MSGEF-",
         name: "FRIENDLY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17531,7 +15172,7 @@ export const app6b = {
           "SPECIAL MANOEUVRE GRAPHIC",
           "GENERAL",
           "ENCIRCLEMENT",
-          "ENEMY"
+          "ENEMY",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -17539,7 +15180,7 @@ export const app6b = {
         status: "*",
         functionid: "MSGEY-",
         name: "ENEMY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17551,7 +15192,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
           "GENERAL",
-          "AMBUSH"
+          "AMBUSH",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17559,7 +15200,7 @@ export const app6b = {
         status: "*",
         functionid: "MSGA--",
         name: "AMBUSH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17570,7 +15211,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
-          "LINE"
+          "LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17578,7 +15219,7 @@ export const app6b = {
         status: "*",
         functionid: "MSL---",
         name: "LINE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "LINE",
@@ -17590,7 +15231,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
           "LINE",
-          "AIR HEAD"
+          "AIR HEAD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17598,7 +15239,7 @@ export const app6b = {
         status: "*",
         functionid: "MSLA--",
         name: "AIR HEAD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17610,7 +15251,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
           "LINE",
-          "BRIDGEHEAD"
+          "BRIDGEHEAD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17618,7 +15259,7 @@ export const app6b = {
         status: "*",
         functionid: "MSLB--",
         name: "BRIDGEHEAD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17630,7 +15271,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
           "LINE",
-          "HOLDING LINE"
+          "HOLDING LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17638,7 +15279,7 @@ export const app6b = {
         status: "*",
         functionid: "MSLH--",
         name: "HOLDING LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "LINE",
@@ -17650,7 +15291,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
           "LINE",
-          "RELEASE LINE"
+          "RELEASE LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17658,7 +15299,7 @@ export const app6b = {
         status: "*",
         functionid: "MSLR--",
         name: "RELEASE LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17669,7 +15310,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
-          "AREA"
+          "AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17677,7 +15318,7 @@ export const app6b = {
         status: "*",
         functionid: "MSA---",
         name: "AREA",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POLYGON",
@@ -17689,7 +15330,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
           "AREA",
-          "AREA OF OPERATIONS (AO)"
+          "AREA OF OPERATIONS (AO)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17697,7 +15338,7 @@ export const app6b = {
         status: "*",
         functionid: "MSAO--",
         name: "AREA OF OPERATIONS (AO)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -17709,7 +15350,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
           "AREA",
-          "NAMED AREA OF INTEREST"
+          "NAMED AREA OF INTEREST",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17717,7 +15358,7 @@ export const app6b = {
         status: "*",
         functionid: "MSAN--",
         name: "NAMED AREA OF INTEREST",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POLYGON",
@@ -17729,7 +15370,7 @@ export const app6b = {
           "MANOEUVRE GRAPHICS",
           "SPECIAL MANOEUVRE GRAPHIC",
           "AREA",
-          "TARGETED AREA OF INTEREST"
+          "TARGETED AREA OF INTEREST",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17737,42 +15378,31 @@ export const app6b = {
         status: "*",
         functionid: "MSAT--",
         name: "TARGETED AREA OF INTEREST",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.2",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "MOBILITY/SURVIVABILITY"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "MOBILITY/SURVIVABILITY"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "B-----",
         name: "MOBILITY/SURVIVABILITY",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.2.1",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "MOBILITY/SURVIVABILITY",
-          "OBSTACLES"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "MOBILITY/SURVIVABILITY", "OBSTACLES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "BO----",
         name: "OBSTACLES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17783,7 +15413,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "GENERAL"
+          "GENERAL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17791,7 +15421,7 @@ export const app6b = {
         status: "*",
         functionid: "BOG---",
         name: "GENERAL",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17803,7 +15433,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "GENERAL",
-          "BELT"
+          "BELT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17811,7 +15441,7 @@ export const app6b = {
         status: "*",
         functionid: "BOGB--",
         name: "BELT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17823,7 +15453,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "GENERAL",
-          "LINE"
+          "LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17831,7 +15461,7 @@ export const app6b = {
         status: "*",
         functionid: "BOGL--",
         name: "LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17843,7 +15473,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "GENERAL",
-          "ZONE"
+          "ZONE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17851,7 +15481,7 @@ export const app6b = {
         status: "*",
         functionid: "BOGZ--",
         name: "ZONE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17862,7 +15492,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "ABA TIS"
+          "ABA TIS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17870,7 +15500,7 @@ export const app6b = {
         status: "*",
         functionid: "BOA---",
         name: "ABA TIS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17881,7 +15511,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "ANTITANK OBSTACLES"
+          "ANTITANK OBSTACLES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17889,7 +15519,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAT--",
         name: "ANTITANK OBSTACLES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -17901,7 +15531,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ANTITANK OBSTACLES",
-          "ANTITANK DITCH"
+          "ANTITANK DITCH",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17909,7 +15539,7 @@ export const app6b = {
         status: "*",
         functionid: "BOATO-",
         name: "ANTITANK DITCH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17921,7 +15551,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ANTITANK OBSTACLES",
-          "ANTITANK DITCH REINFORCED WITH ANTITANK MINES"
+          "ANTITANK DITCH REINFORCED WITH ANTITANK MINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17929,7 +15559,7 @@ export const app6b = {
         status: "*",
         functionid: "BOATM-",
         name: "ANTITANK DITCH REINFORCED WITH ANTITANK MINES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17941,7 +15571,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ANTITANK OBSTACLES",
-          "ANTITANK OBSTACLES, TETRAHEDRONS, DRAGON'S TEETH AND OTHER SIMILAR OBSTACLES"
+          "ANTITANK OBSTACLES, TETRAHEDRONS, DRAGON'S TEETH AND OTHER SIMILAR OBSTACLES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17949,7 +15579,7 @@ export const app6b = {
         status: "*",
         functionid: "BOATD-",
         name: "ANTITANK OBSTACLES, TETRAHEDRONS, DRAGON'S TEETH AND OTHER SIMILAR OBSTACLES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17961,7 +15591,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ANTITANK OBSTACLES",
-          "ANTITANK WALL"
+          "ANTITANK WALL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17969,7 +15599,7 @@ export const app6b = {
         status: "*",
         functionid: "BOATW-",
         name: "ANTITANK WALL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -17980,7 +15610,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "BOOBY TRAP"
+          "BOOBY TRAP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -17988,7 +15618,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAB--",
         name: "BOOBY TRAP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -17999,7 +15629,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "MINES"
+          "MINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18007,7 +15637,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAM--",
         name: "MINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -18019,7 +15649,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "ANTIPERSONNEL (AP) MINE"
+          "ANTIPERSONNEL (AP) MINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18027,7 +15657,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAMA-",
         name: "ANTIPERSONNEL (AP) MINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18039,7 +15669,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "ANTITANK (AT) MINE"
+          "ANTITANK (AT) MINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18047,7 +15677,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAMT-",
         name: "ANTITANK (AT) MINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18059,7 +15689,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "ANTITANK MINE WITH ANTIHANDLING DEVISE"
+          "ANTITANK MINE WITH ANTIHANDLING DEVISE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18067,7 +15697,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAMD-",
         name: "ANTITANK MINE WITH ANTIHANDLING DEVISE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18079,15 +15709,15 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "ANTITANK MINE (ARROW SHOWS EFFECTS) \"CLAYMORE MINE\""
+          'ANTITANK MINE (ARROW SHOWS EFFECTS) "CLAYMORE MINE"',
         ],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "BOAMC-",
-        name: "ANTITANK MINE (ARROW SHOWS EFFECTS) \"CLAYMORE MINE\"",
-        remarks: ""
+        name: 'ANTITANK MINE (ARROW SHOWS EFFECTS) "CLAYMORE MINE"',
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18099,7 +15729,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "UNSPECIFIED MINE"
+          "UNSPECIFIED MINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18107,7 +15737,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAMU-",
         name: "UNSPECIFIED MINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18119,7 +15749,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "MINE CLUSTER"
+          "MINE CLUSTER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18127,7 +15757,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAMN-",
         name: "MINE CLUSTER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18139,7 +15769,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINES",
-          "WIDE AREA MINES"
+          "WIDE AREA MINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18147,7 +15777,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAMW-",
         name: "WIDE AREA MINES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18158,7 +15788,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "MINEFIELDS"
+          "MINEFIELDS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18166,7 +15796,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAI--",
         name: "MINEFIELDS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -18178,7 +15808,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "PLANNED MINEFIELD"
+          "PLANNED MINEFIELD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18186,7 +15816,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAIP-",
         name: "PLANNED MINEFIELD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18198,7 +15828,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "COMPLETED MINEFIELD"
+          "COMPLETED MINEFIELD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18206,7 +15836,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAIC-",
         name: "COMPLETED MINEFIELD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18218,7 +15848,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "ANTIPERSONNEL (AP) MINEFIELD"
+          "ANTIPERSONNEL (AP) MINEFIELD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18226,7 +15856,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAIL-",
         name: "ANTIPERSONNEL (AP) MINEFIELD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18238,7 +15868,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "ANTITANK (AT) MINEFIELD WITH GAP"
+          "ANTITANK (AT) MINEFIELD WITH GAP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18246,7 +15876,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAIG-",
         name: "ANTITANK (AT) MINEFIELD WITH GAP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18258,7 +15888,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "ANTITANK (AT) MINEFIELD"
+          "ANTITANK (AT) MINEFIELD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18266,7 +15896,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAIN-",
         name: "ANTITANK (AT) MINEFIELD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18278,7 +15908,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "SCATTERABLE MINES"
+          "SCATTERABLE MINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18286,7 +15916,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAIS-",
         name: "SCATTERABLE MINES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18298,7 +15928,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "ANTIPERSONNEL (AP) MINEFIELD REINFORCED WITH SCATTERABLE WITH SELF-DESTRUCT DATE-TIME-GROUP"
+          "ANTIPERSONNEL (AP) MINEFIELD REINFORCED WITH SCATTERABLE WITH SELF-DESTRUCT DATE-TIME-GROUP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18306,7 +15936,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAIH-",
         name: "ANTIPERSONNEL (AP) MINEFIELD REINFORCED WITH SCATTERABLE WITH SELF-DESTRUCT DATE-TIME-GROUP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -18318,7 +15948,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "SCATTERABLE MINEFIELD WITH SELF-DESTRUCT DATE-TIME-GROUP"
+          "SCATTERABLE MINEFIELD WITH SELF-DESTRUCT DATE-TIME-GROUP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18326,7 +15956,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAID-",
         name: "SCATTERABLE MINEFIELD WITH SELF-DESTRUCT DATE-TIME-GROUP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18338,7 +15968,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "MINEFIELDS",
-          "MINED AREA"
+          "MINED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18346,7 +15976,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAIM-",
         name: "MINED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18357,7 +15987,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "EXECUTED VOLCANO MINEFIELD"
+          "EXECUTED VOLCANO MINEFIELD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18365,7 +15995,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAV--",
         name: "EXECUTED VOLCANO MINEFIELD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18376,7 +16006,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "OBSTACLE EFFECT"
+          "OBSTACLE EFFECT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18384,7 +16014,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAE--",
         name: "OBSTACLE EFFECT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18396,7 +16026,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "OBSTACLE EFFECT",
-          "BLOCK"
+          "BLOCK",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18404,7 +16034,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAEB-",
         name: "BLOCK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18416,7 +16046,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "OBSTACLE EFFECT",
-          "FIX"
+          "FIX",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18424,7 +16054,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAEF-",
         name: "FIX",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18436,7 +16066,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "OBSTACLE EFFECT",
-          "TURN"
+          "TURN",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18444,7 +16074,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAET-",
         name: "TURN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18456,7 +16086,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "OBSTACLE EFFECT",
-          "DISRUPT"
+          "DISRUPT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18464,7 +16094,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAED-",
         name: "DISRUPT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18475,7 +16105,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "OBSTACLE FREE AREA"
+          "OBSTACLE FREE AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18483,7 +16113,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAF--",
         name: "OBSTACLE FREE AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18495,7 +16125,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "OBSTACLE FREE AREA",
-          "OBSTACLE-RESTRICTED AREA"
+          "OBSTACLE-RESTRICTED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18503,7 +16133,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAFR-",
         name: "OBSTACLE-RESTRICTED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18514,7 +16144,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "UN-EXPLODED ORDNANCE AREA"
+          "UN-EXPLODED ORDNANCE AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18522,7 +16152,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAU--",
         name: "UN-EXPLODED ORDNANCE AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18533,7 +16163,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "ROAD BLOCKS, CRATERS, AND BLOWN BRIDGES"
+          "ROAD BLOCKS, CRATERS, AND BLOWN BRIDGES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18541,7 +16171,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAR--",
         name: "ROAD BLOCKS, CRATERS, AND BLOWN BRIDGES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18553,7 +16183,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ROAD BLOCKS, CRATERS, AND BLOWN BRIDGES",
-          "ROADBLOCK PLANNED"
+          "ROADBLOCK PLANNED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18561,7 +16191,7 @@ export const app6b = {
         status: "*",
         functionid: "BOARP-",
         name: "ROADBLOCK PLANNED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18573,7 +16203,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ROAD BLOCKS, CRATERS, AND BLOWN BRIDGES",
-          "ROADBLOCK WITH EXPLOSIVES, STATE OF READINESS 1(SAFE)"
+          "ROADBLOCK WITH EXPLOSIVES, STATE OF READINESS 1(SAFE)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18581,7 +16211,7 @@ export const app6b = {
         status: "*",
         functionid: "BOARE-",
         name: "ROADBLOCK WITH EXPLOSIVES, STATE OF READINESS 1(SAFE)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18593,7 +16223,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ROAD BLOCKS, CRATERS, AND BLOWN BRIDGES",
-          "ROADBLOCK WITH EXPLOSIVES, STATE OF READINESS 2 (ARMED BUT PASSABLE)"
+          "ROADBLOCK WITH EXPLOSIVES, STATE OF READINESS 2 (ARMED BUT PASSABLE)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18601,7 +16231,7 @@ export const app6b = {
         status: "*",
         functionid: "BOARS-",
         name: "ROADBLOCK WITH EXPLOSIVES, STATE OF READINESS 2 (ARMED BUT PASSABLE)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18613,7 +16243,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "ROAD BLOCKS, CRATERS, AND BLOWN BRIDGES",
-          "ROADBLOCK COMPLETED (EXECUTED)"
+          "ROADBLOCK COMPLETED (EXECUTED)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18621,7 +16251,7 @@ export const app6b = {
         status: "*",
         functionid: "BOARC-",
         name: "ROADBLOCK COMPLETED (EXECUTED)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18632,7 +16262,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "TRIP WIRE"
+          "TRIP WIRE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18640,7 +16270,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAP--",
         name: "TRIP WIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18651,7 +16281,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
-          "WIRE OBSTACLES"
+          "WIRE OBSTACLES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18659,7 +16289,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAW--",
         name: "WIRE OBSTACLES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18671,7 +16301,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLES",
-          "UNSPECIFIED"
+          "UNSPECIFIED",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18679,7 +16309,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAWU-",
         name: "UNSPECIFIED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18691,7 +16321,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLES",
-          "SINGLE FENCE"
+          "SINGLE FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18699,7 +16329,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAWS-",
         name: "SINGLE FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18711,7 +16341,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLES",
-          "DOUBLE FENCE"
+          "DOUBLE FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18719,7 +16349,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAWD-",
         name: "DOUBLE FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18731,7 +16361,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLES",
-          "DOUBLE APRON FENCE"
+          "DOUBLE APRON FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18739,7 +16369,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAWA-",
         name: "DOUBLE APRON FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18751,7 +16381,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLES",
-          "LOW WIRE FENCE"
+          "LOW WIRE FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18759,7 +16389,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAWL-",
         name: "LOW WIRE FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18771,7 +16401,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLES",
-          "HIGH WIRE FENCE"
+          "HIGH WIRE FENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18779,7 +16409,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAWH-",
         name: "HIGH WIRE FENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18791,7 +16421,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLES",
-          "SINGLE CONCERTINA"
+          "SINGLE CONCERTINA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18799,7 +16429,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAWC-",
         name: "SINGLE CONCERTINA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18811,7 +16441,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLES",
-          "DOUBLE STRAND CONCERTINA"
+          "DOUBLE STRAND CONCERTINA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18819,7 +16449,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAWB-",
         name: "DOUBLE STRAND CONCERTINA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18831,7 +16461,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLES",
           "WIRE OBSTACLES",
-          "TRIPLE STRAND CONCERTINA"
+          "TRIPLE STRAND CONCERTINA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18839,7 +16469,7 @@ export const app6b = {
         status: "*",
         functionid: "BOAWR-",
         name: "TRIPLE STRAND CONCERTINA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18849,7 +16479,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
-          "OBSTACLE BYPASS"
+          "OBSTACLE BYPASS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18857,7 +16487,7 @@ export const app6b = {
         status: "*",
         functionid: "BY----",
         name: "OBSTACLE BYPASS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18868,7 +16498,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
-          "OBSTACLE BYPASS DIFFICULTY"
+          "OBSTACLE BYPASS DIFFICULTY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18876,7 +16506,7 @@ export const app6b = {
         status: "*",
         functionid: "BYO---",
         name: "OBSTACLE BYPASS DIFFICULTY",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18888,7 +16518,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "OBSTACLE BYPASS DIFFICULTY",
-          "BYPASS EASY"
+          "BYPASS EASY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18896,7 +16526,7 @@ export const app6b = {
         status: "*",
         functionid: "BYOE--",
         name: "BYPASS EASY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18908,7 +16538,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "OBSTACLE BYPASS DIFFICULTY",
-          "BYPASS DIFFICULT"
+          "BYPASS DIFFICULT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18916,7 +16546,7 @@ export const app6b = {
         status: "*",
         functionid: "BYOD--",
         name: "BYPASS DIFFICULT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18928,7 +16558,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "OBSTACLE BYPASS DIFFICULTY",
-          "BYPASS IMPOSSIBLE"
+          "BYPASS IMPOSSIBLE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18936,7 +16566,7 @@ export const app6b = {
         status: "*",
         functionid: "BYOI--",
         name: "BYPASS IMPOSSIBLE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18947,7 +16577,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
-          "CROSSING SITE/WATER CROSSING"
+          "CROSSING SITE/WATER CROSSING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18955,7 +16585,7 @@ export const app6b = {
         status: "*",
         functionid: "BYC---",
         name: "CROSSING SITE/WATER CROSSING",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -18967,7 +16597,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "ASSAULT CROSSING AREA"
+          "ASSAULT CROSSING AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18975,7 +16605,7 @@ export const app6b = {
         status: "*",
         functionid: "BYCA--",
         name: "ASSAULT CROSSING AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -18987,7 +16617,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "BRIDGE OR GAP"
+          "BRIDGE OR GAP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -18995,7 +16625,7 @@ export const app6b = {
         status: "*",
         functionid: "BYCB--",
         name: "BRIDGE OR GAP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19007,7 +16637,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "FERRY"
+          "FERRY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19015,7 +16645,7 @@ export const app6b = {
         status: "*",
         functionid: "BYCF--",
         name: "FERRY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19027,7 +16657,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "FORD/FORD EASY"
+          "FORD/FORD EASY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19035,7 +16665,7 @@ export const app6b = {
         status: "*",
         functionid: "BYCE--",
         name: "FORD/FORD EASY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19047,7 +16677,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "FORD DIFFICULT"
+          "FORD DIFFICULT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19055,7 +16685,7 @@ export const app6b = {
         status: "*",
         functionid: "BYCD--",
         name: "FORD DIFFICULT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19067,7 +16697,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "LANE"
+          "LANE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19075,7 +16705,7 @@ export const app6b = {
         status: "*",
         functionid: "BYCL--",
         name: "LANE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19087,7 +16717,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "RAFT SITE"
+          "RAFT SITE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19095,7 +16725,7 @@ export const app6b = {
         status: "*",
         functionid: "BYCR--",
         name: "RAFT SITE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19107,7 +16737,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "OBSTACLE BYPASS",
           "CROSSING SITE/WATER CROSSING",
-          "ENGINEER REGULATING POINT"
+          "ENGINEER REGULATING POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19115,7 +16745,7 @@ export const app6b = {
         status: "*",
         functionid: "BYCG--",
         name: "ENGINEER REGULATING POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19125,7 +16755,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
-          "SURVIVABILITY"
+          "SURVIVABILITY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19133,7 +16763,7 @@ export const app6b = {
         status: "*",
         functionid: "BS----",
         name: "SURVIVABILITY",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -19144,7 +16774,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "EARTHWORK, SMALL TRENCH OR FORTIFICATION"
+          "EARTHWORK, SMALL TRENCH OR FORTIFICATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19152,7 +16782,7 @@ export const app6b = {
         status: "*",
         functionid: "BSE---",
         name: "EARTHWORK, SMALL TRENCH OR FORTIFICATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19163,7 +16793,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "FORT"
+          "FORT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19171,7 +16801,7 @@ export const app6b = {
         status: "*",
         functionid: "BSF---",
         name: "FORT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19182,7 +16812,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "FORTIFIED LINE"
+          "FORTIFIED LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19190,7 +16820,7 @@ export const app6b = {
         status: "*",
         functionid: "BSL---",
         name: "FORTIFIED LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19201,7 +16831,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "FOXHOLE, EMPLACEMENT OR WEAPON SITE"
+          "FOXHOLE, EMPLACEMENT OR WEAPON SITE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19209,7 +16839,7 @@ export const app6b = {
         status: "*",
         functionid: "BSW---",
         name: "FOXHOLE, EMPLACEMENT OR WEAPON SITE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19220,7 +16850,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "STRONG POINT"
+          "STRONG POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19228,7 +16858,7 @@ export const app6b = {
         status: "*",
         functionid: "BSP---",
         name: "STRONG POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19239,7 +16869,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "SURFACE SHELTER"
+          "SURFACE SHELTER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19247,7 +16877,7 @@ export const app6b = {
         status: "*",
         functionid: "BSH---",
         name: "SURFACE SHELTER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19258,7 +16888,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "SURVIVABILITY",
-          "UNDERGROUND SHELTER"
+          "UNDERGROUND SHELTER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19266,7 +16896,7 @@ export const app6b = {
         status: "*",
         functionid: "BSU---",
         name: "UNDERGROUND SHELTER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19276,7 +16906,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
-          "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS"
+          "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19284,7 +16914,7 @@ export const app6b = {
         status: "*",
         functionid: "BW----",
         name: "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19295,7 +16925,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "MINIMUM SAFE DISTANCE ZONES"
+          "MINIMUM SAFE DISTANCE ZONES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19303,7 +16933,7 @@ export const app6b = {
         status: "*",
         functionid: "BWM---",
         name: "MINIMUM SAFE DISTANCE ZONES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19314,7 +16944,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "NUCLEAR DETONATIONS FRIENDLY GROUND ZERO"
+          "NUCLEAR DETONATIONS FRIENDLY GROUND ZERO",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19322,7 +16952,7 @@ export const app6b = {
         status: "*",
         functionid: "BWN---",
         name: "NUCLEAR DETONATIONS FRIENDLY GROUND ZERO",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19333,7 +16963,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "ENEMY KNOWN GROUND ZERO"
+          "ENEMY KNOWN GROUND ZERO",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -19341,7 +16971,7 @@ export const app6b = {
         status: "*",
         functionid: "BWE---",
         name: "ENEMY KNOWN GROUND ZERO",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19352,7 +16982,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "ENEMY TEMPLATED"
+          "ENEMY TEMPLATED",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -19360,7 +16990,7 @@ export const app6b = {
         status: "*",
         functionid: "BWI---",
         name: "ENEMY TEMPLATED",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19371,7 +17001,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "FRIENDLY PLANNED OR ON-ORDER"
+          "FRIENDLY PLANNED OR ON-ORDER",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -19379,7 +17009,7 @@ export const app6b = {
         status: "*",
         functionid: "BWF---",
         name: "FRIENDLY PLANNED OR ON-ORDER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19390,7 +17020,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "FALLOUT PRODUCING"
+          "FALLOUT PRODUCING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19398,7 +17028,7 @@ export const app6b = {
         status: "*",
         functionid: "BWP---",
         name: "FALLOUT PRODUCING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19409,7 +17039,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "RADIOACTIVE AREA"
+          "RADIOACTIVE AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19417,7 +17047,7 @@ export const app6b = {
         status: "*",
         functionid: "BWA---",
         name: "RADIOACTIVE AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19428,7 +17058,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "BIOLOGICALLY CONTAMINATED AREA"
+          "BIOLOGICALLY CONTAMINATED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19436,7 +17066,7 @@ export const app6b = {
         status: "*",
         functionid: "BWC---",
         name: "BIOLOGICALLY CONTAMINATED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19447,7 +17077,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "CHEMICALLY CONTAMINATED AREA"
+          "CHEMICALLY CONTAMINATED AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19455,7 +17085,7 @@ export const app6b = {
         status: "*",
         functionid: "BWH---",
         name: "CHEMICALLY CONTAMINATED AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19466,7 +17096,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "BIOLOGICAL AND CHEMICAL ATTACK, RELEASE EVENTS"
+          "BIOLOGICAL AND CHEMICAL ATTACK, RELEASE EVENTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19474,7 +17104,7 @@ export const app6b = {
         status: "*",
         functionid: "BWK---",
         name: "BIOLOGICAL AND CHEMICAL ATTACK, RELEASE EVENTS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19485,7 +17115,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "DECONTAMINATION (DECON) POINTS"
+          "DECONTAMINATION (DECON) POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19493,7 +17123,7 @@ export const app6b = {
         status: "*",
         functionid: "BWD---",
         name: "DECONTAMINATION (DECON) POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -19505,7 +17135,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (UNSPECIFIED)"
+          "DECON SITE/POINT (UNSPECIFIED)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19513,7 +17143,7 @@ export const app6b = {
         status: "*",
         functionid: "BWDP--",
         name: "DECON SITE/POINT (UNSPECIFIED)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19525,7 +17155,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
           "DECONTAMINATION (DECON) POINTS",
-          "ALTERNATE DECON SITE/POINT (UNSPECIFIED)"
+          "ALTERNATE DECON SITE/POINT (UNSPECIFIED)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19533,7 +17163,7 @@ export const app6b = {
         status: "*",
         functionid: "BWDA--",
         name: "ALTERNATE DECON SITE/POINT (UNSPECIFIED)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19545,7 +17175,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (TROOPS)"
+          "DECON SITE/POINT (TROOPS)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19553,7 +17183,7 @@ export const app6b = {
         status: "*",
         functionid: "BWDT--",
         name: "DECON SITE/POINT (TROOPS)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19565,7 +17195,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (EQUIPMENT)"
+          "DECON SITE/POINT (EQUIPMENT)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19573,7 +17203,7 @@ export const app6b = {
         status: "*",
         functionid: "BWDE--",
         name: "DECON SITE/POINT (EQUIPMENT)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19585,7 +17215,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (EQUIPMENT AND TROOPS)"
+          "DECON SITE/POINT (EQUIPMENT AND TROOPS)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19593,7 +17223,7 @@ export const app6b = {
         status: "*",
         functionid: "BWDS--",
         name: "DECON SITE/POINT (EQUIPMENT AND TROOPS)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19605,7 +17235,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (OPERATIONAL DECONTAMINATION)"
+          "DECON SITE/POINT (OPERATIONAL DECONTAMINATION)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19613,7 +17243,7 @@ export const app6b = {
         status: "*",
         functionid: "BWDO--",
         name: "DECON SITE/POINT (OPERATIONAL DECONTAMINATION)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19625,7 +17255,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON SITE/POINT (THOROUGH DECONTAMINATION)"
+          "DECON SITE/POINT (THOROUGH DECONTAMINATION)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19633,7 +17263,7 @@ export const app6b = {
         status: "*",
         functionid: "BWDG--",
         name: "DECON SITE/POINT (THOROUGH DECONTAMINATION)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19645,7 +17275,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON POINT (MAIN) EQUIPMENT"
+          "DECON POINT (MAIN) EQUIPMENT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19653,7 +17283,7 @@ export const app6b = {
         status: "*",
         functionid: "BWDEM-",
         name: "DECON POINT (MAIN) EQUIPMENT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19665,7 +17295,7 @@ export const app6b = {
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
           "DECONTAMINATION (DECON) POINTS",
-          "DECON POINT (FORWARD) TROOPS"
+          "DECON POINT (FORWARD) TROOPS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19673,7 +17303,7 @@ export const app6b = {
         status: "*",
         functionid: "BWDTF-",
         name: "DECON POINT (FORWARD) TROOPS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19684,7 +17314,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "MOBILITY/SURVIVABILITY",
           "NUCLEAR, BIOLOGICAL AND CHEMICAL GRAPHICS",
-          "DOSE RATE CONTOUR LINES"
+          "DOSE RATE CONTOUR LINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19692,24 +17322,19 @@ export const app6b = {
         status: "*",
         functionid: "BWR---",
         name: "DOSE RATE CONTOUR LINES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.3",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "FIRE SUPPORT GRAPHICS"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "FIRE SUPPORT GRAPHICS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "F-----",
         name: "FIRE SUPPORT GRAPHICS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19719,7 +17344,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
-          "FIRE SUPPORT POINT"
+          "FIRE SUPPORT POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19727,7 +17352,7 @@ export const app6b = {
         status: "*",
         functionid: "FS----",
         name: "FIRE SUPPORT POINT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19738,7 +17363,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT POINT",
-          "TARGET"
+          "TARGET",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19746,7 +17371,7 @@ export const app6b = {
         status: "*",
         functionid: "FST---",
         name: "TARGET",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -19758,7 +17383,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT POINT",
           "TARGET",
-          "POINT /SINGLE TARGET"
+          "POINT /SINGLE TARGET",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19766,7 +17391,7 @@ export const app6b = {
         status: "*",
         functionid: "FSTP--",
         name: "POINT /SINGLE TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19778,7 +17403,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT POINT",
           "TARGET",
-          "CIRCULAR TARGET"
+          "CIRCULAR TARGET",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19786,7 +17411,7 @@ export const app6b = {
         status: "*",
         functionid: "FSTC--",
         name: "CIRCULAR TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -19797,7 +17422,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT POINT",
-          "FIRE SUPPORT STATION"
+          "FIRE SUPPORT STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19805,7 +17430,7 @@ export const app6b = {
         status: "*",
         functionid: "FSS---",
         name: "FIRE SUPPORT STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19815,7 +17440,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
-          "FIRE SUPPORT LINES"
+          "FIRE SUPPORT LINES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19823,7 +17448,7 @@ export const app6b = {
         status: "*",
         functionid: "FL----",
         name: "FIRE SUPPORT LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19834,7 +17459,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
-          "FIRE SUPPORT COORDINATION LINE (FSCL)"
+          "FIRE SUPPORT COORDINATION LINE (FSCL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19842,7 +17467,7 @@ export const app6b = {
         status: "*",
         functionid: "FLC---",
         name: "FIRE SUPPORT COORDINATION LINE (FSCL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19853,7 +17478,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
-          "COORDINATION FIRE LINE (CFL)"
+          "COORDINATION FIRE LINE (CFL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19861,7 +17486,7 @@ export const app6b = {
         status: "*",
         functionid: "FLF---",
         name: "COORDINATION FIRE LINE (CFL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19872,7 +17497,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
-          "LINEAR TARGET"
+          "LINEAR TARGET",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19880,7 +17505,7 @@ export const app6b = {
         status: "*",
         functionid: "FLT---",
         name: "LINEAR TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19892,7 +17517,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
           "LINEAR TARGET",
-          "FINAL PROTECTIVE FIRE"
+          "FINAL PROTECTIVE FIRE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19900,7 +17525,7 @@ export const app6b = {
         status: "*",
         functionid: "FLTP--",
         name: "FINAL PROTECTIVE FIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19911,7 +17536,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
-          "SMOKE"
+          "SMOKE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19919,7 +17544,7 @@ export const app6b = {
         status: "*",
         functionid: "FLK---",
         name: "SMOKE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -19931,7 +17556,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
           "SMOKE",
-          "PLANNED WITH DESIGNATED TIME SHOWN"
+          "PLANNED WITH DESIGNATED TIME SHOWN",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19939,7 +17564,7 @@ export const app6b = {
         status: "*",
         functionid: "FLKP--",
         name: "PLANNED WITH DESIGNATED TIME SHOWN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19951,7 +17576,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
           "SMOKE",
-          "SMOKE (ACTUALLY IN PLACE)"
+          "SMOKE (ACTUALLY IN PLACE)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19959,7 +17584,7 @@ export const app6b = {
         status: "*",
         functionid: "FLKS--",
         name: "SMOKE (ACTUALLY IN PLACE)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19971,7 +17596,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
           "SMOKE",
-          "LINEAR SMOKE TARGET"
+          "LINEAR SMOKE TARGET",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19979,7 +17604,7 @@ export const app6b = {
         status: "*",
         functionid: "FLKT--",
         name: "LINEAR SMOKE TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -19990,7 +17615,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
-          "NO FIRE LINE"
+          "NO FIRE LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -19998,7 +17623,7 @@ export const app6b = {
         status: "*",
         functionid: "FLN---",
         name: "NO FIRE LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20009,7 +17634,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "FIRE SUPPORT LINES",
-          "RESTRICTED FIRE LINE (RFL)"
+          "RESTRICTED FIRE LINE (RFL)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20017,25 +17642,19 @@ export const app6b = {
         status: "*",
         functionid: "FLR---",
         name: "RESTRICTED FIRE LINE (RFL)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.3.3",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "FIRE SUPPORT GRAPHICS",
-          "AREAS"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "FIRE SUPPORT GRAPHICS", "AREAS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "FA----",
         name: "AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20046,7 +17665,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "FIRE SUPPORT AREA"
+          "FIRE SUPPORT AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20054,7 +17673,7 @@ export const app6b = {
         status: "*",
         functionid: "FAS---",
         name: "FIRE SUPPORT AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20065,7 +17684,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "AIRSPACE COORDINATION AREA"
+          "AIRSPACE COORDINATION AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20073,7 +17692,7 @@ export const app6b = {
         status: "*",
         functionid: "FAC---",
         name: "AIRSPACE COORDINATION AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20084,7 +17703,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "AREA TARGET"
+          "AREA TARGET",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20092,7 +17711,7 @@ export const app6b = {
         status: "*",
         functionid: "FAT---",
         name: "AREA TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20103,7 +17722,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "SERIES TARGET"
+          "SERIES TARGET",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20111,7 +17730,7 @@ export const app6b = {
         status: "*",
         functionid: "FAR---",
         name: "SERIES TARGET",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20123,7 +17742,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
           "SERIES TARGET",
-          "SERIES OF TARGETS USING REGULAR TARGETS"
+          "SERIES OF TARGETS USING REGULAR TARGETS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20131,7 +17750,7 @@ export const app6b = {
         status: "*",
         functionid: "FARS--",
         name: "SERIES OF TARGETS USING REGULAR TARGETS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20143,7 +17762,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
           "SERIES TARGET",
-          "SERIES OF TARGETS USING RECTANGULAR TARGETS"
+          "SERIES OF TARGETS USING RECTANGULAR TARGETS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20151,7 +17770,7 @@ export const app6b = {
         status: "*",
         functionid: "FARU--",
         name: "SERIES OF TARGETS USING RECTANGULAR TARGETS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20162,7 +17781,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "BOMB AREA"
+          "BOMB AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20170,7 +17789,7 @@ export const app6b = {
         status: "*",
         functionid: "FAB---",
         name: "BOMB AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20181,7 +17800,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "FREE FIRE AREA (FFA)"
+          "FREE FIRE AREA (FFA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20189,7 +17808,7 @@ export const app6b = {
         status: "*",
         functionid: "FAI---",
         name: "FREE FIRE AREA (FFA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20200,7 +17819,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "GROUP OF TARGETS"
+          "GROUP OF TARGETS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20208,7 +17827,7 @@ export const app6b = {
         status: "*",
         functionid: "FAZ---",
         name: "GROUP OF TARGETS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20220,7 +17839,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
           "GROUP OF TARGETS",
-          "GROUP OF TARGETS USING REGULAR TARGETS"
+          "GROUP OF TARGETS USING REGULAR TARGETS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20228,7 +17847,7 @@ export const app6b = {
         status: "*",
         functionid: "FAZT--",
         name: "GROUP OF TARGETS USING REGULAR TARGETS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20240,7 +17859,7 @@ export const app6b = {
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
           "GROUP OF TARGETS",
-          "GROUP OF TARGETS USING RECTANGULAR TARGETS"
+          "GROUP OF TARGETS USING RECTANGULAR TARGETS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20248,7 +17867,7 @@ export const app6b = {
         status: "*",
         functionid: "FAZU--",
         name: "GROUP OF TARGETS USING RECTANGULAR TARGETS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20259,7 +17878,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "NO FIRE AREA"
+          "NO FIRE AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20267,7 +17886,7 @@ export const app6b = {
         status: "*",
         functionid: "FAN---",
         name: "NO FIRE AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20278,7 +17897,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "NUCLEAR TARGET"
+          "NUCLEAR TARGET",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20286,7 +17905,7 @@ export const app6b = {
         status: "*",
         functionid: "FAU---",
         name: "NUCLEAR TARGET",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20297,7 +17916,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "RESTRICTED FIRE AREA (RFA)"
+          "RESTRICTED FIRE AREA (RFA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20305,7 +17924,7 @@ export const app6b = {
         status: "*",
         functionid: "FAD---",
         name: "RESTRICTED FIRE AREA (RFA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20316,7 +17935,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "POSITION AREA FOR ARTILLERY (PAA)"
+          "POSITION AREA FOR ARTILLERY (PAA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20324,7 +17943,7 @@ export const app6b = {
         status: "*",
         functionid: "FAP---",
         name: "POSITION AREA FOR ARTILLERY (PAA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20335,7 +17954,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "FIRE SUPPORT GRAPHICS",
           "AREAS",
-          "TARGET ACQUISITION AREA (TAA)"
+          "TARGET ACQUISITION AREA (TAA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20343,42 +17962,31 @@ export const app6b = {
         status: "*",
         functionid: "FATA--",
         name: "TARGET ACQUISITION AREA (TAA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.4",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "COMBAT SERVICE SUPPORT"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "COMBAT SERVICE SUPPORT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "S-----",
         name: "COMBAT SERVICE SUPPORT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.4.1",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "COMBAT SERVICE SUPPORT",
-          "POINTS"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "COMBAT SERVICE SUPPORT", "POINTS"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "SP----",
         name: "POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -20389,7 +17997,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "AMBULANCE EXCHANGE POINT"
+          "AMBULANCE EXCHANGE POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20397,7 +18005,7 @@ export const app6b = {
         status: "*",
         functionid: "SPA---",
         name: "AMBULANCE EXCHANGE POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20408,7 +18016,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "CANNIBALIZATION POINT"
+          "CANNIBALIZATION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20416,7 +18024,7 @@ export const app6b = {
         status: "*",
         functionid: "SPC---",
         name: "CANNIBALIZATION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20427,7 +18035,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "CASUALTY COLLECTION POINT"
+          "CASUALTY COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20435,7 +18043,7 @@ export const app6b = {
         status: "*",
         functionid: "SPY---",
         name: "CASUALTY COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20446,7 +18054,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "CIVILIAN COLLECTION POINT"
+          "CIVILIAN COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20454,7 +18062,7 @@ export const app6b = {
         status: "*",
         functionid: "SPT---",
         name: "CIVILIAN COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20465,7 +18073,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "DETAINEE COLLECTION POINT"
+          "DETAINEE COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20473,7 +18081,7 @@ export const app6b = {
         status: "*",
         functionid: "SPD---",
         name: "DETAINEE COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20484,7 +18092,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "ENEMY PRISONER OF WAR (EPW) COLLECTION POINT"
+          "ENEMY PRISONER OF WAR (EPW) COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20492,7 +18100,7 @@ export const app6b = {
         status: "*",
         functionid: "SPE---",
         name: "ENEMY PRISONER OF WAR (EPW) COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20503,7 +18111,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "LOGISTICS RELEASE POINT (LRP)"
+          "LOGISTICS RELEASE POINT (LRP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20511,7 +18119,7 @@ export const app6b = {
         status: "*",
         functionid: "SPL---",
         name: "LOGISTICS RELEASE POINT (LRP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20522,7 +18130,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "MAINTENANCE COLLECTION POINT"
+          "MAINTENANCE COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20530,7 +18138,7 @@ export const app6b = {
         status: "*",
         functionid: "SPM---",
         name: "MAINTENANCE COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20541,7 +18149,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "REARM, REFUEL AND RE-SUPPLY POINT"
+          "REARM, REFUEL AND RE-SUPPLY POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20549,7 +18157,7 @@ export const app6b = {
         status: "*",
         functionid: "SPR---",
         name: "REARM, REFUEL AND RE-SUPPLY POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20560,7 +18168,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "REFUEL ON THE MOVE (ROM) POINT"
+          "REFUEL ON THE MOVE (ROM) POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20568,7 +18176,7 @@ export const app6b = {
         status: "*",
         functionid: "SPU---",
         name: "REFUEL ON THE MOVE (ROM) POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20579,7 +18187,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "TRAFFIC CONTROL POST (TCP)"
+          "TRAFFIC CONTROL POST (TCP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20587,7 +18195,7 @@ export const app6b = {
         status: "*",
         functionid: "SPO---",
         name: "TRAFFIC CONTROL POST (TCP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20598,7 +18206,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "TRAILER TRANSFER POINT"
+          "TRAILER TRANSFER POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20606,7 +18214,7 @@ export const app6b = {
         status: "*",
         functionid: "SPI---",
         name: "TRAILER TRANSFER POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20617,7 +18225,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "UNIT MAINTENANCE COLLECTION POINT"
+          "UNIT MAINTENANCE COLLECTION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20625,7 +18233,7 @@ export const app6b = {
         status: "*",
         functionid: "SPN---",
         name: "UNIT MAINTENANCE COLLECTION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20636,7 +18244,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "SUPPLY POINTS"
+          "SUPPLY POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20644,7 +18252,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQ---",
         name: "SUPPLY POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -20656,7 +18264,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "GENERAL"
+          "GENERAL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20664,7 +18272,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQT--",
         name: "GENERAL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20676,7 +18284,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS I"
+          "CLASS I",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20684,7 +18292,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQA--",
         name: "CLASS I",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20696,7 +18304,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS II"
+          "CLASS II",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20704,7 +18312,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQB--",
         name: "CLASS II",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20716,7 +18324,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS III"
+          "CLASS III",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20724,7 +18332,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQC--",
         name: "CLASS III",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20736,7 +18344,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS IV"
+          "CLASS IV",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20744,7 +18352,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQD--",
         name: "CLASS IV",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20756,7 +18364,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS V"
+          "CLASS V",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20764,7 +18372,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQE--",
         name: "CLASS V",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20776,7 +18384,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS VI"
+          "CLASS VI",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20784,7 +18392,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQF--",
         name: "CLASS VI",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20796,7 +18404,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS VII"
+          "CLASS VII",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20804,7 +18412,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQG--",
         name: "CLASS VII",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20816,7 +18424,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS VIII"
+          "CLASS VIII",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20824,7 +18432,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQH--",
         name: "CLASS VIII",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20836,7 +18444,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS IX"
+          "CLASS IX",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20844,7 +18452,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQI--",
         name: "CLASS IX",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20856,7 +18464,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "SUPPLY POINTS",
-          "CLASS X"
+          "CLASS X",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20864,7 +18472,7 @@ export const app6b = {
         status: "*",
         functionid: "SPQJ--",
         name: "CLASS X",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20875,7 +18483,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "POINTS",
-          "AMMUNITION POINTS"
+          "AMMUNITION POINTS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20883,7 +18491,7 @@ export const app6b = {
         status: "*",
         functionid: "SPM---",
         name: "AMMUNITION POINTS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -20895,7 +18503,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "AMMUNITION POINTS",
-          "AMMUNITION SUPPLY POINT (ASP)"
+          "AMMUNITION SUPPLY POINT (ASP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20903,7 +18511,7 @@ export const app6b = {
         status: "*",
         functionid: "SPMA--",
         name: "AMMUNITION SUPPLY POINT (ASP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -20915,7 +18523,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "POINTS",
           "AMMUNITION POINTS",
-          "AMMUNITION TRANSFER POINT (ATP)"
+          "AMMUNITION TRANSFER POINT (ATP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20923,25 +18531,19 @@ export const app6b = {
         status: "*",
         functionid: "SPMT--",
         name: "AMMUNITION TRANSFER POINT (ATP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.4.2",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "COMBAT SERVICE SUPPORT",
-          "LINES"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "COMBAT SERVICE SUPPORT", "LINES"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "SL----",
         name: "LINES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20952,7 +18554,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "LINES",
-          "CONVOYS"
+          "CONVOYS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20960,7 +18562,7 @@ export const app6b = {
         status: "*",
         functionid: "SLC---",
         name: "CONVOYS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -20972,7 +18574,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "CONVOYS",
-          "MOVING CONVOY"
+          "MOVING CONVOY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -20980,7 +18582,7 @@ export const app6b = {
         status: "*",
         functionid: "SLCM--",
         name: "MOVING CONVOY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -20992,7 +18594,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "CONVOYS",
-          "HALTED CONVOY"
+          "HALTED CONVOY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21000,7 +18602,7 @@ export const app6b = {
         status: "*",
         functionid: "SLCH--",
         name: "HALTED CONVOY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21011,7 +18613,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "LINES",
-          "SUPPLY ROUTES"
+          "SUPPLY ROUTES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21019,7 +18621,7 @@ export const app6b = {
         status: "*",
         functionid: "SLR---",
         name: "SUPPLY ROUTES",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21031,7 +18633,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "MAIN SUPPLY ROUTE"
+          "MAIN SUPPLY ROUTE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21039,7 +18641,7 @@ export const app6b = {
         status: "*",
         functionid: "SLRM--",
         name: "MAIN SUPPLY ROUTE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21051,7 +18653,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "ALTERNATE SUPPLY ROUTE"
+          "ALTERNATE SUPPLY ROUTE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21059,7 +18661,7 @@ export const app6b = {
         status: "*",
         functionid: "SLRA--",
         name: "ALTERNATE SUPPLY ROUTE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21071,7 +18673,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "ONE-WAY TRAFFIC"
+          "ONE-WAY TRAFFIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21079,7 +18681,7 @@ export const app6b = {
         status: "*",
         functionid: "SLRO--",
         name: "ONE-WAY TRAFFIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21091,7 +18693,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "ALTERNATING TRAFFIC"
+          "ALTERNATING TRAFFIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21099,7 +18701,7 @@ export const app6b = {
         status: "*",
         functionid: "SLRT--",
         name: "ALTERNATING TRAFFIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21111,7 +18713,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "LINES",
           "SUPPLY ROUTES",
-          "TWO-WAY TRAFFIC"
+          "TWO-WAY TRAFFIC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21119,25 +18721,19 @@ export const app6b = {
         status: "*",
         functionid: "SLRW--",
         name: "TWO-WAY TRAFFIC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.4.3",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "COMBAT SERVICE SUPPORT",
-          "AREA"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "COMBAT SERVICE SUPPORT", "AREA"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "SA----",
         name: "AREA",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21148,7 +18744,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "AREA",
-          "DETAINEE HOLDING AREA"
+          "DETAINEE HOLDING AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21156,7 +18752,7 @@ export const app6b = {
         status: "*",
         functionid: "SAD---",
         name: "DETAINEE HOLDING AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21167,7 +18763,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "AREA",
-          "ENEMY PRISONER OF WAR (EPW) HOLDING AREA"
+          "ENEMY PRISONER OF WAR (EPW) HOLDING AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21175,7 +18771,7 @@ export const app6b = {
         status: "*",
         functionid: "SAP---",
         name: "ENEMY PRISONER OF WAR (EPW) HOLDING AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21186,7 +18782,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "AREA",
-          "FORWARD ARMING AND REFUELLING AREA (FARP)"
+          "FORWARD ARMING AND REFUELLING AREA (FARP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21194,7 +18790,7 @@ export const app6b = {
         status: "*",
         functionid: "SAR---",
         name: "FORWARD ARMING AND REFUELLING AREA (FARP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21205,7 +18801,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "AREA",
-          "REFUGEE HOLDING AREA"
+          "REFUGEE HOLDING AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21213,7 +18809,7 @@ export const app6b = {
         status: "*",
         functionid: "SAH---",
         name: "REFUGEE HOLDING AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21224,7 +18820,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "AREA",
-          "SUPPORT AREAS"
+          "SUPPORT AREAS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21232,7 +18828,7 @@ export const app6b = {
         status: "*",
         functionid: "SAT---",
         name: "SUPPORT AREAS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -21244,7 +18840,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "AREA",
           "SUPPORT AREAS",
-          "BRIGADE (BSA)"
+          "BRIGADE (BSA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21252,7 +18848,7 @@ export const app6b = {
         status: "*",
         functionid: "SATB--",
         name: "BRIGADE (BSA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21264,7 +18860,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "AREA",
           "SUPPORT AREAS",
-          "DIVISION (DSA)"
+          "DIVISION (DSA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21272,7 +18868,7 @@ export const app6b = {
         status: "*",
         functionid: "SATD--",
         name: "DIVISION (DSA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21284,7 +18880,7 @@ export const app6b = {
           "COMBAT SERVICE SUPPORT",
           "AREA",
           "SUPPORT AREAS",
-          "REGIMENTAL (RSA)"
+          "REGIMENTAL (RSA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21292,7 +18888,7 @@ export const app6b = {
         status: "*",
         functionid: "SATR--",
         name: "REGIMENTAL (RSA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21303,7 +18899,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMBAT SERVICE SUPPORT",
           "AREA",
-          "REST (RA)"
+          "REST (RA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21311,42 +18907,31 @@ export const app6b = {
         status: "*",
         functionid: "SARR--",
         name: "REST (RA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.5",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "COMMAND AND CONTROL"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "COMMAND AND CONTROL"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "O-----",
         name: "COMMAND AND CONTROL",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
         hierarchy: "2.X.2.5.1",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "COMMAND AND CONTROL",
-          "SPECIAL POINT"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "COMMAND AND CONTROL", "SPECIAL POINT"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "OX----",
         name: "SPECIAL POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21357,7 +18942,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "REFERENCE POINT"
+          "REFERENCE POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21365,7 +18950,7 @@ export const app6b = {
         status: "*",
         functionid: "OXE---",
         name: "REFERENCE POINT",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -21377,7 +18962,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "REFERENCE POINT",
-          "NAV REFERENCE"
+          "NAV REFERENCE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21385,7 +18970,7 @@ export const app6b = {
         status: "*",
         functionid: "OXRN--",
         name: "NAV REFERENCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21397,7 +18982,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "REFERENCE POINT",
-          "DLRP"
+          "DLRP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21405,7 +18990,7 @@ export const app6b = {
         status: "*",
         functionid: "OXRD--",
         name: "DLRP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21416,7 +19001,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "UNDERWATER"
+          "UNDERWATER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21424,7 +19009,7 @@ export const app6b = {
         status: "*",
         functionid: "OXU---",
         name: "UNDERWATER",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -21436,7 +19021,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "UNDERWATER",
-          "DATUM"
+          "DATUM",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21444,7 +19029,7 @@ export const app6b = {
         status: "*",
         functionid: "OXUD--",
         name: "DATUM",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21456,7 +19041,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "UNDERWATER",
-          "BRIEF CONTACT"
+          "BRIEF CONTACT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21464,7 +19049,7 @@ export const app6b = {
         status: "*",
         functionid: "OXUB--",
         name: "BRIEF CONTACT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21476,7 +19061,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "UNDERWATER",
-          "LOST CONTACT"
+          "LOST CONTACT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21484,7 +19069,7 @@ export const app6b = {
         status: "*",
         functionid: "OXUL--",
         name: "LOST CONTACT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21496,7 +19081,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "UNDERWATER",
-          "SINKER"
+          "SINKER",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21504,7 +19089,7 @@ export const app6b = {
         status: "*",
         functionid: "OXUS--",
         name: "SINKER",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -21515,7 +19100,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "WEAPON"
+          "WEAPON",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21523,7 +19108,7 @@ export const app6b = {
         status: "*",
         functionid: "OXW---",
         name: "WEAPON",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -21535,7 +19120,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "WEAPON",
-          "AIM POINT"
+          "AIM POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21543,7 +19128,7 @@ export const app6b = {
         status: "*",
         functionid: "OXWA--",
         name: "AIM POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21555,7 +19140,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "WEAPON",
-          "DROP POINT"
+          "DROP POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21563,7 +19148,7 @@ export const app6b = {
         status: "*",
         functionid: "OXWD--",
         name: "DROP POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21575,7 +19160,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "WEAPON",
-          "ENTRY POINT"
+          "ENTRY POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21583,7 +19168,7 @@ export const app6b = {
         status: "*",
         functionid: "OXWE--",
         name: "ENTRY POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21595,7 +19180,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "WEAPON",
-          "GROUND ZERO"
+          "GROUND ZERO",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21603,7 +19188,7 @@ export const app6b = {
         status: "*",
         functionid: "OXWG--",
         name: "GROUND ZERO",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21615,7 +19200,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "WEAPON",
-          "MSL DETECT POINT"
+          "MSL DETECT POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21623,7 +19208,7 @@ export const app6b = {
         status: "*",
         functionid: "OXWM--",
         name: "MSL DETECT POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21635,7 +19220,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "WEAPON",
-          "IMPACT POINT"
+          "IMPACT POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21643,7 +19228,7 @@ export const app6b = {
         status: "*",
         functionid: "OXWI--",
         name: "IMPACT POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21655,7 +19240,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "WEAPON",
-          "PREDICTED IMPACT POINT"
+          "PREDICTED IMPACT POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21663,7 +19248,7 @@ export const app6b = {
         status: "*",
         functionid: "OXWP--",
         name: "PREDICTED IMPACT POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21674,7 +19259,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "SONOBUOY"
+          "SONOBUOY",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21682,7 +19267,7 @@ export const app6b = {
         status: "*",
         functionid: "OXY---",
         name: "SONOBUOY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21694,7 +19279,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "PATTERN CENTRE"
+          "PATTERN CENTRE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21702,7 +19287,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYP--",
         name: "PATTERN CENTRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21714,7 +19299,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "DIFAR"
+          "DIFAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21722,7 +19307,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYD--",
         name: "DIFAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21734,7 +19319,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "LOFAR"
+          "LOFAR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21742,7 +19327,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYL--",
         name: "LOFAR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21754,7 +19339,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "CASS"
+          "CASS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21762,7 +19347,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYC--",
         name: "CASS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21774,7 +19359,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "DICASS"
+          "DICASS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21782,7 +19367,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYS--",
         name: "DICASS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21794,7 +19379,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "BT"
+          "BT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21802,7 +19387,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYB--",
         name: "BT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21814,7 +19399,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "ANM"
+          "ANM",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21822,7 +19407,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYA--",
         name: "ANM",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21834,7 +19419,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "VLAD"
+          "VLAD",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21842,7 +19427,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYV--",
         name: "VLAD",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21854,7 +19439,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "ATAC"
+          "ATAC",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21862,7 +19447,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYT--",
         name: "ATAC",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21874,7 +19459,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "RO"
+          "RO",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21882,7 +19467,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYR--",
         name: "RO",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21894,7 +19479,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SONOBUOY",
-          "KINGPIN"
+          "KINGPIN",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21902,7 +19487,7 @@ export const app6b = {
         status: "*",
         functionid: "OXYK--",
         name: "KINGPIN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21913,7 +19498,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "FORMATION"
+          "FORMATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21921,7 +19506,7 @@ export const app6b = {
         status: "*",
         functionid: "OXN---",
         name: "FORMATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21932,7 +19517,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "HARBOUR"
+          "HARBOUR",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21940,7 +19525,7 @@ export const app6b = {
         status: "*",
         functionid: "OXH---",
         name: "HARBOUR",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21952,7 +19537,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "HARBOUR",
-          "POINT Q"
+          "POINT Q",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21960,7 +19545,7 @@ export const app6b = {
         status: "*",
         functionid: "OXHQ--",
         name: "POINT Q",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21972,7 +19557,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "HARBOUR",
-          "POINT A"
+          "POINT A",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -21980,7 +19565,7 @@ export const app6b = {
         status: "*",
         functionid: "OXHA--",
         name: "POINT A",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -21992,7 +19577,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "HARBOUR",
-          "POINT Y"
+          "POINT Y",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22000,7 +19585,7 @@ export const app6b = {
         status: "*",
         functionid: "OXHY--",
         name: "POINT Y",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22012,7 +19597,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "HARBOUR",
-          "POINT X"
+          "POINT X",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22020,7 +19605,7 @@ export const app6b = {
         status: "*",
         functionid: "OXHX--",
         name: "POINT X",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22031,7 +19616,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "ROUTE"
+          "ROUTE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22039,7 +19624,7 @@ export const app6b = {
         status: "*",
         functionid: "OXR---",
         name: "ROUTE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22051,7 +19636,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "ROUTE",
-          "RENDEZVOUS"
+          "RENDEZVOUS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22059,7 +19644,7 @@ export const app6b = {
         status: "*",
         functionid: "OXRR--",
         name: "RENDEZVOUS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22071,7 +19656,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "ROUTE",
-          "DIVERSIONS"
+          "DIVERSIONS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22079,7 +19664,7 @@ export const app6b = {
         status: "*",
         functionid: "OXRD--",
         name: "DIVERSIONS",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22091,7 +19676,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "ROUTE",
-          "WAYPOINT"
+          "WAYPOINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22099,7 +19684,7 @@ export const app6b = {
         status: "*",
         functionid: "OXRW--",
         name: "WAYPOINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22111,7 +19696,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "ROUTE",
-          "PIM"
+          "PIM",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22119,7 +19704,7 @@ export const app6b = {
         status: "*",
         functionid: "OXRP--",
         name: "PIM",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22131,7 +19716,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "ROUTE",
-          "POINT R"
+          "POINT R",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22139,7 +19724,7 @@ export const app6b = {
         status: "*",
         functionid: "OXRT--",
         name: "POINT R",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22150,7 +19735,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "STATION"
+          "STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22158,7 +19743,7 @@ export const app6b = {
         status: "*",
         functionid: "OXST--",
         name: "STATION",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -22170,7 +19755,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "STATION",
-          "COMBATANT STATION"
+          "COMBATANT STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22178,7 +19763,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSTC-",
         name: "COMBATANT STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22191,7 +19776,7 @@ export const app6b = {
           "SPECIAL POINT",
           "STATION",
           "COMBATANT STATION",
-          "PICKET STATION"
+          "PICKET STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22199,7 +19784,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSTCP",
         name: "PICKET STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22212,7 +19797,7 @@ export const app6b = {
           "SPECIAL POINT",
           "STATION",
           "COMBATANT STATION",
-          "ASW SHIP STATION"
+          "ASW SHIP STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22220,7 +19805,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSTCA",
         name: "ASW SHIP STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22232,7 +19817,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "STATION",
-          "REPLENISHMENT AT SEA (RAS) STATION"
+          "REPLENISHMENT AT SEA (RAS) STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22240,7 +19825,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSTR-",
         name: "REPLENISHMENT AT SEA (RAS) STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22252,7 +19837,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "STATION",
-          "RESCUE STATION"
+          "RESCUE STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22260,7 +19845,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSTH-",
         name: "RESCUE STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22272,7 +19857,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "STATION",
-          "SUBMARINE STATION"
+          "SUBMARINE STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22280,7 +19865,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSTS-",
         name: "SUBMARINE STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22292,7 +19877,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "STATION",
-          "ASW SUBMARINE STATION"
+          "ASW SUBMARINE STATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22300,7 +19885,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSTSA",
         name: "ASW SUBMARINE STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22311,7 +19896,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "SEARCH"
+          "SEARCH",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22319,7 +19904,7 @@ export const app6b = {
         status: "*",
         functionid: "OXS---",
         name: "SEARCH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22331,7 +19916,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SEARCH",
-          "SEARCH AREA"
+          "SEARCH AREA",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22339,7 +19924,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSA--",
         name: "SEARCH AREA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22351,7 +19936,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SEARCH",
-          "DIP POSITION"
+          "DIP POSITION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22359,7 +19944,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSD--",
         name: "DIP POSITION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22371,7 +19956,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "SEARCH",
-          "SEARCH CENTRE"
+          "SEARCH CENTRE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22379,7 +19964,7 @@ export const app6b = {
         status: "*",
         functionid: "OXSC--",
         name: "SEARCH CENTRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22390,7 +19975,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
-          "AIR CONTROL"
+          "AIR CONTROL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22398,7 +19983,7 @@ export const app6b = {
         status: "*",
         functionid: "OXA---",
         name: "AIR CONTROL",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -22410,7 +19995,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "COMBAT AIR PATROL (CAP)"
+          "COMBAT AIR PATROL (CAP)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22418,7 +20003,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAC--",
         name: "COMBAT AIR PATROL (CAP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22430,7 +20015,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "AIRBORNE EARLY WARNING (AEW)"
+          "AIRBORNE EARLY WARNING (AEW)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22438,7 +20023,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAA--",
         name: "AIRBORNE EARLY WARNING (AEW)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22450,7 +20035,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "TACAN"
+          "TACAN",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22458,7 +20043,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAT--",
         name: "TACAN",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22470,7 +20055,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "TANKING"
+          "TANKING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22478,7 +20063,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAK--",
         name: "TANKING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22490,7 +20075,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "ANTISUBMARINE WARFARE FIXED WING"
+          "ANTISUBMARINE WARFARE FIXED WING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22498,7 +20083,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAF--",
         name: "ANTISUBMARINE WARFARE FIXED WING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22510,7 +20095,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "ANTISUBMARINE WARFARE ROTARY WING"
+          "ANTISUBMARINE WARFARE ROTARY WING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22518,7 +20103,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAH--",
         name: "ANTISUBMARINE WARFARE ROTARY WING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22530,7 +20115,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "TOMCAT"
+          "TOMCAT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22538,7 +20123,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAO--",
         name: "TOMCAT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22550,7 +20135,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "RESCUE"
+          "RESCUE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22558,7 +20143,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAR--",
         name: "RESCUE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22570,7 +20155,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "REPLENISH"
+          "REPLENISH",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22578,7 +20163,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAP--",
         name: "REPLENISH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22590,7 +20175,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "MARSHALL"
+          "MARSHALL",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22598,7 +20183,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAM--",
         name: "MARSHALL",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22610,7 +20195,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "STRIKE IP"
+          "STRIKE IP",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22618,7 +20203,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAS--",
         name: "STRIKE IP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22630,7 +20215,7 @@ export const app6b = {
           "COMMAND AND CONTROL",
           "SPECIAL POINT",
           "AIR CONTROL",
-          "CORRIDOR TAB"
+          "CORRIDOR TAB",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22638,7 +20223,7 @@ export const app6b = {
         status: "*",
         functionid: "OXAD--",
         name: "CORRIDOR TAB",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22648,7 +20233,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
-          "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT"
+          "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22656,7 +20241,7 @@ export const app6b = {
         status: "*",
         functionid: "OG----",
         name: "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22667,7 +20252,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "CHECKPOINT"
+          "CHECKPOINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22675,7 +20260,7 @@ export const app6b = {
         status: "*",
         functionid: "OGC---",
         name: "CHECKPOINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22686,7 +20271,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "CONTACT POINT"
+          "CONTACT POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22694,7 +20279,7 @@ export const app6b = {
         status: "*",
         functionid: "OGP---",
         name: "CONTACT POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22705,7 +20290,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "COORDINATION POINT"
+          "COORDINATION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22713,7 +20298,7 @@ export const app6b = {
         status: "*",
         functionid: "OGT---",
         name: "COORDINATION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22724,7 +20309,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "DECISION POINT"
+          "DECISION POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22732,7 +20317,7 @@ export const app6b = {
         status: "*",
         functionid: "OGD---",
         name: "DECISION POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22743,7 +20328,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "LINKUP POINT"
+          "LINKUP POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22751,7 +20336,7 @@ export const app6b = {
         status: "*",
         functionid: "OGL---",
         name: "LINKUP POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22762,7 +20347,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "PASSAGE POINT"
+          "PASSAGE POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22770,7 +20355,7 @@ export const app6b = {
         status: "*",
         functionid: "OGN---",
         name: "PASSAGE POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22781,7 +20366,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "RALLY POINT"
+          "RALLY POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22789,7 +20374,7 @@ export const app6b = {
         status: "*",
         functionid: "OGR---",
         name: "RALLY POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22800,7 +20385,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "RELEASE POINT"
+          "RELEASE POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22808,7 +20393,7 @@ export const app6b = {
         status: "*",
         functionid: "OGS---",
         name: "RELEASE POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22819,7 +20404,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "START POINT"
+          "START POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22827,7 +20412,7 @@ export const app6b = {
         status: "*",
         functionid: "OGI---",
         name: "START POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -22838,7 +20423,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "GENERAL OR UNSPECIFIED COMMAND AND CONTROL POINT",
-          "WAY POINT"
+          "WAY POINT",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22846,25 +20431,19 @@ export const app6b = {
         status: "*",
         functionid: "OGW---",
         name: "WAY POINT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.5.3",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "COMMAND AND CONTROL",
-          "LINE"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "COMMAND AND CONTROL", "LINE"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "OL----",
         name: "LINE",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -22875,7 +20454,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "LINE",
-          "LIGHT LINE"
+          "LIGHT LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22883,7 +20462,7 @@ export const app6b = {
         status: "*",
         functionid: "OLN---",
         name: "LIGHT LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -22894,7 +20473,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "LINE",
-          "PHASE LINE"
+          "PHASE LINE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22902,25 +20481,19 @@ export const app6b = {
         status: "*",
         functionid: "OLP---",
         name: "PHASE LINE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.2.5.4",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "CONTROL MEASURES",
-          "COMMAND AND CONTROL",
-          "AREA"
-        ],
+        names: [, "TACTICAL GRAPHICS", "CONTROL MEASURES", "COMMAND AND CONTROL", "AREA"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "C",
         status: "*",
         functionid: "OA----",
         name: "AREA",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -22931,7 +20504,7 @@ export const app6b = {
           "CONTROL MEASURES",
           "COMMAND AND CONTROL",
           "AREA",
-          "AIRFIELD ZONE"
+          "AIRFIELD ZONE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -22939,23 +20512,19 @@ export const app6b = {
         status: "*",
         functionid: "OAZ---",
         name: "AIRFIELD ZONE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
         hierarchy: "2.X.3",
-        names: [
-          ,
-          "TACTICAL GRAPHICS",
-          "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)"
-        ],
+        names: [, "TACTICAL GRAPHICS", "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)"],
         codingscheme: "G",
         affiliation: "*",
         battledimension: "O",
         status: "*",
         functionid: "------",
         name: "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "",
@@ -22964,7 +20533,7 @@ export const app6b = {
           ,
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
-          "VIOLENT ACTIVITIES (DEATH CAUSING)"
+          "VIOLENT ACTIVITIES (DEATH CAUSING)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -22972,7 +20541,7 @@ export const app6b = {
         status: "*",
         functionid: "V-----",
         name: "VIOLENT ACTIVITIES (DEATH CAUSING)",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -22982,7 +20551,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "ARSON/FIRE"
+          "ARSON/FIRE",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -22990,7 +20559,7 @@ export const app6b = {
         status: "*",
         functionid: "VA----",
         name: "ARSON/FIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23000,7 +20569,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "ARTILLERY/ARTILLERY FIRE"
+          "ARTILLERY/ARTILLERY FIRE",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23008,7 +20577,7 @@ export const app6b = {
         status: "*",
         functionid: "VR----",
         name: "ARTILLERY/ARTILLERY FIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23018,7 +20587,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "ASSASSINATION/MURDER/EXECUTION"
+          "ASSASSINATION/MURDER/EXECUTION",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23026,7 +20595,7 @@ export const app6b = {
         status: "*",
         functionid: "VE----",
         name: "ASSASSINATION/MURDER/EXECUTION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23036,7 +20605,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "BOMB/BOMBING"
+          "BOMB/BOMBING",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23044,7 +20613,7 @@ export const app6b = {
         status: "*",
         functionid: "VB----",
         name: "BOMB/BOMBING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23054,7 +20623,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "BOOBYTRAP"
+          "BOOBYTRAP",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23062,7 +20631,7 @@ export const app6b = {
         status: "*",
         functionid: "VY----",
         name: "BOOBYTRAP",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23072,7 +20641,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "DRIVE-BY SHOOTING"
+          "DRIVE-BY SHOOTING",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23080,7 +20649,7 @@ export const app6b = {
         status: "*",
         functionid: "VD----",
         name: "DRIVE-BY SHOOTING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23090,7 +20659,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "INDIRECT FIRE (UNSPECIFIED TYPE)"
+          "INDIRECT FIRE (UNSPECIFIED TYPE)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23098,7 +20667,7 @@ export const app6b = {
         status: "*",
         functionid: "VI----",
         name: "INDIRECT FIRE (UNSPECIFIED TYPE)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23108,7 +20677,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "MORTAR/MORTAR FIRE"
+          "MORTAR/MORTAR FIRE",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23116,7 +20685,7 @@ export const app6b = {
         status: "*",
         functionid: "VM----",
         name: "MORTAR/MORTAR FIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23126,7 +20695,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "ROCKET/ROCKET FIRE"
+          "ROCKET/ROCKET FIRE",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23134,7 +20703,7 @@ export const app6b = {
         status: "*",
         functionid: "VK----",
         name: "ROCKET/ROCKET FIRE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23144,7 +20713,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "SNIPING"
+          "SNIPING",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23152,7 +20721,7 @@ export const app6b = {
         status: "*",
         functionid: "VS----",
         name: "SNIPING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23162,7 +20731,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "POISONING"
+          "POISONING",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23170,7 +20739,7 @@ export const app6b = {
         status: "*",
         functionid: "VP----",
         name: "POISONING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23180,7 +20749,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "AMBUSH"
+          "AMBUSH",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23188,7 +20757,7 @@ export const app6b = {
         status: "*",
         functionid: "VU----",
         name: "AMBUSH",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23198,7 +20767,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "AMMUNITION CACHE"
+          "AMMUNITION CACHE",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23206,7 +20775,7 @@ export const app6b = {
         status: "*",
         functionid: "VC----",
         name: "AMMUNITION CACHE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23216,7 +20785,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "HELICOPTER (CIVILIAN BEING USED BY HOSTILE OR INSURGENTS)"
+          "HELICOPTER (CIVILIAN BEING USED BY HOSTILE OR INSURGENTS)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23224,7 +20793,7 @@ export const app6b = {
         status: "*",
         functionid: "VH----",
         name: "HELICOPTER (CIVILIAN BEING USED BY HOSTILE OR INSURGENTS)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23234,7 +20803,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "HOSTILE OR INSURGENT MOTORIZED INFANTRY"
+          "HOSTILE OR INSURGENT MOTORIZED INFANTRY",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23242,7 +20811,7 @@ export const app6b = {
         status: "*",
         functionid: "VF----",
         name: "HOSTILE OR INSURGENT MOTORIZED INFANTRY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23252,7 +20821,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "HOSTILE OR INSURGENT INFANTRY"
+          "HOSTILE OR INSURGENT INFANTRY",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23260,7 +20829,7 @@ export const app6b = {
         status: "*",
         functionid: "VO----",
         name: "HOSTILE OR INSURGENT INFANTRY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23270,7 +20839,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "RECONNAISSANCE/SURVEILLANCE"
+          "RECONNAISSANCE/SURVEILLANCE",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23278,7 +20847,7 @@ export const app6b = {
         status: "*",
         functionid: "VL----",
         name: "RECONNAISSANCE/SURVEILLANCE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23288,7 +20857,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "SIGNAL/RADIO STATION"
+          "SIGNAL/RADIO STATION",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23296,7 +20865,7 @@ export const app6b = {
         status: "*",
         functionid: "VX----",
         name: "SIGNAL/RADIO STATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23306,7 +20875,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "VIOLENT ACTIVITIES (DEATH CAUSING)",
-          "SUPPLY CACHE"
+          "SUPPLY CACHE",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23314,7 +20883,7 @@ export const app6b = {
         status: "*",
         functionid: "VZ----",
         name: "SUPPLY CACHE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -23323,7 +20892,7 @@ export const app6b = {
           ,
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
-          "LOCATIONS"
+          "LOCATIONS",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23331,7 +20900,7 @@ export const app6b = {
         status: "*",
         functionid: "L-----",
         name: "LOCATIONS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -23341,7 +20910,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "LOCATIONS",
-          "BLACK LIST LOCATION"
+          "BLACK LIST LOCATION",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23349,7 +20918,7 @@ export const app6b = {
         status: "*",
         functionid: "LB----",
         name: "BLACK LIST LOCATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23359,7 +20928,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "LOCATIONS",
-          "GRAY LIST LOCATION"
+          "GRAY LIST LOCATION",
         ],
         codingscheme: "G",
         affiliation: "U",
@@ -23367,7 +20936,7 @@ export const app6b = {
         status: "*",
         functionid: "LG----",
         name: "GRAY LIST LOCATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23377,7 +20946,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "LOCATIONS",
-          "WHITE LIST LOCATION"
+          "WHITE LIST LOCATION",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -23385,7 +20954,7 @@ export const app6b = {
         status: "*",
         functionid: "LW----",
         name: "WHITE LIST LOCATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -23394,7 +20963,7 @@ export const app6b = {
           ,
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
-          "OPERATIONS"
+          "OPERATIONS",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23402,7 +20971,7 @@ export const app6b = {
         status: "*",
         functionid: "P-----",
         name: "OPERATIONS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -23412,7 +20981,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "ROAD BLOCK"
+          "ROAD BLOCK",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23420,7 +20989,7 @@ export const app6b = {
         status: "*",
         functionid: "PR----",
         name: "ROAD BLOCK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23431,7 +21000,7 @@ export const app6b = {
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
           "ROAD BLOCK",
-          "ROAD BLOCK (UNDER CONSTRUCTION)"
+          "ROAD BLOCK (UNDER CONSTRUCTION)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23439,7 +21008,7 @@ export const app6b = {
         status: "*",
         functionid: "PRB---",
         name: "ROAD BLOCK (UNDER CONSTRUCTION)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23449,7 +21018,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "PATROLLING"
+          "PATROLLING",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23457,7 +21026,7 @@ export const app6b = {
         status: "*",
         functionid: "PT----",
         name: "PATROLLING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23467,7 +21036,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "RECRUITMENT (WILLING)"
+          "RECRUITMENT (WILLING)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23475,7 +21044,7 @@ export const app6b = {
         status: "*",
         functionid: "PC----",
         name: "RECRUITMENT (WILLING)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23486,7 +21055,7 @@ export const app6b = {
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
           "RECRUITMENT (WILLING)",
-          "RECRUITMENT (COERCED/IMPRESSED)"
+          "RECRUITMENT (COERCED/IMPRESSED)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23494,7 +21063,7 @@ export const app6b = {
         status: "*",
         functionid: "PCU---",
         name: "RECRUITMENT (COERCED/IMPRESSED)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23504,7 +21073,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "DEMONSTRATION"
+          "DEMONSTRATION",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23512,7 +21081,7 @@ export const app6b = {
         status: "*",
         functionid: "PD----",
         name: "DEMONSTRATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23522,7 +21091,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "MINELAYING"
+          "MINELAYING",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23530,7 +21099,7 @@ export const app6b = {
         status: "*",
         functionid: "PM----",
         name: "MINELAYING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23540,7 +21109,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "PSYCHOLOGICAL OPERATIONS (PSYOP)"
+          "PSYCHOLOGICAL OPERATIONS (PSYOP)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23548,7 +21117,7 @@ export const app6b = {
         status: "*",
         functionid: "PH----",
         name: "PSYCHOLOGICAL OPERATIONS (PSYOP)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23559,7 +21128,7 @@ export const app6b = {
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
           "PSYCHOLOGICAL OPERATIONS (PSYOP)",
-          "PSYOP (TV AND RADIO PROPAGANDA)"
+          "PSYOP (TV AND RADIO PROPAGANDA)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23567,7 +21136,7 @@ export const app6b = {
         status: "*",
         functionid: "PHY---",
         name: "PSYOP (TV AND RADIO PROPAGANDA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23578,7 +21147,7 @@ export const app6b = {
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
           "PSYCHOLOGICAL OPERATIONS (PSYOP)",
-          "PSYOP (WRITTEN PROPAGANDA)"
+          "PSYOP (WRITTEN PROPAGANDA)",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23586,7 +21155,7 @@ export const app6b = {
         status: "*",
         functionid: "PHW---",
         name: "PSYOP (WRITTEN PROPAGANDA)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23597,7 +21166,7 @@ export const app6b = {
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
           "PSYCHOLOGICAL OPERATIONS (PSYOP)",
-          "WRITTEN PROPAGANDA"
+          "WRITTEN PROPAGANDA",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -23605,7 +21174,7 @@ export const app6b = {
         status: "*",
         functionid: "PHG---",
         name: "WRITTEN PROPAGANDA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23616,7 +21185,7 @@ export const app6b = {
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
           "PSYCHOLOGICAL OPERATIONS (PSYOP)",
-          "HOUSE-TO-HOUSE PROPAGANDA"
+          "HOUSE-TO-HOUSE PROPAGANDA",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -23624,7 +21193,7 @@ export const app6b = {
         status: "*",
         functionid: "PHT---",
         name: "HOUSE-TO-HOUSE PROPAGANDA",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23634,7 +21203,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "FORAGING/SEARCHING"
+          "FORAGING/SEARCHING",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23642,7 +21211,7 @@ export const app6b = {
         status: "*",
         functionid: "PG----",
         name: "FORAGING/SEARCHING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23652,7 +21221,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "SPY"
+          "SPY",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23660,7 +21229,7 @@ export const app6b = {
         status: "*",
         functionid: "PS----",
         name: "SPY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23670,7 +21239,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "FOOD DISTRIBUTION"
+          "FOOD DISTRIBUTION",
         ],
         codingscheme: "G",
         affiliation: "N",
@@ -23678,7 +21247,7 @@ export const app6b = {
         status: "*",
         functionid: "PF----",
         name: "FOOD DISTRIBUTION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23688,7 +21257,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "MEDICAL TREATMENT FACILITY"
+          "MEDICAL TREATMENT FACILITY",
         ],
         codingscheme: "G",
         affiliation: "N",
@@ -23696,7 +21265,7 @@ export const app6b = {
         status: "*",
         functionid: "PI----",
         name: "MEDICAL TREATMENT FACILITY",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23706,7 +21275,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "ELECTRONIC WARFARE INTERCEPT"
+          "ELECTRONIC WARFARE INTERCEPT",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23714,7 +21283,7 @@ export const app6b = {
         status: "*",
         functionid: "PE----",
         name: "ELECTRONIC WARFARE INTERCEPT",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23724,7 +21293,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "EXTORTION"
+          "EXTORTION",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23732,7 +21301,7 @@ export const app6b = {
         status: "*",
         functionid: "PX----",
         name: "EXTORTION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -23742,7 +21311,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "HIJACKING"
+          "HIJACKING",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23750,7 +21319,7 @@ export const app6b = {
         status: "*",
         functionid: "PJ----",
         name: "HIJACKING",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -23761,7 +21330,7 @@ export const app6b = {
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
           "HIJACKING",
-          "HIJACKING (VEHICLE)"
+          "HIJACKING (VEHICLE)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23769,7 +21338,7 @@ export const app6b = {
         status: "*",
         functionid: "PJV---",
         name: "HIJACKING (VEHICLE)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23780,7 +21349,7 @@ export const app6b = {
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
           "HIJACKING",
-          "HIJACKING (AIRPLANE)"
+          "HIJACKING (AIRPLANE)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23788,7 +21357,7 @@ export const app6b = {
         status: "*",
         functionid: "PJA---",
         name: "HIJACKING (AIRPLANE)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23799,7 +21368,7 @@ export const app6b = {
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
           "HIJACKING",
-          "HIJACKING (BOAT)"
+          "HIJACKING (BOAT)",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23807,7 +21376,7 @@ export const app6b = {
         status: "*",
         functionid: "PJB---",
         name: "HIJACKING (BOAT)",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23817,7 +21386,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "KIDNAPPING"
+          "KIDNAPPING",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23825,7 +21394,7 @@ export const app6b = {
         status: "*",
         functionid: "PK----",
         name: "KIDNAPPING",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23835,7 +21404,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "ARREST"
+          "ARREST",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -23843,7 +21412,7 @@ export const app6b = {
         status: "*",
         functionid: "PA----",
         name: "ARREST",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23853,7 +21422,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "OPERATIONS",
-          "DRUG OPERATION"
+          "DRUG OPERATION",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23861,7 +21430,7 @@ export const app6b = {
         status: "*",
         functionid: "PO----",
         name: "DRUG OPERATION",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "",
@@ -23870,7 +21439,7 @@ export const app6b = {
           ,
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
-          "ITEMS"
+          "ITEMS",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23878,7 +21447,7 @@ export const app6b = {
         status: "*",
         functionid: "I-----",
         name: "ITEMS",
-        remarks: "N/A"
+        remarks: "N/A",
       },
       {
         geometry: "POINT",
@@ -23888,7 +21457,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "ITEMS",
-          "REFUGEES"
+          "REFUGEES",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23896,7 +21465,7 @@ export const app6b = {
         status: "*",
         functionid: "IR----",
         name: "REFUGEES",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23906,7 +21475,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "ITEMS",
-          "SAFE HOUSE"
+          "SAFE HOUSE",
         ],
         codingscheme: "G",
         affiliation: "*",
@@ -23914,7 +21483,7 @@ export const app6b = {
         status: "*",
         functionid: "IS----",
         name: "SAFE HOUSE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23924,7 +21493,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "ITEMS",
-          "GRAFFITI"
+          "GRAFFITI",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23932,7 +21501,7 @@ export const app6b = {
         status: "*",
         functionid: "IG----",
         name: "GRAFFITI",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23942,7 +21511,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "ITEMS",
-          "VANDALISM/RAPE/LOOT/RANSACK/PLUNDER/SACK"
+          "VANDALISM/RAPE/LOOT/RANSACK/PLUNDER/SACK",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23950,7 +21519,7 @@ export const app6b = {
         status: "*",
         functionid: "IV----",
         name: "VANDALISM/RAPE/LOOT/RANSACK/PLUNDER/SACK",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23960,7 +21529,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "ITEMS",
-          "KNOWN INSURGENT VEHICLE"
+          "KNOWN INSURGENT VEHICLE",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23968,7 +21537,7 @@ export const app6b = {
         status: "*",
         functionid: "IK----",
         name: "KNOWN INSURGENT VEHICLE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23978,7 +21547,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "ITEMS",
-          "DRUG VEHICLE"
+          "DRUG VEHICLE",
         ],
         codingscheme: "G",
         affiliation: "H",
@@ -23986,7 +21555,7 @@ export const app6b = {
         status: "*",
         functionid: "ID----",
         name: "DRUG VEHICLE",
-        remarks: ""
+        remarks: "",
       },
       {
         geometry: "POINT",
@@ -23996,7 +21565,7 @@ export const app6b = {
           "TACTICAL GRAPHICS",
           "NON ARTICLE 5 CRISIS RESPONSE OPERATIONS (NA5CRO)",
           "ITEMS",
-          "INTERNAL SECURITY FORCE"
+          "INTERNAL SECURITY FORCE",
         ],
         codingscheme: "G",
         affiliation: "F",
@@ -24004,8 +21573,8 @@ export const app6b = {
         status: "*",
         functionid: "IF----",
         name: "INTERNAL SECURITY FORCE",
-        remarks: ""
-      }
-    ]
-  }
+        remarks: "",
+      },
+    ],
+  },
 };

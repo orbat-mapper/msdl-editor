@@ -28,7 +28,6 @@ onBeforeUnmount(() => {
 });
 </script>
 
-
 <template>
   <div v-show="isActive" class="mt-6" :class="tabs.tabClass">
     <slot :is-active="isActive"></slot>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, useId} from "vue";
+import { computed, useId } from "vue";
 import {
   Select,
   SelectContent,
@@ -25,7 +25,6 @@ const selectedValue = defineModel<string | null>({ default: "A" });
 const selected = computed(() => {
   return (props.items || []).find((i) => i.code === selectedValue.value);
 });
-
 </script>
 <template>
   <div>
@@ -33,7 +32,7 @@ const selected = computed(() => {
       <Label :for="controlId">{{ label }}</Label>
       <SelectTrigger class="mt-2 w-full" :id="controlId">
         <SelectValue>
-          <template v-if="selected" 
+          <template v-if="selected"
             ><MilSymbol
               class="size-8"
               :sidc="selected?.sidc || ''"

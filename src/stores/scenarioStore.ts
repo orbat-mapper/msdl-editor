@@ -266,17 +266,14 @@ function updateItemModel(
   triggerRef(msdl);
 }
 
-function updateSymbolIdentifier(
-  objectHandle: string,
-  sidc: string,
-){
+function updateSymbolIdentifier(objectHandle: string, sidc: string) {
   if (!msdl.value) return;
   const item = msdl.value.getUnitOrEquipmentById(objectHandle);
   if (!item) {
-  console.warn(`Unit/EquipmentItem with object handle ${objectHandle} not found.`);
-  return;
+    console.warn(`Unit/EquipmentItem with object handle ${objectHandle} not found.`);
+    return;
   }
-  item.symbolIdentifier = sidc
+  item.symbolIdentifier = sidc;
   triggerRef(msdl);
 }
 
