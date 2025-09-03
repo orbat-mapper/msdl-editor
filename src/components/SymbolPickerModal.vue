@@ -6,7 +6,7 @@ import { useDebounce, useVModel } from "@vueuse/core";
 import { Button } from "@/components/ui/button";
 import MilSymbol from "@/components/MilSymbol.vue";
 import { useSymbolItems } from "@/composables/symbolDataB";
-import { computed, ref, watchEffect } from "vue";
+import { computed, ref, watchEffect, triggerRef } from "vue";
 import { Check } from "lucide-vue-next";
 import { SidcB } from "@/symbology/sidc";
 import TabItem from "./TabItem.vue";
@@ -28,6 +28,7 @@ import { useSymbologySearch } from "@/composables/symbolSearchingB";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import { isUnitOrEquipment } from "@/utils.ts";
 import EditFieldToggle from "./EditFieldToggle.vue";
+import { useScenarioStore } from "@/stores/scenarioStore.ts";
 
 interface Props {
   isVisible?: boolean;
@@ -77,6 +78,7 @@ const dimension = ref();
 const groupedHits = ref<ReturnType<typeof search>["groups"]>();
 const { search } = useSymbologySearch(affiliationValue);
 const selectStore = useSelectStore();
+const { msdl } = useScenarioStore();
 
 const emit = defineEmits(["update:isVisible", "update:sidc", "cancel"]);
 
@@ -167,6 +169,7 @@ function updateModalSymbol(sidc: string): void {
 
 function updateName(hit: { newValue: string }) {
   selectStore.updateName(hit.newValue);
+  triggerRef(msdl) // Required to update map label
 }
 
 // Update the hitcount and groupedhits if the search query changes
