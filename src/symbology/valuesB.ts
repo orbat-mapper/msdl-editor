@@ -79,7 +79,7 @@ export const installationModifiersB: SymbolValue[] = [
 
 // N
 export const towedArrayValuesB: SymbolValue[] = [
-  { code: "--", text: "Unspecified" },
-  { code: "NS", text: "Short towed array" },
-  { code: "NL", text: "Long towed array" },
+  { code: "-", text: "Unspecified" },
+  { code: "S", text: "Short towed array" },
+  { code: "L", text: "Long towed array" },
 ];
