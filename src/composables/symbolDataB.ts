@@ -92,11 +92,7 @@ export function useSymbolItems(sidc: Ref<string>) {
 
   const statusItems = computed((): SymbolItem[] => {
     if (!symbology.value) return [];
-
-    let modifier = '-'
-    if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'I'){
-      modifier = 'H'
-    }
+    let modifier = isGroundInstallation() ? 'H' : '-'
 
     return statusValuesB.map(({ code, text }) => {
       return {
@@ -110,22 +106,22 @@ export function useSymbolItems(sidc: Ref<string>) {
     let values: SymbolValue[];
     if (!symbology.value) return [];
 
-    if (battleDimensionValue.value == 'G' && (functionIdValue.value[0] == 'U' || functionIdValue.value[0] == '-')){   // Ground units
+    if (isGroundUnit()){
       values = echelonValuesB;
-    } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'E') {                                // Ground equipment
+    } else if (isGroundEquipment()){
       values = mobilityValuesB;
-    } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'I') {                                // Ground Installations
+    } else if (isGroundInstallation()) {
       values = installationModifiersB;
-    } else if (battleDimensionValue.value == 'S' || battleDimensionValue.value == 'U') {                              // Seasurface or Subsurface
+    } else if (isSeaSurface() || isSeaSubsurface()) {
       values = towedArrayValuesB;
     } else {
-      values = [{ code: "--", text: "Unspecified" }];
+      values = [{ code: "-", text: "Unspecified" }];
     } 
 
     return values.map(({ code, text }) => ({
       code,
       text,
-      sidc: codingSchemeValue.value + affiliationValue.value + battleDimensionValue.value + statusValue.value + functionIdValue.value + code + '---',
+      sidc: codingSchemeValue.value + affiliationValue.value + battleDimensionValue.value + statusValue.value + functionIdValue.value + modifier1Value.value + code + '---',
     }));
   });
 
@@ -133,11 +129,13 @@ export function useSymbolItems(sidc: Ref<string>) {
     let values: SymbolValue[];
     if (!symbology.value) return [];
     
-    if ((battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'E') || 
-    (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'I') ||
-    battleDimensionValue.value == 'S' || 
-    battleDimensionValue.value == 'U' ||
-    codingSchemeValue.value == "G") {
+    if (
+      isGroundEquipment() || 
+      isGroundInstallation() ||
+      isSeaSurface() || 
+      isSeaSubsurface() ||
+      isGraphics()
+    ) {
       values = [{ code: modifier1Value.value, text: "Not applicable" }];
     } else {
       values = HQTFDummyValuesB
@@ -165,9 +163,9 @@ export function useSymbolItems(sidc: Ref<string>) {
       if (!(node.codingscheme === codingSchemeValue.value)) continue
 
       // Filter based on Ground unit logic
-      if (battleDimensionValue.value === "G" && functionIdValue.value[0] === "U" && node.functionid[0] !== "U") continue
-      if (battleDimensionValue.value === "G" && functionIdValue.value[0] === "E" && node.functionid[0] !== "E") continue
-      if (battleDimensionValue.value === "G" && functionIdValue.value[0] === "I" && node.functionid[0] !== "I") continue
+      if (isGroundUnit() && node.functionid[0] !== "U") continue
+      if (isGroundEquipment() && node.functionid[0] !== "E") continue
+      if (isGroundInstallation() && node.functionid[0] !== "I") continue
       
       // Filter doublicate keys
       if (addedNodes.has(node.functionid)) continue;
@@ -199,6 +197,48 @@ export function useSymbolItems(sidc: Ref<string>) {
     return result;
   });
 
+  function isGroundUnit() {
+    if (battleDimensionValue.value == 'G' && (functionIdValue.value[0] == 'U' || functionIdValue.value[0] == '-')){
+      return true
+    }
+    return false
+  }
+
+  function isGroundEquipment() {
+    if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'E') {
+      return true
+    }
+    return false
+  }
+
+  function isGroundInstallation() {
+    if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'I') {
+      return true
+    }
+    return false
+  }
+
+  function isSeaSurface() {
+    if (battleDimensionValue.value == 'S') {
+      return true
+    }
+    return false
+  }
+
+  function isSeaSubsurface() {
+    if (battleDimensionValue.value == 'U') {
+      return true
+    }
+    return false
+  }
+
+  function isGraphics() {
+    if (codingSchemeValue.value == "G") {
+      return true
+    }
+    return false
+  }
+
   return {
     affiliationValue,
     codingSchemeValue,
@@ -217,6 +257,11 @@ export function useSymbolItems(sidc: Ref<string>) {
     csidc,
     isLoaded,
     loadData,
+    isGroundUnit,
+    isGroundEquipment,
+    isGroundInstallation,
+    isSeaSurface,
+    isSeaSubsurface
   };
 }
 

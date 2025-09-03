@@ -36,44 +36,48 @@ export const HQTFDummyValuesB: SymbolValue[] = [
 ];
 
 // Symbol modifiers (position 11-12)
+// -
 export const echelonValuesB: SymbolValue[] = [
-  { code: "--", text: "Unspecified" },
-  { code: "-A", text: "Team/Crew" },
-  { code: "-B", text: "Squad" },
-  { code: "-C", text: "Section" },
-  { code: "-D", text: "Platoon/Detachment" },
-  { code: "-E", text: "Company/Battery/Troop" },
-  { code: "-F", text: "Battalion/Squadron" },
-  { code: "-G", text: "Regiment/Group" },
-  { code: "-H", text: "Brigade" },
-  { code: "-I", text: "Division" },
-  { code: "-J", text: "Corps/MEF" },
-  { code: "-K", text: "Army" },
-  { code: "-L", text: "Army Group/Front" },
-  { code: "-M", text: "Region/Theater" },
-  { code: "-N", text: "Command" },
+  { code: "-", text: "Unspecified" },
+  { code: "A", text: "Team/Crew" },
+  { code: "B", text: "Squad" },
+  { code: "C", text: "Section" },
+  { code: "D", text: "Platoon/Detachment" },
+  { code: "E", text: "Company/Battery/Troop" },
+  { code: "F", text: "Battalion/Squadron" },
+  { code: "G", text: "Regiment/Group" },
+  { code: "H", text: "Brigade" },
+  { code: "I", text: "Division" },
+  { code: "J", text: "Corps/MEF" },
+  { code: "K", text: "Army" },
+  { code: "L", text: "Army Group/Front" },
+  { code: "M", text: "Region/Theater" },
+  { code: "N", text: "Command" },
 ];
 
+// M
 export const mobilityValuesB: SymbolValue[] = [
-  { code: "--", text: "Unspecified" },
-  { code: "MO", text: "Wheeled limited cross country" },
-  { code: "MP", text: "Wheeled cross country" },
-  { code: "MQ", text: "Tracked" },
-  { code: "MR", text: "Wheeled and tracked combination" },
-  { code: "MS", text: "Towed" },
-  { code: "MT", text: "Railway" },
-  { code: "MU", text: "Over snow (prime mover)" },
-  { code: "MV", text: "Sled" },
-  { code: "MW", text: "Pack animals" },
-  { code: "MX", text: "Barge" },
+  { code: "-", text: "Unspecified" },
+  { code: "O", text: "Wheeled limited cross country" },
+  { code: "P", text: "Wheeled cross country" },
+  { code: "Q", text: "Tracked" },
+  { code: "R", text: "Wheeled and tracked combination" },
+  { code: "S", text: "Towed" },
+  { code: "T", text: "Railway" },
+  { code: "U", text: "Over snow (prime mover)" },
+  { code: "V", text: "Sled" },
+  { code: "W", text: "Pack animals" },
+  { code: "X", text: "Barge" },
   { code: "MY", text: "Amphibious" },
 ];
 
+// H
 export const installationModifiersB: SymbolValue[] = [
-  { code: "H-", text: "Installation" },
-  { code: "HB", text: "Feint dummy installation" },
+  { code: "-", text: "Installation" },
+  { code: "B", text: "Feint dummy installation" },
 ];
 
+// N
 export const towedArrayValuesB: SymbolValue[] = [
   { code: "--", text: "Unspecified" },
   { code: "NS", text: "Short towed array" },

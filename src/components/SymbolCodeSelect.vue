@@ -67,7 +67,7 @@ const selected = computed(() => {
                 outlineWidth: 8,
               }"
             />
-            {{ item.text }} {{ item.sidc }}
+            {{ item.text }}
           </SelectItem>
         </SelectGroup>
       </SelectContent>

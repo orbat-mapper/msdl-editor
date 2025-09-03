@@ -63,6 +63,11 @@ const {
   echelonItems,
   mainIconItems,
   loadData,
+  isGroundUnit,
+  isGroundEquipment,
+  isGroundInstallation,
+  isSeaSurface,
+  isSeaSubsurface
 } = useSymbolItems(
   computed(() => props.sidc || ""),
 );
@@ -75,7 +80,6 @@ const searchQuery = ref("");
 const debouncedQuery = useDebounce(searchQuery, 100);
 const searchSelection = ref<{ sidc: string; }>();
 const dimension = ref();
-const modifier = ref(modifier1Value.value + modifier2Value.value);
 const groupedHits = ref<ReturnType<typeof search>["groups"]>();
 const { search } = useSymbologySearch(affiliationValue);
 const selectStore = useSelectStore();
@@ -100,36 +104,22 @@ const cleanObject = (obj: any) => {
   return obj;
 };
 
-function initDimension(){
+function createDimensionCode(){
 
   let functionType = '*'
-  let modifierInit = '*'
+  let modifier = '*'
   if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'U'){
     functionType = 'U'
   } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'E') {
     functionType = 'E'
   } else if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'I') {
     functionType = 'I'
-    modifierInit = 'H'
+    modifier = 'H'
   } 
 
-  dimension.value = codingSchemeValue.value + '*' + battleDimensionValue.value + '*' + functionType + '*****' + modifierInit
-
-  console.log('dim init')
-  console.log(modifier.value)
+  dimension.value = codingSchemeValue.value + '*' + battleDimensionValue.value + '*' + functionType + '*****' + modifier
 }
-initDimension();
-
-function initModifier(){
-  if (modifier2Value.value == '-'){
-    modifier.value = '--'
-  }
-
-  if (battleDimensionValue.value == 'G' && functionIdValue.value[0] == 'U'){
-    modifier.value = '-' + modifier2Value.value 
-  }
-}
-initModifier()
+createDimensionCode();
 
 // Handle correct functionality of other dropdown fields if dimension changes
 function setDimension() : void {
@@ -138,10 +128,19 @@ function setDimension() : void {
   codingSchemeValue.value = code[0]
   battleDimensionValue.value = code[2]
   functionIdValue.value = code.slice(4,10)
-  modifier1Value.value = code[10]
   modifier2Value.value = '-'
 
-  modifier.value = modifier1Value.value + modifier2Value.value
+  if (isGroundUnit()){
+    modifier1Value.value = '-'
+  } else if (isGroundEquipment()){
+    modifier1Value.value = 'M'
+  } else if (isGroundInstallation()){
+    modifier1Value.value = 'H'
+  } else if (isSeaSurface() || isSeaSubsurface()){
+    modifier1Value.value = 'N'
+  } else {
+    modifier1Value.value = '-'
+  }
 }
 
 function onSelect(hit : {sidc : string}) {
@@ -164,8 +163,7 @@ function updateModalSymbol(sidc : string) : void {
   echelonValue.value = newSidc.echelon
   functionIdValue.value = newSidc.functionId
 
-  initDimension()
-  modifier.value = modifier1Value.value + modifier2Value.value
+  createDimensionCode()
 }
 
 function updateName(hit : {newValue : string}) {
@@ -179,10 +177,6 @@ watchEffect(() => {
   groupedHits.value = groups;
 });
 
-watch(modifier, (newVal: string) => {
-  modifier1Value.value = newVal[0]
-  modifier2Value.value = newVal[1]
-});
 </script>
 
 <template>
@@ -292,7 +286,7 @@ watch(modifier, (newVal: string) => {
             />
 
             <SymbolCodeSelect
-              v-model="modifier"
+              v-model="modifier2Value"
               label="Echelon / Mobility / Towed array"
               :items="echelonItems"
             />
