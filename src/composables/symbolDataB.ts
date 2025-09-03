@@ -2,7 +2,8 @@ import { computed, ref, type Ref, shallowRef, watch } from "vue";
 import type { SymbolItem, SymbolValue, NormalizedNode } from "@/symbology/types";
 import {
   statusValuesB,
-  dimensionValuesB,
+  dimensionValuesAPP6B,
+  dimensionValues2525B,
   HQTFDummyValuesB,
   echelonValuesB,
   mobilityValuesB,
@@ -69,7 +70,18 @@ export function useSymbolItems(sidc: Ref<string>) {
 
   const battleDimensionItems = computed((): SymbolItem[] => {
     if (!symbology.value) return [];
-    return dimensionValuesB.map(({ code, text }) => {
+    let values: SymbolValue[];
+
+    // Get symbology standard
+    if (currentSymbologyStandard.value == "NATO_APP") {
+      values = dimensionValuesAPP6B;
+    } else if (currentSymbologyStandard.value == "MILSTD_2525B") {
+      values = dimensionValues2525B;
+    } else {
+      values = [];
+    }
+
+    return values.map(({ code, text }) => {
       return {
         code,
         text,

@@ -2,7 +2,7 @@
 
 import { type SymbolValue } from "@/symbology/types";
 
-export const dimensionValuesB: SymbolValue[] = [
+export const dimensionValuesAPP6B: SymbolValue[] = [
   { code: "S*P********", text: "Space" },
   { code: "S*A********", text: "Air" },
   { code: "S*G*U******", text: "Ground unit" },
@@ -13,6 +13,30 @@ export const dimensionValuesB: SymbolValue[] = [
   { code: "G*C********", text: "Tactical Graphics - Control Measures" },
   { code: "G*T********", text: "Tactical Graphics - Tasks" },
   { code: "G*O********", text: "Tactical Graphics - Other" },
+];
+
+export const dimensionValues2525B: SymbolValue[] = [
+  { code: "S*P********", text: "Space" },
+  { code: "S*A********", text: "Air" },
+  { code: "S*G*U******", text: "Ground unit" },
+  { code: "S*G*E******", text: "Ground equipment" },
+  { code: "S*G*I*****H", text: "Ground installations" },
+  { code: "S*S********", text: "Sea surface" },
+  { code: "S*U********", text: "Sea subsurface" },
+  { code: "G*S********", text: "Tactical Graphics - Combat Service Support" },
+  { code: "G*F********", text: "Tactical Graphics - Fire Support" },
+  { code: "G*M********", text: "Tactical Graphics - Mobility / Survivability" },
+  { code: "G*T********", text: "Tactical Graphics - Tasks" },
+  { code: "G*O********", text: "Tactical Graphics - Other" },
+  { code: "I*P********", text: "Signals Intelligence - Space Track" },
+  { code: "I*A********", text: "Signals Intelligence - Air Track" },
+  { code: "I*G********", text: "Signals Intelligence - Ground Track" },
+  { code: "I*S********", text: "Signals Intelligence - Sea surface Track" },
+  { code: "I*U********", text: "Signals Intelligence - Subsurface Track" },
+  { code: "O*I********", text: "MOOTW - Items" },
+  { code: "O*L********", text: "MOOTW - Locations" },
+  { code: "O*O********", text: "MOOTW - Operations" },
+  { code: "O*I********", text: "MOOTW - Violent activities" },
 ];
 
 export const statusValuesB: SymbolValue[] = [
