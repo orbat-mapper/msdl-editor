@@ -328,10 +328,7 @@ export function useSymbolItems(sidc: Ref<string>) {
   }
 
   function isSOF() {
-    if (
-      codingSchemeValue.value == "S" &&
-      battleDimensionValue.value == "F"
-    ) {
+    if (codingSchemeValue.value == "S" && battleDimensionValue.value == "F") {
       return true;
     }
     return false;
