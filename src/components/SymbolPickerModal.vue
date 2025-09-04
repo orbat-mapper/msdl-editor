@@ -65,6 +65,9 @@ const {
   isGroundInstallation,
   isSeaSurface,
   isSeaSubsurface,
+  isGraphicsCommandAndControl,
+  isSigIntGround,
+  isStabOpNonMilGroup,
 } = useSymbolItems(computed(() => props.sidc || ""));
 loadData();
 
@@ -102,13 +105,19 @@ const cleanObject = (obj: any) => {
 function createDimensionCode() {
   let functionType = "*";
   let modifier = "*";
-  if (battleDimensionValue.value == "G" && functionIdValue.value[0] == "U") {
+  if (isGroundUnit()) {
     functionType = "U";
-  } else if (battleDimensionValue.value == "G" && functionIdValue.value[0] == "E") {
+  } else if (isGroundEquipment()) {
     functionType = "E";
-  } else if (battleDimensionValue.value == "G" && functionIdValue.value[0] == "I") {
+  } else if (isGroundInstallation()) {
     functionType = "I";
     modifier = "H";
+  } else if (isGraphicsCommandAndControl()) {
+    functionType = "G";
+  } else if (isSigIntGround()) {
+    functionType = "S";
+  } else if (isStabOpNonMilGroup()) {
+    functionType = "A";
   }
 
   dimension.value =

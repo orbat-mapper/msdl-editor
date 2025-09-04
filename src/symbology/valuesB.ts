@@ -27,6 +27,7 @@ export const dimensionValues2525B: SymbolValue[] = [
   { code: "G*F********", text: "Tactical Graphics - Fire Support" },
   { code: "G*M********", text: "Tactical Graphics - Mobility / Survivability" },
   { code: "G*T********", text: "Tactical Graphics - Tasks" },
+  { code: "G*G*G******", text: "Tactical Graphics - Command and Control and General Maneuver" },
   { code: "G*O********", text: "Tactical Graphics - Other" },
   { code: "I*P********", text: "Signals Intelligence - Space Track" },
   { code: "I*A********", text: "Signals Intelligence - Air Track" },
@@ -37,6 +38,39 @@ export const dimensionValues2525B: SymbolValue[] = [
   { code: "O*L********", text: "MOOTW - Locations" },
   { code: "O*O********", text: "MOOTW - Operations" },
   { code: "O*I********", text: "MOOTW - Violent activities" },
+];
+
+export const dimensionValues2525C: SymbolValue[] = [
+  { code: "S*P********", text: "Space" },
+  { code: "S*A********", text: "Air" },
+  { code: "S*G*U******", text: "Ground unit" },
+  { code: "S*G*E******", text: "Ground equipment" },
+  { code: "S*G*I*****H", text: "Ground installations" },
+  { code: "S*S********", text: "Sea surface" },
+  { code: "S*U********", text: "Sea subsurface" },
+  { code: "S*F********", text: "Special Operations Forces" },
+  { code: "G*T********", text: "Tasks" },
+  { code: "G*G*G******", text: "Command and Control and General Maneuver" },
+  { code: "G*M********", text: "Mobility / Survivability" },
+  { code: "G*F********", text: "Fire Support" },
+  { code: "G*S********", text: "Combat Service Support" },
+  { code: "G*O********", text: "Other" },
+  { code: "I*P********", text: "Signals Intelligence - Space Track" },
+  { code: "I*A********", text: "Signals Intelligence - Air Track" },
+  { code: "I*G*S******", text: "Signals Intelligence - Ground Track" },
+  { code: "I*S********", text: "Signals Intelligence - Sea surface Track" },
+  { code: "I*U********", text: "Signals Intelligence - Subsurface Track" },
+  { code: "O*V********", text: "Stability Operations - Violent Activities" },
+  { code: "O*L********", text: "Stability Operations - Locations" },
+  { code: "O*O********", text: "Stability Operations - Operations" },
+  { code: "O*I********", text: "Stability Operations - Items" },
+  { code: "O*P********", text: "Stability Operations - Individual" },
+  { code: "O*G********", text: "Stability Operations - Nonmilitary group or Organization" }, //???
+  { code: "O*R********", text: "Stability Operations - Rape" },
+  { code: "E*I********", text: "Emergency Management Symbols - Incident" },
+  { code: "E*N********", text: "Emergency Management Symbols - Natural Events" },
+  { code: "E*O********", text: "Emergency Management Symbols - Operations" },
+  { code: "E*F********", text: "Emergency Management Symbols - Infrastructure" },
 ];
 
 export const statusValuesB: SymbolValue[] = [

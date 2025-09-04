@@ -30,11 +30,11 @@ export class SidcB implements SicElementsB {
     if (sic.length !== 15) {
       throw new Error("SIDC must be exactly 15 characters long for Revision B");
     }
-
+    sic = sic.replaceAll("*", "-");
     this.codingScheme = sic.substring(0, 1);
     this.affiliation = sic.substring(1, 2);
     this.battleDimension = sic.substring(2, 3);
-    this.status = sic.substring(3, 4);
+    this.status = sic.substring(3, 4) == "-" ? "P" : sic.substring(3, 4);
     this.functionId = sic.substring(4, 10);
     this.modifier1 = sic.substring(10, 11);
     this.modifier2 = sic.substring(11, 12);

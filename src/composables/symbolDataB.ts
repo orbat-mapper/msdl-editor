@@ -4,6 +4,7 @@ import {
   statusValuesB,
   dimensionValuesAPP6B,
   dimensionValues2525B,
+  dimensionValues2525C,
   HQTFDummyValuesB,
   echelonValuesB,
   mobilityValuesB,
@@ -36,6 +37,10 @@ export function useSymbologyData() {
       const { ms2525b } = await import("../symbology/standards/milstd2525b");
       symbology.value = normalizeRevB(ms2525b);
       currentSymbologyStandard.value = "MILSTD_2525B";
+    } else if (symbologyStandard.value === "MILSTD_2525C") {
+      const { ms2525c } = await import("../symbology/standards/milstd2525c");
+      symbology.value = normalizeRevB(ms2525c);
+      currentSymbologyStandard.value = "MILSTD_2525C";
     } else {
       throw new Error("Symbology Standard not recognized");
     }
@@ -77,6 +82,8 @@ export function useSymbolItems(sidc: Ref<string>) {
       values = dimensionValuesAPP6B;
     } else if (currentSymbologyStandard.value == "MILSTD_2525B") {
       values = dimensionValues2525B;
+    } else if (currentSymbologyStandard.value == "MILSTD_2525C") {
+      values = dimensionValues2525C;
     } else {
       values = [];
     }
@@ -206,7 +213,7 @@ export function useSymbolItems(sidc: Ref<string>) {
       if (entityType) text += " - " + entityType;
       if (entitySubtype) text += " - " + entitySubtype;
 
-      // There seems to be a bug with this number GFCAOXAH-------
+      // There seems to be a bug with this number G*C*OXAH-------
       if (
         codingSchemeValue.value +
           "*" +
@@ -243,6 +250,7 @@ export function useSymbolItems(sidc: Ref<string>) {
 
   function isGroundUnit() {
     if (
+      codingSchemeValue.value == "S" &&
       battleDimensionValue.value == "G" &&
       (functionIdValue.value[0] == "U" || functionIdValue.value[0] == "-")
     ) {
@@ -286,6 +294,39 @@ export function useSymbolItems(sidc: Ref<string>) {
     return false;
   }
 
+  function isGraphicsCommandAndControl() {
+    if (
+      codingSchemeValue.value == "G" &&
+      battleDimensionValue.value == "G" &&
+      functionIdValue.value[0] == "G"
+    ) {
+      return true;
+    }
+    return false;
+  }
+
+  function isSigIntGround() {
+    if (
+      codingSchemeValue.value == "I" &&
+      battleDimensionValue.value == "G" &&
+      functionIdValue.value[0] == "S"
+    ) {
+      return true;
+    }
+    return false;
+  }
+
+  function isStabOpNonMilGroup() {
+    if (
+      codingSchemeValue.value == "O" &&
+      battleDimensionValue.value == "G" &&
+      functionIdValue.value[0] == "A"
+    ) {
+      return true;
+    }
+    return false;
+  }
+
   return {
     affiliationValue,
     codingSchemeValue,
@@ -309,6 +350,9 @@ export function useSymbolItems(sidc: Ref<string>) {
     isGroundInstallation,
     isSeaSurface,
     isSeaSubsurface,
+    isGraphicsCommandAndControl,
+    isSigIntGround,
+    isStabOpNonMilGroup,
   };
 }
 
