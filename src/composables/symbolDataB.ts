@@ -121,7 +121,7 @@ export function useSymbolItems(sidc: Ref<string>) {
     let values: SymbolValue[];
     if (!symbology.value) return [];
 
-    if (isGroundUnit()) {
+    if (isGroundUnit() || isSOF()) {
       values = echelonValuesB;
     } else if (isGroundEquipment()) {
       values = mobilityValuesB;
@@ -274,14 +274,14 @@ export function useSymbolItems(sidc: Ref<string>) {
   }
 
   function isSeaSurface() {
-    if (battleDimensionValue.value == "S") {
+    if (codingSchemeValue.value == "S" && battleDimensionValue.value == "S") {
       return true;
     }
     return false;
   }
 
   function isSeaSubsurface() {
-    if (battleDimensionValue.value == "U") {
+    if (codingSchemeValue.value == "S" && battleDimensionValue.value == "U") {
       return true;
     }
     return false;
@@ -321,6 +321,16 @@ export function useSymbolItems(sidc: Ref<string>) {
       codingSchemeValue.value == "O" &&
       battleDimensionValue.value == "G" &&
       functionIdValue.value[0] == "A"
+    ) {
+      return true;
+    }
+    return false;
+  }
+
+  function isSOF() {
+    if (
+      codingSchemeValue.value == "S" &&
+      battleDimensionValue.value == "F"
     ) {
       return true;
     }
