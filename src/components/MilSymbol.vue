@@ -18,7 +18,7 @@ export default defineComponent({
   setup(props) {
     const symb = new ms.Symbol(props.sidc || "", {
       size: props.size,
-      simpleStatusModifier: true,
+      simpleStatusModifier: true, // <<
       outlineColor: "white",
       outlineWidth: 8,
       ...(props.modifiers ?? {}),

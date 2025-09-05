@@ -1,5 +1,6 @@
 import type { TacticalJson } from "@orbat-mapper/msdllib/dist/lib/common";
 import type { Position } from "geojson";
+import type { InjectionKey } from "vue";
 
 export type MapContextMenuEvent = {
   x: number;
@@ -15,3 +16,11 @@ export type EnumItem<G = string> = {
   label: string;
   description?: string;
 };
+
+export const tabsProviderKey = Symbol("TabsProvider") as InjectionKey<TabsState>;
+
+export interface TabsState {
+  selectedIndex: number;
+  count: number;
+  tabClass?: string;
+}

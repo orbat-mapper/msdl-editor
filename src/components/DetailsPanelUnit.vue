@@ -7,17 +7,20 @@ import { PencilIcon } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { computed } from "vue";
+import { useSelectStore } from "@/stores/selectStore.ts";
 
 const {
+  msdl,
   modifyScenario: { updateForceSide },
 } = useScenarioStore();
+const selectStore = useSelectStore();
 
-const { item } = defineProps<{
+const props = defineProps<{
   item: Unit;
 }>();
 
 const modifiers = computed(() => {
-  return item.symbolModifiers;
+  return props.item.symbolModifiers;
 });
 
 const [showEditForm, toggleEditForm] = useToggle(false);
@@ -33,6 +36,14 @@ const dlItems: { label: string; value: keyof UnitSymbolModifiersType }[] = [
   { label: "IFF", value: "iff" },
   { label: "Special C2HQ", value: "specialC2HQ" },
 ];
+
+// Obtain new symbolIdentifier if msdl is updated following 'triggerRef(msdl)'
+function getSymbolIdentifier(): string | null {
+  const item = msdl.value?.getUnitOrEquipmentById(props.item.objectHandle) ?? null;
+  return item?.symbolIdentifier ?? null;
+}
+
+const selectedName = computed(() => (selectStore.activeItem as Unit).label);
 </script>
 
 <template>
@@ -51,8 +62,8 @@ const dlItems: { label: string; value: keyof UnitSymbolModifiersType }[] = [
     </div>
   </div>
   <DescriptionList class="divide-y divide-border">
-    <DescriptionItem label="Name">{{ item.name || "n/a" }}</DescriptionItem>
-    <DescriptionItem label="Symbol identifier">{{ item.symbolIdentifier }}</DescriptionItem>
+    <DescriptionItem label="Name">{{ selectedName || "n/a" }}</DescriptionItem>
+    <DescriptionItem label="Symbol identifier">{{ getSymbolIdentifier() }}</DescriptionItem>
     <div v-if="modifiers" class="ml-6">
       <template v-for="dlItem in dlItems" :key="dlItem.value">
         <DescriptionItem v-if="modifiers[dlItem.value]" :label="dlItem.label">
@@ -61,7 +72,7 @@ const dlItems: { label: string; value: keyof UnitSymbolModifiersType }[] = [
       </template>
     </div>
     <DescriptionItem label="Object handle" class="text-muted-foreground">{{
-      item.objectHandle
+      props.item.objectHandle
     }}</DescriptionItem>
   </DescriptionList>
 </template>

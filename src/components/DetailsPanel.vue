@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {
+  PencilIcon,
   ArrowUpIcon,
   FocusIcon,
   LocateFixedIcon,
@@ -34,6 +35,8 @@ import DetailsPanelUnit from "@/components/DetailsPanelUnit.vue";
 import DetailsPanelEquipmentList from "@/components/DetailsPanelEquipmentList.vue";
 import DetailsPanelDisposition from "@/components/DetailsPanelDisposition.vue";
 import { useScenarioActions } from "@/composables/scenarioActions.ts";
+import { sidcModalKey } from "@/components/injects";
+import { injectStrict } from "@/utils";
 
 const props = defineProps<{
   item: Unit | EquipmentItem | ForceSide;
@@ -48,7 +51,7 @@ const isDragging = ref(false);
 const {
   msdl,
   isNETN,
-  modifyScenario: { updateItemLocation },
+  modifyScenario: { updateItemLocation, updateSymbolIdentifier },
 } = useScenarioStore();
 
 const { dispatchAction } = useScenarioActions();
@@ -120,6 +123,37 @@ function goUp() {
     selectStore.activeItem = parentItem;
   }
 }
+
+const { getModalSidc } = injectStrict(sidcModalKey);
+
+async function handleChangeSymbol() {
+  if (!isUnitOrEquipment(props.item)) return;
+
+  let sidc = props.item.sidc;
+  if (sidc.length !== 15) {
+    throw new Error("Unsupported SIDC, must be exactly 15 characters long"); // Only support Revision-B Symbology for now
+  }
+
+  // Open modal and wait for confirm response
+  const newSidcValue = await getModalSidc(sidc, {});
+
+  if (selectStore.activeItem && newSidcValue !== undefined) {
+    const { sidc } = newSidcValue;
+    selectStore.updateSidc(sidc); //Update sidc for selected item
+    updateSymbolIdentifier(props.item.objectHandle, sidc); // Update sidc in msdl
+  }
+}
+
+// Update sidc when selectStore is updated
+const selectedSidc = computed(() => {
+  const item = selectStore.activeItem;
+  return isUnitOrEquipment(item!) ? item.sidc : undefined;
+});
+
+const selectedName = computed(() => {
+  const item = selectStore.activeItem;
+  return isUnitOrEquipment(item!) ? item.label : item?.name;
+});
 </script>
 
 <template>
@@ -128,11 +162,13 @@ function goUp() {
     :style="{ width: widthStore.detailsWidth + 'px' }"
   >
     <header class="px-4 h-10 mt-4 flex justify-between">
-      <div v-if="isUnitOrEquipment(item)" class="flex gap-2">
-        <span ref="elRef"><MilSymbol :sidc="item.sidc" :key="item.sidc" :size="16" /></span>
-        <span class="text-base font-bold">{{ item.label }}</span>
+      <div class="flex gap-2">
+        <span ref="elRef"><MilSymbol :sidc="selectedSidc" :key="selectedSidc" :size="16" /></span>
+        <span class="text-base font-bold">{{ selectedName }}</span>
+        <Button type="button" variant="ghost" size="icon" @click="handleChangeSymbol()"
+          ><PencilIcon />
+        </Button>
       </div>
-      <span v-else class="text-base font-bold">{{ item.name }}</span>
       <div>
         <Badge>{{ typeLabel }}</Badge>
       </div>

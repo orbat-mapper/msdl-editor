@@ -266,6 +266,17 @@ function updateItemModel(
   triggerRef(msdl);
 }
 
+function updateSymbolIdentifier(objectHandle: string, sidc: string) {
+  if (!msdl.value) return;
+  const item = msdl.value.getUnitOrEquipmentById(objectHandle);
+  if (!item) {
+    console.warn(`Unit/EquipmentItem with object handle ${objectHandle} not found.`);
+    return;
+  }
+  item.symbolIdentifier = sidc;
+  triggerRef(msdl);
+}
+
 function updateHoldings(objectHandle: string, newHoldings: HoldingType[]) {
   if (!msdl.value) return;
   const item = msdl.value.getUnitOrEquipmentById(objectHandle);
@@ -341,6 +352,7 @@ function addUnit(
     location: newLocation,
   });
   item.name = newUnit?.name ?? "New unit";
+  item.sidc = "SFGPU----------";
   if (msdl.value.primarySide) item.setForceRelation(msdl.value.primarySide);
   msdl.value.addUnit(item);
   triggerRef(msdl);
@@ -356,6 +368,7 @@ function addEquipmentItem(
     location: newLocation,
   });
   item.name = newEquipment?.name ?? "New equipment item";
+  item.sidc = "SFGPE-----M----";
   msdl.value.addEquipmentItem(item);
   triggerRef(msdl);
 }
@@ -550,6 +563,7 @@ export function useScenarioStore() {
       updateItemLocation,
       updateItemDisposition,
       updateItemModel,
+      updateSymbolIdentifier,
       updateHoldings,
       addUnit,
       addEquipmentItem,
