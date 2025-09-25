@@ -43,7 +43,7 @@ export function useSymbologyData() {
       symbology.value = normalizeRevB(ms2525c);
       currentSymbologyStandard.value = "MILSTD_2525C";
     } else {
-      toast.warning('Symbology Standard not recognized')
+      toast.warning("Symbology Standard not recognized");
       throw new Error("Symbology Standard not recognized");
     }
     isLoaded.value = true;
