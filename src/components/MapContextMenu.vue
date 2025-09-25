@@ -30,6 +30,8 @@ import type { LngLatElevationTuple, LngLatTuple } from "@orbat-mapper/msdllib";
 import YesNoDialog from "@/components/YesNoDialog.vue";
 import type { TacticalJson } from "@orbat-mapper/msdllib/dist/lib/common";
 import { mapProviders, useMapLayerStore } from "@/stores/mapLayerStore.ts";
+import { toast } from "vue-sonner";
+import { useSideStore } from "@/stores/uiStore.ts";
 
 const showConfirmDeleteDialog = ref(false);
 const eventItems = ref([] as TacticalJson[]);
@@ -94,6 +96,7 @@ function createEquipment(pos: number[]) {
 }
 
 function createUnit(pos: number[]) {
+  if (msdl.value?.sides.length == 0) return toast.info('No force sides available')
   if (!pos || pos.length < 2 || pos.length > 3) return;
   addUnit(pos as LngLatTuple | LngLatElevationTuple);
 }
