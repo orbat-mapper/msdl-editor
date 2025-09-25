@@ -165,7 +165,7 @@ const selectedName = computed(() => {
       <div class="flex gap-2">
         <span ref="elRef"><MilSymbol :sidc="selectedSidc" :key="selectedSidc" :size="16" /></span>
         <span class="text-base font-bold">{{ selectedName }}</span>
-        <Button type="button" variant="ghost" size="icon" @click="handleChangeSymbol()"
+        <Button v-if="isUnitOrEquipment(item)" type="button" variant="ghost" size="icon" @click="handleChangeSymbol()"
           ><PencilIcon />
         </Button>
       </div>
