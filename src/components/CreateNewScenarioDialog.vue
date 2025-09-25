@@ -34,7 +34,7 @@ function cancel() {
 function onUpdate(values: Partial<ScenarioIdType>) {
   const scenInput: MilitaryScenarioInputType = {
     isNETN: true,
-    msdlOptions: {} as MsdlOptionsType,
+    msdlOptions: {scenarioDataStandards: { symbologyDataStandard: { standardName: "NATO_APP" }}} as MsdlOptionsType,
     scenarioId: values as ScenarioIdType,
   };
   emit("created", scenInput);
