@@ -15,6 +15,7 @@ import { SidcB } from "@/symbology/sidc";
 import { useSymbologyDataAdapter } from "@/composables/symbolDatasetAdapter";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { SymbologyStandard } from "@orbat-mapper/msdllib/dist/lib/enums";
+import { toast } from "vue-sonner";
 
 const symbology = shallowRef<NormalizedNode[] | undefined>();
 const isLoaded = ref(false);
@@ -42,6 +43,7 @@ export function useSymbologyData() {
       symbology.value = normalizeRevB(ms2525c);
       currentSymbologyStandard.value = "MILSTD_2525C";
     } else {
+      toast.warning('Symbology Standard not recognized')
       throw new Error("Symbology Standard not recognized");
     }
     isLoaded.value = true;
