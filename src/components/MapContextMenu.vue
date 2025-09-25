@@ -91,6 +91,7 @@ function onUnitSelect(activeItemId?: string) {
 }
 
 function createEquipment(pos: number[]) {
+  if (msdl.value?.sides.length == 0) return toast.info('No force sides available')
   if (!pos || pos.length < 2 || pos.length > 3) return;
   addEquipmentItem(pos as LngLatTuple | LngLatElevationTuple);
 }
