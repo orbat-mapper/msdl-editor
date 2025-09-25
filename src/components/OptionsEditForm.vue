@@ -213,7 +213,7 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
         <FormItem>
           <FormLabel>CoordinateSystemType</FormLabel>
           <div class="flex">
-            <Select v-bind="componentField">
+            <Select v-bind="componentField" disabled>
               <FormControl class="w-full">
                 <SelectTrigger>
                   <SelectValue placeholder="n/a" />
@@ -231,7 +231,7 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
                 </SelectGroup>
               </SelectContent>
             </Select>
-            <Button variant="outline" class="ml-4" @click.prevent="componentField.onChange('')"
+            <Button variant="outline" class="ml-4" @click.prevent="componentField.onChange('')" disabled
               >Clear</Button
             >
           </div>
