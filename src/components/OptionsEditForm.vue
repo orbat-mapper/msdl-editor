@@ -231,7 +231,11 @@ const coordinateSystemTypeOptions = Object.entries(CoordinateSystem).map(([key, 
                 </SelectGroup>
               </SelectContent>
             </Select>
-            <Button variant="outline" class="ml-4" @click.prevent="componentField.onChange('')" disabled
+            <Button
+              variant="outline"
+              class="ml-4"
+              @click.prevent="componentField.onChange('')"
+              disabled
               >Clear</Button
             >
           </div>
