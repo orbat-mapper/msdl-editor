@@ -71,6 +71,7 @@ function openCloseAll() {
       </div>
     </header>
     <div
+      id="create-new-federate"
       class="flex items-center pl-2 py-1 border-b border-muted-foreground/20"
       v-if="msdl?.deployment"
     >
@@ -87,7 +88,7 @@ function openCloseAll() {
     </div>
     <div v-else class="flex items-center flex-col pl-4 py-1 border-b border-muted-foreground/20">
       <span>No deployment present in MSDL file</span>
-      <span class="my-6">
+      <span class="my-6" id="create-deployment">
         <Button variant="secondary" class="ml-4" @click="createNewDeployment()">
           Create deployment
         </Button>

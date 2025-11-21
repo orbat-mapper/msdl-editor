@@ -162,10 +162,11 @@ const selectedName = computed(() => {
     :style="{ width: widthStore.detailsWidth + 'px' }"
   >
     <header class="px-4 h-10 mt-4 flex justify-between">
-      <div class="flex gap-2">
+      <div class="flex gap-2 items-center">
         <span ref="elRef"><MilSymbol :sidc="selectedSidc" :key="selectedSidc" :size="16" /></span>
         <span class="text-base font-bold">{{ selectedName }}</span>
         <Button
+          id="edit-item-details"
           v-if="isUnitOrEquipment(item)"
           type="button"
           variant="ghost"
@@ -210,7 +211,9 @@ const selectedName = computed(() => {
           >Equipment
           <Badge class="px-1 py-0 text-xs rounded-full">{{ item.equipment.length }}</Badge>
         </TabsTrigger>
-        <TabsTrigger v-if="isUnitOrEquipment(item)" value="model">Model</TabsTrigger>
+        <TabsTrigger v-if="isUnitOrEquipment(item)" value="model"
+          ><span id="unit-model-tab">Model</span></TabsTrigger
+        >
         <TabsTrigger v-if="isNETN && isUnitOrEquipment(item)" value="holdings"
           >Holdings
           <Badge class="ml-0 px-1 py-0 text-xs rounded-full">{{

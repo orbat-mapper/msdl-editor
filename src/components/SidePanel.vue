@@ -116,11 +116,18 @@ function showAssociations() {
   <div v-if="msdl">
     <div v-if="msdl.forceSides.length == 0" class="mx-4">
       <div class="text-sm mb-2">The scenario does not have any Force Sides yet</div>
-      <Button variant="secondary" @click="createForceSide()" id="create-force-side">Create Force Side</Button>
+      <Button variant="secondary" @click="createForceSide()" id="create-force-side"
+        >Create Force Side</Button
+      >
     </div>
     <div class="m-4">
       <Button variant="secondary" @click="toggleLayers()">Toggle all side visibilities</Button>
-      <Button variant="secondary" class="ml-4" @click="openFederatesPanel()">
+      <Button
+        variant="secondary"
+        class="ml-4"
+        @click="openFederatesPanel()"
+        id="show-all-federates"
+      >
         Show all federates
       </Button>
       <DescriptionItem label="Associations">

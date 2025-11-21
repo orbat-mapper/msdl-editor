@@ -143,7 +143,11 @@ const onSubmit = form.handleSubmit((values) => {
         </FormItem>
       </FormField>
 
-      <FormFooter id="scenario-edit-form-footer" @cancel="emit('cancel')" :submit-text="variant == 'new' ? 'Create' : 'Save'" />
+      <FormFooter
+        id="scenario-edit-form-footer"
+        @cancel="emit('cancel')"
+        :submit-text="variant == 'new' ? 'Create' : 'Save'"
+      />
     </form>
   </div>
 </template>

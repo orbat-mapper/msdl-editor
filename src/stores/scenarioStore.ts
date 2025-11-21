@@ -276,6 +276,7 @@ function updateSymbolIdentifier(objectHandle: string, sidc: string) {
   }
   item.symbolIdentifier = sidc;
   triggerRef(msdl);
+  eventBus.emit(MSDL_EDITOR_EVENT, "symbol-updated");
 }
 
 function updateHoldings(objectHandle: string, newHoldings: HoldingType[]) {
@@ -358,6 +359,11 @@ function addUnit(
   if (msdl.value.primarySide) item.setForceRelation(msdl.value.primarySide);
   msdl.value.addUnit(item);
   triggerRef(msdl);
+  if (useSideStore().hideEmptySides) {
+    toast.warning("'Hide empty sides'-setting is set", {
+      description: "Newly created Force Side might be hidden",
+    });
+  }
   eventBus.emit(MSDL_EDITOR_EVENT, "created-unit");
 }
 
@@ -395,6 +401,7 @@ function addForceSide(newSide?: Partial<ForceSideType>) {
   side.updateFromObject(newSide);
   msdl.value.addForceSide(side);
   triggerRef(msdl);
+  useLayerStore().layers.add(side.objectHandle);
   if (useSideStore().hideEmptySides) {
     toast.warning("'Hide empty sides'-setting is set", {
       description: "Newly created Force Side might be hidden",
@@ -415,6 +422,7 @@ function addFederate(newFederate?: Partial<FederateType>) {
   fed.updateFromObject(newFederate);
   msdl.value.addFederate(fed);
   triggerRef(msdl);
+  eventBus.emit(MSDL_EDITOR_EVENT, "created-federate");
 }
 
 function assignUnitToFederate(
@@ -505,6 +513,7 @@ function updateForceSideAssociation(
     return;
   }
   forceSide.associations = associations;
+  msdl.value.evaluateAssociations(forceSide);
   triggerRef(msdl);
 }
 

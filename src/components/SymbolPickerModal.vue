@@ -287,7 +287,7 @@ watchEffect(() => {
 
             <SymbolCodeSelect
               v-model="modifier1Value"
-              label="Headquaters / Task force / Dummy"
+              label="Headquarters / Task force / Dummy"
               :items="hqtfdItems"
             />
 

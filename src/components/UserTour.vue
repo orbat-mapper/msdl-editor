@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { eventBus, MSDL_EDITOR_EVENT } from "@/eventBus";
+import { useSelectStore } from "@/stores/selectStore";
 import { useTourStore } from "@/stores/tourStore";
 import { driver, type Config, type Driver, type DriveStep, type State } from "driver.js";
 import "driver.js/dist/driver.css";
@@ -24,6 +25,7 @@ const tourSteps: DriveStep[] = [
   {
     element: "header nav",
     popover: {
+      showButtons: ["next", "close"],
       title: "Welcome to the MSDL editor",
       description: "This tour will get you started with creating an MSDL scenario",
       side: "top",
@@ -33,7 +35,7 @@ const tourSteps: DriveStep[] = [
   {
     element: "#main-dropdown-menu > button",
     popover: {
-      showButtons: [],
+      showButtons: ["close"],
       title: "Create a new MSDL file",
       description: "Click to open the menu, then select 'File' > 'Create new MSDL...'",
       onPopoverRender: () => {
@@ -52,7 +54,7 @@ const tourSteps: DriveStep[] = [
   {
     element: "button#create-force-side",
     popover: {
-      showButtons: [],
+      showButtons: ["close"],
       title: "Create a Force Side",
       description: "For example, BLUEFOR",
       onPopoverRender: () => {
@@ -71,13 +73,106 @@ const tourSteps: DriveStep[] = [
   {
     element: undefined, // render in the center of the screen
     popover: {
-      showButtons: ["next"],
+      showButtons: ["next", "close"],
       title: "Create a unit",
       description: "Right-click on the map and select 'Create new > Unit'",
-      nextBtnText: 'OK',
+      nextBtnText: "OK",
       onNextClick: () => {
         pauseTour("created-unit");
       },
+    },
+  },
+  {
+    element: undefined, // render in the center of the screen
+    popover: {
+      showButtons: ["next", "close"],
+      title: "Edit the unit",
+      description: "Click the unit on the map or in the ORBAT tree to edit its properties",
+      nextBtnText: "OK",
+      onNextClick: () => {
+        pauseTour("selected-item");
+      },
+    },
+  },
+  {
+    element: "button#edit-item-details",
+    popover: {
+      showButtons: ["next", "close"],
+      title: "Edit the unit name and symbol",
+      description:
+        "Click the pencil to open the unit editor to change the name and the symbol of the unit",
+      nextBtnText: "OK",
+      onNextClick: () => {
+        pauseTour("symbol-updated");
+      },
+    },
+  },
+  {
+    element: "span#unit-model-tab",
+    popover: {
+      showButtons: ["next", "close"],
+      title: "Edit other unit details",
+      description: "Browse through the tabs to edit the unit's model, holdings, etc.",
+    },
+  },
+  {
+    element: "button#show-all-federates",
+    popover: {
+      showButtons: ["close"],
+      title: "Add a federate to the MSDL scenario",
+      description: "Click the 'Show all federates' button.",
+      onPopoverRender: (popover, opts) => {
+        // When clicking the button, go to next step
+        const clickConfig: ClickConfig = {
+          element: "button#show-all-federates",
+          fcn: opts.driver.moveNext,
+          index: 5,
+        };
+        setupClickListener(clickConfig);
+      },
+    },
+  },
+  {
+    element: "#create-deployment > button",
+    popover: {
+      showButtons: ["close"],
+      title: "Add a deployment",
+      description: "Click the button to create a deployment",
+      onPopoverRender: (popover, opts) => {
+        // When clicking the button, go to next step
+        const clickConfig: ClickConfig = {
+          element: "#create-deployment > button",
+          fcn: opts.driver.moveNext,
+          index: 5, //fix
+        };
+        setupClickListener(clickConfig);
+      },
+    },
+  },
+  {
+    element: "#create-new-federate > button",
+    popover: {
+      showButtons: ["close"],
+      title: "Add a federate",
+      description: "Click the button to add a federate",
+      onPopoverRender: () => {
+        // When clicking the button, pause the tour. Resume when New Force Side is created.
+        const clickConfig: ClickConfig = {
+          element: "#create-new-federate > button",
+          fcn: () => {
+            pauseTour("created-federate");
+          },
+          index: 5, //fix
+        };
+        setupClickListener(clickConfig);
+      },
+    },
+  },
+  {
+    element: undefined,
+    popover: {
+      showButtons: ["close"],
+      title: "Finished the tour",
     },
   },
 ];
@@ -85,7 +180,7 @@ const tourSteps: DriveStep[] = [
 const tourConfig: Config = {
   showProgress: true,
   steps: tourSteps,
-  allowClose: true,
+  allowClose: false,
   onCloseClick: () => {
     tourObj.destroy();
     finishTour();
@@ -137,7 +232,11 @@ const removeCurrentClickListener = () => {
 };
 
 function processClick(c: ClickConfig) {
-  if (pausedIndex.value === c.index) c.fcn();
+  if (pausedIndex.value === c.index) {
+    c.fcn();
+  } else {
+    console.log(`Wanted index ${c.index} is not equal to current ${pausedIndex.value} value`);
+  }
 }
 
 //   const mainMenuBtn = window.document.querySelector("#main-dropdown-menu > button");
