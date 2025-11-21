@@ -11,7 +11,7 @@ export const useUIStore = defineStore("uiStore", () => {
 });
 
 export const useSideStore = defineStore("sideStore", () => {
-  const hideEmptySides = useLocalStorage("hideEmptySides", true);
+  const hideEmptySides = useLocalStorage("hideEmptySides", false);
   const primarySideMap = useLocalStorage<Record<string, string>>("primarySideMap", {});
   const sortAlphabetically = useLocalStorage("sortAlphabetically", false);
 

@@ -39,6 +39,7 @@ import type {
 import { toast } from "vue-sonner";
 import { type OrbatDragItem } from "@/types/draggables.ts";
 import type { Instruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
+import { eventBus, MSDL_EDITOR_EVENT } from "@/eventBus";
 
 export interface MetaEntry<T = string> {
   label: T;
@@ -356,6 +357,7 @@ function addUnit(
   if (msdl.value.primarySide) item.setForceRelation(msdl.value.primarySide);
   msdl.value.addUnit(item);
   triggerRef(msdl);
+  eventBus.emit(MSDL_EDITOR_EVENT, "created-unit");
 }
 
 function addEquipmentItem(
@@ -396,6 +398,7 @@ function addForceSide(newSide?: Partial<ForceSideType>) {
       description: "Newly created Force Side might be hidden",
     });
   }
+  eventBus.emit(MSDL_EDITOR_EVENT, "created-force-side");
 }
 
 function removeForceSide(objectHandle: string) {
@@ -540,6 +543,7 @@ export function useScenarioStore() {
     clearScenario();
     msdl.value = MilitaryScenario.createFromModel(scenarioInput);
     triggerRef(msdl);
+    eventBus.emit(MSDL_EDITOR_EVENT, "created-new-msdl");
   }
 
   const isNETN = computed(() => {

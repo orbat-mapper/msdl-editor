@@ -44,7 +44,7 @@ const mapLayerStore = useMapLayerStore();
         <DropdownMenuSubTrigger>File</DropdownMenuSubTrigger>
         <DropdownMenuSubContent>
           <DropdownMenuItem @select="dialogStore.toggleCreateMSDLDialog()"
-            >Create new MSDL...</DropdownMenuItem
+            ><span id="create-new-msdl">Create new MSDL...</span></DropdownMenuItem
           >
           <DropdownMenuItem @click="dispatchAction('DownloadMSDL')">Download MSDL</DropdownMenuItem>
           <DropdownMenuSeparator />

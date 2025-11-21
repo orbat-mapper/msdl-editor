@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import MainDropdownMenu from "@/components/MainDropdownMenu.vue";
-import { MoonIcon, SunIcon, SearchIcon } from "lucide-vue-next";
+import { MoonIcon, SunIcon, SearchIcon, HelpCircleIcon } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 import { useDark, useToggle } from "@vueuse/core";
 import { loadMSDLFromFile } from "@/lib/io.ts";
@@ -9,12 +9,15 @@ import EditableLabel from "@/components/EditableLabel.vue";
 import { computed } from "vue";
 import { ref } from "vue";
 import CommandPalette from "@/components/CommandPalette.vue";
+import { useTourStore } from "@/stores/tourStore";
 
 const {
   msdl,
   loadScenario,
   modifyScenario: { updateScenarioId },
 } = useScenarioStore();
+
+const { resetTour, startTour } = useTourStore();
 
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
@@ -29,6 +32,11 @@ async function doLoading() {
   }
 }
 
+function restartTour() {
+  resetTour();
+  startTour();
+}
+
 const scenarioName = computed({
   get: () => msdl.value?.scenarioId.name || "No title",
   set: (value) => {
@@ -40,7 +48,7 @@ const scenarioName = computed({
 </script>
 <template>
   <nav class="flex items-center justify-between p-1 border-b">
-    <div class="pl-2 flex items-center gap-2">
+    <div class="pl-2 flex items-center gap-2" id="main-dropdown-menu">
       <MainDropdownMenu />
       <div v-if="msdl">
         <EditableLabel v-model="scenarioName" />
@@ -55,6 +63,9 @@ const scenarioName = computed({
         <MoonIcon v-if="isDark" class="size-4" />
         <SunIcon v-else class="size-4" />
         <span class="sr-only">Toggle theme</span>
+      </Button>
+      <Button variant="outline" @click="restartTour()" size="icon">
+        <HelpCircleIcon /> <span class="sr-only">Start help tour</span>
       </Button>
     </div>
   </nav>

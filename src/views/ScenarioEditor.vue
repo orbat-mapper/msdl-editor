@@ -4,7 +4,7 @@ import MainNavbar from "@/components/MainNavbar.vue";
 import CreateNewScenarioDialog from "@/components/CreateNewScenarioDialog.vue";
 import LoadFromUrlDialog from "@/components/LoadFromUrlDialog.vue";
 import { useDialogStore } from "@/stores/dialogStore.ts";
-import { ref, shallowRef, useTemplateRef, provide } from "vue";
+import { ref, shallowRef, useTemplateRef, provide, onMounted } from "vue";
 import { MilitaryScenario } from "@orbat-mapper/msdllib";
 import maplibregl from "maplibre-gl";
 import MapLogic from "@/components/MapLogic.vue";
@@ -22,9 +22,12 @@ import { useScenarioActions } from "@/composables/scenarioActions.ts";
 import { useSidcModal } from "@/composables/modals";
 import { sidcModalKey } from "@/components/injects";
 import SymbolPickerModal from "@/components/SymbolPickerModal.vue";
+import UserTour from "@/components/UserTour.vue";
+import { useTourStore } from "@/stores/tourStore";
 
 const { createScenario, loadScenario, msdl, undo, redo } = useScenarioStore();
 const { dispatchAction } = useScenarioActions();
+const { startTour } = useTourStore();
 
 const mlMap = shallowRef<maplibregl.Map>();
 const showSearch = ref(false);
@@ -55,6 +58,10 @@ if (import.meta.env.DEV) {
 
   loadExampleScenario();
 }
+
+onMounted(() => {
+  startTour();
+});
 
 const { isOverDropZone } = useFileDropZone(dropZoneRef, onDrop);
 
@@ -127,5 +134,7 @@ provide(sidcModalKey, { getModalSidc });
       @cancel="cancelSidcModal"
       :dialog-title="sidcModalTitle"
     />
+
+    <UserTour />
   </div>
 </template>
