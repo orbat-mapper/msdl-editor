@@ -1,12 +1,13 @@
+import { useLocalStorage } from "@vueuse/core";
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
 export const useTourStore = defineStore("tourStore", () => {
-  const doNotShowTourAnymore = ref(false);
+  const doNotShowTourAnymore = useLocalStorage("doNotShowTourAnymore", false);
   const isTourActive = ref(false);
-  const pausedIndex = ref(0);
+  const activeIndex = ref(0);
 
-  function startTour() {
+  function startTour(startFromIndex: number = 0) {
     if (isTourActive.value === true) {
       console.log("Tour is already active");
       return;
@@ -15,6 +16,7 @@ export const useTourStore = defineStore("tourStore", () => {
       return;
     } else {
       isTourActive.value = true;
+      activeIndex.value = startFromIndex;
       console.log("Set tour to active");
     }
   }
@@ -31,5 +33,5 @@ export const useTourStore = defineStore("tourStore", () => {
     console.log("Reset tour");
   }
 
-  return { doNotShowTourAnymore, isTourActive, pausedIndex, startTour, finishTour, resetTour };
+  return { doNotShowTourAnymore, isTourActive, activeIndex, startTour, finishTour, resetTour };
 });

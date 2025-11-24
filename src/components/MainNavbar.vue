@@ -32,9 +32,9 @@ async function doLoading() {
   }
 }
 
-function restartTour() {
+function restartTour(startFromIndex: number = 0) {
   resetTour();
-  startTour();
+  startTour(startFromIndex);
 }
 
 const scenarioName = computed({
@@ -57,15 +57,15 @@ const scenarioName = computed({
     </div>
 
     <div class="flex gap-2">
-      <Button variant="outline" @click="showSearch = true" size="icon"><SearchIcon /></Button>
+      <Button variant="outline" @click="showSearch = true" size="icon" title="Search units, items or commands"><SearchIcon /></Button>
       <CommandPalette v-model:open="showSearch" />
-      <Button variant="outline" @click="toggleDark()" size="icon">
+      <Button variant="outline" @click="toggleDark()" size="icon" title="Toggle theme">
         <MoonIcon v-if="isDark" class="size-4" />
         <SunIcon v-else class="size-4" />
         <span class="sr-only">Toggle theme</span>
       </Button>
-      <Button variant="outline" @click="restartTour()" size="icon">
-        <HelpCircleIcon /> <span class="sr-only">Start help tour</span>
+      <Button variant="outline" @click="restartTour()" size="icon" title="Start help tour" @click.ctrl.exact="restartTour(9)">
+        <HelpCircleIcon /> 
       </Button>
     </div>
   </nav>

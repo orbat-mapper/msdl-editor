@@ -8,7 +8,7 @@ import { storeToRefs } from "pinia";
 import { nextTick, onMounted, onUnmounted, watch } from "vue";
 
 const tourStore = useTourStore();
-const { isTourActive, pausedIndex } = storeToRefs(tourStore);
+const { isTourActive, activeIndex } = storeToRefs(tourStore);
 const { startTour, resetTour, finishTour } = tourStore;
 
 interface ClickConfig {
@@ -27,7 +27,8 @@ const tourSteps: DriveStep[] = [
     popover: {
       showButtons: ["next", "close"],
       title: "Welcome to the MSDL editor",
-      description: "This tour will get you started with creating an MSDL scenario",
+      description:
+        "This tour will get you started with the application. It provides a step-by-step guide for creating an MSDL scenario.",
       side: "top",
       align: "center",
     },
@@ -45,7 +46,7 @@ const tourSteps: DriveStep[] = [
           fcn: () => {
             pauseTour("created-new-msdl");
           },
-          index: 0,
+          index: 1,
         };
         setupClickListener(clickConfig);
       },
@@ -56,7 +57,7 @@ const tourSteps: DriveStep[] = [
     popover: {
       showButtons: ["close"],
       title: "Create a Force Side",
-      description: "For example, BLUEFOR",
+      description: "First, we need to create a Force Side to add units to. For example, BLUEFOR",
       onPopoverRender: () => {
         // When clicking the button, pause the tour. Resume when New Force Side is created.
         const clickConfig: ClickConfig = {
@@ -64,7 +65,7 @@ const tourSteps: DriveStep[] = [
           fcn: () => {
             pauseTour("created-force-side");
           },
-          index: 1,
+          index: 2,
         };
         setupClickListener(clickConfig);
       },
@@ -126,7 +127,7 @@ const tourSteps: DriveStep[] = [
         const clickConfig: ClickConfig = {
           element: "button#show-all-federates",
           fcn: opts.driver.moveNext,
-          index: 5,
+          index: 7,
         };
         setupClickListener(clickConfig);
       },
@@ -143,7 +144,7 @@ const tourSteps: DriveStep[] = [
         const clickConfig: ClickConfig = {
           element: "#create-deployment > button",
           fcn: opts.driver.moveNext,
-          index: 5, //fix
+          index: 8,
         };
         setupClickListener(clickConfig);
       },
@@ -162,17 +163,50 @@ const tourSteps: DriveStep[] = [
           fcn: () => {
             pauseTour("created-federate");
           },
-          index: 5, //fix
+          index: 9,
         };
         setupClickListener(clickConfig);
       },
     },
   },
   {
+    element: "#federates-overview-area header button",
+    popover: {
+      showButtons: ["next", "close"],
+      title: "Show items assigned to federates",
+      description:
+        "Click the button to show the number of assigned units and equipment items for each federate.",
+    },
+  },
+  {
+    element: "#orbat-sides-container",
+    popover: {
+      showButtons: ["next", "close"],
+      title: "Assign units to federates",
+      description:
+        "Drag a unit or equipment-item to a federate in the panel on the right, in order to assign it to that federate. Holding the 'SHIFT'-key while dragging also assigns all underlying items",
+      nextBtnText: "OK",
+      onNextClick: () => {
+        pauseTour("assigned-federate");
+      },
+    },
+  },
+  {
+    element: "#main-dropdown-menu > button",
+    popover: {
+      showButtons: ["next", "close"],
+      title: "Save or load MSDL files",
+      description:
+        "Open the menu to download the existing MSDL as a file, or to load existing MSDL-files from your machine.",
+    },
+  },
+  {
     element: undefined,
     popover: {
-      showButtons: ["close"],
+      showButtons: ["close", "next"],
       title: "Finished the tour",
+      description:
+        "The tour has guided you through the main process of creating an MSDL file. You can always restart the tour by clicking the question mark icon in the top right navigation bar",
     },
   },
 ];
@@ -191,7 +225,7 @@ const tourObj = driver(tourConfig);
 
 const tourStatusChanged = () => {
   if (isTourActive.value === true) {
-    tourObj.drive();
+    tourObj.drive(activeIndex.value || 0);
   } else {
     removeCurrentClickListener();
     console.log("User tour is not active");
@@ -202,12 +236,12 @@ const pauseTour = (resumeEvent?: string) => {
   if (resumeEvent) {
     currentResumeEvent = resumeEvent;
   }
-  pausedIndex.value = tourObj.getActiveIndex() || 0;
+  activeIndex.value = tourObj.getActiveIndex() || 0;
   tourObj.destroy();
 };
 
 const resumeTour = () => {
-  tourObj.drive(pausedIndex.value + 1);
+  tourObj.drive((activeIndex.value || 0) + 1);
 };
 
 const setupClickListener = (cc: ClickConfig) => {
@@ -220,6 +254,7 @@ const setupClickListener = (cc: ClickConfig) => {
   currentClickHandler = () => processClick(cc);
   currentSelector = cc.element;
   elm.addEventListener("click", currentClickHandler);
+  activeIndex.value = tourObj.getActiveIndex() || 0;
 };
 
 const removeCurrentClickListener = () => {
@@ -232,10 +267,12 @@ const removeCurrentClickListener = () => {
 };
 
 function processClick(c: ClickConfig) {
-  if (pausedIndex.value === c.index) {
+  if (tourObj.getActiveIndex() === c.index) {
     c.fcn();
   } else {
-    console.log(`Wanted index ${c.index} is not equal to current ${pausedIndex.value} value`);
+    console.log(
+      `Wanted index ${c.index} is not equal to current ${tourObj.getActiveIndex()} value`,
+    );
   }
 }
 
@@ -254,19 +291,6 @@ function handleEvent(payload: string) {
     nextTick(() => resumeTour());
   }
 }
-
-const clickListeners: ClickConfig[] = [
-  {
-    element: "#main-dropdown-menu > button",
-    fcn: pauseTour,
-    index: 0,
-  },
-  {
-    element: 'div[data-slot="dropdown-menu-item"]:has(> #create-new-msdl)',
-    fcn: resumeTour,
-    index: 1,
-  },
-];
 
 watch(isTourActive, () => {
   tourStatusChanged();

@@ -144,16 +144,15 @@ function cancelRename() {
                   v-if="!isNullFederate"
                   title="Cancel"
                 >
-                  <X class="text-muted-foreground" />
+                  <X class="text-white" />
                 </Button>
                 <Button
                   variant="ghost"
-                  class="size-4"
                   @click.stop="applyRename"
                   v-if="!isNullFederate"
                   title="Apply"
                 >
-                  <Check class="text-muted-foreground" />
+                  <Check class="text-white" />
                 </Button>
               </span>
               <Button

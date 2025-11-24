@@ -94,7 +94,7 @@ function openCloseAll() {
         </Button>
       </span>
     </div>
-    <ScrollArea class="">
+    <ScrollArea class="" id="federates-overview-area">
       <div v-if="msdl?.deployment" class="w-full pb-4">
         <header class="flex items-center justify-between pl-4 mt-1">
           <h3 class="text-xs/6 font-semibold uppercase">Federates</h3>
