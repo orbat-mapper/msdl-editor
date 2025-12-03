@@ -105,18 +105,30 @@ function showAssociations() {
     v-model:open="dialogStore.isCreateForceSideDialogOpen"
     @created="addForceSide"
   />
-
-  <Accordion type="multiple" class="mt-2" v-model="expandedStore.openSideItems">
-    <SideItem
-      v-for="side in sides"
-      :key="side.objectHandle"
-      :sideObjectHandle="side.objectHandle"
-    />
-  </Accordion>
+  <div id="orbat-sides-container">
+    <Accordion type="multiple" class="mt-2" v-model="expandedStore.openSideItems">
+      <SideItem
+        v-for="side in sides"
+        :key="side.objectHandle"
+        :sideObjectHandle="side.objectHandle"
+      />
+    </Accordion>
+  </div>
   <div v-if="msdl">
+    <div v-if="msdl.forceSides.length == 0" class="mx-4">
+      <div class="text-sm mb-2">The scenario does not have any Force Sides yet</div>
+      <Button variant="secondary" @click="createForceSide()" id="create-force-side"
+        >Create Force Side</Button
+      >
+    </div>
     <div class="m-4">
       <Button variant="secondary" @click="toggleLayers()">Toggle all side visibilities</Button>
-      <Button variant="secondary" class="ml-4" @click="openFederatesPanel()">
+      <Button
+        variant="secondary"
+        class="ml-4"
+        @click="openFederatesPanel()"
+        id="show-all-federates"
+      >
         Show all federates
       </Button>
       <DescriptionItem label="Associations">

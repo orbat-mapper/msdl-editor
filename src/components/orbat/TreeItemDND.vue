@@ -156,6 +156,9 @@ watchEffect((onCleanup) => {
           if (isUnitDragItem(source.data) && props.item.value.itemType === "equipment") {
             return false;
           }
+          if (isEquipmentItemDragItem(source.data) && props.item.value.itemType === "equipment") {
+            return false;
+          }
 
           return true;
         }

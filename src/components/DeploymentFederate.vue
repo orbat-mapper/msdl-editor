@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Federate } from "@orbat-mapper/msdllib";
-import { Check, ChevronDown, Cross, CrossIcon, Pencil, PencilIcon, X } from "lucide-vue-next";
+import { Check, PencilIcon, X } from "lucide-vue-next";
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import FederateStats from "@/components/FederateStats.vue";
 import { computed, ref, useTemplateRef, watchEffect } from "vue";
@@ -144,16 +144,15 @@ function cancelRename() {
                   v-if="!isNullFederate"
                   title="Cancel"
                 >
-                  <X class="text-muted-foreground" />
+                  <X class="text-white" />
                 </Button>
                 <Button
                   variant="ghost"
-                  class="size-4"
                   @click.stop="applyRename"
                   v-if="!isNullFederate"
                   title="Apply"
                 >
-                  <Check class="text-muted-foreground" />
+                  <Check class="text-white" />
                 </Button>
               </span>
               <Button

@@ -39,6 +39,7 @@ import type {
 import { toast } from "vue-sonner";
 import { type OrbatDragItem } from "@/types/draggables.ts";
 import type { Instruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
+import { eventBus, MSDL_EDITOR_EVENT } from "@/eventBus";
 
 export interface MetaEntry<T = string> {
   label: T;
@@ -275,6 +276,7 @@ function updateSymbolIdentifier(objectHandle: string, sidc: string) {
   }
   item.symbolIdentifier = sidc;
   triggerRef(msdl);
+  eventBus.emit(MSDL_EDITOR_EVENT, "symbol-updated");
 }
 
 function updateHoldings(objectHandle: string, newHoldings: HoldingType[]) {
@@ -353,9 +355,16 @@ function addUnit(
   });
   item.name = newUnit?.name ?? "New unit";
   item.sidc = "SFGPU----------";
+  item.symbolIdentifier = item.sidc;
   if (msdl.value.primarySide) item.setForceRelation(msdl.value.primarySide);
   msdl.value.addUnit(item);
   triggerRef(msdl);
+  if (useSideStore().hideEmptySides) {
+    toast.warning("'Hide empty sides'-setting is set", {
+      description: "Newly created Force Side might be hidden",
+    });
+  }
+  eventBus.emit(MSDL_EDITOR_EVENT, "created-unit");
 }
 
 function addEquipmentItem(
@@ -369,6 +378,7 @@ function addEquipmentItem(
   });
   item.name = newEquipment?.name ?? "New equipment item";
   item.sidc = "SFGPE-----M----";
+  item.symbolIdentifier = item.sidc;
   msdl.value.addEquipmentItem(item);
   triggerRef(msdl);
 }
@@ -391,11 +401,13 @@ function addForceSide(newSide?: Partial<ForceSideType>) {
   side.updateFromObject(newSide);
   msdl.value.addForceSide(side);
   triggerRef(msdl);
+  useLayerStore().layers.add(side.objectHandle);
   if (useSideStore().hideEmptySides) {
     toast.warning("'Hide empty sides'-setting is set", {
       description: "Newly created Force Side might be hidden",
     });
   }
+  eventBus.emit(MSDL_EDITOR_EVENT, "created-force-side");
 }
 
 function removeForceSide(objectHandle: string) {
@@ -410,6 +422,7 @@ function addFederate(newFederate?: Partial<FederateType>) {
   fed.updateFromObject(newFederate);
   msdl.value.addFederate(fed);
   triggerRef(msdl);
+  eventBus.emit(MSDL_EDITOR_EVENT, "created-federate");
 }
 
 function assignUnitToFederate(
@@ -420,12 +433,14 @@ function assignUnitToFederate(
   if (!msdl.value || !unit || !federate) return;
   msdl.value.assignUnitToFederate(unit, federate, includeSubordinates);
   triggerRef(msdl);
+  eventBus.emit(MSDL_EDITOR_EVENT, "assigned-federate");
 }
 
 function assignEquipmentToFederate(equipment: string, federate: string) {
   if (!msdl.value || !equipment || !federate) return;
   msdl.value.assignEquipmentItemToFederate(equipment, federate);
   triggerRef(msdl);
+  eventBus.emit(MSDL_EDITOR_EVENT, "assigned-federate");
 }
 
 function removeUnitFromFederate(unit: string, includeSubordinates: boolean = false) {
@@ -434,6 +449,7 @@ function removeUnitFromFederate(unit: string, includeSubordinates: boolean = fal
   if (!federate) return;
   msdl.value.removeUnitFromFederate(unit, federate.objectHandle, includeSubordinates);
   triggerRef(msdl);
+  eventBus.emit(MSDL_EDITOR_EVENT, "removed-federate");
 }
 
 function removeEquipmentFromFederate(equipment: string) {
@@ -442,6 +458,7 @@ function removeEquipmentFromFederate(equipment: string) {
   if (!federate) return;
   msdl.value.removeEquipmentFromFederate(equipment, federate.objectHandle);
   triggerRef(msdl);
+  eventBus.emit(MSDL_EDITOR_EVENT, "removed-federate");
 }
 
 function createScenarioKey(scenario: MilitaryScenario): string {
@@ -500,6 +517,7 @@ function updateForceSideAssociation(
     return;
   }
   forceSide.associations = associations;
+  msdl.value.evaluateAssociations(forceSide);
   triggerRef(msdl);
 }
 
@@ -540,6 +558,7 @@ export function useScenarioStore() {
     clearScenario();
     msdl.value = MilitaryScenario.createFromModel(scenarioInput);
     triggerRef(msdl);
+    eventBus.emit(MSDL_EDITOR_EVENT, "created-new-msdl");
   }
 
   const isNETN = computed(() => {
