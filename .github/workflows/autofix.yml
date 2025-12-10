@@ -11,12 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-          cache: 'npm'
+          cache: 'pnpm'
 
-      - run: npm ci
-      - run: npm run format
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run format
    
       - uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27

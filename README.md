@@ -11,13 +11,13 @@ This project includes comprehensive documentation built with VitePress:
 
 ```sh
 # Start documentation dev server
-npm run docs:dev
+pnpm run docs:dev
 
 # Build documentation
-npm run docs:build
+pnpm run docs:build
 
 # Preview built documentation
-npm run docs:preview
+pnpm run docs:preview
 ```
 
 ## Project Setup
@@ -32,17 +32,17 @@ cd msdl-editor
 ### Install Dependencies
 
 ```sh
-npm install
+pnpm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-npm run build
+pnpm run build
 ```
