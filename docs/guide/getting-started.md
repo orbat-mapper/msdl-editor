@@ -25,8 +25,8 @@ If you want to run MSDL Editor locally or contribute to development:
 ```bash
 git clone https://github.com/orbat-mapper/msdl-editor.git
 cd msdl-editor
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```
 
 The application will be available at `http://localhost:5173`.

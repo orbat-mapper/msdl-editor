@@ -32,7 +32,7 @@ git checkout -b your-feature-branch
 - You can automatically format your code by running:
 
 ```
-npm run format
+pnpm run format
 ```
 
 ## 5. Rebase Regularly
