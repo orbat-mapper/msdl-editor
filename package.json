@@ -39,7 +39,7 @@
     "fflate": "^0.8.2",
     "fuzzysort": "^2.0.4",
     "lucide-vue-next": "^0.537.0",
-    "maplibre-gl": "~5.11.0",
+    "maplibre-gl": "~5.14.0",
     "mgrs": "^2.1.0",
     "milsymbol": "^3.0.3",
     "nanoid": "^5.1.6",
