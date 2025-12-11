@@ -2,6 +2,10 @@
   "name": "msdl-editor",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0",
+    "pnpm": ">=10"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
