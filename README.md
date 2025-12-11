@@ -5,21 +5,6 @@ to [msdllib](https://github.com/orbat-mapper/msdllib). Try the live demo at http
 
 [Contributing Guidelines](CONTRIBUTING.md) | [Documentation](docs/)
 
-## Documentation
-
-This project includes comprehensive documentation built with VitePress:
-
-```sh
-# Start documentation dev server
-pnpm run docs:dev
-
-# Build documentation
-pnpm run docs:build
-
-# Preview built documentation
-pnpm run docs:preview
-```
-
 ## Project Setup
 
 ### Clone the Repository
@@ -30,6 +15,9 @@ cd msdl-editor
 ```
 
 ### Install Dependencies
+
+This project uses [pnpm](https://pnpm.io/) as its package manager. If you don't have it installed, check out
+the [pnpm installation guide](https://pnpm.io/installation).
 
 ```sh
 pnpm install
@@ -45,4 +33,19 @@ pnpm run dev
 
 ```sh
 pnpm run build
+```
+
+## Documentation
+
+This project includes documentation built with VitePress:
+
+```sh
+# Start documentation dev server
+pnpm run docs:dev
+
+# Build documentation
+pnpm run docs:build
+
+# Preview built documentation
+pnpm run docs:preview
 ```
