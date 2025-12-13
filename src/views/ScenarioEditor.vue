@@ -92,7 +92,7 @@ provide(sidcModalKey, { getModalSidc });
 <template>
   <div class="h-full w-full flex flex-col relative" ref="dropZoneRef">
     <header class="shrink-0">
-      <MainNavbar />
+      <MainNavbar @showSearch="showSearch = true" />
     </header>
     <main class="flex-auto relative">
       <MaplibreMap @ready="onMapReady" />
@@ -125,7 +125,7 @@ provide(sidcModalKey, { getModalSidc });
       @keyup.ctrl.y="redo()"
       @keyup.l.exact="dispatchAction('LocateInOrbat')"
     />
-    <CommandPalette v-model:open="showSearch" />
+    <CommandPalette v-model:open="showSearch" :mlMap />
 
     <SymbolPickerModal
       v-if="showSidcModal"

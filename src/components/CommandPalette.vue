@@ -16,9 +16,17 @@ import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
 
 import { Download, Grid3x3Icon, ListTreeIcon, Upload } from "lucide-vue-next";
-import { type ScenarioAction, useScenarioActions } from "@/composables/scenarioActions.ts";
+import {
+  flyToItem,
+  type ScenarioAction,
+  useScenarioActions,
+} from "@/composables/scenarioActions.ts";
 import type { EquipmentItem, Unit } from "@orbat-mapper/msdllib";
 import { groupByObj } from "@/utils.ts";
+
+const { mlMap } = defineProps<{
+  mlMap?: maplibregl.Map;
+}>();
 
 const open = defineModel<boolean>("open", { default: false });
 const { dispatchAction: _dispatchAction } = useScenarioActions();
@@ -86,9 +94,14 @@ watch(debouncedQuery, () => {
 function selectUnitOrEquipmentItem(itemId: string) {
   const activeItemId = itemId;
   if (!activeItemId) return;
-  selectStore.activeItem = msdl.value?.getUnitOrEquipmentById(activeItemId) ?? null;
+  const activeItem = msdl.value?.getUnitOrEquipmentById(activeItemId) ?? null;
+  selectStore.activeItem = activeItem;
   open.value = false;
   searchQuery.value = "";
+  if (activeItem && mlMap) {
+    flyToItem(activeItem, mlMap, { zoom: 10 });
+    dispatchAction("LocateInOrbat");
+  }
 }
 </script>
 
