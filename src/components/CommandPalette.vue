@@ -17,6 +17,7 @@ import MilSymbol from "@/components/MilSymbol.vue";
 
 import { Download, Upload, Grid3x3Icon, ListTreeIcon } from "lucide-vue-next";
 import { type ScenarioAction, useScenarioActions } from "@/composables/scenarioActions.ts";
+import { Unit } from "@orbat-mapper/msdllib";
 
 const open = defineModel<boolean>("open", { default: false });
 const { dispatchAction: _dispatchAction } = useScenarioActions();
@@ -58,7 +59,7 @@ const queryUpdated = () => {
       label: item.label,
       sidc: item.sidc,
       itemId: key,
-      elementName: item.element.localName,
+      elementName: item instanceof Unit ? "Units" : "Equipment",
     }));
 
   // Split into units and equipment
