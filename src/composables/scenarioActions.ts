@@ -4,9 +4,12 @@ import { toast } from "vue-sonner";
 import { useDialogStore } from "@/stores/dialogStore.ts";
 import { useExpandedStore } from "@/stores/expandedStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
-import { ForceSide } from "@orbat-mapper/msdllib";
-import { nextTick } from "vue";
-import { triggerFlash } from "@/utils.ts";
+import { type EquipmentItem, ForceSide, type Unit } from "@orbat-mapper/msdllib";
+import { isForceSide, isUnitOrEquipment, triggerFlash } from "@/utils.ts";
+import maplibregl, { type LngLatBoundsLike, type LngLatLike } from "maplibre-gl";
+import bbox from "@turf/bbox";
+import type { GeoJSON } from "geojson";
+
 export type ScenarioAction =
   | "CreateNewMSDL"
   | "LoadMSDLFromFile"
@@ -15,9 +18,10 @@ export type ScenarioAction =
   | "LoadFromUrl"
   | "EditAssociations"
   | "LocateInOrbat"
-  | "CollapseOrbat";
+  | "CollapseOrbat"
+  | "ZoomToActiveItem";
 
-export function useScenarioActions() {
+export function useScenarioActions(mlMap?: maplibregl.Map) {
   const { msdl, loadScenario } = useScenarioStore();
   const dialogStore = useDialogStore();
   const expandedStore = useExpandedStore();
@@ -102,10 +106,37 @@ export function useScenarioActions() {
         expandedStore.expandedItems.clear();
         break;
 
+      case "ZoomToActiveItem":
+        if (!mlMap || !msdl.value || !selectStore.activeItem) {
+          return;
+        }
+        flyToItem(selectStore.activeItem, mlMap);
+        break;
+
       default:
         console.error(`Unknown action: ${action}`);
     }
   }
 
   return { dispatchAction };
+}
+
+export function flyToItem(
+  item: EquipmentItem | Unit | ForceSide,
+  mlMap: maplibregl.Map,
+  { zoom = 16 }: { zoom?: number } = {},
+) {
+  if (isUnitOrEquipment(item)) {
+    const coordinates = item.location as LngLatLike;
+    if (!coordinates) return;
+    mlMap?.flyTo({ center: coordinates, zoom });
+  } else if (isForceSide(item)) {
+    const bounds = bbox(item.toGeoJson({ includeEquipment: true, includeUnits: true }) as GeoJSON);
+    if (bounds.some((v) => v === Infinity || v === -Infinity)) {
+      return;
+    }
+    mlMap?.fitBounds(bounds as LngLatBoundsLike, {
+      padding: { top: 50, bottom: 50, left: 200, right: 200 },
+    });
+  }
 }

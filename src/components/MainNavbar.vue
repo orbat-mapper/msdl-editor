@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import MainDropdownMenu from "@/components/MainDropdownMenu.vue";
-import { MoonIcon, SunIcon, SearchIcon, HelpCircleIcon } from "lucide-vue-next";
+import { HelpCircleIcon, MoonIcon, SearchIcon, SunIcon } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 import { useDark, useToggle } from "@vueuse/core";
 import { loadMSDLFromFile } from "@/lib/io.ts";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import EditableLabel from "@/components/EditableLabel.vue";
 import { computed } from "vue";
-import { ref } from "vue";
-import CommandPalette from "@/components/CommandPalette.vue";
 import { useTourStore } from "@/stores/tourStore";
 
+const emit = defineEmits<{
+  (e: "showSearch"): void;
+}>();
 const {
   msdl,
   loadScenario,
@@ -21,7 +22,6 @@ const { resetTour, startTour } = useTourStore();
 
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
-const showSearch = ref(false);
 
 async function doLoading() {
   try {
@@ -59,12 +59,11 @@ const scenarioName = computed({
     <div class="flex gap-2">
       <Button
         variant="outline"
-        @click="showSearch = true"
+        @click="emit('showSearch')"
         size="icon"
         title="Search units, items or commands"
         ><SearchIcon
       /></Button>
-      <CommandPalette v-model:open="showSearch" />
       <Button variant="outline" @click="toggleDark()" size="icon" title="Toggle theme">
         <MoonIcon v-if="isDark" class="size-4" />
         <SunIcon v-else class="size-4" />
