@@ -168,3 +168,14 @@ export function groupBy<T extends object, K extends keyof T>(arr: T[], key: K) {
     return acc;
   }, new Map<T[K], T[]>());
 }
+
+export function groupByObj<T extends object, K extends keyof T>(arr: T[], key: K) {
+  return arr.reduce(
+    (acc, item) => {
+      const k = String(item[key] as unknown);
+      (acc[k] = acc[k] || []).push(item);
+      return acc;
+    },
+    {} as Record<string, T[]>,
+  );
+}

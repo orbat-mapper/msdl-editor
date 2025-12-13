@@ -9,15 +9,16 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command";
-import { watch, ref } from "vue";
+import { ref, watch } from "vue";
 import { useDebounce } from "@vueuse/core";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
 
-import { Download, Upload, Grid3x3Icon, ListTreeIcon } from "lucide-vue-next";
+import { Download, Grid3x3Icon, ListTreeIcon, Upload } from "lucide-vue-next";
 import { type ScenarioAction, useScenarioActions } from "@/composables/scenarioActions.ts";
-import { Unit } from "@orbat-mapper/msdllib";
+import type { EquipmentItem, Unit } from "@orbat-mapper/msdllib";
+import { groupByObj } from "@/utils.ts";
 
 const open = defineModel<boolean>("open", { default: false });
 const { dispatchAction: _dispatchAction } = useScenarioActions();
@@ -26,7 +27,12 @@ const { msdl } = useScenarioStore();
 const selectStore = useSelectStore();
 
 // Search query refs
-type SearchResultItem = { label: string; itemId: string; sidc: string; elementName: string };
+type SearchResultItem = {
+  label: string;
+  itemId: string;
+  sidc: string;
+  elementName: string;
+};
 
 const searchQuery = ref<string>("");
 const debouncedQuery = useDebounce(searchQuery, 200);
@@ -51,31 +57,33 @@ const queryUpdated = () => {
   const unitEntries = Object.entries(msdl.value?.unitMap || {});
   const equipmentEntries = Object.entries(msdl.value?.equipmentMap || {});
 
-  // Provide autocomplete results based on searchquery
-  searchResultsList.value = [...unitEntries, ...equipmentEntries]
-    .filter(([, item]) => item.label.toLowerCase().includes(debouncedQuery.value.toLowerCase()))
-    .slice(0, 10)
-    .map(([key, item]) => ({
-      label: item.label,
-      sidc: item.sidc,
-      itemId: key,
-      elementName: item instanceof Unit ? "Units" : "Equipment",
-    }));
+  // Provide autocomplete results based on search query
+  const queryText = debouncedQuery.value.toLowerCase();
+  const makeResults = (entries: [string, Unit | EquipmentItem][], elementName: string) =>
+    entries
+      .filter(([, item]) => item.label.toLowerCase().includes(queryText))
+      .slice(0, 5)
+      .map(([key, item]) => ({
+        label: item.label,
+        sidc: item.sidc,
+        itemId: key,
+        elementName,
+      }));
 
+  searchResultsList.value = [
+    ...makeResults(unitEntries, "Units"),
+    ...makeResults(equipmentEntries, "Equipment"),
+  ];
   // Split into units and equipment
-  groupedItems.value = {};
-  searchResultsList.value.forEach((obj) => {
-    groupedItems.value[obj.elementName] = groupedItems.value[obj.elementName] || [];
-    groupedItems.value[obj.elementName].push(obj);
-  });
+  groupedItems.value = groupByObj(searchResultsList.value, "elementName");
 };
 
 // Watch for changes to the searchQuery
-watch(debouncedQuery, (newVal: string) => {
+watch(debouncedQuery, () => {
   queryUpdated();
 });
 
-function selectItem(itemId: string) {
+function selectUnitOrEquipmentItem(itemId: string) {
   const activeItemId = itemId;
   if (!activeItemId) return;
   selectStore.activeItem = msdl.value?.getUnitOrEquipmentById(activeItemId) ?? null;
@@ -94,7 +102,7 @@ function selectItem(itemId: string) {
         <CommandGroup v-if="items.length" :heading="key">
           <CommandItem
             v-for="item in items"
-            @select="selectItem(item.itemId)"
+            @select="selectUnitOrEquipmentItem(item.itemId)"
             :key="item.itemId"
             :value="item.itemId"
             class="cursor-pointer"
@@ -104,7 +112,7 @@ function selectItem(itemId: string) {
             </div>
             <div class="grid grid-cols-[auto,1fr]">
               <div>{{ item.label }}</div>
-              <div class="font-light" style="color: var(--muted-foreground)">
+              <div class="font-light text-muted-foreground">
                 {{ item.itemId }}
               </div>
             </div>
