@@ -69,7 +69,7 @@ function dispatchAction(action: ScenarioAction) {
 
 // Watch for changes to the searchQuery
 watchEffect(() => {
-  if (isActionSearch.value || isGeoSearch) return;
+  if (isActionSearch.value || isGeoSearch.value) return;
   groupedHits.value = search(debouncedQuery.value);
 });
 
