@@ -6,6 +6,7 @@ import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
 import {
   flyToItem,
+  flyToPlace,
   type ScenarioAction,
   useScenarioActions,
 } from "@/composables/scenarioActions.ts";
@@ -18,6 +19,14 @@ import {
   type UnitSearchResult,
   useScenarioSearch,
 } from "@/composables/scenarioSearching.ts";
+import { type ExtendedPhotonSearchResult, useGeoSearch } from "@/composables/geosearching.ts";
+import CommandPalettePlaceItem from "@/components/commandpalette/CommandPalettePlaceItem.vue";
+
+type SearchItemResult =
+  | UnitSearchResult
+  | EquipmentSearchResult
+  | ActionSearchResult
+  | ExtendedPhotonSearchResult;
 
 const { mlMap } = defineProps<{
   mlMap?: maplibregl.Map;
@@ -28,16 +37,21 @@ const { dispatchAction: _dispatchAction } = useScenarioActions();
 
 const { msdl } = useScenarioStore();
 const selectStore = useSelectStore();
+const { photonSearch } = useGeoSearch();
 
 const rawQuery = ref("");
 const query = computed(() => rawQuery.value.replace(/^[#@>]/, "").trim());
 const debouncedQuery = useDebounce(query, 200);
+const geoDebouncedQuery = useDebounce(query, 300);
+const mapCenter = ref<[number, number] | null>(null);
 
-const groupedHits = ref<ReturnType<typeof search>>();
+const groupedHits = ref<ReturnType<typeof search> | Map<"Places", ExtendedPhotonSearchResult[]>>();
 
 const isActionSearch = computed(
   () => rawQuery.value.startsWith("#") || rawQuery.value.startsWith(">"),
 );
+
+const isGeoSearch = computed(() => rawQuery.value.startsWith("@"));
 
 const noResults = computed(() => {
   if (debouncedQuery.value && groupedHits.value) {
@@ -55,7 +69,7 @@ function dispatchAction(action: ScenarioAction) {
 
 // Watch for changes to the searchQuery
 watchEffect(() => {
-  if (isActionSearch.value) return;
+  if (isActionSearch.value || isGeoSearch) return;
   groupedHits.value = search(debouncedQuery.value);
 });
 
@@ -64,6 +78,31 @@ watch([isActionSearch, query], async ([isa, q]) => {
   const filteredActions = q ? searchActions(q) : actionItems;
   groupedHits.value = new Map([["Actions", filteredActions]]);
 });
+
+watch(
+  () => isGeoSearch.value && geoDebouncedQuery.value.trim(),
+  async (q) => {
+    if (!q) return;
+    const data = await photonSearch(q, { mapCenter: mapCenter.value });
+    groupedHits.value = new Map([["Places", data.map((d) => ({ ...d, category: "Places" }))]]);
+  },
+);
+
+watch(
+  open,
+  (isOpen) => {
+    if (isOpen) {
+      // get map center coordinates
+      const center = mlMap?.getCenter();
+      if (center) {
+        mapCenter.value = [center.lng, center.lat];
+      } else {
+        mapCenter.value = null;
+      }
+    }
+  },
+  { immediate: true },
+);
 
 function selectUnitOrEquipmentItem(itemId: string) {
   const activeItemId = itemId;
@@ -78,24 +117,32 @@ function selectUnitOrEquipmentItem(itemId: string) {
   }
 }
 
-function selectItem(item: UnitSearchResult | EquipmentSearchResult | ActionSearchResult) {
+function selectItem(
+  item: UnitSearchResult | EquipmentSearchResult | ActionSearchResult | ExtendedPhotonSearchResult,
+) {
   if (isUnitEquipmentSearchResult(item)) {
     selectUnitOrEquipmentItem(item.id);
   } else if (isActionSearchResult(item)) {
     dispatchAction(item.action);
+  } else if (isGeoSearchResult(item)) {
+    if (!mlMap) return;
+    open.value = false;
+    flyToPlace(item, mlMap);
   }
 }
 
 function isUnitEquipmentSearchResult(
-  item: UnitSearchResult | EquipmentSearchResult | ActionSearchResult,
+  item: SearchItemResult,
 ): item is UnitSearchResult | EquipmentSearchResult {
   return item.category === "Units" || item.category === "Equipment";
 }
 
-function isActionSearchResult(
-  item: UnitSearchResult | EquipmentSearchResult | ActionSearchResult,
-): item is ActionSearchResult {
+function isActionSearchResult(item: SearchItemResult): item is ActionSearchResult {
   return item.category === "Actions";
+}
+
+function isGeoSearchResult(item: SearchItemResult): item is ExtendedPhotonSearchResult {
+  return item.category === "Places";
 }
 </script>
 
@@ -151,6 +198,11 @@ function isActionSearchResult(
                   <span v-html="item.highlight ? item.highlight : item.label" />
                 </div>
               </template>
+              <CommandPalettePlaceItem
+                :item
+                :center="mapCenter"
+                v-else-if="isGeoSearchResult(item)"
+              />
             </ListboxItem>
           </ListboxGroup>
           <p class="py-6 text-center text-sm" v-if="noResults">No search results found.</p>

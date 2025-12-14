@@ -179,3 +179,31 @@ export function groupByObj<T extends object, K extends keyof T>(arr: T[], key: K
     {} as Record<string, T[]>,
   );
 }
+
+export type MeasurementUnit = "metric" | "imperial" | "nautical";
+
+export function formatLength(length: number, unit: MeasurementUnit = "metric") {
+  let output: string = "";
+  if (unit === "metric") {
+    if (length > 100) {
+      output = Math.round((length / 1000) * 100) / 100 + " km";
+    } else {
+      output = Math.round(length * 100) / 100 + " m";
+    }
+  } else if (unit === "imperial") {
+    const miles = length * 0.000621371192;
+    if (miles > 0.1) {
+      output = miles.toFixed(2) + " mi";
+    } else {
+      output = (miles * 5280).toFixed(2) + " ft";
+    }
+  } else if (unit === "nautical") {
+    const nm = length * 0.000539956803;
+    if (nm > 0.1) {
+      output = nm.toFixed(2) + " nm";
+    } else {
+      output = nm.toFixed(3) + " nm";
+    }
+  }
+  return output;
+}
