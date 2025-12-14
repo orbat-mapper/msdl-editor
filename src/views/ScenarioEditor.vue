@@ -16,7 +16,7 @@ import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { progress } from "@/composables/progress.ts";
 import { GlobalEvents } from "vue-global-events";
 import { inputEventFilter } from "@/utils.ts";
-import CommandPalette from "@/components/CommandPalette.vue";
+import CommandPalette from "@/components/commandpalette/CommandPalette.vue";
 import EditAssociationsDialog from "@/components/EditAssociationsDialog.vue";
 import { useScenarioActions } from "@/composables/scenarioActions.ts";
 import { useSidcModal } from "@/composables/modals";
