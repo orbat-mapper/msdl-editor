@@ -29,6 +29,7 @@
     "@tmcw/togeojson": "^7.1.2",
     "@turf/bbox": "^7.2.0",
     "@turf/centroid": "^7.2.0",
+    "@turf/distance": "^7.3.1",
     "@turf/helpers": "^7.3.1",
     "@vee-validate/zod": "^4.15.1",
     "@vueuse/core": "^13.9.0",

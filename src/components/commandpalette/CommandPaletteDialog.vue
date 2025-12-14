@@ -36,8 +36,9 @@ const forwarded = useForwardPropsEmits(props, emits);
         <DialogDescription>{{ description }}</DialogDescription>
       </DialogHeader>
       <slot v-bind="slotProps" />
-      <DialogFooter class="p-2 text-sm text-muted-foreground"
-        >Type <Kbd>&gt;</Kbd> or <Kbd>#</Kbd> for actions</DialogFooter
+      <DialogFooter class="p-2 text-sm text-muted-foreground sm:justify-start"
+        >Type <Kbd>@</Kbd> for place name search, <Kbd>&gt;</Kbd> or <Kbd>#</Kbd> for
+        actions</DialogFooter
       >
     </DialogContent>
   </Dialog>
