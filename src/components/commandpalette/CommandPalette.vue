@@ -192,7 +192,7 @@ function isGeoSearchResult(item: SearchItemResult): item is ExtendedPhotonSearch
               </template>
               <template v-else-if="isActionSearchResult(item)">
                 <div class="justify-center flex w-6">
-                  <component :is="item.icon" class="size-6" />
+                  <component :is="item.icon" class="size-4" />
                 </div>
                 <div class="grid grid-cols-[auto,1fr]">
                   <span v-html="item.highlight ? item.highlight : item.label" />
