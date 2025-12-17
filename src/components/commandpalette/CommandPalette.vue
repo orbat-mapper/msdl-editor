@@ -4,12 +4,9 @@ import { useDebounce } from "@vueuse/core";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
-import {
-  flyToItem,
-  flyToPlace,
-  type ScenarioAction,
-  useScenarioActions,
-} from "@/composables/scenarioActions.ts";
+import { flyToItem, flyToPlace } from "@/composables/mapActions.ts";
+import type { ScenarioAction } from "@/composables/scenarioActions.ts";
+import { useScenarioActions } from "@/composables/scenarioActions.ts";
 import CommandPaletteDialog from "@/components/commandpalette/CommandPaletteDialog.vue";
 import { ListboxContent, ListboxGroup, ListboxGroupLabel, ListboxItem, ListboxRoot } from "reka-ui";
 import CommandPaletteInput from "@/components/commandpalette/CommandPaletteInput.vue";
@@ -176,7 +173,7 @@ function isGeoSearchResult(item: SearchItemResult): item is ExtendedPhotonSearch
               :key="item.id"
               data-slot="command-item"
               :value="item"
-              class="[&_b]:text-red-600 data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+              class="[&_b]:text-red-600 data-highlighted:bg-accent data-highlighted:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
               @select="selectItem(item)"
             >
               <template v-if="isUnitEquipmentSearchResult(item)">

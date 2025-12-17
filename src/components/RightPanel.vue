@@ -2,7 +2,7 @@
 import DetailsPanel from "@/components/DetailsPanel.vue";
 import DeploymentPanel from "@/components/DeploymentPanel.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
-import { flyToItem } from "@/composables/scenarioActions.ts";
+import { flyToItem } from "@/composables/mapActions.ts";
 import { type EquipmentItem, ForceSide, type Unit } from "@orbat-mapper/msdllib";
 
 const { mlMap } = defineProps<{
