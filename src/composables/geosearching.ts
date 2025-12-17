@@ -68,5 +68,5 @@ export function useGeoSearch() {
       });
     } else return [];
   }
-  return { isFetching, photonSearch };
+  return { isFetching, photonSearch, error };
 }

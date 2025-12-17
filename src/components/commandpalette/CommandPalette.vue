@@ -4,6 +4,7 @@ import { useDebounce } from "@vueuse/core";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
+import { LoaderIcon } from "lucide-vue-next";
 import { flyToItem, flyToPlace } from "@/composables/mapActions.ts";
 import type { ScenarioAction } from "@/composables/scenarioActions.ts";
 import { useScenarioActions } from "@/composables/scenarioActions.ts";
@@ -34,12 +35,12 @@ const { dispatchAction: _dispatchAction } = useScenarioActions();
 
 const { msdl } = useScenarioStore();
 const selectStore = useSelectStore();
-const { photonSearch } = useGeoSearch();
+const { photonSearch, isFetching } = useGeoSearch();
 
 const rawQuery = ref("");
 const query = computed(() => rawQuery.value.replace(/^[#@>]/, "").trim());
 const debouncedQuery = useDebounce(query, 200);
-const geoDebouncedQuery = useDebounce(query, 300);
+const geoDebouncedQuery = useDebounce(query, 500);
 const mapCenter = ref<[number, number] | null>(null);
 
 const groupedHits = ref<ReturnType<typeof search> | Map<"Places", ExtendedPhotonSearchResult[]>>();
@@ -202,9 +203,15 @@ function isGeoSearchResult(item: SearchItemResult): item is ExtendedPhotonSearch
               />
             </ListboxItem>
           </ListboxGroup>
-          <p class="py-6 text-center text-sm" v-if="noResults">No search results found.</p>
+          <p class="py-6 text-center text-sm" v-if="noResults && !isFetching">
+            No search results found.
+          </p>
         </div>
       </ListboxContent>
     </ListboxRoot>
+    <LoaderIcon
+      v-if="isFetching"
+      class="absolute bottom-2 right-2 animate-spin text-muted-foreground size-5"
+    />
   </CommandPaletteDialog>
 </template>
