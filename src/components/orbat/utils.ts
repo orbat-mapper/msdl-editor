@@ -126,7 +126,7 @@ export const tree = {
 };
 
 export function updateTree(data: TreeItem[], action: TreeAction) {
-   
+  // eslint-disable-next-line no-console
   console.log("action", action);
 
   const item = tree.find(data, action.itemId);

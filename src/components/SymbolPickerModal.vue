@@ -133,7 +133,7 @@ createDimensionCode();
 
 // Handle correct functionality of other dropdown fields if dimension changes
 function setDimension(): void {
-  const code = dimension.value.replaceAll("*", "-");
+  let code = dimension.value.replaceAll("*", "-");
 
   codingSchemeValue.value = code[0];
   battleDimensionValue.value = code[2];

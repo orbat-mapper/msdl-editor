@@ -17,7 +17,7 @@ export function useSymbologySearch(sidValue: Ref<string>) {
   const { symbology } = useSymbologyData();
 
   function searchMainIcons(query: string): SymbolSearchResult[] {
-    const h = fuzzysort.go(query, symbology.value || [], {
+    let h = fuzzysort.go(query, symbology.value || [], {
       key: "text",
       limit: 10,
     });
