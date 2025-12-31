@@ -70,7 +70,7 @@ watchEffect((onCleanup) => {
       if (!msdl.value || !msdl.value.deployment) return;
       instruction.value = null;
       isDraggedOver.value = false;
-      let data = source.data;
+      const data = source.data;
       if (isUnitOrEquipmentItemDragItem(data)) {
         if (props.federate.objectHandle === UNALLOCATED_FEDERATE.objectHandle) {
           if (msdl.value.getUnitById(data.item.objectHandle)) {

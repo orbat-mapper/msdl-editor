@@ -57,6 +57,10 @@ const federate = computed(() => {
   return msdl.value?.getFederateOfUnitOrEquipment(props.item._id) || UNALLOCATED_FEDERATE;
 });
 
+const isActive = computed(() => {
+  return selectStore.activeItem?.objectHandle === props.item._id;
+});
+
 watchEffect((onCleanup) => {
   const currentElement = unrefElement(elRef.value as never);
 
@@ -218,7 +222,7 @@ function openFederateDetail() {
     :value="item.value"
     :level="item.level"
     class="relative w-full border-none"
-    :class="{ 'opacity-50': isDragging }"
+    :class="{ 'opacity-50': isDragging, 'bg-muted-foreground/20': isActive }"
     @select="onSelect(item)"
   >
     <button
@@ -232,7 +236,7 @@ function openFederateDetail() {
     </button>
     <span v-else class="size-5 mr-1" />
     <MilSymbol :sidc="item.value.sidc" :size="16" />
-    <div class="pl-2" :class="selectStore.activeItem?.objectHandle === item._id ? 'font-bold' : ''">
+    <div class="pl-2" :class="{ 'font-bold': isActive }">
       {{ item.value.label }}
     </div>
     <div

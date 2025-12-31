@@ -101,7 +101,7 @@ export function useSymbolItems(sidc: Ref<string>) {
 
   const statusItems = computed((): SymbolItem[] => {
     if (!symbology.value) return [];
-    let modifier = isGroundInstallation() ? "H" : "-";
+    const modifier = isGroundInstallation() ? "H" : "-";
 
     return statusValuesB.map(({ code, text }) => {
       return {
@@ -187,7 +187,7 @@ export function useSymbolItems(sidc: Ref<string>) {
     if (!isLoaded.value) return [];
     if (!symbology.value) return [];
 
-    let mis = symbology.value || {};
+    const mis = symbology.value || {};
     const addedNodes = new Set();
     const result: SymbolItem[] = [];
 
@@ -204,7 +204,7 @@ export function useSymbolItems(sidc: Ref<string>) {
       if (addedNodes.has(node.functionid)) continue;
       addedNodes.add(node.functionid);
 
-      let names = node.names?.filter(Boolean);
+      const names = node.names?.filter(Boolean);
 
       const [entity, entityType, entitySubtype] =
         names.length >= 3

@@ -129,7 +129,7 @@ const { getModalSidc } = injectStrict(sidcModalKey);
 async function handleChangeSymbol() {
   if (!isUnitOrEquipment(props.item)) return;
 
-  let sidc = props.item.sidc;
+  const sidc = props.item.sidc;
   if (sidc.length !== 15) {
     throw new Error("Unsupported SIDC, must be exactly 15 characters long"); // Only support Revision-B Symbology for now
   }
