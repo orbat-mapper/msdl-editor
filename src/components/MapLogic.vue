@@ -80,8 +80,6 @@ watch(
         const msdlLayers = previousStyle.layers.filter((layer) => layer.id.startsWith("msdl-"));
 
         return {
-          glyphs: previousStyle.glyphs,
-          sprite: previousStyle.sprite ?? "",
           ...nextStyle,
           sources: { ...nextStyle.sources, ...msdlSources },
           layers: [...nextStyle.layers, ...msdlLayers],
