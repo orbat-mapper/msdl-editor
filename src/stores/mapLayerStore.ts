@@ -1,18 +1,34 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import type { EnumItem } from "@/components/types.ts";
+import type { EnumBaseLayer } from "@/components/types.ts";
 import type { StyleSpecification } from "maplibre-gl";
+import { useLocalStorage } from "@vueuse/core";
 
-export type BaseLayer = "none" | "osm" | "satellite" | "default" | "demo";
+export type BaseLayer = "none" | "osm" | "satellite" | "default" | "demo" | "WMS" | "xyz";
 
-export const mapProviders: EnumItem<BaseLayer>[] = [
-  { value: "default", label: "OpenFreeMap" },
-  { value: "osm", label: "OpenStreetMap (raster)" },
-  { value: "satellite", label: "ESRI World imagery (raster)" },
-  { value: "demo", label: "Demo tiles" },
+export const mapProviders: EnumBaseLayer<BaseLayer>[] = [
+  { value: "default", label: "OpenFreeMap", layerType: "default" },
+  { value: "osm", label: "OpenStreetMap (raster)", layerType: "default" },
+  { value: "satellite", label: "ESRI World imagery (raster)", layerType: "default" },
+  { value: "demo", label: "Demo tiles", layerType: "default" },
+  { value: "WMS", label: "Custom WMS", layerType: "custom" },
+  { value: "xyz", label: "Custom XYZ", layerType: "custom" },
 ];
 
-export function getStyleForBaseLayer(baseLayer: BaseLayer): string | StyleSpecification {
+export function getStyleForBaseLayer(baseLayer?: BaseLayer): string | StyleSpecification {
+  const mapProvider = mapProviders.find((mp) => mp.value === baseLayer);
+  if (baseLayer && mapProvider?.layerType === "custom") {
+    return getCustomStyleForBaseLayer(baseLayer);
+  } else {
+    return getDefaultStyleForBaseLayer(baseLayer);
+  }
+}
+
+export function getCustomStyleForBaseLayer(baseLayer: BaseLayer): string | StyleSpecification {
+  return getDefaultStyleForBaseLayer(baseLayer);
+}
+
+export function getDefaultStyleForBaseLayer(baseLayer: BaseLayer): string | StyleSpecification {
   switch (baseLayer) {
     case "osm":
       return {
@@ -66,6 +82,6 @@ export function getStyleForBaseLayer(baseLayer: BaseLayer): string | StyleSpecif
 }
 
 export const useMapLayerStore = defineStore("mapLayerSettings", () => {
-  const baseLayer = ref<BaseLayer>("default");
+  const baseLayer = useLocalStorage<BaseLayer>("baseLayer", "default");
   return { baseLayer };
 });

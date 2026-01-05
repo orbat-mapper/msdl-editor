@@ -4,7 +4,7 @@ import MainNavbar from "@/components/MainNavbar.vue";
 import CreateNewScenarioDialog from "@/components/CreateNewScenarioDialog.vue";
 import LoadFromUrlDialog from "@/components/LoadFromUrlDialog.vue";
 import { useDialogStore } from "@/stores/dialogStore.ts";
-import { ref, shallowRef, useTemplateRef, provide, onMounted } from "vue";
+import { ref, shallowRef, useTemplateRef, provide, onMounted, watch } from "vue";
 import { MilitaryScenario } from "@orbat-mapper/msdllib";
 import maplibregl from "maplibre-gl";
 import MapLogic from "@/components/MapLogic.vue";
@@ -24,6 +24,7 @@ import { sidcModalKey } from "@/components/injects";
 import SymbolPickerModal from "@/components/SymbolPickerModal.vue";
 import UserTour from "@/components/UserTour.vue";
 import { useTourStore } from "@/stores/tourStore";
+import { getStyleForBaseLayer, useMapLayerStore } from "@/stores/mapLayerStore";
 
 const { createScenario, loadScenario, msdl, undo, redo } = useScenarioStore();
 const { dispatchAction } = useScenarioActions();
@@ -35,9 +36,26 @@ const showSearch = ref(false);
 const dropZoneRef = useTemplateRef("dropZoneRef");
 
 const dialogStore = useDialogStore();
+const mapLayerStore = useMapLayerStore();
+
+watch(
+  () => mapLayerStore.baseLayer,
+  () => {
+    if (!msdl.value) {
+      setMapStyle();
+    } // Else map style update will be handled by MapLogic.vue
+  },
+);
 
 function onMapReady(map: maplibregl.Map) {
   mlMap.value = map;
+  setMapStyle();
+  console.log("Map ready");
+}
+
+function setMapStyle() {
+  const newStyle = getStyleForBaseLayer(mapLayerStore.baseLayer);
+  mlMap.value.setStyle(newStyle, { diff: false });
 }
 
 if (import.meta.env.DEV) {

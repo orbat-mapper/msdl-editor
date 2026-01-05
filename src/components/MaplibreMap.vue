@@ -2,6 +2,7 @@
 import { onMounted, onUnmounted, useTemplateRef } from "vue";
 import { GlobeControl, Map as MlMap, NavigationControl } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
+import { getStyleForBaseLayer } from "@/stores/mapLayerStore";
 
 const emit = defineEmits(["ready"]);
 
@@ -11,7 +12,7 @@ let mlMap: MlMap;
 onMounted(async () => {
   mlMap = new MlMap({
     container: mapContainerElement.value as HTMLElement,
-    style: "https://tiles.openfreemap.org/styles/positron", // style URL
+    style: getStyleForBaseLayer(),
     center: [0, 0], // starting position [lng, lat]
     zoom: 3, // starting zoom
   });

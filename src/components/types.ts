@@ -17,6 +17,10 @@ export type EnumItem<G = string> = {
   description?: string;
 };
 
+export type EnumBaseLayer<G = string> = EnumItem<G> & {
+  layerType: "default" | "custom";
+};
+
 export const tabsProviderKey = Symbol("TabsProvider") as InjectionKey<TabsState>;
 
 export interface TabsState {
