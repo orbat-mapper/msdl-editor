@@ -7,14 +7,15 @@ import {
   ListTreeIcon as LocateOrbatIcon,
 } from "lucide-vue-next";
 import { Card } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabsmod";
+import ScrollTabs from "@/components/ScrollTabs.vue";
+import { TabsContent } from "@/components/ui/tabsmod";
 import { Button } from "@/components/ui/button";
 import { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
 import CloseButton from "@/components/CloseButton.vue";
 import { useSelectStore } from "@/stores/selectStore.ts";
 import MilSymbol from "@/components/MilSymbol.vue";
 import { computed, ref, useTemplateRef, watchEffect } from "vue";
-import { ScrollArea } from "@/components/ui/scroll-area";
+
 import { Badge } from "@/components/ui/badge";
 import { useScenarioStore } from "@/stores/scenarioStore.ts";
 import DetailsPanelHoldings from "@/components/DetailsPanelHoldings.vue";
@@ -37,6 +38,7 @@ import DetailsPanelDisposition from "@/components/DetailsPanelDisposition.vue";
 import { useScenarioActions } from "@/composables/scenarioActions.ts";
 import { sidcModalKey } from "@/components/injects";
 import { injectStrict } from "@/utils";
+import type { TabItem } from "@/components/types.ts";
 
 const props = defineProps<{
   item: Unit | EquipmentItem | ForceSide;
@@ -154,6 +156,28 @@ const selectedName = computed(() => {
   const item = selectStore.activeItem;
   return isUnitOrEquipment(item!) ? item.label : item?.name;
 });
+
+const tabItems = computed(() => {
+  const items: TabItem[] = [{ label: "Details", value: "info" }];
+  if (isUnit(props.item)) {
+    items.push({ label: "Equipment", value: "equipment", badge: equipmentCount.value.toString() });
+  }
+  if (isUnitOrEquipment(props.item)) {
+    items.push({ label: "Model", value: "model" });
+  }
+  if (isNETN.value && isUnitOrEquipment(props.item)) {
+    items.push({ label: "Holdings", value: "holdings", badge: holdingsCount.value.toString() });
+  }
+  return items;
+});
+
+const equipmentCount = computed(() => {
+  return isUnit(props.item) ? props.item.equipment.length : 0;
+});
+
+const holdingsCount = computed(() => {
+  return isUnitOrEquipment(props.item) ? props.item.holdings.length : 0;
+});
 </script>
 
 <template>
@@ -204,54 +228,36 @@ const selectedName = computed(() => {
       /></Button>
       <ShowXMLDialog :item="item">XML</ShowXMLDialog>
     </div>
-    <Tabs default-value="info" class="mt-0">
-      <TabsList class="w-full flex">
-        <TabsTrigger value="info">Details</TabsTrigger>
-        <TabsTrigger v-if="isUnit(item)" value="equipment"
-          >Equipment
-          <Badge class="px-1 py-0 text-xs rounded-full">{{ item.equipment.length }}</Badge>
-        </TabsTrigger>
-        <TabsTrigger v-if="isUnitOrEquipment(item)" value="model"
-          ><span id="unit-model-tab">Model</span></TabsTrigger
-        >
-        <TabsTrigger v-if="isNETN && isUnitOrEquipment(item)" value="holdings"
-          >Holdings
-          <Badge class="ml-0 px-1 py-0 text-xs rounded-full">{{
-            item.holdings.length
-          }}</Badge></TabsTrigger
-        >
-      </TabsList>
-      <ScrollArea class="">
-        <div class="max-h-[50vh] min-w-96">
-          <TabsContent value="info" class="p-4">
-            <DetailsPanelForceSide :item="item" v-if="isForceSide(item)" />
-            <DetailsPanelUnit v-else-if="isUnit(item)" :item />
-            <DetailsPanelEquipment v-else-if="isEquipmentItem(item)" :item />
-            <DetailsPanelDisposition :item="item" v-if="isUnitOrEquipment(item)" />
-          </TabsContent>
-          <TabsContent v-if="isUnit(item)" value="equipment" class="p-4">
-            <DetailsPanelEquipmentList :item="item" @flyTo="emit('flyTo', $event)" />
-          </TabsContent>
-          <TabsContent v-if="isNETN && isUnitOrEquipment(item)" value="holdings" class="p-4">
-            <DetailsPanelHoldings :item="item" />
-          </TabsContent>
-          <TabsContent v-if="isUnit(item)" value="model">
-            <div class="max-w-[40vw]">
-              <div class="p-4 overflow-auto">
-                <UnitModelPanel :unit="item"></UnitModelPanel>
-              </div>
+    <ScrollTabs default-value="info" :items="tabItems">
+      <div class="max-h-[50vh] min-w-96">
+        <TabsContent value="info" class="p-4">
+          <DetailsPanelForceSide :item="item" v-if="isForceSide(item)" />
+          <DetailsPanelUnit v-else-if="isUnit(item)" :item />
+          <DetailsPanelEquipment v-else-if="isEquipmentItem(item)" :item />
+          <DetailsPanelDisposition :item="item" v-if="isUnitOrEquipment(item)" />
+        </TabsContent>
+        <TabsContent v-if="isUnit(item)" value="equipment" class="p-4">
+          <DetailsPanelEquipmentList :item="item" @flyTo="emit('flyTo', $event)" />
+        </TabsContent>
+        <TabsContent v-if="isNETN && isUnitOrEquipment(item)" value="holdings" class="p-4">
+          <DetailsPanelHoldings :item="item" />
+        </TabsContent>
+        <TabsContent v-if="isUnit(item)" value="model">
+          <div class="max-w-[40vw]">
+            <div class="p-4 overflow-auto">
+              <UnitModelPanel :unit="item"></UnitModelPanel>
             </div>
-          </TabsContent>
-          <TabsContent v-if="isEquipmentItem(item)" value="model">
-            <div class="max-w-[40vw]">
-              <div class="p-4 overflow-auto">
-                <EquipmentItemModelPanel :equipment="item"></EquipmentItemModelPanel>
-              </div>
+          </div>
+        </TabsContent>
+        <TabsContent v-if="isEquipmentItem(item)" value="model">
+          <div class="max-w-[40vw]">
+            <div class="p-4 overflow-auto">
+              <EquipmentItemModelPanel :equipment="item"></EquipmentItemModelPanel>
             </div>
-          </TabsContent>
-        </div>
-      </ScrollArea>
-    </Tabs>
+          </div>
+        </TabsContent>
+      </div>
+    </ScrollTabs>
     <CloseButton class="absolute right-4 top-2" @click="selectStore.clearActiveItem()" />
     <div
       v-if="isGetLocationActive"
