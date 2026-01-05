@@ -60,7 +60,7 @@ const dummyKey = computed(() => {
         :item="item"
         v-bind="item.bind"
         :style="{ 'padding-left': `${item.level - 0.5}rem` }"
-        class="flex w-full items-center py-1.5 px-2 rounded outline-none focus:ring-ring focus:ring-2 data-[selected]:bg-muted-foreground/20"
+        class="flex w-full items-center py-1.5 px-2 rounded outline-none focus:ring-ring focus:ring-2"
       />
     </TreeRoot>
   </div>
