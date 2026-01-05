@@ -14,7 +14,6 @@ import type { MapContextMenuEvent } from "@/components/types.ts";
 import { useUIStore } from "@/stores/uiStore.ts";
 import { getStyleForBaseLayer, useMapLayerStore } from "@/stores/mapLayerStore.ts";
 import { useMapDrop } from "@/composables/mapDrop.ts";
-import type { Feature } from "geojson";
 import type { EquipmentItem, ForceSide, Unit } from "@orbat-mapper/msdllib";
 
 const { mlMap } = defineProps<{ mlMap: MlMap }>();
@@ -338,7 +337,11 @@ function updateActiveItem(
   }
 }
 
-addSidesToMap(mlMap);
+if (mlMap.isStyleLoaded()) {
+  addSidesToMap(mlMap);
+} else {
+  mlMap.once("styledata", () => addSidesToMap(mlMap));
+}
 
 onUnmounted(() => {
   contextmenuSub?.unsubscribe();
