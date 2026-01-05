@@ -51,7 +51,9 @@ ${props.layerType === "XYZ" ? "https://tile.openstreetmap.org/{z}/{x}/{y}.png" :
       <form @submit.prevent="setBaseLayerUrl()">
         <DialogHeader>
           <DialogTitle> {{ getTitle() }}</DialogTitle>
-          <DialogDescription class="w-full max-w-md break-words"> {{ getDescription() }} </DialogDescription>
+          <DialogDescription class="w-full max-w-md break-words">
+            {{ getDescription() }}
+          </DialogDescription>
         </DialogHeader>
         <div class="grid gap-4 py-4">
           <div class="grid w-full max-w-sm items-center gap-1.5">
