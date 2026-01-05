@@ -13,7 +13,8 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ChevronDown, ExternalLinkIcon } from "lucide-vue-next";
+import { Button } from "@/components/ui/button";
+import { ChevronDown, ExternalLinkIcon, SettingsIcon } from "lucide-vue-next";
 import { useDialogStore } from "@/stores/dialogStore.ts";
 
 import { useLayerStore, useMapSettingsStore } from "@/stores/layerStore.ts";
@@ -90,7 +91,27 @@ const mapLayerStore = useMapLayerStore();
               :value
               @select.prevent
             >
-              {{ label }}
+              <div class="flex w-full items-center gap-2">
+                <span class="flex-1 text-left">
+                  {{ label }}
+                </span>
+                <Button
+                  v-if="value === 'wms'"
+                  variant="ghost"
+                  class="ml-2 inline-flex h-4 w-4 items-center justify-center text-muted-foreground hover:text-foreground"
+                  @click.stop.prevent="dialogStore.toggleWMSBaseLayerDialog()"
+                >
+                  <SettingsIcon class="h-3 w-3" />
+                </Button>
+                <Button
+                  v-else-if="value === 'xyz'"
+                  variant="ghost"
+                  class="ml-2 inline-flex h-4 w-4 items-center justify-center text-muted-foreground hover:text-foreground"
+                  @click.stop.prevent="dialogStore.toggleXYZBaseLayerDialog()"
+                >
+                  <SettingsIcon class="h-3 w-3" />
+                </Button>
+              </div>
             </DropdownMenuRadioItem>
           </DropdownMenuRadioGroup>
         </DropdownMenuSubContent>

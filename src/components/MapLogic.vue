@@ -64,9 +64,10 @@ watchEffect(() => {
 });
 
 watch(
-  () => mapLayerStore.baseLayer,
-  (baseLayer) => {
-    const newStyle = getStyleForBaseLayer(baseLayer);
+  [() => mapLayerStore.baseLayer, () => mapLayerStore.customWMS, () => mapLayerStore.customXYZ],
+  () => {
+    const tileUrl = mapLayerStore.getCustomTileUrl();
+    const newStyle = getStyleForBaseLayer(mapLayerStore.baseLayer, tileUrl.value);
     // filter keys that start with 'msdl-' from oldBaseLayer
 
     mlMap.setStyle(newStyle, {
