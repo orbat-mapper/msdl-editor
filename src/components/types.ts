@@ -28,3 +28,5 @@ export interface TabsState {
   count: number;
   tabClass?: string;
 }
+
+export type TabItem = string | { label: string; value: string; disabled?: boolean; badge?: string };
