@@ -3,8 +3,9 @@ import MaplibreMap from "@/components/MaplibreMap.vue";
 import MainNavbar from "@/components/MainNavbar.vue";
 import CreateNewScenarioDialog from "@/components/CreateNewScenarioDialog.vue";
 import LoadFromUrlDialog from "@/components/LoadFromUrlDialog.vue";
+import CustomBaseLayerDialog from "@/components/CustomBaseLayerDialog.vue";
 import { useDialogStore } from "@/stores/dialogStore.ts";
-import { ref, shallowRef, useTemplateRef, provide, onMounted } from "vue";
+import { ref, shallowRef, useTemplateRef, provide, onMounted, watch } from "vue";
 import { MilitaryScenario } from "@orbat-mapper/msdllib";
 import maplibregl from "maplibre-gl";
 import MapLogic from "@/components/MapLogic.vue";
@@ -24,6 +25,7 @@ import { sidcModalKey } from "@/components/injects";
 import SymbolPickerModal from "@/components/SymbolPickerModal.vue";
 import UserTour from "@/components/UserTour.vue";
 import { useTourStore } from "@/stores/tourStore";
+import { getStyleForBaseLayer, useMapLayerStore } from "@/stores/mapLayerStore";
 
 const { createScenario, loadScenario, msdl, undo, redo } = useScenarioStore();
 const { dispatchAction } = useScenarioActions();
@@ -35,9 +37,41 @@ const showSearch = ref(false);
 const dropZoneRef = useTemplateRef("dropZoneRef");
 
 const dialogStore = useDialogStore();
+const mapLayerStore = useMapLayerStore();
+
+watch(
+  () => mapLayerStore.baseLayer,
+  () => {
+    if (!msdl.value) {
+      updateMapStyle();
+    } // Else map style update will be handled by MapLogic.vue
+  },
+);
 
 function onMapReady(map: maplibregl.Map) {
   mlMap.value = map;
+  updateMapStyle();
+  console.log("Map ready");
+}
+
+function updateMapStyle() {
+  const newStyle = getStyleForBaseLayer(
+    mapLayerStore.baseLayer,
+    mapLayerStore.getCustomTileUrl().value,
+  );
+  mlMap.value?.setStyle(newStyle, { diff: false });
+}
+
+function updateCustomXYZ(url: string) {
+  mapLayerStore.setCustomXYZUrl(url);
+  updateMapStyle();
+  useDialogStore().toggleXYZBaseLayerDialog();
+}
+
+function updateCustomWMS(url: string) {
+  mapLayerStore.setCustomWMSUrl(url);
+  updateMapStyle();
+  useDialogStore().toggleWMSBaseLayerDialog();
 }
 
 if (import.meta.env.DEV) {
@@ -108,6 +142,16 @@ provide(sidcModalKey, { getModalSidc });
       @created="createScenario"
     />
     <LoadFromUrlDialog v-model:open="dialogStore.isUrlDialogOpen" @loaded="loadScenario" />
+    <CustomBaseLayerDialog
+      v-model:open="dialogStore.isWMSBaseLayerDialogOpen"
+      :layer-type="'WMS'"
+      @updated-url="updateCustomWMS"
+    />
+    <CustomBaseLayerDialog
+      v-model:open="dialogStore.isXYZBaseLayerDialogOpen"
+      :layer-type="'XYZ'"
+      @updated-url="updateCustomXYZ"
+    />
     <EditAssociationsDialog v-model:open="dialogStore.isAssociationDialogOpen" />
     <DropZoneIndicator v-if="isOverDropZone" />
     <GlobalEvents
